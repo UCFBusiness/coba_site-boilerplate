@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>@Page.Title - UCF College of Business Administration</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="~/images/app-icon-57.png" rel="apple-touch-icon-precomposed" />
+
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+        <link href="~/styles/site.css" type="text/css" rel="stylesheet" />
+        <style>
+            @RenderSection("styles", required: false)
+        </style>
+
+        <script src="~/scripts/modernizr-2.6.2.js"></script>
+        <!-- Google Analytics Code -->
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><a href="~/">your logo here</a></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @if (WebSecurity.IsAuthenticated) {
+                            <text>
+                                Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+                                <form id="logoutForm" action="~/Account/Logout" method="post">
+                                    @AntiForgery.GetHtml()
+                                    <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                                </form>
+                            </text>
+                        } else {
+                            <ul>
+                                <li><a href="~/Account/Register">Register</a></li>
+                                <li><a href="~/Account/Login">Log in</a></li>
+                            </ul>
+                        }
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="~/">Home</a></li>
+                            <li><a href="~/About">About</a></li>
+                            <li><a href="~/Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET Web Page</p>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="back-to-top">Top &#x25B2;</a>
+
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
+
+        <script>
+            $(function () { //load on document.ready
+
+            });
+        </script>
+
+        @RenderSection("Scripts", required: false)
+
+    </body>
+</html>

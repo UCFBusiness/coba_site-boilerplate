@@ -1,0 +1,104 @@
+
+$white: #FFFFFF;
+$blue-gray: #C7D1D6;
+$light-gray: #E2E2E2;
+$light-blue: #A6DBED;
+
+html, body {
+    height: 100%;
+}
+
+/*.no-js {}
+
+remove if not used. - locks desktop screen and removes scrollbars
+.js {
+    overflow: hidden;
+}*/
+
+.page {
+    /*background-image:-webkit-linear-gradient(top, #31353a, #2f3337);  -- charcoal background --*/
+    font-size: 1em;
+    line-height:1.4em;
+    /* Create a page-wide stacking context 
+    (so that negative margins work as you expect) */
+    position: relative;
+    z-index: 0;
+}
+
+.page #container {
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 1px;
+	font-weight: 400;
+}
+
+h1, h2 {line-height: 1.1em;}
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.75em;}
+h3 {font-size: 1.2em;}
+h4 {font-size: 1.1em;}
+h5, h6 {font-size: 1em;}
+
+p {margin: 0 0 10px 0;}
+
+blockquote { 
+    /*background: url("http://images.bus.ucf.edu/ui/quote.gif") no-repeat;
+    background-position: 0px 5px;*/
+    border-left: 4px solid #DDD;
+    padding: 10px 15px 10px;
+    font: italic 1.2em "Georgia", "Times New Roman", "Times", serif;
+}
+
+blockquote:before {
+    content: '"';
+    padding-right:10px;
+    font-size: 2em;
+    float:left;
+}
+
+blockquote small {
+    font:italic .9em "Georgia", "Times New Roman", "Times", serif;
+}
+
+/*---------------------*/
+/*-- Special Classes --*/
+/*---------------------*/
+
+.noshow { 
+    display:none;
+}
+
+.shadow {
+    box-shadow:2px 4px 7px 1px rgba(135, 139, 144, 0.3); /*-CSS3 Box Shadow-*/
+    -moz-box-shadow:2px 4px 7px 1px rgba(135, 139, 144, 0.3); /*-CSS3 Box Shadow-*/
+}
+
+.highlight {
+    background-color: #fff34d;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* FF3.5+ */
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Saf3.0+, Chrome */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Opera 10.5+, IE 9.0 */
+}
+
+.highlight {
+    padding:1px 4px;
+    margin:0 -4px;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.note {
+    border:1px solid orange;
+    padding:1em;
+    background:#ffffe0;
+}
