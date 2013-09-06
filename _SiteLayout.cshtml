@@ -9,20 +9,33 @@
         <title>@Page.Title - UCF College of Business Administration</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <link href="~/images/app-icon-57.png" rel="apple-touch-icon-precomposed" />
 
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="UCF-Business" />
 
-        <link href="~/styles/site.css" type="text/css" rel="stylesheet" />
-        <style>
-            @RenderSection("styles", required: false)
-        </style>
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="~/images/ico/apple-touch-icon-57-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/ico/apple-touch-icon-72-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/ico/apple-touch-icon-114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/ico/apple-touch-icon-144-precomposed.png" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+
+        <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
+
+        <!-- Bootstrap core CSS -->
+        <link href="../content/css/bootstrap.css" rel="stylesheet">
+
+        @RenderSection("styles", required: false)
 
         <script src="~/scripts/modernizr-2.6.2.js"></script>
         <!-- Google Analytics Code -->
     </head>
     <body>
+
+        <div class="grid grid--baseline grid--off"></div>
+        <div class="grid grid--col12 grid--off"></div>
+
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
@@ -55,32 +68,36 @@
                 </div>
             </div>
         </header>
+
         <div id="body">
             @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">
                 @RenderBody()
             </section>
         </div>
+
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
                     <p>&copy; @DateTime.Now.Year - My ASP.NET Web Page</p>
                 </div>
             </div>
+
+            <!-- jquery -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
+
+            <script data-main="content/js/main" src="~/scripts/require.js"></script>
+
+            <script>
+                $(function () { //load on document.ready
+
+                });
+            </script>
+
+            @RenderSection("Scripts", required: false)
         </footer>
+
         <a href="#" class="back-to-top">Top &#x25B2;</a>
-
-        <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
-
-        <script>
-            $(function () { //load on document.ready
-
-            });
-        </script>
-
-        @RenderSection("Scripts", required: false)
-
     </body>
 </html>
