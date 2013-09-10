@@ -26,61 +26,65 @@
         <!-- Bootstrap core CSS -->
         <link href="../content/css/bootstrap.css" rel="stylesheet">
 
-        @RenderSection("styles", required: false)
+        @RenderSection("Styles", required: false)
 
         <script src="~/scripts/modernizr-2.6.2.js"></script>
         <!-- Google Analytics Code -->
     </head>
-    <body>
-
+    <body class="page"><a id="top"></a>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
         <div class="grid grid--baseline grid--off"></div>
         <div class="grid grid--col12 grid--off"></div>
 
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title"><a href="~/">your logo here</a></p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @if (WebSecurity.IsAuthenticated) {
-                            <text>
-                                Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
-                                <form id="logoutForm" action="~/Account/Logout" method="post">
-                                    @AntiForgery.GetHtml()
-                                    <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
-                                </form>
-                            </text>
-                        } else {
-                            <ul>
-                                <li><a href="~/Account/Register">Register</a></li>
-                                <li><a href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        }
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li><a href="~/">Home</a></li>
-                            <li><a href="~/About">About</a></li>
-                            <li><a href="~/Contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+        <div class="container">
 
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
+            <header>
+                <div class="content-wrapper">
+                    <div class="float-left">
+                        <p class="site-title"><a href="~/">your logo here</a></p>
+                    </div>
+                    <div class="float-right">
+                        <section id="login">
+                            @if (WebSecurity.IsAuthenticated) {
+                                <text>
+                                    Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+                                    <form id="logoutForm" action="~/Account/Logout" method="post">
+                                        @AntiForgery.GetHtml()
+                                        <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                                    </form>
+                                </text>
+                            } else {
+                                <ul>
+                                    <li><a href="~/Account/Register">Register</a></li>
+                                    <li><a href="~/Account/Login">Log in</a></li>
+                                </ul>
+                            }
+                        </section>
+                        <nav>
+                            <ul id="menu">
+                                <li><a href="~/">Home</a></li>
+                                <li><a href="~/About">About</a></li>
+                                <li><a href="~/Contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div id="body">
+                @RenderSection("featured", required: false)
+                <section class="content-wrapper main-content clearfix">
+                    @RenderBody()
+                </section>
+            </div>
+
         </div>
 
         <footer>
             <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET Web Page</p>
-                </div>
+                <div class="float-left"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
             </div>
 
             <!-- jquery -->
@@ -90,8 +94,8 @@
             <script data-main="content/js/main" src="~/scripts/require.js"></script>
 
             <script>
-                $(function () { //load on document.ready
-
+                $(function () {
+                    // load scripts on document.ready
                 });
             </script>
 

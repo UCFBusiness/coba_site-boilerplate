@@ -192,7 +192,7 @@ td { vertical-align: top; }
 /* ========================================================================== */
 
 // {import Primary Styles}
-@import "boilerplate/primary_styles";
+@import "primary_styles";
 
 
 /* ==|== non-semantic helper classes ======================================== */
@@ -200,7 +200,7 @@ td { vertical-align: top; }
 /* ========================================================================== */
 
 // {import Helper Classes}
-@import "boilerplate/helper_classes";
+@import "helper_classes";
 
 
 /* ==|== print styles ======================================================= */
@@ -208,4 +208,4 @@ td { vertical-align: top; }
 /* ========================================================================== */
 
 // {import Print Styles}
-@import "boilerplate/print_styles";
+@import "print_styles";

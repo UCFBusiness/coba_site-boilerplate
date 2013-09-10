@@ -1,0 +1,26 @@
+#menu { /*--contains menu content--*/
+    margin-top: 200px;
+    padding: 20px;
+    position: fixed;
+    float:left;
+}
+
+
+#menu div > ul .active > a {
+    background-color: #333;
+    border:1px solid #555;
+    text-decoration: none;
+    line-height:11px;
+    color: #FFCC00;
+}
+
+
+
+#menu-box ul > li:first-child {
+    display:none;
+}
+
+#main-content {
+    float: right;
+    width: 70%;
+}

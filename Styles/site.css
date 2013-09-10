@@ -1,0 +1,636 @@
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/* line 19, ../Content/scss/boilerplate/_boilerplate.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 20, ../Content/scss/boilerplate/_boilerplate.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 21, ../Content/scss/boilerplate/_boilerplate.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 22, ../Content/scss/boilerplate/_boilerplate.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/* line 33, ../Content/scss/boilerplate/_boilerplate.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 35, ../Content/scss/boilerplate/_boilerplate.scss */
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/* line 37, ../Content/scss/boilerplate/_boilerplate.scss */
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* Uncomment these if you do want to customize the selection highlight
+ *::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ *::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ */
+/* =============================================================================
+   Links
+   ========================================================================== */
+/* line 53, ../Content/scss/boilerplate/_boilerplate.scss */
+a {
+  color: #00e;
+}
+
+/* line 54, ../Content/scss/boilerplate/_boilerplate.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/* line 55, ../Content/scss/boilerplate/_boilerplate.scss */
+a:hover {
+  color: #06e;
+}
+
+/* line 56, ../Content/scss/boilerplate/_boilerplate.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 59, ../Content/scss/boilerplate/_boilerplate.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/* line 66, ../Content/scss/boilerplate/_boilerplate.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 68, ../Content/scss/boilerplate/_boilerplate.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 70, ../Content/scss/boilerplate/_boilerplate.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 72, ../Content/scss/boilerplate/_boilerplate.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 74, ../Content/scss/boilerplate/_boilerplate.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 76, ../Content/scss/boilerplate/_boilerplate.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 78, ../Content/scss/boilerplate/_boilerplate.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 81, ../Content/scss/boilerplate/_boilerplate.scss */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 84, ../Content/scss/boilerplate/_boilerplate.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 86, ../Content/scss/boilerplate/_boilerplate.scss */
+q {
+  quotes: none;
+}
+
+/* line 87, ../Content/scss/boilerplate/_boilerplate.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 89, ../Content/scss/boilerplate/_boilerplate.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 92, ../Content/scss/boilerplate/_boilerplate.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 93, ../Content/scss/boilerplate/_boilerplate.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 94, ../Content/scss/boilerplate/_boilerplate.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 101, ../Content/scss/boilerplate/_boilerplate.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 102, ../Content/scss/boilerplate/_boilerplate.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 103, ../Content/scss/boilerplate/_boilerplate.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/* line 113, ../Content/scss/boilerplate/_boilerplate.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 117, ../Content/scss/boilerplate/_boilerplate.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/* line 124, ../Content/scss/boilerplate/_boilerplate.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/* line 131, ../Content/scss/boilerplate/_boilerplate.scss */
+form {
+  margin: 0;
+}
+
+/* line 132, ../Content/scss/boilerplate/_boilerplate.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 135, ../Content/scss/boilerplate/_boilerplate.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 140, ../Content/scss/boilerplate/_boilerplate.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+/* line 146, ../Content/scss/boilerplate/_boilerplate.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 151, ../Content/scss/boilerplate/_boilerplate.scss */
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+/* line 155, ../Content/scss/boilerplate/_boilerplate.scss */
+table button, table input {
+  *overflow: auto;
+}
+
+/* line 160, ../Content/scss/boilerplate/_boilerplate.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 164, ../Content/scss/boilerplate/_boilerplate.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+
+/* line 165, ../Content/scss/boilerplate/_boilerplate.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 166, ../Content/scss/boilerplate/_boilerplate.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 170, ../Content/scss/boilerplate/_boilerplate.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 175, ../Content/scss/boilerplate/_boilerplate.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 179, ../Content/scss/boilerplate/_boilerplate.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* line 186, ../Content/scss/boilerplate/_boilerplate.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 187, ../Content/scss/boilerplate/_boilerplate.scss */
+td {
+  vertical-align: top;
+}
+
+/* ==|== primary styles ===================================================== */
+/* ========================================================================== */
+/* line 1, ../Content/scss/boilerplate/_primary_styles.scss */
+html, body {
+  height: 100%;
+}
+
+/*.no-js {}
+
+remove if not used. - locks desktop screen and removes scrollbars
+.js {
+    overflow: hidden;
+}*/
+/* line 12, ../Content/scss/boilerplate/_primary_styles.scss */
+body {
+  /* Create a page-wide stacking context 
+  (so that negative margins work as you expect) */
+  position: relative;
+  z-index: 0;
+}
+
+/* line 19, ../Content/scss/boilerplate/_primary_styles.scss */
+.container {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 26, ../Content/scss/boilerplate/_primary_styles.scss */
+h1, h2, h3,
+h4, h5, h6 {
+  color: #000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 32, ../Content/scss/boilerplate/_primary_styles.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 36, ../Content/scss/boilerplate/_primary_styles.scss */
+h2 {
+  font-size: 1.75em;
+}
+
+/* line 40, ../Content/scss/boilerplate/_primary_styles.scss */
+h3 {
+  font-size: 1.2em;
+}
+
+/* line 44, ../Content/scss/boilerplate/_primary_styles.scss */
+h4 {
+  font-size: 1.1em;
+}
+
+/* line 48, ../Content/scss/boilerplate/_primary_styles.scss */
+h5, h6 {
+  font-size: 1em;
+}
+
+/* line 52, ../Content/scss/boilerplate/_primary_styles.scss */
+h5 a:link, h5 a:visited, h5 a:active {
+  padding: 0;
+  text-decoration: none;
+}
+
+/* line 57, ../Content/scss/boilerplate/_primary_styles.scss */
+p {
+  margin: 0 0 10px 0;
+}
+
+/* line 59, ../Content/scss/boilerplate/_primary_styles.scss */
+blockquote {
+  /*background: url("http://images.bus.ucf.edu/ui/quote.gif") no-repeat;
+  background-position: 0px 5px;*/
+  border-left: 4px solid #DDD;
+  padding: 10px 15px 10px;
+  font: italic 1.2em "Georgia", "Times New Roman", "Times", serif;
+}
+
+/* line 67, ../Content/scss/boilerplate/_primary_styles.scss */
+blockquote:before {
+  content: '"';
+  padding-right: 10px;
+  font-size: 2em;
+  float: left;
+}
+
+/* line 74, ../Content/scss/boilerplate/_primary_styles.scss */
+blockquote small {
+  font: italic .9em "Georgia", "Times New Roman", "Times", serif;
+}
+
+/*---------------------*/
+/*-- Special Classes --*/
+/*---------------------*/
+/* line 83, ../Content/scss/boilerplate/_primary_styles.scss */
+.shadow {
+  box-shadow: 2px 4px 7px 1px rgba(135, 139, 144, 0.3);
+  /*-CSS3 Box Shadow-*/
+  -moz-box-shadow: 2px 4px 7px 1px rgba(135, 139, 144, 0.3);
+  /*-CSS3 Box Shadow-*/
+}
+
+/* line 88, ../Content/scss/boilerplate/_primary_styles.scss */
+.highlight {
+  background-color: #fff34d;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  /* FF3.5+ */
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  /* Saf3.0+, Chrome */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  /* Opera 10.5+, IE 9.0 */
+}
+
+/* line 95, ../Content/scss/boilerplate/_primary_styles.scss */
+.float-left {
+  float: left;
+}
+
+/* line 99, ../Content/scss/boilerplate/_primary_styles.scss */
+.float-right {
+  float: right;
+}
+
+/* line 103, ../Content/scss/boilerplate/_primary_styles.scss */
+mark {
+  background-color: #a6dbed;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 109, ../Content/scss/boilerplate/_primary_styles.scss */
+.note {
+  border: 1px solid orange;
+  padding: 1em;
+  background: #ffffe0;
+}
+
+/* ==|== non-semantic helper classes ======================================== */
+/* ========================================================================== */
+/* line 2, ../Content/scss/boilerplate/_helper_classes.scss */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 3, ../Content/scss/boilerplate/_helper_classes.scss */
+.ir br {
+  display: none;
+}
+
+/* line 7, ../Content/scss/boilerplate/_helper_classes.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 11, ../Content/scss/boilerplate/_helper_classes.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 15, ../Content/scss/boilerplate/_helper_classes.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 19, ../Content/scss/boilerplate/_helper_classes.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 23, ../Content/scss/boilerplate/_helper_classes.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 24, ../Content/scss/boilerplate/_helper_classes.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 25, ../Content/scss/boilerplate/_helper_classes.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* ==|== print styles ======================================================= */
+/* ========================================================================== */
+@media print {
+  /* line 2, ../Content/scss/boilerplate/_print_styles.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 3, ../Content/scss/boilerplate/_print_styles.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 4, ../Content/scss/boilerplate/_print_styles.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 5, ../Content/scss/boilerplate/_print_styles.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 6, ../Content/scss/boilerplate/_print_styles.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 7, ../Content/scss/boilerplate/_print_styles.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 8, ../Content/scss/boilerplate/_print_styles.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 9, ../Content/scss/boilerplate/_print_styles.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 10, ../Content/scss/boilerplate/_print_styles.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 12, ../Content/scss/boilerplate/_print_styles.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 13, ../Content/scss/boilerplate/_print_styles.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* =============================================================================
+   Simple fluid media
+   ========================================================================== */
+/* line 21, ../Content/scss/site.scss */
+img, object, embed, video {
+  max-width: 100%;
+}
+
+/* line 27, ../Content/scss/site.scss */
+.ie6 img {
+  width: 100%;
+}
+
+/* Mobile Layout: 480px and below. */
+/* line 48, ../Content/scss/site.scss */
+body {
+  color: blue;
+}
+
+/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+  /* line 53, ../Content/scss/site.scss */
+  body {
+    color: red;
+  }
+}
+/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 1025px) {
+  /* line 60, ../Content/scss/site.scss */
+  body {
+    color: #333;
+  }
+}
