@@ -325,13 +325,11 @@ td {
 /* ==|== primary styles ===================================================== */
 /* ========================================================================== */
 /* line 1, ../Content/scss/boilerplate/_primary_styles.scss */
-html, body {
+html, body, .container {
   height: 100%;
 }
 
-/*.no-js {}
-
-remove if not used. - locks desktop screen and removes scrollbars
+/*remove if not used. - locks desktop screen and removes scrollbars
 .js {
     overflow: hidden;
 }*/
@@ -345,121 +343,8 @@ body {
 
 /* line 19, ../Content/scss/boilerplate/_primary_styles.scss */
 .container {
-  height: 100%;
   position: relative;
   z-index: 1;
-}
-
-/* line 26, ../Content/scss/boilerplate/_primary_styles.scss */
-h1, h2, h3,
-h4, h5, h6 {
-  color: #000;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-/* line 32, ../Content/scss/boilerplate/_primary_styles.scss */
-h1 {
-  font-size: 2em;
-}
-
-/* line 36, ../Content/scss/boilerplate/_primary_styles.scss */
-h2 {
-  font-size: 1.75em;
-}
-
-/* line 40, ../Content/scss/boilerplate/_primary_styles.scss */
-h3 {
-  font-size: 1.2em;
-}
-
-/* line 44, ../Content/scss/boilerplate/_primary_styles.scss */
-h4 {
-  font-size: 1.1em;
-}
-
-/* line 48, ../Content/scss/boilerplate/_primary_styles.scss */
-h5, h6 {
-  font-size: 1em;
-}
-
-/* line 52, ../Content/scss/boilerplate/_primary_styles.scss */
-h5 a:link, h5 a:visited, h5 a:active {
-  padding: 0;
-  text-decoration: none;
-}
-
-/* line 57, ../Content/scss/boilerplate/_primary_styles.scss */
-p {
-  margin: 0 0 10px 0;
-}
-
-/* line 59, ../Content/scss/boilerplate/_primary_styles.scss */
-blockquote {
-  /*background: url("http://images.bus.ucf.edu/ui/quote.gif") no-repeat;
-  background-position: 0px 5px;*/
-  border-left: 4px solid #DDD;
-  padding: 10px 15px 10px;
-  font: italic 1.2em "Georgia", "Times New Roman", "Times", serif;
-}
-
-/* line 67, ../Content/scss/boilerplate/_primary_styles.scss */
-blockquote:before {
-  content: '"';
-  padding-right: 10px;
-  font-size: 2em;
-  float: left;
-}
-
-/* line 74, ../Content/scss/boilerplate/_primary_styles.scss */
-blockquote small {
-  font: italic .9em "Georgia", "Times New Roman", "Times", serif;
-}
-
-/*---------------------*/
-/*-- Special Classes --*/
-/*---------------------*/
-/* line 83, ../Content/scss/boilerplate/_primary_styles.scss */
-.shadow {
-  box-shadow: 2px 4px 7px 1px rgba(135, 139, 144, 0.3);
-  /*-CSS3 Box Shadow-*/
-  -moz-box-shadow: 2px 4px 7px 1px rgba(135, 139, 144, 0.3);
-  /*-CSS3 Box Shadow-*/
-}
-
-/* line 88, ../Content/scss/boilerplate/_primary_styles.scss */
-.highlight {
-  background-color: #fff34d;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
-  /* FF3.5+ */
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
-  /* Saf3.0+, Chrome */
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
-  /* Opera 10.5+, IE 9.0 */
-}
-
-/* line 95, ../Content/scss/boilerplate/_primary_styles.scss */
-.float-left {
-  float: left;
-}
-
-/* line 99, ../Content/scss/boilerplate/_primary_styles.scss */
-.float-right {
-  float: right;
-}
-
-/* line 103, ../Content/scss/boilerplate/_primary_styles.scss */
-mark {
-  background-color: #a6dbed;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-/* line 109, ../Content/scss/boilerplate/_primary_styles.scss */
-.note {
-  border: 1px solid orange;
-  padding: 1em;
-  background: #ffffe0;
 }
 
 /* ==|== non-semantic helper classes ======================================== */

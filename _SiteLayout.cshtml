@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>@Page.Title - UCF College of Business Administration</title>
         <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -21,10 +21,10 @@
 
         <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
 
-        <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
-
         <!-- Bootstrap core CSS -->
         <link href="../content/css/bootstrap.css" rel="stylesheet">
+        <!-- Site CSS -->
+        <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
 
         @RenderSection("Styles", required: false)
 
@@ -38,7 +38,10 @@
         <div class="grid grid--baseline grid--off"></div>
         <div class="grid grid--col12 grid--off"></div>
 
+        @*<img src="..." class="img-responsive" alt="Responsive image">*@
+
         <div class="container">
+        <div id="oe_overlay" class="oe_overlay"></div>
 
             <header>
                 <div class="content-wrapper">
@@ -80,6 +83,12 @@
                 </section>
             </div>
 
+            <nav>
+                <ul id="oe_menu" class="oe_menu">
+                    <li><a href="">Activate Overlay</a></li>
+                </ul>
+            </nav>
+
         </div>
 
         <footer>
@@ -91,11 +100,72 @@
             <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
             <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
 
+            <script src="~/content/js/bootstrap.min.js"></script>
             <script data-main="content/js/main" src="~/scripts/require.js"></script>
+
+            <script src="~/content/js/jquery.easing.min.js"></script>
+		    <!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+		    <script src="~/content/js/waypoints.min.js"></script>
+		    <!-- jquery-smartresize by @@louis_remi : https://github.com/louisremi/jquery-smartresize -->
+		    <script src="~/content/js/jquery.debouncedresize.js"></script>
+		    <script src="~/content/js/cbpFixedScrollLayout.min.js"></script>
 
             <script>
                 $(function () {
                     // load scripts on document.ready
+
+                    cbpFixedScrollLayout.init();
+
+                    // Disable right-click
+                    $(document).bind("contextmenu", function (e) {
+                        return false;
+                    });
+
+                    // Check if cookies are enabled
+                    var dt = new Date();
+                    dt.setSeconds(dt.getSeconds() + 60);
+                    document.cookie = "cookietest=1; expires=" + dt.toGMTString();
+                    var cookiesEnabled = document.cookie.indexOf("cookietest=") != -1;
+                    if (!cookiesEnabled) {
+                        // cookies are not enabled
+                        alert('cookies are not enabled');
+                    }
+
+                    //$(element).center();
+
+                    //----- Back to top link--------------------------------
+                    var offset = 220;
+                    var duration = 500;
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > offset) {
+                            $('.back-to-top').fadeIn(duration);
+                        } else {
+                            $('.back-to-top').fadeOut(duration);
+                        }
+                    });
+
+                    $('.back-to-top').click(function (event) {
+                        event.preventDefault();
+                        $('html, body').animate({ scrollTop: 0 }, duration);
+                        return false;
+                    })
+                    //------------------------------------------------------
+
+                    var $oe_menu = $('#oe_menu');
+                    var $oe_menu_items = $oe_menu.children('li');
+                    var $oe_overlay = $('#oe_overlay');
+
+                    $oe_menu.bind('mouseenter',function(){
+                        var $this = $(this);
+                        $oe_overlay.stop(true,true).fadeTo(200, 0.6);
+                        $this.addClass('hovered');
+                    }).bind('mouseleave',function(){
+                        var $this = $(this);
+                        $this.removeClass('hovered');
+                        $oe_overlay.stop(true,true).fadeTo(200, 0);
+                        $oe_menu_items.children('div').hide();
+                    })
+
                 });
             </script>
 
