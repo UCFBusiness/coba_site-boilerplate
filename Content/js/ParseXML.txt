@@ -1,4 +1,7 @@
-sample file.xml:
+
+//----------------------------------
+// sample: file.xml ----------------
+//----------------------------------
 
 <?xml version="1.0" ?>
 <result>
@@ -16,15 +19,18 @@ sample file.xml:
 </result>
 
 
-//----------------------------------------------------------------------------
-
+//----------------------------------
+// Jquery code ---------------------
+//----------------------------------
 
 $.get('file.xml',{},function(data){
     $('item',data).each(function(){
         var $this       = $(this);
-        var id             = $this.find('id').text();
-        var title         = $this.find('title').text();
+        var id          = $this.find('id').text();
+        var title       = $this.find('title').text();
         var description = $this.find('description').text();
+        
         //do something ...
+
     });
 });

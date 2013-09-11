@@ -487,35 +487,106 @@ body {
   }
 }
 /* =============================================================================
-   Simple fluid media
+   Back to top link/image
    ========================================================================== */
-/* line 21, ../Content/scss/site.scss */
-img, object, embed, video {
-  max-width: 100%;
+/* line 5, ../Content/scss/partials/_back-to-top.scss */
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  color: #000000;
+  background-color: rgba(235, 235, 235, 0.8);
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+  z-index: 1000;
 }
 
-/* line 27, ../Content/scss/site.scss */
-.ie6 img {
-  width: 100%;
+/* line 18, ../Content/scss/partials/_back-to-top.scss */
+.back-to-top:hover {
+  background-color: rgba(135, 135, 135, 0.5);
 }
 
 /* Mobile Layout: 480px and below. */
-/* line 48, ../Content/scss/site.scss */
+/* line 16, ../Content/scss/site.scss */
 body {
   color: blue;
 }
 
 /* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
-  /* line 53, ../Content/scss/site.scss */
+  /* line 21, ../Content/scss/site.scss */
   body {
     color: red;
   }
 }
 /* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 1025px) {
-  /* line 60, ../Content/scss/site.scss */
+  /* line 28, ../Content/scss/site.scss */
   body {
     color: #333;
   }
+}
+/* ordered list */
+/* line 34, ../Content/scss/site.scss */
+ol.round {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 39, ../Content/scss/site.scss */
+ol.round li {
+  margin: 25px 0;
+  padding-left: 45px;
+}
+
+/* line 44, ../Content/scss/site.scss */
+ol.round li.zero {
+  background: url("../Images/orderedList0.png") no-repeat;
+}
+
+/* line 48, ../Content/scss/site.scss */
+ol.round li.one {
+  background: url("../Images/orderedList1.png") no-repeat;
+}
+
+/* line 52, ../Content/scss/site.scss */
+ol.round li.two {
+  background: url("../Images/orderedList2.png") no-repeat;
+}
+
+/* line 56, ../Content/scss/site.scss */
+ol.round li.three {
+  background: url("../Images/orderedList3.png") no-repeat;
+}
+
+/* line 60, ../Content/scss/site.scss */
+ol.round li.four {
+  background: url("../Images/orderedList4.png") no-repeat;
+}
+
+/* line 64, ../Content/scss/site.scss */
+ol.round li.five {
+  background: url("../Images/orderedList5.png") no-repeat;
+}
+
+/* line 68, ../Content/scss/site.scss */
+ol.round li.six {
+  background: url("../Images/orderedList6.png") no-repeat;
+}
+
+/* line 72, ../Content/scss/site.scss */
+ol.round li.seven {
+  background: url("../Images/orderedList7.png") no-repeat;
+}
+
+/* line 76, ../Content/scss/site.scss */
+ol.round li.eight {
+  background: url("../Images/orderedList8.png") no-repeat;
+}
+
+/* line 80, ../Content/scss/site.scss */
+ol.round li.nine {
+  background: url("../Images/orderedList9.png") no-repeat;
 }
