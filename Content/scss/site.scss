@@ -30,6 +30,32 @@ body{color: blue;}
 }
 
 
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Development Only Border CSS - delete when done */
+
+.borderline {
+    border: 1px dashed red;
+}
+
+.centerline, .content-wrapper {
+    border: 1px dashed blue;
+}
+
+.container {
+    border: 1px dashed green;
+}
+
+/* Jumbotron CSS */
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
 /* ordered list */
 ol.round {
     list-style-type: none;
