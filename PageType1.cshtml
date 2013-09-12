@@ -1,40 +1,30 @@
 ﻿@{
-    //-- Sliding Horizontal Layout - http://tympanus.net/codrops/2013/09/05/sliding-horizontal-layout
+    //-- Sliding Horizontal Layout 
+    //-- http://tympanus.net/codrops/2013/09/05/sliding-horizontal-layout
     Layout = "~/_SiteLayout.cshtml";
     Page.Title = "Home Page";
 }
 
 @section styles {
-    <style> /*-- Page-specific styles --*/ </style>
+    <!-- page-specific styles (optional) -->
+    <!-- <style>/*-- styles --*/</style> -->
 }
 
 @section featured {
-<section class="featured">
-    <div class="content-wrapper">
-        <hgroup class="title">
-            <h1>@Page.Title.</h1>
-            <h2>Modify this template to jump-start your ASP.NET Web Pages application.</h2>
-        </hgroup>
-        <p>
-            If you have any questions about ASP.NET Web Pages, visit
-            <a href="http://forums.iis.net/1166.aspx" title="ASP.NET Web Pages Forum">our forums</a>.
-        </p>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis porttitor 
-            velit, a placerat dui ultricies sit amet. Etiam elementum dignissim sapien viverra sodales. 
-            Vivamus id augue porta, condimentum libero sed, dignissim lacus. Mauris eget nisi iaculis, 
-            ullamcorper ante et, congue justo. Curabitur sed commodo massa. Nam et eros sed massa dapibus 
-            dictum. Pellentesque luctus dui nec congue imperdiet. Nam blandit sit amet erat ac consequat. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat luctus sem, non molestie 
-            mi adipiscing in. Nulla rutrum, mi vel lacinia rutrum, tellus enim elementum sapien, 
-            vel mollis velit elit nec risus.
-        </p>
-    </div>
-</section>
+    <!-- featured content (optional) -->
+    <!--<section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@Page.Title.</h1>
+                <h2>Page Subtitle.</h2>
+            </hgroup>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>-->
 }
 
 <div id="vs-container" class="vs-container">
+
     <header class="vs-header">
         <h1>Sliding Triple View Layout <span>with Visible Adjoining Sections</span></h1>
         <ul class="vs-nav">
@@ -45,8 +35,8 @@
             <!-- ... -->
         </ul>
     </header>
-    <div class="vs-wrapper">
 
+    <div class="vs-wrapper">
         <section id="section-1">
             <div class="vs-content">
                 <!-- content -->
@@ -56,6 +46,6 @@
         <section id="section-2"><!-- ... --></section>
         <section id="section-3"><!-- ... --></section>
         <!-- ... -->
-
     </div>
+
 </div>
