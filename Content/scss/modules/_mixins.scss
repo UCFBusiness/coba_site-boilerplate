@@ -2,3 +2,27 @@
    Mixins
    ========================================================================== */
 
+@mixin table-base {
+    th {
+        text-align: center;
+        font-weight: bold;
+    }
+    td, th {padding: 2px;}
+}
+
+@mixin left($dist) {
+    float: left;
+    margin-left: $dist;
+}
+
+@mixin aligned($dist, $dir) {
+    float: $dir;
+    margin-left: $dist;
+}
+
+
+#data {
+    @include table-base;
+    @include left(10px);
+    @include aligned(10px, right);
+}

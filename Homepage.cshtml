@@ -4,7 +4,46 @@
 }
 
 @section Styles {
-    <!--<style> /*-- page-specific styles --*/ </style>-->
+    <!---->
+<style> /*-- page-specific styles --*/ 
+
+    #container {
+        max-width: 960px;
+        margin: 0 auto;
+        background: #ccc;
+        overflow: auto;
+        
+        border: 1px dashed blue;
+    }
+    
+    article {
+        width: 70%;
+        float: left;
+        background: #eee;
+        
+        border: 1px dashed red;
+    }
+    
+    aside {
+        width: 30%;
+        float: left;
+        background: #bbb;
+        
+        border: 1px dashed red;
+    }
+    
+    @@media only screen and (max-width: 480px) {
+        #container {
+            width: 100%;
+            background: #aaa;
+        }
+    
+        section, aside {
+            width: 100%;
+        }
+    }
+    
+</style>
 }
 
 @section featured {
@@ -21,28 +60,33 @@
 </section>
 }
 
-<article>
-    <p>
-        Use this area to provide additional information.
-    </p>
 
-    <p>
-        Use this area to provide additional information.
-    </p>
+<div id="container">
 
-    <p>
-        Use this area to provide additional information.
-    </p>
-</article>
+    <aside>
+        <h3>Aside Title</h3>
+        <p>
+            Use this area to provide additional information.
+        </p>
+        <ul>
+            <li><a href="~/">Home</a></li>
+            <li><a href="~/About">About</a></li>
+            <li><a href="~/Contact">Contact</a></li>
+        </ul>
+    </aside>
 
-<aside>
-    <h3>Aside Title</h3>
-    <p>
-        Use this area to provide additional information.
-    </p>
-    <ul>
-        <li><a href="~/">Home</a></li>
-        <li><a href="~/About">About</a></li>
-        <li><a href="~/Contact">Contact</a></li>
-    </ul>
-</aside>
+    <article>
+        <p>
+            Use this area to provide additional information.
+        </p>
+
+        <p>
+            Use this area to provide additional information.
+        </p>
+
+        <p>
+            Use this area to provide additional information.
+        </p>
+    </article>
+
+</div>

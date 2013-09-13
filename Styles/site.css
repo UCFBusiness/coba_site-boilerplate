@@ -1,492 +1,4 @@
 /* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/* line 19, ../Content/scss/boilerplate/_boilerplate.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
-  display: block;
-}
-
-/* line 20, ../Content/scss/boilerplate/_boilerplate.scss */
-audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-/* line 21, ../Content/scss/boilerplate/_boilerplate.scss */
-audio:not([controls]) {
-  display: none;
-}
-
-/* line 22, ../Content/scss/boilerplate/_boilerplate.scss */
-[hidden] {
-  display: none;
-}
-
-/* =============================================================================
-   Base
-   ========================================================================== */
-/* line 33, ../Content/scss/boilerplate/_boilerplate.scss */
-html {
-  font-size: 100%;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-/* line 35, ../Content/scss/boilerplate/_boilerplate.scss */
-body {
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.231;
-}
-
-/* line 37, ../Content/scss/boilerplate/_boilerplate.scss */
-body, button, input, select, textarea {
-  font-family: sans-serif;
-  color: #222;
-}
-
-/* Uncomment these if you do want to customize the selection highlight
- *::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
- *::selection { background: #fe57a1; color: #fff; text-shadow: none; }
- */
-/* =============================================================================
-   Links
-   ========================================================================== */
-/* line 53, ../Content/scss/boilerplate/_boilerplate.scss */
-a {
-  color: #00e;
-}
-
-/* line 54, ../Content/scss/boilerplate/_boilerplate.scss */
-a:visited {
-  color: #551a8b;
-}
-
-/* line 55, ../Content/scss/boilerplate/_boilerplate.scss */
-a:hover {
-  color: #06e;
-}
-
-/* line 56, ../Content/scss/boilerplate/_boilerplate.scss */
-a:focus {
-  outline: thin dotted;
-}
-
-/* line 59, ../Content/scss/boilerplate/_boilerplate.scss */
-a:hover, a:active {
-  outline: 0;
-}
-
-/* =============================================================================
-   Typography
-   ========================================================================== */
-/* line 66, ../Content/scss/boilerplate/_boilerplate.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/* line 68, ../Content/scss/boilerplate/_boilerplate.scss */
-b, strong {
-  font-weight: bold;
-}
-
-/* line 70, ../Content/scss/boilerplate/_boilerplate.scss */
-blockquote {
-  margin: 1em 40px;
-}
-
-/* line 72, ../Content/scss/boilerplate/_boilerplate.scss */
-dfn {
-  font-style: italic;
-}
-
-/* line 74, ../Content/scss/boilerplate/_boilerplate.scss */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/* line 76, ../Content/scss/boilerplate/_boilerplate.scss */
-ins {
-  background: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-/* line 78, ../Content/scss/boilerplate/_boilerplate.scss */
-mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-/* line 81, ../Content/scss/boilerplate/_boilerplate.scss */
-pre, code, kbd, samp {
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
-
-/* line 84, ../Content/scss/boilerplate/_boilerplate.scss */
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-/* line 86, ../Content/scss/boilerplate/_boilerplate.scss */
-q {
-  quotes: none;
-}
-
-/* line 87, ../Content/scss/boilerplate/_boilerplate.scss */
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-/* line 89, ../Content/scss/boilerplate/_boilerplate.scss */
-small {
-  font-size: 85%;
-}
-
-/* line 92, ../Content/scss/boilerplate/_boilerplate.scss */
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 93, ../Content/scss/boilerplate/_boilerplate.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 94, ../Content/scss/boilerplate/_boilerplate.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* =============================================================================
-   Lists
-   ========================================================================== */
-/* line 101, ../Content/scss/boilerplate/_boilerplate.scss */
-ul, ol {
-  margin: 1em 0;
-  padding: 0 0 0 40px;
-}
-
-/* line 102, ../Content/scss/boilerplate/_boilerplate.scss */
-dd {
-  margin: 0 0 0 40px;
-}
-
-/* line 103, ../Content/scss/boilerplate/_boilerplate.scss */
-nav ul, nav ol {
-  list-style: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
-/* line 113, ../Content/scss/boilerplate/_boilerplate.scss */
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
-}
-
-/* line 117, ../Content/scss/boilerplate/_boilerplate.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* =============================================================================
-   Figures
-   ========================================================================== */
-/* line 124, ../Content/scss/boilerplate/_boilerplate.scss */
-figure {
-  margin: 0;
-}
-
-/* =============================================================================
-   Forms
-   ========================================================================== */
-/* line 131, ../Content/scss/boilerplate/_boilerplate.scss */
-form {
-  margin: 0;
-}
-
-/* line 132, ../Content/scss/boilerplate/_boilerplate.scss */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 135, ../Content/scss/boilerplate/_boilerplate.scss */
-label {
-  cursor: pointer;
-}
-
-/* line 140, ../Content/scss/boilerplate/_boilerplate.scss */
-legend {
-  border: 0;
-  *margin-left: -7px;
-  padding: 0;
-}
-
-/* line 146, ../Content/scss/boilerplate/_boilerplate.scss */
-button, input, select, textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-/* line 151, ../Content/scss/boilerplate/_boilerplate.scss */
-button, input {
-  line-height: normal;
-  *overflow: visible;
-}
-
-/* line 155, ../Content/scss/boilerplate/_boilerplate.scss */
-table button, table input {
-  *overflow: auto;
-}
-
-/* line 160, ../Content/scss/boilerplate/_boilerplate.scss */
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-
-/* line 164, ../Content/scss/boilerplate/_boilerplate.scss */
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-}
-
-/* line 165, ../Content/scss/boilerplate/_boilerplate.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-/* line 166, ../Content/scss/boilerplate/_boilerplate.scss */
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/* line 170, ../Content/scss/boilerplate/_boilerplate.scss */
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* line 175, ../Content/scss/boilerplate/_boilerplate.scss */
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
-
-/* line 179, ../Content/scss/boilerplate/_boilerplate.scss */
-input:invalid, textarea:invalid {
-  background-color: #f0dddd;
-}
-
-/* =============================================================================
-   Tables
-   ========================================================================== */
-/* line 186, ../Content/scss/boilerplate/_boilerplate.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 187, ../Content/scss/boilerplate/_boilerplate.scss */
-td {
-  vertical-align: top;
-}
-
-/* ==|== primary styles ===================================================== */
-/* ========================================================================== */
-/* line 1, ../Content/scss/boilerplate/_primary_styles.scss */
-html, body, .container {
-  height: 100%;
-}
-
-/*remove if not used. - locks desktop screen and removes scrollbars
-.js {
-    overflow: hidden;
-}*/
-/* line 12, ../Content/scss/boilerplate/_primary_styles.scss */
-body {
-  /* Create a page-wide stacking context 
-  (so that negative margins work as you expect) */
-  position: relative;
-  z-index: 0;
-}
-
-/* line 19, ../Content/scss/boilerplate/_primary_styles.scss */
-.container {
-  position: relative;
-  z-index: 1;
-}
-
-/* ==|== non-semantic helper classes ======================================== */
-/* ========================================================================== */
-/* line 2, ../Content/scss/boilerplate/_helper_classes.scss */
-.ir {
-  display: block;
-  border: 0;
-  text-indent: -999em;
-  overflow: hidden;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  text-align: left;
-  direction: ltr;
-}
-
-/* line 3, ../Content/scss/boilerplate/_helper_classes.scss */
-.ir br {
-  display: none;
-}
-
-/* line 7, ../Content/scss/boilerplate/_helper_classes.scss */
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-/* line 11, ../Content/scss/boilerplate/_helper_classes.scss */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/* line 15, ../Content/scss/boilerplate/_helper_classes.scss */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/* line 19, ../Content/scss/boilerplate/_helper_classes.scss */
-.invisible {
-  visibility: hidden;
-}
-
-/* line 23, ../Content/scss/boilerplate/_helper_classes.scss */
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-
-/* line 24, ../Content/scss/boilerplate/_helper_classes.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 25, ../Content/scss/boilerplate/_helper_classes.scss */
-.clearfix {
-  zoom: 1;
-}
-
-/* ==|== print styles ======================================================= */
-/* ========================================================================== */
-@media print {
-  /* line 2, ../Content/scss/boilerplate/_print_styles.scss */
-  * {
-    background: transparent !important;
-    color: black !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important;
-  }
-
-  /* Black prints faster: h5bp.com/s */
-  /* line 3, ../Content/scss/boilerplate/_print_styles.scss */
-  a, a:visited {
-    text-decoration: underline;
-  }
-
-  /* line 4, ../Content/scss/boilerplate/_print_styles.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  /* line 5, ../Content/scss/boilerplate/_print_styles.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* line 6, ../Content/scss/boilerplate/_print_styles.scss */
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: "";
-  }
-
-  /* Don't show links for images, or javascript/internal links */
-  /* line 7, ../Content/scss/boilerplate/_print_styles.scss */
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /* line 8, ../Content/scss/boilerplate/_print_styles.scss */
-  thead {
-    display: table-header-group;
-  }
-
-  /* h5bp.com/t */
-  /* line 9, ../Content/scss/boilerplate/_print_styles.scss */
-  tr, img {
-    page-break-inside: avoid;
-  }
-
-  /* line 10, ../Content/scss/boilerplate/_print_styles.scss */
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-}
-
-  /* line 12, ../Content/scss/boilerplate/_print_styles.scss */
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* line 13, ../Content/scss/boilerplate/_print_styles.scss */
-  h2, h3 {
-    page-break-after: avoid;
-  }
-}
-/* =============================================================================
    Back to top link/image
    ========================================================================== */
 /* line 5, ../Content/scss/partials/_back-to-top.scss */
@@ -508,46 +20,114 @@ body {
   background-color: rgba(135, 135, 135, 0.5);
 }
 
+/* =============================================================================
+   UCF Header
+   ========================================================================== */
+/* line 5, ../Content/scss/partials/_ucf-header.scss */
+#UCFHBHeader {
+  background: black url("../../images/ucfbar/header_border.png") repeat-x;
+  background-position: bottom left;
+  padding: 4px 0 2px 0;
+  /* to treat the bg as a border +2px to bottom padding*/
+  height: 36px;
+  /**/
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-width: 0 0 1px;
+  top: 0;
+  z-index: 1030;
+}
+
+/* line 21, ../Content/scss/partials/_ucf-header.scss */
+#UCFHBHeader #UCFtitle {
+  float: left;
+}
+
+/* line 25, ../Content/scss/partials/_ucf-header.scss */
+#UCFHBHeader #UCFtitle a {
+  background: url("../../images/ucfbar/ucflogo.png") no-repeat;
+  background-position: top left;
+  width: 318px;
+  height: 29px;
+  display: block;
+}
+
+/* line 33, ../Content/scss/partials/_ucf-header.scss */
+#UCFHBHeader #UCFtitle a span.UCFHBText {
+  display: none;
+}
+
+/* line 37, ../Content/scss/partials/_ucf-header.scss */
+#UCFHBHeader label {
+  text-indent: -900px;
+  color: #FFF;
+  float: left;
+}
+
+/* line 43, ../Content/scss/partials/_ucf-header.scss */
+#UCFHBHeader #UCFHBUni_links {
+  margin-left: 75px;
+  float: left;
+}
+
+/* line 48, ../Content/scss/partials/_ucf-header.scss */
+#UCFHBHeader .alert-message {
+  width: 580px;
+  margin: 0 auto;
+  display: none;
+}
+
 /* Mobile Layout: 480px and below. */
-/* line 16, ../Content/scss/site.scss */
+/* line 17, ../Content/scss/site.scss */
 body {
   color: blue;
 }
 
 /* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
-  /* line 21, ../Content/scss/site.scss */
+  /* line 22, ../Content/scss/site.scss */
   body {
     color: red;
   }
 }
 /* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 1025px) {
-  /* line 28, ../Content/scss/site.scss */
+  /* line 29, ../Content/scss/site.scss */
   body {
     color: #333;
   }
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* Development Only Border CSS - delete when done */
-/* line 38, ../Content/scss/site.scss */
+/* Jumbotron CSS */
+/* Move down content because we have a fixed navbar that is 50px tall */
+/* line 40, ../Content/scss/site.scss */
+body {
+  padding-top: 36px;
+  /* original size was 50px*/
+  padding-bottom: 20px;
+}
+
+/* Development Only Border CSS - delete when done 
+-------------------------------------------------- */
+/* line 49, ../Content/scss/site.scss */
 .borderline {
   border: 1px dashed red;
 }
 
-/* line 42, ../Content/scss/site.scss */
+/* line 53, ../Content/scss/site.scss */
 .centerline, .content-wrapper {
   border: 1px dashed blue;
 }
 
-/* line 46, ../Content/scss/site.scss */
+/* line 57, ../Content/scss/site.scss */
 .container {
   border: 1px dashed green;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
-/* line 55, ../Content/scss/site.scss */
+/* line 66, ../Content/scss/site.scss */
 html,
 body {
   height: 100%;
@@ -555,7 +135,7 @@ body {
 }
 
 /* Wrapper for page content to push down footer */
-/* line 61, ../Content/scss/site.scss */
+/* line 72, ../Content/scss/site.scss */
 #wrap {
   min-height: 100%;
   height: auto !important;
@@ -567,7 +147,7 @@ body {
 }
 
 /* Set the fixed height of the footer here */
-/* line 72, ../Content/scss/site.scss */
+/* line 83, ../Content/scss/site.scss */
 #footer {
   height: 60px;
   background-color: #f5f5f5;
@@ -576,94 +156,86 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
-/* line 82, ../Content/scss/site.scss */
+/* line 93, ../Content/scss/site.scss */
 #wrap > .container {
   padding: 60px 15px 0;
 }
 
-/* line 85, ../Content/scss/site.scss */
+/* line 96, ../Content/scss/site.scss */
 .container .credit {
   margin: 20px 0;
 }
 
-/* line 89, ../Content/scss/site.scss */
+/* line 100, ../Content/scss/site.scss */
 #footer > .container {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 94, ../Content/scss/site.scss */
+/* line 105, ../Content/scss/site.scss */
 code {
   font-size: 80%;
 }
 
-/* Jumbotron CSS */
-/* Move down content because we have a fixed navbar that is 50px tall */
-/* line 102, ../Content/scss/site.scss */
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-
 /* ordered list */
-/* line 109, ../Content/scss/site.scss */
+/* line 111, ../Content/scss/site.scss */
 ol.round {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 114, ../Content/scss/site.scss */
+/* line 116, ../Content/scss/site.scss */
 ol.round li {
   margin: 25px 0;
   padding-left: 45px;
 }
 
-/* line 119, ../Content/scss/site.scss */
+/* line 121, ../Content/scss/site.scss */
 ol.round li.zero {
   background: url("../Images/orderedList0.png") no-repeat;
 }
 
-/* line 123, ../Content/scss/site.scss */
+/* line 125, ../Content/scss/site.scss */
 ol.round li.one {
   background: url("../Images/orderedList1.png") no-repeat;
 }
 
-/* line 127, ../Content/scss/site.scss */
+/* line 129, ../Content/scss/site.scss */
 ol.round li.two {
   background: url("../Images/orderedList2.png") no-repeat;
 }
 
-/* line 131, ../Content/scss/site.scss */
+/* line 133, ../Content/scss/site.scss */
 ol.round li.three {
   background: url("../Images/orderedList3.png") no-repeat;
 }
 
-/* line 135, ../Content/scss/site.scss */
+/* line 137, ../Content/scss/site.scss */
 ol.round li.four {
   background: url("../Images/orderedList4.png") no-repeat;
 }
 
-/* line 139, ../Content/scss/site.scss */
+/* line 141, ../Content/scss/site.scss */
 ol.round li.five {
   background: url("../Images/orderedList5.png") no-repeat;
 }
 
-/* line 143, ../Content/scss/site.scss */
+/* line 145, ../Content/scss/site.scss */
 ol.round li.six {
   background: url("../Images/orderedList6.png") no-repeat;
 }
 
-/* line 147, ../Content/scss/site.scss */
+/* line 149, ../Content/scss/site.scss */
 ol.round li.seven {
   background: url("../Images/orderedList7.png") no-repeat;
 }
 
-/* line 151, ../Content/scss/site.scss */
+/* line 153, ../Content/scss/site.scss */
 ol.round li.eight {
   background: url("../Images/orderedList8.png") no-repeat;
 }
 
-/* line 155, ../Content/scss/site.scss */
+/* line 157, ../Content/scss/site.scss */
 ol.round li.nine {
   background: url("../Images/orderedList9.png") no-repeat;
 }

@@ -2,17 +2,17 @@
 console.log( "START: main.js" );
 
 require.config({
-    //baseUrl: './scripts',
     waitSeconds: 10,
     paths: {
+        'waypoint': 'http://scripts.bus.ucf.edu/cdn/js/libs/waypoints.min',
+        'fittext': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.fittext',
         'easing': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.easing.min',
         'sticky': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.sticky-kit.min',
-        'resize': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.debouncedresize',
-        'waypoint': 'http://scripts.bus.ucf.edu/cdn/js/libs/waypoints.min'
+        'resize': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.debouncedresize'
     }
 });
 
-require([], function () {
+require(['fittext', 'resize', 'waypoint'], function () {
 
     // http://stackoverflow.com/questions/3698200/window-onload-vs-document-ready
     // http://4loc.wordpress.com/2009/04/28/documentready-vs-windowload/
@@ -23,6 +23,10 @@ require([], function () {
     //---------------------------------------------------
 
     $(document).ready(function () {
+
+        //----- Font Sizes-------------------------------
+        $('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '14px' });
+        //-----------------------------------------------
 
         //----- fade out fixed menu----------------------
         var nav = $('#nav');
