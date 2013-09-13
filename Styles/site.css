@@ -545,73 +545,125 @@ body {
   border: 1px dashed green;
 }
 
+/* Sticky footer styles
+-------------------------------------------------- */
+/* line 55, ../Content/scss/site.scss */
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+/* line 61, ../Content/scss/site.scss */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+/* line 72, ../Content/scss/site.scss */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+/* line 82, ../Content/scss/site.scss */
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+
+/* line 85, ../Content/scss/site.scss */
+.container .credit {
+  margin: 20px 0;
+}
+
+/* line 89, ../Content/scss/site.scss */
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 94, ../Content/scss/site.scss */
+code {
+  font-size: 80%;
+}
+
 /* Jumbotron CSS */
 /* Move down content because we have a fixed navbar that is 50px tall */
-/* line 53, ../Content/scss/site.scss */
+/* line 102, ../Content/scss/site.scss */
 body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
 
 /* ordered list */
-/* line 60, ../Content/scss/site.scss */
+/* line 109, ../Content/scss/site.scss */
 ol.round {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 65, ../Content/scss/site.scss */
+/* line 114, ../Content/scss/site.scss */
 ol.round li {
   margin: 25px 0;
   padding-left: 45px;
 }
 
-/* line 70, ../Content/scss/site.scss */
+/* line 119, ../Content/scss/site.scss */
 ol.round li.zero {
   background: url("../Images/orderedList0.png") no-repeat;
 }
 
-/* line 74, ../Content/scss/site.scss */
+/* line 123, ../Content/scss/site.scss */
 ol.round li.one {
   background: url("../Images/orderedList1.png") no-repeat;
 }
 
-/* line 78, ../Content/scss/site.scss */
+/* line 127, ../Content/scss/site.scss */
 ol.round li.two {
   background: url("../Images/orderedList2.png") no-repeat;
 }
 
-/* line 82, ../Content/scss/site.scss */
+/* line 131, ../Content/scss/site.scss */
 ol.round li.three {
   background: url("../Images/orderedList3.png") no-repeat;
 }
 
-/* line 86, ../Content/scss/site.scss */
+/* line 135, ../Content/scss/site.scss */
 ol.round li.four {
   background: url("../Images/orderedList4.png") no-repeat;
 }
 
-/* line 90, ../Content/scss/site.scss */
+/* line 139, ../Content/scss/site.scss */
 ol.round li.five {
   background: url("../Images/orderedList5.png") no-repeat;
 }
 
-/* line 94, ../Content/scss/site.scss */
+/* line 143, ../Content/scss/site.scss */
 ol.round li.six {
   background: url("../Images/orderedList6.png") no-repeat;
 }
 
-/* line 98, ../Content/scss/site.scss */
+/* line 147, ../Content/scss/site.scss */
 ol.round li.seven {
   background: url("../Images/orderedList7.png") no-repeat;
 }
 
-/* line 102, ../Content/scss/site.scss */
+/* line 151, ../Content/scss/site.scss */
 ol.round li.eight {
   background: url("../Images/orderedList8.png") no-repeat;
 }
 
-/* line 106, ../Content/scss/site.scss */
+/* line 155, ../Content/scss/site.scss */
 ol.round li.nine {
   background: url("../Images/orderedList9.png") no-repeat;
 }
