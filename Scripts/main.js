@@ -4,9 +4,10 @@ console.log( "START: main.js" );
 require.config({
     waitSeconds: 10,
     paths: {
-        'waypoint': 'http://scripts.bus.ucf.edu/cdn/js/libs/waypoints.min',
         'fittext': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.fittext',
+        'waypoint': 'http://scripts.bus.ucf.edu/cdn/js/libs/waypoints.min',
         'easing': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.easing.min',
+        'equalh': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.equalheight',
         'sticky': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.sticky-kit.min',
         'resize': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.debouncedresize'
     }

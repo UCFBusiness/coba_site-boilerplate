@@ -11,24 +11,20 @@
 @import "partials/back-to-top";
 @import "partials/ucf-header";
 @import "partials/primary_styles";
+@import "partials/grids";
 
 // Media-Queries
 /* Mobile Layout: 480px and below. */
 body{color: blue;}
-@import "partials/small/tables";
-
 
 /* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
     body{color: red;}
-    @import "partials/medium/tables";
 }
-
 
 /* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 1025px) {
     body{color: #333;}
-    @import "partials/large/tables";
 }
 
 
@@ -39,8 +35,7 @@ body{color: blue;}
 /* Move down content because we have a fixed navbar that is 50px tall */
 
 body {
-    padding-top: 36px; /* original size was 50px*/
-    padding-bottom: 20px;
+    /*padding-top: 36px;  original size was 50px*/
 }
 
 

@@ -46,7 +46,7 @@
         <![endif]-->
 
         @*<img src="..." class="img-responsive" alt="Responsive image">*@
-
+        <!-- Wrap all page content here -->
         <div id="wrap" >
 
             <header>
@@ -63,46 +63,10 @@
                         </div>
                         <!--Alert Message-->
                         <div class="alert-message"><p>Well done! You successfully read this alert message.</p></div>
-
-                        @*<div id="header">
-				            <a href="#main_menu"></a>
-				            <span>College of Business</span>
-				            <a href="#menu-right" class="friends right"></a>
-			            </div>*@
-
                     </div><!-- /UCFHBHeader -->
 
-                    @*<div class="float-left">
-                        <p class="site-title"><a href="~/">College of Business</a></p>
-                    </div>
-                    <div class="float-right">
-                        <section id="login">
-                            @if (WebSecurity.IsAuthenticated) {
-                                <text>
-                                    Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
-                                    <form id="logoutForm" action="~/Account/Logout" method="post">
-                                        @AntiForgery.GetHtml()
-                                        <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
-                                    </form>
-                                </text>
-                            } else {
-                                <ul>
-                                    <li><a href="~/Account/Register">Register</a></li>
-                                    <li><a href="~/Account/Login">Log in</a></li>
-                                </ul>
-                            }
-                        </section>
-                        <nav>
-                            <ul id="menu">
-                                <li><a href="~/">Student</a></li>
-                                <li><a href="~/About">Faculty</a></li>
-                                <li><a href="~/Contact">Alumni</a></li>
-                            </ul>
-                        </nav>
-                    </div>*@
-
                     <!-- NavBar Sample -->
-                    <div id="nav" class="navbar navbar-default" style="background: none;" role="navigation">
+                    @*<div id="nav" class="navbar navbar-default" style="background: none;" role="navigation">
                         <div class="container">
 
                             <div class="navbar-header">
@@ -116,7 +80,7 @@
 
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav">
-                                    @*<li class="active"><a href="#">Home</a></li>*@
+                                    <li class="active"><a href="#">Home</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Discover <b class="caret"></b></a>
                                         <ul class="dropdown-menu">
@@ -149,11 +113,16 @@
                             </div><!--/.navbar-collapse -->
 
                         </div>
-                    </div><!--/navbar -->
+                    </div>*@<!--/navbar -->
+
+                    <!-- mobile navigation menu -->
+                    @*<div id="header">
+				        <a href="#main_menu"></a>
+				        <span>College of Business</span>
+				        <a href="#menu-right" class="friends right"></a>
+			        </div>*@
 
                 </div>
-
-                <div><!-- for development only --><label id="message" style="display: block;"></label><!-- for development only --></div>
             </header>
 
             <div id="content">
@@ -161,21 +130,53 @@
                 <section class="content-wrapper main-content clearfix">
                     @RenderBody()
                 </section>
+                <!-- for development only --><div><label id="message" style="display: block;"></label></div><!-- for development only -->
             </div>
 
-            @*<nav>
-                <ul id="oe_menu" class="oe_menu">
-                    <li><a href="">Activate Overlay</a></li>
-                </ul>
-            </nav>*@
-
-            <footer>
-                <div class="content-wrapper">
-                    <div class="float-left text-muted credit"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
-                </div>
-            </footer>
-
         </div>
+
+        <footer>
+            <div class="content-wrapper">
+                <!--BEGIN-->
+                <ul class="clearfix">
+                    <li>
+                        <p class="home">Address</p>
+
+                        <a href="#">un-styled ink</i></a>
+                    </li>
+                    <li>
+                        <p class="services">Contact</p>
+
+                        <ul>
+                            <li><a href="#">Link to page.</a></li>
+                            <li><a href="#">Link to page.</a></li>
+                            <li><a href="#">Link to page.</a></li>
+                            <li><a href="#">Link to page.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="social">Follow Us</p>
+
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="qlinks">Quick Links</p>
+
+                        <ul>
+                            <li><a href="#">Link to page.</a></li>
+                            <li><a href="#">Link to page.</a></li>
+                            <li><a href="#">Link to page.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--FINIS-->
+                <div class="float-left text-muted credit"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
+            </div>
+        </footer>
 
         <a href="#" class="back-to-top">&#x25B2; Top </a>
         
@@ -198,6 +199,7 @@
         <script src="~/content/js/jquery.fittext.js"></script>
         <!---->
 		<script src="~/content/js/cbpFixedScrollLayout.min.js"></script>*@
+        <script src="~/scripts/holder.min.js"></script>
 
         <!--scripts test -->
         <script>

@@ -1,9 +1,16 @@
-.vs-content h5 {
-    font-weight: bold;
+
+/* =============================================================================
+   Main-Content
+   ========================================================================== */
+h5 {
+    font-weight: 700;
 }
 
-.vs-content .region {
-    padding-right: 10px;
-    float: left;
-    width: 90%;
+.main-content table td {
+    min-width: 50px;
 }
+
+.main-content table td:first-child {
+    width: 30px;
+}
+

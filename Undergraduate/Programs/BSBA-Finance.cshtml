@@ -1,6 +1,6 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Bachelors of Science in Business Administration - Finance";
+    Page.Title = "Bachelors of Science in Business Administration";
 }
 
 @section Styles {
@@ -12,29 +12,34 @@
     </style>
 }
 
+
+
 @section featured {
 <section class="featured">
     <div class="content-wrapper">
-
-        
-        
+        <hgroup class="title">
+            <h2>@Page.Title</h2>
+            <h1>Finance</h1>
+        </hgroup>
         <div>
+            <img data-src="holder.js/100%x180" alt="...">
             <h3>The Finance Major</h3>
+
+
+            Envision an education where hands-on guidance from award-winning faculty is a given. Where classes aren’t just classes, but components of an innovative curriculum that teaches the science, ethics, and art of good business.
+
+
             <p>The finance major is designed to provide the student with a broad knowledge in business finance, 
                 investments, financial institutions, international finance, risk management and insurance, 
                 and real estate. The program provides the student with the theoretical background and tools 
                 of analysis required for making effective financial decisions.</p>
         </div>
-
         <div>
+            <img data-src="holder.js/100%x180" alt="...">
             <h3>The Finance Student</h3>
-            <p>Envision an education where hands-on guidance from award-winning faculty is a given. 
-                Where classes aren’t just classes, but components of an innovative curriculum that teaches 
-                the science, ethics, and art of good business.</p>
             <p>The study of finance prepares the student for careers in business financial management. 
                 Students that major in finance are sought by both financial and non-financial firms.</p>
         </div>
-
     </div>
 </section>
 }
@@ -42,29 +47,23 @@
 <div id="hs-container" class="hs-container">
 
     <aside class="hs-menu" id="hs-menu">
-        <hgroup class="title">
-            <h1>@Page.Title</h1>
-            <h2>H2 title header</h2>
-        </hgroup>
         <nav id="menu" data-scrollspy="scrollspy">
-            <div>
-                <ul class="cl-effect-10">
-                    <li><a href="#curricular-learning-goals" data-hover="Curricular Learning Goals" class="cbp-fbcurrent"><span>Curricular Learning Goals</span></a></li>
-                    <li><a href="#core-business-courses" data-hover="Core Business Courses"><span>Core Business Courses</span></a></li>
-                    <li><a href="#major-required-courses" data-hover="Major Required Courses"><span>Major Required Courses</span></a></li>
-                    <li><a href="#plan-of-study" data-hover="Plan of Study"><span>Plan of Study</span></a></li>
-                    <li><a href="#internships" data-hover="Internships"><span>Internships</span></a></li>
-                    <li><a href="#careers" data-hover="Careers"><span>Careers</span></a></li>
-                    <li><a href="#certificates" data-hover="Certificates"><span>Certificates</span></a></li>
-                </ul>
-            </div>
+            <ul class="cl-effect-10">
+                <li><a href="#curricular-learning-goals" data-hover="Curricular Learning Goals" class="cbp-fbcurrent"><span>Curricular Learning Goals</span></a></li>
+                <li><a href="#core-business-courses" data-hover="Core Business Courses"><span>Core Business Courses</span></a></li>
+                <li><a href="#major-required-courses" data-hover="Major Required Courses"><span>Major Required Courses</span></a></li>
+                <li><a href="#plan-of-study" data-hover="Plan of Study"><span>Plan of Study</span></a></li>
+                <li><a href="#internships" data-hover="Internships"><span>Internships</span></a></li>
+                <li><a href="#careers" data-hover="Careers"><span>Careers</span></a></li>
+                <li><a href="#certificates" data-hover="Certificates"><span>Certificates</span></a></li>
+            </ul>
         </nav>
     </aside>
 
     <section id="curricular-learning-goals">
-        <div class="vs-content">
+        <div class="container">
 		    <h2>Curricular Learning Goals</h2>
-		    <div class="col">
+		    <div>
 
                 <p>UCF Finance graduates will be able to: </p>
 
@@ -79,13 +78,15 @@
                 </ol>
 
                 <h4>Critical Thinking Outcomes</h4>
-                <p>Demonstrate critical thinking skills related to financial analysis by effectively evaluating financial data and using the results to make corporate financial or investment decisions.</p>
+                <p>Demonstrate critical thinking skills related to financial analysis by effectively evaluating financial data and using the results 
+                    to make corporate financial or investment decisions.</p>
 
                 <h4>Communication Outcomes</h4>
                 <p>Demonstrate effective written communication skills by producing written financial analyses that are organized, clear, and logical.</p>
 
                 <h4>Assessment of Finance Outcomes</h4>
                 <p>These outcomes will be assessed using a variety of assessment methods, including:</p>
+
                 <ul>
                     <li>Exam questions</li>
                     <li>Written assignments</li>
@@ -97,288 +98,303 @@
     </section>
 
     <section id="core-business-courses">
-        <div class="vs-content">
+        <div class="container">
 		    <h2>Core Business Courses</h2>
-		    <div class="col">
+		    <div>
 
                 <h4>Business Core (36 credits)</h4>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>GEB</td>
-                            <td>3031</td>
-                            <td>Cornerstone Lecture (1st or 2nd term Admitted)</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Admitted to the College of Business, Junior Standing CR:GEB3031L)</td></tr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5><strong>GEB 3031</strong> Cornerstone Lecture <br><small>(1st or 2nd term Admitted)</small></h5>
+                        <small>
+                            <em>(PR: Admitted to the College of Business, Junior Standing CR:GEB3031L)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><strong>GEB 3031L</strong> Cornerstone Lab <br><small>(1st or 2nd term Admitted)</small></h5>
+                        <small>
+                            <em>(PR: Admitted to the College of Business upon completion of business prerequisites CR: GEB 3031)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><strong>MAR 3023</strong> Marketing</h5>
+                        <small>
+                            <em>(PR: Admitted to UCF)</em>
+                        </small><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5><strong>GEB 3375</strong> Intro to International Business</h5>
+                        <small>
+                            <em>(PR: ACG 2021, ACG 2071, ECO 2013, ECO 2023 and Junior Standing)</em>
+                        </small><br><br>
+                    </div>
 
-                        <tr>
-                            <td>GEB</td>
-                            <td>3031L</td>
-                            <td>Cornerstone Lab (1st or 2nd term Admitted)</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Admitted to the College of Business upon completion of business prerequisites CR: GEB 3031)</td></tr>
+                    <div class="col-md-4">
+                        <h5><strong>BUL 3130</strong> Legal &amp; Ethical Environments of Business</h5>
+                        <small>
+                            <em>(PR: Admitted to the College of Business upon completion of business prerequisites, Junior Standing)</em>
+                        </small><br><br>
+                    </div>
 
-                        <tr>
-                            <td>MAR</td>
-                            <td>3023</td>
-                            <td>Marketing</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Admitted to UCF)</td></tr>
+                    <div class="col-md-4">
+                        <h5><strong>ECO 3411</strong> Quantitative Business Tool II</h5>
+                        <small>
+                            <em>(PR: Admitted to the College of Business, ECO 2013, ECO 2023 & ECO 3401, Junior Standing)</em>
+                        </small><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5><strong>FIN 3403</strong> Business Finance**</h5>
+                        <small>
+                            <em>(PR: ACG 2021, ECO 2023 and Junior Standing)</em>
+                        </small><br><br>
+                    </div>
 
-                        <tr>
-                            <td>GEB</td>
-                            <td>3375</td>
-                            <td>Intro to International Business</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: ACG 2021, ACG 2071, ECO 2013, ECO 2023 and Junior Standing)</td></tr>
+                    <div class="col-md-4">
+                        <h5><strong>MAN 3025</strong> Management of Organization</h5>
+                        <small>
+                            <em>(PR: Admitted to the College of Business upon completion of business prerequisites, Junior Standing)</em>
+                        </small><br><br>
+                    </div>
 
-                        <tr>
-                            <td>BUL</td>
-                            <td>3130</td>
-                            <td>Legal & Ethical Environments of Business</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Admitted to the College of Business upon completion of business prerequisites, Junior Standing)</td></tr>
-
-                        <tr>
-                            <td>ECO</td>
-                            <td>3411</td>
-                            <td>Quantitative Business Tool II</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Admitted to the College of Business, ECO 2013, ECO 2023 & ECO 3401, Junior Standing)</td></tr>
-
-                        <tr>
-                            <td>FIN</td>
-                            <td>3403</td>
-                            <td>Business Finance**</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: ACG 2021, ECO 2023 and Junior Standing)</td></tr>
-
-                        <tr>
-                            <td>MAN</td>
-                            <td>3025</td>
-                            <td>Management of Organization</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Admitted to the College of Business upon completion of business prerequisites, Junior Standing)</td></tr>
-
-                        <tr>
-                            <td>MAR</td>
-                            <td>3203</td>
-                            <td>Supply Chain Management</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Admission to the College of Business or completion of ECO3401 with a "C" or better)</td></tr>
-                    </tbody>
-                </table>
+                    <div class="col-md-4">
+                        <h5><strong>MAR 3203</strong> Supply Chain Management</h5>
+                        <small>
+                            <em>(PR: Admission to the College of Business or completion of ECO3401 with a "C" or better)</em>
+                        </small><br><br>
+                    </div>
+                </div>
 
 		    </div>
 	    </div>
     </section>
 
     <section id="required-major-courses">
-        <div class="vs-content">
+        <div class="container">
 		    <h2>Required Major Courses</h2>
-		    <div class="col">
+		    <div>
 
-                <p>Please Note: the information listed on the website is for the 2013 Catalog Year. 
+                <p class="note">Please Note: the information listed on the website is for the 2013 Catalog Year. 
                    Please refer to your degree audit if you are declared in an earlier Catalog Year.</p>
+                <p>&nbsp;</p>
 
-                <h4>Required Courses for all Finance Majors:</h4>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>FIN</td>
-                            <td>3303</td>
-                            <td>Financial Markets</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>3414</td>
-                            <td>Intermediate Corporate Finance</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>3504</td>
-                            <td>Investment Analysis</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>4453</td>
-                            <td>Financial Models</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3414 & FIN 3504)</td></tr>
-                    </tbody>
-                </table>
+                <h4>Required Courses for all Finance Majors</h4>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><strong>FIN 3303</strong> Financial Markets</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN 3414</strong> Intermediate Corporate Finance</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN 3504</strong> Investment Analysis</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN 4453</strong> Financial Models</h5>
+                        <small>
+                            <em>(PR: FIN 3414 & FIN 3504)</em>
+                        </small><br><br>
+                    </div>
+                </div>
 
-                <h4>Required Finance Electives – Choose two (2) courses from the list below:</h4>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>FIN</td>
-                            <td>3461</td>
-                            <td>Financial Statement Analysis</td>
-                        </tr>
-                        <tr><td colspan="3"> (PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>4324</td>
-                            <td>Commercial Bank Management</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3303)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>4514</td>
-                            <td>Portfolio Analysis & Management</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3303 & FIN 3504)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>4533</td>
-                            <td>Financial Derivatives</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3303 & FIN 3504)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>4604</td>
-                            <td>International Financial Management</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>4424</td>
-                            <td>Adv. Topics in Financial Management</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3414)</td></tr>
-                    </tbody>
-                </table>
+                <h4>Required Finance Electives <br><small>Choose two (2) courses from the list below</small></h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5><strong>FIN 3461</strong> Financial Statement Analysis</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><strong>FIN 4324</strong> Commercial Bank Management</h5>
+                        <small>
+                            <em>(PR: FIN 3303)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><strong>FIN 4514</strong> Portfolio Analysis &amp; Management</h5>
+                        <small>
+                            <em>(PR: FIN 3303 & FIN 3504)</em>
+                        </small><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5><strong>FIN 4533</strong> Financial Derivatives</h5>
+                        <small>
+                            <em>(PR: FIN 3303 & FIN 3504)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><strong>FIN 4604</strong> International Financial Management</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><strong>FIN 4424</strong> Adv. Topics in Financial Management</h5>
+                        <small>
+                            <em>(PR: FIN 3414)</em>
+                        </small><br><br>
+                    </div>
+                </div>
 
-                <h4>Required Restricted Finance Electives – Choose two (2) courses from the list below:</h4>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>ACG</td>
-                            <td>3131</td>
-                            <td>Intermediate Financial Accounting I</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: ACG 2071)</td></tr>
-                        <tr>
-                            <td>ACG</td>
-                            <td>3141</td>
-                            <td>Intermediate Financial Accounting II</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: ACG 3131)</td></tr>
-                        <tr>
-                            <td>ACG</td>
-                            <td>3361</td>
-                            <td>Cost Accounting I</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: ACG 2071)</td></tr>
-                        <tr>
-                            <td>TAX</td>
-                            <td>4001</td>
-                            <td>Taxation of Business Entites & Trans.</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: ACG 3131)</td></tr>
-                         <tr>
-                            <td>ECO</td>
-                            <td>4412</td>
-                            <td>Economics Statistics & Econometrics	</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: ECO 3411)</td></tr>
-                         <tr>
-                            <td>MAR</td>
-                            <td>3391</td>
-                            <td>Professional Selling</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: MAR 3023)</td></tr>
-                         <tr>
-                            <td>REE</td>
-                            <td>3043</td>
-                            <td>Fundamentals of Real Estate</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: JR Standing)</td></tr>
-                        <tr>
-                            <td>REE</td>
-                            <td>3433</td>
-                            <td>Real Estate Law	</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: JR Standing)</td></tr>
-                        <tr>
-                            <td>REE</td>
-                            <td>4103</td>
-                            <td>Real Estate Appraisal</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>REE</td>
-                            <td>4203</td>
-                            <td>Commercial Real Estate Finance</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>REE</td>
-                            <td>4204</td>
-                            <td>Residential Real Estate Finance</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>REE</td>
-                            <td>4303</td>
-                            <td>Real Estate Investment Analysis</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>REE</td>
-                            <td>4732</td>
-                            <td>Real Estate Development</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: FIN 3403)</td></tr>
-                        <tr>
-                            <td>REE</td>
-                            <td>4933</td>
-                            <td>Advanced Topics in Real Estate</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: REE 3043 & REE 3433)</td></tr>
-                        <tr>
-                            <td>GEB</td>
-                            <td>4374</td>
-                            <td>International Neg. & Trans</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Admitted to Finance)</td></tr>
-                        <tr>
-                            <td>FIN</td>
-                            <td>4941</td>
-                            <td>Internship</td>
-                        </tr>
-                        <tr><td colspan="3">(PR: Consent of Department)</td></tr>
-                    </tbody>
-                </table>
+                <h4>Required Restricted Finance Electives <br><small>Choose two (2) courses from the list below</small></h4>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><strong>ACG 3131</strong> Intermediate Financial Accounting I</h5>
+                        <small>
+                            <em>(PR: ACG 2071)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>ACG 3141</strong> Intermediate Financial Accounting II</h5>
+                        <small>
+                            <em>(PR: ACG 3131)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>ACG 3361</strong> Cost Accounting I</h5>
+                        <small>
+                            <em>(PR: ACG 2071)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>TAX 4001</strong> Taxation of Business Entites &amp; Trans.</h5>
+                        <small>
+                            <em>(PR: ACG 3131)</em>
+                        </small><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><strong>ECO 4412</strong> Economics Statistics &amp; Econometrics</h5>
+                        <small>
+                            <em>(PR: ECO 3411)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>MAR 3391</strong> Professional Selling</h5>
+                        <small>
+                            <em>(PR: MAR 3023)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>REE 3043</strong> Fundamentals of Real Estate</h5>
+                        <small>
+                            <em>(PR: JR Standing)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>REE 3433</strong> Real Estate Law</h5>
+                        <small>
+                            <em>(PR: JR Standing)</em>
+                        </small><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><strong>REE 4103</strong> Real Estate Appraisal</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>REE 4203</strong> Commercial Real Estate Finance</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>REE 4204</strong> Residential Real Estate Finance</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>REE 4303</strong> Real Estate Investment Analysis</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><strong>REE 4732</strong> Real Estate Development</h5>
+                        <small>
+                            <em>(PR: FIN 3403)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>REE 4933</strong> Advanced Topics in Real Estate</h5>
+                        <small>
+                            <em>(PR: REE 3043 & REE 3433)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>GEB 4374</strong> International Neg. &amp; Trans</h5>
+                        <small>
+                            <em>(PR: Admitted to Finance)</em>
+                        </small><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN 4941</strong> Internship</h5>
+                        <small>
+                            <em>(PR: Consent of Department)</em>
+                        </small><br><br>
+                    </div>
+                </div>
 
 		    </div>
 	    </div>
     </section>
 
     <section id="plan-of-study">
-        <div class="vs-content">
+        <div class="container">
 	        <h2>Recommended Course Sequence</h2>
-            <div class="col">
+            <div>
+
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
 
             </div>
         </div>
     </section>
 
     <section id="internships">
-        <div class="vs-content">
+        <div class="container">
 	        <h2>Internships</h2>
             <div class="col">
-                <p>Department of Finance internships are available to juniors and seniors majoring in finance. To qualify for an internship, undergraduate students must have successfully completed FIN 3403 Business Finance and at least one other 3000 or 4000 level finance course, and must have a minimum overall GPA of 2.75 and a GPA of 3.0 in the major.</p>
-                <p>All internships must be related to the field of finance. The objective of the program is to provide students with experience in finance that they would not otherwise have obtained. Therefore, students may not arrange internships with former or current employers. In rare cases, the internship coordinator may approve an internship with a student’s current employer if the job responsibilities assigned to the intern provide a different and appropriate experience in finance.</p>
-                <p>The Finance Internship Coordinator is Dr. Richard Curcio. The Finance Internship Packet needs to be filled out and turned into the Finance Department in BA1, room 409 in person. Internship packets are due 10 days before the first day of class of each semester by 4:00pm. (See the UCF academic calendar for the dates). This will allow time for processing paperwork and registering. Late internship application packets will not be accepted after this date. Internship applicants must provide a picture identification (current driver’s license will suffice) and original signatures from the intern employer. If your internship is approved, the Department of Finance will email a permission number to you at your Knights email address allowing you to register for the internship course.</p>
-            
-                <p>For help finding an Internship, please go to the Business Satellite Office of Experiential Learning, located in BA1, room 130. The phone number is (407) 823-5581 and the website is www.explearning.ucf.edu. </p>
-         
+                
+                <p>Department of Finance internships are available to juniors and seniors majoring in finance. To qualify for an internship, 
+                    undergraduate students must have successfully completed FIN 3403 Business Finance and at least one other 3000 or 4000 level 
+                    finance course, and must have a minimum overall GPA of 2.75 and a GPA of 3.0 in the major.</p>
+                <p>All internships must be related to the field of finance. The objective of the program is to provide students with experience in 
+                    finance that they would not otherwise have obtained. Therefore, students may not arrange internships with former or current employers. 
+                    In rare cases, the internship coordinator may approve an internship with a student’s current employer if the job responsibilities 
+                    assigned to the intern provide a different and appropriate experience in finance.</p>
+                <p>The Finance Internship Coordinator is Dr. Richard Curcio. The Finance Internship Packet needs to be filled out and turned into the 
+                    Finance Department in BA1, room 409 in person. Internship packets are due 10 days before the first day of class of each semester 
+                    by 4:00pm. (See the UCF academic calendar for the dates). This will allow time for processing paperwork and registering. Late internship 
+                    application packets will not be accepted after this date. Internship applicants must provide a picture identification (current driver’s 
+                    license will suffice) and original signatures from the intern employer. If your internship is approved, the Department of Finance will 
+                    email a permission number to you at your Knights email address allowing you to register for the internship course.</p>
+                <p>For help finding an Internship, please go to the Business Satellite Office of Experiential Learning, located in BA1, room 130. 
+                    The phone number is (407) 823-5581 and the website is www.explearning.ucf.edu. </p>
                 <p>Internships are academic courses that allow students to apply classroom theory in a practical work setting and gain personal, academic and work competencies.</p>
+
                 <ul>
                     <li>One semester</li>
                     <li>Major-related</li>
@@ -387,17 +403,20 @@
                     <li>Paid or unpaid</li>
                     <li>Structured for learning</li>
                 </ul>
+
             </div>
         </div>
     </section>
 
     <section id="careers">
-        <div class="vs-content container">
+        <div class="container">
 	        <h2>Careers</h2>
-            <div class="col clearfix">
-                <h3>What can I do with this major?</h3>
+            <div>
 
-                <h4>General Information and Strategies</h4>
+                <hgroup>
+                    <h3>What can I do with this major?</h3>
+                    <h4>General Information and Strategies</h4>
+                </hgroup>
                 <ul>
                     <li>Quantitative skills are extremely important. Take additional courses in math, statistics, and accounting.</li>
                     <li>Many positions in finance require the ability to analyze and interpret data.</li>
@@ -407,10 +426,11 @@
                     <li>Join student professional associations in the field of finance.</li>
                     <li>Several professional designations and licenses, e.g. Chartered Financial Analyst or Certified Financial Planner, are available to finance professionals working in a particular area. Earning these designations may help one obtain advanced positions.</li>
                 </ul>
+                <p>&nbsp;</p>
 
-                <div class="region">
-                    <h4>Corporate and Public Finance</h4>
-                    <div>
+                <h4>Corporate and Public Finance</h4>
+                <div class="row">
+                    <div class="col-md-4">
                         <h5>Area</h5>
                         <p>
                             •	Financial Analysis
@@ -426,8 +446,7 @@
                             •	Risk Management	
                         </p>
                     </div>
-
-                    <div>
+                    <div class="col-md-4">
                         <h5>Employer</h5>
                         <p>
                             •	Private businesses of all sizes and types
@@ -441,8 +460,7 @@
                             •	Hospitals
                         </p>
                     </div>
-
-                    <div>
+                    <div class="col-md-4">
                         <h5>Information</h5>
                         <p>
                             •	Complete a related internship.
@@ -453,9 +471,9 @@
                     </div>
                 </div>
 
-                <div class="region">
-                    <h4>Banking</h4>
-                    <div>
+                <h4>Banking</h4>
+                <div class="row">
+                    <div class="col-md-4">
                         <h5>Area</h5>
                         <p>
                             •	Corporate Credit Analysis
@@ -471,8 +489,7 @@
                             •	Private Banking	
                         </p>
                     </div>
-
-                    <div>
+                    <div class="col-md-4">
                         <h5>Employer</h5>
                         <p>
                             •	Commercial banks
@@ -485,8 +502,7 @@
                             •	Federal Reserve, FDIC, OCC, OTS
                         </p>
                     </div>
-
-                    <div>
+                    <div class="col-md-4">
                         <h5>Information</h5>
                         <p>
                             •	Gain a solid background in business including marketing and accounting.
@@ -496,9 +512,9 @@
                     </div>
                 </div>
 
-                <div class="region">
-                    <h4>Insurance</h4>
-                    <div>
+                <h4>Insurance</h4>
+                <div class="row">
+                    <div class="col-md-4">
                         <h5>Area</h5>
                         <p>
                             •	Claims Analysis
@@ -509,8 +525,7 @@
                             •	Loss Control
                         </p>
                     </div>
-
-                    <div>
+                    <div class="col-md-4">
                         <h5>Employer</h5>
                         <p>
                             •	Life insurance firms
@@ -519,8 +534,7 @@
                             •	Savings banks	
                         </p>
                     </div>
-
-                    <div>
+                    <div class="col-md-4">
                         <h5>Information</h5>
                         <p>
                             •	Complete an internship with an insurance agency.
@@ -532,287 +546,250 @@
                     </div>
                 </div>
 
-                <h4>Personal Financial Planning </h4>
-                <table class="career-table">
-                    <thead>
-                        <tr>
-                            <th>Area</th>
-                            <th>Employer</th>
-                            <th>Information</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                •	Sales
-                                •	Customer Service
-                                •	Operations
-                                •	Portfolio Management	
-                            </td>
-                            <td>
-                                •	Brokerage firms
-                                •	Trust companies
-                                •	Financial partnerships
-                                •	Multi-line insurance firms
-                                •	Sole practitioners	
-                            </td>
-                            <td>
-                                •	Gain experience in sales.
-                                •	Demonstrate a highly motivated and entrepreneurial personality.
-                                •	Research how one obtains the Certified Financial Planner (CFP) designation.
-                                •	Develop a solid personal network.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4>Personal Financial Planning</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Area</h5>
+                        <p>
+                            •	Sales
+                            •	Customer Service
+                            •	Operations
+                            •	Portfolio Management
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Employer</h5>
+                        <p>
+                            •	Brokerage firms
+                            •	Trust companies
+                            •	Financial partnerships
+                            •	Multi-line insurance firms
+                            •	Sole practitioners
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Information</h5>
+                        <p>
+                            •	Gain experience in sales.
+                            •	Demonstrate a highly motivated and entrepreneurial personality.
+                            •	Research how one obtains the Certified Financial Planner (CFP) designation.
+                            •	Develop a solid personal network.
+                        </p>
+                    </div>
+                </div>
 
                 <h4>Real Estate</h4>
-                <table class="career-table">
-                    <thead>
-                        <tr>
-                            <th>Area</th>
-                            <th>Employer</th>
-                            <th>Information</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                •	Residential Brokerage
-                                •	Commercial Sales
-                                •	Appraisals
-                                •	Property Management
-                                •	Real Estate Portfolio Management	
-                            </td>
-                            <td>
-                                •	Real estate brokers
-                                •	Commercial banks
-                                •	Appraisal firms
-                                •	Apartment and condominium complexes
-                                •	Developers
-                                •	Large corporations: real estate departments
-                                •	Real estate investment trusts
-                                •	Mutual funds
-                            </td>
-                            <td>
-                                •	Obtain sales experience through part-time, summer or internship positions.
-                                •	Research how to become a real estate broker through the National Association of Realtors.
-                                •	Develop an entrepreneurial spirit.
-                                •	Research apprenticeships in appraisal.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Area</h5>
+                        <p>
+                            •	Residential Brokerage
+                            •	Commercial Sales
+                            •	Appraisals
+                            •	Property Management
+                            •	Real Estate Portfolio Management
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Employer</h5>
+                        <p>
+                            •	Real estate brokers
+                            •	Commercial banks
+                            •	Appraisal firms
+                            •	Apartment and condominium complexes
+                            •	Developers
+                            •	Large corporations: real estate departments
+                            •	Real estate investment trusts
+                            •	Mutual funds
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Information</h5>
+                        <p>
+                            •	Obtain sales experience through part-time, summer or internship positions.
+                            •	Research how to become a real estate broker through the National Association of Realtors.
+                            •	Develop an entrepreneurial spirit.
+                            •	Research apprenticeships in appraisal.
+                        </p>
+                    </div>
+                </div>
 
                 <h4>Investment Banking</h4>
-                <table class="career-table">
-                    <thead>
-                        <tr>
-                            <th>Area</th>
-                            <th>Employer</th>
-                            <th>Information</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                •	Corporate Financial Analysis
-                                •	Mergers and Acquisitions
-                                •	Equity and Debt
-                                •	Underwriting
-                                •	Institutional Bond and Equity Sales
-                                •	Retail Bond and Equity Sales
-                                •	Business Valuation
-                                •	Business Sale Transactions
-                                •	Currency Trading
-                                •	Derivatives, e.g. options
-                                •	Trading
-                                •	Venture Capital Fund Management
-                                •	New Venture Analysis
-                            </td>
-                            <td>
-                                •	Investment banking firms (Changes in laws have created a fluid situation in this industry; Mergers and acquisitions continue to take place.)
-                                •	Financial services firms
-                                •	Insurance firms (The Gramm Leach Bliley Act of 1999 allowed financial services firms to acquire or build investment banking subsidiaries and vice versa.)
-                            </td>
-                            <td>
-                                •	An M.B.A. is required to move beyond the entry-level analyst position in investment banking. Investment banking is highly competitive.
-                                •	Be prepared to work many hours of overtime per week, start at the bottom, and pay your dues.
-                                •	Develop strong analytical and communication skills.
-                                •	Cultivate personal ambitiousness.
-                                •	Obtain a Series 7 License for both institutional and retail broker sales positions.
-                                •	Work toward the CFA designation.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Area</h5>
+                        <p>
+                            •	Corporate Financial Analysis
+                            •	Mergers and Acquisitions
+                            •	Equity and Debt
+                            •	Underwriting
+                            •	Institutional Bond and Equity Sales
+                            •	Retail Bond and Equity Sales
+                            •	Business Valuation
+                            •	Business Sale Transactions
+                            •	Currency Trading
+                            •	Derivatives, e.g. options
+                            •	Trading
+                            •	Venture Capital Fund Management
+                            •	New Venture Analysis
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Employer</h5>
+                        <p>
+                            •	Investment banking firms (Changes in laws have created a fluid situation in this industry; Mergers and acquisitions continue to take place.)
+                            •	Financial services firms
+                            •	Insurance firms (The Gramm Leach Bliley Act of 1999 allowed financial services firms to acquire or build investment banking subsidiaries and vice versa.)
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Information</h5>
+                        <p>
+                            •	An M.B.A. is required to move beyond the entry-level analyst position in investment banking. Investment banking is highly competitive.
+                            •	Be prepared to work many hours of overtime per week, start at the bottom, and pay your dues.
+                            •	Develop strong analytical and communication skills.
+                            •	Cultivate personal ambitiousness.
+                            •	Obtain a Series 7 License for both institutional and retail broker sales positions.
+                            •	Work toward the CFA designation.
+                        </p>
+                    </div>
+                </div>
 
                 <h4>Money Management</h4>
-                <table class="career-table">
-                    <thead>
-                        <tr>
-                            <th>Area</th>
-                            <th>Employer</th>
-                            <th>Information</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                •	Research
-                                •	Trading
-                                •	Marketing
-                                •	Portfolio Management	
-                            </td>
-                            <td>
-                                •	Portfolio management firms
-                                •	Commercial banks
-                                •	Investment banks
-                                •	Federal Reserve banks
-                                •	Insurance firms	
-                            </td>
-                            <td>
-                                •	Most positions require an advanced degree in economics, finance or business and many years of financial experience.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Area</h5>
+                        <p>
+                            •	Research
+                            •	Trading
+                            •	Marketing
+                            •	Portfolio Management	
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Employer</h5>
+                        <p>
+                            •	Portfolio management firms
+                            •	Commercial banks
+                            •	Investment banks
+                            •	Federal Reserve banks
+                            •	Insurance firms	
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Information</h5>
+                        <p>
+                            •	Most positions require an advanced degree in economics, finance or business and many years of financial experience.
+                        </p>
+                    </div>
+                </div>
 
                 <h4>Accounting</h4>
-                <table class="career-table">
-                    <thead>
-                        <tr>
-                            <th>Area</th>
-                            <th>Employer</th>
-                            <th>Information</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Corporate or Government Including:
-                                •	Financial Management
-                                •	Financial Reporting
-                                •	Cost Accounting
-                                •	Tax Planning
-                                •	Research
-                            </td>
-                            <td>
-                                •	Companies of various sizes, in all industries
-                                •	Federal agencies and departments including:
-                                •	Federal Bureau of Investigation
-                                •	Internal Revenue Service
-                                •	Department of the Treasury
-                                •	Office of Management and Budget
-                                •	Securities Exchange Commission
-                                •	State and local agencies
-                            </td>
-                            <td>
-                                •	Sometimes opportunities in accounting exist in government and corporate settings for finance students.
-                                •	Take more than the required amount of accounting classes to supplement finance curriculum.
-                                •	Maintain a strong GPA.
-                                •	Complete an internship in a government agency and become familiar with the government application process to work in the public sector.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Area</h5>
+                        <p>
+                            Corporate or Government Including:
+                            •	Financial Management
+                            •	Financial Reporting
+                            •	Cost Accounting
+                            •	Tax Planning
+                            •	Research
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Employer</h5>
+                        <p>
+                            •	Companies of various sizes, in all industries
+                            •	Federal agencies and departments including:
+                            •	Federal Bureau of Investigation
+                            •	Internal Revenue Service
+                            •	Department of the Treasury
+                            •	Office of Management and Budget
+                            •	Securities Exchange Commission
+                            •	State and local agencies
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Information</h5>
+                        <p>
+                            •	Sometimes opportunities in accounting exist in government and corporate settings for finance students.
+                            •	Take more than the required amount of accounting classes to supplement finance curriculum.
+                            •	Maintain a strong GPA.
+                            •	Complete an internship in a government agency and become familiar with the government application process to work in the public sector.
+                        </p>
+                    </div>
+                </div>
 
             </div>
         </div>
     </section>
 
     <section id="certificates">
-        <div class="vs-content">
+        <div class="container">
 	        <h2>Certificates</h2>
-            <div class="col">
+            <div>
 
-            <h3>Certificates available for the Finance Major:</h3>
+                <h3>Certificates available for the Finance Major</h3>
+                <p><strong>The following Certificates are restricted to finance majors only</strong>. These certificates do not require additional hours beyond the finance major program. 
+                    They are intended to allow students to develop specializations in a specific area of interest. No course grade lower than a C will be accepted for the certificate 
+                    requirements, and the average GPA for the 12 credits must be a 3.0 or higher. Certificates will be awarded only at the time of degree completion.</p>
+                <p>&nbsp;</p>
 
-            <p>The following Certificates are restricted to finance majors only. These certificates do not require additional hours beyond the finance major program. They are intended to allow students to develop specializations in a specific area of interest. No course grade lower than a C will be accepted for the certificate requirements, and the average GPA for the 12 credits must be a 3.0 or higher. Certificates will be awarded only at the time of degree completion.</p>
+                <h4>Banking - 12 Credits</h4>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><strong>FIN 4324</strong> Commercial Bank Management</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>ACG 3131</strong> Intermediate Financial Accounting I</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>ACG 3141</strong> Intermediate Financial Accounting II</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>MAR 3391</strong> Professional Selling <em>or</em><br>
+                            <strong>FIN* 4941</strong> Finance Internship</h5>
+                    </div>
+                </div>
+                <small><em>*An internship must be a paid internship with a financial services firm, and must be approved by the Department of Finance Internship coordinator and a Banking faculty member.</em></small>
+                <p>&nbsp;</p>
 
-            <h4>Banking - 12 Credits</h4>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>FIN</td>
-                        <td>4324</td>
-                        <td>Commercial Bank Management </td>
-                    </tr>
-                    <tr>
-                        <td>ACG</td>
-                        <td>3131</td>
-                        <td>Intermediate Financial Accounting I </td>
-                    </tr>
-                <tr>
-                        <td>ACG</td>
-                        <td>3141</td>
-                        <td>Intermediate Financial Accounting II </td>
-                    </tr>
-                <tr>
-                        <td>MAR</td>
-                        <td>3391</td>
-                        <td>Professional Selling – <em>or</em> – *FIN 4941 Finance Internship</td>
-                    </tr>
-                </tbody>
-            </table>
+                <h4>Corporate Finance - 12 Credits</h4>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><strong>ACG 3131</strong> Intermediate Financial Accounting I</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>ACG 3141</strong> Intermediate Financial Accounting II</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN 3141</strong> Intermediate Corporate Finance</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN* 4941</strong> Finance Internship</h5>
+                    </div>
+                </div>
+                <small><em>*An internship must be a paid internship with a financial services firm, and must be approved by the Department of Finance Internship coordinator.</em></small>
+                <p>&nbsp;</p>
 
-            <p>*An internship must be a paid internship with a financial services firm, and must be approved by the Department of Finance Internship coordinator and a Banking faculty member.</p>
-
-            <h4>Corporate Finance - 12 Credits</h4>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>ACG</td>
-                        <td>3131</td>
-                        <td>Intermediate Financial Accounting I </td>
-                    </tr>
-                    <tr>
-                        <td>ACG</td>
-                        <td>3141</td>
-                        <td>Intermediate Financial Accounting II </td>
-                    </tr>
-                    <tr>
-                        <td>FIN</td>
-                        <td>3414</td>
-                        <td>Intermediate Corporate Finance </td>
-                    </tr>
-                <tr>
-                        <td>*FIN</td>
-                        <td>4941</td>
-                        <td>Finance Internship</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p>*An internship must be a paid internship with a financial services firm, and must be approved by the Department of Finance Internship coordinator.</p>
-
-            <h4>Investments - 12 Credits</h4>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>FIN</td>
-                        <td>3504</td>
-                        <td>Investment Analysis </td>
-                    </tr>
-                    <tr>
-                        <td>FIN</td>
-                        <td>4514</td>
-                        <td>Portfolio Analysis and Management </td>
-                    </tr>
-                    <tr>
-                        <td>FIN</td>
-                        <td>4533</td>
-                        <td>Financial Derivatives </td>
-                    </tr>
-                <tr>
-                        <td>*FIN</td>
-                        <td>4941</td>
-                        <td>Finance Internship</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p>*An internship must be a paid internship with a financial services firm, and must be approved by the Department of Finance Internship coordinator.</p>
+                <h4>Investments - 12 Credits</h4>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><strong>FIN 3504</strong> Investment Analysis</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN 4514</strong> Portfolio Analysis and Management</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN 4533</strong> Financial Derivatives</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><strong>FIN* 4941</strong> Finance Internship</h5>
+                    </div>
+                </div>
+                <small><em>*An internship must be a paid internship with a financial services firm, and must be approved by the Department of Finance Internship coordinator.</em></small>
+                <p>&nbsp;</p>
 
             </div>
         </div>
@@ -820,14 +797,6 @@
 
 </div>
 
-@*
-<section id="">
-    <div class="vs-content">
-	    <h2>Curricular Learning Goals</h2>
-
-    </div>
-</section>
-*@
 
 @*
 <h4></h4>
@@ -849,19 +818,24 @@
 </table>
 *@
 
-@*
-<section>
-    <h5></h5>
-    <div></div>
-</section>
-
-<section>
-    <h5></h5>
-    <div></div>
-</section>
-
-<section>
-    <h5></h5>
-    <div></div>
-</section>
-*@
+@*<div class="row">
+    <h4></h4>
+    <div class="col-md-4">
+        <h5>Area</h5>
+        <p>
+            
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h5>Employer</h5>
+        <p>
+            
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h5>Information</h5>
+        <p>
+            
+        </p>
+    </div>
+</div>*@
