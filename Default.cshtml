@@ -1,6 +1,6 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Homepage";
+    Page.Title = "College of Business";
 
 
 }
@@ -15,39 +15,150 @@
 
         <hgroup class="title">
             <h1>@Page.Title</h1>
-            <h2>H2 title header</h2>
+            <h2>Administration</h2>
         </hgroup>
 
-        <p>UserName: @WebSecurity.CurrentUserName</p>
         <p>Authenticated: @WebSecurity.IsAuthenticated</p>
 
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. 
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <section id="login">
+            @if (WebSecurity.IsAuthenticated) {
+                <text>
+                    Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+                    <form id="logoutForm" action="~/Account/Logout" method="post">
+                        @AntiForgery.GetHtml()
+                        <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                    </form>
+                </text>
+            } else {
+                <ul>
+                    <li><a href="~/Account/Register">Register</a></li>
+                    <li><a href="~/Account/Login">Log in</a></li>
+                </ul>
+            }
+        </section>
 
     </div>
 </section>
 }
 
 
-<div class="float-left">
-    <p class="site-title"><a href="~/">College of Business</a></p>
-</div>
+<div class="projecttitle">
 
-<div class="float-right">
-    <section id="login">
-        @if (WebSecurity.IsAuthenticated) {
-            <text>
-                Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
-                <form id="logoutForm" action="~/Account/Logout" method="post">
-                    @AntiForgery.GetHtml()
-                    <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
-                </form>
-            </text>
-        } else {
-            <ul>
-                <li><a href="~/Account/Register">Register</a></li>
-                <li><a href="~/Account/Login">Log in</a></li>
-            </ul>
-        }
+    <section>
+            <div id="example1" class="pagespan clearfix">
+
+                <div class="scrollbar">
+				    <div class="handle">
+					    <div class="mousearea"></div>
+				    </div>
+			    </div><!--/scrollbar-->
+
+                <button class="prev" style="float: left; width: 100px; height: 200px; font-size: 60px;"><i class="icon-angle-left" style="font-size: 1em;"></i></button><!--/back button-->
+                <button class="next" style="float: left; width: 100px; height: 200px; font-size: 60px; float: right;"><i class="icon-angle-right" style="font-size: 1em;"></i></button><!--/forward button-->
+
+			    <div class="frame">
+				    <ul id="og-grid" class="og-grid">
+
+                        <li>
+                            <img src="~/images/thumbs/1.jpg" alt="img01"/>
+                        </li><!--/line item-->
+
+                        <li>
+                            <img src="~/images/thumbs/2.jpg" alt="img02"/>
+                        </li>
+
+                        <li>
+                            <img src="~/images/thumbs/3.jpg" alt="img03"/>
+					    </li>
+
+				    </ul>
+			    </div><!--/frames-->
+
+                <ul class="pages"></ul><!--/position marker-->
+
+            </div>
     </section>
+
+    <section>
+            <div id="example2" class="pagespan">
+
+                <div class="scrollbar">
+				    <div class="handle">
+					    <div class="mousearea"></div>
+				    </div>
+			    </div><!--/scrollbar-->
+
+                <button class="prev" style="float: left; width: 100px; height: 200px; font-size: 60px;"><i class="icon-angle-left" style="font-size: 1em;"></i></button>
+                <button class="next" style="float: left; width: 100px; height: 200px; font-size: 60px; float: right;"><i class="icon-angle-right" style="font-size: 1em;"></i></button>
+
+			    <div class="frame">
+				    <ul id="og-grid" class="og-grid">
+
+                        <li>
+                            <a href="#" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							    <img src="~/images/thumbs/1.jpg" alt="img01"/>
+						    </a>
+                        </li><!--/line item-->
+
+                        <li>
+                            <a href="#" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+							    <img src="~/images/thumbs/2.jpg" alt="img02"/>
+						    </a>
+                        </li>
+
+                        <li>
+						    <a href="#" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+							    <img src="~/images/thumbs/3.jpg" alt="img03"/>
+						    </a>
+					    </li>
+
+				    </ul>
+			    </div><!--/frames-->
+
+                <ul class="pages"></ul><!--/position marker-->
+
+            </div>
+    </section>
+
+    <section>
+            <div id="example3" class="pagespan">
+
+                <div class="scrollbar">
+				    <div class="handle">
+					    <div class="mousearea"></div>
+				    </div>
+			    </div><!--/scrollbar-->
+
+                <button class="prev" style="float: left; width: 100px; height: 200px; font-size: 60px;"><i class="icon-angle-left" style="font-size: 1em;"></i></button>
+                <button class="next" style="float: left; width: 100px; height: 200px; font-size: 60px; float: right;"><i class="icon-angle-right" style="font-size: 1em;"></i></button>
+
+			    <div class="frame">
+				    <ul id="og-grid" class="og-grid">
+
+                        <li>
+                            <a href="#" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							    <img src="~/images/thumbs/1.jpg" alt="img01"/>
+						    </a>
+                        </li><!--/line item-->
+
+                        <li>
+                            <a href="#" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+							    <img src="~/images/thumbs/2.jpg" alt="img02"/>
+						    </a>
+                        </li>
+
+                        <li>
+						    <a href="#" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+							    <img src="~/images/thumbs/3.jpg" alt="img03"/>
+						    </a>
+					    </li>
+
+				    </ul>
+			    </div><!--/frames-->
+
+                <ul class="pages"></ul><!--/position marker-->
+
+            </div>
+    </section>
+
 </div>
