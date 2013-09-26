@@ -55,7 +55,7 @@ require(['fittext', 'resize', 'waypoint'], function () {
             }
         );
         //-----------------------------------------------
-        
+
         //-- lazy load images ---------------------------
         $("body img").fadeTo(0, 0);
         $(window).scroll(function (d, h) {
@@ -64,13 +64,13 @@ require(['fittext', 'resize', 'waypoint'], function () {
                 b = $(window).scrollTop() + $(window).height();
                 if (a < b) $(this).fadeTo(500, 1);
             })
-        });//--------------------------------------------
+        }); //--------------------------------------------
 
         //-- disable right-click ------------------------
         $(document).bind("contextmenu", function (e) {
             return false;
             //-------------------------------------------
-        });//--------------------------------------------
+        }); //--------------------------------------------
 
         //-- check if cookies are enabled ---------------
         var dt = new Date();
@@ -80,7 +80,7 @@ require(['fittext', 'resize', 'waypoint'], function () {
         if (!cookiesEnabled) {
             //cookies are not enabled
             alert('cookies are not enabled');
-        }//----------------------------------------------
+        } //----------------------------------------------
 
         //-- back to top --------------------------------
         var offset = 220;
@@ -102,34 +102,35 @@ require(['fittext', 'resize', 'waypoint'], function () {
         });
         //-----------------------------------------------
 
-    });//end ready
+    }); //end ready
 
 
     $(document).ready(function () {
 
-    //-- global variables (not encouraged) ----------
-    var width = parseInt($(this).width());
-    var height = parseInt($(this).height());
+        //-- global variables (not encouraged) ----------
+        var width = parseInt($(this).width());
+        var height = parseInt($(this).height());
 
-    if (width < 481) //load mobile scripts
-        require([], function () {
-            //-- screensize -------------------------
-            $("#message").html(width + " x " + height + " - mobile");
-        });
+        if (width < 481) //load mobile scripts
+            require([], function () {
+                //-- screensize -------------------------
+                $("#message").html(width + " x " + height + " - mobile");
+            });
 
-    if ((width > 480) && (width < 1025)) //load tablet scripts
-        require([], function () {
-            //-- screensize -------------------------
-            $("#message").html(width + " x " + height + " - tablet");
-        });
+        if ((width > 480) && (width < 1025)) //load tablet scripts
+            require([], function () {
+                //-- screensize -------------------------
+                $("#message").html(width + " x " + height + " - tablet");
+            });
 
-    if (width > 1024) //load desktop scripts
-        require([], function () {
-            //-- screensize -------------------------
-            $("#message").html(width + " x " + height + " - desktop");
-        });
+        if (width > 1024) //load desktop scripts
+            require(['equalh'], function () {
+                //-- screensize -------------------------
+                $("#message").html(width + " x " + height + " - desktop");
+                //$("#careers .col-md-4").equalHeights(100,300);
+            });
 
-    });//end ready
+    }); //end ready
 
 
     //---------------------------------------------------
@@ -139,14 +140,14 @@ require(['fittext', 'resize', 'waypoint'], function () {
 
     $(window).load(function () {
         // do something...
-    });//end load
+    }); //end load
 
 
     //---------------------------------------------------
     // On Smart PageResize...
     // fires once after the user is done resizing
     //---------------------------------------------------
-    
+
     $(window).on('debouncedresize', function (event) {
 
         var width = parseInt($(this).width());
@@ -170,7 +171,7 @@ require(['fittext', 'resize', 'waypoint'], function () {
                 $("#message").html(width + " x " + height + " - desktop");
             });
 
-    });//end debouncedresize
+    }); //end debouncedresize
 
 
     //---------------------------------------------------
@@ -180,7 +181,7 @@ require(['fittext', 'resize', 'waypoint'], function () {
 
     $(window).resize(function (event) {
         //do something ...
-    });//end resize
+    }); //end resize
 
 
     //---------------------------------------------------

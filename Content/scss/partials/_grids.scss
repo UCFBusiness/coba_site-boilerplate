@@ -1,4 +1,4 @@
-// Media-Queries
+// Media-Queries - Bootstrap Grids
 
 /* Mobile Layout: 480px and below. */
 
@@ -10,20 +10,22 @@
     border-bottom: 1px solid #BBB;
 }
 
+.col {
+	-webkit-column-width: auto;
+	-moz-column-width: auto;
+	column-width: auto;
+
+	-webkit-column-count: auto;
+	-moz-column-count: auto;
+	column-count: auto;
+	}
 
 
 
 /* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
     
-    .col {
-		-webkit-column-width: auto;
-		-moz-column-width: auto;
-		column-width: auto;
-		-webkit-column-count: auto;
-		-moz-column-count: auto;
-		column-count: auto;
-	}
+    
     
 }
 
@@ -38,15 +40,17 @@
 
     .col {
 	    margin: 0 auto;
-	    color: #893027;
 	    text-align: justify;
 	    line-height: 1.4;
+
 	    -webkit-column-width: 30%;
 	    -moz-column-width: 30%;
 	    column-width: 30%;
+
 	    -webkit-column-count: 3;
 	    -moz-column-count: 3;
 	    column-count: 3;
+
 	    -webkit-column-gap: 1%;
 	    -moz-column-gap: 1%;
 	    column-gap: 1%;
