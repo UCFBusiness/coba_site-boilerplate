@@ -1,13 +1,13 @@
-/*
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
+
+.pagespan *, 
+.pagespan *:after,
+.pagespan *:before {
+    -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}*/
+    padding: 0;
+    margin: 0;
+}
 
 .grid-background { 
     margin: 0 auto; 
@@ -39,11 +39,15 @@
 .pagespan { margin: 0px auto; }
 
 /*slide buttons*/
-.pagespan button, .example button { background: transparent; border: 0; color: #ffcc00; opacity: .5;}
-.pagespan button:hover, .example button:hover { opacity: 1; }
-.pagespan button:disabled, .example button:disabled { opacity: .2; }
-.pagespan .forward, .example .backward { float: left; width: 50px; height: 260px; font-size: 60px; border: 1px dashed blue;}
+.pagespan button, .pagespan button { background: transparent; border: 0; color: #ffcc00; opacity: .5;}
+.pagespan button:hover, .pagespan button:hover { opacity: 1; }
+.pagespan button:disabled, .pagespan button:disabled { opacity: .2; }
+
+.pagespan .forward, .pagespan .backward { float: left; width: 50px; height: 260px; font-size: 60px; border: 1px dashed blue;}
 .pagespan .forward { float: right; }
+
+.pagespan .next, .pagespan .prev { float: left; width: 100px; height: 200px; font-size: 60px; }
+.pagespan .next { float: right; }
 
 /*frame*/
 .pagespan .frame { 

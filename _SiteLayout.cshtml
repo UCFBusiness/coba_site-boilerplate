@@ -28,11 +28,10 @@
 
         <!-- Bootstrap core CSS -->
         <link type="text/css" rel="stylesheet" href="~/content/bootstrap/bootstrap.css" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
         <!-- Site CSS -->
         <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
         <link type="text/css" rel="stylesheet" href="~/content/sly/css/font-awesome.min.css" />
-        <link type="text/css" rel="stylesheet" href="~/content/sly/css/sly.css" />
+        @*<link type="text/css" rel="stylesheet" href="~/content/sly/css/main.css" />*@
 
         @*<link type="text/css" rel="stylesheet" href="~/styles/global.css" />*@
 
@@ -68,7 +67,7 @@
                     </div><!-- /UCFHBHeader -->
 
                     <!-- NavBar Sample -->
-                    @*<div id="nav" class="navbar navbar-default" style="background: none;" role="navigation">
+                    <div id="nav" class="navbar navbar-default" style="background: none;" role="navigation">
                         <div class="container">
 
                             <div class="navbar-header">
@@ -82,20 +81,23 @@
 
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#">Home</a></li>
+                                    
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Discover <b class="caret"></b></a>
                                         <ul class="dropdown-menu">
+                                            <li class="active"><a href="#">Home</a></li>
+                                            <li class="active"><form id="site-search" class="search" action="/search" name="input" method="get" >
+                                                <div class="input-append">
+                                                    <input type="search" placeholder="SEARCH" name="q" class="dl-searchfield" />
+                                                    <input type="submit" value="submit" class="dl-searchbutton" />
+                                                </div>
+                                            </form></li>
+                                            <li class="divider"></li>
                                             <li><a href="#">Academics</a></li>
                                             <li><a href="#">Our College</a></li>
                                             <li><a href="#">Faculty Research</a></li>
                                             <li><a href="#">Alumni &amp; Friends</a></li>
                                             <li><a href="#">Careers &amp; Recruitment</a></li>
-                                            
-                                            <li class="divider"></li>
-                                            <li class="dropdown-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -115,7 +117,7 @@
                             </div><!--/.navbar-collapse -->
 
                         </div>
-                    </div>*@<!--/navbar -->
+                    </div><!--/navbar -->
 
                     <!-- mobile navigation menu -->
                     @*<div id="header">

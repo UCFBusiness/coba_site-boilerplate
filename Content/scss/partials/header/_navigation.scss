@@ -1,0 +1,223 @@
+// Media-Queries Template
+
+/* Mobile Layout: 480px and below. */
+
+
+/* =============================================================================
+   Navigation Menu - Discovery
+   ========================================================================== */
+
+/* wrapper */
+nav.dl-menuwrapper {
+    /*
+    background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.21, rgb(39,46,45)),
+	    color-stop(0.73, rgb(78,77,79)),
+	    color-stop(1, rgb(71,71,71))
+    );*/
+
+    background-image: -webkit-linear-gradient(top, #31353a, #2f3337);
+    letter-spacing: 1px;
+    position: relative;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3); /* shadow */
+    z-index: 1000;
+}
+
+/* buttons */
+.dl-home, 
+.dl-trigger,
+.dl-searchbutton {
+    background: none;
+    border: none;
+    width: 16%;
+    height: 45px;
+    text-indent: -900em;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    float:left;
+}
+
+/* discover icon */
+.dl-trigger:after {
+  	content: '';
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	background: #fff;  /* - */
+	top: 11px;
+	left: 25%;
+	box-shadow: 
+		0 10px 0 #fff, /* - */
+		0 20px 0 #fff; /* - */
+}
+
+.dl-home {
+    background: url(../../images/icon-home.png) no-repeat;
+    background-position: 5px 2px;
+}
+
+.dl-home, 
+.dl-trigger {
+    width:50px;
+}
+
+/* hide search button - not used on mobile or tablet */
+.dl-searchbutton {
+    visibility: hidden;
+    display: none;
+}
+
+.dl-searchfield {
+    background: #fff;
+    border: 2px solid #333;
+    margin-top: 7px;
+    margin-right: 15px;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 53%;
+    height: 30px;
+}
+
+
+/* =============================================================================
+   Main Menu
+   ========================================================================== */
+
+.dl-menu {
+	margin: 45px 0 0 0;
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+
+.dl-menu.dl-menu-toggle {
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}
+
+.dl-menu.dl-menuopen {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+}
+
+
+/* =============================================================================
+   Submenus
+   ========================================================================== */
+
+/* ul */
+.dl-menuwrapper ul {
+    border-bottom: 1px solid #333;
+    width: 100%;
+	list-style: none;
+    overflow: hidden;
+	transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    z-index: 1000;
+}
+
+/* li */
+.dl-menuwrapper li {
+	position: relative;
+    border-top: 1px solid #222;
+}
+
+.dl-menuwrapper li.breadcrumb {
+    padding: 0 20px;
+    font-size: 12px;
+    color: #ffcc00;
+}
+
+/* a */
+.dl-menuwrapper li a {
+    padding: 13px 20px;
+	position: relative;
+    display: block;
+	outline: none;
+    font-size: 16px;
+	font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+}
+.dl-menuwrapper li > a:after {
+	right: 10px;
+}
+
+/* li back action */
+.dl-menuwrapper li.dl-back > a {
+	padding-left: 30px;
+    font-size: 11px;
+    text-transform: uppercase;
+	background: rgba(0,0,0,0.15); color: rgba(255,255,255,1);
+}
+.dl-menuwrapper li.dl-back:after {
+	left: 10px;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+}
+
+/* li arrows */
+.dl-menuwrapper li.dl-back:after,
+.dl-menuwrapper li > a:not(:only-child):after {
+	color: rgba(170,170,170,0.3);
+    position: absolute;
+	top: 0;
+	line-height: 50px;
+	font-family: 'icomoon';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	content: "\e000";
+}
+
+/* =============================================================================
+   Menu Color Theme
+   ========================================================================== */
+
+.dl-menuwrapper button:hover, 
+.dl-menuwrapper button.dl-active,
+.dl-menuwrapper ul {
+    background:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #555), color-stop(1, #222)); 
+    color: rgba(0,0,0,1);
+}
+
+.no-touch .dl-menuwrapper > li a:after {
+	background: rgba(0,0,0,1); 
+    color: rgba(170,170,170,1);
+}
+
+
+/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+    
+    
+    
+}
+
+
+/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 1025px) {
+
+    
+
+}

@@ -2,84 +2,51 @@
 jQuery(function ($) {
     'use strict';
 
+    // -------------------------------------------------------------
+	//   Custom using Array
+	// -------------------------------------------------------------
+
     var $feeds = new Array('#example1', '#example2', '#example3');
     var $num = parseInt($feeds.length, 10);
 
     for (var i = 0; i < $num; i++) {
         
-        //alert($feeds[i]);
-
-        var $example = $($feeds[i]);
-        var $frame = $example.find('.frame'); window.frr = $frame;
+        var $section = $($feeds[i]);
+        var $frame = $section.find('.frame'); window.frr = $frame;
         var sly = new Sly($frame, {
             horizontal: 1,
             itemNav: 'forceCentered',
-            activateMiddle: 1,
             smart: 1,
+            activateMiddle: 1,
             activateOn: 'click',
             mouseDragging: 1,
             touchDragging: 1,
             releaseSwing: 1,
-            startAt: 2,
-            scrollBar: $example.find('.scrollbar'),
+            startAt: 0,
+            scrollBar: $section.find('.scrollbar'),
             scrollBy: 1,
-            pagesBar: $example.find('.pages'),
+            pagesBar: $section.find('.pages'),
             activatePageOn: 'click',
             speed: 300,
             moveBy: 600,
             elasticBounds: 1,
+            easing: 'swing',
             dragHandle: 1,
             dynamicHandle: 1,
             clickBar: 1,
 
             // Buttons
-            forward: $example.find('.forward'),
-            backward: $example.find('.backward'),
-            prev: $example.find('.prev'),
-            next: $example.find('.next'),
-            prevPage: $example.find('.prevPage'),
-            nextPage: $example.find('.nextPage')
+            forward: $section.find('.forward'),
+            backward: $section.find('.backward'),
+            prev: $section.find('.prev'),
+            next: $section.find('.next'),
+            prevPage: $section.find('.prevPage'),
+            nextPage: $section.find('.nextPage')
         }).init();
 
         //if (i >= $num)
         //    break;
     }
-
-    // ==========================================================================
-    //   Header example
-    // ==========================================================================
-    //var $example = $('#example');
-    //var $frame = $example.find('.frame'); window.frr = $frame;
-    //var sly = new Sly($frame, {
-    //    horizontal: 1,
-    //    itemNav: 'forceCentered',
-    //    activateMiddle: 1,
-    //    smart: 1,
-    //    activateOn: 'click',
-    //    mouseDragging: 1,
-    //    touchDragging: 1,
-    //    releaseSwing: 1,
-    //    startAt: 10,
-    //    scrollBar: $example.find('.scrollbar'),
-    //    scrollBy: 1,
-    //    pagesBar: $example.find('.pages'),
-    //    activatePageOn: 'click',
-    //    speed: 300,
-    //    moveBy: 600,
-    //    elasticBounds: 1,
-    //    dragHandle: 1,
-    //    dynamicHandle: 1,
-    //    clickBar: 1,
-
-    //    // Buttons
-    //    forward: $example.find('.forward'),
-    //    backward: $example.find('.backward'),
-    //    prev: $example.find('.prev'),
-    //    next: $example.find('.next'),
-    //    prevPage: $example.find('.prevPage'),
-    //    nextPage: $example.find('.nextPage')
-    //}).init();
-
 
     // =============================================================================
 
