@@ -1,5 +1,10 @@
-// Compass
-@import "compass";
+
+// Partials
+@import "typography";
+@import "back-to-top";
+@import "ucf-header";
+@import "primary_styles";
+@import "grids";
 
 // Font weights
 $light: 100;

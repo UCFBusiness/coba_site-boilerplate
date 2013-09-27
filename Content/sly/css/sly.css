@@ -1,7 +1,20 @@
-/* Header style */
-header.projecttitle { 
-    /*max-width: 700px; <===*/
-    /*margin: 0 auto; padding: 115px 0 80px; color: #fff; text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+/*
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}*/
+
+.grid-background { 
+    margin: 0 auto; 
+    padding: 115px 0 80px; 
+    color: #fff; 
+    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+    
 	background-color: #3e404a;
 	background-image: -webkit-linear-gradient(rgba(255,255,255,.05) 2px, transparent 2px),
 		linear-gradient(90deg, rgba(255,255,255,.04) 2px, transparent 2px),
@@ -19,15 +32,10 @@ header.projecttitle {
 		linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
 		linear-gradient(0deg, rgba(0,0,0,.3) 0, transparent 100px);
 	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px, 100% 100%;
-	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px, center bottom;*/
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px, center bottom;
 }
 
-section {
-    background: #FFF;
-    margin: 0;
-}
-
-/* Header example */
+/* page */
 .pagespan { margin: 0px auto; }
 
 /*slide buttons*/
@@ -39,13 +47,13 @@ section {
 
 /*frame*/
 .pagespan .frame { 
-    margin: 0 auto; 
-max-width: 1160px;
-height: 200px;
-line-height: 200px;
-overflow: hidden;
-
-    text-shadow: none; 
+    margin: 0 auto;
+    max-width: 1160px;
+    height: 200px;
+    line-height: 200px;
+    overflow: hidden;
+    text-shadow: none;
+    
     border: 1px dashed red;
 }
 /**/
@@ -58,16 +66,14 @@ overflow: hidden;
     margin: 0 1px 0 0; 
     padding: 0;
     background: #eee;
-    
     min-width: 500px;
     height: 99%;
-    
     color: #3a3c47; 
     cursor: pointer; 
     float: left; 
 }
 /*active block*/
-.pagespan .frame ul li.active { color: #fff; background: #82bf4c; } 
+.pagespan .frame ul li.active { color: #fff; background: #82bf4c; /*green*/ } 
 
 /*scroll bar*/
 .pagespan .scrollbar { margin: 0 auto 10px; 
@@ -89,46 +95,3 @@ overflow: hidden;
 .pagespan .controls .divider { display: inline-block; margin: 0 10px; }
 .pagespan .controls button { line-height: 32px; vertical-align: middle; font-family: Novecento, sans-serif; }
 .pagespan .controls button i { position: relative; top: -2px; margin: 5px; padding: 0; font-size: 32px; vertical-align: middle; }
-
-
-
-
-
-
-/* 3D shenanigans 
-.csstransforms3d .frame {
-	height: 200px;
-	line-height: 200px;
-	-webkit-perspective: 800px;
-	-ms-perspective: 800px;
-	perspective: 800px;
-	-webkit-perspective-origin: 50% 50%;
-	-ms-perspective-origin: 50% 50%;
-	perspective-origin: 50% 50%;
-}
-.csstransforms3d .frame ul {
-	-webkit-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-.csstransforms3d .frame ul li {
-	position: relative;
-	margin: 0 -25px;
-	border: 1px solid #3e404a;
-	-webkit-transform: rotateY(60deg) scale(0.9);
-	-ms-transform: rotateY(60deg) scale(0.9);
-	transform: rotateY(60deg) scale(0.9);
-	-webkit-transition: -webkit-transform 300ms ease-out;
-	transition: transform 300ms ease-out;
-}
-.csstransforms3d .frame ul li.active {
-	z-index: 10;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-}
-.csstransforms3d .frame ul li.active ~ li {
-	-webkit-transform: rotateY(-60deg) scale(0.9);
-	-ms-transform: rotateY(-60deg) scale(0.9);
-	transform: rotateY(-60deg) scale(0.9);
-}*/

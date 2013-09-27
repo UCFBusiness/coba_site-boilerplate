@@ -220,21 +220,21 @@ ol.round li.nine {
   }
 }
 /* Mobile Layout: 480px and below. */
-/* line 18, ../Content/scss/site.scss */
+/* line 14, ../Content/scss/site.scss */
 body {
   color: blue;
 }
 
 /* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
-  /* line 22, ../Content/scss/site.scss */
+  /* line 18, ../Content/scss/site.scss */
   body {
     color: red;
   }
 }
 /* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 1025px) {
-  /* line 27, ../Content/scss/site.scss */
+  /* line 23, ../Content/scss/site.scss */
   body {
     color: #333;
   }
@@ -242,31 +242,31 @@ body {
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Jumbotron CSS */
 /* Move down content because we have a fixed navbar that is 50px tall */
-/* line 37, ../Content/scss/site.scss */
+/* line 33, ../Content/scss/site.scss */
 body {
   /*padding-top: 36px;  original size was 50px*/
 }
 
 /* Development Only Border CSS - delete when done 
 -------------------------------------------------- */
-/* line 45, ../Content/scss/site.scss */
+/* line 41, ../Content/scss/site.scss */
 .borderline {
   border: 1px dashed red;
 }
 
-/* line 49, ../Content/scss/site.scss */
+/* line 45, ../Content/scss/site.scss */
 .centerline, .content-wrapper {
   border: 1px dashed blue;
 }
 
-/* line 53, ../Content/scss/site.scss */
+/* line 49, ../Content/scss/site.scss */
 .container {
   border: 1px dashed green;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
-/* line 62, ../Content/scss/site.scss */
+/* line 58, ../Content/scss/site.scss */
 html,
 body {
   height: 100%;
@@ -274,7 +274,7 @@ body {
 }
 
 /* Wrapper for page content to push down footer */
-/* line 68, ../Content/scss/site.scss */
+/* line 64, ../Content/scss/site.scss */
 #wrap {
   min-height: 100%;
   height: auto !important;
@@ -286,7 +286,7 @@ body {
 }
 
 /* Set the fixed height of the footer here */
-/* line 79, ../Content/scss/site.scss */
+/* line 75, ../Content/scss/site.scss */
 #footer {
   height: 60px;
   background-color: #f5f5f5;
@@ -295,17 +295,17 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
-/* line 89, ../Content/scss/site.scss */
+/* line 85, ../Content/scss/site.scss */
 #wrap > .container {
   padding: 60px 15px 0;
 }
 
-/* line 92, ../Content/scss/site.scss */
+/* line 88, ../Content/scss/site.scss */
 .container .credit {
   margin: 20px 0;
 }
 
-/* line 96, ../Content/scss/site.scss */
+/* line 92, ../Content/scss/site.scss */
 #footer > .container {
   padding-left: 15px;
   padding-right: 15px;
