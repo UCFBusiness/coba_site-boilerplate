@@ -4,16 +4,16 @@ console.log( "START: main.js" );
 require.config({
     waitSeconds: 10,
     paths: {
-        'fittext': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.fittext',
-        'waypoint': 'http://scripts.bus.ucf.edu/cdn/js/libs/waypoints.min',
-        'easing': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.easing.min',
-        'equalh': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.equalheight',
-        'sticky': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.sticky-kit.min',
-        'resize': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.debouncedresize'
+        'sly': '../content/sly/js/main',
+        'fittext': '../content/js/jquery.fittext',
+        'waypoint': '../content/js/waypoints.min',
+        'easing': '../content/js/jquery.easing.min',
+        'equalh': '../content/js/jquery.equalheight',
+        'resize': '../content/js/jquery.debouncedresize'
     }
 });
 
-require(['fittext', 'resize', 'waypoint'], function () {
+require(['fittext', 'easing', 'sly'], function () {
 
     // http://stackoverflow.com/questions/3698200/window-onload-vs-document-ready
     // http://4loc.wordpress.com/2009/04/28/documentready-vs-windowload/
@@ -124,10 +124,9 @@ require(['fittext', 'resize', 'waypoint'], function () {
             });
 
         if (width > 1024) //load desktop scripts
-            require(['equalh'], function () {
+            require([], function () {
                 //-- screensize -------------------------
                 $("#message").html(width + " x " + height + " - desktop");
-                //$("#careers .col-md-4").equalHeights(100,300);
             });
 
     }); //end ready

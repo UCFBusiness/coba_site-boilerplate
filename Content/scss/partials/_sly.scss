@@ -35,7 +35,7 @@
 	color: #fff;
 	background: #ffcc00; /*UCF gold*/
 }
-.frame ul li p {
+.frame ul li p { /*slide caption*/
     background: rgba(0,0,0,.4);
     padding: 10px 5px;
     position: absolute;
@@ -119,13 +119,17 @@
 @media only screen and (min-width: 1025px) {
 
     /* Frame */
+    .frame {
+	    width: 800px;
+        margin: 0 auto;
+    }
     .frame ul li { /*<== size of slide*/
-        max-width: 960px; 
+        width: 720px; 
         height: 100%;
     }
     
     /*slide buttons*/
-    .pagespan button, .pagespan button { visibility: visible; background: transparent; border: 0; color: #ffcc00; opacity: .5; }
+    .pagespan button, .pagespan button { visibility: visible; background: transparent; border: 0; color: #ffcc00; opacity: .5; border: 1px dashed red;}
     .pagespan button:hover, .pagespan button:hover { opacity: 1; }
     .pagespan button:disabled, .pagespan button:disabled { opacity: .2; }
 

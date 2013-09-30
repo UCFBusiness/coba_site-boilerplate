@@ -50,23 +50,5 @@ jQuery(function ($) {
 
     // =============================================================================
 
-    // Method calling buttons
-    $example.on('click', 'button[data-action]', function () {
-        var action = $(this).data('action');
-
-        switch (action) {
-            case 'add':
-                sly.add('<li>' + sly.items.length + '</li>');
-                break;
-            case 'remove':
-                sly.remove(-1);
-                break;
-            default:
-                sly[action]();
-        }
-    });
-
-    // =============================================================================
-
 
 });
