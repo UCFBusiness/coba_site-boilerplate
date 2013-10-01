@@ -5,13 +5,13 @@ require.config({
     waitSeconds: 10,
     paths: {
         //plugins
-        'sly': 'http://scripts.bus.ucf.edu/cdn/js/libs/sly.min',
-        'fittext': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.fittext',
-        'waypoint': 'http://scripts.bus.ucf.edu/cdn/js/libs/waypoints.min',
-        'easing': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.easing.min',
-        'equalh': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.equalheight',
-        'sticky': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.sticky-kit.min',
-        'resize': 'http://scripts.bus.ucf.edu/cdn/js/libs/jquery.debouncedresize',
+        'sly': '../content/sly/js/sly.min',
+        'fittext': '../content/js/jquery.fittext',
+        'waypoint': '../content/js/waypoints.min',
+        'easing': '../content/js/jquery.easing.min',
+        'equalh': '../content/js/jquery.equalheight',
+        'sticky': '../content/js/jquery.sticky-kit.min',
+        'resize': '../content/js/jquery.debouncedresize',
         //scripts
         'sly-main': '../content/sly/js/main'
     }

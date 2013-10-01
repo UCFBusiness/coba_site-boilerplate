@@ -1,12 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis|Cantora+One|Quicksand|Titillium+Web|Roboto|Advent+Pro);
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../font/fontawesome-webfont.eot?v=3.0.1");
-  src: url("../font/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../font/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../font/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* =============================================================================
    UCF Header
    ========================================================================== */
@@ -412,7 +404,7 @@ Footer/Section Layout
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 99%;
   /*99%*/
   position: relative;
 }
@@ -557,19 +549,19 @@ Footer/Section Layout
 /* ================================================================================================================
    Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout.
    ============================================================================================================== */
-@media only screen and (min-width: 481px) {
+@media all and (min-width: 481px) {
   /* Frame */
   /* line 108, ../Content/scss/partials/_sly.scss */
   .frame ul li {
     /*<== size of slide*/
-    width: 680px;
-    height: 100%;
+    /*width: 680px;
+    height: 100%;*/
   }
 }
 /* ===========================================================================================================
    Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout.
    ========================================================================================================= */
-@media only screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
   /* Frame */
   /* line 122, ../Content/scss/partials/_sly.scss */
   .frame {
@@ -580,8 +572,8 @@ Footer/Section Layout
   /* line 126, ../Content/scss/partials/_sly.scss */
   .frame ul li {
     /*<== size of slide*/
-    min-width: 320px;
-    height: 100%;
+    /*min-width: 320px;
+    height: 100%;*/
   }
 
   /*slide buttons*/
@@ -623,7 +615,7 @@ Footer/Section Layout
   .next, .prev {
     float: left;
     width: 45px;
-    height: 300px;
+    height: 340px;
     font-size: 60px;
   }
 
@@ -633,7 +625,7 @@ Footer/Section Layout
   }
 
   /*scroll bar*/
-  /* line 143, ../Content/scss/partials/_sly.scss */
+  /* line 145, ../Content/scss/partials/_sly.scss */
   .scrollbar {
     visibility: hidden;
     display: hidden;
@@ -643,43 +635,43 @@ Footer/Section Layout
    Special Classes
    ========================================================================== */
 /* One Item Per Frame example*/
-/* line 153, ../Content/scss/partials/_sly.scss */
+/* line 155, ../Content/scss/partials/_sly.scss */
 .oneperframe {
   min-height: 300px;
   line-height: 300px;
 }
 
-/* line 154, ../Content/scss/partials/_sly.scss */
+/* line 156, ../Content/scss/partials/_sly.scss */
 .oneperframe ul li {
   width: 1140px;
 }
 
-/* line 155, ../Content/scss/partials/_sly.scss */
+/* line 157, ../Content/scss/partials/_sly.scss */
 .oneperframe ul li.active {
   background: #333;
 }
 
 /* Crazy example */
-/* line 159, ../Content/scss/partials/_sly.scss */
+/* line 161, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(2n) {
   width: 100px;
   margin: 0 4px 0 20px;
 }
 
-/* line 160, ../Content/scss/partials/_sly.scss */
+/* line 162, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(3n) {
   width: 300px;
   margin: 0 10px 0 5px;
 }
 
-/* line 161, ../Content/scss/partials/_sly.scss */
+/* line 163, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(4n) {
   width: 400px;
   margin: 0 30px 0 2px;
 }
 
 /* 3D Effects */
-/* line 165, ../Content/scss/partials/_sly.scss */
+/* line 167, ../Content/scss/partials/_sly.scss */
 .effects {
   min-height: 200px;
   /*line-height: 200px;*/
@@ -692,14 +684,14 @@ Footer/Section Layout
   overflow-y: show;
 }
 
-/* line 176, ../Content/scss/partials/_sly.scss */
+/* line 178, ../Content/scss/partials/_sly.scss */
 .effects ul {
   -webkit-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 181, ../Content/scss/partials/_sly.scss */
+/* line 183, ../Content/scss/partials/_sly.scss */
 .effects ul li {
   position: relative;
   margin: 0 -20px;
@@ -710,7 +702,7 @@ Footer/Section Layout
   transition: transform 300ms ease-out;
 }
 
-/* line 190, ../Content/scss/partials/_sly.scss */
+/* line 192, ../Content/scss/partials/_sly.scss */
 .effects ul li.active {
   z-index: 10;
   -webkit-transform: scale(1);
@@ -718,7 +710,7 @@ Footer/Section Layout
   transform: scale(1);
 }
 
-/* line 196, ../Content/scss/partials/_sly.scss */
+/* line 198, ../Content/scss/partials/_sly.scss */
 .effects ul li.active ~ li {
   -webkit-transform: rotateY(-60deg) scale(0.9);
   -ms-transform: rotateY(-60deg) scale(0.9);
@@ -726,7 +718,7 @@ Footer/Section Layout
 }
 
 /* Grid Background */
-/* line 203, ../Content/scss/partials/_sly.scss */
+/* line 205, ../Content/scss/partials/_sly.scss */
 .grid-background {
   margin: 0 auto;
   padding: 115px 0 80px;

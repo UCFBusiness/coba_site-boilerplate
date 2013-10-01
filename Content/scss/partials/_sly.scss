@@ -18,7 +18,7 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	height: 100%; /*99%*/
+	height: 99%; /*99%*/
     position: relative;
 }
 .frame ul li { /*slides*/
@@ -102,12 +102,12 @@
 /* ================================================================================================================
    Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout.
    ============================================================================================================== */
-@media only screen and (min-width: 481px) {
+@media all and (min-width: 481px) {
     
     /* Frame */
     .frame ul li { /*<== size of slide*/
-        width: 680px;
-        height: 100%;
+        /*width: 680px;
+        height: 100%;*/
     }
     
 }
@@ -116,7 +116,7 @@
 /* ===========================================================================================================
    Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout.
    ========================================================================================================= */
-@media only screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
 
     /* Frame */
     .frame {
@@ -124,8 +124,8 @@
         margin: 0 auto;
     }
     .frame ul li { /*<== size of slide*/
-        min-width: 320px; 
-        height: 100%;
+        /*min-width: 320px;
+        height: 100%;*/
     }
     
     /*slide buttons*/
@@ -136,8 +136,10 @@
     .forward, .backward { float: left; width: 50px; height: 260px; font-size: 60px; border: 1px dashed blue; }
     .forward { float: right; }
 
-    .next, .prev { float: left; width: 45px; height: 300px; font-size: 60px; }
+    .next, .prev { float: left; width: 45px; height: 340px; font-size: 60px; }
     .next { float: right; }
+    .next:hover, .prev:hover {}
+
 
     /*scroll bar*/
     .scrollbar { visibility: hidden; display: hidden;}
