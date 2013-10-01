@@ -31,7 +31,8 @@
         <!-- Site CSS -->
         <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
         <link type="text/css" rel="stylesheet" href="~/content/sly/css/font-awesome.min.css" />
-        @*<link type="text/css" rel="stylesheet" href="~/styles/global.css" />*@
+        
+        <link type="text/css" rel="stylesheet" href="~/new.css" />
 
         @RenderSection("Styles", required: false)
 
@@ -46,12 +47,12 @@
 
         @*<img src="..." class="img-responsive" alt="Responsive image">*@
         <!-- Wrap all page content here -->
-        <div id="wrap">
+        <div id="wrap" class="clearfix">
 
             <header>
                 <div class="content-wrapper">
                     
-                    <!-- UCF Header -->
+                    @*<!-- UCF Header -->
                     <div id="UCFHBHeader" class="">
                         <!--UCF Header Wrapper-->
                         <div class="UCFHBWrapper clearfix ">
@@ -62,60 +63,7 @@
                         </div>
                         <!--Alert Message-->
                         <div class="alert-message"><p>Well done! You successfully read this alert message.</p></div>
-                    </div><!-- /UCFHBHeader -->
-
-                    <!-- NavBar Sample -->
-                    <div id="nav" class="navbar navbar-default" role="navigation">
-                        <div class="container">
-
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a class="navbar-brand" href="#">College of Business</a>
-                            </div>
-
-                            <div class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav">
-                                    
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Discover <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li class="active"><a href="#">Home</a></li>
-                                            <li class="active"><form id="site-search" class="search" action="/search" name="input" method="get" >
-                                                <div class="input-append">
-                                                    <input type="search" placeholder="SEARCH" name="q" class="dl-searchfield" />
-                                                    <input type="submit" value="submit" class="dl-searchbutton" />
-                                                </div>
-                                            </form></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Academics</a></li>
-                                            <li><a href="#">Our College</a></li>
-                                            <li><a href="#">Faculty Research</a></li>
-                                            <li><a href="#">Alumni &amp; Friends</a></li>
-                                            <li><a href="#">Careers &amp; Recruitment</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <!--
-                                <form class="navbar-form navbar-right">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Email" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" placeholder="Password" class="form-control">
-                                    </div>
-                                    <button type="submit" class="btn btn-success">Sign in</button>
-                                </form>
-                                -->
-
-                            </div><!--/.navbar-collapse -->
-
-                        </div>
-                    </div><!--/navbar -->
+                    </div><!-- /UCFHBHeader -->*@
 
                     <!-- mobile navigation menu -->
                     @*<div id="header">
@@ -127,9 +75,65 @@
                 </div>
             </header>
 
-            <div id="content">
+            <nav class="site-nav" role="navigation">
+                <button class="site-nav-logo distraction-free-component" data-action="open-nav">
+		            <span class="icons icons-logo-m">
+			            <span class="screen-reader-text">Medium site navigation</span>
+		            </span>
+		            <div class="site-nav-activity-flag"></div>
+	            </button>
+
+                <div class="site-nav-scrollable-container">
+                    <!--site search-->
+		            <div class="site-nav-search-wrapper">
+			            <div class="site-nav-search-inner">
+				            <div class="site-nav-search">
+					            <input type="text" class="site-nav-search-input site-nav-search-input-desktop" title="Search Medium" placeholder="Search Medium" />
+					            <button class="btn btn-chromeless site-nav-search-input-trigger site-nav-search-clear" data-action="clear-search">
+						            <span class="icons icons-remove"></span>
+					            </button>
+					            <button class="btn btn-chromeless site-nav-search-input-trigger site-nav-search-query" data-action="query-search">
+						            <span class="icons icons-search"></span>
+					            </button>
+				            </div>
+				            <span class="site-nav-search-item navigable-list-item">
+					            <button class="btn btn-chromeless site-nav-search-collapse" data-action="close-search">
+						            <span class="icons icons-remove"></span>
+						            <span class="site-nav-search-remove-mobile">Cancel</span>
+					            </button>
+				            </span>
+			            </div>
+			            <div class="site-nav-search-results"></div>
+		            </div>
+                    <!--navigation-->
+		            <ul class="site-nav-list">
+			            <li class="site-nav-list-item navigable-list-item site-nav-list-item-home">
+				            <a class="site-nav-list-item-btn" title="Go home" href="/" tabindex="-1"><span class="icons icons-logo-m"></span>Home</a>
+				            <div class="site-nav-search-nav-mobile">
+					            <span class="icons icons-search site-nav-search-input-mobile-search-input-bg"></span>
+					            <input type="search" class="site-nav-search-input site-nav-search-input-mobile" />
+				            </div>
+				            <div class="site-nav-search-nav-desktop">
+					            <span class="site-nav-search-item site-nav-search-open-trigger navigable-list-item">
+						            <button class="btn btn-chromeless site-nav-list-item-btn-secondary" data-action="open-search" tabindex="-1">
+							            <span class="icons icons-search">
+								            <span class="screen-reader-text">Search</span>
+							            </span>
+						            </button>
+					            </span>
+				            </div>
+			            </li>
+			            <li class="site-nav-list-item navigable-list-item">
+				            <a class="site-nav-list-item-btn" title="Sign in with Twitter" data-action="sign-in-with-twitter" href="/m/account/authenticate-twitter" tabindex="-1"><span class="icons icons-twitter-small"></span>Sign in with Twitter</a>
+			            </li>
+		            </ul>
+
+	            </div>
+            </nav>
+
+            <div id="content" class="clearfix">
                 @RenderSection("featured", required: false)
-                <section class="content-wrapper main-content clearfix">
+                <section class="content-wrapper main-content">
                     @RenderBody()
                 </section>
                 <!-- for development only --><div><label id="message" style="display: block;"></label></div><!-- for development only -->

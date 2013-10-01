@@ -573,14 +573,14 @@ Footer/Section Layout
   /* Frame */
   /* line 122, ../Content/scss/partials/_sly.scss */
   .frame {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
   /* line 126, ../Content/scss/partials/_sly.scss */
   .frame ul li {
     /*<== size of slide*/
-    width: 720px;
+    min-width: 320px;
     height: 100%;
   }
 
@@ -622,8 +622,8 @@ Footer/Section Layout
   /* line 139, ../Content/scss/partials/_sly.scss */
   .next, .prev {
     float: left;
-    width: 100px;
-    height: 200px;
+    width: 45px;
+    height: 300px;
     font-size: 60px;
   }
 
