@@ -78,88 +78,93 @@ body {
 }*/
 /* line 14, ../Content/scss/partials/_primary_styles.scss */
 body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1.4em;
   /* Create a page-wide stacking context 
   (so that negative margins work as you expect) */
   position: relative;
   z-index: 0;
 }
 
-/* line 21, ../Content/scss/partials/_primary_styles.scss */
+/* line 25, ../Content/scss/partials/_primary_styles.scss */
 #wrap {
   position: relative;
   z-index: 1;
 }
 
-/* line 27, ../Content/scss/partials/_primary_styles.scss */
+/* line 31, ../Content/scss/partials/_primary_styles.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  line-height: 1.1em;
 }
 
 /* ordered list */
-/* line 35, ../Content/scss/partials/_primary_styles.scss */
+/* line 37, ../Content/scss/partials/_primary_styles.scss */
 ol.round {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 40, ../Content/scss/partials/_primary_styles.scss */
+/* line 42, ../Content/scss/partials/_primary_styles.scss */
 ol.round li {
   margin: 25px 0;
   padding-left: 45px;
 }
 
-/* line 45, ../Content/scss/partials/_primary_styles.scss */
+/* line 47, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.zero {
   background: url("../Images/orderedList0.png") no-repeat;
 }
 
-/* line 49, ../Content/scss/partials/_primary_styles.scss */
+/* line 51, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.one {
   background: url("../Images/orderedList1.png") no-repeat;
 }
 
-/* line 53, ../Content/scss/partials/_primary_styles.scss */
+/* line 55, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.two {
   background: url("../Images/orderedList2.png") no-repeat;
 }
 
-/* line 57, ../Content/scss/partials/_primary_styles.scss */
+/* line 59, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.three {
   background: url("../Images/orderedList3.png") no-repeat;
 }
 
-/* line 61, ../Content/scss/partials/_primary_styles.scss */
+/* line 63, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.four {
   background: url("../Images/orderedList4.png") no-repeat;
 }
 
-/* line 65, ../Content/scss/partials/_primary_styles.scss */
+/* line 67, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.five {
   background: url("../Images/orderedList5.png") no-repeat;
 }
 
-/* line 69, ../Content/scss/partials/_primary_styles.scss */
+/* line 71, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.six {
   background: url("../Images/orderedList6.png") no-repeat;
 }
 
-/* line 73, ../Content/scss/partials/_primary_styles.scss */
+/* line 75, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.seven {
   background: url("../Images/orderedList7.png") no-repeat;
 }
 
-/* line 77, ../Content/scss/partials/_primary_styles.scss */
+/* line 79, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.eight {
   background: url("../Images/orderedList8.png") no-repeat;
 }
 
-/* line 81, ../Content/scss/partials/_primary_styles.scss */
+/* line 83, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.nine {
   background: url("../Images/orderedList9.png") no-repeat;
 }
 
+/* =============================================================================
+   NEW
+   ========================================================================== */
 /* Mobile Layout: 480px and below. */
 /* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
