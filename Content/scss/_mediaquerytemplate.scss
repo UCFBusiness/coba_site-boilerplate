@@ -8,21 +8,30 @@
 // styles go here.
 
 
-/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
+
+/* Tablet Layout (portrait mode): 481px to 768px. Inherits styles from: Mobile Layout. */
 @media all and (min-width: 481px) {
-    // styles go here.
     
+
 }
 
 
-/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+/* Tablet Layout (landscape mode): 769px to 1024px. Inherits styles from: Mobile Layout and Portrait Layout. */
+@media all and (min-width: 769px) {
+    
+
+}
+
+
+/* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-    // styles go here.
+    
 
 }
+
 
 /* Print Layout: Inherits styles from: All Layouts. */
 @media print {
-    // styles go here.
+    
 
 }
