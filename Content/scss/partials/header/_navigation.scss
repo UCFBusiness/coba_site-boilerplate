@@ -207,16 +207,16 @@ nav.dl-menuwrapper {
 }
 
 
-/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 481px) {
+/* Tablet Layout: 500px to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
+@media all and (min-width: 500px) {
     
     
     
 }
 
 
-/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 1025px) {
+/* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media screen and (min-width: 1025px) {
 
     
 

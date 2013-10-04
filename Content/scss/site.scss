@@ -9,31 +9,6 @@
 // Modules and Variables
 @import "partials/base";
 
-// Media-Queries
-/* Mobile Layout: 480px and below. */
-body{color: blue;}
-
-/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 481px) {
-    body{color: red;}
-}
-
-/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 1025px) {
-    body{color: #333;}
-}
-
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/* Jumbotron CSS */
-/* Move down content because we have a fixed navbar that is 50px tall */
-
-body {
-    /*padding-top: 36px;  original size was 50px*/
-}
-
 
 /* Development Only Border CSS - delete when done 
 -------------------------------------------------- */
@@ -50,46 +25,20 @@ body {
     border: 1px dashed green;
 }
 
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* Sticky footer styles
--------------------------------------------------- */
+// Media-Queries
+/* Mobile Layout: 480px and below. */
+body{color: blue;}
 
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+    body{color: red;}
 }
 
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 1025px) {
+    body{color: #333;}
 }
 
-/* Set the fixed height of the footer here */
-#footer {
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-#wrap > .container {
-  padding: 60px 15px 0;
-}
-.container .credit {
-  margin: 20px 0;
-}
-
-#footer > .container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/

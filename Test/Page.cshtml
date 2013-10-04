@@ -36,16 +36,7 @@
         <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
         <link type="text/css" rel="stylesheet" href="~/content/sly/css/font-awesome.min.css" />
 
-        <style>
-            body {
-                background-image: url("../../images/golden-bg.jpg");
-                background-size: cover;
-                background-position:center;
-                background-attachment: scroll;
-                
-                background: #333;
-            }
-        </style>
+        <link type="text/css" rel="stylesheet" href="new.css" />
 
         <script src="~/scripts/modernizr-2.6.2.js"></script>
     </head>
@@ -56,6 +47,7 @@
 <!--Content-->
         <div id="container">
         
+
             <header>
                 <div class="content-wrapper">
                 <!-- for development only --><div><label id="message" style="display: block;"></label></div><!-- for development only -->
@@ -63,9 +55,8 @@
             </header>
 
             <nav class="site-nav" role="navigation">
-                
                 <button class="site-nav-logo distraction-free-component" data-action="open-nav">
-		            <span class="icons .icons-logo-m">
+		            <span class="icons icons-logo-">
 			            <span class="screen-reader-text">site navigation</span>
 		            </span>
 		            <div class="site-nav-activity-flag"></div>
@@ -75,7 +66,6 @@
                     <!--site search-->
 		            <div class="site-nav-search-wrapper">
 			            <div class="site-nav-search-inner">
-
 				            <div class="site-nav-search">
 					            <input type="text" class="site-nav-search-input site-nav-search-input-desktop" title="Search Medium" placeholder="Search Medium" />
 					            <button class="btn btn-chromeless site-nav-search-input-trigger site-nav-search-clear" data-action="clear-search">
@@ -85,14 +75,12 @@
 						            <span class="icons icons-search"></span>
 					            </button>
 				            </div>
-
 				            <span class="site-nav-search-item navigable-list-item">
 					            <button class="btn btn-chromeless site-nav-search-collapse" data-action="close-search">
 						            <span class="icons icons-remove"></span>
 						            <span class="site-nav-search-remove-mobile">Cancel</span>
 					            </button>
 				            </span>
-
 			            </div>
 			            <div class="site-nav-search-results"></div>
 		            </div>
@@ -123,18 +111,18 @@
 
             <div class="site-nav-overlay"></div>
 
-            <div id="content" class="main-content clearfix" style="height: 100%;">
+            <div id="content" class="main-content" >
                 <div class="content-wrapper">
 	                <div class="screen-content">
 		    
                         <aside class="cover cover-home" data-load-img=".cover-img">
 			                <div class="cover-header cover-img" style="background-image: url('images/finance-bg.jpg');"><!--background image here-->
                                 
-                                <div id="UCFHBHeader">
-                                    <div class="UCFHBWrapper">
+                                <div id="UCFHBHeader" class="">
+                                    <div class="UCFHBWrapper clearfix ">
                                         <section id="UCFtitle">
-                                            <a href="http://www.ucf.edu" target="_blank"><span class="UCFHBText">University of Central Florida</span></a><!--/UCF Logo-->
-                                        </section>
+                                            <a href="http://www.ucf.edu" target="_blank"><span class="UCFHBText">University of Central Florida</span></a>
+                                        </section><!--/UCF Logo-->
                                     </div><!--/UCF Header Wrapper-->
                                 </div><!-- /UCFHBHeader -->
 
@@ -143,25 +131,17 @@
                             </div>
 			                <div class="cover-body">
 				                <div class="cover-body-inner">
-					                <h1 class="cover-title">College <span style="font-size: .8em;">of</span> Business</h1>
-					                <p class="cover-description">Slaying the B.E.A.S.T. since 1968.
-                                        <br><br>Those seeking greatness need only <a href="#" title="...">Apply!</a></p>
-					                <p class="cover-actions">
-						                <a data-action="sign-in-with-twitter" href="/account/login" class="btn btn-primary">
-                                            <span class="icons icons-twitter"></span>
-                                            <span style="font-size: .8em">Sign in with Twitter</span>
-                                        </a>
-                                        <a data-action="sign-in-with-facebook" href="/account/login" class="btn btn-primary">
-                                            <span class="icons icons-facebook"></span>
-                                            <span style="font-size: .8em">Sign in with Facebook</span>
-                                        </a>
-					                </p>
-                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
+					                <h1 class="cover-title">College of Business</h1>
+					                <p class="cover-description">Those seeking greatness need only... <a href="#" title="Learn more about Medium">Apply!</a>. 
+                                        <br><br>Follow us on <a title="Follow us on..." href="#"></a>...</p>
+					                <div class="cover-actions">
+						                <a data-action="sign-in-with-twitter" href="/account/login" class="btn btn-primary"><span class="icons icons-twitter"></span>Sign in with Twitter</a>
+					                </div>
 				                </div>
 			                </div>
 		                </aside>
 
-		                <section class="wrapper"><!--background image here-->
+		                <section class="wrapper" style="background:url('images/body-bg.jpg') no-repeat;"><!--background image here-->
 			                <div class="wrapper-inner" >
 
                                 <!-- place <nav> for page navigation here -->
@@ -174,25 +154,24 @@
 
 			                            <div class="frame effects">
 				                            <ul class="clearfix">
-                                                <!-- 9 panels per row -->
-                                                <li><img src="~/images/panels/panel1.jpg" alt="..."><p>1. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/panels/panel2.jpg" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/panels/panel3.jpg" alt="..."><p>3. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/panels/panel4.jpg" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/panels/panel1.jpg" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/panels/panel2.jpg" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/panels/panel3.jpg" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/panels/panel4.jpg" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/panels/panel4.jpg" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+					                            <li><img data-src="holder.js/100%x300" alt="..."></li>
+                                                <li><img data-src="" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p></li>
+                                                <li><img data-src="" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
 				                            </ul>
 			                            </div><!--/frames-->
 
                                         <ul class="pages"></ul><!--/position marker-->
-                                        @*<div class="scrollbar">
+                                        <div class="scrollbar">
 				                            <div class="handle">
 					                            <div class="mousearea"></div>
 				                            </div>
-			                            </div>*@<!--/scrollbar-->
+			                            </div><!--/scrollbar-->
 
                                     </div>
                                 </section>
@@ -205,24 +184,24 @@
 
 			                            <div class="frame effects">
 				                            <ul class="clearfix">
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniams...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniams...</p></li>
+                                                <li><img data-src="" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p></li>
+                                                <li><img data-src="" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
 				                            </ul>
 			                            </div><!--/frames-->
 
                                         <ul class="pages"></ul><!--/position marker-->
-                                        @*<div class="scrollbar">
+                                        <div class="scrollbar">
 				                            <div class="handle">
 					                            <div class="mousearea"></div>
 				                            </div>
-			                            </div>*@<!--/scrollbar-->
+			                            </div><!--/scrollbar-->
 
                                     </div>
                                 </section>
@@ -235,24 +214,24 @@
 
                                         <div class="frame effects">
 				                            <ul class="clearfix">
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniams...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                                                <li><img src="~/images/temp/panel.jpg" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniams...</p></li>
+                                                <li><img data-src="" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p></li>
+                                                <li><img data-src="" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
+                                                <li><img data-src="" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
 				                            </ul>
 			                            </div><!--/frames-->
 
                                         <ul class="pages"></ul><!--/position marker-->
-                                        @*<div class="scrollbar">
+                                        <div class="scrollbar">
 				                            <div class="handle">
 					                            <div class="mousearea"></div>
 				                            </div>
-			                            </div>*@<!--/scrollbar-->
+			                            </div><!--/scrollbar-->
 
                                     </div>
                                 </section>
@@ -266,6 +245,9 @@
                 </div>
             </div>
 
+        
+        </div> <!-- #container -->
+<!--Content-->
         <footer>
             <div class="content-wrapper">
                 <!--BEGIN-->
@@ -305,13 +287,9 @@
                     </li>
                 </ul>
                 <!--FINIS-->
-                
+                <div class="float-left text-muted credit"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
             </div>
         </footer>
-        
-        </div> <!-- #container -->
-<!--Content-->
-
 
         <a href="#" class="back-to-top">&#x25B2; Top </a>
         <!-- jquery -->

@@ -3,29 +3,20 @@
    ========================================================================== */
 
 #UCFHBHeader {
-	background: #000 url("../../images/ucfbar/header_border.png") repeat-x;
-	background-position: bottom left;
-    padding: 4px 0 2px 0; /* to treat the bg as a border +2px to bottom padding*/
-	height: 36px;
+    background: #000 url("../../images/ucfbar/header_border.png") repeat-x;
+    background-position: bottom left;
+    border-width: 0 0 1px;
+    padding: 5px 0 1px 0; /*to treat the bg as a border +2px to bottom padding*/
+    height: 36px;
+    z-index: 9999;
 
-    /**/
-  position: relative;
-  right: 0;
-  left: 0;
-  border-width: 0 0 1px;
-  top: 0;
-  z-index: 1030;
-
-}
-
-#UCFHBHeader #UCFtitle {
-	float:left;
+    box-shadow: inset 0 2 0 1px rgba(0,0,0,.2);
 }
 
 #UCFHBHeader #UCFtitle a {
-	background: url("../../images/ucfbar/ucflogo.png") no-repeat;
-	background-position: top left;
-    width: 318px;
+	background-image: url("../../images/ucfbar/ucflogo.png");
+    background-size: 100%;
+    width: 295px;
     height: 29px;
 	display: block;
 }
@@ -34,17 +25,8 @@
 	display: none;
 }
 
-#UCFHBHeader label {
-	text-indent: -900px;
-    color: #FFF;
-	float:left;
-}
-
-#UCFHBHeader #UCFHBUni_links {
-	margin-left: 75px;
-	float: left;
-}
-
 #UCFHBHeader .alert-message {
-	width:580px; margin:0 auto; display:none;
+	margin:0 auto;
+    width:100%;
+    display:none;
 }

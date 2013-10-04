@@ -2,14 +2,13 @@
 // Partials
 @import "typography";
 @import "ucf-header";
+@import "header/navigation";
 @import "primary_styles";
 @import "footer";
-@import "back-to-top";
 
+@import "back-to-top";
 @import "grids";
 @import "sly";
-
-@import "header/navigation";
 
 // Font weights
 $light: 100;
