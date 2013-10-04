@@ -4,6 +4,7 @@
 
 .back-to-top {
     background-color: rgba(235, 235, 235, 0.80);
+    border: 2px solid #ccc;
     padding: .23em .4em;
     position: fixed;
     bottom: 1em;
@@ -13,7 +14,7 @@
     color: #000;
     display: none;
     border-radius: 25px;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .back-to-top:hover {    

@@ -7,46 +7,20 @@
 /*slide buttons*/
 .pagespan button, .pagespan button { visibility: hidden; display: hidden;}
 
-
 /* Frame */
-.frame {
-	overflow: hidden;
-    border: 1px dashed red;
-    z-index: 9;
-}
-.frame ul { /*frame viewport*/
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	height: 99%; /*99%*/
-    position: relative;
-}
-.frame ul li { /*slides*/
-	float: left;
-	width: 320px; /*<== width of slide*/
-	height: 340px; /*<== height of slide*/
-	margin: 0;
-	padding: 0;
-    padding-top: 20px;
-	background: #ddd;
-	color: #ddd;
-	cursor: pointer;
+.frame { width: 100%;overflow: hidden;border: 1px dashed red;z-index: 9; }
+.frame ul { list-style: none;height: 99%;position: relative; } /*frame viewport*/
+.frame ul li { float: left;width: 320px;height: 340px;margin: 0 1px 0 0; padding: 0;padding-top: 20px;background: #ddd;color: #ddd;cursor: pointer;border: 2px solid #333;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3); } /*slides*/
+.frame ul li.active { background: #ffcc00;color: #fff; } /*active slide*/
 
-    box-shadow: inset 2 2 8 1px rgba(0,0,0,.5);
-}
-.frame ul li.active { /*active slide*/
-	color: #fff;
-	background: #ffcc00; /*UCF gold*/
-}
-.frame ul li p { /*slide caption*/
-    background: rgba(0,0,0,.4);
-    padding: 10px 5px;
-    position: absolute;
-    bottom: 10px;
-    left: 0px;
-    color: #fff;
-    z-index: 10;
-}
+/*frame redraw*/
+.frame { margin: 0 auto; width: 100%; height: 190px; overflow: hidden; text-shadow: none; } /*<== height of slide*/
+.frame ul { list-style: none; margin: 0; padding: 0; height: 100%; } /*frame viewport*/
+.frame ul li { background: #ffcc00; float: left; width: 190px; height: 100%; margin: 0 10px 0 0; padding: 0; cursor: pointer; } /*<== width of slide*/
+.frame ul li.active { color: #fff; background: none; } /*active slide*/
+
+/*slide caption*/
+.frame ul li p { background: rgba(0,0,0,.4);padding: 10px 5px;position: absolute;bottom: 10px;left: 0px;color: #fff;z-index: 10;text-shadow: 0px 1px 2px #333; }
 
 /* Scrollbar */
 .scrollbar { margin: 0 0 1em 0; height: 2px; background: #ccc; line-height: 0; } /*-thin line-*/
@@ -66,11 +40,10 @@
 	height: 20px;
 }
 
-
 /* Pages */
 .pages { 
     list-style: none; 
-    margin: 0 auto;
+    margin: 10px auto 0;
     padding: 0; 
     text-align: center; 
     position: relative;
@@ -79,7 +52,7 @@
 	display: inline-block;
 	width: 26px;
 	height: 26px;
-	margin: 0 4px;
+	margin: 0 4px 3px;
 	text-indent: -999px;
 	border-radius: 16px;
 	cursor: pointer;
@@ -94,12 +67,14 @@
 	background: #999;
 }
 
-
 /*controls*/
 .controls { margin: 25px 0; text-align: center; }
 .controls .divider { display: inline-block; margin: 0 10px; }
 .controls button { line-height: 32px; vertical-align: middle; font-family: Novecento, sans-serif; }
 .controls button i { position: relative; top: -2px; margin: 5px; padding: 0; font-size: 32px; vertical-align: middle; }
+
+.next, .prev { visibility: none; display: none; }
+
 
 /* ================================================================================================================
    Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout.
@@ -108,20 +83,23 @@
     
     /* Frame */
     .frame ul li { /*<== size of slide*/
-        /*width: 680px;
-        height: 100%;*/
+        height: 100%;
     }
 
     /* Pages */
-    .pages { margin-top: -20px; }
-
     .pages li {
 	    width: 14px;
 	    height: 14px;
-	    margin: 0 4px;
+	    margin: 0 6px 3px;
 	    text-indent: -999px;
 	    border-radius: 10px;
     }
+
+    /*frame redraw*/
+    .frame { margin: 0 auto; width: 100%; height: 260px; overflow: hidden; text-shadow: none; } /*<== height of slide*/
+    .frame ul { list-style: none; margin: 0; padding: 0; height: 100%; }
+    .frame ul li { float: left; width: 230px; height: 100%; margin: 0 1px 0 0; padding: 0; cursor: pointer; } /*<== width of slide*/
+    .frame ul li.active { color: #fff; background: none;}/*active slide*/
     
 }
 
@@ -133,14 +111,23 @@
 
     /* Frame */
     .frame {
-	    max-width: 800px;
         margin: 0 auto;
+        width: 620px;
     }
     .frame ul li { /*<== size of slide*/
-        /*min-width: 320px;
-        height: 100%;*/
+        height: 100%;
+        border-radius: 120;
     }
     
+    /* Pages */
+    .pages { 
+        list-style: none; 
+        margin: 8px auto 0;
+        padding: 0; 
+        text-align: center; 
+        position: relative;
+    }
+
     /*slide buttons*/
     .pagespan button, .pagespan button { visibility: visible; background: transparent; border: 0; color: #ffcc00; opacity: .5; border: 1px dashed red;}
     .pagespan button:hover, .pagespan button:hover { opacity: 1; }
@@ -149,7 +136,7 @@
     .forward, .backward { float: left; width: 50px; height: 260px; font-size: 60px; border: 1px dashed blue; }
     .forward { float: right; }
 
-    .next, .prev { float: left; width: 45px; height: 340px; font-size: 60px; }
+    .next, .prev { visibility: visible; display: block; float: left; width: 40px; height: 260px; font-size: 60px; }
     .next { float: right; }
     .next:hover, .prev:hover { background: rgba(255, 204, 0, .3); }
 
@@ -179,7 +166,6 @@
 /* 3D Effects */
 .effects {
 	min-height: 200px;
-	/*line-height: 200px;*/
 	-webkit-perspective: 800px;
 	-ms-perspective: 800px;
 	perspective: 800px;

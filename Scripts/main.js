@@ -30,7 +30,7 @@ require(['fittext', 'easing', 'sly', 'sly-main'], function () {
     $(document).ready(function () {
 
         //----- Font Sizes-------------------------------
-        $('body').fitText(1.2, { minFontSize: '14px', maxFontSize: '18px' });
+        $('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '16px' });
         //-----------------------------------------------
 
         //----- fade out fixed menu----------------------
@@ -61,9 +61,9 @@ require(['fittext', 'easing', 'sly', 'sly-main'], function () {
         //-----------------------------------------------
 
         //-- lazy load images ---------------------------
-        $("body img").fadeTo(0, 0);
+        $("img.lz").fadeTo(0, 0);
         $(window).scroll(function (d, h) {
-            $('body img').each(function (i) {
+            $('img.lz').each(function (i) {
                 a = $(this).offset().top + $(this).height() - 400;
                 b = $(window).scrollTop() + $(window).height();
                 if (a < b) $(this).fadeTo(500, 1);

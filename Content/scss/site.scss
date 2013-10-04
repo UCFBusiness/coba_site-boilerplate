@@ -29,16 +29,14 @@
 
 // Media-Queries
 /* Mobile Layout: 480px and below. */
-body{color: blue;}
+
 
 /* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
-    body{color: red;}
 }
 
 /* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 1025px) {
-    body{color: #333;}
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/

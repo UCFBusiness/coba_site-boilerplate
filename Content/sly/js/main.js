@@ -1,5 +1,4 @@
-/*global Sly */
-jQuery(function ($) {
+jQuery(function($){
     'use strict';
 
     // -------------------------------------------------------------
@@ -9,12 +8,12 @@ jQuery(function ($) {
 	//   Force Centered Navigation
 	// -------------------------------------------------------------
 
-    var $feeds = new Array('#example1', '#example2', '#example3');
-    var $num = parseInt($feeds.length, 10);
+    var $feed = new Array('#example1', '#example2', '#example3');
+    var $num = parseInt($feed.length, 10);
 
     for (var i = 0; i < $num; i++) {
         
-        var $section = $($feeds[i]);
+        var $section = $($feed[i]);
         var $frame = $section.find('.frame'); window.frr = $frame;
         var sly = new Sly($frame, {
             horizontal: 1,
@@ -25,7 +24,7 @@ jQuery(function ($) {
             mouseDragging: 1,
             touchDragging: 1,
             releaseSwing: 1,
-            startAt: 1,
+            startAt: 3,
             scrollBar: $section.find('.scrollbar'),
             scrollBy: 1,
             pagesBar: $section.find('.pages'),

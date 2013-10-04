@@ -84,9 +84,15 @@ ol.round {
             background: url("../Images/orderedList9.png") no-repeat;
         }
 
+.apply-button {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 .copyright {
     font-size: .55em;
     color: #fff;
+    line-height: 1.3em;
 }
 
 /* =============================================================================
@@ -127,8 +133,8 @@ ol.round {
     box-shadow:inset -1px 0 0 rgba(0,0,0,0.3)
 }
 
-.cover-body{position:absolute;bottom:0;padding:50px 10% 10%;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-.cover-title{font-size:32px;line-height:1;color:#fff;margin-bottom:12px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
+.cover-body{position:absolute;bottom:0;padding:50px 10% 10%;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;text-shadow: 0px 1px 2px #333;}
+.cover-title{font-size:50px;line-height:1;color:#fff;margin-bottom:12px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
 .cover-description{font-size:16px;line-height:1.2;color:#fff;margin-bottom:14px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
 .cover-description a{color:#fff;text-decoration:underline}
 .cover-meta{font-size:14px;color:#dededc;font-style:italic}
@@ -240,7 +246,7 @@ ol.round {
     .cover{height:350px}
     .cover-bestof,.cover-home,.cover-collection{min-height:350px;height:auto;display:table}
     .cover-body{display:table-cell;vertical-align:bottom;position:relative;left:-1px;margin:0;padding:65px 5% 30px}
-    .cover-title{font-size:24px;line-height:1;margin-bottom:5px}
+    .cover-title{font-size:32px;line-height:1;margin-bottom:5px}
     .cover-description{font-size:16px;margin-bottom:6px}
     .cover-avatar{width:100px;height:100px}
     .cover-new-collection-link{margin-left:0;line-height:32px}
