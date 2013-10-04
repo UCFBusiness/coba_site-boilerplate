@@ -3,7 +3,10 @@ jQuery(function ($) {
     'use strict';
 
     // -------------------------------------------------------------
-	//   Custom using Array
+	//   Custom: Using an Array
+	// -------------------------------------------------------------
+    // -------------------------------------------------------------
+	//   Force Centered Navigation
 	// -------------------------------------------------------------
 
     var $feeds = new Array('#example1', '#example2', '#example3');
@@ -22,13 +25,12 @@ jQuery(function ($) {
             mouseDragging: 1,
             touchDragging: 1,
             releaseSwing: 1,
-            startAt: 4,
+            startAt: 1,
             scrollBar: $section.find('.scrollbar'),
             scrollBy: 1,
             pagesBar: $section.find('.pages'),
             activatePageOn: 'click',
             speed: 300,
-            moveBy: 600,
             elasticBounds: 1,
             easing: 'swing',
             dragHandle: 1,
@@ -42,10 +44,9 @@ jQuery(function ($) {
             next: $section.find('.next'),
             prevPage: $section.find('.prevPage'),
             nextPage: $section.find('.nextPage')
+
         }).init();
 
-        //if (i >= $num)
-        //    break;
     }
 
     // =============================================================================

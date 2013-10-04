@@ -30,7 +30,7 @@ require(['fittext', 'easing', 'sly', 'sly-main'], function () {
     $(document).ready(function () {
 
         //----- Font Sizes-------------------------------
-        $('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '14px' });
+        $('body').fitText(1.2, { minFontSize: '14px', maxFontSize: '18px' });
         //-----------------------------------------------
 
         //----- fade out fixed menu----------------------

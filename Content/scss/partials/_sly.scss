@@ -31,6 +31,8 @@
 	background: #ddd;
 	color: #ddd;
 	cursor: pointer;
+
+    box-shadow: inset 2 2 8 1px rgba(0,0,0,.5);
 }
 .frame ul li.active { /*active slide*/
 	color: #fff;
@@ -111,7 +113,7 @@
     }
 
     /* Pages */
-    .pages { margin-top: -18px; }
+    .pages { margin-top: -20px; }
 
     .pages li {
 	    width: 14px;

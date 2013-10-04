@@ -852,21 +852,24 @@ Footer/Section Layout
    ========================================================================== */
 /* line 5, ../Content/scss/partials/_back-to-top.scss */
 .back-to-top {
-  position: fixed;
-  bottom: 2em;
-  right: 0px;
-  text-decoration: none;
-  color: #000000;
   background-color: rgba(235, 235, 235, 0.8);
-  font-size: 12px;
-  padding: 1em;
+  padding: .23em .4em;
+  position: fixed;
+  bottom: 1em;
+  right: .5em;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #000;
   display: none;
+  border-radius: 25px;
   z-index: 1000;
 }
 
-/* line 18, ../Content/scss/partials/_back-to-top.scss */
+/* line 19, ../Content/scss/partials/_back-to-top.scss */
 .back-to-top:hover {
   background-color: rgba(135, 135, 135, 0.5);
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Mobile Layout: 499px and below. */
@@ -957,9 +960,10 @@ Footer/Section Layout
   background: #ddd;
   color: #ddd;
   cursor: pointer;
+  box-shadow: inset 2 2 8 1px rgba(0, 0, 0, 0.5);
 }
 
-/* line 35, ../Content/scss/partials/_sly.scss */
+/* line 37, ../Content/scss/partials/_sly.scss */
 .frame ul li.active {
   /*active slide*/
   color: #fff;
@@ -967,7 +971,7 @@ Footer/Section Layout
   /*UCF gold*/
 }
 
-/* line 39, ../Content/scss/partials/_sly.scss */
+/* line 41, ../Content/scss/partials/_sly.scss */
 .frame ul li p {
   /*slide caption*/
   background: rgba(0, 0, 0, 0.4);
@@ -980,7 +984,7 @@ Footer/Section Layout
 }
 
 /* Scrollbar */
-/* line 50, ../Content/scss/partials/_sly.scss */
+/* line 52, ../Content/scss/partials/_sly.scss */
 .scrollbar {
   margin: 0 0 1em 0;
   height: 2px;
@@ -989,7 +993,7 @@ Footer/Section Layout
 }
 
 /*-thin line-*/
-/* line 51, ../Content/scss/partials/_sly.scss */
+/* line 53, ../Content/scss/partials/_sly.scss */
 .scrollbar {
   margin: 0 auto;
   height: 20px;
@@ -998,7 +1002,7 @@ Footer/Section Layout
 }
 
 /*-thick line-*/
-/* line 52, ../Content/scss/partials/_sly.scss */
+/* line 54, ../Content/scss/partials/_sly.scss */
 .scrollbar .handle {
   width: 100px;
   height: 100%;
@@ -1007,7 +1011,7 @@ Footer/Section Layout
   cursor: pointer;
 }
 
-/* line 59, ../Content/scss/partials/_sly.scss */
+/* line 61, ../Content/scss/partials/_sly.scss */
 .scrollbar .handle .mousearea {
   position: absolute;
   top: -9px;
@@ -1017,7 +1021,7 @@ Footer/Section Layout
 }
 
 /* Pages */
-/* line 69, ../Content/scss/partials/_sly.scss */
+/* line 71, ../Content/scss/partials/_sly.scss */
 .pages {
   list-style: none;
   margin: 0 auto;
@@ -1026,7 +1030,7 @@ Footer/Section Layout
   position: relative;
 }
 
-/* line 76, ../Content/scss/partials/_sly.scss */
+/* line 78, ../Content/scss/partials/_sly.scss */
 .pages li {
   display: inline-block;
   width: 26px;
@@ -1040,37 +1044,37 @@ Footer/Section Layout
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 88, ../Content/scss/partials/_sly.scss */
+/* line 90, ../Content/scss/partials/_sly.scss */
 .pages li:hover {
   background: #aaa;
 }
 
-/* line 91, ../Content/scss/partials/_sly.scss */
+/* line 93, ../Content/scss/partials/_sly.scss */
 .pages li.active {
   background: #999;
 }
 
 /*controls*/
-/* line 97, ../Content/scss/partials/_sly.scss */
+/* line 99, ../Content/scss/partials/_sly.scss */
 .controls {
   margin: 25px 0;
   text-align: center;
 }
 
-/* line 98, ../Content/scss/partials/_sly.scss */
+/* line 100, ../Content/scss/partials/_sly.scss */
 .controls .divider {
   display: inline-block;
   margin: 0 10px;
 }
 
-/* line 99, ../Content/scss/partials/_sly.scss */
+/* line 101, ../Content/scss/partials/_sly.scss */
 .controls button {
   line-height: 32px;
   vertical-align: middle;
   font-family: Novecento, sans-serif;
 }
 
-/* line 100, ../Content/scss/partials/_sly.scss */
+/* line 102, ../Content/scss/partials/_sly.scss */
 .controls button i {
   position: relative;
   top: -2px;
@@ -1085,7 +1089,7 @@ Footer/Section Layout
    ============================================================================================================== */
 @media all and (min-width: 481px) {
   /* Frame */
-  /* line 108, ../Content/scss/partials/_sly.scss */
+  /* line 110, ../Content/scss/partials/_sly.scss */
   .frame ul li {
     /*<== size of slide*/
     /*width: 680px;
@@ -1093,12 +1097,12 @@ Footer/Section Layout
   }
 
   /* Pages */
-  /* line 114, ../Content/scss/partials/_sly.scss */
+  /* line 116, ../Content/scss/partials/_sly.scss */
   .pages {
-    margin-top: -18px;
+    margin-top: -20px;
   }
 
-  /* line 116, ../Content/scss/partials/_sly.scss */
+  /* line 118, ../Content/scss/partials/_sly.scss */
   .pages li {
     width: 14px;
     height: 14px;
@@ -1112,13 +1116,13 @@ Footer/Section Layout
    ========================================================================================================= */
 @media screen and (min-width: 1025px) {
   /* Frame */
-  /* line 133, ../Content/scss/partials/_sly.scss */
+  /* line 135, ../Content/scss/partials/_sly.scss */
   .frame {
     max-width: 800px;
     margin: 0 auto;
   }
 
-  /* line 137, ../Content/scss/partials/_sly.scss */
+  /* line 139, ../Content/scss/partials/_sly.scss */
   .frame ul li {
     /*<== size of slide*/
     /*min-width: 320px;
@@ -1126,7 +1130,7 @@ Footer/Section Layout
   }
 
   /*slide buttons*/
-  /* line 143, ../Content/scss/partials/_sly.scss */
+  /* line 145, ../Content/scss/partials/_sly.scss */
   .pagespan button, .pagespan button {
     visibility: visible;
     background: transparent;
@@ -1136,17 +1140,17 @@ Footer/Section Layout
     border: 1px dashed red;
   }
 
-  /* line 144, ../Content/scss/partials/_sly.scss */
+  /* line 146, ../Content/scss/partials/_sly.scss */
   .pagespan button:hover, .pagespan button:hover {
     opacity: 1;
   }
 
-  /* line 145, ../Content/scss/partials/_sly.scss */
+  /* line 147, ../Content/scss/partials/_sly.scss */
   .pagespan button:disabled, .pagespan button:disabled {
     opacity: .2;
   }
 
-  /* line 147, ../Content/scss/partials/_sly.scss */
+  /* line 149, ../Content/scss/partials/_sly.scss */
   .forward, .backward {
     float: left;
     width: 50px;
@@ -1155,12 +1159,12 @@ Footer/Section Layout
     border: 1px dashed blue;
   }
 
-  /* line 148, ../Content/scss/partials/_sly.scss */
+  /* line 150, ../Content/scss/partials/_sly.scss */
   .forward {
     float: right;
   }
 
-  /* line 150, ../Content/scss/partials/_sly.scss */
+  /* line 152, ../Content/scss/partials/_sly.scss */
   .next, .prev {
     float: left;
     width: 45px;
@@ -1168,18 +1172,18 @@ Footer/Section Layout
     font-size: 60px;
   }
 
-  /* line 151, ../Content/scss/partials/_sly.scss */
+  /* line 153, ../Content/scss/partials/_sly.scss */
   .next {
     float: right;
   }
 
-  /* line 152, ../Content/scss/partials/_sly.scss */
+  /* line 154, ../Content/scss/partials/_sly.scss */
   .next:hover, .prev:hover {
     background: rgba(255, 204, 0, 0.3);
   }
 
   /*scroll bar*/
-  /* line 156, ../Content/scss/partials/_sly.scss */
+  /* line 158, ../Content/scss/partials/_sly.scss */
   .scrollbar {
     visibility: hidden;
     display: hidden;
@@ -1189,43 +1193,43 @@ Footer/Section Layout
    Special Classes
    ========================================================================== */
 /* One Item Per Frame example*/
-/* line 166, ../Content/scss/partials/_sly.scss */
+/* line 168, ../Content/scss/partials/_sly.scss */
 .oneperframe {
   min-height: 300px;
   line-height: 300px;
 }
 
-/* line 167, ../Content/scss/partials/_sly.scss */
+/* line 169, ../Content/scss/partials/_sly.scss */
 .oneperframe ul li {
   width: 1140px;
 }
 
-/* line 168, ../Content/scss/partials/_sly.scss */
+/* line 170, ../Content/scss/partials/_sly.scss */
 .oneperframe ul li.active {
   background: #333;
 }
 
 /* Crazy example */
-/* line 172, ../Content/scss/partials/_sly.scss */
+/* line 174, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(2n) {
   width: 100px;
   margin: 0 4px 0 20px;
 }
 
-/* line 173, ../Content/scss/partials/_sly.scss */
+/* line 175, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(3n) {
   width: 300px;
   margin: 0 10px 0 5px;
 }
 
-/* line 174, ../Content/scss/partials/_sly.scss */
+/* line 176, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(4n) {
   width: 400px;
   margin: 0 30px 0 2px;
 }
 
 /* 3D Effects */
-/* line 178, ../Content/scss/partials/_sly.scss */
+/* line 180, ../Content/scss/partials/_sly.scss */
 .effects {
   min-height: 200px;
   /*line-height: 200px;*/
@@ -1238,14 +1242,14 @@ Footer/Section Layout
   overflow-y: show;
 }
 
-/* line 189, ../Content/scss/partials/_sly.scss */
+/* line 191, ../Content/scss/partials/_sly.scss */
 .effects ul {
   -webkit-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 194, ../Content/scss/partials/_sly.scss */
+/* line 196, ../Content/scss/partials/_sly.scss */
 .effects ul li {
   position: relative;
   margin: 0 -20px;
@@ -1256,7 +1260,7 @@ Footer/Section Layout
   transition: transform 300ms ease-out;
 }
 
-/* line 203, ../Content/scss/partials/_sly.scss */
+/* line 205, ../Content/scss/partials/_sly.scss */
 .effects ul li.active {
   z-index: 10;
   -webkit-transform: scale(1);
@@ -1264,7 +1268,7 @@ Footer/Section Layout
   transform: scale(1);
 }
 
-/* line 209, ../Content/scss/partials/_sly.scss */
+/* line 211, ../Content/scss/partials/_sly.scss */
 .effects ul li.active ~ li {
   -webkit-transform: rotateY(-60deg) scale(0.9);
   -ms-transform: rotateY(-60deg) scale(0.9);
@@ -1272,7 +1276,7 @@ Footer/Section Layout
 }
 
 /* Grid Background */
-/* line 216, ../Content/scss/partials/_sly.scss */
+/* line 218, ../Content/scss/partials/_sly.scss */
 .grid-background {
   margin: 0 auto;
   padding: 115px 0 80px;
