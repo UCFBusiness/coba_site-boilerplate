@@ -32,6 +32,8 @@
         <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
         <link type="text/css" rel="stylesheet" href="~/content/sly/css/font-awesome.min.css" />
 
+
+
         @RenderSection("Styles", required: false)
 
         <script src="~/scripts/modernizr-2.6.2.js"></script>
@@ -42,176 +44,201 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
         @*<img src="..." class="img-responsive" alt="Responsive image">*@
-        <!-- Wrap all page content here -->
-        <div id="container">
 
+        <!--Content-->
+        <div id="container">
+        
             <header>
                 <div class="content-wrapper">
+                    @*This area is for announcements and alerts which will appear at the top of the site.*@
                 </div>
             </header>
 
-            <nav class="site-nav" role="navigation">
-                <button class="site-nav-logo distraction-free-component" data-action="open-nav">
-		            <span class="icons icons-logo-">
-			            <span class="screen-reader-text">Medium site navigation</span>
-		            </span>
-		            <div class="site-nav-activity-flag"></div>
-	            </button>
+            <div class="site-nav-overlay"></div>
 
-                <div class="site-nav-scrollable-container">
-                    <!--site search-->
-		            <div class="site-nav-search-wrapper">
-			            <div class="site-nav-search-inner">
-				            <div class="site-nav-search">
-					            <input type="text" class="site-nav-search-input site-nav-search-input-desktop" title="Search Medium" placeholder="Search Medium" />
-					            <button class="btn btn-chromeless site-nav-search-input-trigger site-nav-search-clear" data-action="clear-search">
-						            <span class="icons icons-remove"></span>
-					            </button>
-					            <button class="btn btn-chromeless site-nav-search-input-trigger site-nav-search-query" data-action="query-search">
-						            <span class="icons icons-search"></span>
-					            </button>
-				            </div>
-				            <span class="site-nav-search-item navigable-list-item">
-					            <button class="btn btn-chromeless site-nav-search-collapse" data-action="close-search">
-						            <span class="icons icons-remove"></span>
-						            <span class="site-nav-search-remove-mobile">Cancel</span>
-					            </button>
-				            </span>
-			            </div>
-			            <div class="site-nav-search-results"></div>
-		            </div>
-                    <!--navigation-->
-		            <ul class="site-nav-list">
-			            <li class="site-nav-list-item navigable-list-item site-nav-list-item-home">
-				            <a class="site-nav-list-item-btn" title="Go home" href="/" tabindex="-1"><span class="icons icons-logo-m"></span>Home</a>
-				            <div class="site-nav-search-nav-mobile">
-					            <span class="icons icons-search site-nav-search-input-mobile-search-input-bg"></span>
-					            <input type="search" class="site-nav-search-input site-nav-search-input-mobile" />
-				            </div>
-				            <div class="site-nav-search-nav-desktop">
-					            <span class="site-nav-search-item site-nav-search-open-trigger navigable-list-item">
-						            <button class="btn btn-chromeless site-nav-list-item-btn-secondary" data-action="open-search" tabindex="-1">
-							            <span class="icons icons-search">
-								            <span class="screen-reader-text">Search</span>
-							            </span>
-						            </button>
-					            </span>
-				            </div>
-			            </li>
-			            <li class="site-nav-list-item navigable-list-item">
-				            <a class="site-nav-list-item-btn" title="Sign in with Twitter" data-action="sign-in-with-twitter" href="/m/account/authenticate-twitter" tabindex="-1"><span class="icons icons-twitter-small"></span>Sign in with Twitter</a>
-			            </li>
-		            </ul>
+            <div id="content" class="main-content clearfix">
+                <div class="content-wrapper">
+	                <div class="screen-content">
 
-	            </div>
-            </nav>
+                        <!---->
 
-            <div id="content" class="clearfix">
-                @RenderSection("featured", required: false)
-                <section class="content-wrapper main-content">
-                    @RenderBody()
-                </section>
-                <!-- for development only --><div><label id="message" style="display: block;"></label></div><!-- for development only -->
+                        <aside class="cover cover-home">
+			                
+                            <div class="cover-header cover-img"><!--background image here-->
+                                
+                                <div id="UCFHBHeader">
+                                    <div class="UCFHBWrapper">
+                                        <section id="UCFtitle">
+                                            <a href="http://www.ucf.edu" target="_blank"><span class="UCFHBText">University of Central Florida</span></a><!--/UCF Logo-->
+                                        </section>
+                                    </div><!--/UCF Header Wrapper-->
+                                </div><!-- /UCFHBHeader -->
+
+                                <!-- BEGIN:Nav -->
+                                <nav id="main_menu" class="dl-menuwrapper clearfix">
+                                    <a href="~/" class="dl-home">HOME</a>
+                                    <button class="dl-trigger">DISCOVER</button>
+                                    <ul class="dl-menu">
+				                        <li>
+					                        <a href="#">Academics</a>
+					                        <ul class="dl-submenu">
+                                                <li class="Label breadcrumb">Academics</li>
+						                        <li>
+							                        <a href="#">Undergraduate</a>
+							                        <ul class="dl-submenu">
+                                                        <li class="Label breadcrumb">Academics > Undergraduate</li>
+								                        <li><a href="~/undergraduate/admissions">Admissions</a></li>
+								                        <li><a href="~/undergraduate/programs">Degree Programs</a></li>
+								                        <li><a href="~/undergraduate/international-programs">International Programs</a></li>
+							                        </ul>
+						                        </li>
+						                        <li>
+							                        <a href="#">Graduate</a>
+							                        <ul class="dl-submenu">
+                                                        <li class="Label breadcrumb">Academics > Graduate</li>
+								                        <li><a href="~/graduate/admissions">Admissions</a></li>
+								                        <li><a href="~/graduate/programs">Degree Programs</a></li>
+								                        <li><a href="~/graduate/certificates">Certificates</a></li>
+							                        </ul>
+						                        </li>
+                                                <li>
+							                        <a href="#">Executive Education</a>
+							                        <ul class="dl-submenu">
+                                                        <li class="Label breadcrumb">Academics > Executive Education</li>
+								                        <li><a href="~/execed/custom-programs">Customized Programs</a></li>
+								                        <li><a href="~/execed/international-residency">International Residency</a></li>
+                                                        <li><a href="~/execed/open-enrollment">Open-Enrollment Programs</a></li>
+							                        </ul>
+						                        </li>
+					                        </ul>
+				                        </li>
+				                        <li>
+					                        <a href="#">Our College</a>
+					                        <ul class="dl-submenu">
+                                                <li class="Label breadcrumb">Our College</li>
+						                        <li><a href="#">History</a></li> <!--include mission and vision-->
+                                                <li><a href="#">Accreditation</a></li>
+                                                <li><a href="#">Administration</a></li>
+                                                <li><a href="#">Facts &amp; Figures</a></li>
+                                                <li><a href="#">Services &amp; Locations</a></li>
+                                                <li><a href="#">Social Media</a></li>
+						                        <li><a href="#">Student Ambassadors</a></li>
+                                                <li><a href="#">Student Organizations</a></li>
+					                        </ul>
+				                        </li>
+                                        <li>
+					                        <a href="#">Faculty Research</a>
+					                        <ul class="dl-submenu">
+                                                <li class="Label breadcrumb">Faculty Research</li>
+						                        <li><a href="#">Page Link</a></li>
+						                        <li><a href="#">Page Link</a></li>
+						                        <li><a href="#">Page Link</a></li>
+					                        </ul>
+				                        </li>
+                                        <li>
+					                        <a href="#">Alumni &amp; Friends</a>
+					                        <ul class="dl-submenu">
+                                                <li class="Label breadcrumb">Alumni &amp; Friends</li>
+						                        <li><a href="#">Development</a></li>
+						                        <li><a href="#">Hall of Fame</a></li>
+                                                <li><a href="#">Spotlights</a></li>
+
+                                                <!--action links
+						                        <li><a href="#">V-volunteer</a></li>
+                                                <li><a href="#">A-attend</a></li>
+						                        <li><a href="#">L-lead</a></li>
+                                                <li><a href="#">U-update</a></li>
+                                                <li><a href="#">E-experience</a></li>
+                                                -->
+					                        </ul>
+				                        </li>
+                                        <li>
+					                        <a href="#">Careers &amp; Recruitment</a>
+					                        <ul class="dl-submenu">
+                                                <li class="Label breadcrumb">Careers &amp; Recruitment</li>
+						                        <li><a href="#">Page Link</a></li>
+						                        <li><a href="#">Page Link</a></li>
+						                        <li><a href="#">Page Link</a></li>
+						                        <li><a href="#">Page Link</a></li>
+					                        </ul>
+				                        </li>
+			                        </ul>
+
+                                    
+                                    <form id="site-search" class="site-search" action="/search" name="input" method="get" >
+                                        <input type="search" placeholder="SEARCH" name="q" class="dl-search-field" />
+                                        <input type="submit" value="submit" class="dl-searchbutton" />
+                                        <span class="dl-search-icon"></span>
+                                    </form>
+
+
+			                        <div id="sb-search" class="sb-search">
+				                        <form action="/search" name="input" method="get" >
+					                        <input class="sb-search-input" placeholder="Search" type="text" value="" name="q" id="search">
+					                        <input class="sb-search-submit" type="submit" value="">
+					                        <span class="sb-icon-search"></span>
+				                        </form>
+			                        </div>
+
+
+                                </nav><!-- /dl-menuwrapper -->
+                                <!-- FINIS:Nav -->
+
+                                @RenderSection("featured", required: false)
+
+                            </div>
+
+	                        <div class="cover-body">
+		                        <div class="cover-body-inner">
+			                        <h1 class="cover-title">College <span style="font-size: .8em;">of</span> Business</h1>
+			                        <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em>
+                                        <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.</p>
+                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida,
+                                        <br>&nbsp;&nbsp;&nbsp;College of Business Administration</p></div>
+		                        </div>
+	                        </div>
+
+                        </aside>
+
+                        <!---->
+
+		                <section class="wrapper"><!--background image here-->
+			                <div class="wrapper-inner" >
+
+
+                                @RenderBody()
+
+
+			                </div>
+		                </section>
+
+                        <!---->
+
+	                </div>
+                </div>
             </div>
 
-        </div>
+        </div> <!-- #container -->
+        <!--Content-->
+        <a href="#" class="back-to-top"><i class="icon-angle-up"></i></a>
 
-        <footer>
-            <div class="content-wrapper">
-                <!--BEGIN-->
-                <ul class="clearfix">
-                    <li>
-                        <p class="home">Address</p>
-
-                        <a href="#">un-styled ink</i></a>
-                    </li>
-                    <li>
-                        <p class="services">Contact</p>
-
-                        <ul>
-                            <li><a href="#">Link to page.</a></li>
-                            <li><a href="#">Link to page.</a></li>
-                            <li><a href="#">Link to page.</a></li>
-                            <li><a href="#">Link to page.</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="social">Follow Us</p>
-
-                        <ul>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="qlinks">Quick Links</p>
-
-                        <ul>
-                            <li><a href="#">Link to page.</a></li>
-                            <li><a href="#">Link to page.</a></li>
-                            <li><a href="#">Link to page.</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!--FINIS-->
-                <div class="float-left text-muted credit"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
-            </div>
-        </footer>
-
-        <a href="#" class="back-to-top">&#x25B2; Top </a>
-        
         <!-- jquery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
-
         <!-- bootstrap -->
         <script src="~/scripts/bootstrap.min.js"></script>
-        @*<script src="http://scripts.bus.ucf.edu/js/libs/bootstrap-scrollspy.js" type="text/javascript"></script>
-        <!--plugins-->
-        <!--jquery-easing by ... -->
-        <script src="~/content/js/jquery.easing.min.js"></script>
-		<!-- jquery-waypoints by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints -->
-		<script src="~/content/js/waypoints.min.js"></script>
-		<!-- jquery-smartresize by @@louis_remi : https://github.com/louisremi/jquery-smartresize -->
-		<script src="~/content/js/jquery.debouncedresize.js"></script>
-        <!-- jquery-fittext -->
-        <script src="~/content/js/jquery.fittext.js"></script>
-        <!---->
-		<script src="~/content/js/cbpFixedScrollLayout.min.js"></script>*@
 
-        <script src="~/scripts/holder.min.js"></script>   
-        <!--script tests -->
+        <!-- for development -->
+        @*<script src="~/scripts/holder.min.js"></script>*@
+
+        <script src="../../content/js/classie.js"></script>
+		<script src="../../content/js/uisearch.js"></script>
         <script>
-            $(function () {
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
 
-                //----- center element on screen -----------------------
-                //$('element').center();
-                //------------------------------------------------------
-
-                //----- overlay ----------------------------------------
-                //var $oe_menu = $('#oe_menu');
-                //var $oe_menu_items = $oe_menu.children('li');
-                //var $oe_overlay = $('#oe_overlay');
-                //
-                //$oe_menu.bind('mouseenter',function(){
-                //    var $this = $(this);
-                //    $oe_overlay.stop(true,true).fadeTo(200, 0.6);
-                //    $this.addClass('hovered');
-                //}).bind('mouseleave',function(){
-                //    var $this = $(this);
-                //    $this.removeClass('hovered');
-                //    $oe_overlay.stop(true,true).fadeTo(200, 0);
-                //    $oe_menu_items.children('div').hide();
-                //})
-
-            });
-        </script>
-
-        @*<script data-main="http://scripts.bus.ucf.edu/cdn/js/main" src="~/scripts/require.js"></script>*@
-
+        <!-- production -->
         <script data-main="../../scripts/main" src="~/scripts/require.js"></script>
 
         @RenderSection("Scripts", required: false)

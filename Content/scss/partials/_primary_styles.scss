@@ -97,6 +97,11 @@ ol.round {
     line-height: 1.3em;
 }
 
+.icon-setting {
+    color:#fff;font-size:23px;line-height:0;position:relative;top:2px;
+    background: url('../../images/setting-icon.png');
+}
+
 /* =============================================================================
    NEW
    ========================================================================== */
@@ -201,7 +206,9 @@ ol.round {
     -webkit-overflow-scrolling:touch;
 }
 .wrapper-inner {
-background: url('../../images/footer-bg.jpg') top center no-repeat;
+    background: url('../../images/footer-bg.jpg') top center no-repeat fixed;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
     padding:0;
     width:100%;
     max-width:810px;
@@ -219,7 +226,7 @@ background: url('../../images/footer-bg.jpg') top center no-repeat;
 }
 
 @media all and (max-width:500px){
-    .wrapper-inner{padding:0}
+    .wrapper-inner{background: none;}
 }
 
 @media all and (min-width:1666px){

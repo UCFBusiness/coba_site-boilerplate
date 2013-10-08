@@ -110,10 +110,20 @@ ol.round li.nine {
   line-height: 1.3em;
 }
 
+/* line 100, ../Content/scss/partials/_primary_styles.scss */
+.icon-setting {
+  color: #fff;
+  font-size: 23px;
+  line-height: 0;
+  position: relative;
+  top: 2px;
+  background: url("../../images/setting-icon.png");
+}
+
 /* =============================================================================
    NEW
    ========================================================================== */
-/* line 105, ../Content/scss/partials/_primary_styles.scss */
+/* line 110, ../Content/scss/partials/_primary_styles.scss */
 .cover {
   position: absolute;
   z-index: 100;
@@ -126,23 +136,23 @@ ol.round li.nine {
   /* shadow */
 }
 
-/* line 116, ../Content/scss/partials/_primary_styles.scss */
+/* line 121, ../Content/scss/partials/_primary_styles.scss */
 .cover.img-loaded {
   background: #000;
 }
 
-/* line 117, ../Content/scss/partials/_primary_styles.scss */
+/* line 122, ../Content/scss/partials/_primary_styles.scss */
 .body-scroll .cover {
   position: fixed;
 }
 
 /*<===== important*/
-/* line 118, ../Content/scss/partials/_primary_styles.scss */
+/* line 123, ../Content/scss/partials/_primary_styles.scss */
 .editing .cover {
   background-image: none;
 }
 
-/* line 120, ../Content/scss/partials/_primary_styles.scss */
+/* line 125, ../Content/scss/partials/_primary_styles.scss */
 .cover-img {
   /*<===== important // Cover-Photo(s) */
   position: absolute;
@@ -159,7 +169,7 @@ ol.round li.nine {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 137, ../Content/scss/partials/_primary_styles.scss */
+/* line 142, ../Content/scss/partials/_primary_styles.scss */
 .cover-body {
   position: absolute;
   bottom: 0;
@@ -171,7 +181,7 @@ ol.round li.nine {
   text-shadow: 0px 1px 2px #333;
 }
 
-/* line 138, ../Content/scss/partials/_primary_styles.scss */
+/* line 143, ../Content/scss/partials/_primary_styles.scss */
 .cover-title {
   font-size: 50px;
   line-height: 1;
@@ -180,7 +190,7 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 139, ../Content/scss/partials/_primary_styles.scss */
+/* line 144, ../Content/scss/partials/_primary_styles.scss */
 .cover-description {
   font-size: 16px;
   line-height: 1.2;
@@ -189,32 +199,32 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 140, ../Content/scss/partials/_primary_styles.scss */
+/* line 145, ../Content/scss/partials/_primary_styles.scss */
 .cover-description a {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 141, ../Content/scss/partials/_primary_styles.scss */
+/* line 146, ../Content/scss/partials/_primary_styles.scss */
 .cover-meta {
   font-size: 14px;
   color: #dededc;
   font-style: italic;
 }
 
-/* line 143, ../Content/scss/partials/_primary_styles.scss */
+/* line 148, ../Content/scss/partials/_primary_styles.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 145, ../Content/scss/partials/_primary_styles.scss */
+/* line 150, ../Content/scss/partials/_primary_styles.scss */
 .screen-content {
   outline: 0;
 }
 
-/* line 147, ../Content/scss/partials/_primary_styles.scss */
+/* line 152, ../Content/scss/partials/_primary_styles.scss */
 .site-nav {
   position: absolute;
   top: 0;
@@ -223,7 +233,7 @@ ol.round li.nine {
   outline: 0;
 }
 
-/* line 148, ../Content/scss/partials/_primary_styles.scss */
+/* line 153, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-logo {
   position: absolute;
   top: 50px;
@@ -246,13 +256,13 @@ ol.round li.nine {
   transition: top 0.2s linear, left 0.2s linear, opacity 0.2s linear;
 }
 
-/* line 170, ../Content/scss/partials/_primary_styles.scss */
+/* line 175, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-logo:after {
   content: 'UCF';
   color: #fff;
 }
 
-/* line 174, ../Content/scss/partials/_primary_styles.scss */
+/* line 179, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-logo .icons {
   display: block;
   position: absolute;
@@ -262,7 +272,7 @@ ol.round li.nine {
   bottom: 0;
 }
 
-/* line 182, ../Content/scss/partials/_primary_styles.scss */
+/* line 187, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-overlay {
   display: none;
   position: absolute;
@@ -273,7 +283,7 @@ ol.round li.nine {
   z-index: 600;
 }
 
-/* line 183, ../Content/scss/partials/_primary_styles.scss */
+/* line 188, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-hidden .site-nav-logo {
   filter: alpha(opacity=0);
   -khtml-opacity: 0;
@@ -282,7 +292,7 @@ ol.round li.nine {
   left: -54px;
 }
 
-/* line 185, ../Content/scss/partials/_primary_styles.scss */
+/* line 190, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-scrollable-container {
   display: none;
   overflow: auto;
@@ -293,12 +303,12 @@ ol.round li.nine {
   box-shadow: inset -1px 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 195, ../Content/scss/partials/_primary_styles.scss */
+/* line 200, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-scrollable-container::-webkit-scrollbar {
   display: none;
 }
 
-/* line 197, ../Content/scss/partials/_primary_styles.scss */
+/* line 202, ../Content/scss/partials/_primary_styles.scss */
 .wrapper {
   outline: 0;
   position: absolute;
@@ -309,9 +319,11 @@ ol.round li.nine {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 203, ../Content/scss/partials/_primary_styles.scss */
+/* line 208, ../Content/scss/partials/_primary_styles.scss */
 .wrapper-inner {
-  background: url("../../images/footer-bg.jpg") top center no-repeat;
+  background: url("../../images/footer-bg.jpg") top center no-repeat fixed;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
   padding: 0;
   width: 100%;
   max-width: 810px;
@@ -321,50 +333,50 @@ ol.round li.nine {
 }
 
 @media all and (max-width: 1024px) {
-  /* line 216, ../Content/scss/partials/_primary_styles.scss */
+  /* line 223, ../Content/scss/partials/_primary_styles.scss */
   .wrapper {
     left: 0;
     position: relative;
   }
 
-  /* line 217, ../Content/scss/partials/_primary_styles.scss */
+  /* line 224, ../Content/scss/partials/_primary_styles.scss */
   .wrapper-inner {
     padding: 0;
     max-width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 222, ../Content/scss/partials/_primary_styles.scss */
+  /* line 229, ../Content/scss/partials/_primary_styles.scss */
   .wrapper-inner {
-    padding: 0;
+    background: none;
   }
 }
 @media all and (min-width: 1666px) {
-  /* line 226, ../Content/scss/partials/_primary_styles.scss */
+  /* line 233, ../Content/scss/partials/_primary_styles.scss */
   .wrapper {
     left: 500px;
   }
 
-  /* line 227, ../Content/scss/partials/_primary_styles.scss */
+  /* line 234, ../Content/scss/partials/_primary_styles.scss */
   .wrapper-inner {
     padding-left: 0;
     max-width: 910px;
   }
 }
 @media screen and (max-device-width: 1024px) {
-  /* line 231, ../Content/scss/partials/_primary_styles.scss */
+  /* line 238, ../Content/scss/partials/_primary_styles.scss */
   html {
     -webkit-text-size-adjust: none;
   }
 }
 @media screen and (min-device-width: 1025px) {
-  /* line 235, ../Content/scss/partials/_primary_styles.scss */
+  /* line 242, ../Content/scss/partials/_primary_styles.scss */
   .cover, .site-nav-logo {
     position: fixed;
   }
 }
 @media all and (max-width: 1024px) {
-  /* line 239, ../Content/scss/partials/_primary_styles.scss */
+  /* line 246, ../Content/scss/partials/_primary_styles.scss */
   .cover {
     position: relative!important;
     width: 100%;
@@ -372,42 +384,42 @@ ol.round li.nine {
     height: 576px;
   }
 
-  /* line 240, ../Content/scss/partials/_primary_styles.scss */
+  /* line 247, ../Content/scss/partials/_primary_styles.scss */
   .cover-body {
     width: 100%;
     padding-bottom: 40px;
   }
 
-  /* line 241, ../Content/scss/partials/_primary_styles.scss */
+  /* line 248, ../Content/scss/partials/_primary_styles.scss */
   .cover-title {
     font-size: 50px;
     margin-bottom: 10px;
   }
 
-  /* line 242, ../Content/scss/partials/_primary_styles.scss */
+  /* line 249, ../Content/scss/partials/_primary_styles.scss */
   .cover-bestof .cover-title {
     font-size: 32px;
   }
 
-  /* line 243, ../Content/scss/partials/_primary_styles.scss */
+  /* line 250, ../Content/scss/partials/_primary_styles.scss */
   .cover-description {
     font-size: 18px;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 247, ../Content/scss/partials/_primary_styles.scss */
+  /* line 254, ../Content/scss/partials/_primary_styles.scss */
   .cover {
     height: 350px;
   }
 
-  /* line 248, ../Content/scss/partials/_primary_styles.scss */
+  /* line 255, ../Content/scss/partials/_primary_styles.scss */
   .cover-bestof, .cover-home, .cover-collection {
     min-height: 350px;
     height: auto;
     display: table;
   }
 
-  /* line 249, ../Content/scss/partials/_primary_styles.scss */
+  /* line 256, ../Content/scss/partials/_primary_styles.scss */
   .cover-body {
     display: table-cell;
     vertical-align: bottom;
@@ -417,26 +429,26 @@ ol.round li.nine {
     padding: 65px 5% 30px;
   }
 
-  /* line 250, ../Content/scss/partials/_primary_styles.scss */
+  /* line 257, ../Content/scss/partials/_primary_styles.scss */
   .cover-title {
     font-size: 32px;
     line-height: 1;
     margin-bottom: 5px;
   }
 
-  /* line 251, ../Content/scss/partials/_primary_styles.scss */
+  /* line 258, ../Content/scss/partials/_primary_styles.scss */
   .cover-description {
     font-size: 16px;
     margin-bottom: 6px;
   }
 
-  /* line 252, ../Content/scss/partials/_primary_styles.scss */
+  /* line 259, ../Content/scss/partials/_primary_styles.scss */
   .cover-avatar {
     width: 100px;
     height: 100px;
   }
 
-  /* line 253, ../Content/scss/partials/_primary_styles.scss */
+  /* line 260, ../Content/scss/partials/_primary_styles.scss */
   .cover-new-collection-link {
     margin-left: 0;
     line-height: 32px;
@@ -572,6 +584,7 @@ nav.dl-menuwrapper {
 /* line 92, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu {
   margin: 45px 0 0 0;
+  padding: 0;
   position: absolute;
   width: 100%;
   opacity: 0;
@@ -584,14 +597,14 @@ nav.dl-menuwrapper {
   -moz-backface-visibility: hidden;
 }
 
-/* line 106, ../Content/scss/partials/header/_navigation.scss */
+/* line 107, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu.dl-menu-toggle {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 
-/* line 112, ../Content/scss/partials/header/_navigation.scss */
+/* line 113, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu.dl-menuopen {
   opacity: 1;
   pointer-events: auto;
@@ -604,9 +617,10 @@ nav.dl-menuwrapper {
    Submenus
    ========================================================================== */
 /* ul */
-/* line 126, ../Content/scss/partials/header/_navigation.scss */
+/* line 127, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper ul {
   border-bottom: 1px solid #333;
+  padding: 0;
   width: 100%;
   list-style: none;
   overflow: hidden;
@@ -617,21 +631,24 @@ nav.dl-menuwrapper {
 }
 
 /* li */
-/* line 138, ../Content/scss/partials/header/_navigation.scss */
+/* line 140, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li {
   position: relative;
   border-top: 1px solid #222;
 }
 
-/* line 143, ../Content/scss/partials/header/_navigation.scss */
+/* line 145, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.breadcrumb {
-  padding: 0 20px;
+  background: #333;
+  margin: 0;
+  padding: 3px 10px;
   font-size: 12px;
   color: #ffcc00;
+  border-radius: 0;
 }
 
 /* a */
-/* line 150, ../Content/scss/partials/header/_navigation.scss */
+/* line 155, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li a {
   padding: 13px 20px;
   position: relative;
@@ -645,13 +662,13 @@ nav.dl-menuwrapper {
   color: white;
 }
 
-/* line 162, ../Content/scss/partials/header/_navigation.scss */
+/* line 167, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li > a:after {
   right: 10px;
 }
 
 /* li back action */
-/* line 167, ../Content/scss/partials/header/_navigation.scss */
+/* line 172, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back > a {
   padding-left: 30px;
   font-size: 11px;
@@ -660,7 +677,7 @@ nav.dl-menuwrapper {
   color: white;
 }
 
-/* line 173, ../Content/scss/partials/header/_navigation.scss */
+/* line 178, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back:after {
   left: 10px;
   transform: rotate(180deg);
@@ -669,7 +686,7 @@ nav.dl-menuwrapper {
 }
 
 /* li arrows */
-/* line 182, ../Content/scss/partials/header/_navigation.scss */
+/* line 187, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back:after,
 .dl-menuwrapper li > a:not(:only-child):after {
   color: rgba(170, 170, 170, 0.3);
@@ -685,7 +702,7 @@ nav.dl-menuwrapper {
 /* =============================================================================
    Menu Color Theme
    ========================================================================== */
-/* line 199, ../Content/scss/partials/header/_navigation.scss */
+/* line 204, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper button:hover,
 .dl-menuwrapper button.dl-active,
 .dl-menuwrapper ul {
@@ -693,7 +710,7 @@ nav.dl-menuwrapper {
   color: black;
 }
 
-/* line 204, ../Content/scss/partials/header/_navigation.scss */
+/* line 209, ../Content/scss/partials/header/_navigation.scss */
 .no-touch .dl-menuwrapper > li a:after {
   background: black;
   color: #aaaaaa;
@@ -705,7 +722,7 @@ nav.dl-menuwrapper {
 Navigation Menu - Discovery
 ========================================================================== */
   /* nav */
-  /* line 218, ../Content/scss/partials/header/_navigation.scss */
+  /* line 223, ../Content/scss/partials/header/_navigation.scss */
   nav.dl-menuwrapper {
     margin-top: 20px;
     margin-left: 20px;
@@ -729,14 +746,14 @@ Navigation Menu - Discovery
     z-index: 1000;
   }
 
-  /* line 242, ../Content/scss/partials/header/_navigation.scss */
+  /* line 247, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper:first-child {
     margin-right: 100px;
     border: 1px solid blue;
   }
 
   /* home button */
-  /* line 248, ../Content/scss/partials/header/_navigation.scss */
+  /* line 253, ../Content/scss/partials/header/_navigation.scss */
   #dl-home {
     border: 1px solid #ddd;
     border-right: none;
@@ -745,28 +762,29 @@ Navigation Menu - Discovery
     float: left;
   }
 
-  /* line 256, ../Content/scss/partials/header/_navigation.scss */
+  /* line 261, ../Content/scss/partials/header/_navigation.scss */
   #dl-home:hover {
     background: #f2f2f2;
   }
 
   /* discover button */
-  /* line 261, ../Content/scss/partials/header/_navigation.scss */
+  /* line 266, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button {
     border: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ccc;
     padding-left: 40px;
     width: 125px;
     height: 45px;
     position: relative;
     overflow: hidden;
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     text-indent: 0em;
     cursor: pointer;
     outline: none;
-    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0 5px 5px 0;
+    background: rgba(255, 255, 255, 0.85);
     color: #555;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     /* shadow */
@@ -774,7 +792,7 @@ Navigation Menu - Discovery
   }
 
   /* discover icon = */
-  /* line 280, ../Content/scss/partials/header/_navigation.scss */
+  /* line 286, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button:after {
     content: '';
     width: 20%;
@@ -788,30 +806,31 @@ Navigation Menu - Discovery
     box-shadow: 0 10px 0 #555555, 0 20px 0 #555555;
   }
 
-  /* line 296, ../Content/scss/partials/header/_navigation.scss */
+  /* line 302, ../Content/scss/partials/header/_navigation.scss */
   .dl-home,
   .dl-searchbutton {
     width: 45px;
     border: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
   }
 
-  /* line 301, ../Content/scss/partials/header/_navigation.scss */
+  /* line 308, ../Content/scss/partials/header/_navigation.scss */
   .dl-home {
     border-right: none;
-    background: rgba(255, 255, 255, 0.7) url(../../images/icon-home.png) no-repeat;
+    background: rgba(255, 255, 255, 0.85) url(../../images/icon-home.png) no-repeat;
     background-position: 1px 1px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     /* shadow */
     border-radius: 5px 0 0 5px;
   }
 
-  /* line 308, ../Content/scss/partials/header/_navigation.scss */
+  /* line 315, ../Content/scss/partials/header/_navigation.scss */
   .dl-home:hover {
     background-position: 2px 3px;
   }
 
   /* search */
-  /* line 315, ../Content/scss/partials/header/_navigation.scss */
+  /* line 322, ../Content/scss/partials/header/_navigation.scss */
   #dl-search {
     border: 1px solid #eee;
     padding: 1px 15px;
@@ -824,32 +843,33 @@ Navigation Menu - Discovery
     float: left;
   }
 
-  /* line 327, ../Content/scss/partials/header/_navigation.scss */
+  /* line 334, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.85);
     border: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
     position: static;
     margin: 0;
+    margin-right: 20px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     /* shadow */
     padding: 1px 10px 0;
     width: 150px;
-    font-size: .8em;
+    font-size: .9em;
     height: 45px;
-    color: #333;
     float: right;
-    border-radius: 0;
+    border-radius: 5px;
   }
 
   /* submenus */
   /* menu ul only */
-  /* line 345, ../Content/scss/partials/header/_navigation.scss */
+  /* line 353, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
     /* ie fix */
     visibility: hidden;
   }
 
-  /* line 348, ../Content/scss/partials/header/_navigation.scss */
+  /* line 356, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
     /*
     background: rgba(255,255,255,.9);
@@ -872,14 +892,14 @@ Navigation Menu - Discovery
     -moz-backface-visibility: hidden;
   }
 
-  /* line 371, ../Content/scss/partials/header/_navigation.scss */
+  /* line 379, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu.dl-menu-toggle {
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
   }
 
-  /* line 376, ../Content/scss/partials/header/_navigation.scss */
+  /* line 384, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu.dl-menuopen {
     opacity: 1;
     pointer-events: auto;
@@ -888,7 +908,7 @@ Navigation Menu - Discovery
     -moz-transform: translateY(0px);
   }
 
-  /* line 384, ../Content/scss/partials/header/_navigation.scss */
+  /* line 392, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu li {
     width: 365px;
     /* <== */
@@ -897,7 +917,7 @@ Navigation Menu - Discovery
   }
 
   /* all uls */
-  /* line 391, ../Content/scss/partials/header/_navigation.scss */
+  /* line 399, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper ul {
     background: #FFF;
     padding: 0;
@@ -912,7 +932,7 @@ Navigation Menu - Discovery
   }
 
   /* menu li */
-  /* line 406, ../Content/scss/partials/header/_navigation.scss */
+  /* line 414, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li {
     position: relative;
     border: none;
@@ -920,7 +940,7 @@ Navigation Menu - Discovery
     text-transform: uppercase;
   }
 
-  /* line 411, ../Content/scss/partials/header/_navigation.scss */
+  /* line 419, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li a {
     padding: 10px 10px 10px 15px;
     display: block;
@@ -928,12 +948,12 @@ Navigation Menu - Discovery
     outline: none;
   }
 
-  /* line 418, ../Content/scss/partials/header/_navigation.scss */
+  /* line 426, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li > a:after {
     right: 10px;
   }
 
-  /* line 422, ../Content/scss/partials/header/_navigation.scss */
+  /* line 430, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.breadcrumb {
     padding: 2px 15px;
     font-size: 12px;
@@ -942,7 +962,7 @@ Navigation Menu - Discovery
   }
 
   /* back li */
-  /* line 430, ../Content/scss/partials/header/_navigation.scss */
+  /* line 438, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back > a {
     font-size: 11px;
     text-transform: uppercase;
@@ -951,7 +971,7 @@ Navigation Menu - Discovery
     padding: 10px 10px 10px 30px;
   }
 
-  /* line 436, ../Content/scss/partials/header/_navigation.scss */
+  /* line 444, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back:after {
     left: 10px;
     transform: rotate(180deg);
@@ -960,7 +980,7 @@ Navigation Menu - Discovery
   }
 
   /* li arrows */
-  /* line 444, ../Content/scss/partials/header/_navigation.scss */
+  /* line 452, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back:after,
   .dl-menuwrapper li > a:not(:only-child):after {
     position: absolute;
@@ -974,7 +994,7 @@ Navigation Menu - Discovery
   }
 
   /* desktop - menu theme */
-  /* line 458, ../Content/scss/partials/header/_navigation.scss */
+  /* line 466, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button:hover,
   .dl-menuwrapper button.dl-active,
   .dl-menuwrapper li a {
@@ -983,7 +1003,7 @@ Navigation Menu - Discovery
     /* li:hover color*/
   }
 
-  /* line 462, ../Content/scss/partials/header/_navigation.scss */
+  /* line 470, ../Content/scss/partials/header/_navigation.scss */
   .no-touch .dl-menuwrapper li a:hover {
     background: #FFE599;
     color: #333;
@@ -993,14 +1013,14 @@ Navigation Menu - Discovery
     padding: 9px 10px 9px 15px;
   }
 
-  /* line 469, ../Content/scss/partials/header/_navigation.scss */
+  /* line 477, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back > a:hover {
     padding: 9px 10px 9px 30px;
   }
 }
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-  /* line 479, ../Content/scss/partials/header/_navigation.scss */
+  /* line 488, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton {
     border-left: 1px solid #ddd;
     background: rgba(255, 255, 255, 0.7) url(../../images/icon-search.png) no-repeat;
@@ -1012,12 +1032,12 @@ Navigation Menu - Discovery
     display: block;
   }
 
-  /* line 488, ../Content/scss/partials/header/_navigation.scss */
+  /* line 497, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton:hover {
     background-position: 3px 2px;
   }
 
-  /* line 492, ../Content/scss/partials/header/_navigation.scss */
+  /* line 501, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
     float: left;
   }
@@ -1033,130 +1053,145 @@ Navigation Menu - Discovery
 
 /* line 13, ../Content/scss/partials/header/_search-bar.scss */
 .sb-search {
-  position: relative;
-  margin-top: 10px;
-  width: 0%;
-  min-width: 60px;
-  height: 60px;
-  float: right;
-  overflow: hidden;
-  -webkit-transition: width 0.3s;
-  -moz-transition: width 0.3s;
-  transition: width 0.3s;
-  -webkit-backface-visibility: hidden;
+  visibility: hidden;
 }
 
-/* line 27, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search-input {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  outline: none;
-  background: #fff;
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  z-index: 10;
-  padding: 20px 65px 20px 20px;
-  font-family: inherit;
-  font-size: 20px;
-  color: #2c3e50;
-}
+@media all and (min-width: 481px) {
+  /* line 20, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search {
+    position: relative;
+    margin-top: 100px;
+    width: 0%;
+    min-width: 60px;
+    height: 60px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+  }
 
-/* line 44, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search-input::-webkit-input-placeholder {
-  color: #ccc;
-}
+  /* line 34, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    z-index: 10;
+    padding: 20px 65px 20px 20px;
+    font-family: inherit;
+    font-size: 20px;
+    color: #2c3e50;
+  }
 
-/* line 45, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search-input:-moz-placeholder {
-  color: #ccc;
-}
+  /* line 51, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search-input::-webkit-input-placeholder {
+    color: #ccc;
+  }
 
-/* line 46, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search-input::-moz-placeholder {
-  color: #ccc;
-}
+  /* line 52, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search-input:-moz-placeholder {
+    color: #ccc;
+  }
 
-/* line 47, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search-input:-ms-input-placeholder {
-  color: #ccc;
-}
+  /* line 53, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search-input::-moz-placeholder {
+    color: #ccc;
+  }
 
-/* line 50, ../Content/scss/partials/header/_search-bar.scss */
-.sb-icon-search,
-.sb-search-submit {
-  width: 60px;
-  height: 60px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  line-height: 60px;
-  text-align: center;
-  cursor: pointer;
-}
+  /* line 54, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search-input:-ms-input-placeholder {
+    color: #ccc;
+  }
 
-/* line 64, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search-submit {
-  background: #fff;
-  /* IE needs this */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  /* IE 8 */
-  filter: alpha(opacity=0);
-  /* IE 5-7 */
-  opacity: 0;
-  color: transparent;
-  border: none;
-  outline: none;
-  z-index: -1;
-}
+  /* line 57, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-icon-search,
+  .sb-search-submit {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+  }
 
-/* line 75, ../Content/scss/partials/header/_search-bar.scss */
-.sb-icon-search {
-  color: #fff;
-  background: #e67e22;
-  /*orange*/
-  z-index: 90;
-  font-size: 22px;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-}
+  /* line 71, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search-submit {
+    background: #fff;
+    /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE 5-7 */
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
+  }
 
-/* line 89, ../Content/scss/partials/header/_search-bar.scss */
-.sb-icon-search:before {
-  content: "\e000";
-}
+  /* line 82, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-icon-search {
+    color: #fff;
+    background: rgba(225, 225, 225, 0.75);
+    z-index: 90;
+    font-size: 22px;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+  }
 
-/* Open state */
-/* line 95, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search.sb-search-open,
-.no-js .sb-search {
-  width: 100%;
-}
+  /* line 96, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-icon-search:before {
+    content: "\e000";
+  }
 
-/* line 100, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search.sb-search-open .sb-icon-search,
-.no-js .sb-search .sb-icon-search {
-  background: #da6d0d;
-  color: #fff;
-  z-index: 11;
-}
+  /* Open state */
+  /* line 102, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search.sb-search-open,
+  .no-js .sb-search {
+    width: 100%;
+  }
 
-/* line 107, ../Content/scss/partials/header/_search-bar.scss */
-.sb-search.sb-search-open .sb-search-submit,
-.no-js .sb-search .sb-search-submit {
-  z-index: 90;
-}
+  /* line 107, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search.sb-search-open .sb-icon-search,
+  .no-js .sb-search .sb-icon-search {
+    background: rgba(225, 225, 225, 0.75);
+    color: #fff;
+    z-index: 11;
+  }
 
+  /* line 114, ../Content/scss/partials/header/_search-bar.scss */
+  .sb-search.sb-search-open .sb-search-submit,
+  .no-js .sb-search .sb-search-submit {
+    z-index: 90;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /*.sb-search {
+      visibility: visible;
+  }*/
+  /* line 128, ../Content/scss/partials/header/_search-bar.scss */
+  .dl-search-field,
+  .dl-searchbutton {
+    visibility: hidden;
+  }
+}
 /* Hide the inner submenus */
 /* line 3, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper li .dl-submenu {
@@ -2242,49 +2277,36 @@ Footer/Section Layout
 ========================================================================== */
   /* line 16, ../Content/scss/partials/_footer.scss */
   .wrapper footer {
-    background: #101010;
+    background: rgba(0, 0, 0, 0.37);
+    text-align: center;
     height: 50%;
     /* <----- */
     color: #ccc;
     font-size: 12px;
     z-index: -2;
-    border: 1px dashed red;
-    /*-- development only - borderline --*/
   }
 
-  /*-------------------------------*/
-  /* The columns */
-  /* line 30, ../Content/scss/partials/_footer.scss */
-  footer .wrapper {
-    padding-bottom: 150px;
-    /* <----- */
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: -1;
-  }
-
-  /* line 40, ../Content/scss/partials/_footer.scss */
-  footer .wrapper > ul {
+  /* line 25, ../Content/scss/partials/_footer.scss */
+  .wrapper footer > ul {
     width: 80%;
     margin: 0 auto;
   }
 
   /* The four columns of links */
-  /* line 47, ../Content/scss/partials/_footer.scss */
-  footer .wrapper ul > li {
+  /* line 32, ../Content/scss/partials/_footer.scss */
+  .wrapper footer ul > li {
     width: 25%;
     float: left;
   }
 
-  /* line 53, ../Content/scss/partials/_footer.scss */
-  footer .wrapper ul {
+  /* line 38, ../Content/scss/partials/_footer.scss */
+  .wrapperfooter ul {
     list-style: none;
   }
 
   /* The links */
-  /* line 59, ../Content/scss/partials/_footer.scss */
-  footer .wrapper > ul > li ul li {
+  /* line 44, ../Content/scss/partials/_footer.scss */
+  .wrapper footer > ul > li ul li {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.8;
@@ -2293,9 +2315,8 @@ Footer/Section Layout
 
   /*-------------------------------*/
   /* The headers */
-  /* line 71, ../Content/scss/partials/_footer.scss */
-  footer .wrapper p {
-    background-color: #058cc7;
+  /* line 56, ../Content/scss/partials/_footer.scss */
+  .wrapper footer p {
     padding: 9px;
     width: 90%;
     line-height: 18px;
@@ -2310,15 +2331,15 @@ Footer/Section Layout
     cursor: default;
   }
 
-  /* line 89, ../Content/scss/partials/_footer.scss */
-  footer .wrapper > ul > li:hover p {
+  /* line 74, ../Content/scss/partials/_footer.scss */
+  .wrapper footer > ul > li:hover p {
     opacity: 1;
   }
 
   /*-------------------------------*/
   /* The links */
-  /* line 97, ../Content/scss/partials/_footer.scss */
-  footer .wrapper > ul ul a {
+  /* line 82, ../Content/scss/partials/_footer.scss */
+  .wrapper footer > ul ul a {
     text-decoration: none !important;
     color: #7d8691 !important;
     font-size: 1em;
@@ -2326,16 +2347,9 @@ Footer/Section Layout
     margin-left: -30px;
   }
 
-  /* line 106, ../Content/scss/partials/_footer.scss */
-  footer .wrapper > ul ul a:hover {
+  /* line 91, ../Content/scss/partials/_footer.scss */
+  .wrapper footer > ul ul a:hover {
     color: #ddd !important;
-  }
-
-  /* line 110, ../Content/scss/partials/_footer.scss */
-  footer .copy {
-    position: fixed;
-    left: 20px;
-    bottom: 10px;
   }
 
     /*------------color themes (optional)-------------------
@@ -2515,7 +2529,7 @@ Footer/Section Layout
 .frame {
   margin: 0 auto;
   width: 100%;
-  height: 190px;
+  height: 300px;
   overflow: hidden;
   text-shadow: none;
 }
@@ -2534,7 +2548,7 @@ Footer/Section Layout
 .frame ul li {
   background: #ffcc00;
   float: left;
-  width: 190px;
+  width: 320px;
   height: 100%;
   margin: 0 10px 0 0;
   padding: 0;
@@ -2737,11 +2751,18 @@ Footer/Section Layout
   .frame {
     /*<== size of viewport*/
     margin: 0 auto;
-    width: 620px;
+    width: 100%;
+    max-width: 620px;
     /*<==== Important ==<*/
   }
 
-  /* line 117, ../Content/scss/partials/_sly.scss */
+  /* line 118, ../Content/scss/partials/_sly.scss */
+  .frame ul {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /*frame viewport*/
+  /* line 119, ../Content/scss/partials/_sly.scss */
   .frame ul li {
     /*<== size of slide*/
     height: 100%;
@@ -2749,7 +2770,7 @@ Footer/Section Layout
   }
 
   /* Pages */
-  /* line 123, ../Content/scss/partials/_sly.scss */
+  /* line 125, ../Content/scss/partials/_sly.scss */
   .pages {
     list-style: none;
     margin: 8px auto 0;
@@ -2759,7 +2780,7 @@ Footer/Section Layout
   }
 
   /*slide buttons*/
-  /* line 132, ../Content/scss/partials/_sly.scss */
+  /* line 134, ../Content/scss/partials/_sly.scss */
   .pagespan button, .pagespan button {
     visibility: visible;
     background: transparent;
@@ -2769,17 +2790,17 @@ Footer/Section Layout
     border: 1px dashed red;
   }
 
-  /* line 133, ../Content/scss/partials/_sly.scss */
+  /* line 135, ../Content/scss/partials/_sly.scss */
   .pagespan button:hover, .pagespan button:hover {
     opacity: 1;
   }
 
-  /* line 134, ../Content/scss/partials/_sly.scss */
+  /* line 136, ../Content/scss/partials/_sly.scss */
   .pagespan button:disabled, .pagespan button:disabled {
     opacity: .2;
   }
 
-  /* line 136, ../Content/scss/partials/_sly.scss */
+  /* line 138, ../Content/scss/partials/_sly.scss */
   .forward, .backward {
     float: left;
     width: 50px;
@@ -2788,12 +2809,12 @@ Footer/Section Layout
     border: 1px dashed blue;
   }
 
-  /* line 137, ../Content/scss/partials/_sly.scss */
+  /* line 139, ../Content/scss/partials/_sly.scss */
   .forward {
     float: right;
   }
 
-  /* line 139, ../Content/scss/partials/_sly.scss */
+  /* line 141, ../Content/scss/partials/_sly.scss */
   .next, .prev {
     visibility: visible;
     display: block;
@@ -2803,18 +2824,18 @@ Footer/Section Layout
     font-size: 60px;
   }
 
-  /* line 140, ../Content/scss/partials/_sly.scss */
+  /* line 142, ../Content/scss/partials/_sly.scss */
   .next {
     float: right;
   }
 
-  /* line 141, ../Content/scss/partials/_sly.scss */
+  /* line 143, ../Content/scss/partials/_sly.scss */
   .next:hover, .prev:hover {
     background: rgba(255, 204, 0, 0.3);
   }
 
   /*scroll bar*/
-  /* line 145, ../Content/scss/partials/_sly.scss */
+  /* line 147, ../Content/scss/partials/_sly.scss */
   .scrollbar {
     visibility: hidden;
     display: hidden;
@@ -2824,43 +2845,43 @@ Footer/Section Layout
    Special Classes
    ========================================================================== */
 /* One Item Per Frame example*/
-/* line 155, ../Content/scss/partials/_sly.scss */
+/* line 157, ../Content/scss/partials/_sly.scss */
 .oneperframe {
   min-height: 300px;
   line-height: 300px;
 }
 
-/* line 156, ../Content/scss/partials/_sly.scss */
+/* line 158, ../Content/scss/partials/_sly.scss */
 .oneperframe ul li {
   width: 1140px;
 }
 
-/* line 157, ../Content/scss/partials/_sly.scss */
+/* line 159, ../Content/scss/partials/_sly.scss */
 .oneperframe ul li.active {
   background: #333;
 }
 
 /* Crazy example */
-/* line 161, ../Content/scss/partials/_sly.scss */
+/* line 163, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(2n) {
   width: 100px;
   margin: 0 4px 0 20px;
 }
 
-/* line 162, ../Content/scss/partials/_sly.scss */
+/* line 164, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(3n) {
   width: 300px;
   margin: 0 10px 0 5px;
 }
 
-/* line 163, ../Content/scss/partials/_sly.scss */
+/* line 165, ../Content/scss/partials/_sly.scss */
 .crazy ul li:nth-child(4n) {
   width: 400px;
   margin: 0 30px 0 2px;
 }
 
 /* 3D Effects */
-/* line 167, ../Content/scss/partials/_sly.scss */
+/* line 169, ../Content/scss/partials/_sly.scss */
 .effects {
   min-height: 200px;
   -webkit-perspective: 800px;
@@ -2872,14 +2893,14 @@ Footer/Section Layout
   overflow-y: show;
 }
 
-/* line 177, ../Content/scss/partials/_sly.scss */
+/* line 179, ../Content/scss/partials/_sly.scss */
 .effects ul {
   -webkit-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 182, ../Content/scss/partials/_sly.scss */
+/* line 184, ../Content/scss/partials/_sly.scss */
 .effects ul li {
   position: relative;
   margin: 0 -20px;
@@ -2890,7 +2911,7 @@ Footer/Section Layout
   transition: transform 300ms ease-out;
 }
 
-/* line 191, ../Content/scss/partials/_sly.scss */
+/* line 193, ../Content/scss/partials/_sly.scss */
 .effects ul li.active {
   z-index: 10;
   -webkit-transform: scale(1);
@@ -2898,7 +2919,7 @@ Footer/Section Layout
   transform: scale(1);
 }
 
-/* line 197, ../Content/scss/partials/_sly.scss */
+/* line 199, ../Content/scss/partials/_sly.scss */
 .effects ul li.active ~ li {
   -webkit-transform: rotateY(-60deg) scale(0.9);
   -ms-transform: rotateY(-60deg) scale(0.9);
@@ -2906,7 +2927,7 @@ Footer/Section Layout
 }
 
 /* Grid Background */
-/* line 204, ../Content/scss/partials/_sly.scss */
+/* line 206, ../Content/scss/partials/_sly.scss */
 .grid-background {
   margin: 0 auto;
   padding: 115px 0 80px;

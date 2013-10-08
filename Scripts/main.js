@@ -5,16 +5,16 @@ require.config({
     waitSeconds: 10,
     paths: {
         //plugins
-        'sly': '../content/sly/js/sly.min',
-        'dmenu': '../content/js/jquery.dlmenu',
-        'fittext': '../content/js/jquery.fittext',
-        'waypoint': '../content/js/waypoints.min',
-        'easing': '../content/js/jquery.easing.min',
-        'equalh': '../content/js/jquery.equalheight',
-        'sticky': '../content/js/jquery.sticky-kit.min',
-        'resize': '../content/js/jquery.debouncedresize',
+        'sly': '../../content/sly/js/sly.min',
+        'dmenu': '../../content/js/jquery.dlmenu',
+        'fittext': '../../content/js/jquery.fittext',
+        'waypoint': '../../content/js/waypoints.min',
+        'easing': '../../content/js/jquery.easing.min',
+        'equalh': '../../content/js/jquery.equalheight',
+        'sticky': '../../content/js/jquery.sticky-kit.min',
+        'resize': '../../content/js/jquery.debouncedresize',
         //scripts
-        'sly-main': '../content/sly/js/main'
+        'sly-main': '../../content/sly/js/main'
     }
 });
 

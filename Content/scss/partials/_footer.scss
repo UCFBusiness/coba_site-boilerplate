@@ -14,49 +14,34 @@
    ========================================================================== */
 
     .wrapper footer {
-        background: #101010;
+        background: rgba(0,0,0,.37);
+        text-align: center;
         height: 50%; /* <----- */
         color:#ccc;
         font-size:12px;
         z-index:-2;
-
-        border:1px dashed red; /*-- development only - borderline --*/
     }
 
-
-    /*-------------------------------*/
-    /* The columns */
-
-    footer .wrapper {
-
-        padding-bottom: 150px; /* <----- */
-        width:100%;
-        position:fixed;
-        bottom:0;
-        z-index:-1;
-
-    }
-
-    footer .wrapper > ul {
+    .wrapper footer > ul {
         width: 80%; margin: 0 auto;
     }
 
 
     /* The four columns of links */
 
-    footer .wrapper ul > li {
+    .wrapper footer ul > li {
 
         width:25%;
         float:left;
     }
 
-    footer .wrapper ul {
+    .wrapperfooter  ul {
         list-style: none;
     }
 
     /* The links */
 
-    footer .wrapper > ul > li ul li {
+    .wrapper footer > ul > li ul li {
         text-transform: uppercase;
         font-weight:bold;
         line-height:1.8;
@@ -68,8 +53,8 @@
     /*-------------------------------*/
     /* The headers */
 
-    footer .wrapper p {
-        background-color: #058cc7;
+    .wrapper footer p {
+
         padding: 9px;
         width: 90%;    
 
@@ -86,7 +71,7 @@
         cursor:default;
     }
 
-    footer .wrapper > ul > li:hover p {
+    .wrapper footer > ul > li:hover p {
         opacity:1;
     }
 
@@ -94,7 +79,7 @@
     /*-------------------------------*/
     /* The links */
 
-    footer .wrapper > ul ul a {
+    .wrapper footer > ul ul a {
 
         text-decoration: none !important;
         color:#7d8691 !important;
@@ -103,14 +88,8 @@
         margin-left:-30px;
     }
 
-    footer .wrapper > ul ul a:hover {
+    .wrapper footer > ul ul a:hover {
         color:#ddd !important;
-    }
-
-    footer .copy {
-        position: fixed;
-        left: 20px;
-        bottom: 10px;
     }
 
     /*------------color themes (optional)-------------------

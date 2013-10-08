@@ -1,141 +1,278 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
     Page.Title = "College of Business";
-
-
 }
 
 @section Styles {
-    <!--<style> /*-- page-specific styles --*/ </style>-->
+    <style> /*-- cover-img --*/ 
+        .cover-img {background-image: url('../../images/finance-bg.jpg');}
+    </style>
 }
 
 @section featured {
-<section class="featured">
-    <div class="content-wrapper">
 
-        <hgroup class="title">
-            <h1>@Page.Title</h1>
-            <h2>Administration</h2>
-        </hgroup>
+    <p><!-- Page headlines go here.--></p>
 
-        <p>Authenticated: @WebSecurity.IsAuthenticated</p>
+}
 
-        <section id="login">
-            @if (WebSecurity.IsAuthenticated) {
-                <text>
-                    Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
-                    <form id="logoutForm" action="~/Account/Logout" method="post">
-                        @AntiForgery.GetHtml()
-                        <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
-                    </form>
-                </text>
-            } else {
-                <ul>
-                    <li><a href="~/Account/Register">Register</a></li>
-                    <li><a href="~/Account/Login">Log in</a></li>
-                </ul>
-            }
-        </section>
+<div style="padding: 10px; max-width: 100%; text-align: center;">
+
+    <p class="cover-actions">
+		<a data-action="sign-in-with-twitter" href="/account/login" class="btn btn-primary">
+            <span class="icons icons-twitter"></span>
+            <span style="font-size: .8em">Sign in with Twitter</span>
+        </a>
+        <a data-action="sign-in-with-facebook" href="/account/login" class="btn btn-primary">
+            <span class="icons icons-facebook"></span>
+            <span style="font-size: .8em">Sign in with Facebook</span>
+        </a>
+	</p>
+
+</div>
+
+<!-- place <nav> for page navigation here -->
+
+<section>
+    <div id="example1" class="pagespan">
+
+        <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
+        <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
+
+		<div class="frame effects">
+			<ul class="clearfix">
+                <!-- 8 panels per row -->
+                <li>
+                    <img src="~/images/panels/panel1.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel2.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/take-the-ball.jpg" alt="...">
+                    <a href="http://www.bus.ucf.edu/dean/take-the-ball" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/dean-blog.jpg" alt="...">
+                    <a href="http://www.bus.ucf.edu/dean" target="_blank">
+                        <p>Read the latest post from Dean Paul Jarley...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/meet-the-ambassadors.jpg" alt="...">
+                    <a href="http://www.youtube.com/playlist?list=PLblI-5jkdoaLAGz-wPFnjv-WtZiEFP4VS" target="_blank">
+                        <p>Meet the UCF College of Business Ambassadors...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/social-media.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Follow us on twitter, facebook, and other popular social media...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/blackstone-launchpad.jpg" alt="...">
+                    <a href="http://cel.ucf.edu/about/news/blackstone-launchpad-featured-in-the-orlando-sentinel" target="_blank">
+                        <p>UCF’s Blackstone LaunchPad announced the future opening of its student entrepreneurial center.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel1.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+			</ul>
+		</div><!--/frames-->
+
+        <ul class="pages"></ul><!--/position marker-->
+        <br><br>
 
     </div>
 </section>
+
+<section>
+    <div id="example2" class="pagespan">
+
+        <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
+        <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
+
+		<div class="frame effects">
+			<ul class="clearfix">
+                <!-- 8 panels per row -->
+                <li>
+                    <img src="~/images/panels/panel1.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel2.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel3.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/negotiate-to-the-top.jpg" alt="...">
+                    <a href="http://edc.research.ucf.edu/negotiate" target="_blank">
+                        <p>Join us for Negotiate To The Top, our interactive two-day seminar led by Tim Cullen.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/strategic-leadership.jpg" alt="...">
+                    <a href="http://edc.research.ucf.edu/strategic-leadership" target="_blank">
+                        <p>Implementing a business strategy is a key part of ensuring any firm’s success.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel3.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel2.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel1.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Learn more.</p>
+                    </a>
+                </li>
+			</ul>
+		</div><!--/frames-->
+
+        <ul class="pages"></ul><!--/position marker-->
+        <br><br>
+
+    </div>
+</section>
+
+<section>
+    <div id="example3" class="pagespan">
+
+        <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
+        <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
+
+        <div class="frame effects">
+			<ul class="clearfix">
+                <!-- 8 panels per row -->
+                <li>
+                    <img src="~/images/panels/panel2.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel3.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel1.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/organizational-hypocrisy.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p></p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel1.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel2.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel3.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="~/images/panels/panel1.jpg" alt="...">
+                    <a href="#" target="_blank">
+                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
+                    </a>
+                </li>
+			</ul>
+		</div><!--/frames-->
+
+        <ul class="pages"></ul><!--/position marker-->
+        <br><br>
+
+    </div>
+</section>
+
+<footer class="wrapper-footer">
+    <div class="content-wrapper">
+        <!--BEGIN-->
+        @*<ul class="clearfix">
+            <li>
+                <p class="home">Address</p>
+
+                <a href="#">un-styled ink</i></a>
+            </li>
+            <li>
+                <p class="services">Contact</p>
+
+                <ul>
+                    <li><a href="#">Link to page.</a></li>
+                    <li><a href="#">Link to page.</a></li>
+                    <li><a href="#">Link to page.</a></li>
+                    <li><a href="#">Link to page.</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="social">Follow Us</p>
+
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="qlinks">Quick Links</p>
+
+                <ul>
+                    <li><a href="#">Link to page.</a></li>
+                    <li><a href="#">Link to page.</a></li>
+                    <li><a href="#">Link to page.</a></li>
+                </ul>
+            </li>
+        </ul>*@
+        <a href="#"><img src="../../images/setting-icon.png" alt="drawbridge settings"></a>
+        <!--FINIS-->
+    </div>
+</footer>
+
+@section Scripts {
+    <script data-main="scripts/main" src="~/scripts/require.js"></script>
 }
-
-<div class=""></div>
-
-<div class="">
-
-    <section>
-        <div id="example1" class="pagespan">
-
-            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
-
-			<div class="frame effects">
-				<ul class="clearfix">
-                    <!-- 9 panels per row -->
-                    <li><img src="~/images/panels/panel1.jpg" alt="..."><p>1. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel2.jpg" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel3.jpg" alt="..."><p>3. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel1.jpg" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel2.jpg" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel3.jpg" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-				</ul>
-			</div><!--/frames-->
-
-            <ul class="pages"></ul><!--/position marker-->
-            <div class="scrollbar">
-				<div class="handle">
-					<div class="mousearea"></div>
-				</div>
-			</div><!--/scrollbar-->
-
-        </div>
-    </section>
-
-    <section>
-        <div id="example2" class="pagespan">
-
-            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
-
-			<div class="frame effects">
-				<ul class="clearfix">
-                    <!-- 9 panels per row -->
-                    <li><img src="~/images/panels/panel1.jpg" alt="..."><p>1. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel2.jpg" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel3.jpg" alt="..."><p>3. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel1.jpg" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel2.jpg" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel3.jpg" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-				</ul>
-			</div><!--/frames-->
-
-            <ul class="pages"></ul><!--/position marker-->
-            <div class="scrollbar">
-				<div class="handle">
-					<div class="mousearea"></div>
-				</div>
-			</div><!--/scrollbar-->
-
-        </div>
-    </section>
-
-    <section>
-        <div id="example3" class="pagespan">
-
-            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
-
-            <div class="frame effects">
-				<ul class="clearfix">
-                    <!-- 9 panels per row -->
-                    <li><img src="~/images/panels/panel1.jpg" alt="..."><p>1. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel2.jpg" alt="..."><p>2. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel3.jpg" alt="..."><p>3. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>4. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel1.jpg" alt="..."><p>5. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel2.jpg" alt="..."><p>6. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel3.jpg" alt="..."><p>7. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>8. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-                    <li><img src="~/images/panels/panel4.jpg" alt="..."><p>9. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla...</p></li>
-				</ul>
-			</div><!--/frames-->
-
-            <ul class="pages"></ul><!--/position marker-->
-            <div class="scrollbar">
-				<div class="handle">
-					<div class="mousearea"></div>
-				</div>
-			</div><!--/scrollbar-->
-
-        </div>
-    </section>
-
-</div>

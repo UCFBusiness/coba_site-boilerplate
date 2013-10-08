@@ -11,8 +11,15 @@
 }
 
 .sb-search {
+    visibility: hidden;
+}
+
+
+@media all and (min-width: 481px) {
+    
+.sb-search {
 	position: relative;
-	margin-top: 10px;
+	margin-top: 100px;
 	width: 0%;
 	min-width: 60px;
 	height: 60px;
@@ -74,7 +81,7 @@
 
 .sb-icon-search {
 	color: #fff;
-	background: #e67e22; /*orange*/
+	background: rgba(225,225,225,.75);
 	z-index: 90;
 	font-size: 22px;
 	font-family: 'icomoon';
@@ -98,7 +105,7 @@
 
 .sb-search.sb-search-open .sb-icon-search,
 .no-js .sb-search .sb-icon-search {
-	background: #da6d0d;
+	background: rgba(225,225,225,.75);
 	color: #fff;
 	z-index: 11;
 }
@@ -106,4 +113,20 @@
 .sb-search.sb-search-open .sb-search-submit,
 .no-js .sb-search .sb-search-submit {
 	z-index: 90;
+}
+
+}
+
+
+@media screen and (min-width: 1025px) {
+    
+    /*.sb-search {
+        visibility: visible;
+    }*/
+
+    .dl-search-field, 
+    .dl-searchbutton {
+        visibility: hidden;
+    }
+
 }

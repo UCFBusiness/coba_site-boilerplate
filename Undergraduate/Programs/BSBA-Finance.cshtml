@@ -5,37 +5,30 @@
 
 @section Styles {
 <style> /*-- page-specific styles --*/ 
+    
+    .cover-img {background-image: url('../../images/finance-bg.jpg');}
 
     .hs-container {
         max-width: 960px;
         margin: 0 auto;
-        background: #ccc;
+        background: #ddd;
         overflow: auto;
-        
-        border: 1px dashed blue;
     }
     
     article {
         width: 70%;
         float: left;
-        background: #eee;
-        
-        border: 1px dashed red;
     }
     
     aside {
         width: 30%;
         float: left;
-        background: #bbb;
-        
-        border: 1px dashed red;
     }
     
     @@media only screen and (max-width: 1024px) {
         .hs-container {
             max-width: 960px;
             margin: 0;
-            background: #aaa;
         }
     
         article, aside {
@@ -48,36 +41,36 @@
 }
 
 @section featured {
-<section class="featured">
-    <div class="content-wrapper">
-        <hgroup class="title">
-            <h2>@Page.Title</h2>
-            <h1>Finance</h1>
-        </hgroup>
-
-        <div>
-            <h3>The Finance Major</h3>
-            <p><img data-src="holder.js/100%x300" alt="...">The finance major is designed to provide the student with a broad knowledge in business finance, 
-                investments, financial institutions, international finance, risk management and insurance, 
-                and real estate. The program provides the student with the theoretical background and tools 
-                of analysis required for making effective financial decisions.</p>
-        </div>
-        <div>video</div>
-        <div>image</div>
-        <div>
-            <h3>The Finance Student</h3>
-            <p>Envision an education where hands-on guidance from award-winning faculty is a given. 
-                Where classes aren’t just classes, but components of an innovative curriculum that teaches 
-                the science, ethics, and art of good business.</p>
-            <p>The study of finance prepares the student for careers in business financial management. 
-                Students that major in finance are sought by both financial and non-financial firms.</p>
-        </div>
-        <p>Please Note: the information listed on the website is for the 2013 Catalog Year. Please refer to your degree audit if you are declared in an earlier Catalog Year.</p>
-    </div>
-</section>
+    <hgroup class="title" style="padding: 25px; color: #fff;">
+        <h2>@Page.Title</h2>
+        <h1>Finance</h1>
+    </hgroup>
 }
 
 <div id="hs-container" class="hs-container">
+
+    <section class="featured">
+        <div class="content-wrapper">
+            <div>
+                <h3>The Finance Major</h3>
+                <p>The finance major is designed to provide the student with a broad knowledge in business finance, 
+                    investments, financial institutions, international finance, risk management and insurance, 
+                    and real estate. The program provides the student with the theoretical background and tools 
+                    of analysis required for making effective financial decisions.</p>
+            </div>
+            <div>video</div>
+            <div>image</div>
+            <div>
+                <h3>The Finance Student</h3>
+                <p>Envision an education where hands-on guidance from award-winning faculty is a given. 
+                    Where classes aren’t just classes, but components of an innovative curriculum that teaches 
+                    the science, ethics, and art of good business.</p>
+                <p>The study of finance prepares the student for careers in business financial management. 
+                    Students that major in finance are sought by both financial and non-financial firms.</p>
+            </div>
+            <p>Please Note: the information listed on the website is for the 2013 Catalog Year. Please refer to your degree audit if you are declared in an earlier Catalog Year.</p>
+        </div>
+    </section>
 
     <aside class="hs-menu" id="hs-menu">
         <nav id="menu" data-scrollspy="scrollspy" class="">
