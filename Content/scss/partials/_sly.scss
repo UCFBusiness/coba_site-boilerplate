@@ -110,9 +110,9 @@
 @media screen and (min-width: 1025px) {
 
     /* Frame */
-    .frame {
+    .frame { /*<== size of viewport*/
         margin: 0 auto;
-        width: 620px;
+        width: 620px; /*<==== Important ==<*/
     }
     .frame ul li { /*<== size of slide*/
         height: 100%;

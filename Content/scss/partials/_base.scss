@@ -1,9 +1,11 @@
 
 // Partials
 @import "typography";
+@import "primary_styles";
 @import "ucf-header";
 @import "header/navigation";
-@import "primary_styles";
+@import "header/search-bar";
+@import "header/menu.animation";
 @import "footer";
 
 @import "back-to-top";

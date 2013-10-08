@@ -6,6 +6,7 @@ require.config({
     paths: {
         //plugins
         'sly': '../content/sly/js/sly.min',
+        'dmenu': '../content/js/jquery.dlmenu',
         'fittext': '../content/js/jquery.fittext',
         'waypoint': '../content/js/waypoints.min',
         'easing': '../content/js/jquery.easing.min',
@@ -17,7 +18,7 @@ require.config({
     }
 });
 
-require(['fittext', 'easing', 'sly', 'sly-main'], function () {
+require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu'], function () {
 
     // http://stackoverflow.com/questions/3698200/window-onload-vs-document-ready
     // http://4loc.wordpress.com/2009/04/28/documentready-vs-windowload/
@@ -32,6 +33,17 @@ require(['fittext', 'easing', 'sly', 'sly-main'], function () {
         //----- Font Sizes-------------------------------
         $('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '16px' });
         //-----------------------------------------------
+
+
+        //-- navigation menu -----------------------------------
+        $('.dl-menuwrapper').dlmenu({ 
+            animationClasses: { 
+                classin: 'dl-animate-in-2', 
+                classout: 'dl-animate-out-2'
+            } 
+        });
+        //------------------------------------------------------
+
 
         //----- fade out fixed menu----------------------
         var nav = $('#nav');
@@ -60,6 +72,7 @@ require(['fittext', 'easing', 'sly', 'sly-main'], function () {
         );
         //-----------------------------------------------
 
+
         //-- lazy load images ---------------------------
         $("img.lz").fadeTo(0, 0);
         $(window).scroll(function (d, h) {
@@ -85,6 +98,7 @@ require(['fittext', 'easing', 'sly', 'sly-main'], function () {
             //cookies are not enabled
             alert('cookies are not enabled');
         } //----------------------------------------------
+
 
         //-- back to top --------------------------------
         var offset = 220;

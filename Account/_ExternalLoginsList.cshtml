@@ -9,13 +9,13 @@
     <form method="post">
     @AntiForgery.GetHtml()
     <fieldset id="socialLoginList">
-        <legend>Log in using another service</legend>
-        <p>
+        @*<legend>Save your settings with</legend>*@
+        <p class="cover-actions"><span style="color: #ccc; font-size: small;">login using </span> 
             @foreach (var client in OAuthWebSecurity.RegisteredClientData) {
                 <button type="submit" name="provider" value="@client.AuthenticationClient.ProviderName"
-                        title="Log in using your @client.DisplayName account">@client.DisplayName</button>
+                        title="Log in using your @client.DisplayName account" class="btn btn-primary">@client.DisplayName</button>
             }
-        </p>
+        <span style="color: #ccc; font-size: small;"> to customize</span> </p>
     </fieldset>
     </form>
 }

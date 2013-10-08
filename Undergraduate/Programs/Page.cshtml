@@ -47,68 +47,9 @@
         
             <header>
                 <div class="content-wrapper">
-                @*<!-- for development only --><div><label id="message" style="display: block;"></label></div><!-- for development only -->*@
+                    @*This area is for announcements and alerts which will appear at the top of the site.*@
                 </div>
             </header>
-
-            @*<nav class="site-nav" role="navigation">
-                
-                <button class="site-nav-logo distraction-free-component" data-action="open-nav">
-		            <span class="icons .icons-logo-m">
-			            <span class="screen-reader-text">site navigation</span>
-		            </span>
-		            <div class="site-nav-activity-flag"></div>
-	            </button>
-
-                <div class="site-nav-scrollable-container">
-                    <!--site search-->
-		            <div class="site-nav-search-wrapper">
-			            <div class="site-nav-search-inner">
-
-				            <div class="site-nav-search">
-					            <input type="text" class="site-nav-search-input site-nav-search-input-desktop" title="Search Medium" placeholder="Search Medium" />
-					            <button class="btn btn-chromeless site-nav-search-input-trigger site-nav-search-clear" data-action="clear-search">
-						            <span class="icons icons-remove"></span>
-					            </button>
-					            <button class="btn btn-chromeless site-nav-search-input-trigger site-nav-search-query" data-action="query-search">
-						            <span class="icons icons-search"></span>
-					            </button>
-				            </div>
-
-				            <span class="site-nav-search-item navigable-list-item">
-					            <button class="btn btn-chromeless site-nav-search-collapse" data-action="close-search">
-						            <span class="icons icons-remove"></span>
-						            <span class="site-nav-search-remove-mobile">Cancel</span>
-					            </button>
-				            </span>
-
-			            </div>
-			            <div class="site-nav-search-results"></div>
-		            </div>
-                    <!--navigation-->
-		            <ul class="site-nav-list">
-			            <li class="site-nav-list-item navigable-list-item site-nav-list-item-home">
-				            <a class="site-nav-list-item-btn" title="Go home" href="/" tabindex="-1"><span class="icons icons-logo-m"></span>Home</a>
-				            <div class="site-nav-search-nav-mobile">
-					            <span class="icons icons-search site-nav-search-input-mobile-search-input-bg"></span>
-					            <input type="search" class="site-nav-search-input site-nav-search-input-mobile" />
-				            </div>
-				            <div class="site-nav-search-nav-desktop">
-					            <span class="site-nav-search-item site-nav-search-open-trigger navigable-list-item">
-						            <button class="btn btn-chromeless site-nav-list-item-btn-secondary" data-action="open-search" tabindex="-1">
-							            <span class="icons icons-search">
-								            <span class="screen-reader-text">Search</span>
-							            </span>
-						            </button>
-					            </span>
-				            </div>
-			            </li>
-			            <li class="site-nav-list-item navigable-list-item">
-				            <a class="site-nav-list-item-btn" title="Sign in with Twitter" data-action="sign-in-with-twitter" href="/m/account/authenticate-twitter" tabindex="-1"><span class="icons icons-twitter-small"></span>Sign in with Twitter</a>
-			            </li>
-		            </ul>
-	            </div>
-            </nav>*@
 
             <div class="site-nav-overlay"></div>
 
@@ -132,7 +73,7 @@
                                 <nav id="main_menu" class="dl-menuwrapper clearfix">
                                     <a href="~/" class="dl-home">HOME</a>
                                     <button class="dl-trigger">DISCOVER</button>
-                                    <ul class="dl-menu">
+                                    <ul class="dl-menu" data-scrollspy="scrollspy">
 					                    <li>
 						                    <a href="#">Academics</a>
 						                    <ul class="dl-submenu">
@@ -217,12 +158,25 @@
 						                    </ul>
 					                    </li>
 				                    </ul>
-                                    <form id="site-search" class="search" action="/search" name="input" method="get" >
-                                        <div class="input-append">
-                                            <input type="submit" value="submit" class="dl-searchbutton" />
+
+                                    @*<div id="sb-search" class="sb-search">
+                                        <form id="site-search" class="search" action="/search" name="input" method="get" >
                                             <input type="search" placeholder="SEARCH" name="q" class="dl-search-field" />
-                                        </div>
-                                    </form>
+                                            <input type="submit" value="submit" class="dl-searchbutton" />
+                                            <span class="dl-search-icon"></span>
+                                        </form>
+                                    </div>*@
+
+
+					                <div id="sb-search" class="sb-search">
+						                <form action="/search" name="input" method="get" >
+							                <input class="sb-search-input" placeholder="Search" type="text" value="" name="q" id="search">
+							                <input class="sb-search-submit" type="submit" value="">
+							                <span class="sb-icon-search"></span>
+						                </form>
+					                </div>
+
+
                                 </nav><!-- /dl-menuwrapper -->
                                 <!-- FINIS:Nav -->
 
@@ -235,18 +189,8 @@
 					                <h1 class="cover-title">College <span style="font-size: .8em;">of</span> Business</h1>
 					                <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em>
                                         <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.</p>
-					                @*<p class="cover-actions">
-						                <a data-action="sign-in-with-twitter" href="/account/login" class="btn btn-primary">
-                                            <span class="icons icons-twitter"></span>
-                                            <span style="font-size: .8em">Sign in with Twitter</span>
-                                        </a>
-                                        <a data-action="sign-in-with-facebook" href="/account/login" class="btn btn-primary">
-                                            <span class="icons icons-facebook"></span>
-                                            <span style="font-size: .8em">Sign in with Facebook</span>
-                                        </a>
-					                </p>*@
-                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, 
-                                        <br>&nbsp;&nbsp;&nbsp;College of Business Administration</p></div>
+                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida,
+                                       <br>&nbsp;&nbsp;&nbsp;College of Business Administration</p></div>
 				                </div>
 			                </div>
 
@@ -255,7 +199,8 @@
 		                <section class="wrapper"><!--background image here-->
 			                <div class="wrapper-inner" >
 
-                                <div style="padding-top: 10px; text-align: center;">
+                                <div style="padding-top: 10px; max-width: 100%; text-align: center;">
+
                                     <p class="cover-actions">
 						                <a data-action="sign-in-with-twitter" href="/account/login" class="btn btn-primary">
                                             <span class="icons icons-twitter"></span>
@@ -266,6 +211,7 @@
                                             <span style="font-size: .8em">Sign in with Facebook</span>
                                         </a>
 					                </p>
+
                                 </div>
 
                                 <!-- place <nav> for page navigation here -->
@@ -426,8 +372,16 @@
         <!-- for development -->
         @*<script src="~/scripts/holder.min.js"></script>*@
 
+        <script src="../../content/js/classie.js"></script>
+		<script src="../../content/js/uisearch.js"></script>
+        <script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+
         <!-- production -->
         <script data-main="../../scripts/main" src="~/scripts/require.js"></script>
+
+
 
         @*<script src="~/content/sly/js/sly.min.js"></script>
         <script src="~/content/sly/js/main.js"></script>*@

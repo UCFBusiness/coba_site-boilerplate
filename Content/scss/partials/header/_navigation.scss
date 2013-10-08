@@ -71,7 +71,7 @@ nav.dl-menuwrapper {
     display: none;
 }
 
-.dl-searchfield {
+.dl-search-field {
     background: rgba(0,0,0,.8);
     margin-top: 7px;
     margin-right: 15px;
@@ -324,7 +324,7 @@ nav.dl-menuwrapper {
 
 
 
-.dl-searchfield {
+.dl-search-field {
     background: rgba(255,255,255,.7);
     border: 1px solid #fff;
     position: static;
@@ -335,7 +335,7 @@ nav.dl-menuwrapper {
     font-size: .8em;
     height: 45px;
     color: #333;
-    float: left;
+    float: right;
     border-radius: 0;
 }
 
@@ -487,6 +487,10 @@ nav.dl-menuwrapper {
     }
     .dl-searchbutton:hover {
         background-position: 3px 2px;
+    }
+
+    .dl-search-field {
+        float: left;
     }
 
 }
