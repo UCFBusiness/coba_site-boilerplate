@@ -4,17 +4,16 @@ console.log( "START: main.js" );
 require.config({
     waitSeconds: 10,
     paths: {
-        //plugins
-        'sly': '../../content/sly/js/sly.min',
-        'dmenu': '../../content/js/jquery.dlmenu',
-        'fittext': '../../content/js/jquery.fittext',
-        'waypoint': '../../content/js/waypoints.min',
-        'easing': '../../content/js/jquery.easing.min',
-        'equalh': '../../content/js/jquery.equalheight',
-        'sticky': '../../content/js/jquery.sticky-kit.min',
-        'resize': '../../content/js/jquery.debouncedresize',
+        'sly': 'js/sly.min',
+        'dmenu': 'js/jquery.dlmenu',
+        'fittext': 'js/jquery.fittext',
+        'waypoint': 'js/waypoints.min',
+        'easing': 'js/jquery.easing.min',
+        'equalh': 'js/jquery.equalheight',
+        'sticky': 'js/jquery.sticky-kit.min',
+        'resize': 'js/jquery.debouncedresize',
         //scripts
-        'sly-main': '../../content/sly/js/main'
+        'sly-main': 'js/sly.main'
     }
 });
 
