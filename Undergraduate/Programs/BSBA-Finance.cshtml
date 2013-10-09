@@ -6,42 +6,27 @@
 @section Styles {
 <style> /*-- page-specific styles --*/ 
     
-    .cover-img {background-image: url('../../images/finance-bg.jpg');}
+    .cover-img {background-image: url('/images/finance-bg.jpg');}
 
-    .hs-container {
-        max-width: 960px;
-        margin: 0 auto;
-        background: #ddd;
-        @*overflow: auto;*@
-    }
+    .hs-container {}
     
-    article {
+    .hs-container header {}
+    
+    .hs-container article {
         width: 70%;
         float: left;
     }
     
-    aside {
+    .hs-container aside {
         width: 30%;
         float: left;
-    }
-    
-    @@media only screen and (max-width: 1024px) {
-        .hs-container {
-            max-width: 960px;
-            margin: 0;
-        }
-    
-        article, aside {
-            width: 100%;
-            display: block;
-        }
     }
     
 </style>
 }
 
 @section featured {
-    <hgroup class="title" style="padding: 25px; color: #fff;">
+    <hgroup class="container">
         <h2>@Page.Title</h2>
         <h1>Finance</h1>
     </hgroup>
@@ -49,8 +34,8 @@
 
 <div id="hs-container" class="hs-container">
 
-    <section class="featured">
-        <div class="content-wrapper">
+    <header>
+        <div class="content-wrapper container">
             <div>
                 <h3>The Finance Major</h3>
                 <p>The finance major is designed to provide the student with a broad knowledge in business finance, 
@@ -70,10 +55,10 @@
             </div>
             <p>Please Note: the information listed on the website is for the 2013 Catalog Year. Please refer to your degree audit if you are declared in an earlier Catalog Year.</p>
         </div>
-    </section>
+    </header>
 
     <aside class="hs-menu" id="hs-menu">
-        <nav id="menu" data-scrollspy="scrollspy" class="">
+        <nav id="menu" data-scrollspy="scrollspy">
             <ul class="cl-effect-10">
                 <li><a href="#curricular-learning-goals" data-hover="Curricular Learning Goals" class="cbp-fbcurrent"><span>Curricular Learning Goals</span></a></li>
                 <li><a href="#core-business-courses" data-hover="Core Business Courses"><span>Core Business Courses</span></a></li>

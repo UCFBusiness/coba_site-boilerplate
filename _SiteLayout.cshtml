@@ -165,13 +165,11 @@
 				                        </li>
 			                        </ul>
 
-                                    
                                     <form id="site-search" class="site-search" action="/search" name="input" method="get" >
                                         <input type="search" placeholder="SEARCH" name="q" class="dl-search-field" />
                                         <input type="submit" value="submit" class="dl-searchbutton" />
                                         <span class="dl-search-icon"></span>
                                     </form>
-
 
 			                        <div id="sb-search" class="sb-search">
 				                        <form action="/search" name="input" method="get" >
@@ -181,9 +179,10 @@
 				                        </form>
 			                        </div>
 
-
                                 </nav><!-- /dl-menuwrapper -->
                                 <!-- FINIS:Nav -->
+
+                                <br>
 
                                 @RenderSection("featured", required: false)
 
@@ -193,10 +192,9 @@
 		                        <div class="cover-body-inner">
 			                        <h1 class="cover-title">College <span style="font-size: .8em;">of</span> Business</h1>
 			                        <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em>
-                                        <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.</p>
+                                        @*<br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.</p>*@
                                     <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
 		                        </div>
-	                        </div>
 
                         </aside>
 
@@ -231,14 +229,14 @@
         <!-- for development -->
         @*<script src="~/scripts/holder.min.js"></script>*@
 
-        <script src="../../content/js/classie.js"></script>
-		<script src="../../content/js/uisearch.js"></script>
+        <script src="~/content/js/classie.js"></script>
+		<script src="~/content/js/uisearch.js"></script>
         <script>
 			new UISearch( document.getElementById( 'sb-search' ) );
 		</script>
 
         <!-- production -->
-        <script data-main="../../scripts/main" src="~/scripts/require.js"></script>
+        <script data-main="/scripts/main" src="/scripts/require.js"></script>
 
         @RenderSection("Scripts", required: false)
     </body>

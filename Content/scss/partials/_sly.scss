@@ -8,7 +8,7 @@
 .pagespan button, .pagespan button { visibility: hidden; display: hidden;}
 
 /* Frame */
-.frame { width: 100%;overflow: hidden;border: 1px dashed red;z-index: 9;}
+.frame { width: 100%;overflow: hidden;z-index: 9;box-shadow: 0px 9px 8px 4px rgba(0,0,0,0.8); /* shadow */}
 .frame ul { list-style: none;height: 99%;position: relative;} /*frame viewport*/
 .frame ul li { float: left;width: 320px;height: 340px;margin: 0 1px 0 0; padding: 0;padding-top: 20px;background: #ddd;color: #ddd;cursor: pointer;border: 2px solid #333;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3); } /*slides*/
 .frame ul li.active { background: #ffcc00;color: #fff; } /*active slide*/
@@ -131,11 +131,11 @@
     }
 
     /*slide buttons*/
-    .pagespan button, .pagespan button { visibility: visible; background: transparent; border: 0; color: #ffcc00; opacity: .5; border: 1px dashed red;}
+    .pagespan button, .pagespan button { visibility: visible; background: transparent; border: 0; color: #ffcc00; opacity: .5;}
     .pagespan button:hover, .pagespan button:hover { opacity: 1; }
     .pagespan button:disabled, .pagespan button:disabled { opacity: .2; }
 
-    .forward, .backward { float: left; width: 50px; height: 260px; font-size: 60px; border: 1px dashed blue; }
+    .forward, .backward { float: left; width: 50px; height: 260px; font-size: 60px; }
     .forward { float: right; }
 
     .next, .prev { visibility: visible; display: block; float: left; width: 40px; height: 260px; font-size: 60px; }

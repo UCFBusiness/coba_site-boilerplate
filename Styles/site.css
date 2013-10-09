@@ -12,7 +12,7 @@ body {
 }*/
 /* line 14, ../Content/scss/partials/_primary_styles.scss */
 body {
-  background: url("../../images/content-bg.gif");
+  /*background: url('/images/content-bg.gif');*/
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
@@ -23,107 +23,107 @@ body {
   z-index: 0;
 }
 
-/* line 26, ../Content/scss/partials/_primary_styles.scss */
+/* line 28, ../Content/scss/partials/_primary_styles.scss */
 #container {
   position: relative;
   z-index: 1;
 }
 
-/* line 33, ../Content/scss/partials/_primary_styles.scss */
+/* line 35, ../Content/scss/partials/_primary_styles.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* ordered list */
-/* line 39, ../Content/scss/partials/_primary_styles.scss */
+/* line 41, ../Content/scss/partials/_primary_styles.scss */
 ol.round {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 44, ../Content/scss/partials/_primary_styles.scss */
+/* line 46, ../Content/scss/partials/_primary_styles.scss */
 ol.round li {
   margin: 25px 0;
   padding-left: 45px;
 }
 
-/* line 49, ../Content/scss/partials/_primary_styles.scss */
+/* line 51, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.zero {
-  background: url("../Images/orderedList0.png") no-repeat;
+  background: url("/images/orderedList0.png") no-repeat;
 }
 
-/* line 53, ../Content/scss/partials/_primary_styles.scss */
+/* line 55, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.one {
-  background: url("../Images/orderedList1.png") no-repeat;
+  background: url("/images/orderedList1.png") no-repeat;
 }
 
-/* line 57, ../Content/scss/partials/_primary_styles.scss */
+/* line 59, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.two {
-  background: url("../Images/orderedList2.png") no-repeat;
+  background: url("/images/orderedList2.png") no-repeat;
 }
 
-/* line 61, ../Content/scss/partials/_primary_styles.scss */
+/* line 63, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.three {
-  background: url("../Images/orderedList3.png") no-repeat;
+  background: url("/images/orderedList3.png") no-repeat;
 }
 
-/* line 65, ../Content/scss/partials/_primary_styles.scss */
+/* line 67, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.four {
-  background: url("../Images/orderedList4.png") no-repeat;
+  background: url("/images/orderedList4.png") no-repeat;
 }
 
-/* line 69, ../Content/scss/partials/_primary_styles.scss */
+/* line 71, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.five {
-  background: url("../Images/orderedList5.png") no-repeat;
+  background: url("/images/orderedList5.png") no-repeat;
 }
 
-/* line 73, ../Content/scss/partials/_primary_styles.scss */
+/* line 75, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.six {
-  background: url("../Images/orderedList6.png") no-repeat;
+  background: url("/images/orderedList6.png") no-repeat;
 }
 
-/* line 77, ../Content/scss/partials/_primary_styles.scss */
+/* line 79, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.seven {
-  background: url("../Images/orderedList7.png") no-repeat;
+  background: url("/images/orderedList7.png") no-repeat;
 }
 
-/* line 81, ../Content/scss/partials/_primary_styles.scss */
+/* line 83, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.eight {
-  background: url("../Images/orderedList8.png") no-repeat;
+  background: url("/images/orderedList8.png") no-repeat;
 }
 
-/* line 85, ../Content/scss/partials/_primary_styles.scss */
+/* line 87, ../Content/scss/partials/_primary_styles.scss */
 ol.round li.nine {
-  background: url("../Images/orderedList9.png") no-repeat;
+  background: url("/images/orderedList9.png") no-repeat;
 }
 
-/* line 89, ../Content/scss/partials/_primary_styles.scss */
+/* line 91, ../Content/scss/partials/_primary_styles.scss */
 .apply-button {
   font-size: 1.2em;
   font-weight: bold;
 }
 
-/* line 94, ../Content/scss/partials/_primary_styles.scss */
+/* line 96, ../Content/scss/partials/_primary_styles.scss */
 .copyright {
   font-size: .55em;
   color: #fff;
   line-height: 1.3em;
 }
 
-/* line 100, ../Content/scss/partials/_primary_styles.scss */
+/* line 102, ../Content/scss/partials/_primary_styles.scss */
 .icon-setting {
   color: #fff;
   font-size: 23px;
   line-height: 0;
   position: relative;
   top: 2px;
-  background: url("../../images/setting-icon.png");
+  background: url("/images/setting-icon.png");
 }
 
 /* =============================================================================
    NEW
    ========================================================================== */
-/* line 110, ../Content/scss/partials/_primary_styles.scss */
+/* line 112, ../Content/scss/partials/_primary_styles.scss */
 .cover {
   position: absolute;
   z-index: 100;
@@ -136,23 +136,23 @@ ol.round li.nine {
   /* shadow */
 }
 
-/* line 121, ../Content/scss/partials/_primary_styles.scss */
+/* line 123, ../Content/scss/partials/_primary_styles.scss */
 .cover.img-loaded {
   background: #000;
 }
 
-/* line 122, ../Content/scss/partials/_primary_styles.scss */
+/* line 124, ../Content/scss/partials/_primary_styles.scss */
 .body-scroll .cover {
   position: fixed;
 }
 
 /*<===== important*/
-/* line 123, ../Content/scss/partials/_primary_styles.scss */
+/* line 125, ../Content/scss/partials/_primary_styles.scss */
 .editing .cover {
   background-image: none;
 }
 
-/* line 125, ../Content/scss/partials/_primary_styles.scss */
+/* line 127, ../Content/scss/partials/_primary_styles.scss */
 .cover-img {
   /*<===== important // Cover-Photo(s) */
   position: absolute;
@@ -169,19 +169,26 @@ ol.round li.nine {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 142, ../Content/scss/partials/_primary_styles.scss */
+/* line 144, ../Content/scss/partials/_primary_styles.scss */
+.cover-header {
+  color: #fff;
+  text-shadow: 0px 1px 2px #333;
+}
+
+/* line 145, ../Content/scss/partials/_primary_styles.scss */
 .cover-body {
   position: absolute;
   bottom: 0;
   padding: 50px 10% 10%;
   width: 100%;
+  color: #fff;
+  text-shadow: 0px 1px 2px #333;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  text-shadow: 0px 1px 2px #333;
 }
 
-/* line 143, ../Content/scss/partials/_primary_styles.scss */
+/* line 146, ../Content/scss/partials/_primary_styles.scss */
 .cover-title {
   font-size: 60px;
   line-height: 1;
@@ -190,7 +197,7 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 144, ../Content/scss/partials/_primary_styles.scss */
+/* line 147, ../Content/scss/partials/_primary_styles.scss */
 .cover-description {
   font-size: 16px;
   line-height: 1.2;
@@ -199,32 +206,32 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 145, ../Content/scss/partials/_primary_styles.scss */
+/* line 148, ../Content/scss/partials/_primary_styles.scss */
 .cover-description a {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 146, ../Content/scss/partials/_primary_styles.scss */
+/* line 149, ../Content/scss/partials/_primary_styles.scss */
 .cover-meta {
   font-size: 14px;
   color: #dededc;
   font-style: italic;
 }
 
-/* line 148, ../Content/scss/partials/_primary_styles.scss */
+/* line 151, ../Content/scss/partials/_primary_styles.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 150, ../Content/scss/partials/_primary_styles.scss */
+/* line 153, ../Content/scss/partials/_primary_styles.scss */
 .screen-content {
   outline: 0;
 }
 
-/* line 152, ../Content/scss/partials/_primary_styles.scss */
+/* line 155, ../Content/scss/partials/_primary_styles.scss */
 .site-nav {
   position: absolute;
   top: 0;
@@ -233,7 +240,7 @@ ol.round li.nine {
   outline: 0;
 }
 
-/* line 153, ../Content/scss/partials/_primary_styles.scss */
+/* line 156, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-logo {
   position: absolute;
   top: 50px;
@@ -256,13 +263,13 @@ ol.round li.nine {
   transition: top 0.2s linear, left 0.2s linear, opacity 0.2s linear;
 }
 
-/* line 175, ../Content/scss/partials/_primary_styles.scss */
+/* line 178, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-logo:after {
   content: 'UCF';
   color: #fff;
 }
 
-/* line 179, ../Content/scss/partials/_primary_styles.scss */
+/* line 182, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-logo .icons {
   display: block;
   position: absolute;
@@ -272,7 +279,7 @@ ol.round li.nine {
   bottom: 0;
 }
 
-/* line 187, ../Content/scss/partials/_primary_styles.scss */
+/* line 190, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-overlay {
   display: none;
   position: absolute;
@@ -283,7 +290,7 @@ ol.round li.nine {
   z-index: 600;
 }
 
-/* line 188, ../Content/scss/partials/_primary_styles.scss */
+/* line 191, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-hidden .site-nav-logo {
   filter: alpha(opacity=0);
   -khtml-opacity: 0;
@@ -292,7 +299,7 @@ ol.round li.nine {
   left: -54px;
 }
 
-/* line 190, ../Content/scss/partials/_primary_styles.scss */
+/* line 193, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-scrollable-container {
   display: none;
   overflow: auto;
@@ -303,12 +310,12 @@ ol.round li.nine {
   box-shadow: inset -1px 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 200, ../Content/scss/partials/_primary_styles.scss */
+/* line 203, ../Content/scss/partials/_primary_styles.scss */
 .site-nav-scrollable-container::-webkit-scrollbar {
   display: none;
 }
 
-/* line 202, ../Content/scss/partials/_primary_styles.scss */
+/* line 205, ../Content/scss/partials/_primary_styles.scss */
 .wrapper {
   outline: 0;
   position: absolute;
@@ -319,11 +326,8 @@ ol.round li.nine {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 208, ../Content/scss/partials/_primary_styles.scss */
+/* line 211, ../Content/scss/partials/_primary_styles.scss */
 .wrapper-inner {
-  background: url("../../images/footer-bg.jpg") top center no-repeat fixed;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
   padding: 0;
   width: 100%;
   max-width: 810px;
@@ -497,15 +501,6 @@ ol.round li.nine {
 /* wrapper */
 /* line 11, ../Content/scss/partials/header/_navigation.scss */
 nav.dl-menuwrapper {
-    /*
-    background-image: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.21, rgb(39,46,45)),
-	    color-stop(0.73, rgb(78,77,79)),
-	    color-stop(1, rgb(71,71,71))
-    );*/
   background: rgba(0, 0, 0, 0.4);
   letter-spacing: 1px;
   position: relative;
@@ -515,7 +510,7 @@ nav.dl-menuwrapper {
 }
 
 /* buttons */
-/* line 32, ../Content/scss/partials/header/_navigation.scss */
+/* line 22, ../Content/scss/partials/header/_navigation.scss */
 .dl-home,
 .dl-trigger,
 .dl-searchbutton {
@@ -531,7 +526,7 @@ nav.dl-menuwrapper {
 }
 
 /* discover icon */
-/* line 45, ../Content/scss/partials/header/_navigation.scss */
+/* line 35, ../Content/scss/partials/header/_navigation.scss */
 .dl-trigger:after {
   content: '';
   position: absolute;
@@ -545,26 +540,26 @@ nav.dl-menuwrapper {
   /* - */
 }
 
-/* line 58, ../Content/scss/partials/header/_navigation.scss */
+/* line 48, ../Content/scss/partials/header/_navigation.scss */
 .dl-home {
-  background: url(../../images/icon-home.png) no-repeat;
+  background: url(/images/icon-home.png) no-repeat;
   background-position: 5px 2px;
 }
 
-/* line 64, ../Content/scss/partials/header/_navigation.scss */
+/* line 54, ../Content/scss/partials/header/_navigation.scss */
 .dl-home,
 .dl-trigger {
   width: 50px;
 }
 
 /* hide search button - not used on mobile or tablet */
-/* line 69, ../Content/scss/partials/header/_navigation.scss */
+/* line 59, ../Content/scss/partials/header/_navigation.scss */
 .dl-searchbutton {
   visibility: hidden;
   display: none;
 }
 
-/* line 74, ../Content/scss/partials/header/_navigation.scss */
+/* line 64, ../Content/scss/partials/header/_navigation.scss */
 .dl-search-field {
   background: rgba(0, 0, 0, 0.8);
   margin-top: 7px;
@@ -581,7 +576,7 @@ nav.dl-menuwrapper {
 /* =============================================================================
    Main Menu
    ========================================================================== */
-/* line 92, ../Content/scss/partials/header/_navigation.scss */
+/* line 82, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu {
   margin: 45px 0 0 0;
   padding: 0;
@@ -597,14 +592,14 @@ nav.dl-menuwrapper {
   -moz-backface-visibility: hidden;
 }
 
-/* line 107, ../Content/scss/partials/header/_navigation.scss */
+/* line 97, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu.dl-menu-toggle {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 
-/* line 113, ../Content/scss/partials/header/_navigation.scss */
+/* line 103, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu.dl-menuopen {
   opacity: 1;
   pointer-events: auto;
@@ -617,7 +612,7 @@ nav.dl-menuwrapper {
    Submenus
    ========================================================================== */
 /* ul */
-/* line 127, ../Content/scss/partials/header/_navigation.scss */
+/* line 117, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper ul {
   border-bottom: 1px solid #333;
   padding: 0;
@@ -631,13 +626,13 @@ nav.dl-menuwrapper {
 }
 
 /* li */
-/* line 140, ../Content/scss/partials/header/_navigation.scss */
+/* line 130, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li {
   position: relative;
   border-top: 1px solid #222;
 }
 
-/* line 145, ../Content/scss/partials/header/_navigation.scss */
+/* line 135, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.breadcrumb {
   background: #333;
   margin: 0;
@@ -648,7 +643,7 @@ nav.dl-menuwrapper {
 }
 
 /* a */
-/* line 155, ../Content/scss/partials/header/_navigation.scss */
+/* line 145, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li a {
   padding: 13px 20px;
   position: relative;
@@ -662,13 +657,13 @@ nav.dl-menuwrapper {
   color: white;
 }
 
-/* line 167, ../Content/scss/partials/header/_navigation.scss */
+/* line 157, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li > a:after {
   right: 10px;
 }
 
 /* li back action */
-/* line 172, ../Content/scss/partials/header/_navigation.scss */
+/* line 162, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back > a {
   padding-left: 30px;
   font-size: 11px;
@@ -677,7 +672,7 @@ nav.dl-menuwrapper {
   color: white;
 }
 
-/* line 178, ../Content/scss/partials/header/_navigation.scss */
+/* line 168, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back:after {
   left: 10px;
   transform: rotate(180deg);
@@ -686,7 +681,7 @@ nav.dl-menuwrapper {
 }
 
 /* li arrows */
-/* line 187, ../Content/scss/partials/header/_navigation.scss */
+/* line 177, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back:after,
 .dl-menuwrapper li > a:not(:only-child):after {
   color: rgba(170, 170, 170, 0.3);
@@ -702,7 +697,7 @@ nav.dl-menuwrapper {
 /* =============================================================================
    Menu Color Theme
    ========================================================================== */
-/* line 204, ../Content/scss/partials/header/_navigation.scss */
+/* line 194, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper button:hover,
 .dl-menuwrapper button.dl-active,
 .dl-menuwrapper ul {
@@ -710,7 +705,7 @@ nav.dl-menuwrapper {
   color: black;
 }
 
-/* line 209, ../Content/scss/partials/header/_navigation.scss */
+/* line 199, ../Content/scss/partials/header/_navigation.scss */
 .no-touch .dl-menuwrapper > li a:after {
   background: black;
   color: #aaaaaa;
@@ -722,7 +717,7 @@ nav.dl-menuwrapper {
 Navigation Menu - Discovery
 ========================================================================== */
   /* nav */
-  /* line 223, ../Content/scss/partials/header/_navigation.scss */
+  /* line 213, ../Content/scss/partials/header/_navigation.scss */
   nav.dl-menuwrapper {
     margin-top: 20px;
     margin-left: 20px;
@@ -746,14 +741,14 @@ Navigation Menu - Discovery
     z-index: 1000;
   }
 
-  /* line 247, ../Content/scss/partials/header/_navigation.scss */
+  /* line 237, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper:first-child {
     margin-right: 100px;
     border: 1px solid blue;
   }
 
   /* home button */
-  /* line 253, ../Content/scss/partials/header/_navigation.scss */
+  /* line 243, ../Content/scss/partials/header/_navigation.scss */
   #dl-home {
     border: 1px solid #ddd;
     border-right: none;
@@ -762,13 +757,13 @@ Navigation Menu - Discovery
     float: left;
   }
 
-  /* line 261, ../Content/scss/partials/header/_navigation.scss */
+  /* line 251, ../Content/scss/partials/header/_navigation.scss */
   #dl-home:hover {
     background: #f2f2f2;
   }
 
   /* discover button */
-  /* line 266, ../Content/scss/partials/header/_navigation.scss */
+  /* line 256, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button {
     border: 1px solid #eee;
     border-bottom: 1px solid #ccc;
@@ -792,7 +787,7 @@ Navigation Menu - Discovery
   }
 
   /* discover icon = */
-  /* line 286, ../Content/scss/partials/header/_navigation.scss */
+  /* line 276, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button:after {
     content: '';
     width: 20%;
@@ -806,7 +801,7 @@ Navigation Menu - Discovery
     box-shadow: 0 10px 0 #555555, 0 20px 0 #555555;
   }
 
-  /* line 302, ../Content/scss/partials/header/_navigation.scss */
+  /* line 292, ../Content/scss/partials/header/_navigation.scss */
   .dl-home,
   .dl-searchbutton {
     width: 45px;
@@ -814,7 +809,7 @@ Navigation Menu - Discovery
     border-bottom: 1px solid #ccc;
   }
 
-  /* line 308, ../Content/scss/partials/header/_navigation.scss */
+  /* line 298, ../Content/scss/partials/header/_navigation.scss */
   .dl-home {
     border-right: none;
     background: rgba(255, 255, 255, 0.85) url(../../images/icon-home.png) no-repeat;
@@ -824,13 +819,13 @@ Navigation Menu - Discovery
     border-radius: 5px 0 0 5px;
   }
 
-  /* line 315, ../Content/scss/partials/header/_navigation.scss */
+  /* line 305, ../Content/scss/partials/header/_navigation.scss */
   .dl-home:hover {
     background-position: 2px 3px;
   }
 
   /* search */
-  /* line 322, ../Content/scss/partials/header/_navigation.scss */
+  /* line 312, ../Content/scss/partials/header/_navigation.scss */
   #dl-search {
     border: 1px solid #eee;
     padding: 1px 15px;
@@ -843,7 +838,7 @@ Navigation Menu - Discovery
     float: left;
   }
 
-  /* line 334, ../Content/scss/partials/header/_navigation.scss */
+  /* line 324, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
     background: rgba(255, 255, 255, 0.85);
     border: 1px solid #fff;
@@ -863,13 +858,13 @@ Navigation Menu - Discovery
 
   /* submenus */
   /* menu ul only */
-  /* line 353, ../Content/scss/partials/header/_navigation.scss */
+  /* line 343, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
     /* ie fix */
     visibility: hidden;
   }
 
-  /* line 356, ../Content/scss/partials/header/_navigation.scss */
+  /* line 346, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
     /*
     background: rgba(255,255,255,.9);
@@ -892,14 +887,14 @@ Navigation Menu - Discovery
     -moz-backface-visibility: hidden;
   }
 
-  /* line 379, ../Content/scss/partials/header/_navigation.scss */
+  /* line 369, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu.dl-menu-toggle {
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
   }
 
-  /* line 384, ../Content/scss/partials/header/_navigation.scss */
+  /* line 374, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu.dl-menuopen {
     opacity: 1;
     pointer-events: auto;
@@ -908,7 +903,7 @@ Navigation Menu - Discovery
     -moz-transform: translateY(0px);
   }
 
-  /* line 392, ../Content/scss/partials/header/_navigation.scss */
+  /* line 382, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu li {
     width: 365px;
     /* <== */
@@ -917,7 +912,7 @@ Navigation Menu - Discovery
   }
 
   /* all uls */
-  /* line 399, ../Content/scss/partials/header/_navigation.scss */
+  /* line 389, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper ul {
     background: #FFF;
     padding: 0;
@@ -932,7 +927,7 @@ Navigation Menu - Discovery
   }
 
   /* menu li */
-  /* line 414, ../Content/scss/partials/header/_navigation.scss */
+  /* line 404, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li {
     position: relative;
     border: none;
@@ -940,7 +935,7 @@ Navigation Menu - Discovery
     text-transform: uppercase;
   }
 
-  /* line 419, ../Content/scss/partials/header/_navigation.scss */
+  /* line 409, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li a {
     padding: 10px 10px 10px 15px;
     display: block;
@@ -948,12 +943,12 @@ Navigation Menu - Discovery
     outline: none;
   }
 
-  /* line 426, ../Content/scss/partials/header/_navigation.scss */
+  /* line 416, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li > a:after {
     right: 10px;
   }
 
-  /* line 430, ../Content/scss/partials/header/_navigation.scss */
+  /* line 420, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.breadcrumb {
     padding: 2px 15px;
     font-size: 12px;
@@ -962,7 +957,7 @@ Navigation Menu - Discovery
   }
 
   /* back li */
-  /* line 438, ../Content/scss/partials/header/_navigation.scss */
+  /* line 428, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back > a {
     font-size: 11px;
     text-transform: uppercase;
@@ -971,7 +966,7 @@ Navigation Menu - Discovery
     padding: 10px 10px 10px 30px;
   }
 
-  /* line 444, ../Content/scss/partials/header/_navigation.scss */
+  /* line 434, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back:after {
     left: 10px;
     transform: rotate(180deg);
@@ -980,7 +975,7 @@ Navigation Menu - Discovery
   }
 
   /* li arrows */
-  /* line 452, ../Content/scss/partials/header/_navigation.scss */
+  /* line 442, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back:after,
   .dl-menuwrapper li > a:not(:only-child):after {
     position: absolute;
@@ -994,7 +989,7 @@ Navigation Menu - Discovery
   }
 
   /* desktop - menu theme */
-  /* line 466, ../Content/scss/partials/header/_navigation.scss */
+  /* line 456, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button:hover,
   .dl-menuwrapper button.dl-active,
   .dl-menuwrapper li a {
@@ -1003,7 +998,7 @@ Navigation Menu - Discovery
     /* li:hover color*/
   }
 
-  /* line 470, ../Content/scss/partials/header/_navigation.scss */
+  /* line 460, ../Content/scss/partials/header/_navigation.scss */
   .no-touch .dl-menuwrapper li a:hover {
     background: #FFE599;
     color: #333;
@@ -1013,17 +1008,17 @@ Navigation Menu - Discovery
     padding: 9px 10px 9px 15px;
   }
 
-  /* line 477, ../Content/scss/partials/header/_navigation.scss */
+  /* line 467, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back > a:hover {
     padding: 9px 10px 9px 30px;
   }
 }
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-  /* line 488, ../Content/scss/partials/header/_navigation.scss */
+  /* line 478, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton {
     border-left: 1px solid #ddd;
-    background: rgba(255, 255, 255, 0.7) url(../../images/icon-search.png) no-repeat;
+    background: rgba(255, 255, 255, 0.7) url(/images/icon-search.png) no-repeat;
     background-position: 2px 1px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     /* shadow */
@@ -1032,12 +1027,12 @@ Navigation Menu - Discovery
     display: block;
   }
 
-  /* line 497, ../Content/scss/partials/header/_navigation.scss */
+  /* line 487, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton:hover {
     background-position: 3px 2px;
   }
 
-  /* line 501, ../Content/scss/partials/header/_navigation.scss */
+  /* line 491, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
     float: left;
   }
@@ -1054,10 +1049,11 @@ Navigation Menu - Discovery
 /* line 13, ../Content/scss/partials/header/_search-bar.scss */
 .sb-search {
   visibility: hidden;
+  display: none;
 }
 
 @media all and (min-width: 481px) {
-  /* line 20, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 21, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search {
     position: relative;
     margin-top: 100px;
@@ -1072,7 +1068,7 @@ Navigation Menu - Discovery
     -webkit-backface-visibility: hidden;
   }
 
-  /* line 34, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 35, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input {
     position: absolute;
     top: 0;
@@ -1090,27 +1086,27 @@ Navigation Menu - Discovery
     color: #2c3e50;
   }
 
-  /* line 51, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 52, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input::-webkit-input-placeholder {
     color: #ccc;
   }
 
-  /* line 52, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 53, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input:-moz-placeholder {
     color: #ccc;
   }
 
-  /* line 53, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 54, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input::-moz-placeholder {
     color: #ccc;
   }
 
-  /* line 54, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 55, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input:-ms-input-placeholder {
     color: #ccc;
   }
 
-  /* line 57, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 58, ../Content/scss/partials/header/_search-bar.scss */
   .sb-icon-search,
   .sb-search-submit {
     width: 60px;
@@ -1126,7 +1122,7 @@ Navigation Menu - Discovery
     cursor: pointer;
   }
 
-  /* line 71, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 72, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-submit {
     background: #fff;
     /* IE needs this */
@@ -1141,7 +1137,7 @@ Navigation Menu - Discovery
     z-index: -1;
   }
 
-  /* line 82, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 83, ../Content/scss/partials/header/_search-bar.scss */
   .sb-icon-search {
     color: #fff;
     background: rgba(225, 225, 225, 0.75);
@@ -1156,19 +1152,19 @@ Navigation Menu - Discovery
     -webkit-font-smoothing: antialiased;
   }
 
-  /* line 96, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 97, ../Content/scss/partials/header/_search-bar.scss */
   .sb-icon-search:before {
     content: "\e000";
   }
 
   /* Open state */
-  /* line 102, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 103, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search.sb-search-open,
   .no-js .sb-search {
     width: 100%;
   }
 
-  /* line 107, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 108, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search.sb-search-open .sb-icon-search,
   .no-js .sb-search .sb-icon-search {
     background: rgba(225, 225, 225, 0.75);
@@ -1176,7 +1172,7 @@ Navigation Menu - Discovery
     z-index: 11;
   }
 
-  /* line 114, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 115, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search.sb-search-open .sb-search-submit,
   .no-js .sb-search .sb-search-submit {
     z-index: 90;
@@ -1186,7 +1182,7 @@ Navigation Menu - Discovery
   /*.sb-search {
       visibility: visible;
   }*/
-  /* line 128, ../Content/scss/partials/header/_search-bar.scss */
+  /* line 129, ../Content/scss/partials/header/_search-bar.scss */
   .dl-search-field,
   .dl-searchbutton {
     visibility: hidden;
@@ -2489,8 +2485,9 @@ Footer/Section Layout
 .frame {
   width: 100%;
   overflow: hidden;
-  border: 1px dashed red;
   z-index: 9;
+  box-shadow: 0px 9px 8px 4px rgba(0, 0, 0, 0.8);
+  /* shadow */
 }
 
 /* line 12, ../Content/scss/partials/_sly.scss */
@@ -2787,7 +2784,6 @@ Footer/Section Layout
     border: 0;
     color: #ffcc00;
     opacity: .5;
-    border: 1px dashed red;
   }
 
   /* line 135, ../Content/scss/partials/_sly.scss */
@@ -2806,7 +2802,6 @@ Footer/Section Layout
     width: 50px;
     height: 260px;
     font-size: 60px;
-    border: 1px dashed blue;
   }
 
   /* line 139, ../Content/scss/partials/_sly.scss */
