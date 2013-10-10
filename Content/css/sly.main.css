@@ -1,0 +1,101 @@
+
+.pagespan *, 
+.pagespan *:after,
+.pagespan *:before {
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-background { 
+    margin: 0 auto; 
+    padding: 115px 0 80px; 
+    color: #fff; 
+    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+    
+	background-color: #3e404a;
+	background-image: -webkit-linear-gradient(rgba(255,255,255,.05) 2px, transparent 2px),
+		linear-gradient(90deg, rgba(255,255,255,.04) 2px, transparent 2px),
+		linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+		linear-gradient(0deg, rgba(0,0,0,.3) 0, transparent 100px);
+	background-image: -moz-linear-gradient(rgba(255,255,255,.05) 2px, transparent 2px),
+		linear-gradient(90deg, rgba(255,255,255,.04) 2px, transparent 2px),
+		linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+		linear-gradient(0deg, rgba(0,0,0,.3) 0, transparent 100px);
+	background-image: linear-gradient(rgba(255,255,255,.05) 2px, transparent 2px),
+		linear-gradient(90deg, rgba(255,255,255,.04) 2px, transparent 2px),
+		linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+		linear-gradient(0deg, rgba(0,0,0,.3) 0, transparent 100px);
+	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px, 100% 100%;
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px, center bottom;
+}
+
+/* page */
+.pagespan { margin: 0px auto; }
+
+/*slide buttons*/
+.pagespan button, .pagespan button { background: transparent; border: 0; color: #ffcc00; opacity: .5;}
+.pagespan button:hover, .pagespan button:hover { opacity: 1; }
+.pagespan button:disabled, .pagespan button:disabled { opacity: .2; }
+
+.pagespan .forward, .pagespan .backward { float: left; width: 50px; height: 260px; font-size: 60px; border: 1px dashed blue;}
+.pagespan .forward { float: right; }
+
+.pagespan .next, .pagespan .prev { float: left; width: 100px; height: 200px; font-size: 60px; }
+.pagespan .next { float: right; }
+
+/*frame*/
+.pagespan .frame { 
+    margin: 0 auto;
+    max-width: 1160px;
+    height: 200px;
+    line-height: 200px;
+    overflow: hidden;
+    text-shadow: none;
+    
+    border: 1px dashed red;
+}
+/**/
+.pagespan .frame ul { 
+    list-style: none;
+    height: 100%;
+}
+/*slide*/
+.pagespan .frame ul li { 
+    margin: 0 1px 0 0; 
+    padding: 0;
+    background: #eee;
+    min-width: 500px;
+    height: 99%;
+    color: #3a3c47; 
+    cursor: pointer; 
+    float: left; 
+}
+/*active block*/
+.pagespan .frame ul li.active { color: #fff; background: #82bf4c; /*green*/ } 
+
+/*scroll bar*/
+.pagespan .scrollbar { margin: 0 auto 10px; 
+                       max-width: 700px; /*<===*/
+                       height: 2px; line-height: 0; }
+.pagespan .scrollbar .handle { width: 100px; height: 100%; background: #808080; cursor: pointer; }
+.pagespan .scrollbar .handle .mousearea { position: absolute; top: -9px; left: 0; width: 100%; height: 20px; }
+
+/*position marker*/
+.pagespan .pages { list-style: none; margin: 10px 0; padding: 0; text-align: center; }
+.pagespan .pages li { display: inline-block; width: 14px; height: 14px; margin: 0 4px; text-indent: -999px; border-radius: 10px; cursor: pointer; overflow: hidden;
+	background: #fff; box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+.pagespan .pages li:hover { background: #aaa; }
+.pagespan .pages li.active { background: #666; }
+
+/*controls*/
+.pagespan .controls { margin: 0px 0 0; text-align: center; }
+.pagespan .controls .divider { display: inline-block; margin: 0 10px; }
+.pagespan .controls button { line-height: 32px; vertical-align: middle; font-family: Novecento, sans-serif; }
+.pagespan .controls button i { position: relative; top: -2px; margin: 5px; padding: 0; font-size: 32px; vertical-align: middle; }

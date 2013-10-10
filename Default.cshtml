@@ -6,7 +6,7 @@
 @section Styles {
     <style> /*-- cover-img --*/
         
-        .cover-img {background-image: url('/images/finance-bg.jpg');}
+        .cover-img {background-image: url('/images/pegasus_sun_rev.jpg');}
         
         .wrapper-inner{
             background: url('/images/footer-bg.jpg') fixed;
@@ -23,6 +23,26 @@
 @section featured {
 
     <p><!-- Page headlines go here.--></p>
+
+
+    <p>Authenticated: @WebSecurity.IsAuthenticated</p>
+
+    <section id="login">
+        @if (WebSecurity.IsAuthenticated) {
+            <text>
+                Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+                <form id="logoutForm" action="~/Account/Logout" method="post">
+                    @AntiForgery.GetHtml()
+                    <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                </form>
+            </text>
+        } else {
+            <ul>
+                <li><a href="~/Account/Register">Register</a></li>
+                <li><a href="~/Account/Login">Log in</a></li>
+            </ul>
+        }
+    </section>
 
 }
 
@@ -242,50 +262,11 @@
 		</div><!--/frames-->
 
         <ul class="pages"></ul><!--/position marker-->
+
         <br><br>
+
+        <a href="/account/login"><img src="/images/setting-icon.png" alt="drawbridge settings" width="20" height="20"> Options</a>
 
     </div>
 </section>
 
-<footer class="wrapper-footer">
-    <div class="content-wrapper">
-        <!--BEGIN-->
-        @*<ul class="clearfix">
-            <li>
-                <p class="home">Address</p>
-
-                <a href="#">un-styled ink</i></a>
-            </li>
-            <li>
-                <p class="services">Contact</p>
-
-                <ul>
-                    <li><a href="#">Link to page.</a></li>
-                    <li><a href="#">Link to page.</a></li>
-                    <li><a href="#">Link to page.</a></li>
-                    <li><a href="#">Link to page.</a></li>
-                </ul>
-            </li>
-            <li>
-                <p class="social">Follow Us</p>
-
-                <ul>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                </ul>
-            </li>
-            <li>
-                <p class="qlinks">Quick Links</p>
-
-                <ul>
-                    <li><a href="#">Link to page.</a></li>
-                    <li><a href="#">Link to page.</a></li>
-                    <li><a href="#">Link to page.</a></li>
-                </ul>
-            </li>
-        </ul>*@
-        <a href="/account/login"><img src="/images/setting-icon.png" alt="drawbridge settings" width="20" height="20"> Options</a>
-        <!--FINIS-->
-    </div>
-</footer>

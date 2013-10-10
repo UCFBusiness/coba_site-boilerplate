@@ -30,7 +30,7 @@
         <link type="text/css" rel="stylesheet" href="~/content/bootstrap/bootstrap.css" />
         <!-- Site CSS -->
         <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
-        <link type="text/css" rel="stylesheet" href="~/content/sly/css/font-awesome.min.css" />
+        <link type="text/css" rel="stylesheet" href="~/content/css/font-awesome.min.css" />
 
 
 
@@ -75,7 +75,6 @@
                                     </div><!--/UCF Header Wrapper-->
                                 </div><!-- /UCFHBHeader -->
 
-                                <!-- BEGIN:Nav -->
                                 <nav id="main_menu" class="dl-menuwrapper clearfix">
                                     <a href="~/" class="dl-home">HOME</a>
                                     <button class="dl-trigger">DISCOVER</button>
@@ -178,23 +177,21 @@
 					                        <span class="sb-icon-search"></span>
 				                        </form>
 			                        </div>
-
+                                    
                                 </nav><!-- /dl-menuwrapper -->
-                                <!-- FINIS:Nav -->
 
-                                <br>
-
-                                @RenderSection("featured", required: false)
-
+                                <div class="container"><br>@RenderSection("featured", required: false)</div>
+                               
                             </div>
 
 	                        <div class="cover-body">
-		                        <div class="cover-body-inner">
-			                        <h1 class="cover-title">College <span style="font-size: .8em;">of</span> Business</h1>
-			                        <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em>
-                                        @*<br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.</p>*@
-                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
-		                        </div>
+		                    <div class="cover-body-inner container">
+			                    <h1 class="cover-title">College <span>of</span> Business</h1>
+			                    <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
+                                    @*<br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
+                                <div class="copyright text-muted"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
+                            </div>
+		                    </div>
 
                         </aside>
 
@@ -202,11 +199,50 @@
 
 		                <section class="wrapper"><!--background image here-->
 			                <div class="wrapper-inner" >
+                                <header class="wrapper-header"></header><!-- .wrapper-header -->
+                                <div class="wrapper-body">@RenderBody()</div><!-- .wrapper-body -->
+                                <footer class="wrapper-footer">
+                                    <div class="content-wrapper">
+                                        <!--BEGIN-->
+                                        @*<ul class="clearfix">
+                                            <li>
+                                                <p class="home">Address</p>
 
+                                                <a href="#">un-styled ink</i></a>
+                                            </li>
+                                            <li>
+                                                <p class="services">Contact</p>
 
-                                @RenderBody()
+                                                <ul>
+                                                    <li><a href="#">Link to page.</a></li>
+                                                    <li><a href="#">Link to page.</a></li>
+                                                    <li><a href="#">Link to page.</a></li>
+                                                    <li><a href="#">Link to page.</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p class="social">Follow Us</p>
 
+                                                <ul>
+                                                    <li><a href="#">LinkedIn</a></li>
+                                                    <li><a href="#">Twitter</a></li>
+                                                    <li><a href="#">Facebook</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p class="qlinks">Quick Links</p>
 
+                                                <ul>
+                                                    <li><a href="#">Link to page.</a></li>
+                                                    <li><a href="#">Link to page.</a></li>
+                                                    <li><a href="#">Link to page.</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>*@
+                                        
+                                        <!--FINIS-->
+                                    </div>
+                            </footer><!-- .wrapper-footer -->
 			                </div>
 		                </section>
 
@@ -219,6 +255,8 @@
         </div> <!-- #container -->
         <!--Content-->
         <a href="#" class="back-to-top"><i class="icon-angle-up"></i></a>
+
+        <div class="loading-bar"></div>
 
         <!-- jquery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -236,7 +274,7 @@
 		</script>
 
         <!-- production -->
-        <script data-main="/scripts/main" src="/scripts/require.js"></script>
+        <script data-main="/scripts/main" src="~/scripts/require.js"></script>
 
         @RenderSection("Scripts", required: false)
     </body>
