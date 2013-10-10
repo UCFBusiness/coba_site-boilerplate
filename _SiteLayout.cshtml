@@ -32,8 +32,6 @@
         <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
         <link type="text/css" rel="stylesheet" href="~/content/css/font-awesome.min.css" />
 
-
-
         @RenderSection("Styles", required: false)
 
         <script src="~/scripts/modernizr-2.6.2.js"></script>
@@ -127,12 +125,10 @@
 					                        </ul>
 				                        </li>
                                         <li>
-					                        <a href="#">Faculty Research</a>
+					                        <a href="#">Faculty &amp; Research</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Faculty Research</li>
-						                        <li><a href="#">Page Link</a></li>
-						                        <li><a href="#">Page Link</a></li>
-						                        <li><a href="#">Page Link</a></li>
+						                        <li><a href="#">Working papers</a></li>
 					                        </ul>
 				                        </li>
                                         <li>
@@ -180,27 +176,27 @@
                                     
                                 </nav><!-- /dl-menuwrapper -->
 
-                                <div class="container"><br>@RenderSection("featured", required: false)</div>
+                                <br><div class="container"><br>@RenderSection("featured", required: false)</div>
                                
                             </div>
 
 	                        <div class="cover-body">
-		                    <div class="cover-body-inner container">
-			                    <h1 class="cover-title">College <span>of</span> Business</h1>
-			                    <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
-                                    @*<br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
-                                <div class="copyright text-muted"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration</p></div>
-                            </div>
+		                        <div class="cover-body-inner">
+			                        <h1 class="cover-title">College <span>of</span> Business</h1>
+			                        <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
+                                        @*<br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
+                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business</p></div>
+                                </div>
 		                    </div>
 
                         </aside>
 
                         <!---->
 
-		                <section class="wrapper"><!--background image here-->
+		                <section class="wrapper"> <!--background image here-->
 			                <div class="wrapper-inner" >
-                                <header class="wrapper-header"></header><!-- .wrapper-header -->
-                                <div class="wrapper-body">@RenderBody()</div><!-- .wrapper-body -->
+                                <header class="wrapper-header"></header> <!-- .wrapper-header -->
+                                <div class="wrapper-body">@RenderBody()</div> <!-- .wrapper-body -->
                                 <footer class="wrapper-footer">
                                     <div class="content-wrapper">
                                         <!--BEGIN-->
@@ -242,7 +238,7 @@
                                         
                                         <!--FINIS-->
                                     </div>
-                            </footer><!-- .wrapper-footer -->
+                            </footer> <!-- .wrapper-footer -->
 			                </div>
 		                </section>
 
@@ -261,17 +257,29 @@
         <!-- jquery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
+
         <!-- bootstrap -->
         <script src="~/scripts/bootstrap.min.js"></script>
 
         <!-- for development -->
         @*<script src="~/scripts/holder.min.js"></script>*@
 
+        <script src="~/content/js/plugins.js"></script>
         <script src="~/content/js/classie.js"></script>
-		<script src="~/content/js/uisearch.js"></script>
+        <script src="~/content/js/dlmenu.js"></script>
+        <script src="~/content/js/sidebarEffects.js"></script>
+        <script src="~/content/js/jquery.lockfixed.min.js"></script>
+
+        <script>
+            (function($) {
+	            $.lockfixed("ul.menu",{offset: {top: 10, bottom: 410}});
+            })(jQuery);	
+        </script>
+
+		@*<script src="~/content/js/uisearch.js"></script>
         <script>
 			new UISearch( document.getElementById( 'sb-search' ) );
-		</script>
+		</script>*@
 
         <!-- production -->
         <script data-main="/scripts/main" src="~/scripts/require.js"></script>

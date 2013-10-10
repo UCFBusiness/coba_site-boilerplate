@@ -1,6 +1,6 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "College of Business";
+    Page.Title = "Home";
 }
 
 @section Styles {
@@ -9,8 +9,8 @@
         .cover-img {background-image: url('/images/pegasus_sun_rev.jpg');}
         
         .wrapper-inner{
-            background: url('/images/footer-bg.jpg') fixed;
-            background-position: top center;
+            background-image: url('/images/footer-bg.jpg');
+            background-size: cover;
             background-repeat: no-repeat;
             
             border-left: 2px solid #000;
@@ -66,20 +66,15 @@
 <section>
     <div id="example1" class="pagespan">
 
-        <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-        <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
-
 		<div class="frame effects">
 			<ul class="clearfix">
                 <!-- 8 panels per row -->
                 <li>
-                    <img src="~/images/panels/panel1.jpg" alt="...">
                     <a href="#" target="_blank">
                         <p>Learn more</p>
                     </a>
                 </li>
                 <li>
-                    <img src="~/images/panels/panel2.jpg" alt="...">
                     <a href="#" target="_blank">
                         <p>Learn more</p>
                     </a>
@@ -92,17 +87,11 @@
                 </li>
                 <li>
                     <img src="~/images/panels/dean-blog.jpg" alt="...">
-                    <a href="http://www.bus.ucf.edu/dean" target="_blank">
-                        @*<p>Read the latest post from Dean Paul Jarley...</p>*@
-                        <p>Read blog</p>
-                    </a>
+                    <p><a href="http://www.bus.ucf.edu/dean" target="_blank">Read blog</a></p>
                 </li>
                 <li>
                     <img src="~/images/panels/meet-the-ambassadors.jpg" alt="...">
-                    <a href="http://www.youtube.com/playlist?list=PLblI-5jkdoaLAGz-wPFnjv-WtZiEFP4VS" target="_blank">
-                        @*<p>Meet the UCF College of Business Ambassadors...</p>*@
-                        <p>Watch the videos</p>
-                    </a>
+                    <p><a href="http://www.youtube.com/playlist?list=PLblI-5jkdoaLAGz-wPFnjv-WtZiEFP4VS" target="_blank">Watch the videos</a></p>
                 </li>
                 <li>
                     <img src="~/images/panels/social-media.jpg" alt="...">
@@ -125,6 +114,8 @@
                     </a>
                 </li>
 			</ul>
+            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
+            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
 		</div><!--/frames-->
 
         <ul class="pages"></ul><!--/position marker-->
@@ -135,9 +126,6 @@
 
 <section>
     <div id="example2" class="pagespan">
-
-        <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-        <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
 
 		<div class="frame effects">
 			<ul class="clearfix">
@@ -193,6 +181,8 @@
                     </a>
                 </li>
 			</ul>
+            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
+            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
 		</div><!--/frames-->
 
         <ul class="pages"></ul><!--/position marker-->
@@ -203,9 +193,6 @@
 
 <section>
     <div id="example3" class="pagespan">
-
-        <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-        <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
 
         <div class="frame effects">
 			<ul class="clearfix">
@@ -235,10 +222,7 @@
                     </a>
                 </li>
                 <li>
-                    <iframe src="//www.youtube.com/embed/Z92QqcI5CmM?rel=0" width="300" height="320"></iframe>
-                    <a href="#" target="_blank">
-                        <p>Watch video</p>
-                    </a>
+                    <iframe src="//www.youtube.com/embed/Z92QqcI5CmM?rel=0" width="320" height="300"></iframe>
                 </li>
                 <li>
                     <img src="~/images/panels/panel2.jpg" alt="...">
@@ -259,11 +243,13 @@
                     </a>
                 </li>
 			</ul>
+            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
+            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
 		</div><!--/frames-->
 
         <ul class="pages"></ul><!--/position marker-->
-
         <br><br>
+        
 
         <a href="/account/login"><img src="/images/setting-icon.png" alt="drawbridge settings" width="20" height="20"> Options</a>
 

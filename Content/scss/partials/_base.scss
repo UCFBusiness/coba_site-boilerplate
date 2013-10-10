@@ -1,16 +1,16 @@
 
 // Partials
 @import "typography";
-@import "primary_styles";
+@import "primary";
 @import "ucf-header";
 @import "header/navigation";
 @import "header/search-bar";
 @import "header/menu.animation";
 @import "footer";
 
+// Bootstrap changes
 @import "back-to-top";
 @import "grids";
-@import "sly";
 
 // Font weights
 $light: 100;
