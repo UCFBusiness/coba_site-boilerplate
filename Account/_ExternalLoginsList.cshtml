@@ -1,8 +1,8 @@
 ﻿@if (OAuthWebSecurity.RegisteredClientData.Count == 0) {
     <div class="message-info">
         <p>
-            There are no external authentication services configured. See <a href="http://go.microsoft.com/fwlink/?LinkId=226949">this article</a>
-            for details on setting up this ASP.NET application to support logging in via external services.
+            There are no external authentication services configured. @*See <a href="http://go.microsoft.com/fwlink/?LinkId=226949">this article</a>
+            for details on setting up this ASP.NET application to support logging in via external services.*@
         </p>
     </div>
 } else {
@@ -10,12 +10,17 @@
     @AntiForgery.GetHtml()
     <fieldset id="socialLoginList">
         @*<legend>Save your settings with</legend>*@
-        <p class="cover-actions"><span style="color: #ccc; font-size: small;">login using </span> 
+        <p class="cover-actions"><span style="color: #333; font-size: small;"></span>
             @foreach (var client in OAuthWebSecurity.RegisteredClientData) {
-                <button type="submit" name="provider" value="@client.AuthenticationClient.ProviderName"
-                        title="Log in using your @client.DisplayName account" class="btn btn-primary">@client.DisplayName</button>
+                <button 
+                    type="submit" 
+                    name="provider" 
+                    value="@client.AuthenticationClient.ProviderName" 
+                    title="Sign in with @client.DisplayName account" 
+                    class="btn btn-primary"><span style="color: #fff; font-size: .75em;">Sign in with @client.DisplayName </span>
+                </button><br>
             }
-        <span style="color: #ccc; font-size: small;"> to customize</span> </p>
+        </p>
     </fieldset>
     </form>
 }

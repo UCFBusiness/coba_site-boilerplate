@@ -58,9 +58,7 @@
             <div id="content" class="main-content clearfix">
                 <div class="content-wrapper">
 	                <div class="screen-content">
-
                         <!---->
-
                         <aside class="cover cover-home">
 			                
                             <div class="cover-header cover-img"><!--background image here-->
@@ -152,10 +150,7 @@
 					                        <a href="#">Careers &amp; Recruitment</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Careers &amp; Recruitment</li>
-						                        <li><a href="#">Page Link</a></li>
-						                        <li><a href="#">Page Link</a></li>
-						                        <li><a href="#">Page Link</a></li>
-						                        <li><a href="#">Page Link</a></li>
+						                        <li><a href="#">Coming Soon</a></li>
 					                        </ul>
 				                        </li>
 			                        </ul>
@@ -190,39 +185,38 @@
 		                    </div>
 
                         </aside>
-
                         <!---->
-
 		                <section class="wrapper"> <!--background image here-->
 			                <div class="wrapper-inner" >
                                 <header class="wrapper-header"></header> <!-- .wrapper-header -->
-                                <div class="wrapper-body">@RenderBody()</div> <!-- .wrapper-body -->
-                                <footer class="wrapper-footer">
+                                <div class="wrapper-body">
+
+                                    @RenderBody()                                        
+                                
+                                </div> <!-- .wrapper-body -->
+                                <footer>
                                     <div class="content-wrapper">
                                         <!--BEGIN-->
-                                        @*<ul class="clearfix">
+                                        <ul class="clearfix">
                                             <li>
-                                                <p class="home">Address</p>
+                                                <p class="home">Contact info</p>
+                                                <div><a href="#">un-styled ink</i></a></div>
 
-                                                <a href="#">un-styled ink</i></a>
                                             </li>
                                             <li>
-                                                <p class="services">Contact</p>
-
+                                                <p class="services">Address</p>
                                                 <ul>
-                                                    <li><a href="#">Link to page.</a></li>
-                                                    <li><a href="#">Link to page.</a></li>
-                                                    <li><a href="#">Link to page.</a></li>
-                                                    <li><a href="#">Link to page.</a></li>
+                                                    <li>UCF College of Business Administration</li>
+                                                    <li>4000 Central Florida Blvd., P.O. Box 161991</li>
+                                                    <li>Orlando, Florida 32816-1991</li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <p class="social">Follow Us</p>
-
+                                                <p class="social">Contact Info</p>
                                                 <ul>
-                                                    <li><a href="#">LinkedIn</a></li>
-                                                    <li><a href="#">Twitter</a></li>
-                                                    <li><a href="#">Facebook</a></li>
+                                                    <li><span>(407) 823-2184</span> - <a href="#">Undergraduate Advising</a></li>
+                                                    <li><span>(407) 235-3917</span> - <a href="#">Graduate Advising</a></li>
+                                                    <li><span>(407) 823-2181</span> - <a href="#">General Information</a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -234,16 +228,13 @@
                                                     <li><a href="#">Link to page.</a></li>
                                                 </ul>
                                             </li>
-                                        </ul>*@
-                                        
+                                        </ul>
                                         <!--FINIS-->
                                     </div>
                             </footer> <!-- .wrapper-footer -->
 			                </div>
 		                </section>
-
                         <!---->
-
 	                </div>
                 </div>
             </div>
@@ -251,7 +242,7 @@
         </div> <!-- #container -->
         <!--Content-->
         <a href="#" class="back-to-top"><i class="icon-angle-up"></i></a>
-
+        <span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span>
         <div class="loading-bar"></div>
 
         <!-- jquery -->
@@ -266,20 +257,22 @@
 
         <script src="~/content/js/plugins.js"></script>
         <script src="~/content/js/classie.js"></script>
-        <script src="~/content/js/dlmenu.js"></script>
+        @*<script src="~/content/js/dlmenu.js"></script>*@
         <script src="~/content/js/sidebarEffects.js"></script>
-        <script src="~/content/js/jquery.lockfixed.min.js"></script>
 
+
+        @*<script src="~/content/js/jquery.lockfixed.min.js"></script>
         <script>
             (function($) {
 	            $.lockfixed("ul.menu",{offset: {top: 10, bottom: 410}});
             })(jQuery);	
         </script>
 
-		@*<script src="~/content/js/uisearch.js"></script>
+        <script src="~/content/js/uisearch.js"></script>
         <script>
 			new UISearch( document.getElementById( 'sb-search' ) );
 		</script>*@
+
 
         <!-- production -->
         <script data-main="/scripts/main" src="~/scripts/require.js"></script>

@@ -25,13 +25,12 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
 
 
     //-- navigation menu -----------------------------------
-    $('.dl-menuwrapper').dlmenu({ 
-        animationClasses: { 
-            classin: 'dl-animate-in-2', 
+    $('.dl-menuwrapper').dlmenu({
+        animationClasses: {
+            classin: 'dl-animate-in-2',
             classout: 'dl-animate-out-2'
-        } 
-    });
-    //------------------------------------------------------
+        }
+    }); //------------------------------------------------------
 
 
     //----- fade out fixed menu----------------------
@@ -58,8 +57,7 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
                 $(this).stop().animate({ 'opacity': '0.2' }, 400);
             }
         }
-    );
-    //-----------------------------------------------
+    ); //-----------------------------------------------
 
 
     //-- lazy load images ---------------------------
@@ -80,7 +78,7 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
-    });//--------------------------------------------
+    }); //--------------------------------------------
 
 
     //-- disable right-click ------------------------
@@ -126,25 +124,44 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
     var width = parseInt($(this).width());
     var height = parseInt($(this).height());
 
-    if (width < 481) //load mobile scripts
-        require([], function () {
+    if (width < 501) //load mobile scripts
+        require(['lockfix'], function () {
+
             //-- screensize -------------------------
             $("#message").html(width + " x " + height + " - mobile");
+            //------------------------------------------------
+
+            //-- page menu -----------------------------------
+            $.lockfixed("#menu-2 ul", { forcemargin: true, offset: { top: 10, bottom: 10} });
+            //------------------------------------------------
+
         });
 
-    if ((width > 480) && (width < 1025)) //load tablet scripts
-        require([], function () {
+    if ((width > 500) && (width < 1025)) //load tablet scripts
+        require(['lockfix'], function () {
+
             //-- screensize -------------------------
             $("#message").html(width + " x " + height + " - tablet");
+            //------------------------------------------------
+
+            //-- page menu -----------------------------------
+            $.lockfixed("#menu-2 ul", { forcemargin: true, offset: { top: 0, bottom: 1410} });
+            //------------------------------------------------
+
         });
 
     if (width > 1024) //load desktop scripts
-        require([], function () {
+        require(['lockfix'], function () {
+
             //-- screensize -------------------------
             $("#message").html(width + " x " + height + " - desktop");
+            //------------------------------------------------
+
+            //-- page menu -----------------------------------
+            $.lockfixed("#menu-2 ul", { forcemargin: true, offset: { top: 10, bottom: 410} });
+            //------------------------------------------------
+
         });
-
-
 
     //---------------------------------------------------
     // On PageLoad...
@@ -165,6 +182,8 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
 
         var width = parseInt($(this).width());
         var height = parseInt($(this).height());
+
+        sly.reload();
 
         if (width < 481) //load mobile scripts
             require([], function () {

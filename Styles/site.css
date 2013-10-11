@@ -879,14 +879,14 @@ Navigation Menu - Discovery
     z-index: 1000;
   }
 
-  /* line 237, ../Content/scss/partials/header/_navigation.scss */
+  /* line 234, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper:first-child {
     margin-right: 100px;
     border: 1px solid blue;
   }
 
   /* home button */
-  /* line 243, ../Content/scss/partials/header/_navigation.scss */
+  /* line 240, ../Content/scss/partials/header/_navigation.scss */
   #dl-home {
     border: 1px solid #ddd;
     border-right: none;
@@ -895,13 +895,8 @@ Navigation Menu - Discovery
     float: left;
   }
 
-  /* line 251, ../Content/scss/partials/header/_navigation.scss */
-  #dl-home:hover {
-    background: #f2f2f2;
-  }
-
   /* discover button */
-  /* line 256, ../Content/scss/partials/header/_navigation.scss */
+  /* line 249, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button {
     border: 1px solid #eee;
     border-bottom: 1px solid #ccc;
@@ -925,7 +920,7 @@ Navigation Menu - Discovery
   }
 
   /* discover icon = */
-  /* line 276, ../Content/scss/partials/header/_navigation.scss */
+  /* line 269, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button:after {
     content: '';
     width: 20%;
@@ -939,7 +934,7 @@ Navigation Menu - Discovery
     box-shadow: 0 10px 0 #555555, 0 20px 0 #555555;
   }
 
-  /* line 292, ../Content/scss/partials/header/_navigation.scss */
+  /* line 285, ../Content/scss/partials/header/_navigation.scss */
   .dl-home,
   .dl-searchbutton {
     width: 45px;
@@ -947,23 +942,25 @@ Navigation Menu - Discovery
     border-bottom: 1px solid #ccc;
   }
 
-  /* line 298, ../Content/scss/partials/header/_navigation.scss */
+  /* line 291, ../Content/scss/partials/header/_navigation.scss */
   .dl-home {
     border-right: none;
-    background: rgba(255, 255, 255, 0.85) url(../../images/icon-home.png) no-repeat;
+    background: rgba(255, 255, 255, 0.85) url(/images/icon-home.png) no-repeat;
     background-position: 1px 1px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     /* shadow */
     border-radius: 5px 0 0 5px;
   }
 
-  /* line 305, ../Content/scss/partials/header/_navigation.scss */
+  /**/
+  /* line 299, ../Content/scss/partials/header/_navigation.scss */
   .dl-home:hover {
-    background-position: 2px 3px;
+    background: rgba(255, 255, 255, 0.89) url(/images/icon-home.png) no-repeat;
+    background-position: 1px 1px;
   }
 
   /* search */
-  /* line 312, ../Content/scss/partials/header/_navigation.scss */
+  /* line 305, ../Content/scss/partials/header/_navigation.scss */
   #dl-search {
     border: 1px solid #eee;
     padding: 1px 15px;
@@ -976,7 +973,7 @@ Navigation Menu - Discovery
     float: left;
   }
 
-  /* line 324, ../Content/scss/partials/header/_navigation.scss */
+  /* line 314, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
     background: rgba(255, 255, 255, 0.85);
     border: 1px solid #fff;
@@ -987,22 +984,23 @@ Navigation Menu - Discovery
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     /* shadow */
     padding: 1px 10px 0;
-    width: 150px;
+    width: 250px;
     font-size: .9em;
     height: 45px;
     float: right;
     border-radius: 5px;
+    color: #333;
   }
 
   /* submenus */
   /* menu ul only */
-  /* line 343, ../Content/scss/partials/header/_navigation.scss */
+  /* line 334, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
     /* ie fix */
     visibility: hidden;
   }
 
-  /* line 346, ../Content/scss/partials/header/_navigation.scss */
+  /* line 337, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
     /*
     background: rgba(255,255,255,.9);
@@ -1025,14 +1023,14 @@ Navigation Menu - Discovery
     -moz-backface-visibility: hidden;
   }
 
-  /* line 369, ../Content/scss/partials/header/_navigation.scss */
+  /* line 360, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu.dl-menu-toggle {
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
   }
 
-  /* line 374, ../Content/scss/partials/header/_navigation.scss */
+  /* line 365, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu.dl-menuopen {
     opacity: 1;
     pointer-events: auto;
@@ -1041,7 +1039,7 @@ Navigation Menu - Discovery
     -moz-transform: translateY(0px);
   }
 
-  /* line 382, ../Content/scss/partials/header/_navigation.scss */
+  /* line 373, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu li {
     width: 365px;
     /* <== */
@@ -1050,7 +1048,7 @@ Navigation Menu - Discovery
   }
 
   /* all uls */
-  /* line 389, ../Content/scss/partials/header/_navigation.scss */
+  /* line 380, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper ul {
     background: #FFF;
     padding: 0;
@@ -1065,7 +1063,7 @@ Navigation Menu - Discovery
   }
 
   /* menu li */
-  /* line 404, ../Content/scss/partials/header/_navigation.scss */
+  /* line 395, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li {
     position: relative;
     border: none;
@@ -1073,7 +1071,7 @@ Navigation Menu - Discovery
     text-transform: uppercase;
   }
 
-  /* line 409, ../Content/scss/partials/header/_navigation.scss */
+  /* line 400, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li a {
     padding: 10px 10px 10px 15px;
     display: block;
@@ -1081,12 +1079,12 @@ Navigation Menu - Discovery
     outline: none;
   }
 
-  /* line 416, ../Content/scss/partials/header/_navigation.scss */
+  /* line 407, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li > a:after {
     right: 10px;
   }
 
-  /* line 420, ../Content/scss/partials/header/_navigation.scss */
+  /* line 411, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.breadcrumb {
     padding: 2px 15px;
     font-size: 12px;
@@ -1095,7 +1093,7 @@ Navigation Menu - Discovery
   }
 
   /* back li */
-  /* line 428, ../Content/scss/partials/header/_navigation.scss */
+  /* line 419, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back > a {
     font-size: 11px;
     text-transform: uppercase;
@@ -1104,7 +1102,7 @@ Navigation Menu - Discovery
     padding: 10px 10px 10px 30px;
   }
 
-  /* line 434, ../Content/scss/partials/header/_navigation.scss */
+  /* line 425, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back:after {
     left: 10px;
     transform: rotate(180deg);
@@ -1113,7 +1111,7 @@ Navigation Menu - Discovery
   }
 
   /* li arrows */
-  /* line 442, ../Content/scss/partials/header/_navigation.scss */
+  /* line 433, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back:after,
   .dl-menuwrapper li > a:not(:only-child):after {
     position: absolute;
@@ -1127,7 +1125,7 @@ Navigation Menu - Discovery
   }
 
   /* desktop - menu theme */
-  /* line 456, ../Content/scss/partials/header/_navigation.scss */
+  /* line 447, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button:hover,
   .dl-menuwrapper button.dl-active,
   .dl-menuwrapper li a {
@@ -1136,7 +1134,7 @@ Navigation Menu - Discovery
     /* li:hover color*/
   }
 
-  /* line 460, ../Content/scss/partials/header/_navigation.scss */
+  /* line 451, ../Content/scss/partials/header/_navigation.scss */
   .no-touch .dl-menuwrapper li a:hover {
     background: #FFE599;
     color: #333;
@@ -1146,14 +1144,14 @@ Navigation Menu - Discovery
     padding: 9px 10px 9px 15px;
   }
 
-  /* line 467, ../Content/scss/partials/header/_navigation.scss */
+  /* line 458, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back > a:hover {
     padding: 9px 10px 9px 30px;
   }
 }
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-  /* line 478, ../Content/scss/partials/header/_navigation.scss */
+  /* line 469, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton {
     border-left: 1px solid #ddd;
     background: rgba(255, 255, 255, 0.7) url(/images/icon-search.png) no-repeat;
@@ -1165,12 +1163,12 @@ Navigation Menu - Discovery
     display: block;
   }
 
-  /* line 487, ../Content/scss/partials/header/_navigation.scss */
+  /* line 478, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton:hover {
     background-position: 3px 2px;
   }
 
-  /* line 491, ../Content/scss/partials/header/_navigation.scss */
+  /* line 482, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
     float: left;
   }
@@ -2404,43 +2402,42 @@ All this is done for any sub-level being entered.
 }
 
 /* Mobile Layout: 480px and below. */
-/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 481px) {
- /* =============================================================================
+/* =============================================================================
 Footer/Section Layout
 ========================================================================== */
-  /* line 16, ../Content/scss/partials/_footer.scss */
-  .wrapper footer {
-    background: rgba(0, 0, 0, 0.37);
-    text-align: center;
-    height: 50%;
-    /* <----- */
-    color: #ccc;
-    font-size: 12px;
-    z-index: -2;
-  }
+/* line 8, ../Content/scss/partials/_footer.scss */
+footer .content-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  /* line 25, ../Content/scss/partials/_footer.scss */
-  .wrapper footer > ul {
-    width: 80%;
+/* Tablet Layout: 501px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 501px) {
+  /* =============================================================================
+  Footer/Section Layout
+  ========================================================================== */
+  /*-------------------------------*/
+  /* The columns */
+  /* line 24, ../Content/scss/partials/_footer.scss */
+  footer .content-wrapper > ul {
+    width: 100%;
+    max-width: 720px;
     margin: 0 auto;
+    padding-left: 1px;
+    border: 1px dashed red;
   }
 
   /* The four columns of links */
-  /* line 32, ../Content/scss/partials/_footer.scss */
-  .wrapper footer ul > li {
+  /* line 33, ../Content/scss/partials/_footer.scss */
+  footer .content-wrapper ul > li {
     width: 25%;
     float: left;
   }
 
-  /* line 38, ../Content/scss/partials/_footer.scss */
-  .wrapperfooter ul {
-    list-style: none;
-  }
-
   /* The links */
-  /* line 44, ../Content/scss/partials/_footer.scss */
-  .wrapper footer > ul > li ul li {
+  /* line 39, ../Content/scss/partials/_footer.scss */
+  footer .content-wrapper > ul > li ul li {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.8;
@@ -2449,10 +2446,12 @@ Footer/Section Layout
 
   /*-------------------------------*/
   /* The headers */
-  /* line 56, ../Content/scss/partials/_footer.scss */
-  .wrapper footer p {
+  /* line 50, ../Content/scss/partials/_footer.scss */
+  footer .content-wrapper p {
+    background-color: #058cc7;
     padding: 9px;
-    width: 90%;
+    width: 99%;
+    text-align: center;
     line-height: 18px;
     font-weight: bold;
     font-size: 14px;
@@ -2465,76 +2464,23 @@ Footer/Section Layout
     cursor: default;
   }
 
-  /* line 74, ../Content/scss/partials/_footer.scss */
-  .wrapper footer > ul > li:hover p {
+  /* line 69, ../Content/scss/partials/_footer.scss */
+  footer .content-wrapper > ul > li:hover p {
     opacity: 1;
   }
 
   /*-------------------------------*/
   /* The links */
-  /* line 82, ../Content/scss/partials/_footer.scss */
-  .wrapper footer > ul ul a {
+  /* line 77, ../Content/scss/partials/_footer.scss */
+  footer .content-wrapper > ul > li ul li a {
     text-decoration: none !important;
     color: #7d8691 !important;
-    font-size: 1em;
-    text-indent: 0;
-    margin-left: -30px;
   }
 
-  /* line 91, ../Content/scss/partials/_footer.scss */
-  .wrapper footer > ul ul a:hover {
+  /* line 82, ../Content/scss/partials/_footer.scss */
+  footer .content-wrapper > ul > li ul li a:hover {
     color: #ddd !important;
   }
-
-    /*------------color themes (optional)-------------------
-    footer p.home{
-        background-color: #0096d6;
-
-        background-image:-webkit-linear-gradient(top, #0096d6, #008ac6);
-        background-image:-moz-linear-gradient(top, #0096d6, #008ac6);
-        background-image:linear-gradient(top, #0096d6, #008ac6);
-    }
-
-    footer p.home:before{
-        background-position: 0 -110px;
-    }
-
-    footer p.services{
-        background-color: #00b274;
-
-        background-image:-webkit-linear-gradient(top, #00b274, #00a46b);
-        background-image:-moz-linear-gradient(top, #00b274, #00a46b);
-        background-image:linear-gradient(top, #00b274, #00a46b);
-    }
-
-    footer p.services:before{
-        background-position: 0 -129px;
-    }
-
-    footer p.reachus{
-        background-color: #d75ba2;
-
-        background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
-        background-image:-moz-linear-gradient(top, #d75ba2, #c75496);
-        background-image:linear-gradient(top, #d75ba2, #c75496);
-    }
-
-    footer p.reachus:before{
-        background-position: 0 -89px;
-    }
-
-    footer p.clients{
-        background-color: #e9ac40;
-
-        background-image:-webkit-linear-gradient(top, #e9ac40, #d89f3b);
-        background-image:-moz-linear-gradient(top, #e9ac40, #d89f3b);
-        background-image:linear-gradient(top, #e9ac40, #d89f3b);
-    }
-
-    footer p.clients:before{
-        background-position: 0 -69px;
-    }
-    ---*/
 }
 /* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 /* =============================================================================
@@ -3754,41 +3700,19 @@ Footer/Section Layout
   transform: rotate3d(80, 70, 10, -180deg);
 }
 
-/* line 3, ../Content/scss/modules/_sidebar-effects.scss */
-*,
-*:after,
-*::before {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 12, ../Content/scss/modules/_sidebar-effects.scss */
-html,
-body,
-.st-container,
-.st-pusher,
-.st-content {
-  height: 100%;
-}
-
-/* line 16, ../Content/scss/modules/_sidebar-effects.scss */
-.st-content {
-  /*background: #f3efe0;*/
-}
-
-/* line 21, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 4, ../Content/scss/modules/_sidebar-effects.scss */
 .st-content,
 .st-content-inner {
   position: relative;
 }
 
-/* line 25, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 8, ../Content/scss/modules/_sidebar-effects.scss */
 .st-container {
   position: relative;
   overflow: hidden;
 }
 
-/* line 30, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 13, ../Content/scss/modules/_sidebar-effects.scss */
 .st-pusher {
   position: relative;
   left: 0;
@@ -3798,7 +3722,7 @@ body,
   transition: transform 0.5s;
 }
 
-/* line 39, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 22, ../Content/scss/modules/_sidebar-effects.scss */
 .st-pusher::after {
   position: absolute;
   top: 0;
@@ -3812,7 +3736,15 @@ body,
   transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
 
-/* line 52, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 35, ../Content/scss/modules/_sidebar-effects.scss */
+.st-menu-btn {
+  position: fixed;
+  top: 13px;
+  right: 13px;
+  z-index: 9;
+}
+
+/* line 43, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu-open .st-pusher::after {
   width: 100%;
   height: 100%;
@@ -3821,9 +3753,9 @@ body,
   transition: opacity 0.5s;
 }
 
-/* line 60, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 51, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -300px;
   /*<<=== changed from 0*/
@@ -3837,7 +3769,7 @@ body,
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 74, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 65, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu::after {
   position: absolute;
   top: 0;
@@ -3851,7 +3783,7 @@ body,
   transition: opacity 0.5s;
 }
 
-/* line 87, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 78, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu-open .st-menu::after {
   width: 0;
   height: 0;
@@ -3861,14 +3793,14 @@ body,
 }
 
 /* content style */
-/* line 97, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 88, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 103, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 94, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu h2 {
   margin: 0;
   padding: 0;
@@ -3878,10 +3810,10 @@ body,
   font-size: 2em;
 }
 
-/* line 112, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 103, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li a {
   display: block;
-  padding: 0em 0em 0em 1.2em;
+  padding: 1em 0em 1em 1.2em;
   /**/
   outline: none;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
@@ -3895,12 +3827,12 @@ body,
   transition: background 0.3s, box-shadow 0.3s;
 }
 
-/* line 127, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 118, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li:first-child a {
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 131, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 122, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li a:hover {
   background: rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
@@ -3909,89 +3841,89 @@ body,
 
 /* Individual effects */
 /* Effect 1: Slide in on top */
-/* line 140, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 131, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu {
   visibility: visible;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 146, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 137, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu-open .st-effect-1.st-menu {
   visibility: visible;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 152, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 143, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu::after {
   display: none;
 }
 
 /* Effect 2: Reveal */
-/* line 157, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 148, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 162, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 153, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu {
   z-index: 1;
 }
 
-/* line 166, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 157, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu-open .st-effect-2.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 172, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 163, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu::after {
   display: none;
 }
 
 /* Effect 3: Push*/
-/* line 177, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 168, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 182, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 173, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 187, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 178, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu-open .st-effect-3.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 193, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 184, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu::after {
   display: none;
 }
 
 /* Effect 4: Slide along */
-/* line 198, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 189, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 203, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 194, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu {
   z-index: 1;
   -webkit-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
 }
 
-/* line 209, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 200, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu-open .st-effect-4.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4000,26 +3932,26 @@ body,
   transform: translate3d(0, 0, 0);
 }
 
-/* line 217, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 208, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu::after {
   display: none;
 }
 
 /* Effect 5: Reverse slide out */
-/* line 222, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 213, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 227, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 218, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu {
   z-index: 1;
   -webkit-transform: translate3d(50%, 0, 0);
   transform: translate3d(50%, 0, 0);
 }
 
-/* line 233, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 224, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu-open .st-effect-5.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4029,13 +3961,13 @@ body,
 }
 
 /* Effect 6: Rotate pusher */
-/* line 243, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 234, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 248, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 239, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6 .st-pusher {
   -webkit-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
@@ -4043,13 +3975,13 @@ body,
   transform-style: preserve-3d;
 }
 
-/* line 255, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 246, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0) rotateY(-15deg);
   transform: translate3d(300px, 0, 0) rotateY(-15deg);
 }
 
-/* line 260, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 251, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
@@ -4059,7 +3991,7 @@ body,
   transform-style: preserve-3d;
 }
 
-/* line 269, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 260, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu-open .st-effect-6.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4068,13 +4000,13 @@ body,
   transform: translate3d(-100%, 0, 0) rotateY(15deg);
 }
 
-/* line 277, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 268, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu::after {
   display: none;
 }
 
 /* Effect 7: 3D rotate in */
-/* line 283, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 274, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4082,19 +4014,19 @@ body,
   perspective-origin: 0% 50%;
 }
 
-/* line 290, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 281, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 295, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 286, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 300, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 291, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg);
   transform: translate3d(-100%, 0, 0) rotateY(-90deg);
@@ -4104,7 +4036,7 @@ body,
   transform-style: preserve-3d;
 }
 
-/* line 309, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 300, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu-open .st-effect-7.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4114,7 +4046,7 @@ body,
 }
 
 /* Effect 8: 3D rotate out */
-/* line 319, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 310, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4122,19 +4054,19 @@ body,
   perspective-origin: 0% 50%;
 }
 
-/* line 326, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 317, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 331, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 322, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 336, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 327, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
   transform: translate3d(-100%, 0, 0) rotateY(90deg);
@@ -4144,7 +4076,7 @@ body,
   transform-style: preserve-3d;
 }
 
-/* line 345, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 336, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu-open .st-effect-8.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4153,38 +4085,38 @@ body,
   transform: translate3d(-100%, 0, 0) rotateY(0deg);
 }
 
-/* line 353, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 344, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu::after {
   display: none;
 }
 
 /* Effect 9: Scale down pusher */
-/* line 359, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 350, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 364, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 355, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 369, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 360, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu-open .st-pusher {
   -webkit-transform: translate3d(0, 0, -300px);
   transform: translate3d(0, 0, -300px);
 }
 
-/* line 374, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 365, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 380, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 371, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu-open .st-effect-9.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4193,13 +4125,13 @@ body,
   transform: translate3d(0, 0, 0);
 }
 
-/* line 388, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 379, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu::after {
   display: none;
 }
 
 /* Effect 10: Scale up */
-/* line 394, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 385, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4207,13 +4139,13 @@ body,
   perspective-origin: 0% 50%;
 }
 
-/* line 401, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 392, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 406, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 397, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu {
   z-index: 1;
   opacity: 1;
@@ -4221,7 +4153,7 @@ body,
   transform: translate3d(0, 0, -300px);
 }
 
-/* line 413, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 404, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu-open .st-effect-10.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4231,32 +4163,32 @@ body,
 }
 
 /* Effect 11: Scale and rotate pusher */
-/* line 423, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 414, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 428, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 419, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 433, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 424, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu-open .st-pusher {
   -webkit-transform: translate3d(100px, 0, -600px) rotateY(-20deg);
   transform: translate3d(100px, 0, -600px) rotateY(-20deg);
 }
 
-/* line 438, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 429, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 444, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 435, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu-open .st-effect-11.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4265,19 +4197,19 @@ body,
   transform: translate3d(0, 0, 0);
 }
 
-/* line 452, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 443, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu::after {
   display: none;
 }
 
 /* Effect 12: Open door */
-/* line 458, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 449, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 463, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 454, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12 .st-pusher {
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
@@ -4285,20 +4217,20 @@ body,
   transform-style: preserve-3d;
 }
 
-/* line 470, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 461, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu-open .st-pusher {
   -webkit-transform: rotateY(-10deg);
   transform: rotateY(-10deg);
 }
 
-/* line 475, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 466, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 481, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 472, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu-open .st-effect-12.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4307,13 +4239,13 @@ body,
   transform: translate3d(0, 0, 0);
 }
 
-/* line 489, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 480, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu::after {
   display: none;
 }
 
 /* Effect 13: Fall down */
-/* line 495, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 486, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4321,13 +4253,13 @@ body,
   perspective-origin: 0% 50%;
 }
 
-/* line 502, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 493, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 507, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 498, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu {
   z-index: 1;
   opacity: 1;
@@ -4335,7 +4267,7 @@ body,
   transform: translate3d(0, -100%, 0);
 }
 
-/* line 514, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 505, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu-open .st-effect-13.st-menu {
   visibility: visible;
   -webkit-transition-timing-function: ease-in-out;
@@ -4349,7 +4281,7 @@ body,
 }
 
 /* Effect 14: Delayed 3D rotate */
-/* line 528, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 519, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4357,19 +4289,19 @@ body,
   perspective-origin: 0% 50%;
 }
 
-/* line 535, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 526, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 540, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 531, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 545, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 536, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
   transform: translate3d(-100%, 0, 0) rotateY(90deg);
@@ -4379,7 +4311,7 @@ body,
   transform-style: preserve-3d;
 }
 
-/* line 554, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 545, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu-open .st-effect-14.st-menu {
   visibility: visible;
   -webkit-transition-delay: 0.1s;
@@ -4393,7 +4325,7 @@ body,
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-/* line 568, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 559, ../Content/scss/modules/_sidebar-effects.scss */
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
   padding-left: 300px;

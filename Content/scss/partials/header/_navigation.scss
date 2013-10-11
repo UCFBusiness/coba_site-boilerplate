@@ -211,19 +211,16 @@ nav.dl-menuwrapper {
 
 /* nav */
 nav.dl-menuwrapper {
-
     margin-top: 20px;
     margin-left: 20px;
     background: none;
     height: 60px;
-
     font-family: 'Lato', Calibri, Arial, sans-serif;
     font-size: 16px;
 	font-weight: 300;
     line-height: 20px;
     letter-spacing: 1px; 
     color: #ccc;
-
     position: relative;
     perspective: 1000px;
     -webkit-perspective: 1000px;
@@ -246,10 +243,6 @@ nav.dl-menuwrapper {
     padding: 7px 9px 11px 6px;
     height: 15px;
     float: left;
-}
-
-#dl-home:hover {
-    background: rgba(242,242,242,1);
 }
 
 /* discover button */
@@ -297,16 +290,16 @@ nav.dl-menuwrapper {
 
 .dl-home {
     border-right: none;
-    background: rgba(255,255,255,.85) url(../../images/icon-home.png) no-repeat;
+    background: rgba(255,255,255,.85) url(/images/icon-home.png) no-repeat;
     background-position: 1px 1px;
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
     border-radius: 5px 0 0 5px;
 }
+/**/
 .dl-home:hover {
-    background-position: 2px 3px;
+    background: rgba(255,255,255,.89) url(/images/icon-home.png) no-repeat;
+    background-position: 1px 1px;
 }
-
-
 
 /* search */
 #dl-search {
@@ -318,9 +311,6 @@ nav.dl-menuwrapper {
     background: rgba(255,255,255,1); color: rgba(170,170,170,1);/**/
     float: left;
 }
-
-
-
 .dl-search-field {
     background: rgba(255,255,255,.85);
     border: 1px solid #fff;
@@ -330,11 +320,12 @@ nav.dl-menuwrapper {
     margin-right: 20px;
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
     padding: 1px 10px 0;
-    width: 150px;
+    width: 250px;
     font-size: .9em;
     height: 45px;
     float: right;
     border-radius: 5px;
+    color: #333;
 }
 
 /* submenus */
