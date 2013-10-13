@@ -5,11 +5,11 @@
 
 @section Styles {
     <style> /*-- cover-img --*/
-        
-        .cover-img {background-image: url('/images/pegasus_sun_rev.jpg');}
+        .page-img {background: url('/images/body-bg.jpg') fixed; background-size: cover;}
+        .cover-img {background-image: url('/images/pegasus_sun_rev.jpg'); background-size: cover;}
         
         .wrapper-inner{
-            background-image: url('/images/footer-bg.jpg');
+            background: url('/images/footer-bg.jpg') top center;
             background-size: cover;
             background-repeat: no-repeat;
             
@@ -23,7 +23,6 @@
 @section featured {
 
     <p><!-- Page headlines go here.--></p>
-
 
     <p>Authenticated: @WebSecurity.IsAuthenticated</p>
 
@@ -46,8 +45,7 @@
 
 }
 
-<div style="padding-top: 10px; max-width: 100%; text-align: right;">
-
+<div style="max-width: 100%; height: 35px; text-align: right;">
     <p class="cover-actions">
 		@*<a data-action="sign-in-with-twitter" href="/account/login" class="btn btn-primary">
             <span class="icons icons-twitter"></span>
@@ -57,15 +55,266 @@
             <span class="icons icons-facebook"></span>
             <span style="font-size: .8em">Sign in with Facebook</span>
         </a>*@
-
         <a href="/account/login"><img src="/images/setting-icon.png" alt="drawbridge settings" width="20" height="20"> Options</a>
 	</p>
-
 </div>
 
-<!-- place <nav> for page navigation here -->
 
-<section>
+<div class="pagespan">
+    <section class="wrap">
+		<div class="scrollbar">
+			<div class="handle">
+				<div class="mousearea"></div>
+			</div>
+		</div>
+        <div class="frame" id="news">
+			<ul class="clearfix">
+                <!-- 8 panel row -->
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+			</ul>
+		</div><!--/frame -->
+        <ul class="pages"></ul><!--/pages --> 
+        <div class="controls center">
+            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+        </div><!--/controls -->    
+    </section>
+</div>
+
+<div class="pagespan">
+    <section class="wrap">
+        <div class="scrollbar">
+            <div class="handle">
+                <div class="mousearea"></div>
+            </div>
+        </div>
+		<div class="frame" id="events">
+			<ul class="clearfix">
+                <!-- 8 panel row -->
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+			</ul>
+		</div><!--/frame -->
+        <ul class="pages"></ul><!--/pages --> 
+        <div class="controls center">
+            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+        </div><!--/controls -->
+    </section>
+</div>
+
+<div class="pagespan">
+    <section class="wrap">
+        <div class="scrollbar">
+            <div class="handle">
+                <div class="mousearea"></div>
+            </div>
+        </div>
+        <div class="frame" id="faculty">
+			<ul class="clearfix">
+                <!-- 8 panel row -->
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="~/images/temp/panel.jpg" alt="...">
+                        <p><a href="#" target="_blank">Lorem ipsum</a></p>
+                        <a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>
+                    </div>
+                </li>
+			</ul>
+		</div><!--/frame -->
+        <ul class="pages"></ul><!--/pages -->
+        <div class="controls center">
+            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+        </div><!--/controls -->
+    </section>
+</div>
+
+
+<!--original layout-->
+@*<section>
     <div id="example1" class="pagespan">
 
 		<div class="frame effects">
@@ -98,14 +347,12 @@
                 <li>
                     <img src="~/images/panels/social-media.jpg" alt="...">
                     <a href="#" target="_blank">
-                        @*<p>Follow us on twitter, facebook, and other popular social media...</p>*@
                         <p>Stay connected</p>
                     </a>
                 </li>
                 <li>
                     <img src="~/images/panels/blackstone-launchpad.jpg" alt="...">
                     <a href="http://ucf.thelaunchpad.org/" target="_blank">
-                        @*<p>UCF’s Blackstone LaunchPad announced the future opening of its student entrepreneurial center.</p>*@
                         <p>Learn more</p>
                     </a>
                 </li>
@@ -153,14 +400,12 @@
                 <li>
                     <img src="~/images/panels/negotiate-to-the-top.jpg" alt="...">
                     <a href="http://edc.research.ucf.edu/negotiate" target="_blank">
-                        @*<p>Join us for Negotiate To The Top, our interactive two-day seminar led by Tim Cullen.</p>*@
                         <p>Learn more</p>
                     </a>
                 </li>
                 <li>
                     <img src="~/images/panels/strategic-leadership.jpg" alt="...">
                     <a href="http://edc.research.ucf.edu/strategic-leadership" target="_blank">
-                        @*<p>Implementing a business strategy is a key part of ensuring any firm’s success.</p>*@
                         <p>Learn more</p>
                     </a>
                 </li>
@@ -253,5 +498,4 @@
         <br><br>
 
     </div>
-</section>
-
+</section>*@

@@ -11,13 +11,11 @@ require.config({
         'easing': 'js/jquery.easing.min',
         'equalh': 'js/jquery.equalheight',
         'resize': 'js/jquery.debouncedresize',
-        'lockfix': 'js/jquery.lockfixed.min',
-        //scripts
-        'sly-main': 'js/sly.main'
+        'lockfix': 'js/jquery.lockfixed.min'
     }
 });
 
-require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function () {
+require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix'], function () {
 
     //----- Font Sizes-------------------------------
     $('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '16px' });
@@ -127,12 +125,16 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
     if (width < 501) //load mobile scripts
         require(['lockfix'], function () {
 
-            //-- screensize -------------------------
+            //-- screensize ----------------------------------
             $("#message").html(width + " x " + height + " - mobile");
             //------------------------------------------------
 
+            //-- resize to fit -------------------------------
+            $('.cover').css('min-height', height);
+            //------------------------------------------------
+
             //-- page menu -----------------------------------
-            $.lockfixed("#menu-2 ul", { forcemargin: true, offset: { top: 10, bottom: 10} });
+            $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 10} });
             //------------------------------------------------
 
         });
@@ -140,12 +142,16 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
     if ((width > 500) && (width < 1025)) //load tablet scripts
         require(['lockfix'], function () {
 
-            //-- screensize -------------------------
+            //-- screensize ----------------------------------
             $("#message").html(width + " x " + height + " - tablet");
             //------------------------------------------------
 
+            //-- resize to fit -------------------------------
+            $('.cover').css('min-height', height);
+            //------------------------------------------------
+
             //-- page menu -----------------------------------
-            $.lockfixed("#menu-2 ul", { forcemargin: true, offset: { top: 0, bottom: 1410} });
+            $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 0, bottom: 1410} });
             //------------------------------------------------
 
         });
@@ -153,12 +159,12 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
     if (width > 1024) //load desktop scripts
         require(['lockfix'], function () {
 
-            //-- screensize -------------------------
+            //-- screensize ----------------------------------
             $("#message").html(width + " x " + height + " - desktop");
             //------------------------------------------------
 
             //-- page menu -----------------------------------
-            $.lockfixed("#menu-2 ul", { forcemargin: true, offset: { top: 10, bottom: 410} });
+            $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 410} });
             //------------------------------------------------
 
         });
@@ -187,20 +193,23 @@ require(['fittext', 'easing', 'sly', 'sly-main', 'dmenu', 'lockfix'], function (
 
         if (width < 481) //load mobile scripts
             require([], function () {
-                //-- screensize -------------------------
+                //-- screensize ----------------------------------
                 $("#message").html(width + " x " + height + " - mobile");
+                //------------------------------------------------
             });
 
         if ((width > 480) && (width < 1025)) //load tablet scripts
             require([], function () {
-                //-- screensize -------------------------
+                //-- screensize ----------------------------------
                 $("#message").html(width + " x " + height + " - tablet");
+                //------------------------------------------------
             });
 
         if (width > 1024) //load desktop scripts
             require([], function () {
-                //-- screensize -------------------------
+                //-- screensize ----------------------------------
                 $("#message").html(width + " x " + height + " - desktop");
+                //------------------------------------------------
             });
 
     }); //end debouncedresize

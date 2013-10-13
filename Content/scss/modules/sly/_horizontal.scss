@@ -19,30 +19,36 @@
 
 /* Frame */
 .frame {
-	height: 320px; /*<== height of panel*/
-	line-height: 1em;
+	width: 100%;
+    height: 320px; /*<== height of panel*/
 	overflow: hidden;
     z-index:9;
+    box-shadow:0px 13px 15px 0px rgba(0,0,0,0.7);
 }
 .frame ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	height: 100%;
+    position: relative;
 }
 .frame ul li { /*panel*/
-	float: left;
-	width: 320px; /*<== width of panel*/
-	height: 100%;
-	margin: 0 1px 0 0;
+    width: 320px; /*<== width of panel*/
+	height: 90%;
+    background: #ffcc00;
+    margin: 0 1px 0 0;
 	padding: 0;
-	background: #ffcc00;
-	color: #ddd;
-	text-align: center;
+    line-height: 1em;
+	float: left;
+	
 	cursor: pointer;
-    
+
     opacity: 0.5;
     filter: Alpha(opacity=50); /* IE8 and earlier */
+}
+.frame ul li:hover { /*<== ?????? */
+    opacity: 1;
+    filter: Alpha(opacity=100); /* IE8 and earlier */
 }
 .frame ul li.active { /*active panel*/
 	color: #fff;
@@ -51,7 +57,6 @@
     opacity: 1;
     filter: Alpha(opacity=100); /* IE8 and earlier */
 }
-
 
 /*slide caption*/
 .frame ul li p { 
@@ -62,9 +67,10 @@
     position: absolute;
     bottom: 10px;
     left: 0px;
-    color: #fff;
     z-index: 10;
-    text-shadow: 0px 1px 2px #333;
+}
+.frame ul li p a {
+    color: #fff;
 }
 
 
@@ -93,9 +99,11 @@
 /* Pages */
 .pages {
 	list-style: none;
-	margin: 20px 0;
+	margin: 0;
 	padding: 0;
 	text-align: center;
+    position: relative;
+    z-index:4;
 }
 .pages li {
 	display: inline-block;
@@ -110,32 +118,35 @@
 	box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
 }
 .pages li:hover {
-	background: #aaa;
+	background: #ffcc00;
+    border: 1px solid #333;
 }
 .pages li.active {
-	background: #666;
+	background: #333;
+    border: 1px solid #fff;
 }
 
 
 /* Controls */
-.controls { margin: 25px 0; text-align: center; }
+.controls { margin:0; text-align: center; }
+.controls .divider { display: inline-block; margin: 0 10px; }
 
 /* Button Controls */
-button, button { background: transparent; border: 0; color: #ffcc00; opacity: .5;}
-button:hover, button:hover { opacity: 1; }
-button:disabled, button:disabled { opacity: .2; }
+.controls button { background: transparent; border: 0; color: #ffcc00; opacity: .5;}
+.controls button:hover { opacity: 1; }
+.controls button:disabled { opacity: .2; }
 
 .forward, .backward { float: left; width: 50px; height: 260px; font-size: 60px; border: 1px dashed blue;}
 .forward { float: right; }
 
 .next, .prev { 
-    display: block; 
-    float: left; 
-    width: 80px; 
+    display: block;
+    float: left;
+    width: 80px;
     height: 320px; /*<== match height of panel*/   
-    font-size: 70px; 
-    position:absolute; 
-    top:0; 
+    font-size: 70px;
+    position:absolute;
+    top:0;
     z-index:10;
 } 
 .prev { left:0; }.next { right:0; }
@@ -177,55 +188,3 @@ button:disabled, button:disabled { opacity: .2; }
 
 }
 
-
-
-
-/* One Item Per Frame example*/
-.oneperframe { height: 300px; line-height: 300px; }
-.oneperframe ul li { width: 1140px; }
-.oneperframe ul li.active { background: #333; }
-
-
-/* Crazy example */
-.crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
-.crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
-.crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
-
-
-/* Effects */
-.effects {
-	height: 200px;
-	line-height: 200px;
-	-webkit-perspective: 800px;
-	-ms-perspective: 800px;
-	perspective: 800px;
-	-webkit-perspective-origin: 50% 50%;
-	-ms-perspective-origin: 50% 50%;
-	perspective-origin: 50% 50%;
-	overflow-y: show;
-}
-.effects ul {
-	-webkit-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-.effects ul li {
-	position: relative;
-	margin: 0 -20px;
-	-webkit-transform: rotateY(60deg) scale(0.9);
-	-ms-transform: rotateY(60deg) scale(0.9);
-	transform: rotateY(60deg) scale(0.9);
-	-webkit-transition: -webkit-transform 300ms ease-out;
-	transition: transform 300ms ease-out;
-}
-.effects ul li.active {
-	z-index: 10;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-}
-.effects ul li.active ~ li {
-	-webkit-transform: rotateY(-60deg) scale(0.9);
-	-ms-transform: rotateY(-60deg) scale(0.9);
-	transform: rotateY(-60deg) scale(0.9);
-}

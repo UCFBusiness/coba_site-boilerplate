@@ -200,11 +200,20 @@ ol.round li.nine {
 
 /* line 112, ../Content/scss/partials/_primary.scss */
 .cover-header {
-  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
   text-shadow: 0px 1px 2px #333;
 }
 
 /* line 113, ../Content/scss/partials/_primary.scss */
+.cover-header .container {
+  color: #fff;
+  position: relative;
+  z-index: 100;
+}
+
+/* line 114, ../Content/scss/partials/_primary.scss */
 .cover-body {
   position: absolute;
   bottom: 0;
@@ -215,7 +224,7 @@ ol.round li.nine {
   box-sizing: border-box;
 }
 
-/* line 114, ../Content/scss/partials/_primary.scss */
+/* line 115, ../Content/scss/partials/_primary.scss */
 .cover-body:before {
   content: '';
   position: absolute;
@@ -231,13 +240,13 @@ ol.round li.nine {
   background-image: linear, to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%;
 }
 
-/* line 115, ../Content/scss/partials/_primary.scss */
+/* line 116, ../Content/scss/partials/_primary.scss */
 .cover-body .cover-body-inner {
   position: relative;
   z-index: 100;
 }
 
-/* line 116, ../Content/scss/partials/_primary.scss */
+/* line 117, ../Content/scss/partials/_primary.scss */
 .cover-title {
   font-size: 60px;
   line-height: 1;
@@ -246,12 +255,12 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 117, ../Content/scss/partials/_primary.scss */
+/* line 118, ../Content/scss/partials/_primary.scss */
 .cover-title span {
   font-size: 43px;
 }
 
-/* line 118, ../Content/scss/partials/_primary.scss */
+/* line 119, ../Content/scss/partials/_primary.scss */
 .cover-description {
   font-size: 16px;
   line-height: 1.2;
@@ -260,7 +269,7 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 119, ../Content/scss/partials/_primary.scss */
+/* line 120, ../Content/scss/partials/_primary.scss */
 .cover-description a {
   color: #fff;
   text-decoration: underline;
@@ -289,38 +298,38 @@ ol.round li.nine {
 .cover-bestof .month-year-name{text-transform:capitalize}
 .wf-loading .cover-title,.wf-loading .cover-description,.wf-loading .cover-meta{visibility:hidden}
 */
-/* line 145, ../Content/scss/partials/_primary.scss */
+/* line 146, ../Content/scss/partials/_primary.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 146, ../Content/scss/partials/_primary.scss */
+/* line 147, ../Content/scss/partials/_primary.scss */
 .screen-content {
   outline: 0;
 }
 
-/* line 148, ../Content/scss/partials/_primary.scss */
+/* line 149, ../Content/scss/partials/_primary.scss */
 .page-title {
   width: 100%;
 }
 
-/* line 149, ../Content/scss/partials/_primary.scss */
+/* line 150, ../Content/scss/partials/_primary.scss */
 .page-title h1, .page-title h2 {
-  margin: 0;
+  margin: 10px 0;
   color: #fff;
   font-weight: 600;
   line-height: 1em;
   font-size: 3.2em;
 }
 
-/* line 150, ../Content/scss/partials/_primary.scss */
+/* line 151, ../Content/scss/partials/_primary.scss */
 .page-title h2 {
   font-size: 2.8em;
 }
 
-/* line 152, ../Content/scss/partials/_primary.scss */
+/* line 153, ../Content/scss/partials/_primary.scss */
 .site-nav {
   position: absolute;
   top: 0;
@@ -330,7 +339,7 @@ ol.round li.nine {
   background-color: #232322;
 }
 
-/* line 153, ../Content/scss/partials/_primary.scss */
+/* line 154, ../Content/scss/partials/_primary.scss */
 .site-nav-logo {
   position: absolute;
   top: 10px;
@@ -352,13 +361,13 @@ ol.round li.nine {
   transition: top .2s linear,left .2s linear,opacity .2s linear;
 }
 
-/* line 154, ../Content/scss/partials/_primary.scss */
+/* line 155, ../Content/scss/partials/_primary.scss */
 .site-nav-logo:after {
   content: 'UCF';
   color: #fff;
 }
 
-/* line 155, ../Content/scss/partials/_primary.scss */
+/* line 156, ../Content/scss/partials/_primary.scss */
 .site-nav-logo .icons {
   display: block;
   position: absolute;
@@ -368,7 +377,7 @@ ol.round li.nine {
   bottom: 0;
 }
 
-/* line 156, ../Content/scss/partials/_primary.scss */
+/* line 157, ../Content/scss/partials/_primary.scss */
 .site-nav-overlay {
   display: none;
   position: absolute;
@@ -379,7 +388,7 @@ ol.round li.nine {
   z-index: 600;
 }
 
-/* line 157, ../Content/scss/partials/_primary.scss */
+/* line 158, ../Content/scss/partials/_primary.scss */
 .site-nav-hidden .site-nav-logo {
   filter: alpha(opacity=0);
   -khtml-opacity: 0;
@@ -388,7 +397,7 @@ ol.round li.nine {
   left: -54px;
 }
 
-/* line 158, ../Content/scss/partials/_primary.scss */
+/* line 159, ../Content/scss/partials/_primary.scss */
 .site-nav-scrollable-container {
   display: none;
   overflow: auto;
@@ -399,12 +408,12 @@ ol.round li.nine {
   box-shadow: inset -1px 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 159, ../Content/scss/partials/_primary.scss */
+/* line 160, ../Content/scss/partials/_primary.scss */
 .site-nav-scrollable-container::-webkit-scrollbar {
   display: none;
 }
 
-/* line 161, ../Content/scss/partials/_primary.scss */
+/* line 162, ../Content/scss/partials/_primary.scss */
 .wrapper {
   outline: 0;
   position: absolute;
@@ -415,7 +424,7 @@ ol.round li.nine {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 167, ../Content/scss/partials/_primary.scss */
+/* line 168, ../Content/scss/partials/_primary.scss */
 .wrapper-inner {
   padding: 0;
   width: 100%;
@@ -426,50 +435,50 @@ ol.round li.nine {
 }
 
 @media all and (max-width: 1024px) {
-  /* line 179, ../Content/scss/partials/_primary.scss */
+  /* line 180, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 0;
     position: relative;
   }
 
-  /* line 180, ../Content/scss/partials/_primary.scss */
+  /* line 181, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding: 0;
     max-width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 185, ../Content/scss/partials/_primary.scss */
+  /* line 186, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     background: none;
   }
 }
 @media all and (min-width: 1666px) {
-  /* line 189, ../Content/scss/partials/_primary.scss */
+  /* line 190, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 500px;
   }
 
-  /* line 190, ../Content/scss/partials/_primary.scss */
+  /* line 191, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding-left: 0;
     max-width: 910px;
   }
 }
 @media screen and (max-device-width: 1024px) {
-  /* line 194, ../Content/scss/partials/_primary.scss */
+  /* line 195, ../Content/scss/partials/_primary.scss */
   html {
     -webkit-text-size-adjust: none;
   }
 }
 @media screen and (min-device-width: 1025px) {
-  /* line 198, ../Content/scss/partials/_primary.scss */
+  /* line 199, ../Content/scss/partials/_primary.scss */
   .cover, .site-nav-logo {
     position: fixed;
   }
 }
 @media all and (max-width: 1024px) {
-  /* line 202, ../Content/scss/partials/_primary.scss */
+  /* line 203, ../Content/scss/partials/_primary.scss */
   .cover {
     position: relative!important;
     width: 100%;
@@ -477,62 +486,62 @@ ol.round li.nine {
     height: 676px;
   }
 
-  /* line 203, ../Content/scss/partials/_primary.scss */
+  /* line 204, ../Content/scss/partials/_primary.scss */
   .cover-body {
     width: 100%;
     padding-bottom: 40px;
   }
 
-  /* line 204, ../Content/scss/partials/_primary.scss */
+  /* line 205, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 60px;
     margin-bottom: 10px;
   }
 
-  /* line 205, ../Content/scss/partials/_primary.scss */
+  /* line 206, ../Content/scss/partials/_primary.scss */
   .cover-bestof .cover-title {
     font-size: 32px;
   }
 
-  /* line 206, ../Content/scss/partials/_primary.scss */
+  /* line 207, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: 1.6em;
   }
 
-  /* line 207, ../Content/scss/partials/_primary.scss */
+  /* line 208, ../Content/scss/partials/_primary.scss */
   .backend-cover-img {
     border: 1px solid #000;
   }
 
-  /* line 209, ../Content/scss/partials/_primary.scss */
+  /* line 210, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 70%;
   }
 
-  /* line 210, ../Content/scss/partials/_primary.scss */
-  .page-title h1, .page-title h2 {
+  /* line 211, ../Content/scss/partials/_primary.scss */
+  .page-title h1 {
     font-size: 3.4em;
   }
 
-  /* line 211, ../Content/scss/partials/_primary.scss */
+  /* line 212, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 2.8em;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 215, ../Content/scss/partials/_primary.scss */
+  /* line 216, ../Content/scss/partials/_primary.scss */
   .cover {
     height: 350px;
   }
 
-  /* line 216, ../Content/scss/partials/_primary.scss */
+  /* line 217, ../Content/scss/partials/_primary.scss */
   .cover-bestof, .cover-home, .cover-collection {
     min-height: 350px;
     height: auto;
     display: table;
   }
 
-  /* line 217, ../Content/scss/partials/_primary.scss */
+  /* line 219, ../Content/scss/partials/_primary.scss */
   .cover-body {
     display: table-cell;
     vertical-align: bottom;
@@ -542,7 +551,7 @@ ol.round li.nine {
     padding: 65px 5% 30px;
   }
 
-  /* line 218, ../Content/scss/partials/_primary.scss */
+  /* line 220, ../Content/scss/partials/_primary.scss */
   .cover-body:before {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
@@ -551,47 +560,47 @@ ol.round li.nine {
     background-image: linear, to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%;
   }
 
-  /* line 219, ../Content/scss/partials/_primary.scss */
+  /* line 221, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 2em;
     line-height: 1;
     margin-bottom: 5px;
   }
 
-  /* line 220, ../Content/scss/partials/_primary.scss */
+  /* line 222, ../Content/scss/partials/_primary.scss */
   .cover-title span {
     font-size: .7em;
   }
 
-  /* line 221, ../Content/scss/partials/_primary.scss */
+  /* line 223, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: .8em;
     margin-bottom: 6px;
   }
 
-  /* line 222, ../Content/scss/partials/_primary.scss */
+  /* line 224, ../Content/scss/partials/_primary.scss */
   .cover-avatar {
     width: 100px;
     height: 100px;
   }
 
-  /* line 223, ../Content/scss/partials/_primary.scss */
+  /* line 225, ../Content/scss/partials/_primary.scss */
   .cover-new-collection-link {
     margin-left: 0;
     line-height: 32px;
   }
 
-  /* line 225, ../Content/scss/partials/_primary.scss */
+  /* line 227, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 100%;
   }
 
-  /* line 226, ../Content/scss/partials/_primary.scss */
-  .page-title h1, .page-title h2 {
+  /* line 228, ../Content/scss/partials/_primary.scss */
+  .page-title h1 {
     font-size: 1.9em;
   }
 
-  /* line 227, ../Content/scss/partials/_primary.scss */
+  /* line 229, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 1.3em;
   }
@@ -2406,7 +2415,7 @@ All this is done for any sub-level being entered.
 Footer/Section Layout
 ========================================================================== */
 /* line 8, ../Content/scss/partials/_footer.scss */
-footer .content-wrapper ul {
+.wrapper-footer-inner ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2420,34 +2429,31 @@ footer .content-wrapper ul {
   /*-------------------------------*/
   /* The columns */
   /* line 24, ../Content/scss/partials/_footer.scss */
-  footer .content-wrapper > ul {
+  .wrapper-footer-inner > ul {
     width: 100%;
-    max-width: 720px;
     margin: 0 auto;
     padding-left: 1px;
-    border: 1px dashed red;
   }
 
   /* The four columns of links */
-  /* line 33, ../Content/scss/partials/_footer.scss */
-  footer .content-wrapper ul > li {
+  /* line 31, ../Content/scss/partials/_footer.scss */
+  .wrapper-footer-inner ul > li {
     width: 25%;
     float: left;
   }
 
   /* The links */
-  /* line 39, ../Content/scss/partials/_footer.scss */
-  footer .content-wrapper > ul > li ul li {
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 1.8;
+  /* line 37, ../Content/scss/partials/_footer.scss */
+  .wrapper-footer-inner > ul > li ul li {
+    padding: 0 5px;
+    font-size: .8em;
     width: 100%;
   }
 
   /*-------------------------------*/
   /* The headers */
-  /* line 50, ../Content/scss/partials/_footer.scss */
-  footer .content-wrapper p {
+  /* line 47, ../Content/scss/partials/_footer.scss */
+  .wrapper-footer-inner p {
     background-color: #058cc7;
     padding: 9px;
     width: 99%;
@@ -2464,21 +2470,21 @@ footer .content-wrapper ul {
     cursor: default;
   }
 
-  /* line 69, ../Content/scss/partials/_footer.scss */
-  footer .content-wrapper > ul > li:hover p {
+  /* line 66, ../Content/scss/partials/_footer.scss */
+  .wrapper-footer-inner > ul > li:hover p {
     opacity: 1;
   }
 
   /*-------------------------------*/
   /* The links */
-  /* line 77, ../Content/scss/partials/_footer.scss */
-  footer .content-wrapper > ul > li ul li a {
+  /* line 74, ../Content/scss/partials/_footer.scss */
+  .wrapper-footer-inner > ul > li ul li a {
     text-decoration: none !important;
     color: #7d8691 !important;
   }
 
-  /* line 82, ../Content/scss/partials/_footer.scss */
-  footer .content-wrapper > ul > li ul li a:hover {
+  /* line 79, ../Content/scss/partials/_footer.scss */
+  .wrapper-footer-inner > ul > li ul li a:hover {
     color: #ddd !important;
   }
 }
@@ -2554,102 +2560,130 @@ footer .content-wrapper ul {
     column-gap: 1%;
   }
 }
-/* =============================================================================
-   Mobile Mobile Layout: 500px and below.
-   ========================================================================== */
-/*slide buttons*/
-/* line 8, ../Content/scss/modules/_sly.scss */
-.pagespan button, .pagespan button {
-  visibility: hidden;
-  display: hidden;
+/* Mobile Layout: 500px and below. */
+/* line 5, ../Content/scss/modules/sly/_home.scss */
+.pagespan *,
+.pagespan *:after,
+.pagespan *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/* Frame */
-/* line 11, ../Content/scss/modules/_sly.scss */
-.frame {
-  width: 100%;
-  height: 320px;
-  overflow: hidden;
-  text-shadow: none;
-  z-index: 9;
-  box-shadow: -3px 9px 15px 0px rgba(0, 0, 0, 0.7);
+/* Wrapper */
+/* line 15, ../Content/scss/modules/sly/_home.scss */
+.pagespan .wrap {
   position: relative;
 }
 
-/*<== height of slide*/
-/* line 12, ../Content/scss/modules/_sly.scss */
+/* Frame */
+/* line 21, ../Content/scss/modules/sly/_home.scss */
+.frame {
+  width: 100%;
+  margin: 0 0 1px;
+  height: 300px;
+  /*<== height of panel*/
+  overflow: hidden;
+  z-index: 9;
+}
+
+/* line 28, ../Content/scss/modules/sly/_home.scss */
 .frame ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  margin: 0;
-  padding: 0;
   height: 100%;
+  position: relative;
 }
 
-/*frame viewport*/
-/* line 13, ../Content/scss/modules/_sly.scss */
+/* line 35, ../Content/scss/modules/sly/_home.scss */
 .frame ul li {
-  background: #ffcc00;
-  float: left;
-  width: 300px;
-  height: 100%;
-  margin: 0;
+  /*panel*/
+  width: 320px;
+  /*<== width of panel*/
+  height: 90%;
+  background: #a03232;
+  margin: 0 1px 0 0;
   padding: 0;
+  line-height: 1em;
+  float: left;
   cursor: pointer;
-  border: 2px solid #333;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  /*
+  opacity: 0.5;
+  filter: Alpha(opacity=50);  IE8 and earlier 
+  box-shadow:0px 13px 15px 0px rgba(0,0,0,0.7);
+  */
 }
 
-/*<== width of slide*/
-/* line 14, ../Content/scss/modules/_sly.scss */
+/* line 51, ../Content/scss/modules/sly/_home.scss */
 .frame ul li.active {
+  /*active panel*/
   color: #fff;
+  background: #ffcc00;
+  /*opacity: 1;
+  filter: Alpha(opacity=100);  IE8 and earlier */
 }
 
-/*active slide*/
+/* line 58, ../Content/scss/modules/sly/_home.scss */
+.frame .social {
+  position: absolute;
+  right: 0;
+  padding: 12px 18px;
+}
+
+/* line 63, ../Content/scss/modules/sly/_home.scss */
+.frame .tt-share {
+  top: 0;
+  background: #00ccff;
+}
+
+/* line 67, ../Content/scss/modules/sly/_home.scss */
+.frame .fb-share {
+  top: 40px;
+  background: #0066cc;
+}
+
 /*slide caption*/
-/* line 17, ../Content/scss/modules/_sly.scss */
-.frame ul li p {
+/* line 73, ../Content/scss/modules/sly/_home.scss */
+.frame p {
+  margin: 0;
   background: rgba(0, 0, 0, 0.4);
   padding: 10px 5px;
   width: 100%;
   max-width: 320px;
+  /*<== width of caption*/
   position: absolute;
   bottom: 10px;
   left: 0px;
-  color: #fff;
   z-index: 10;
-  text-shadow: 0px 1px 2px #333;
+}
+
+/* line 84, ../Content/scss/modules/sly/_home.scss */
+.frame p a {
+  color: #fff;
 }
 
 /* Scrollbar */
-/* line 20, ../Content/scss/modules/_sly.scss */
+/* line 90, ../Content/scss/modules/sly/_home.scss */
 .scrollbar {
-  margin: 0 0 1em 0;
+  margin: 1px 0 1px;
   height: 2px;
-  background: #ccc;
+  background: #000;
   line-height: 0;
 }
 
-/*-thin line-*/
-/* line 21, ../Content/scss/modules/_sly.scss */
-.scrollbar {
-  margin: 0 auto;
-  height: 20px;
-  background: #ccc;
-  line-height: 20px;
-}
-
-/*-thick line-*/
-/* line 22, ../Content/scss/modules/_sly.scss */
+/* line 96, ../Content/scss/modules/sly/_home.scss */
 .scrollbar .handle {
   width: 100px;
   height: 100%;
-  background: #292a33;
-  background: #808080;
+  background: #ffcc00;
   cursor: pointer;
 }
 
-/* line 29, ../Content/scss/modules/_sly.scss */
+/* line 102, ../Content/scss/modules/sly/_home.scss */
 .scrollbar .handle .mousearea {
   position: absolute;
   top: -9px;
@@ -2659,22 +2693,21 @@ footer .content-wrapper ul {
 }
 
 /* Pages */
-/* line 38, ../Content/scss/modules/_sly.scss */
+/* line 112, ../Content/scss/modules/sly/_home.scss */
 .pages {
   list-style: none;
-  margin: 10px auto 0;
+  margin: 0;
   padding: 0;
   text-align: center;
   position: relative;
-  z-index: 4;
 }
 
-/* line 46, ../Content/scss/modules/_sly.scss */
+/* line 119, ../Content/scss/modules/sly/_home.scss */
 .pages li {
   display: inline-block;
   width: 26px;
   height: 26px;
-  margin: 0 4px 3px;
+  margin: 0 4px;
   text-indent: -999px;
   border-radius: 16px;
   cursor: pointer;
@@ -2683,246 +2716,122 @@ footer .content-wrapper ul {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 59, ../Content/scss/modules/_sly.scss */
+/* line 131, ../Content/scss/modules/sly/_home.scss */
 .pages li:hover {
   background: #ffcc00;
   border: 1px solid #333;
 }
 
-/* line 63, ../Content/scss/modules/_sly.scss */
+/* line 135, ../Content/scss/modules/sly/_home.scss */
 .pages li.active {
   background: #333;
   border: 1px solid #fff;
 }
 
-/*controls*/
-/* line 69, ../Content/scss/modules/_sly.scss */
+/* Controls */
+/* line 142, ../Content/scss/modules/sly/_home.scss */
 .controls {
-  margin: 25px 0;
+  margin: 0;
   text-align: center;
 }
 
-/* line 70, ../Content/scss/modules/_sly.scss */
+/* line 143, ../Content/scss/modules/sly/_home.scss */
 .controls .divider {
   display: inline-block;
   margin: 0 10px;
 }
 
-/* line 71, ../Content/scss/modules/_sly.scss */
+/* Button Controls */
+/* line 146, ../Content/scss/modules/sly/_home.scss */
 .controls button {
-  line-height: 32px;
-  vertical-align: middle;
-  font-family: Novecento, sans-serif;
+  background: transparent;
+  border: 0;
+  color: #ffcc00;
+  opacity: .5;
 }
 
-/* line 72, ../Content/scss/modules/_sly.scss */
-.controls button i {
-  position: relative;
-  top: -2px;
-  margin: 5px;
-  padding: 0;
-  font-size: 32px;
-  vertical-align: middle;
+/* line 147, ../Content/scss/modules/sly/_home.scss */
+.controls button:hover {
+  opacity: 1;
 }
 
-/* line 74, ../Content/scss/modules/_sly.scss */
+/* line 148, ../Content/scss/modules/sly/_home.scss */
+.controls button:disabled {
+  opacity: .2;
+}
+
+/* line 150, ../Content/scss/modules/sly/_home.scss */
+.forward, .backward {
+  float: left;
+  width: 50px;
+  height: 260px;
+  font-size: 60px;
+}
+
+/* line 151, ../Content/scss/modules/sly/_home.scss */
+.forward {
+  float: right;
+}
+
+/* line 153, ../Content/scss/modules/sly/_home.scss */
 .next, .prev {
-  visibility: none;
-  display: none;
+  background: rgba(255, 204, 0, 0.3);
+  display: block;
+  float: left;
+  width: 50px;
+  height: 300px;
+  /*<== match height of panel*/
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
 }
 
-/* ================================================================================================================
-   Tablet Layout: 500px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout.
-   ============================================================================================================== */
+/* line 164, ../Content/scss/modules/sly/_home.scss */
+.prev {
+  left: 0;
+}
+
+/* line 164, ../Content/scss/modules/sly/_home.scss */
+.next {
+  right: 0;
+}
+
+/* line 165, ../Content/scss/modules/sly/_home.scss */
+.next:hover, .prev:hover {
+  background: rgba(255, 204, 0, 0.6);
+  color: #fff;
+}
+
+/* Tablet Layout (portrait mode): 501px to 768px. Inherits styles from: Mobile Layout. */
 @media all and (min-width: 501px) {
-  /*frame redraw*/
-  /* line 83, ../Content/scss/modules/_sly.scss */
-  .frame {
-    margin: 0 auto;
-    width: 100%;
-    height: 330px;
-    overflow: hidden;
-    text-shadow: none;
-  }
-
-  /*<== height of slide*/
-  /* line 84, ../Content/scss/modules/_sly.scss */
-  .frame ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-
-  /* line 85, ../Content/scss/modules/_sly.scss */
-  .frame ul li {
-    float: left;
-    width: 320px;
-    height: 100%;
-    margin: 0 1px 0 0;
-    padding: 0;
-    cursor: pointer;
-  }
-
-  /*<== width of slide*/
-  /* line 86, ../Content/scss/modules/_sly.scss */
-  .frame ul li.active {
-    color: #fff;
-  }
-
-  /*active slide*/
-  /* line 88, ../Content/scss/modules/_sly.scss */
-  .frame ul li {
-    /*<== size of slide*/
-    height: 100%;
-  }
-
   /* Pages */
-  /* line 93, ../Content/scss/modules/_sly.scss */
+  /* line 172, ../Content/scss/modules/sly/_home.scss */
+  .pages {
+    margin: 0;
+    position: absolute;
+    bottom: 9px;
+    text-align: center;
+  }
+
+  /* line 178, ../Content/scss/modules/sly/_home.scss */
   .pages li {
     width: 13px;
     height: 13px;
-    margin: -3px 6px 3px;
-    text-indent: -999px;
     border-radius: 10px;
   }
 }
-/* ===========================================================================================================
-   Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout.
-   ========================================================================================================= */
+/* Tablet Layout (landscape mode): 769px to 1024px. Inherits styles from: Mobile Layout and Portrait Layout. */
+/* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-  /* Frame */
-  /* line 110, ../Content/scss/modules/_sly.scss */
-  .frame {
-    /*<== size of viewport*/
-    margin: 0 auto;
-    width: 100%;
-    min-width: 620px;
-    /*<==== Important ==<*/
-  }
-
   /* Pages */
-  /* line 117, ../Content/scss/modules/_sly.scss */
-  .pages {
-    list-style: none;
-    margin: 8px auto 0;
-    padding: 0;
-    text-align: center;
-    position: relative;
-  }
-
-  /*slide buttons*/
-  /* line 126, ../Content/scss/modules/_sly.scss */
-  .pagespan button, .pagespan button {
-    visibility: visible;
-    background: transparent;
-    border: 0;
-    color: #ffcc00;
-    opacity: .7;
-  }
-
-  /* line 127, ../Content/scss/modules/_sly.scss */
-  .pagespan button:hover, .pagespan button:hover {
-    opacity: 1;
-  }
-
-  /* line 128, ../Content/scss/modules/_sly.scss */
-  .pagespan button:disabled, .pagespan button:disabled {
-    opacity: .2;
-  }
-
-  /* line 130, ../Content/scss/modules/_sly.scss */
-  .forward, .backward {
-    float: left;
-    width: 50px;
-    height: 260px;
-    font-size: 60px;
-  }
-
-  /* line 131, ../Content/scss/modules/_sly.scss */
-  .forward {
-    float: right;
-  }
-
-  /* line 133, ../Content/scss/modules/_sly.scss */
-  .prev, .next {
-    visibility: visible;
-    display: block;
-    float: left;
-    width: 50px;
-    height: 330px;
-    font-size: 70px;
-    position: absolute;
-    top: 0;
-    z-index: 10;
-  }
-
-  /* line 134, ../Content/scss/modules/_sly.scss */
-  .prev {
-    left: 0;
-  }
-
-  /* line 134, ../Content/scss/modules/_sly.scss */
-  .next {
-    right: 0;
-  }
-
-  /* line 135, ../Content/scss/modules/_sly.scss */
-  .next:hover, .prev:hover {
-    background: rgba(255, 204, 0, 0.6);
-    color: #fff;
-  }
-
-  /*scroll bar*/
-  /* line 139, ../Content/scss/modules/_sly.scss */
-  .scrollbar {
-    visibility: hidden;
-    display: hidden;
-  }
 }
-/* =============================================================================
-   Special Classes
-   ========================================================================== */
-/* One Item Per Frame example*/
-/* line 149, ../Content/scss/modules/_sly.scss */
-.oneperframe {
-  min-height: 300px;
-  line-height: 300px;
-}
-
-/* line 150, ../Content/scss/modules/_sly.scss */
-.oneperframe ul li {
-  width: 1140px;
-}
-
-/* line 151, ../Content/scss/modules/_sly.scss */
-.oneperframe ul li.active {
-  background: #333;
-}
-
-/* Crazy example */
-/* line 155, ../Content/scss/modules/_sly.scss */
-.crazy ul li:nth-child(2n) {
-  width: 100px;
-  margin: 0 4px 0 20px;
-}
-
-/* line 156, ../Content/scss/modules/_sly.scss */
-.crazy ul li:nth-child(3n) {
-  width: 300px;
-  margin: 0 10px 0 5px;
-}
-
-/* line 157, ../Content/scss/modules/_sly.scss */
-.crazy ul li:nth-child(4n) {
-  width: 400px;
-  margin: 0 30px 0 2px;
-}
-
+/* Print Layout: Inherits styles from: All Layouts. */
 /* 3D Effects */
-/* line 161, ../Content/scss/modules/_sly.scss */
+/* line 3, ../Content/scss/modules/sly/_effects.scss */
 .effects {
   min-height: 200px;
+  line-height: 200px;
   -webkit-perspective: 800px;
   -ms-perspective: 800px;
   perspective: 800px;
@@ -2932,14 +2841,14 @@ footer .content-wrapper ul {
   overflow-y: show;
 }
 
-/* line 171, ../Content/scss/modules/_sly.scss */
+/* line 14, ../Content/scss/modules/sly/_effects.scss */
 .effects ul {
   -webkit-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 176, ../Content/scss/modules/_sly.scss */
+/* line 19, ../Content/scss/modules/sly/_effects.scss */
 .effects ul li {
   position: relative;
   margin: 0 -20px;
@@ -2950,7 +2859,7 @@ footer .content-wrapper ul {
   transition: transform 300ms ease-out;
 }
 
-/* line 185, ../Content/scss/modules/_sly.scss */
+/* line 28, ../Content/scss/modules/sly/_effects.scss */
 .effects ul li.active {
   z-index: 10;
   -webkit-transform: scale(1);
@@ -2958,26 +2867,47 @@ footer .content-wrapper ul {
   transform: scale(1);
 }
 
-/* line 191, ../Content/scss/modules/_sly.scss */
+/* line 34, ../Content/scss/modules/sly/_effects.scss */
 .effects ul li.active ~ li {
   -webkit-transform: rotateY(-60deg) scale(0.9);
   -ms-transform: rotateY(-60deg) scale(0.9);
   transform: rotateY(-60deg) scale(0.9);
 }
 
-/* Grid Background */
-/* line 198, ../Content/scss/modules/_sly.scss */
-.grid-background {
-  margin: 0 auto;
-  padding: 115px 0 80px;
-  color: #fff;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-  background-color: #3e404a;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05) 2px, transparent 2px), linear, 90deg, rgba(255, 255, 255, 0.04) 2px, transparent 2px, linear, false, rgba(255, 255, 255, 0.03) 1px, transparent 1px, linear, 90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px, linear, 0deg, rgba(0, 0, 0, 0.3) 0, transparent 100px;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.05) 2px, transparent 2px), linear, 90deg, rgba(255, 255, 255, 0.04) 2px, transparent 2px, linear, false, rgba(255, 255, 255, 0.03) 1px, transparent 1px, linear, 90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px, linear, 0deg, rgba(0, 0, 0, 0.3) 0, transparent 100px;
-  background-image: linear, false, rgba(255, 255, 255, 0.05) 2px, transparent 2px, linear, 90deg, rgba(255, 255, 255, 0.04) 2px, transparent 2px, linear, false, rgba(255, 255, 255, 0.03) 1px, transparent 1px, linear, 90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px, linear, 0deg, rgba(0, 0, 0, 0.3) 0, transparent 100px;
-  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px, 100% 100%;
-  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px, center bottom;
+/* Crazy example */
+/* line 42, ../Content/scss/modules/sly/_effects.scss */
+.crazy ul li:nth-child(2n) {
+  width: 100px;
+  margin: 0 4px 0 20px;
+}
+
+/* line 43, ../Content/scss/modules/sly/_effects.scss */
+.crazy ul li:nth-child(3n) {
+  width: 300px;
+  margin: 0 10px 0 5px;
+}
+
+/* line 44, ../Content/scss/modules/sly/_effects.scss */
+.crazy ul li:nth-child(4n) {
+  width: 400px;
+  margin: 0 30px 0 2px;
+}
+
+/* One Item Per Frame example*/
+/* line 48, ../Content/scss/modules/sly/_effects.scss */
+.oneperframe {
+  min-height: 300px;
+  line-height: 300px;
+}
+
+/* line 49, ../Content/scss/modules/sly/_effects.scss */
+.oneperframe ul li {
+  width: 1140px;
+}
+
+/* line 50, ../Content/scss/modules/sly/_effects.scss */
+.oneperframe ul li.active {
+  background: #333;
 }
 
 /*
@@ -3742,9 +3672,12 @@ footer .content-wrapper ul {
   top: 13px;
   right: 13px;
   z-index: 9;
+  opacity: 0.5;
+  filter: Alpha(opacity=50);
+  /*IE8 and earlier */
 }
 
-/* line 43, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 45, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu-open .st-pusher::after {
   width: 100%;
   height: 100%;
@@ -3753,7 +3686,7 @@ footer .content-wrapper ul {
   transition: opacity 0.5s;
 }
 
-/* line 51, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 53, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu {
   position: absolute;
   top: 0;
@@ -3763,13 +3696,13 @@ footer .content-wrapper ul {
   visibility: hidden;
   width: 300px;
   height: 100%;
-  background: #fff;
+  background: rgba(225, 225, 225, 0.2);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 65, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 67, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu::after {
   position: absolute;
   top: 0;
@@ -3783,7 +3716,7 @@ footer .content-wrapper ul {
   transition: opacity 0.5s;
 }
 
-/* line 78, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 80, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu-open .st-menu::after {
   width: 0;
   height: 0;
@@ -3793,14 +3726,14 @@ footer .content-wrapper ul {
 }
 
 /* content style */
-/* line 88, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 90, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 94, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 96, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu h2 {
   margin: 0;
   padding: 0;
@@ -3810,11 +3743,10 @@ footer .content-wrapper ul {
   font-size: 2em;
 }
 
-/* line 103, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 105, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li a {
   display: block;
   padding: 1em 0em 1em 1.2em;
-  /**/
   outline: none;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
   color: #cc9900;
@@ -3825,14 +3757,18 @@ footer .content-wrapper ul {
   font-weight: 400;
   -webkit-transition: background 0.3s, box-shadow 0.3s;
   transition: background 0.3s, box-shadow 0.3s;
+  /*new code*/
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  line-height: 1em;
 }
 
-/* line 118, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 126, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li:first-child a {
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 122, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 130, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li a:hover {
   background: rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
@@ -3841,89 +3777,89 @@ footer .content-wrapper ul {
 
 /* Individual effects */
 /* Effect 1: Slide in on top */
-/* line 131, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 139, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu {
   visibility: visible;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 137, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 145, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu-open .st-effect-1.st-menu {
   visibility: visible;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 143, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 151, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu::after {
   display: none;
 }
 
 /* Effect 2: Reveal */
-/* line 148, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 156, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 153, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 161, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu {
   z-index: 1;
 }
 
-/* line 157, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 165, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu-open .st-effect-2.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 163, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 171, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu::after {
   display: none;
 }
 
 /* Effect 3: Push*/
-/* line 168, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 176, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 173, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 181, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 178, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 186, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu-open .st-effect-3.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 184, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 192, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu::after {
   display: none;
 }
 
 /* Effect 4: Slide along */
-/* line 189, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 197, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 194, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 202, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu {
   z-index: 1;
   -webkit-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
 }
 
-/* line 200, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 208, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu-open .st-effect-4.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -3932,26 +3868,26 @@ footer .content-wrapper ul {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 208, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 216, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu::after {
   display: none;
 }
 
 /* Effect 5: Reverse slide out */
-/* line 213, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 221, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 218, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 226, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu {
   z-index: 1;
   -webkit-transform: translate3d(50%, 0, 0);
   transform: translate3d(50%, 0, 0);
 }
 
-/* line 224, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 232, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu-open .st-effect-5.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -3961,13 +3897,13 @@ footer .content-wrapper ul {
 }
 
 /* Effect 6: Rotate pusher */
-/* line 234, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 242, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 239, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 247, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6 .st-pusher {
   -webkit-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
@@ -3975,13 +3911,13 @@ footer .content-wrapper ul {
   transform-style: preserve-3d;
 }
 
-/* line 246, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 254, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0) rotateY(-15deg);
   transform: translate3d(300px, 0, 0) rotateY(-15deg);
 }
 
-/* line 251, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 259, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
@@ -3991,7 +3927,7 @@ footer .content-wrapper ul {
   transform-style: preserve-3d;
 }
 
-/* line 260, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 268, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu-open .st-effect-6.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4000,13 +3936,13 @@ footer .content-wrapper ul {
   transform: translate3d(-100%, 0, 0) rotateY(15deg);
 }
 
-/* line 268, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 276, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu::after {
   display: none;
 }
 
 /* Effect 7: 3D rotate in */
-/* line 274, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 282, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4014,19 +3950,19 @@ footer .content-wrapper ul {
   perspective-origin: 0% 50%;
 }
 
-/* line 281, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 289, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 286, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 294, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 291, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 299, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg);
   transform: translate3d(-100%, 0, 0) rotateY(-90deg);
@@ -4036,7 +3972,7 @@ footer .content-wrapper ul {
   transform-style: preserve-3d;
 }
 
-/* line 300, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 308, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu-open .st-effect-7.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4046,7 +3982,7 @@ footer .content-wrapper ul {
 }
 
 /* Effect 8: 3D rotate out */
-/* line 310, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 318, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4054,19 +3990,19 @@ footer .content-wrapper ul {
   perspective-origin: 0% 50%;
 }
 
-/* line 317, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 325, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 322, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 330, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 327, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 335, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
   transform: translate3d(-100%, 0, 0) rotateY(90deg);
@@ -4076,7 +4012,7 @@ footer .content-wrapper ul {
   transform-style: preserve-3d;
 }
 
-/* line 336, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 344, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu-open .st-effect-8.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4085,38 +4021,38 @@ footer .content-wrapper ul {
   transform: translate3d(-100%, 0, 0) rotateY(0deg);
 }
 
-/* line 344, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 352, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu::after {
   display: none;
 }
 
 /* Effect 9: Scale down pusher */
-/* line 350, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 358, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 355, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 363, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 360, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 368, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu-open .st-pusher {
   -webkit-transform: translate3d(0, 0, -300px);
   transform: translate3d(0, 0, -300px);
 }
 
-/* line 365, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 373, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 371, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 379, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu-open .st-effect-9.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4125,13 +4061,13 @@ footer .content-wrapper ul {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 379, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 387, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu::after {
   display: none;
 }
 
 /* Effect 10: Scale up */
-/* line 385, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 393, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4139,13 +4075,13 @@ footer .content-wrapper ul {
   perspective-origin: 0% 50%;
 }
 
-/* line 392, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 400, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 397, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 405, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu {
   z-index: 1;
   opacity: 1;
@@ -4153,7 +4089,7 @@ footer .content-wrapper ul {
   transform: translate3d(0, 0, -300px);
 }
 
-/* line 404, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 412, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu-open .st-effect-10.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4163,32 +4099,32 @@ footer .content-wrapper ul {
 }
 
 /* Effect 11: Scale and rotate pusher */
-/* line 414, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 422, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 419, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 427, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 424, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 432, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu-open .st-pusher {
   -webkit-transform: translate3d(100px, 0, -600px) rotateY(-20deg);
   transform: translate3d(100px, 0, -600px) rotateY(-20deg);
 }
 
-/* line 429, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 437, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 435, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 443, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu-open .st-effect-11.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4197,19 +4133,19 @@ footer .content-wrapper ul {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 443, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 451, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu::after {
   display: none;
 }
 
 /* Effect 12: Open door */
-/* line 449, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 457, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 454, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 462, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12 .st-pusher {
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
@@ -4217,20 +4153,20 @@ footer .content-wrapper ul {
   transform-style: preserve-3d;
 }
 
-/* line 461, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 469, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu-open .st-pusher {
   -webkit-transform: rotateY(-10deg);
   transform: rotateY(-10deg);
 }
 
-/* line 466, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 474, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 472, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 480, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu-open .st-effect-12.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4239,13 +4175,13 @@ footer .content-wrapper ul {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 480, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 488, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu::after {
   display: none;
 }
 
 /* Effect 13: Fall down */
-/* line 486, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 494, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4253,13 +4189,13 @@ footer .content-wrapper ul {
   perspective-origin: 0% 50%;
 }
 
-/* line 493, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 501, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 498, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 506, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu {
   z-index: 1;
   opacity: 1;
@@ -4267,7 +4203,7 @@ footer .content-wrapper ul {
   transform: translate3d(0, -100%, 0);
 }
 
-/* line 505, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 513, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu-open .st-effect-13.st-menu {
   visibility: visible;
   -webkit-transition-timing-function: ease-in-out;
@@ -4281,7 +4217,7 @@ footer .content-wrapper ul {
 }
 
 /* Effect 14: Delayed 3D rotate */
-/* line 519, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 527, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4289,19 +4225,19 @@ footer .content-wrapper ul {
   perspective-origin: 0% 50%;
 }
 
-/* line 526, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 534, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 531, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 539, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 536, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 544, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
   transform: translate3d(-100%, 0, 0) rotateY(90deg);
@@ -4311,7 +4247,7 @@ footer .content-wrapper ul {
   transform-style: preserve-3d;
 }
 
-/* line 545, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 553, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu-open .st-effect-14.st-menu {
   visibility: visible;
   -webkit-transition-delay: 0.1s;
@@ -4325,7 +4261,7 @@ footer .content-wrapper ul {
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-/* line 559, ../Content/scss/modules/_sidebar-effects.scss */
+/* line 567, ../Content/scss/modules/_sidebar-effects.scss */
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
   padding-left: 300px;

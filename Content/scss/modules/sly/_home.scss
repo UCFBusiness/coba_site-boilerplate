@@ -1,0 +1,209 @@
+/* Mobile Layout: 500px and below. */
+
+.pagespan *, 
+.pagespan *:after,
+.pagespan *:before {
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Wrapper */
+.pagespan .wrap {
+	position: relative;
+}
+
+
+/* Frame */
+.frame {
+	width: 100%;
+    margin: 0 0 1px;
+    height: 300px; /*<== height of panel*/
+	overflow: hidden;
+    z-index:9;
+}
+.frame ul {
+    margin:0;
+    padding:0;
+	list-style: none;
+	height: 100%;
+    position: relative;
+}
+.frame ul li { /*panel*/
+    width: 320px; /*<== width of panel*/
+	height: 90%;
+    background: #a03232;
+    margin: 0 1px 0 0;
+	padding: 0;
+    line-height: 1em;
+	float: left;
+	cursor: pointer;
+    position: relative;
+    /*
+    opacity: 0.5;
+    filter: Alpha(opacity=50);  IE8 and earlier 
+    box-shadow:0px 13px 15px 0px rgba(0,0,0,0.7);
+    */
+}
+.frame ul li.active { /*active panel*/
+	color: #fff;
+	background: #ffcc00;
+    
+    /*opacity: 1;
+    filter: Alpha(opacity=100);  IE8 and earlier */
+}
+.frame .social {
+    position: absolute;
+    right: 0;
+    padding: 12px 18px;
+}
+.frame .tt-share {
+    top: 0;
+    background: rgba(0,204,255,1);
+}
+.frame .fb-share {
+    top: 40px;
+    background:rgba(0,102,204,1);
+}
+
+/*slide caption*/
+.frame p {
+    margin:0;
+    background: rgba(0,0,0,.4);
+    padding: 10px 5px;
+    width: 100%;
+    max-width: 320px; /*<== width of caption*/
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    z-index: 10;
+}
+.frame p a {
+    color: #fff;
+}
+
+
+/* Scrollbar */
+.scrollbar {
+	margin: 1px 0 1px;
+	height: 2px;
+	background: #000;
+	line-height: 0;
+}
+.scrollbar .handle {
+	width: 100px;
+	height: 100%;
+	background: #ffcc00;
+	cursor: pointer;
+}
+.scrollbar .handle .mousearea {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+
+
+/* Pages */
+.pages {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+    position: relative;
+}
+.pages li {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	margin: 0 4px;
+	text-indent: -999px;
+	border-radius: 16px;
+	cursor: pointer;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+.pages li:hover {
+	background: #ffcc00;
+    border: 1px solid #333;
+}
+.pages li.active {
+	background: #333;
+    border: 1px solid #fff;
+}
+
+
+/* Controls */
+.controls { margin:0; text-align: center; }
+.controls .divider { display: inline-block; margin: 0 10px; }
+
+/* Button Controls */
+.controls button { background: transparent; border: 0; color: #ffcc00; opacity: .5;}
+.controls button:hover { opacity: 1; }
+.controls button:disabled { opacity: .2; }
+
+.forward, .backward { float: left; width: 50px; height: 260px; font-size: 60px;}
+.forward { float: right; }
+
+.next, .prev { 
+    background: rgba(255, 204, 0, .3);
+    display: block;
+    float: left;
+    width: 50px;
+    height: 300px; /*<== match height of panel*/   
+    font-size: 30px;
+    position:absolute;
+    top:0;
+    z-index:10;
+} 
+.prev { left:0; }.next { right:0; }
+.next:hover, .prev:hover { background: rgba(255, 204, 0, .6); color:#fff; }
+
+
+/* Tablet Layout (portrait mode): 501px to 768px. Inherits styles from: Mobile Layout. */
+@media all and (min-width: 501px) {
+    
+    /* Pages */
+    .pages {
+	    margin: 0;
+        position: absolute;
+        bottom: 9px;
+        text-align: center;
+    }
+    .pages li {
+	    width: 13px;
+	    height: 13px;
+	    border-radius: 10px;
+    }
+
+}
+
+
+/* Tablet Layout (landscape mode): 769px to 1024px. Inherits styles from: Mobile Layout and Portrait Layout. */
+@media all and (min-width: 769px) {
+    
+
+}
+
+
+/* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
+@media screen and (min-width: 1025px) {
+    
+    /* Pages */
+    .pages { 
+    }
+
+}
+
+
+/* Print Layout: Inherits styles from: All Layouts. */
+@media print {
+    
+
+}
+
