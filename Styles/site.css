@@ -300,24 +300,24 @@ ol.round li.nine {
 .cover-bestof .month-year-name{text-transform:capitalize}
 .wf-loading .cover-title,.wf-loading .cover-description,.wf-loading .cover-meta{visibility:hidden}
 */
-/* line 146, ../Content/scss/partials/_primary.scss */
+/* line 147, ../Content/scss/partials/_primary.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 147, ../Content/scss/partials/_primary.scss */
+/* line 148, ../Content/scss/partials/_primary.scss */
 .screen-content {
   outline: 0;
 }
 
-/* line 149, ../Content/scss/partials/_primary.scss */
+/* line 150, ../Content/scss/partials/_primary.scss */
 .page-title {
   width: 100%;
 }
 
-/* line 150, ../Content/scss/partials/_primary.scss */
+/* line 151, ../Content/scss/partials/_primary.scss */
 .page-title h1, .page-title h2 {
   margin: 10px 0;
   color: #fff;
@@ -326,12 +326,12 @@ ol.round li.nine {
   font-size: 3.2em;
 }
 
-/* line 151, ../Content/scss/partials/_primary.scss */
+/* line 152, ../Content/scss/partials/_primary.scss */
 .page-title h2 {
   font-size: 2.8em;
 }
 
-/* line 153, ../Content/scss/partials/_primary.scss */
+/* line 154, ../Content/scss/partials/_primary.scss */
 .site-nav {
   position: absolute;
   top: 0;
@@ -341,7 +341,7 @@ ol.round li.nine {
   background-color: #232322;
 }
 
-/* line 154, ../Content/scss/partials/_primary.scss */
+/* line 155, ../Content/scss/partials/_primary.scss */
 .site-nav-logo {
   position: absolute;
   top: 10px;
@@ -363,13 +363,13 @@ ol.round li.nine {
   transition: top .2s linear,left .2s linear,opacity .2s linear;
 }
 
-/* line 155, ../Content/scss/partials/_primary.scss */
+/* line 156, ../Content/scss/partials/_primary.scss */
 .site-nav-logo:after {
   content: 'UCF';
   color: #fff;
 }
 
-/* line 156, ../Content/scss/partials/_primary.scss */
+/* line 157, ../Content/scss/partials/_primary.scss */
 .site-nav-logo .icons {
   display: block;
   position: absolute;
@@ -379,7 +379,7 @@ ol.round li.nine {
   bottom: 0;
 }
 
-/* line 157, ../Content/scss/partials/_primary.scss */
+/* line 158, ../Content/scss/partials/_primary.scss */
 .site-nav-overlay {
   display: none;
   position: absolute;
@@ -390,7 +390,7 @@ ol.round li.nine {
   z-index: 600;
 }
 
-/* line 158, ../Content/scss/partials/_primary.scss */
+/* line 159, ../Content/scss/partials/_primary.scss */
 .site-nav-hidden .site-nav-logo {
   filter: alpha(opacity=0);
   -khtml-opacity: 0;
@@ -399,7 +399,7 @@ ol.round li.nine {
   left: -54px;
 }
 
-/* line 159, ../Content/scss/partials/_primary.scss */
+/* line 160, ../Content/scss/partials/_primary.scss */
 .site-nav-scrollable-container {
   display: none;
   overflow: auto;
@@ -410,12 +410,12 @@ ol.round li.nine {
   box-shadow: inset -1px 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 160, ../Content/scss/partials/_primary.scss */
+/* line 161, ../Content/scss/partials/_primary.scss */
 .site-nav-scrollable-container::-webkit-scrollbar {
   display: none;
 }
 
-/* line 162, ../Content/scss/partials/_primary.scss */
+/* line 163, ../Content/scss/partials/_primary.scss */
 .wrapper {
   outline: 0;
   position: absolute;
@@ -426,7 +426,7 @@ ol.round li.nine {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 168, ../Content/scss/partials/_primary.scss */
+/* line 169, ../Content/scss/partials/_primary.scss */
 .wrapper-inner {
   padding: 0;
   width: 100%;
@@ -436,51 +436,56 @@ ol.round li.nine {
   box-sizing: border-box;
 }
 
+/* line 179, ../Content/scss/partials/_primary.scss */
+wrapper-body-inner {
+  background: #333333 url("/images/footer-bg.jpg") top center;
+}
+
 @media all and (max-width: 1024px) {
-  /* line 179, ../Content/scss/partials/_primary.scss */
+  /* line 185, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 0;
     position: relative;
   }
 
-  /* line 180, ../Content/scss/partials/_primary.scss */
+  /* line 186, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding: 0;
     max-width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 184, ../Content/scss/partials/_primary.scss */
+  /* line 190, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     background: none;
   }
 }
 @media all and (min-width: 1666px) {
-  /* line 188, ../Content/scss/partials/_primary.scss */
+  /* line 194, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 500px;
   }
 
-  /* line 189, ../Content/scss/partials/_primary.scss */
+  /* line 195, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding-left: 0;
     max-width: 910px;
   }
 }
 @media screen and (max-device-width: 1024px) {
-  /* line 193, ../Content/scss/partials/_primary.scss */
+  /* line 199, ../Content/scss/partials/_primary.scss */
   html {
     -webkit-text-size-adjust: none;
   }
 }
 @media screen and (min-device-width: 1025px) {
-  /* line 197, ../Content/scss/partials/_primary.scss */
+  /* line 203, ../Content/scss/partials/_primary.scss */
   .cover, .site-nav-logo {
     position: fixed;
   }
 }
 @media all and (max-width: 1024px) {
-  /* line 201, ../Content/scss/partials/_primary.scss */
+  /* line 207, ../Content/scss/partials/_primary.scss */
   .cover {
     position: relative!important;
     width: 100%;
@@ -488,62 +493,62 @@ ol.round li.nine {
     height: 675px;
   }
 
-  /* line 202, ../Content/scss/partials/_primary.scss */
+  /* line 208, ../Content/scss/partials/_primary.scss */
   .cover-body {
     width: 100%;
     padding-bottom: 40px;
   }
 
-  /* line 203, ../Content/scss/partials/_primary.scss */
+  /* line 209, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 60px;
     margin-bottom: 10px;
   }
 
-  /* line 204, ../Content/scss/partials/_primary.scss */
+  /* line 210, ../Content/scss/partials/_primary.scss */
   .cover-bestof .cover-title {
     font-size: 32px;
   }
 
-  /* line 205, ../Content/scss/partials/_primary.scss */
+  /* line 211, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: 1.6em;
   }
 
-  /* line 206, ../Content/scss/partials/_primary.scss */
+  /* line 212, ../Content/scss/partials/_primary.scss */
   .backend-cover-img {
     border: 1px solid #000;
   }
 
-  /* line 208, ../Content/scss/partials/_primary.scss */
+  /* line 214, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 70%;
   }
 
-  /* line 209, ../Content/scss/partials/_primary.scss */
+  /* line 215, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 3.4em;
   }
 
-  /* line 210, ../Content/scss/partials/_primary.scss */
+  /* line 216, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 2.8em;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 214, ../Content/scss/partials/_primary.scss */
+  /* line 220, ../Content/scss/partials/_primary.scss */
   .cover {
     height: 375px;
   }
 
-  /* line 215, ../Content/scss/partials/_primary.scss */
+  /* line 221, ../Content/scss/partials/_primary.scss */
   .cover-bestof, .cover-home, .cover-collection {
     min-height: 350px;
     height: auto;
     display: table;
   }
 
-  /* line 217, ../Content/scss/partials/_primary.scss */
+  /* line 223, ../Content/scss/partials/_primary.scss */
   .cover-body {
     display: table-cell;
     vertical-align: bottom;
@@ -553,7 +558,7 @@ ol.round li.nine {
     padding: 65px 5% 30px;
   }
 
-  /* line 218, ../Content/scss/partials/_primary.scss */
+  /* line 224, ../Content/scss/partials/_primary.scss */
   .cover-body:before {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
@@ -562,47 +567,47 @@ ol.round li.nine {
     background-image: linear, to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%;
   }
 
-  /* line 219, ../Content/scss/partials/_primary.scss */
+  /* line 225, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 2em;
     line-height: 1;
     margin-bottom: 5px;
   }
 
-  /* line 220, ../Content/scss/partials/_primary.scss */
+  /* line 226, ../Content/scss/partials/_primary.scss */
   .cover-title span {
     font-size: .7em;
   }
 
-  /* line 221, ../Content/scss/partials/_primary.scss */
+  /* line 227, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: .8em;
     margin-bottom: 6px;
   }
 
-  /* line 222, ../Content/scss/partials/_primary.scss */
+  /* line 228, ../Content/scss/partials/_primary.scss */
   .cover-avatar {
     width: 100px;
     height: 100px;
   }
 
-  /* line 223, ../Content/scss/partials/_primary.scss */
+  /* line 229, ../Content/scss/partials/_primary.scss */
   .cover-new-collection-link {
     margin-left: 0;
     line-height: 32px;
   }
 
-  /* line 225, ../Content/scss/partials/_primary.scss */
+  /* line 231, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 100%;
   }
 
-  /* line 226, ../Content/scss/partials/_primary.scss */
+  /* line 232, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 1.9em;
   }
 
-  /* line 227, ../Content/scss/partials/_primary.scss */
+  /* line 233, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 1.3em;
   }
@@ -2416,77 +2421,112 @@ All this is done for any sub-level being entered.
 Footer/Section Layout
 ========================================================================== */
 /* line 8, ../Content/scss/partials/_footer.scss */
+.wrapper-footer {
+  background-image: url("/images/footer_bg.fw.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/*-------------------------------*/
+/* The columns */
+/* line 18, ../Content/scss/partials/_footer.scss */
+.wrapper-footer-inner > ul {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1px;
+}
+
+/* line 24, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: #ccc;
+}
+
+/* line 31, ../Content/scss/partials/_footer.scss */
+.wrapper-footer-inner p {
+  background-color: #ffcc00;
+  padding: 9px;
+  width: 99%;
+  text-align: left;
+  line-height: 18px;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  opacity: 0.9;
+  cursor: default;
+}
+
+/* line 47, ../Content/scss/partials/_footer.scss */
+.wrapper-footer-inner p {
+  color: #ccc;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* line 53, ../Content/scss/partials/_footer.scss */
+.wrapper-footer-inner div {
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  margin-left: 20px;
+}
+
+/*-------------------------------*/
+/* The links */
+/* line 61, ../Content/scss/partials/_footer.scss */
+.wrapper-footer-inner > ul > li ul li {
+  font-size: .8em;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
+
+/* line 66, ../Content/scss/partials/_footer.scss */
+.wrapper-footer-inner > ul > li ul li a {
+  text-decoration: none !important;
+  color: #ccc !important;
+}
+
+/* line 71, ../Content/scss/partials/_footer.scss */
+.wrapper-footer-inner > ul > li ul li a:hover {
+  color: #7d8691 !important;
 }
 
 /* Tablet Layout: 501px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 501px) {
+@media all and (min-width: 501px) {
   /* =============================================================================
   Footer/Section Layout
   ========================================================================== */
   /*-------------------------------*/
   /* The columns */
-  /* line 24, ../Content/scss/partials/_footer.scss */
-  .wrapper-footer-inner > ul {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 1px;
-  }
-
   /* The four columns of links */
-  /* line 31, ../Content/scss/partials/_footer.scss */
+  /* line 86, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner ul > li {
     width: 25%;
     float: left;
   }
 
   /* The links */
-  /* line 37, ../Content/scss/partials/_footer.scss */
+  /* line 92, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner > ul > li ul li {
     padding: 0 5px;
     font-size: .8em;
     width: 100%;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   }
 
   /*-------------------------------*/
   /* The headers */
-  /* line 47, ../Content/scss/partials/_footer.scss */
+  /* line 103, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner p {
-    background-color: #058cc7;
-    padding: 9px;
-    width: 99%;
-    text-align: center;
-    line-height: 18px;
-    font-weight: bold;
-    font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-    opacity: 0.9;
-    cursor: default;
+    background: none;
   }
 
-  /* line 66, ../Content/scss/partials/_footer.scss */
+  /* line 107, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner > ul > li:hover p {
     opacity: 1;
-  }
-
-  /*-------------------------------*/
-  /* The links */
-  /* line 74, ../Content/scss/partials/_footer.scss */
-  .wrapper-footer-inner > ul > li ul li a {
-    text-decoration: none !important;
-    color: #7d8691 !important;
-  }
-
-  /* line 79, ../Content/scss/partials/_footer.scss */
-  .wrapper-footer-inner > ul > li ul li a:hover {
-    color: #ddd !important;
   }
 }
 /* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -2606,7 +2646,7 @@ Footer/Section Layout
   /*<== width of panel*/
   height: 90%;
   background: #a03232;
-  margin: 0 1px 0 0;
+  margin: 0 2px 0 0;
   padding: 0;
   line-height: 1em;
   float: left;
@@ -4292,24 +4332,18 @@ Footer/Section Layout
 }
 
 /* Development Only Border CSS - delete when done 
--------------------------------------------------- */
-/* line 20, ../Content/scss/site.scss */
+-------------------------------------------------- 
 .borderline {
-  border: 1px dashed red;
+    border: 1px dashed red;
 }
-
-/* line 24, ../Content/scss/site.scss */
 .centerline, .content-wrapper {
-  border: 1px dashed blue;
+    border: 1px dashed blue;
 }
-
-/* line 28, ../Content/scss/site.scss */
 .container {
-  border: 1px dashed green;
-}
-
+    border: 1px dashed green;
+}*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* Mobile Layout: 480px and below. */
-/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
+/* Mobile Layout: 500px and below. */
+/* Tablet Layout: 501px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 /* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/

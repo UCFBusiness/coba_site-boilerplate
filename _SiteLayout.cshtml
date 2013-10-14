@@ -38,7 +38,8 @@
         <!-- Google Analytics Code -->
 
     </head>
-    <body class="page page-img"><a id="top"></a>
+    <body class="page page-img" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);"> <!--Hides URL Bar on iPhone-->
+        <a id="top"></a>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -108,7 +109,7 @@
 					                        <a href="#">Our College</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Our College</li>
-						                        <li><a href="#">History</a></li> <!--include mission and vision-->
+						                        <li><a href="~/history">History</a></li> <!--include mission and vision-->
                                                 <li><a href="#">Accreditation</a></li>
                                                 <li><a href="#">Administration</a></li>
                                                 <li><a href="#">Facts &amp; Figures</a></li>
@@ -166,10 +167,9 @@
 			                        </div>
                                     
                                 </nav> <!--/dl-menuwrapper -->
-                                <div class="container"><br>@RenderSection("featured", required: false)</div>
-
-                                <p><!-- for development only --><label class="message" style="display: block; color: #fff"></label><!-- for development only --></p>
-
+                                <br><div class="container">@RenderSection("featured", required: false)
+                                    <!-- for development only --><p><label class="message" style="display: block; color: #fff"></label></p><!-- for development only -->
+                                </div>
                             </div> <!--/.cover-header -->
                             <!---->
 	                        <div class="cover-body">
@@ -199,34 +199,41 @@
                                     <div class="wrapper-footer-inner">
                                         <ul class="clearfix">
                                             <li>
-                                                <p class="home">Contact info</p>
-                                                <div><a href="#">un-styled ink</i></a></div>
-
-                                            </li>
-                                            <li>
-                                                <p class="services">Address</p>
+                                                <p class="address">Address</p>
                                                 <ul>
-                                                    <li>UCF College of Business Administration</li>
-                                                    <li>4000 Central Florida Blvd., P.O. Box 161991</li>
+                                                    <li>University of Central Florida</li>
+                                                    <li>College of Business Administration</li>
+                                                    <li>4000 Central Florida Blvd.,</li>
+                                                    <li>P.O. Box 161991</li>
                                                     <li>Orlando, Florida 32816-1991</li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <p class="social">Contact Info</p>
+                                                <p class="contact">Contact Info</p>
                                                 <ul>
-                                                    <li><span>(407) 823-2184</span> - <a href="#">Undergraduate Advising</a></li>
-                                                    <li><span>(407) 235-3917</span> - <a href="#">Graduate Advising</a></li>
-                                                    <li><span>(407) 823-2181</span> - <a href="#">General Information</a></li>
+                                                    <li><a href="#" target="_blank">Undergraduate Advising</a></li>
+                                                    <li><a href="tel:4078232184">(407) 823-2184</a></li>
+                                                    <li><a href="#" target="_blank">Graduate Advising</a></li>
+                                                    <li><a href="tel:4078232184">(407) 235-3917</a></li>
+                                                    <li><a href="#" target="_blank">General Information</a></li>
+                                                    <li><a href="tel:4078232184">(407) 823-2181</a></li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <p class="qlinks">Quick Links</p>
-
                                                 <ul>
-                                                    <li><a href="#">Link to page.</a></li>
-                                                    <li><a href="#">Link to page.</a></li>
-                                                    <li><a href="#">Link to page.</a></li>
+                                                    <li><a href="http://my.ucf.edu" target="_blank">My UCF</a></li>
+                                                    <li><a href="http://library.ucf.edu" target="_blank">UCF Library</a></li>
+                                                    <li><a href="http://ucf.custhelp.com" target="_blank">Ask UCF</a></li>
+                                                    <li><a href="https://giving.ucffoundation.org/SSLPage.aspx?pid=549" target="_blank">Give Back</a></li>
                                                 </ul>
+                                            </li>
+                                            <li>
+                                                <p class="social">Stay Connected</p>
+                                                <div><a href="http://www.twitter.com/ucfbusiness" target="_blank">twitter</i></a></div>
+                                                <div><a href="https://plus.google.com/107946459277643419963/posts" target="_blank">google +1</i></a></div>
+                                                <div><a href="http://www.facebook.com/ucfcba" target="_blank">facebook</i></a></div>
+                                                <div><a href="http://bit.ly/ucfbusinessalumni" target="_blank">linked-in</i></a></div>
                                             </li>
                                         </ul>
                                     </div>

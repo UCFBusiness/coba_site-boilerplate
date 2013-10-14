@@ -5,27 +5,15 @@
 
 @section Styles {
     <style> /*-- cover-img --*/
-        .page-img {background: url('/images/body-bg.jpg') fixed; background-size: cover;}
+       
         .cover-img {background-image: url('/images/pegasus_sun_rev.jpg'); background-size: cover;}
-        
-        .wrapper-inner{
-            background: url('/images/footer-bg.jpg') top center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            
-            border-left: 2px solid #000;
-            border-right: 2px solid #000;
-        }
         
     </style>
 }
 
 @section featured {
-
     <p><!-- Page headlines go here.--></p>
-
     <p>Authenticated: @WebSecurity.IsAuthenticated</p>
-
     <section id="login">
         @if (WebSecurity.IsAuthenticated) {
             <text>
@@ -42,11 +30,10 @@
             </ul>
         }
     </section>
-
 }
 
-<div style="max-width: 100%; height: 35px; text-align: right;">
-    <p class="cover-actions">
+<div>
+    <p class="cover-actions" style="height: 25px;">
 		@*<a data-action="sign-in-with-twitter" href="/account/login" class="btn btn-primary">
             <span class="icons icons-twitter"></span>
             <span style="font-size: .8em">Sign in with Twitter</span>
@@ -55,10 +42,9 @@
             <span class="icons icons-facebook"></span>
             <span style="font-size: .8em">Sign in with Facebook</span>
         </a>*@
-        <a href="/account/login"><img src="/images/setting-icon.png" alt="drawbridge settings" width="20" height="20"> Options</a>
+        @*<a href="#"><img src="/images/setting-icon.png" alt="drawbridge settings" width="20" height="20"> &nbsp; Settings</a>*@
 	</p>
 </div>
-
 
 <div class="pagespan">
     <section class="wrap">
@@ -69,64 +55,50 @@
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
+                        @*<a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>*@
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
 			</ul>
@@ -153,64 +125,48 @@
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
 			</ul>
@@ -237,64 +193,48 @@
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="~/images/temp/panel.jpg" alt="...">
                         <p><a href="#" target="_blank">Lorem ipsum</a></p>
-                        <a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>
                     </div>
                 </li>
 			</ul>
@@ -311,191 +251,3 @@
         </div><!--/controls -->
     </section>
 </div>
-
-
-<!--original layout-->
-@*<section>
-    <div id="example1" class="pagespan">
-
-		<div class="frame effects">
-			<ul class="clearfix">
-                <!-- 8 panels per row -->
-                <li>
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/take-the-ball.jpg" alt="...">
-                    <a href="http://www.bus.ucf.edu/dean/take-the-ball" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/dean-blog.jpg" alt="...">
-                    <p><a href="http://www.bus.ucf.edu/dean" target="_blank">Read blog</a></p>
-                </li>
-                <li>
-                    <img src="~/images/panels/meet-the-ambassadors.jpg" alt="...">
-                    <p><a href="http://www.youtube.com/playlist?list=PLblI-5jkdoaLAGz-wPFnjv-WtZiEFP4VS" target="_blank">Watch the videos</a></p>
-                </li>
-                <li>
-                    <img src="~/images/panels/social-media.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Stay connected</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/blackstone-launchpad.jpg" alt="...">
-                    <a href="http://ucf.thelaunchpad.org/" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel1.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-			</ul>
-            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
-		</div><!--/frames-->
-
-        <ul class="pages"></ul><!--/position marker-->
-        <br><br>
-
-    </div>
-</section>
-
-<section>
-    <div id="example2" class="pagespan">
-
-		<div class="frame effects">
-			<ul class="clearfix">
-                <!-- 8 panels per row -->
-                <li>
-                    <img src="~/images/panels/panel1.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel2.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel3.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/negotiate-to-the-top.jpg" alt="...">
-                    <a href="http://edc.research.ucf.edu/negotiate" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/strategic-leadership.jpg" alt="...">
-                    <a href="http://edc.research.ucf.edu/strategic-leadership" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel3.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel2.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more.</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel1.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-			</ul>
-            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
-		</div><!--/frames-->
-
-        <ul class="pages"></ul><!--/position marker-->
-        <br><br>
-
-    </div>
-</section>
-
-<section>
-    <div id="example3" class="pagespan">
-
-        <div class="frame effects">
-			<ul class="clearfix">
-                <!-- 8 panels per row -->
-                <li>
-                    <img src="~/images/panels/panel2.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel3.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel1.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Lorem ipsum dosectetur adipisicing elit, sed do...</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/organizational-hypocrisy.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <iframe src="//www.youtube.com/embed/Z92QqcI5CmM?rel=0" width="320" height="300"></iframe>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel2.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel3.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-                <li>
-                    <img src="~/images/panels/panel1.jpg" alt="...">
-                    <a href="#" target="_blank">
-                        <p>Learn more</p>
-                    </a>
-                </li>
-			</ul>
-            <button class="prev"><i class="icon-angle-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-angle-right"></i></button><!--/forward button-->
-		</div><!--/frames-->
-
-        <ul class="pages"></ul><!--/position marker-->
-        <br><br>
-
-    </div>
-</section>*@
