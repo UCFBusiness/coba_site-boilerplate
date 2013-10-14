@@ -176,10 +176,8 @@ ol.round {
 }
 
 @media all and (max-width:1024px){
-    
     .wrapper{left:0;position:relative}
     .wrapper-inner{padding:0;max-width:100%}
-
 }
 
 @media all and (max-width:500px){
@@ -200,7 +198,7 @@ ol.round {
 }
 
 @media all and (max-width:1024px){
-    .cover{position:relative!important;width:100%;max-width:none;height:676px}
+    .cover{position:relative!important;width:100%;max-width:none;height:675px}
     .cover-body{width:100%;padding-bottom:40px}
     .cover-title{font-size:60px;margin-bottom:10px}
     .cover-bestof .cover-title{font-size:32px}
@@ -213,7 +211,7 @@ ol.round {
 }
 
 @media all and (max-width:500px){
-    .cover{height:350px}
+    .cover{height:375px}
     .cover-bestof,.cover-home,.cover-collection{min-height:350px;height:auto;display:table}
 
     .cover-body{display:table-cell;vertical-align:bottom;position:relative;left:-1px;margin:0;padding:65px 5% 30px}

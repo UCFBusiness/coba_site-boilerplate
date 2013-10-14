@@ -1,22 +1,28 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Bachelors of Science in Business Administration - Management";
+    Page.Title = "Bachelors of Science in Business Administration";
 }
 
 @section Styles {
-    <!--<style> /*-- page-specific styles --*/ </style>-->
+<style> /*-- page-specific styles --*/ 
+    
+    .cover-img {background-image: url('/images/management-bg.jpg');}
+    
+</style>
 }
 
 @section featured {
-<section class="featured">
-    <div class="content-wrapper">
-
-        <hgroup class="title">
-            <h1>@Page.Title.</h1>
-            <h2>H2 title header</h2>
-        </hgroup>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-    </div>
-</section>
+    <hgroup class="page-title">
+        <h2>@Page.Title</h2>
+        <h1>Management</h1>
+    </hgroup>
 }
+
+<div id="st-container" class="st-container clearfix">
+    <!-- content push wrapper -->
+    <div class="st-pusher">
+
+
+
+    </div><!-- /st-pusher -->
+</div><!-- /st-container -->

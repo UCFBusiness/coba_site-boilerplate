@@ -3,7 +3,25 @@
     Page.Title = "Masters in Accounting";
 }
 
-<div class="title">
-    <h1>@Page.Title</h1>
-    <h2>Your app description page.</h2>
-</div>
+@section Styles {
+<style> /*-- page-specific styles --*/ 
+    
+    .cover-img {background-image: url('/images/msa-bg.jpg');}
+    
+</style>
+}
+
+@section featured {
+    <hgroup class="page-title">
+        <h2>@Page.Title</h2>
+        <h1></h1>
+    </hgroup>
+}
+
+<div id="st-container" class="st-container clearfix">
+    <div class="st-pusher">
+
+
+
+    </div><!-- /st-pusher -->
+</div><!-- /st-container -->

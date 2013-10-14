@@ -15,7 +15,7 @@ require.config({
     }
 });
 
-require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix'], function () {
+require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize'], function () {
 
     //----- Font Sizes-------------------------------
     $('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '16px' });
@@ -126,7 +126,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix'], function () {
         require(['lockfix'], function () {
 
             //-- screensize ----------------------------------
-            $("#message").html(width + " x " + height + " - mobile");
+            $(".message").html(width + " x " + height + " - mobile");
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
@@ -143,7 +143,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix'], function () {
         require(['lockfix'], function () {
 
             //-- screensize ----------------------------------
-            $("#message").html(width + " x " + height + " - tablet");
+            $(".message").html(width + " x " + height + " - tablet");
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
@@ -151,7 +151,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix'], function () {
             //------------------------------------------------
 
             //-- page menu -----------------------------------
-            $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 0, bottom: 1410} });
+            $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 0, bottom: 410} });
             //------------------------------------------------
 
         });
@@ -160,7 +160,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix'], function () {
         require(['lockfix'], function () {
 
             //-- screensize ----------------------------------
-            $("#message").html(width + " x " + height + " - desktop");
+            $(".message").html(width + " x " + height + " - desktop");
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -168,16 +168,6 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix'], function () {
             //------------------------------------------------
 
         });
-
-    //---------------------------------------------------
-    // On PageLoad...
-    // occurs later, when all content has also been loaded. (e.g. images)
-    //---------------------------------------------------
-
-    $(window).load(function () {
-        // do something...
-    }); //end load
-
 
     //---------------------------------------------------
     // On Smart PageResize...
@@ -189,27 +179,43 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix'], function () {
         var width = parseInt($(this).width());
         var height = parseInt($(this).height());
 
-        sly.reload();
-
-        if (width < 481) //load mobile scripts
+        if (width < 501) //load mobile scripts
             require([], function () {
+
                 //-- screensize ----------------------------------
-                $("#message").html(width + " x " + height + " - mobile");
+                $(".message").html(width + " x " + height + " - mobile");
                 //------------------------------------------------
+
+                //-- resize to fit -------------------------------
+                $('.cover').css('min-height', height);
+                //------------------------------------------------
+
             });
 
-        if ((width > 480) && (width < 1025)) //load tablet scripts
+        if ((width > 500) && (width < 1025)) //load tablet scripts
             require([], function () {
+
                 //-- screensize ----------------------------------
-                $("#message").html(width + " x " + height + " - tablet");
+                $(".message").html(width + " x " + height + " - tablet");
                 //------------------------------------------------
+
+                //-- resize to fit -------------------------------
+                $('.cover').css('min-height', height);
+                //------------------------------------------------
+
             });
 
         if (width > 1024) //load desktop scripts
             require([], function () {
+
                 //-- screensize ----------------------------------
-                $("#message").html(width + " x " + height + " - desktop");
+                $(".message").html(width + " x " + height + " - desktop");
                 //------------------------------------------------
+
+                //-- resize to fit -------------------------------
+                $('.cover').css('min-height', height);
+                //------------------------------------------------
+
             });
 
     }); //end debouncedresize

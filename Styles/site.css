@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis|Cantora+One|Quicksand|Titillium+Web|Roboto|Advent+Pro);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 /* line 2, ../Content/scss/partials/_primary.scss */
 html,
 body {
@@ -435,113 +437,113 @@ ol.round li.nine {
 }
 
 @media all and (max-width: 1024px) {
-  /* line 180, ../Content/scss/partials/_primary.scss */
+  /* line 179, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 0;
     position: relative;
   }
 
-  /* line 181, ../Content/scss/partials/_primary.scss */
+  /* line 180, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding: 0;
     max-width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 186, ../Content/scss/partials/_primary.scss */
+  /* line 184, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     background: none;
   }
 }
 @media all and (min-width: 1666px) {
-  /* line 190, ../Content/scss/partials/_primary.scss */
+  /* line 188, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 500px;
   }
 
-  /* line 191, ../Content/scss/partials/_primary.scss */
+  /* line 189, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding-left: 0;
     max-width: 910px;
   }
 }
 @media screen and (max-device-width: 1024px) {
-  /* line 195, ../Content/scss/partials/_primary.scss */
+  /* line 193, ../Content/scss/partials/_primary.scss */
   html {
     -webkit-text-size-adjust: none;
   }
 }
 @media screen and (min-device-width: 1025px) {
-  /* line 199, ../Content/scss/partials/_primary.scss */
+  /* line 197, ../Content/scss/partials/_primary.scss */
   .cover, .site-nav-logo {
     position: fixed;
   }
 }
 @media all and (max-width: 1024px) {
-  /* line 203, ../Content/scss/partials/_primary.scss */
+  /* line 201, ../Content/scss/partials/_primary.scss */
   .cover {
     position: relative!important;
     width: 100%;
     max-width: none;
-    height: 676px;
+    height: 675px;
   }
 
-  /* line 204, ../Content/scss/partials/_primary.scss */
+  /* line 202, ../Content/scss/partials/_primary.scss */
   .cover-body {
     width: 100%;
     padding-bottom: 40px;
   }
 
-  /* line 205, ../Content/scss/partials/_primary.scss */
+  /* line 203, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 60px;
     margin-bottom: 10px;
   }
 
-  /* line 206, ../Content/scss/partials/_primary.scss */
+  /* line 204, ../Content/scss/partials/_primary.scss */
   .cover-bestof .cover-title {
     font-size: 32px;
   }
 
-  /* line 207, ../Content/scss/partials/_primary.scss */
+  /* line 205, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: 1.6em;
   }
 
-  /* line 208, ../Content/scss/partials/_primary.scss */
+  /* line 206, ../Content/scss/partials/_primary.scss */
   .backend-cover-img {
     border: 1px solid #000;
   }
 
-  /* line 210, ../Content/scss/partials/_primary.scss */
+  /* line 208, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 70%;
   }
 
-  /* line 211, ../Content/scss/partials/_primary.scss */
+  /* line 209, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 3.4em;
   }
 
-  /* line 212, ../Content/scss/partials/_primary.scss */
+  /* line 210, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 2.8em;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 216, ../Content/scss/partials/_primary.scss */
+  /* line 214, ../Content/scss/partials/_primary.scss */
   .cover {
-    height: 350px;
+    height: 375px;
   }
 
-  /* line 217, ../Content/scss/partials/_primary.scss */
+  /* line 215, ../Content/scss/partials/_primary.scss */
   .cover-bestof, .cover-home, .cover-collection {
     min-height: 350px;
     height: auto;
     display: table;
   }
 
-  /* line 219, ../Content/scss/partials/_primary.scss */
+  /* line 217, ../Content/scss/partials/_primary.scss */
   .cover-body {
     display: table-cell;
     vertical-align: bottom;
@@ -551,7 +553,7 @@ ol.round li.nine {
     padding: 65px 5% 30px;
   }
 
-  /* line 220, ../Content/scss/partials/_primary.scss */
+  /* line 218, ../Content/scss/partials/_primary.scss */
   .cover-body:before {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
@@ -560,47 +562,47 @@ ol.round li.nine {
     background-image: linear, to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%;
   }
 
-  /* line 221, ../Content/scss/partials/_primary.scss */
+  /* line 219, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 2em;
     line-height: 1;
     margin-bottom: 5px;
   }
 
-  /* line 222, ../Content/scss/partials/_primary.scss */
+  /* line 220, ../Content/scss/partials/_primary.scss */
   .cover-title span {
     font-size: .7em;
   }
 
-  /* line 223, ../Content/scss/partials/_primary.scss */
+  /* line 221, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: .8em;
     margin-bottom: 6px;
   }
 
-  /* line 224, ../Content/scss/partials/_primary.scss */
+  /* line 222, ../Content/scss/partials/_primary.scss */
   .cover-avatar {
     width: 100px;
     height: 100px;
   }
 
-  /* line 225, ../Content/scss/partials/_primary.scss */
+  /* line 223, ../Content/scss/partials/_primary.scss */
   .cover-new-collection-link {
     margin-left: 0;
     line-height: 32px;
   }
 
-  /* line 227, ../Content/scss/partials/_primary.scss */
+  /* line 225, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 100%;
   }
 
-  /* line 228, ../Content/scss/partials/_primary.scss */
+  /* line 226, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 1.9em;
   }
 
-  /* line 229, ../Content/scss/partials/_primary.scss */
+  /* line 227, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 1.3em;
   }
@@ -1011,14 +1013,13 @@ Navigation Menu - Discovery
 
   /* line 337, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
-    /*
-    background: rgba(255,255,255,.9);
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,.4);  shadow */
-    background: #FFF;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    /*shadow */
     padding: 0;
     margin: 50px 0 0 0;
     position: absolute;
-    width: 365px;
+    width: 320px;
     /* <== */
     opacity: 0;
     pointer-events: none;
@@ -1050,7 +1051,7 @@ Navigation Menu - Discovery
 
   /* line 373, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu li {
-    width: 365px;
+    width: 320px;
     /* <== */
     border: none;
     margin-bottom: 1px;
@@ -1059,10 +1060,10 @@ Navigation Menu - Discovery
   /* all uls */
   /* line 380, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper ul {
-    background: #FFF;
+    background: none;
     padding: 0;
     border: none;
-    max-width: 365px;
+    max-width: 320px;
     /* <== */
     list-style: none;
     overflow: hidden;
@@ -1145,7 +1146,7 @@ Navigation Menu - Discovery
 
   /* line 451, ../Content/scss/partials/header/_navigation.scss */
   .no-touch .dl-menuwrapper li a:hover {
-    background: #FFE599;
+    background: rgba(255, 229, 153, 0.7);
     color: #333;
     /* a:hover color*/
     border-top: 1px solid #ddd;
@@ -1160,7 +1161,7 @@ Navigation Menu - Discovery
 }
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-  /* line 469, ../Content/scss/partials/header/_navigation.scss */
+  /* line 468, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton {
     border-left: 1px solid #ddd;
     background: rgba(255, 255, 255, 0.7) url(/images/icon-search.png) no-repeat;
@@ -1172,12 +1173,12 @@ Navigation Menu - Discovery
     display: block;
   }
 
-  /* line 478, ../Content/scss/partials/header/_navigation.scss */
+  /* line 477, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton:hover {
     background-position: 3px 2px;
   }
 
-  /* line 482, ../Content/scss/partials/header/_navigation.scss */
+  /* line 481, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
     float: left;
   }
@@ -4267,19 +4268,42 @@ Footer/Section Layout
   padding-left: 300px;
 }
 
+@font-face {
+  font-family: Satisfy;
+  src: local("Satisfy"), url(http://themes.googleusercontent.com/static/fonts/satisfy/v3/swgYNTW5Q6X61bBH6SDBsg.eot) format("embedded-opentype"), url(http://themes.googleusercontent.com/static/fonts/satisfy/v3/ch7X2unYkww0EzsjlC3m8w.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("/content/font/icomoon.eot");
+  src: url("/content/font/icomoon.eot?#iefix") format("embedded-opentype"), url("/content/font/icomoon.woff") format("woff"), url("/content/font/icomoon.ttf") format("truetype"), url("/content/font/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'arrows';
+  src: url("/content/font/arrows.eot");
+  src: url("/content/font/arrows.eot?#iefix") format("embedded-opentype"), url("/content/font/arrows.woff") format("woff"), url("/content/font/arrows.ttf") format("truetype"), url("/content/font/arrows.svg#arrows") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Development Only Border CSS - delete when done 
 -------------------------------------------------- */
-/* line 19, ../Content/scss/site.scss */
+/* line 20, ../Content/scss/site.scss */
 .borderline {
   border: 1px dashed red;
 }
 
-/* line 23, ../Content/scss/site.scss */
+/* line 24, ../Content/scss/site.scss */
 .centerline, .content-wrapper {
   border: 1px dashed blue;
 }
 
-/* line 27, ../Content/scss/site.scss */
+/* line 28, ../Content/scss/site.scss */
 .container {
   border: 1px dashed green;
 }

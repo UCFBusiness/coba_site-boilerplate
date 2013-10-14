@@ -335,15 +335,15 @@ nav.dl-menuwrapper {
     visibility: hidden;
 }
 .dl-menuwrapper .dl-menu {
-    /*
+    
     background: rgba(255,255,255,.9);
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,.4);  shadow */
-    background: #FFF;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,.4);  /*shadow */
+
     padding:0;
 	margin: 50px 0 0 0;
 
 	position: absolute;
-	width: 365px; /* <== */
+	width: 320px; /* <== */
 	opacity: 0;
 	pointer-events: none;
     border-radius: 5px;
@@ -371,17 +371,17 @@ nav.dl-menuwrapper {
 }
 
 .dl-menuwrapper .dl-menu li {
-    width: 365px; /* <== */
+    width: 320px; /* <== */
     border: none;
     margin-bottom: 1px;
 }
 
 /* all uls */
 .dl-menuwrapper ul {
-    background: #FFF;
+    background: none;
     padding:0;
     border: none;
-	max-width: 365px; /* <== */
+	max-width: 320px; /* <== */
     list-style: none;
     overflow: hidden;
 
@@ -449,7 +449,7 @@ nav.dl-menuwrapper {
 }
 
 .no-touch .dl-menuwrapper li a:hover {
-	background: #FFE599; color: #333; /* a:hover color*/
+	background: rgba(255,229,153,.7); color: #333; /* a:hover color*/
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #fff;
     padding: 9px 10px 9px 15px;
@@ -464,7 +464,6 @@ nav.dl-menuwrapper {
 
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-
 
     .dl-searchbutton {
         border-left: 1px solid #ddd;
