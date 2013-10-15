@@ -10,7 +10,7 @@
     border-bottom: 1px solid #BBB;
 }
 
-.col {
+.col-span-2, .col-span-3 {
 	-webkit-column-width: auto;
 	-moz-column-width: auto;
 	column-width: auto;
@@ -38,9 +38,27 @@
         border: none;
     }
 
-    .col {
+    .col-span-2 {
 	    margin: 0 auto;
 	    text-align: justify;
+	    line-height: 1.4;
+
+	    -webkit-column-width: 45%;
+	    -moz-column-width: 5%;
+	    column-width: 45%;
+
+	    -webkit-column-count: 2;
+	    -moz-column-count: 2;
+	    column-count: 2;
+
+	    -webkit-column-gap: 1%;
+	    -moz-column-gap: 1%;
+	    column-gap: 1%;
+    }
+
+    .col-span-3 {
+	    margin: 0 auto;
+	    text-align: left;
 	    line-height: 1.4;
 
 	    -webkit-column-width: 30%;

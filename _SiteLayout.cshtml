@@ -29,8 +29,19 @@
         <link type="text/css" rel="stylesheet" href="~/content/css/font-awesome.min.css" />
         @RenderSection("Styles", required: false)
 
+        <!-- Modernizr Code -->
         <script src="~/scripts/modernizr-2.6.2.js"></script>
-        <!-- Google Analytics Code -->
+        <!-- Google Analytics Code 
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-44861717-1', 'ucf.edu');
+          ga('send', 'pageview');
+
+        </script>-->
 
     </head>
     <body class="page page-img" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);"> <!--Hides URL Bar on iPhone-->
@@ -94,14 +105,14 @@
 					                        <a href="#">Our College</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Our College</li>
-						                        <li><a href="#">History</a></li> <!--include mission and vision-->
-                                                <li><a href="#">Accreditation</a></li>
-                                                <li><a href="#">Administration</a></li>
-                                                <li><a href="#">Facts &amp; Figures</a></li>
-                                                <li><a href="#">Services &amp; Locations</a></li>
-                                                <li><a href="#">Social Media</a></li>
-						                        <li><a href="#">Student Ambassadors</a></li>
-                                                <li><a href="#">Student Organizations</a></li>
+						                        <li><a href="~/history">History</a></li> <!--include mission and vision-->
+                                                <li><a href="~/accreditation">Accreditation</a></li>
+                                                <li><a href="~/administration">Administration</a></li>
+                                                <li><a href="~/facts-figures">Facts &amp; Figures</a></li>
+                                                <li><a href="~/services-locations">Services &amp; Locations</a></li>
+                                                <li><a href="~/social-media">Social Media</a></li>
+						                        <li><a href="~/student-ambassadors">Student Ambassadors</a></li>
+                                                <li><a href="~/student-organizations">Student Organizations</a></li>
 					                        </ul>
 				                        </li>
                                         <li>
@@ -115,9 +126,10 @@
 					                        <a href="#">Alumni &amp; Friends</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Alumni &amp; Friends</li>
-						                        <li><a href="#">Development</a></li>
+						                        @*<li><a href="#">Development</a></li>
 						                        <li><a href="#">Hall of Fame</a></li>
-                                                <li><a href="#">Spotlights</a></li>
+                                                <li><a href="#">Spotlights</a></li>*@
+                                                 <li><a href="#"><small>(coming soon)</small></a></li>
 
                                                 <!--action links
 						                        <li><a href="#">V-volunteer</a></li>
@@ -132,7 +144,10 @@
 					                        <a href="#">Careers &amp; Recruitment</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Careers &amp; Recruitment</li>
-						                        <li><a href="#">Coming Soon</a></li>
+                                                @*<li><a href="#">Hire our students</a></li>
+                                                <li><a href="#">Geoff</a></li>*@
+						                        <li><a href="#"><small>(coming soon)</small></a></li>
+
 					                        </ul>
 				                        </li>
 			                        </ul>
@@ -224,6 +239,7 @@
                                                 <div><a href="http://bit.ly/ucfbusinessalumni" target="_blank">linked-in</i></a></div>
                                             </li>
                                         </ul>
+                                        <br>
                                     </div>
                                 </footer><!--/.wrapper-footer -->
                                 <!---->
@@ -259,7 +275,6 @@
         <script src="//scripts.bus.ucf.edu/cdn/js/libs/bootstrap-scrollspy" type="text/javascript"></script>
 
         <script src="~/content/js/classie.js"></script>
-        @*<script src="~/content/js/dlmenu.js"></script>*@
         <script src="~/content/js/sidebarEffects.js"></script>
 
         @*<script src="~/content/js/jquery.lockfixed.min.js"></script>

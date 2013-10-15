@@ -4,6 +4,8 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    Moses Henriquez -- web manager -- @mohenriquez
+    Jonathan Gabriel -- senior information specialist -- @jongabriel
 
 # THANKS
 
@@ -13,3 +15,4 @@
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
+    ASP.NET
