@@ -119,12 +119,11 @@ ol.round {
 .cover-description{font-size:16px;line-height:1.2;color:#fff;margin-bottom:14px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
 .cover-description a{color:#fff;text-decoration:underline}
 
-
-/*
-.cover-actions{padding-top:20px;margin-top:20px;border-top:1px solid rgba(255,255,255,0.3)}
+.cover-actions{padding-top:23px;margin-top:0px;border-top:1px solid rgba(255,255,255,0.3)}
 .cover-actions .btn{margin-right:5px}
 .cover-actions .btn-delete{float:right}
-.cover-has-subscribe-action .cover-primary-actions{float:left}
+
+/*.cover-has-subscribe-action .cover-primary-actions{float:left}
 .cover-has-subscribe-action .cover-secondary-actions{float:right;margin-top:5px}
 .cover-has-subscribe-action .cover-secondary-actions .btn{margin-right:0;margin-left:5px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
 .cover-new-collection-link{font-family:"freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;font-weight:400;margin-left:5px;color:#fff;font-size:14px;line-height:40px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
@@ -176,11 +175,6 @@ ol.round {
     box-sizing:border-box;
 }
 
-wrapper-body-inner {
-    background: #333 url('/images/footer-bg.jpg') top center;
-}
-
-
 @media all and (max-width:1024px){
     .wrapper{left:0;position:relative}
     .wrapper-inner{padding:0;max-width:100%}
@@ -201,6 +195,7 @@ wrapper-body-inner {
 
 @media screen and (min-device-width:1025px){
     .cover, .site-nav-logo {position: fixed;}
+    .wrapper-header-inner {height: 35px; padding: 5px;}
 }
 
 @media all and (max-width:1024px){

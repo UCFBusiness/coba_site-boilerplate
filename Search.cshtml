@@ -1,12 +1,25 @@
-﻿@{
+﻿@section Scripts {
+    <script type="text/javascript">
+        var googleSearchIframeName = "cse-search-results";
+        var googleSearchFormName = "cse-search-box";
+        var googleSearchFrameWidth = 700;
+        var googleSearchDomain = "www.google.com";
+        var googleSearchPath = "/cse";
+    </script>
+    <script type="text/javascript" src="http://www.bus.ucf.edu/views/scripts/show_afs_search.js"></script>
+}
+
+@{
     Layout = "~/_SiteLayout.cshtml";
     Page.Title = "Search";
-
-
 }
 
 @section Styles {
     <!--<style> /*-- page-specific styles --*/ </style>-->
 }
 
-Search Results
+<div class="container">
+    Search Results
+    <div id="cse-search-results"></div>
+</div>
+

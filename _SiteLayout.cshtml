@@ -14,24 +14,19 @@
         <title>@Page.Title - UCF College of Business Administration</title>
         <meta name="description" content="University of Central Florida, College of Business Administration, Accounting, Economics, Finance, Management, Marketing, Real Estate, Sport Business" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content="UCF-Business" />
-
         @*<link rel="apple-touch-icon-precomposed" sizes="57x57" href="~/images/ico/apple-touch-icon-57-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/ico/apple-touch-icon-72-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/ico/apple-touch-icon-114-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/ico/apple-touch-icon-144-precomposed.png" />*@
-
         <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
-
-        <!-- Bootstrap core CSS -->
+        <!-- Bootstrap CSS -->
         <link type="text/css" rel="stylesheet" href="~/content/bootstrap/bootstrap.css" />
         <!-- Site CSS -->
         <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
         <link type="text/css" rel="stylesheet" href="~/content/css/font-awesome.min.css" />
-
         @RenderSection("Styles", required: false)
 
         <script src="~/scripts/modernizr-2.6.2.js"></script>
@@ -44,22 +39,12 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-            <div class="content-wrapper">
-                @*This area is for announcements and alerts which will appear at the top of the site.*@
-            </div>
-        </header> <!--/header -->
-        
-        <div class="site-nav-overlay"></div>
-
         <!--BEGIN: Content-->
         <div id="container">
-            <div id="content" class="main-content clearfix">
+            <div id="content" class="screen-content">
                 <div class="content-wrapper">
-	                <div class="screen-content">
                         <!---->
                         <aside class="cover cover-home">
-			                <!---->
                             <div class="cover-header cover-img">
                                 <div id="UCFHBHeader">
                                     <div class="UCFHBWrapper">
@@ -67,8 +52,8 @@
                                             <a href="http://www.ucf.edu" target="_blank"><span class="UCFHBText">University of Central Florida</span></a><!--/UCF Logo-->
                                         </section>
                                     </div><!--/UCF Header Wrapper-->
-                                </div> <!--/UCFHBHeader -->
-                                <nav id="main_menu" class="dl-menuwrapper clearfix">
+                                </div><!--/UCFHBHeader -->
+                                <nav id="main_menu" class="dl-menuwrapper site-nav clearfix">
                                     <a href="~/" class="dl-home">HOME</a>
                                     <button class="dl-trigger">DISCOVER</button>
                                     <ul class="dl-menu">
@@ -109,7 +94,7 @@
 					                        <a href="#">Our College</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Our College</li>
-						                        <li><a href="~/history">History</a></li> <!--include mission and vision-->
+						                        <li><a href="#">History</a></li> <!--include mission and vision-->
                                                 <li><a href="#">Accreditation</a></li>
                                                 <li><a href="#">Administration</a></li>
                                                 <li><a href="#">Facts &amp; Figures</a></li>
@@ -166,34 +151,37 @@
 				                        </form>
 			                        </div>
                                     
-                                </nav> <!--/dl-menuwrapper -->
-                                <br><div class="container">@RenderSection("featured", required: false)
-                                    <!-- for development only --><p><label class="message" style="display: block; color: #fff"></label></p><!-- for development only -->
-                                </div>
+                                </nav><!--/dl-menuwrapper -->
+                                <div class="site-nav-overlay"></div>
+                                <div class="container"><br>@RenderSection("featured", required: false)</div>
+
+                                <p><!-- for development only --><label class="message" style="display: block; color: #fff"></label><!-- for development only --></p>
+
                             </div> <!--/.cover-header -->
-                            <!---->
 	                        <div class="cover-body">
                                 <div class="cover-body-inner">
 			                        <h1 class="cover-title">College <span>of</span> Business</h1>
 			                        <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
                                         @*<br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
                                     <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business</p></div>
-                                    <div><!--scroll down for more arrow--></div>
+                                    <div><!--scroll down arrow--></div>
 		                        </div>
-                            </div> <!--/.cover-body -->
-                            <!---->
-                        </aside> <!--/.cover -->
-                        <!---->
-		                <section class="wrapper"> <!--background image here-->
+                            </div><!--/.cover-body -->
+                        </aside><!--/.cover -->
+		                <section id="main-content" class="wrapper"><!--background image here-->
 			                <div class="wrapper-inner">
                                 <!---->
                                 <header class="wrapper-header">
-                                    <div class="wrapper-header-inner"></div>
-                                </header> <!--/.wrapper-header -->
+                                    <div class="wrapper-header-inner">
+                                        @*Students | Faculty | Corporate Partners | Search*@
+                                    </div>
+                                </header><!--/.wrapper-header -->
                                 <!---->
                                 <div class="wrapper-body">
-                                    <div class="wrapper-body-inner">@RenderBody()</div>
-                                </div> <!--/.wrapper-body -->
+                                    <div class="wrapper-body-inner">
+                                        @RenderBody()
+                                    </div>
+                                </div><!--/.wrapper-body -->
                                 <!---->
                                 <footer class="wrapper-footer">
                                     <div class="wrapper-footer-inner">
@@ -237,28 +225,20 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </footer> <!--/.wrapper-footer -->
+                                </footer><!--/.wrapper-footer -->
                                 <!---->
 			                </div>
-		                </section> <!--/.wrapper -->
-                        <!---->
-                        @*<aside class="backend">
+		                </section><!--/.wrapper -->
+                        @*<aside class="backend content-wrapper">
                             <div class="backend-cover-img" style="background-image: url('images/finance-bg.jpg')">
                                 Stuff goes here.
                             </div>
-                        </aside>*@
+                        </aside>*@<!--/.backend -->
                         <!---->
-	                </div>
                 </div>
             </div>
-        </div> <!--/content container -->
+        </div><!--/content container -->
         <!--FINIS: Content-->
-
-        <footer> 
-            <div class="content-wrapper">
-                @*<img src="..." class="img-responsive" alt="Responsive image">*@
-            </div>
-        </footer> <!--/footer --><!--only visible on mobile and tablet view-->
 
         <a href="#" class="back-to-top"><i class="icon-angle-up"></i></a>
         <span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span>

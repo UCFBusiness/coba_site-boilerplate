@@ -43,7 +43,7 @@
 .pagespan button:hover, .pagespan button:hover { opacity: 1; }
 .pagespan button:disabled, .pagespan button:disabled { opacity: .2; }
 
-.pagespan .forward, .pagespan .backward { float: left; width: 50px; height: 260px; font-size: 60px; border: 1px dashed blue;}
+.pagespan .forward, .pagespan .backward { float: left; width: 50px; height: 260px; font-size: 60px;}
 .pagespan .forward { float: right; }
 
 .pagespan .next, .pagespan .prev { float: left; width: 100px; height: 200px; font-size: 60px; }
