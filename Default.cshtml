@@ -12,9 +12,11 @@
 }
 
 @section featured {
+
     <p><!-- Page headlines go here.--></p>
-    <p>Authenticated: @WebSecurity.IsAuthenticated</p>
-    <section id="login">
+    
+    <section id="login" style="display: none;">
+        <p>Authenticated: @WebSecurity.IsAuthenticated</p>
         @if (WebSecurity.IsAuthenticated) {
             <text>
                 Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
@@ -52,16 +54,30 @@
                         <p><a href="http://www.bus.ucf.edu/dean" target="_blank">Read the Dean's latest post >> </a></p>
                     </div>
                 </li>
+
+                <li>
+                    <div title="Undergraduate Student Advising">
+                        <img src="~/images/panels/advising.jpg" alt="...">
+                        <p><a href="http://www.bus.ucf.edu/students/undergraduate/" target="_blank">Undergraduate Student Advising</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div title="Keon Testing Center">
+                        <img src="http://images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" width="320" height="300" alt="...">
+                        <p><a href="http://www.bus.ucf.edu/testingcenter" target="_blank">Keon Testing Center</a></p>
+                    </div>
+                </li>
+
                 <li>
                     <div title="Meet our ambassadors.">
                         <img src="~/images/panels/ambassadors.jpg" alt="...">
-                        <p><a href="~/ambassadors">Learn more about our ambassadors.</a></p>
+                        <p><a href="~/student-ambassadors">Learn more about our ambassadors.</a></p>
                     </div>
                 </li>
                 <li>
                     <div title="Stay connected with social media.">
                         <img src="~/images/panels/social-media.jpg" alt="...">
-                        <p><a href="~/social-connections" target="_blank">Stay connected with our social college.</a></p>
+                        <p><a href="~/social-media" target="_blank">Stay connected with our social college.</a></p>
                     </div>
                 </li>
                 <li>
@@ -89,7 +105,7 @@
                 </li>
                 <li>
                     <div title="View the video by the Dr. Glenn Hubbard.">
-                        <img src="~/images/panels/video.jpg" alt="...">
+                        <img src="~/images/panels/glenn-hubbard.jpg" alt="...">
                         <p><a href="https://tegr.it/y/1at78" target="_blank">Watch Dr. Glenn Hubbard's presentation.</a></p>
                     </div>
                 </li>
@@ -152,13 +168,13 @@
                 </li>
                 <li>
                     <div title="black and gold gala">
-                        <img src="~/images/panels/.jpg" alt="...">
+                        <img src="~/images/panels/black-and-gold-gala.jpg" alt="...">
                         <p><a href="https://www.google.com/calendar/event?eid=bWk5YnZnbmUzY2QxbmJtOWNoNzQ2NmZmczAgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">Learn more.</a></p>
                     </div>
                 </li>
                 <li>
                     <div title="hall of fame">
-                        <img src="~/images/panels/.jpg" alt="...">
+                        <img src="~/images/panels/hall-of-fame.jpg" alt="...">
                         <p><a href="https://www.google.com/calendar/event?eid=amVraGljZm5yY2NsdHNxazgycWtoY2l0NmsgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">Learn more.</a></p>
                     </div>
                 </li>

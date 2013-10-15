@@ -170,15 +170,16 @@
                                 <div class="site-nav-overlay"></div>
                                 <div class="container"><br>@RenderSection("featured", required: false)</div>
 
-                                <p><!-- for development only --><label class="message" style="display: block; color: #fff"></label><!-- for development only --></p>
+                                @*<!-- for development only --><p><label class="message" style="display: block; color: #fff"></label></p><!-- for development only -->*@
 
                             </div> <!--/.cover-header -->
 	                        <div class="cover-body">
                                 <div class="cover-body-inner">
 			                        <h1 class="cover-title">College <span>of</span> Business</h1>
-			                        <p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
-                                        @*<br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
+			                         @*<p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
+                                       <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
                                     <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business</p></div>
+                                    <img src="~/images/ucf-opportunity.png" alt="ucf stands for opportunity">
                                     <div><!--scroll down arrow--></div>
 		                        </div>
                             </div><!--/.cover-body -->
