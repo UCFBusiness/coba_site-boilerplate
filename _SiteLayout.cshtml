@@ -22,16 +22,13 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/ico/apple-touch-icon-114-precomposed.png" />
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/ico/apple-touch-icon-144-precomposed.png" />*@
         <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
-        <!-- Bootstrap CSS -->
-        <link type="text/css" rel="stylesheet" href="~/content/bootstrap/bootstrap.css" />
-        <!-- Site CSS -->
-        <link type="text/css" rel="stylesheet" href="~/styles/site.css" />
+        <!--BEGIN: Styles-->
+        <link type="text/css" rel="stylesheet" href="~/content/bootstrap/bootstrap.css" /><!-- Bootstrap CSS -->
+        <link type="text/css" rel="stylesheet" href="~/styles/site.css" /><!-- Site CSS -->
         <link type="text/css" rel="stylesheet" href="~/content/css/font-awesome.min.css" />
         @RenderSection("Styles", required: false)
-
-        <!-- Modernizr Code -->
-        <script src="~/scripts/modernizr-2.6.2.js"></script>
-        <!-- Google Analytics Code -->
+        <!--FINIS: Styles-->
+        <script src="~/scripts/modernizr-2.6.2.js"></script><!-- Modernizr Code -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,15 +38,13 @@
           ga('create', 'UA-44861717-1', 'ucf.edu');
           ga('send', 'pageview');
 
-        </script>
-
+        </script><!-- Google Analytics Code -->
     </head>
     <body class="page page-img" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);"> <!--Hides URL Bar on iPhone-->
         <a id="top"></a>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
         <!--BEGIN: Content-->
         <div id="container">
             <div id="content" class="screen-content">
@@ -241,10 +236,10 @@
                                             </li>
                                             <li>
                                                 <p class="social">Stay Connected</p>
-                                                <div style="background-image: url(/images/ico/twitter.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://www.twitter.com/ucfbusiness" target="_blank">twitter</i></a></div>
-                                                <div style="background-image: url(/images/ico/google-plus.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="https://plus.google.com/107946459277643419963/posts" target="_blank">google +1</i></a></div>
-                                                <div style="background-image: url(/images/ico/facebook.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://www.facebook.com/ucfcba" target="_blank">facebook</i></a></div>
-                                                <div style="background-image: url(/images/ico/linkedin.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://bit.ly/ucfbusinessalumni" target="_blank">linkedin</i></a></div>
+                                                <div style="background-image: url(/images/ico/twitter.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://www.twitter.com/ucfbusiness" target="_blank">twitter</a></div>
+                                                <div style="background-image: url(/images/ico/google-plus.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="https://plus.google.com/107946459277643419963/posts" target="_blank">google+</a></div>
+                                                <div style="background-image: url(/images/ico/facebook.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://www.facebook.com/ucfcba" target="_blank">facebook</a></div>
+                                                <div style="background-image: url(/images/ico/linkedin.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://bit.ly/ucfbusinessalumni" target="_blank">linkedin</a></div>
                                             </li>
                                         </ul>
                                         <br>
@@ -263,34 +258,24 @@
             </div>
         </div><!--/content container -->
         <!--FINIS: Content-->
-
         <a href="#" class="back-to-top"><i class="icon-angle-up"></i></a>
         <span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;" data-intro="This is our new website and we welcome your feedback." data-position="left"></span>
         <div class="loading-bar"></div>
-
-        <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <!--BEGIN: Scripts-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- jquery -->
         <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
-
-        <!-- bootstrap -->
-        <script src="~/scripts/bootstrap.min.js"></script>
-
-        <!-- for development -->
+        <script src="~/scripts/bootstrap.min.js"></script><!-- bootstrap -->
         @*<script src="~/scripts/holder.min.js"></script>*@
-
         <script src="//scripts.bus.ucf.edu/cdn/js/scripts/plugins.js" type="text/javascript"></script>
         <script src="//scripts.bus.ucf.edu/cdn/js/scripts/sly.hoz.js" type="text/javascript"></script>
         <script src="//scripts.bus.ucf.edu/cdn/js/libs/bootstrap-scrollspy" type="text/javascript"></script>
         <script src="~/content/js/classie.js"></script>
-        
         @*<script src="~/content/js/uisearch.js"></script>
         <script>
 			new UISearch( document.getElementById( 'sb-search' ) );
 		</script>*@
-
-        <!-- production -->
         <script data-main="/scripts/main" src="~/scripts/require.js"></script>
-
         @RenderSection("Scripts", required: false)
+        <!--FINIS: Scripts-->
     </body>
 </html>
