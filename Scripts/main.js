@@ -5,6 +5,7 @@ require.config({
     waitSeconds: 10,
     paths: {
         'sly': 'js/sly.min',
+        'chardin': 'js/chardinjs.min',
         'dmenu': 'js/jquery.dlmenu',
         'fittext': 'js/jquery.fittext',
         'waypoint': 'js/waypoints.min',
@@ -157,7 +158,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize'], function () 
         });
 
     if (width > 1024) //load desktop scripts
-        require(['lockfix'], function () {
+        require(['lockfix', 'chardin'], function () {
 
             //-- screensize ----------------------------------
             $(".message").html(width + " x " + height + " - desktop");
@@ -166,6 +167,8 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize'], function () 
             //-- page menu -----------------------------------
             $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 410} });
             //------------------------------------------------
+
+            $('body').chardinJs('start');
 
         });
 
