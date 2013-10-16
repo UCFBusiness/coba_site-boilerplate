@@ -3,7 +3,15 @@
     Page.Title = "Home";
 }
 
+@section Scripts {
+    <script src="~/content/js/chardinjs.min.js"></script>
+    <script>
+        $('body').chardinJs('start');
+    </script>
+}
+
 @section Styles {
+    <link href="~/content/css/chardinjs.css" rel="stylesheet">
     <style> /*-- cover-img --*/
         .wrapper-inner {
             background: #111;
@@ -15,7 +23,7 @@
   
 <div class="viewbook">
     <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
-        <img src="~/images/view-book.png" alt="ucf college of business online viewbook">
+        <img src="~/images/view-book.png" alt="ucf college of business online viewbook" data-intro="Start Here." data-position="bottom">
     </a>
 </div>
 
@@ -41,7 +49,7 @@
 
 <div class="pagespan">
     <section class="wrap">
-        <div class="frame" id="news">
+        <div class="frame" id="news" data-intro="News" data-position="left">
 			<ul class="clearfix">
                 <!-- 8 panel row -->
                 <li>
@@ -130,7 +138,7 @@
 
 <div class="pagespan">
     <section class="wrap">
-		<div class="frame" id="events">
+		<div class="frame" id="events" data-intro="Events" data-position="left">
 			<ul class="clearfix">
                 <!-- 8 panel row -->
                 <li>
@@ -199,7 +207,7 @@
 
 <div class="pagespan">
     <section class="wrap">
-        <div class="frame" id="faculty">
+        <div class="frame" id="faculty" data-intro="Faculty" data-position="left">
 			<ul class="clearfix">
                 <!-- 8 panel row -->
                 <li>

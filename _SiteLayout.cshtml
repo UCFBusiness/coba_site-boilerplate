@@ -65,8 +65,8 @@
                                     </div><!--/UCF Header Wrapper-->
                                 </div><!--/UCFHBHeader -->
                                 <nav id="main_menu" class="dl-menuwrapper site-nav clearfix">
-                                    <a href="~/" class="dl-home">HOME</a>
-                                    <button class="dl-trigger">DISCOVER</button>
+                                    <a href="~/" class="dl-home" data-intro="Home" data-position="bottom">HOME</a>
+                                    <button class="dl-trigger" data-intro="Site Navigation" data-position="bottom">DISCOVER</button>
                                     <ul class="dl-menu">
 				                        <li>
 					                        <a href="#">Academics</a>
@@ -111,8 +111,10 @@
 						                        <li><a href="~/history">History</a></li> <!--include mission and vision-->
                                                 <li><a href="~/accreditation">Accreditation</a></li>
                                                 @*<li><a href="~/administration">Administration</a></li>*@
-                                                <li><a href="~/facts-figures">Facts &amp; Figures</a></li>
+                                                <li><a href="http://www.bus.ucf.edu/ourcollege/?page=1009">Advisory Board Members</a></li>
                                                 <li><a href="~/downtown-center">Downtown Center</a></li>
+                                                <li><a href="~/facts-figures">Facts &amp; Figures</a></li>
+                                                
                                                 <li><a href="~/social-media">Social Media</a></li>
 						                        <li><a href="~/student-ambassadors">Student Ambassadors</a></li>
                                                 <li><a href="~/student-organizations">Student Organizations</a></li>
@@ -178,7 +180,7 @@
                             </div> <!--/.cover-header -->
 	                        <div class="cover-body">
                                 <div class="cover-body-inner">
-			                        <h1 class="cover-title">College <span>of</span> Business</h1>
+			                        <h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
 			                         @*<p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
                                        <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
                                     <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business</p></div>
@@ -193,6 +195,7 @@
                                 <header class="wrapper-header">
                                     <div class="wrapper-header-inner">
                                         @*Students | Faculty | Corporate Partners | Search*@
+                                        
                                     </div>
                                 </header><!--/.wrapper-header -->
                                 <!---->
@@ -203,7 +206,7 @@
                                 </div><!--/.wrapper-body -->
                                 <!---->
                                 <footer class="wrapper-footer">
-                                    <div class="wrapper-footer-inner">
+                                    <div class="wrapper-footer-inner" data-intro="Quick Links Navigation, Contact Information" data-position="left">
                                         <ul class="clearfix">
                                             <li>
                                                 <p class="address">Address</p>
@@ -229,6 +232,7 @@
                                             <li>
                                                 <p class="qlinks">Quick Links</p>
                                                 <ul>
+                                                    <li><a href="http://www.bus.ucf.edu/directory.aspx" target="_blank">A-Z Directory</a></li>
                                                     <li><a href="http://my.ucf.edu" target="_blank">My UCF</a></li>
                                                     <li><a href="http://library.ucf.edu" target="_blank">UCF Library</a></li>
                                                     <li><a href="http://ucf.custhelp.com" target="_blank">Ask UCF</a></li>
@@ -237,10 +241,10 @@
                                             </li>
                                             <li>
                                                 <p class="social">Stay Connected</p>
-                                                <div><a href="http://www.twitter.com/ucfbusiness" target="_blank">twitter</i></a></div>
-                                                <div><a href="https://plus.google.com/107946459277643419963/posts" target="_blank">google +1</i></a></div>
-                                                <div><a href="http://www.facebook.com/ucfcba" target="_blank">facebook</i></a></div>
-                                                <div><a href="http://bit.ly/ucfbusinessalumni" target="_blank">linked-in</i></a></div>
+                                                <div style="background-image: url(/images/ico/twitter.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://www.twitter.com/ucfbusiness" target="_blank">twitter</i></a></div>
+                                                <div style="background-image: url(/images/ico/google-plus.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="https://plus.google.com/107946459277643419963/posts" target="_blank">google +1</i></a></div>
+                                                <div style="background-image: url(/images/ico/facebook.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://www.facebook.com/ucfcba" target="_blank">facebook</i></a></div>
+                                                <div style="background-image: url(/images/ico/linkedin.png); background-repeat: no-repeat; background-size: 20px 20px; background-position: top left; padding-left: 25px;"><a href="http://bit.ly/ucfbusinessalumni" target="_blank">linkedin</i></a></div>
                                             </li>
                                         </ul>
                                         <br>
@@ -261,7 +265,7 @@
         <!--FINIS: Content-->
 
         <a href="#" class="back-to-top"><i class="icon-angle-up"></i></a>
-        <span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span>
+        <span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;" data-intro="This is our new website and we welcome your feedback." data-position="left"></span>
         <div class="loading-bar"></div>
 
         <!-- jquery -->

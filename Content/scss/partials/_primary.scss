@@ -117,8 +117,7 @@ ol.round {
 .cover-body{position:absolute;bottom:0;padding:50px 10% 10%;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .cover-body:before{content:'';position:absolute;top:-80px;right:0;bottom:0;left:0;background-repeat:repeat-x;background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);background-image:-moz-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);background-image:-ms-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);background-image:-o-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);background-image:linear-gradient(to top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)}
 .cover-body .cover-body-inner{position:relative;z-index:100}
-.cover-title{font-size:60px;line-height:1;color:#fff;margin-bottom:12px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
-.cover-title span{font-size: 43px;}
+.cover-title{font-size:3em;line-height:1;color:#fff;margin-bottom:12px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
 .cover-description{font-size:16px;line-height:1.2;color:#fff;margin-bottom:14px;text-shadow:0 1px 3px rgba(0,0,0,0.3)}
 .cover-description a{color:#fff;text-decoration:underline}
 
@@ -149,8 +148,7 @@ ol.round {
 .screen-reader-text{position:absolute;top:-9999px;left:-9999px}
 .screen-content{outline:0}
 
-.page-title {width:100%;}
-.page-title h1, .page-title h2 {margin:10px 0;color:#fff; font-weight:600; line-height:1em; font-size:3.2em}
+.page-title {margin:10px 0;color:#fff; font-weight:600; line-height:1em; font-size:2.2em;width:100%;}
 .page-title h2 {font-size:2.8em}
 
 .site-nav{position:absolute;top:0;left:0;bottom:0;outline:0;background-color:#232322}
@@ -201,12 +199,14 @@ ol.round {
     .cover, .site-nav-logo {position: fixed;}
     .wrapper-inner {background: #fff;border: 1px solid #000;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
     .wrapper-header-inner {height: 35px; padding: 5px;}
+    .page-title h1 {font-size:1.8em}
+    .page-title h2 {font-size:1.1em}
 }
 
 @media all and (max-width:1024px){
     .cover{position:relative!important;width:100%;max-width:none;height:675px}
     .cover-body{width:100%;padding-bottom:40px}
-    .cover-title{font-size:60px;margin-bottom:10px}
+    .cover-title{font-size:3.4em;margin-bottom:10px}
     .cover-bestof .cover-title{font-size:32px}
     .cover-description{font-size:1.6em}
     .backend-cover-img{border: 1px solid #000;}
