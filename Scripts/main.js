@@ -5,6 +5,7 @@ require.config({
     waitSeconds: 10,
     paths: {
         'sly': 'js/sly.min',
+        'sidebarfx': 'js/sidebarEffects',
         'chardin': 'js/chardinjs.min',
         'dmenu': 'js/jquery.dlmenu',
         'fittext': 'js/jquery.fittext',
@@ -16,7 +17,7 @@ require.config({
     }
 });
 
-require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize'], function () {
+require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'], function () {
 
     //----- Font Sizes-------------------------------
     $('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '16px' });

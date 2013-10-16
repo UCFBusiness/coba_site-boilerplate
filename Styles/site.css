@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis|Cantora+One|Quicksand|Titillium+Web|Roboto|Advent+Pro);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-/* line 2, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 2, ../Content/scss/partials/_primary.scss */
 html,
 body {
   height: 100%;
@@ -12,7 +12,7 @@ body {
 .js {
     overflow: hidden;
 }*/
-/* line 14, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 14, ../Content/scss/partials/_primary.scss */
 body {
   background-image: url(/images/main-bg.jpg);
   background-size: cover;
@@ -26,94 +26,94 @@ body {
   z-index: 0;
 }
 
-/* line 28, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 28, ../Content/scss/partials/_primary.scss */
 #container {
   position: relative;
   z-index: 1;
 }
 
-/* line 34, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 34, ../Content/scss/partials/_primary.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* ordered list */
-/* line 40, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 40, ../Content/scss/partials/_primary.scss */
 ol.round {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 45, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 45, ../Content/scss/partials/_primary.scss */
 ol.round li {
   margin: 25px 0;
   padding-left: 45px;
 }
 
-/* line 50, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 50, ../Content/scss/partials/_primary.scss */
 ol.round li.zero {
   background: url("/images/orderedList0.png") no-repeat;
 }
 
-/* line 54, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 54, ../Content/scss/partials/_primary.scss */
 ol.round li.one {
   background: url("/images/orderedList1.png") no-repeat;
 }
 
-/* line 58, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 58, ../Content/scss/partials/_primary.scss */
 ol.round li.two {
   background: url("/images/orderedList2.png") no-repeat;
 }
 
-/* line 62, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 62, ../Content/scss/partials/_primary.scss */
 ol.round li.three {
   background: url("/images/orderedList3.png") no-repeat;
 }
 
-/* line 66, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 66, ../Content/scss/partials/_primary.scss */
 ol.round li.four {
   background: url("/images/orderedList4.png") no-repeat;
 }
 
-/* line 70, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 70, ../Content/scss/partials/_primary.scss */
 ol.round li.five {
   background: url("/images/orderedList5.png") no-repeat;
 }
 
-/* line 74, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 74, ../Content/scss/partials/_primary.scss */
 ol.round li.six {
   background: url("/images/orderedList6.png") no-repeat;
 }
 
-/* line 78, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 78, ../Content/scss/partials/_primary.scss */
 ol.round li.seven {
   background: url("/images/orderedList7.png") no-repeat;
 }
 
-/* line 82, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 82, ../Content/scss/partials/_primary.scss */
 ol.round li.eight {
   background: url("/images/orderedList8.png") no-repeat;
 }
 
-/* line 86, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 86, ../Content/scss/partials/_primary.scss */
 ol.round li.nine {
   background: url("/images/orderedList9.png") no-repeat;
 }
 
-/* line 91, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 91, ../Content/scss/partials/_primary.scss */
 .apply-button {
   font-size: 1.2em;
   font-weight: bold;
 }
 
-/* line 93, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 93, ../Content/scss/partials/_primary.scss */
 .copyright {
   font-size: .55em;
   color: #fff;
   line-height: 1.3em;
 }
 
-/* line 95, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 95, ../Content/scss/partials/_primary.scss */
 .icon-setting {
   color: #fff;
   font-size: 23px;
@@ -126,7 +126,7 @@ ol.round li.nine {
 /* =============================================================================
    NEW
    ========================================================================== */
-/* line 101, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 101, ../Content/scss/partials/_primary.scss */
 .cover {
   position: absolute;
   z-index: 100;
@@ -139,7 +139,7 @@ ol.round li.nine {
   /* shadow */
 }
 
-/* line 102, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 102, ../Content/scss/partials/_primary.scss */
 .backend {
   background: #333;
   position: absolute;
@@ -153,22 +153,22 @@ ol.round li.nine {
 }
 
 /*Try max-width:600px;*/
-/* line 103, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 103, ../Content/scss/partials/_primary.scss */
 .cover.img-loaded {
   background: #000;
 }
 
-/* line 104, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 104, ../Content/scss/partials/_primary.scss */
 .body-scroll .cover {
   position: fixed;
 }
 
-/* line 105, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 105, ../Content/scss/partials/_primary.scss */
 .editing .cover {
   background-image: none;
 }
 
-/* line 107, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 107, ../Content/scss/partials/_primary.scss */
 .cover-img {
   position: absolute;
   width: 100%;
@@ -185,13 +185,13 @@ ol.round li.nine {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 110, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 110, ../Content/scss/partials/_primary.scss */
 .cover-img {
   background-image: url("/images/pegasus_sun_rev.jpg");
   background-size: cover;
 }
 
-/* line 111, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 111, ../Content/scss/partials/_primary.scss */
 .backend-cover-img {
   position: absolute;
   width: 100%;
@@ -208,7 +208,7 @@ ol.round li.nine {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 115, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 115, ../Content/scss/partials/_primary.scss */
 .cover-header {
   position: absolute;
   top: 0;
@@ -216,14 +216,14 @@ ol.round li.nine {
   text-shadow: 0px 1px 2px #333;
 }
 
-/* line 116, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 116, ../Content/scss/partials/_primary.scss */
 .cover-header .container {
   color: #fff;
   position: relative;
   z-index: 100;
 }
 
-/* line 117, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 117, ../Content/scss/partials/_primary.scss */
 .cover-body {
   position: absolute;
   bottom: 0;
@@ -234,7 +234,7 @@ ol.round li.nine {
   box-sizing: border-box;
 }
 
-/* line 118, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 118, ../Content/scss/partials/_primary.scss */
 .cover-body:before {
   content: '';
   position: absolute;
@@ -250,13 +250,13 @@ ol.round li.nine {
   background-image: linear, to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%;
 }
 
-/* line 119, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 119, ../Content/scss/partials/_primary.scss */
 .cover-body .cover-body-inner {
   position: relative;
   z-index: 100;
 }
 
-/* line 120, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 120, ../Content/scss/partials/_primary.scss */
 .cover-title {
   font-size: 60px;
   line-height: 1;
@@ -265,12 +265,12 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 121, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 121, ../Content/scss/partials/_primary.scss */
 .cover-title span {
   font-size: 43px;
 }
 
-/* line 122, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 122, ../Content/scss/partials/_primary.scss */
 .cover-description {
   font-size: 16px;
   line-height: 1.2;
@@ -279,47 +279,47 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 123, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 123, ../Content/scss/partials/_primary.scss */
 .cover-description a {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 125, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 125, ../Content/scss/partials/_primary.scss */
 .cover-actions {
   padding-top: 23px;
   margin-top: 0px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 126, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 126, ../Content/scss/partials/_primary.scss */
 .cover-actions .btn {
   margin-right: 5px;
 }
 
-/* line 127, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 127, ../Content/scss/partials/_primary.scss */
 .cover-actions .btn-delete {
   float: right;
 }
 
-/* line 129, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 129, ../Content/scss/partials/_primary.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 130, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 130, ../Content/scss/partials/_primary.scss */
 .screen-content {
   outline: 0;
 }
 
-/* line 132, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 132, ../Content/scss/partials/_primary.scss */
 .page-title {
   width: 100%;
 }
 
-/* line 133, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 133, ../Content/scss/partials/_primary.scss */
 .page-title h1, .page-title h2 {
   margin: 10px 0;
   color: #fff;
@@ -328,12 +328,12 @@ ol.round li.nine {
   font-size: 3.2em;
 }
 
-/* line 134, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 134, ../Content/scss/partials/_primary.scss */
 .page-title h2 {
   font-size: 2.8em;
 }
 
-/* line 136, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 136, ../Content/scss/partials/_primary.scss */
 .site-nav {
   position: absolute;
   top: 0;
@@ -343,7 +343,7 @@ ol.round li.nine {
   background-color: #232322;
 }
 
-/* line 137, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 137, ../Content/scss/partials/_primary.scss */
 .site-nav-logo {
   position: absolute;
   top: 10px;
@@ -365,13 +365,13 @@ ol.round li.nine {
   transition: top .2s linear,left .2s linear,opacity .2s linear;
 }
 
-/* line 138, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 138, ../Content/scss/partials/_primary.scss */
 .site-nav-logo:after {
   content: 'UCF';
   color: #fff;
 }
 
-/* line 139, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 139, ../Content/scss/partials/_primary.scss */
 .site-nav-logo .icons {
   display: block;
   position: absolute;
@@ -381,7 +381,7 @@ ol.round li.nine {
   bottom: 0;
 }
 
-/* line 140, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 140, ../Content/scss/partials/_primary.scss */
 .site-nav-overlay {
   display: none;
   position: absolute;
@@ -392,7 +392,7 @@ ol.round li.nine {
   z-index: 600;
 }
 
-/* line 141, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 141, ../Content/scss/partials/_primary.scss */
 .site-nav-hidden .site-nav-logo {
   filter: alpha(opacity=0);
   -khtml-opacity: 0;
@@ -401,7 +401,7 @@ ol.round li.nine {
   left: -54px;
 }
 
-/* line 142, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 142, ../Content/scss/partials/_primary.scss */
 .site-nav-scrollable-container {
   display: none;
   overflow: auto;
@@ -412,12 +412,12 @@ ol.round li.nine {
   box-shadow: inset -1px 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 143, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 143, ../Content/scss/partials/_primary.scss */
 .site-nav-scrollable-container::-webkit-scrollbar {
   display: none;
 }
 
-/* line 145, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 145, ../Content/scss/partials/_primary.scss */
 .wrapper {
   outline: 0;
   position: absolute;
@@ -428,7 +428,7 @@ ol.round li.nine {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 151, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+/* line 151, ../Content/scss/partials/_primary.scss */
 .wrapper-inner {
   padding: 0;
   width: 100%;
@@ -439,49 +439,49 @@ ol.round li.nine {
 }
 
 @media all and (max-width: 1024px) {
-  /* line 163, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 163, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 0;
     position: relative;
   }
 
-  /* line 164, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 164, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding: 0;
     max-width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 168, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 168, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     background: none;
   }
 }
 @media all and (min-width: 1666px) {
-  /* line 172, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 172, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 500px;
   }
 
-  /* line 173, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 173, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding-left: 0;
     max-width: 910px;
   }
 }
 @media screen and (max-device-width: 1024px) {
-  /* line 177, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 177, ../Content/scss/partials/_primary.scss */
   html {
     -webkit-text-size-adjust: none;
   }
 }
 @media screen and (min-device-width: 1025px) {
-  /* line 181, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 181, ../Content/scss/partials/_primary.scss */
   .cover, .site-nav-logo {
     position: fixed;
   }
 
-  /* line 182, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 182, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     background: #fff;
     border: 1px solid #000;
@@ -489,24 +489,24 @@ ol.round li.nine {
     /* shadow */
   }
 
-  /* line 183, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 183, ../Content/scss/partials/_primary.scss */
   .wrapper-header-inner {
     height: 35px;
     padding: 5px;
   }
 
-  /* line 184, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 184, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 3.4em;
   }
 
-  /* line 185, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 185, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 2.1em;
   }
 }
 @media all and (max-width: 1024px) {
-  /* line 189, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 189, ../Content/scss/partials/_primary.scss */
   .cover {
     position: relative!important;
     width: 100%;
@@ -514,62 +514,62 @@ ol.round li.nine {
     height: 675px;
   }
 
-  /* line 190, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 190, ../Content/scss/partials/_primary.scss */
   .cover-body {
     width: 100%;
     padding-bottom: 40px;
   }
 
-  /* line 191, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 191, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 3.4em;
     margin-bottom: 10px;
   }
 
-  /* line 192, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 192, ../Content/scss/partials/_primary.scss */
   .cover-bestof .cover-title {
     font-size: 32px;
   }
 
-  /* line 193, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 193, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: 1.6em;
   }
 
-  /* line 194, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 194, ../Content/scss/partials/_primary.scss */
   .backend-cover-img {
     border: 1px solid #000;
   }
 
-  /* line 196, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 196, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 70%;
   }
 
-  /* line 197, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 197, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 3.4em;
   }
 
-  /* line 198, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 198, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 2.8em;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 202, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 202, ../Content/scss/partials/_primary.scss */
   .cover {
     height: 375px;
   }
 
-  /* line 203, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 203, ../Content/scss/partials/_primary.scss */
   .cover-bestof, .cover-home, .cover-collection {
     min-height: 350px;
     height: auto;
     display: table;
   }
 
-  /* line 205, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 205, ../Content/scss/partials/_primary.scss */
   .cover-body {
     display: table-cell;
     vertical-align: bottom;
@@ -579,7 +579,7 @@ ol.round li.nine {
     padding: 65px 5% 30px;
   }
 
-  /* line 206, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 206, ../Content/scss/partials/_primary.scss */
   .cover-body:before {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
@@ -588,47 +588,47 @@ ol.round li.nine {
     background-image: linear, to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%;
   }
 
-  /* line 207, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 207, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 2em;
     line-height: 1;
     margin-bottom: 5px;
   }
 
-  /* line 208, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 208, ../Content/scss/partials/_primary.scss */
   .cover-title span {
     font-size: .7em;
   }
 
-  /* line 209, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 209, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: .8em;
     margin-bottom: 6px;
   }
 
-  /* line 210, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 210, ../Content/scss/partials/_primary.scss */
   .cover-avatar {
     width: 100px;
     height: 100px;
   }
 
-  /* line 211, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 211, ../Content/scss/partials/_primary.scss */
   .cover-new-collection-link {
     margin-left: 0;
     line-height: 32px;
   }
 
-  /* line 213, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 213, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 100%;
   }
 
-  /* line 214, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 214, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 1.9em;
   }
 
-  /* line 215, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_primary.scss */
+  /* line 215, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 1.3em;
   }
@@ -636,7 +636,7 @@ ol.round li.nine {
 /* =============================================================================
    UCF Header
    ========================================================================== */
-/* line 5, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_ucf-header.scss */
+/* line 5, ../Content/scss/partials/_ucf-header.scss */
 #UCFHBHeader {
   background: black url("../../images/ucfbar/header_border.png") repeat-x;
   background-position: bottom left;
@@ -648,7 +648,7 @@ ol.round li.nine {
   box-shadow: inset 0 2 0 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 16, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_ucf-header.scss */
+/* line 16, ../Content/scss/partials/_ucf-header.scss */
 #UCFHBHeader #UCFtitle a {
   background-image: url("../../images/ucfbar/ucflogo.png");
   background-size: 100%;
@@ -657,12 +657,12 @@ ol.round li.nine {
   display: block;
 }
 
-/* line 24, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_ucf-header.scss */
+/* line 24, ../Content/scss/partials/_ucf-header.scss */
 #UCFHBHeader #UCFtitle a span.UCFHBText {
   display: none;
 }
 
-/* line 28, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_ucf-header.scss */
+/* line 28, ../Content/scss/partials/_ucf-header.scss */
 #UCFHBHeader .alert-message {
   margin: 0 auto;
   width: 100%;
@@ -674,7 +674,7 @@ ol.round li.nine {
    Navigation Menu - Discovery
    ========================================================================== */
 /* wrapper */
-/* line 11, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 11, ../Content/scss/partials/header/_navigation.scss */
 nav.dl-menuwrapper {
   background: rgba(0, 0, 0, 0.4);
   letter-spacing: 1px;
@@ -685,7 +685,7 @@ nav.dl-menuwrapper {
 }
 
 /* buttons */
-/* line 22, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 22, ../Content/scss/partials/header/_navigation.scss */
 .dl-home,
 .dl-trigger,
 .dl-searchbutton {
@@ -701,7 +701,7 @@ nav.dl-menuwrapper {
 }
 
 /* discover icon */
-/* line 35, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 35, ../Content/scss/partials/header/_navigation.scss */
 .dl-trigger:after {
   content: '';
   position: absolute;
@@ -715,26 +715,26 @@ nav.dl-menuwrapper {
   /* - */
 }
 
-/* line 48, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 48, ../Content/scss/partials/header/_navigation.scss */
 .dl-home {
   background: url(/images/icon-home.png) no-repeat;
   background-position: 5px 2px;
 }
 
-/* line 54, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 54, ../Content/scss/partials/header/_navigation.scss */
 .dl-home,
 .dl-trigger {
   width: 50px;
 }
 
 /* hide search button - not used on mobile or tablet */
-/* line 59, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 59, ../Content/scss/partials/header/_navigation.scss */
 .dl-searchbutton {
   visibility: hidden;
   display: none;
 }
 
-/* line 64, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 64, ../Content/scss/partials/header/_navigation.scss */
 .dl-search-field {
   background: rgba(0, 0, 0, 0.8);
   margin-top: 7px;
@@ -751,7 +751,7 @@ nav.dl-menuwrapper {
 /* =============================================================================
    Main Menu
    ========================================================================== */
-/* line 82, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 82, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu {
   margin: 45px 0 0 0;
   padding: 0;
@@ -767,14 +767,14 @@ nav.dl-menuwrapper {
   -moz-backface-visibility: hidden;
 }
 
-/* line 97, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 97, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu.dl-menu-toggle {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
 
-/* line 103, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 103, ../Content/scss/partials/header/_navigation.scss */
 .dl-menu.dl-menuopen {
   opacity: 1;
   pointer-events: auto;
@@ -787,7 +787,7 @@ nav.dl-menuwrapper {
    Submenus
    ========================================================================== */
 /* ul */
-/* line 117, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 117, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper ul {
   border-bottom: 1px solid #333;
   padding: 0;
@@ -801,13 +801,13 @@ nav.dl-menuwrapper {
 }
 
 /* li */
-/* line 130, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 130, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li {
   position: relative;
   border-top: 1px solid #222;
 }
 
-/* line 135, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 135, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.breadcrumb {
   background: #333;
   margin: 0;
@@ -818,7 +818,7 @@ nav.dl-menuwrapper {
 }
 
 /* a */
-/* line 145, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 145, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li a {
   padding: 13px 20px;
   position: relative;
@@ -832,13 +832,13 @@ nav.dl-menuwrapper {
   color: white;
 }
 
-/* line 157, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 157, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li > a:after {
   right: 10px;
 }
 
 /* li back action */
-/* line 162, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 162, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back > a {
   padding-left: 30px;
   font-size: 11px;
@@ -847,7 +847,7 @@ nav.dl-menuwrapper {
   color: white;
 }
 
-/* line 168, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 168, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back:after {
   left: 10px;
   transform: rotate(180deg);
@@ -856,7 +856,7 @@ nav.dl-menuwrapper {
 }
 
 /* li arrows */
-/* line 177, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 177, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper li.dl-back:after,
 .dl-menuwrapper li > a:not(:only-child):after {
   color: rgba(170, 170, 170, 0.3);
@@ -872,14 +872,14 @@ nav.dl-menuwrapper {
 /* =============================================================================
    Menu Color Theme
    ========================================================================== */
-/* line 193, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 193, ../Content/scss/partials/header/_navigation.scss */
 .dl-menuwrapper button.dl-active,
 .dl-menuwrapper ul {
   background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #555555), color-stop(1, #222222));
   color: black;
 }
 
-/* line 198, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+/* line 198, ../Content/scss/partials/header/_navigation.scss */
 .no-touch .dl-menuwrapper > li a:after {
   background: black;
   color: #aaaaaa;
@@ -891,7 +891,7 @@ nav.dl-menuwrapper {
 Navigation Menu - Discovery
 ========================================================================== */
   /* nav */
-  /* line 212, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 212, ../Content/scss/partials/header/_navigation.scss */
   nav.dl-menuwrapper {
     margin-top: 20px;
     margin-left: 20px;
@@ -915,14 +915,14 @@ Navigation Menu - Discovery
     z-index: 1000;
   }
 
-  /* line 233, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 233, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper:first-child {
     margin-right: 100px;
     border: 1px solid blue;
   }
 
   /* home button */
-  /* line 239, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 239, ../Content/scss/partials/header/_navigation.scss */
   #dl-home {
     border: 1px solid #ddd;
     border-right: none;
@@ -932,7 +932,7 @@ Navigation Menu - Discovery
   }
 
   /* discover button */
-  /* line 248, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 248, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button {
     border: 1px solid #eee;
     border-bottom: 1px solid #ccc;
@@ -956,7 +956,7 @@ Navigation Menu - Discovery
   }
 
   /* discover icon = */
-  /* line 268, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 268, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button:after {
     content: '';
     width: 20%;
@@ -970,7 +970,7 @@ Navigation Menu - Discovery
     box-shadow: 0 10px 0 #555555, 0 20px 0 #555555;
   }
 
-  /* line 284, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 284, ../Content/scss/partials/header/_navigation.scss */
   .dl-home,
   .dl-searchbutton {
     width: 45px;
@@ -978,7 +978,7 @@ Navigation Menu - Discovery
     border-bottom: 1px solid #ccc;
   }
 
-  /* line 290, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 290, ../Content/scss/partials/header/_navigation.scss */
   .dl-home {
     border-right: none;
     background: rgba(255, 255, 255, 0.85) url(/images/icon-home.png) no-repeat;
@@ -989,14 +989,14 @@ Navigation Menu - Discovery
   }
 
   /**/
-  /* line 298, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 298, ../Content/scss/partials/header/_navigation.scss */
   .dl-home:hover {
     background: rgba(255, 255, 255, 0.89) url(/images/icon-home.png) no-repeat;
     background-position: 1px 1px;
   }
 
   /* search */
-  /* line 304, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 304, ../Content/scss/partials/header/_navigation.scss */
   #dl-search {
     border: 1px solid #eee;
     padding: 1px 15px;
@@ -1009,7 +1009,7 @@ Navigation Menu - Discovery
     float: left;
   }
 
-  /* line 313, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 313, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
     background: rgba(255, 255, 255, 0.85);
     border: 1px solid #fff;
@@ -1030,13 +1030,13 @@ Navigation Menu - Discovery
 
   /* submenus */
   /* menu ul only */
-  /* line 333, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 333, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
     /* ie fix */
     visibility: hidden;
   }
 
-  /* line 336, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 336, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
@@ -1058,14 +1058,14 @@ Navigation Menu - Discovery
     -moz-backface-visibility: hidden;
   }
 
-  /* line 359, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 359, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu.dl-menu-toggle {
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
   }
 
-  /* line 364, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 364, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu.dl-menuopen {
     opacity: 1;
     pointer-events: auto;
@@ -1074,7 +1074,7 @@ Navigation Menu - Discovery
     -moz-transform: translateY(0px);
   }
 
-  /* line 372, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 372, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper .dl-menu li {
     width: 320px;
     /* <== */
@@ -1083,7 +1083,7 @@ Navigation Menu - Discovery
   }
 
   /* all uls */
-  /* line 379, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 379, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper ul {
     background: none;
     padding: 0;
@@ -1098,7 +1098,7 @@ Navigation Menu - Discovery
   }
 
   /* menu li */
-  /* line 394, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 394, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li {
     position: relative;
     border: none;
@@ -1106,7 +1106,7 @@ Navigation Menu - Discovery
     text-transform: uppercase;
   }
 
-  /* line 399, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 399, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li a {
     padding: 10px 10px 10px 15px;
     display: block;
@@ -1114,12 +1114,12 @@ Navigation Menu - Discovery
     outline: none;
   }
 
-  /* line 406, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 406, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li > a:after {
     right: 10px;
   }
 
-  /* line 410, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 410, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.breadcrumb {
     padding: 2px 15px;
     font-size: 12px;
@@ -1128,7 +1128,7 @@ Navigation Menu - Discovery
   }
 
   /* back li */
-  /* line 418, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 418, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back > a {
     font-size: 11px;
     text-transform: uppercase;
@@ -1137,7 +1137,7 @@ Navigation Menu - Discovery
     padding: 10px 10px 10px 30px;
   }
 
-  /* line 424, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 424, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back:after {
     left: 10px;
     transform: rotate(180deg);
@@ -1146,7 +1146,7 @@ Navigation Menu - Discovery
   }
 
   /* li arrows */
-  /* line 432, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 432, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back:after,
   .dl-menuwrapper li > a:not(:only-child):after {
     position: absolute;
@@ -1160,7 +1160,7 @@ Navigation Menu - Discovery
   }
 
   /* desktop - menu theme */
-  /* line 446, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 446, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper button:hover,
   .dl-menuwrapper button.dl-active,
   .dl-menuwrapper li a {
@@ -1169,7 +1169,7 @@ Navigation Menu - Discovery
     /* li:hover color*/
   }
 
-  /* line 450, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 450, ../Content/scss/partials/header/_navigation.scss */
   .no-touch .dl-menuwrapper li a:hover {
     background: rgba(255, 229, 153, 0.7);
     color: #333;
@@ -1179,14 +1179,14 @@ Navigation Menu - Discovery
     padding: 9px 10px 9px 15px;
   }
 
-  /* line 457, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 457, ../Content/scss/partials/header/_navigation.scss */
   .dl-menuwrapper li.dl-back > a:hover {
     padding: 9px 10px 9px 30px;
   }
 }
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-  /* line 467, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 467, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton {
     border-left: 1px solid #ddd;
     background: rgba(255, 255, 255, 0.7) url(/images/icon-search.png) no-repeat;
@@ -1198,12 +1198,12 @@ Navigation Menu - Discovery
     display: block;
   }
 
-  /* line 476, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 476, ../Content/scss/partials/header/_navigation.scss */
   .dl-searchbutton:hover {
     background-position: 3px 2px;
   }
 
-  /* line 480, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_navigation.scss */
+  /* line 480, ../Content/scss/partials/header/_navigation.scss */
   .dl-search-field {
     float: left;
   }
@@ -1217,14 +1217,14 @@ Navigation Menu - Discovery
   font-style: normal;
 }
 
-/* line 13, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+/* line 13, ../Content/scss/partials/header/_search-bar.scss */
 .sb-search {
   visibility: hidden;
   display: none;
 }
 
 @media all and (min-width: 481px) {
-  /* line 21, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 21, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search {
     position: relative;
     margin-top: 100px;
@@ -1239,7 +1239,7 @@ Navigation Menu - Discovery
     -webkit-backface-visibility: hidden;
   }
 
-  /* line 35, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 35, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input {
     position: absolute;
     top: 0;
@@ -1257,27 +1257,27 @@ Navigation Menu - Discovery
     color: #2c3e50;
   }
 
-  /* line 52, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 52, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input::-webkit-input-placeholder {
     color: #ccc;
   }
 
-  /* line 53, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 53, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input:-moz-placeholder {
     color: #ccc;
   }
 
-  /* line 54, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 54, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input::-moz-placeholder {
     color: #ccc;
   }
 
-  /* line 55, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 55, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-input:-ms-input-placeholder {
     color: #ccc;
   }
 
-  /* line 58, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 58, ../Content/scss/partials/header/_search-bar.scss */
   .sb-icon-search,
   .sb-search-submit {
     width: 60px;
@@ -1293,7 +1293,7 @@ Navigation Menu - Discovery
     cursor: pointer;
   }
 
-  /* line 72, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 72, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search-submit {
     background: #fff;
     /* IE needs this */
@@ -1308,7 +1308,7 @@ Navigation Menu - Discovery
     z-index: -1;
   }
 
-  /* line 83, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 83, ../Content/scss/partials/header/_search-bar.scss */
   .sb-icon-search {
     color: #fff;
     background: rgba(225, 225, 225, 0.75);
@@ -1323,19 +1323,19 @@ Navigation Menu - Discovery
     -webkit-font-smoothing: antialiased;
   }
 
-  /* line 97, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 97, ../Content/scss/partials/header/_search-bar.scss */
   .sb-icon-search:before {
     content: "\e000";
   }
 
   /* Open state */
-  /* line 103, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 103, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search.sb-search-open,
   .no-js .sb-search {
     width: 100%;
   }
 
-  /* line 108, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 108, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search.sb-search-open .sb-icon-search,
   .no-js .sb-search .sb-icon-search {
     background: rgba(225, 225, 225, 0.75);
@@ -1343,7 +1343,7 @@ Navigation Menu - Discovery
     z-index: 11;
   }
 
-  /* line 115, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 115, ../Content/scss/partials/header/_search-bar.scss */
   .sb-search.sb-search-open .sb-search-submit,
   .no-js .sb-search .sb-search-submit {
     z-index: 90;
@@ -1353,14 +1353,14 @@ Navigation Menu - Discovery
   /*.sb-search {
       visibility: visible;
   }*/
-  /* line 129, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_search-bar.scss */
+  /* line 129, ../Content/scss/partials/header/_search-bar.scss */
   .dl-search-field,
   .dl-searchbutton {
     visibility: hidden;
   }
 }
 /* Hide the inner submenus */
-/* line 3, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 3, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper li .dl-submenu {
   display: none;
 }
@@ -1372,14 +1372,14 @@ We also hide the submenu link.
 The opened submenu will get the class "dl-subviewopen".
 All this is done for any sub-level being entered.
 */
-/* line 17, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 17, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-subview li,
 .dl-menu.dl-subview li.dl-subviewopen > a,
 .dl-menu.dl-subview li.dl-subview > a {
   display: none;
 }
 
-/* line 25, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 25, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-subview li.dl-subview,
 .dl-menu.dl-subview li.dl-subview .dl-submenu,
 .dl-menu.dl-subview li.dl-subviewopen,
@@ -1389,7 +1389,7 @@ All this is done for any sub-level being entered.
 }
 
 /* Dynamically added submenu outside of the menu context */
-/* line 30, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 30, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu {
   position: absolute;
   width: 100%;
@@ -1399,35 +1399,35 @@ All this is done for any sub-level being entered.
 }
 
 /* Animation classes for moving out and in */
-/* line 41, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 41, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-out-1 {
   -webkit-animation: MenuAnimOut1 0.4s;
   -moz-animation: MenuAnimOut1 0.4s;
   animation: MenuAnimOut1 0.4s;
 }
 
-/* line 47, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 47, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-out-2 {
   -webkit-animation: MenuAnimOut2 0.3s ease-in-out;
   -moz-animation: MenuAnimOut2 0.3s ease-in-out;
   animation: MenuAnimOut2 0.3s ease-in-out;
 }
 
-/* line 53, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 53, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-out-3 {
   -webkit-animation: MenuAnimOut3 0.4s ease;
   -moz-animation: MenuAnimOut3 0.4s ease;
   animation: MenuAnimOut3 0.4s ease;
 }
 
-/* line 59, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 59, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-out-4 {
   -webkit-animation: MenuAnimOut4 0.4s ease;
   -moz-animation: MenuAnimOut4 0.4s ease;
   animation: MenuAnimOut4 0.4s ease;
 }
 
-/* line 65, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 65, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-out-5 {
   -webkit-animation: MenuAnimOut5 0.4s ease;
   -moz-animation: MenuAnimOut5 0.4s ease;
@@ -1435,18 +1435,18 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimOut1 {
-  /* line 72, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 72, ../Content/scss/partials/header/_menu.animation.scss */
   50% {
     -webkit-transform: translateZ(-250px) rotateY(30deg);
   }
 
-  /* line 75, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 75, ../Content/scss/partials/header/_menu.animation.scss */
   75% {
     -webkit-transform: translateZ(-372.5px) rotateY(15deg);
     opacity: .5;
   }
 
-  /* line 79, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 79, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
@@ -1454,7 +1454,7 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimOut2 {
-  /* line 86, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 86, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateX(-100%);
     opacity: 0;
@@ -1462,7 +1462,7 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimOut3 {
-  /* line 93, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 93, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(300px);
     opacity: 0;
@@ -1470,7 +1470,7 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimOut4 {
-  /* line 100, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 100, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(-300px);
     opacity: 0;
@@ -1478,7 +1478,7 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimOut5 {
-  /* line 107, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 107, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateY(40%);
     opacity: 0;
@@ -1486,18 +1486,18 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimOut1 {
-  /* line 114, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 114, ../Content/scss/partials/header/_menu.animation.scss */
   50% {
     -moz-transform: translateZ(-250px) rotateY(30deg);
   }
 
-  /* line 117, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 117, ../Content/scss/partials/header/_menu.animation.scss */
   75% {
     -moz-transform: translateZ(-372.5px) rotateY(15deg);
     opacity: .5;
   }
 
-  /* line 121, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 121, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
@@ -1505,7 +1505,7 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimOut2 {
-  /* line 128, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 128, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateX(-100%);
     opacity: 0;
@@ -1513,7 +1513,7 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimOut3 {
-  /* line 135, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 135, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(300px);
     opacity: 0;
@@ -1521,7 +1521,7 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimOut4 {
-  /* line 142, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 142, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(-300px);
     opacity: 0;
@@ -1529,7 +1529,7 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimOut5 {
-  /* line 149, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 149, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateY(40%);
     opacity: 0;
@@ -1537,18 +1537,18 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimOut1 {
-  /* line 156, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 156, ../Content/scss/partials/header/_menu.animation.scss */
   50% {
     transform: translateZ(-250px) rotateY(30deg);
   }
 
-  /* line 159, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 159, ../Content/scss/partials/header/_menu.animation.scss */
   75% {
     transform: translateZ(-372.5px) rotateY(15deg);
     opacity: .5;
   }
 
-  /* line 163, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 163, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
@@ -1556,7 +1556,7 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimOut2 {
-  /* line 170, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 170, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateX(-100%);
     opacity: 0;
@@ -1564,7 +1564,7 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimOut3 {
-  /* line 177, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 177, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(300px);
     opacity: 0;
@@ -1572,7 +1572,7 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimOut4 {
-  /* line 184, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 184, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(-300px);
     opacity: 0;
@@ -1580,42 +1580,42 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimOut5 {
-  /* line 191, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 191, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateY(40%);
     opacity: 0;
   }
 }
 
-/* line 197, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 197, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-in-1 {
   -webkit-animation: MenuAnimIn1 0.3s;
   -moz-animation: MenuAnimIn1 0.3s;
   animation: MenuAnimIn1 0.3s;
 }
 
-/* line 203, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 203, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-in-2 {
   -webkit-animation: MenuAnimIn2 0.3s ease-in-out;
   -moz-animation: MenuAnimIn2 0.3s ease-in-out;
   animation: MenuAnimIn2 0.3s ease-in-out;
 }
 
-/* line 209, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 209, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-in-3 {
   -webkit-animation: MenuAnimIn3 0.4s ease;
   -moz-animation: MenuAnimIn3 0.4s ease;
   animation: MenuAnimIn3 0.4s ease;
 }
 
-/* line 215, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 215, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-in-4 {
   -webkit-animation: MenuAnimIn4 0.4s ease;
   -moz-animation: MenuAnimIn4 0.4s ease;
   animation: MenuAnimIn4 0.4s ease;
 }
 
-/* line 221, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 221, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menu.dl-animate-in-5 {
   -webkit-animation: MenuAnimIn5 0.4s ease;
   -moz-animation: MenuAnimIn5 0.4s ease;
@@ -1623,19 +1623,19 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimIn1 {
-  /* line 228, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 228, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
   }
 
-  /* line 232, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 232, ../Content/scss/partials/header/_menu.animation.scss */
   20% {
     -webkit-transform: translateZ(-250px) rotateY(30deg);
     opacity: 0.5;
   }
 
-  /* line 236, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 236, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(0px) rotateY(0deg);
     opacity: 1;
@@ -1643,13 +1643,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimIn2 {
-  /* line 243, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 243, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateX(-100%);
     opacity: 0;
   }
 
-  /* line 247, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 247, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateX(0px);
     opacity: 1;
@@ -1657,13 +1657,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimIn3 {
-  /* line 254, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 254, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(300px);
     opacity: 0;
   }
 
-  /* line 258, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 258, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(0px);
     opacity: 1;
@@ -1671,13 +1671,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimIn4 {
-  /* line 265, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 265, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(-300px);
     opacity: 0;
   }
 
-  /* line 269, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 269, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(0px);
     opacity: 1;
@@ -1685,13 +1685,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes MenuAnimIn5 {
-  /* line 276, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 276, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateY(40%);
     opacity: 0;
   }
 
-  /* line 280, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 280, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateY(0);
     opacity: 1;
@@ -1699,19 +1699,19 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimIn1 {
-  /* line 287, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 287, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
   }
 
-  /* line 291, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 291, ../Content/scss/partials/header/_menu.animation.scss */
   20% {
     -moz-transform: translateZ(-250px) rotateY(30deg);
     opacity: 0.5;
   }
 
-  /* line 295, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 295, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(0px) rotateY(0deg);
     opacity: 1;
@@ -1719,13 +1719,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimIn2 {
-  /* line 302, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 302, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateX(-100%);
     opacity: 0;
   }
 
-  /* line 306, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 306, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateX(0px);
     opacity: 1;
@@ -1733,13 +1733,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimIn3 {
-  /* line 313, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 313, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(300px);
     opacity: 0;
   }
 
-  /* line 317, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 317, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(0px);
     opacity: 1;
@@ -1747,13 +1747,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimIn4 {
-  /* line 324, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 324, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(-300px);
     opacity: 0;
   }
 
-  /* line 328, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 328, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(0px);
     opacity: 1;
@@ -1761,13 +1761,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes MenuAnimIn5 {
-  /* line 335, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 335, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateY(40%);
     opacity: 0;
   }
 
-  /* line 339, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 339, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateY(0);
     opacity: 1;
@@ -1775,19 +1775,19 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimIn1 {
-  /* line 346, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 346, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
   }
 
-  /* line 350, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 350, ../Content/scss/partials/header/_menu.animation.scss */
   20% {
     transform: translateZ(-250px) rotateY(30deg);
     opacity: 0.5;
   }
 
-  /* line 354, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 354, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(0px) rotateY(0deg);
     opacity: 1;
@@ -1795,13 +1795,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimIn2 {
-  /* line 361, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 361, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateX(-100%);
     opacity: 0;
   }
 
-  /* line 365, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 365, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateX(0px);
     opacity: 1;
@@ -1809,13 +1809,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimIn3 {
-  /* line 372, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 372, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(300px);
     opacity: 0;
   }
 
-  /* line 376, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 376, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(0px);
     opacity: 1;
@@ -1823,13 +1823,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimIn4 {
-  /* line 383, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 383, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(-300px);
     opacity: 0;
   }
 
-  /* line 387, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 387, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(0px);
     opacity: 1;
@@ -1837,48 +1837,48 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes MenuAnimIn5 {
-  /* line 394, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 394, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateY(40%);
     opacity: 0;
   }
 
-  /* line 398, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 398, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-/* line 404, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 404, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-in-1 {
   -webkit-animation: SubMenuAnimIn1 0.4s ease;
   -moz-animation: SubMenuAnimIn1 0.4s ease;
   animation: SubMenuAnimIn1 0.4s ease;
 }
 
-/* line 410, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 410, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-in-2 {
   -webkit-animation: SubMenuAnimIn2 0.3s ease-in-out;
   -moz-animation: SubMenuAnimIn2 0.3s ease-in-out;
   animation: SubMenuAnimIn2 0.3s ease-in-out;
 }
 
-/* line 416, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 416, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-in-3 {
   -webkit-animation: SubMenuAnimIn3 0.4s ease;
   -moz-animation: SubMenuAnimIn3 0.4s ease;
   animation: SubMenuAnimIn3 0.4s ease;
 }
 
-/* line 422, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 422, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-in-4 {
   -webkit-animation: SubMenuAnimIn4 0.4s ease;
   -moz-animation: SubMenuAnimIn4 0.4s ease;
   animation: SubMenuAnimIn4 0.4s ease;
 }
 
-/* line 428, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 428, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-in-5 {
   -webkit-animation: SubMenuAnimIn5 0.4s ease;
   -moz-animation: SubMenuAnimIn5 0.4s ease;
@@ -1886,13 +1886,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimIn1 {
-  /* line 435, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 435, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateX(50%);
     opacity: 0;
   }
 
-  /* line 439, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 439, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateX(0px);
     opacity: 1;
@@ -1900,13 +1900,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimIn2 {
-  /* line 446, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 446, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateX(100%);
     opacity: 0;
   }
 
-  /* line 450, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 450, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateX(0px);
     opacity: 1;
@@ -1914,13 +1914,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimIn3 {
-  /* line 457, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 457, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(-300px);
     opacity: 0;
   }
 
-  /* line 461, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 461, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(0px);
     opacity: 1;
@@ -1928,13 +1928,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimIn4 {
-  /* line 468, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 468, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(300px);
     opacity: 0;
   }
 
-  /* line 472, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 472, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(0px);
     opacity: 1;
@@ -1942,13 +1942,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimIn5 {
-  /* line 479, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 479, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(-200px);
     opacity: 0;
   }
 
-  /* line 483, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 483, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(0);
     opacity: 1;
@@ -1956,13 +1956,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimIn1 {
-  /* line 490, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 490, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateX(50%);
     opacity: 0;
   }
 
-  /* line 494, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 494, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateX(0px);
     opacity: 1;
@@ -1970,13 +1970,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimIn2 {
-  /* line 501, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 501, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateX(100%);
     opacity: 0;
   }
 
-  /* line 505, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 505, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateX(0px);
     opacity: 1;
@@ -1984,13 +1984,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimIn3 {
-  /* line 512, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 512, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(-300px);
     opacity: 0;
   }
 
-  /* line 516, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 516, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(0px);
     opacity: 1;
@@ -1998,13 +1998,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimIn4 {
-  /* line 523, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 523, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(300px);
     opacity: 0;
   }
 
-  /* line 527, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 527, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(0px);
     opacity: 1;
@@ -2012,13 +2012,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimIn5 {
-  /* line 534, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 534, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(-200px);
     opacity: 0;
   }
 
-  /* line 538, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 538, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(0);
     opacity: 1;
@@ -2026,13 +2026,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimIn1 {
-  /* line 545, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 545, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateX(50%);
     opacity: 0;
   }
 
-  /* line 549, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 549, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateX(0px);
     opacity: 1;
@@ -2040,13 +2040,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimIn2 {
-  /* line 556, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 556, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateX(100%);
     opacity: 0;
   }
 
-  /* line 560, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 560, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateX(0px);
     opacity: 1;
@@ -2054,13 +2054,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimIn3 {
-  /* line 567, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 567, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(-300px);
     opacity: 0;
   }
 
-  /* line 571, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 571, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(0px);
     opacity: 1;
@@ -2068,13 +2068,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimIn4 {
-  /* line 578, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 578, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(300px);
     opacity: 0;
   }
 
-  /* line 582, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 582, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(0px);
     opacity: 1;
@@ -2082,48 +2082,48 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimIn5 {
-  /* line 589, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 589, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(-200px);
     opacity: 0;
   }
 
-  /* line 593, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 593, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(0);
     opacity: 1;
   }
 }
 
-/* line 599, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 599, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-out-1 {
   -webkit-animation: SubMenuAnimOut1 0.4s ease;
   -moz-animation: SubMenuAnimOut1 0.4s ease;
   animation: SubMenuAnimOut1 0.4s ease;
 }
 
-/* line 605, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 605, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-out-2 {
   -webkit-animation: SubMenuAnimOut2 0.3s ease-in-out;
   -moz-animation: SubMenuAnimOut2 0.3s ease-in-out;
   animation: SubMenuAnimOut2 0.3s ease-in-out;
 }
 
-/* line 611, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 611, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-out-3 {
   -webkit-animation: SubMenuAnimOut3 0.4s ease;
   -moz-animation: SubMenuAnimOut3 0.4s ease;
   animation: SubMenuAnimOut3 0.4s ease;
 }
 
-/* line 617, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 617, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-out-4 {
   -webkit-animation: SubMenuAnimOut4 0.4s ease;
   -moz-animation: SubMenuAnimOut4 0.4s ease;
   animation: SubMenuAnimOut4 0.4s ease;
 }
 
-/* line 623, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 623, ../Content/scss/partials/header/_menu.animation.scss */
 .dl-menuwrapper > .dl-submenu.dl-animate-out-5 {
   -webkit-animation: SubMenuAnimOut5 0.4s ease;
   -moz-animation: SubMenuAnimOut5 0.4s ease;
@@ -2131,13 +2131,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimOut1 {
-  /* line 630, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 630, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateX(0%);
     opacity: 1;
   }
 
-  /* line 634, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 634, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateX(50%);
     opacity: 0;
@@ -2145,13 +2145,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimOut2 {
-  /* line 641, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 641, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateX(0%);
     opacity: 1;
   }
 
-  /* line 645, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 645, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateX(100%);
     opacity: 0;
@@ -2159,13 +2159,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimOut3 {
-  /* line 652, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 652, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(0px);
     opacity: 1;
   }
 
-  /* line 656, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 656, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(-300px);
     opacity: 0;
@@ -2173,13 +2173,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimOut4 {
-  /* line 663, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 663, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(0px);
     opacity: 1;
   }
 
-  /* line 667, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 667, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(300px);
     opacity: 0;
@@ -2187,13 +2187,13 @@ All this is done for any sub-level being entered.
 }
 
 @-webkit-keyframes SubMenuAnimOut5 {
-  /* line 674, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 674, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -webkit-transform: translateZ(0);
     opacity: 1;
   }
 
-  /* line 678, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 678, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -webkit-transform: translateZ(-200px);
     opacity: 0;
@@ -2201,13 +2201,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimOut1 {
-  /* line 685, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 685, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateX(0%);
     opacity: 1;
   }
 
-  /* line 689, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 689, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateX(50%);
     opacity: 0;
@@ -2215,13 +2215,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimOut2 {
-  /* line 696, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 696, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateX(0%);
     opacity: 1;
   }
 
-  /* line 700, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 700, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateX(100%);
     opacity: 0;
@@ -2229,13 +2229,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimOut3 {
-  /* line 707, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 707, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(0px);
     opacity: 1;
   }
 
-  /* line 711, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 711, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(-300px);
     opacity: 0;
@@ -2243,13 +2243,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimOut4 {
-  /* line 718, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 718, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(0px);
     opacity: 1;
   }
 
-  /* line 722, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 722, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(300px);
     opacity: 0;
@@ -2257,13 +2257,13 @@ All this is done for any sub-level being entered.
 }
 
 @-moz-keyframes SubMenuAnimOut5 {
-  /* line 729, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 729, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     -moz-transform: translateZ(0);
     opacity: 1;
   }
 
-  /* line 733, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 733, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     -moz-transform: translateZ(-200px);
     opacity: 0;
@@ -2271,13 +2271,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimOut1 {
-  /* line 740, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 740, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateX(0%);
     opacity: 1;
   }
 
-  /* line 744, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 744, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateX(50%);
     opacity: 0;
@@ -2285,13 +2285,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimOut2 {
-  /* line 751, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 751, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateX(0%);
     opacity: 1;
   }
 
-  /* line 755, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 755, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateX(100%);
     opacity: 0;
@@ -2299,13 +2299,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimOut3 {
-  /* line 762, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 762, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(0px);
     opacity: 1;
   }
 
-  /* line 766, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 766, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(-300px);
     opacity: 0;
@@ -2313,13 +2313,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimOut4 {
-  /* line 773, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 773, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(0px);
     opacity: 1;
   }
 
-  /* line 777, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 777, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(300px);
     opacity: 0;
@@ -2327,13 +2327,13 @@ All this is done for any sub-level being entered.
 }
 
 @keyframes SubMenuAnimOut5 {
-  /* line 784, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 784, ../Content/scss/partials/header/_menu.animation.scss */
   0% {
     transform: translateZ(0);
     opacity: 1;
   }
 
-  /* line 788, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+  /* line 788, ../Content/scss/partials/header/_menu.animation.scss */
   100% {
     transform: translateZ(-200px);
     opacity: 0;
@@ -2341,7 +2341,7 @@ All this is done for any sub-level being entered.
 }
 
 /* No JS Fallback */
-/* line 795, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 795, ../Content/scss/partials/header/_menu.animation.scss */
 .no-js .dl-menuwrapper .dl-menu {
   position: relative;
   opacity: 1;
@@ -2350,34 +2350,34 @@ All this is done for any sub-level being entered.
   transform: none;
 }
 
-/* line 803, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 803, ../Content/scss/partials/header/_menu.animation.scss */
 .no-js .dl-menuwrapper li .dl-submenu {
   display: block;
 }
 
-/* line 807, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 807, ../Content/scss/partials/header/_menu.animation.scss */
 .no-js .dl-menuwrapper li.dl-back {
   display: none;
 }
 
-/* line 811, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 811, ../Content/scss/partials/header/_menu.animation.scss */
 .no-js .dl-menuwrapper li > a:not(:only-child) {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* line 815, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 815, ../Content/scss/partials/header/_menu.animation.scss */
 .no-js .dl-menuwrapper li > a:not(:only-child):after {
   content: '';
 }
 
 /* Colors for demos */
 /* Demo 1 */
-/* line 822, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 822, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-1 .dl-menuwrapper button {
   background: #c62860;
 }
 
-/* line 828, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 828, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-1 .dl-menuwrapper button:hover,
 .demo-1 .dl-menuwrapper button.dl-active,
 .demo-1 .dl-menuwrapper ul {
@@ -2385,12 +2385,12 @@ All this is done for any sub-level being entered.
 }
 
 /* Demo 2 */
-/* line 833, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 833, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-2 .dl-menuwrapper button {
   background: #e86814;
 }
 
-/* line 839, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 839, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-2 .dl-menuwrapper button:hover,
 .demo-2 .dl-menuwrapper button.dl-active,
 .demo-2 .dl-menuwrapper ul {
@@ -2398,12 +2398,12 @@ All this is done for any sub-level being entered.
 }
 
 /* Demo 3 */
-/* line 844, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 844, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-3 .dl-menuwrapper button {
   background: #08cbc4;
 }
 
-/* line 850, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 850, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-3 .dl-menuwrapper button:hover,
 .demo-3 .dl-menuwrapper button.dl-active,
 .demo-3 .dl-menuwrapper ul {
@@ -2411,12 +2411,12 @@ All this is done for any sub-level being entered.
 }
 
 /* Demo 4 */
-/* line 855, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 855, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-4 .dl-menuwrapper button {
   background: #90b912;
 }
 
-/* line 861, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 861, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-4 .dl-menuwrapper button:hover,
 .demo-4 .dl-menuwrapper button.dl-active,
 .demo-4 .dl-menuwrapper ul {
@@ -2424,12 +2424,12 @@ All this is done for any sub-level being entered.
 }
 
 /* Demo 5 */
-/* line 866, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 866, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-5 .dl-menuwrapper button {
   background: #744783;
 }
 
-/* line 872, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/header/_menu.animation.scss */
+/* line 872, ../Content/scss/partials/header/_menu.animation.scss */
 .demo-5 .dl-menuwrapper button:hover,
 .demo-5 .dl-menuwrapper button.dl-active,
 .demo-5 .dl-menuwrapper ul {
@@ -2437,14 +2437,14 @@ All this is done for any sub-level being entered.
 }
 
 /* Mobile Layout: 500px and below. */
-/* line 4, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_viewbook.scss */
+/* line 4, ../Content/scss/partials/_viewbook.scss */
 .viewbook {
   position: absolute;
   top: 20px;
   right: 40px;
 }
 
-/* line 9, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_viewbook.scss */
+/* line 9, ../Content/scss/partials/_viewbook.scss */
 .viewbook img {
   width: 116px;
   height: 125px;
@@ -2452,13 +2452,13 @@ All this is done for any sub-level being entered.
 
 /* Tablet Layout (portrait mode): 481px to 768px. Inherits styles from: Mobile Layout. */
 @media all and (min-width: 501px) {
-  /* line 17, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_viewbook.scss */
+  /* line 17, ../Content/scss/partials/_viewbook.scss */
   .viewbook {
     top: 270px;
     left: 40px;
   }
 
-  /* line 21, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_viewbook.scss */
+  /* line 21, ../Content/scss/partials/_viewbook.scss */
   .viewbook img {
     width: 280px;
     height: 300px;
@@ -2466,7 +2466,7 @@ All this is done for any sub-level being entered.
 }
 /* Tablet Layout (landscape mode): 769px to 1024px. Inherits styles from: Mobile Layout and Portrait Layout. */
 @media all and (min-width: 769px) {
-  /* line 32, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_viewbook.scss */
+  /* line 32, ../Content/scss/partials/_viewbook.scss */
   .viewbook {
     top: 40px;
     left: 40px;
@@ -2474,13 +2474,13 @@ All this is done for any sub-level being entered.
 }
 /* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-  /* line 43, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_viewbook.scss */
+  /* line 43, ../Content/scss/partials/_viewbook.scss */
   .viewbook {
     top: 0;
     left: 0;
   }
 
-  /* line 47, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_viewbook.scss */
+  /* line 47, ../Content/scss/partials/_viewbook.scss */
   .viewbook {
     margin-left: 0;
   }
@@ -2490,14 +2490,14 @@ All this is done for any sub-level being entered.
 /* =============================================================================
 Footer/Section Layout
 ========================================================================== */
-/* line 8, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+/* line 8, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner {
   background: url("/images/home-footer-bg.jpg") top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 14, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+/* line 14, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner ul {
   list-style: none;
   margin: 0;
@@ -2506,7 +2506,7 @@ Footer/Section Layout
 
 /*-------------------------------*/
 /* The headers */
-/* line 23, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+/* line 23, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner p {
   padding: 10px 9px 8px;
   width: 99%;
@@ -2523,19 +2523,19 @@ Footer/Section Layout
   cursor: default;
 }
 
-/* line 41, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+/* line 41, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner div a {
   padding-left: 5px;
 }
 
-/* line 45, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+/* line 45, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner > ul > li ul {
   padding: 0 0 20px;
 }
 
 /*-------------------------------*/
 /* The links */
-/* line 51, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+/* line 51, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner > ul > li ul li {
   margin: 1px 0;
   padding: 0 5px;
@@ -2545,13 +2545,13 @@ Footer/Section Layout
   color: #ccc;
 }
 
-/* line 60, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+/* line 60, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner > ul > li ul li a {
   text-decoration: none !important;
   color: #ccc !important;
 }
 
-/* line 65, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+/* line 65, ../Content/scss/partials/_footer.scss */
 .wrapper-footer-inner > ul > li ul li a:hover {
   color: #7d8691 !important;
 }
@@ -2563,7 +2563,7 @@ Footer/Section Layout
   ========================================================================== */
   /*-------------------------------*/
   /* The columns */
-  /* line 79, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+  /* line 79, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner > ul {
     width: 100%;
     margin: 0 auto;
@@ -2571,7 +2571,7 @@ Footer/Section Layout
   }
 
   /* The four columns of links */
-  /* line 86, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+  /* line 86, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner ul > li {
     width: 25%;
     float: left;
@@ -2579,24 +2579,24 @@ Footer/Section Layout
 
   /*-------------------------------*/
   /* The headers */
-  /* line 94, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+  /* line 94, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner p {
     text-align: left;
   }
 
-  /* line 98, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+  /* line 98, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner > ul > li:hover p {
     opacity: 1;
   }
 
   /*-------------------------------*/
   /* The links */
-  /* line 104, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+  /* line 104, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner > ul > li ul li {
     font-size: .8em;
   }
 
-  /* line 108, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_footer.scss */
+  /* line 108, ../Content/scss/partials/_footer.scss */
   .wrapper-footer-inner > ul > li ul li a {
     font-size: 1.1em;
   }
@@ -2605,7 +2605,7 @@ Footer/Section Layout
 /* =============================================================================
    Back to top link/image
    ========================================================================== */
-/* line 5, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_back-to-top.scss */
+/* line 5, ../Content/scss/partials/_back-to-top.scss */
 .back-to-top {
   background-color: rgba(235, 235, 235, 0.8);
   border: 2px solid #ccc;
@@ -2621,7 +2621,7 @@ Footer/Section Layout
   z-index: 9999;
 }
 
-/* line 20, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_back-to-top.scss */
+/* line 20, ../Content/scss/partials/_back-to-top.scss */
 .back-to-top:hover {
   background-color: rgba(135, 135, 135, 0.5);
   text-decoration: none;
@@ -2629,7 +2629,7 @@ Footer/Section Layout
 }
 
 /* Mobile Layout: 499px and below. */
-/* line 5, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_grids.scss */
+/* line 5, ../Content/scss/partials/_grids.scss */
 .col-md-3, .col-md-4 {
   background: #EEE;
   border-top: 1px solid #FFF;
@@ -2638,7 +2638,7 @@ Footer/Section Layout
   border-bottom: 1px solid #BBB;
 }
 
-/* line 13, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_grids.scss */
+/* line 13, ../Content/scss/partials/_grids.scss */
 .col-span-2, .col-span-3 {
   -webkit-column-width: auto;
   -moz-column-width: auto;
@@ -2651,13 +2651,13 @@ Footer/Section Layout
 /* Tablet Layout: 500px to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
-  /* line 36, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_grids.scss */
+  /* line 36, ../Content/scss/partials/_grids.scss */
   .col-md-3, .col-md-4 {
     background: none;
     border: none;
   }
 
-  /* line 41, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_grids.scss */
+  /* line 41, ../Content/scss/partials/_grids.scss */
   .col-span-2 {
     margin: 0 auto;
     text-align: justify;
@@ -2673,7 +2673,7 @@ Footer/Section Layout
     column-gap: 1%;
   }
 
-  /* line 59, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/partials/_grids.scss */
+  /* line 59, ../Content/scss/partials/_grids.scss */
   .col-span-3 {
     margin: 0 auto;
     text-align: left;
@@ -2689,148 +2689,8 @@ Footer/Section Layout
     column-gap: 1%;
   }
 }
-/* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
-@media screen and (min-width: 1025px) {
-  /* line 4, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-overlay {
-    position: absolute;
-    z-index: 999999;
-    background-color: #000;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-  }
-
-  /* line 15, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-helper-layer {
-    position: absolute;
-    z-index: 9999998;
-    color: white;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-  }
-
-  /* line 24, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-helper-layer.chardinjs-left {
-    border-left: solid white 1px;
-    margin-left: -10px;
-  }
-
-  /* line 27, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-helper-layer.chardinjs-right {
-    border-right: solid white 1px;
-    padding-right: 10px;
-  }
-
-  /* line 30, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-helper-layer.chardinjs-bottom {
-    border-bottom: solid white 1px;
-    padding-bottom: 10px;
-  }
-
-  /* line 33, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-helper-layer.chardinjs-top {
-    border-top: solid white 1px;
-    padding-top: 10px;
-  }
-
-  /* line 37, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip {
-    position: absolute;
-    -webkit-transition: opacity 0.1s ease-out;
-    -moz-transition: opacity 0.1s ease-out;
-    -ms-transition: opacity 0.1s ease-out;
-    -o-transition: opacity 0.1s ease-out;
-    transition: opacity 0.1s ease-out;
-    max-width: 200px;
-  }
-
-  /* line 45, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-left {
-    margin-left: -135px;
-    padding-right: 10px;
-  }
-
-  /* line 48, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-right {
-    margin-right: -135px;
-    padding-left: 10px;
-  }
-
-  /* line 51, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-bottom {
-    margin-bottom: -50px;
-    padding-top: 10px;
-  }
-
-  /* line 54, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-top {
-    margin-top: -50px;
-    padding-bottom: 10px;
-  }
-
-  /* line 57, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-right:before, .chardinjs-tooltip.chardinjs-left:after, .chardinjs-tooltip.chardinjs-bottom:before, .chardinjs-tooltip.chardinjs-top:after {
-    content: ".";
-    display: inline-block;
-    background-color: white;
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-  }
-
-  /* line 64, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-right:before, .chardinjs-tooltip.chardinjs-left:after {
-    width: 100px;
-    top: 50%;
-  }
-
-  /* line 67, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-bottom:before, .chardinjs-tooltip.chardinjs-top:after {
-    width: 1px;
-    height: 50px;
-    left: 50%;
-  }
-
-  /* line 71, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-bottom:before {
-    top: -50px;
-  }
-
-  /* line 73, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-top:after {
-    bottom: -50px;
-  }
-
-  /* line 75, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-right:before {
-    left: -100px;
-  }
-
-  /* line 77, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-tooltip.chardinjs-left:after {
-    right: -100px;
-  }
-
-  /* line 80, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-show-element {
-    z-index: 9999999;
-    opacity: 0.8;
-  }
-
-  /* line 84, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_chardin.scss */
-  .chardinjs-relative-position {
-    position: relative;
-  }
-}
 /* Mobile Layout: 500px and below. */
-/* line 5, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 5, ../Content/scss/modules/sly/_home.scss */
 .pagespan *,
 .pagespan *:after,
 .pagespan *:before {
@@ -2842,13 +2702,13 @@ Footer/Section Layout
 }
 
 /* Wrapper */
-/* line 15, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 15, ../Content/scss/modules/sly/_home.scss */
 .pagespan .wrap {
   position: relative;
 }
 
 /* Frame */
-/* line 21, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 21, ../Content/scss/modules/sly/_home.scss */
 .frame {
   width: 100%;
   margin: 0 0 1px;
@@ -2858,7 +2718,7 @@ Footer/Section Layout
   z-index: 9;
 }
 
-/* line 28, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 28, ../Content/scss/modules/sly/_home.scss */
 .frame ul {
   margin: 0;
   padding: 0;
@@ -2867,7 +2727,7 @@ Footer/Section Layout
   position: relative;
 }
 
-/* line 35, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 35, ../Content/scss/modules/sly/_home.scss */
 .frame ul li {
   /*panel*/
   width: 320px;
@@ -2887,7 +2747,7 @@ Footer/Section Layout
   */
 }
 
-/* line 51, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 51, ../Content/scss/modules/sly/_home.scss */
 .frame ul li.active {
   /*active panel*/
   color: #fff;
@@ -2896,27 +2756,27 @@ Footer/Section Layout
   filter: Alpha(opacity=100);  IE8 and earlier */
 }
 
-/* line 58, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 58, ../Content/scss/modules/sly/_home.scss */
 .frame .social {
   position: absolute;
   right: 0;
   padding: 12px 18px;
 }
 
-/* line 63, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 63, ../Content/scss/modules/sly/_home.scss */
 .frame .tt-share {
   top: 0;
   background: #00ccff;
 }
 
-/* line 67, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 67, ../Content/scss/modules/sly/_home.scss */
 .frame .fb-share {
   top: 40px;
   background: #0066cc;
 }
 
 /*slide caption*/
-/* line 73, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 73, ../Content/scss/modules/sly/_home.scss */
 .frame p {
   margin: 0;
   background: rgba(0, 0, 0, 0.4);
@@ -2930,13 +2790,13 @@ Footer/Section Layout
   z-index: 10;
 }
 
-/* line 84, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 84, ../Content/scss/modules/sly/_home.scss */
 .frame p a {
   color: #fff;
 }
 
 /* Scrollbar */
-/* line 90, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 90, ../Content/scss/modules/sly/_home.scss */
 .scrollbar {
   margin: 1px 0 1px;
   height: 2px;
@@ -2944,7 +2804,7 @@ Footer/Section Layout
   line-height: 0;
 }
 
-/* line 96, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 96, ../Content/scss/modules/sly/_home.scss */
 .scrollbar .handle {
   width: 100px;
   height: 100%;
@@ -2952,7 +2812,7 @@ Footer/Section Layout
   cursor: pointer;
 }
 
-/* line 102, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 102, ../Content/scss/modules/sly/_home.scss */
 .scrollbar .handle .mousearea {
   position: absolute;
   top: -9px;
@@ -2962,7 +2822,7 @@ Footer/Section Layout
 }
 
 /* Pages */
-/* line 112, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 112, ../Content/scss/modules/sly/_home.scss */
 .pages {
   list-style: none;
   margin: 0 0 3px;
@@ -2971,7 +2831,7 @@ Footer/Section Layout
   position: relative;
 }
 
-/* line 119, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 119, ../Content/scss/modules/sly/_home.scss */
 .pages li {
   display: none;
   /*display: inline-block;*/
@@ -2986,33 +2846,33 @@ Footer/Section Layout
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 133, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 133, ../Content/scss/modules/sly/_home.scss */
 .pages li:hover {
   background: #ffcc00;
   border: 1px solid #333;
 }
 
-/* line 137, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 137, ../Content/scss/modules/sly/_home.scss */
 .pages li.active {
   background: #333;
   border: 1px solid #fff;
 }
 
 /* Controls */
-/* line 144, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 144, ../Content/scss/modules/sly/_home.scss */
 .controls {
   margin: 0;
   text-align: center;
 }
 
-/* line 145, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 145, ../Content/scss/modules/sly/_home.scss */
 .controls .divider {
   display: inline-block;
   margin: 0 10px;
 }
 
 /* Button Controls */
-/* line 148, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 148, ../Content/scss/modules/sly/_home.scss */
 .controls button {
   background: transparent;
   border: 0;
@@ -3020,17 +2880,17 @@ Footer/Section Layout
   opacity: .5;
 }
 
-/* line 149, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 149, ../Content/scss/modules/sly/_home.scss */
 .controls button:hover {
   opacity: 1;
 }
 
-/* line 150, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 150, ../Content/scss/modules/sly/_home.scss */
 .controls button:disabled {
   opacity: .2;
 }
 
-/* line 152, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 152, ../Content/scss/modules/sly/_home.scss */
 .forward, .backward {
   float: left;
   width: 50px;
@@ -3038,12 +2898,12 @@ Footer/Section Layout
   font-size: 60px;
 }
 
-/* line 153, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 153, ../Content/scss/modules/sly/_home.scss */
 .forward {
   float: right;
 }
 
-/* line 155, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 155, ../Content/scss/modules/sly/_home.scss */
 .next, .prev {
   background: rgba(255, 204, 0, 0.3);
   display: block;
@@ -3057,17 +2917,17 @@ Footer/Section Layout
   z-index: 10;
 }
 
-/* line 166, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 166, ../Content/scss/modules/sly/_home.scss */
 .prev {
   left: 0;
 }
 
-/* line 166, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 166, ../Content/scss/modules/sly/_home.scss */
 .next {
   right: 0;
 }
 
-/* line 167, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+/* line 167, ../Content/scss/modules/sly/_home.scss */
 .next:hover, .prev:hover {
   background: rgba(255, 204, 0, 0.6);
   color: #fff;
@@ -3076,7 +2936,7 @@ Footer/Section Layout
 /* Tablet Layout (portrait mode): 501px to 768px. Inherits styles from: Mobile Layout. */
 @media all and (min-width: 501px) {
   /* Pages */
-  /* line 174, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+  /* line 174, ../Content/scss/modules/sly/_home.scss */
   .pages {
     margin: 0;
     position: absolute;
@@ -3084,7 +2944,7 @@ Footer/Section Layout
     text-align: center;
   }
 
-  /* line 180, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+  /* line 180, ../Content/scss/modules/sly/_home.scss */
   .pages li {
     display: inline-block;
     width: 26px;
@@ -3098,7 +2958,7 @@ Footer/Section Layout
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
   }
 
-  /* line 192, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_home.scss */
+  /* line 192, ../Content/scss/modules/sly/_home.scss */
   .pages li {
     width: 13px;
     height: 13px;
@@ -3112,7 +2972,7 @@ Footer/Section Layout
 }
 /* Print Layout: Inherits styles from: All Layouts. */
 /* 3D Effects */
-/* line 3, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 3, ../Content/scss/modules/sly/_effects.scss */
 .effects {
   min-height: 200px;
   line-height: 200px;
@@ -3125,14 +2985,14 @@ Footer/Section Layout
   overflow-y: show;
 }
 
-/* line 14, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 14, ../Content/scss/modules/sly/_effects.scss */
 .effects ul {
   -webkit-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 19, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 19, ../Content/scss/modules/sly/_effects.scss */
 .effects ul li {
   position: relative;
   margin: 0 -20px;
@@ -3143,7 +3003,7 @@ Footer/Section Layout
   transition: transform 300ms ease-out;
 }
 
-/* line 28, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 28, ../Content/scss/modules/sly/_effects.scss */
 .effects ul li.active {
   z-index: 10;
   -webkit-transform: scale(1);
@@ -3151,7 +3011,7 @@ Footer/Section Layout
   transform: scale(1);
 }
 
-/* line 34, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 34, ../Content/scss/modules/sly/_effects.scss */
 .effects ul li.active ~ li {
   -webkit-transform: rotateY(-60deg) scale(0.9);
   -ms-transform: rotateY(-60deg) scale(0.9);
@@ -3159,37 +3019,37 @@ Footer/Section Layout
 }
 
 /* Crazy example */
-/* line 42, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 42, ../Content/scss/modules/sly/_effects.scss */
 .crazy ul li:nth-child(2n) {
   width: 100px;
   margin: 0 4px 0 20px;
 }
 
-/* line 43, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 43, ../Content/scss/modules/sly/_effects.scss */
 .crazy ul li:nth-child(3n) {
   width: 300px;
   margin: 0 10px 0 5px;
 }
 
-/* line 44, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 44, ../Content/scss/modules/sly/_effects.scss */
 .crazy ul li:nth-child(4n) {
   width: 400px;
   margin: 0 30px 0 2px;
 }
 
 /* One Item Per Frame example*/
-/* line 48, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 48, ../Content/scss/modules/sly/_effects.scss */
 .oneperframe {
   min-height: 300px;
   line-height: 300px;
 }
 
-/* line 49, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 49, ../Content/scss/modules/sly/_effects.scss */
 .oneperframe ul li {
   width: 1140px;
 }
 
-/* line 50, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/sly/_effects.scss */
+/* line 50, ../Content/scss/modules/sly/_effects.scss */
 .oneperframe ul li.active {
   background: #333;
 }
@@ -3204,7 +3064,7 @@ Footer/Section Layout
 /**
  * Shrink styles
  */
-/* line 13, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 13, ../Content/scss/modules/_stroll.scss */
 .cards {
   -webkit-perspective: 300px;
   -moz-perspective: 300px;
@@ -3218,7 +3078,7 @@ Footer/Section Layout
   perspective-origin: 50% 50%;
 }
 
-/* line 27, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 27, ../Content/scss/modules/_stroll.scss */
 .cards li {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -3232,7 +3092,7 @@ Footer/Section Layout
   transform-origin: 100% 50%;
 }
 
-/* line 40, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 40, ../Content/scss/modules/_stroll.scss */
 .cards li.past {
   -webkit-transform: translate3d(0, -100px, -100px) rotateX(-90deg);
   -moz-transform: translate3d(0, -100px, -100px) rotateX(-90deg);
@@ -3241,7 +3101,7 @@ Footer/Section Layout
   transform: translate3d(0, -100px, -100px) rotateX(-90deg);
 }
 
-/* line 47, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 47, ../Content/scss/modules/_stroll.scss */
 .cards li.future {
   -webkit-transform: translate3d(0, 100px, -100px) rotateX(90deg);
   -moz-transform: translate3d(0, 100px, -100px) rotateX(90deg);
@@ -3253,7 +3113,7 @@ Footer/Section Layout
 /**
  * Grow styles
  */
-/* line 59, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 59, ../Content/scss/modules/_stroll.scss */
 .grow li {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -3267,7 +3127,7 @@ Footer/Section Layout
   transform-origin: 50% 50%;
 }
 
-/* line 72, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 72, ../Content/scss/modules/_stroll.scss */
 .grow li.past {
   -webkit-transform: scale(0.01);
   -moz-transform: scale(0.01);
@@ -3276,7 +3136,7 @@ Footer/Section Layout
   transform: scale(0.01);
 }
 
-/* line 79, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 79, ../Content/scss/modules/_stroll.scss */
 .grow li.future {
   -webkit-transform: scale(0.01);
   -moz-transform: scale(0.01);
@@ -3288,7 +3148,7 @@ Footer/Section Layout
 /**
  * Flip styles
  */
-/* line 91, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 91, ../Content/scss/modules/_stroll.scss */
 .flip {
   -webkit-perspective: 400px;
   -moz-perspective: 400px;
@@ -3302,7 +3162,7 @@ Footer/Section Layout
   perspective-origin: 50% 50%;
 }
 
-/* line 105, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 105, ../Content/scss/modules/_stroll.scss */
 .flip li {
   -webkit-transition: all 600ms ease, opacity 300ms ease;
   -moz-transition: all 600ms ease;
@@ -3316,7 +3176,7 @@ Footer/Section Layout
   transform-origin: 0% 0%;
 }
 
-/* line 122, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 122, ../Content/scss/modules/_stroll.scss */
 .flip li.past {
   opacity: 0;
   -webkit-transform-origin: 0% 100%;
@@ -3331,7 +3191,7 @@ Footer/Section Layout
   transform: rotateX(80deg);
 }
 
-/* line 137, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 137, ../Content/scss/modules/_stroll.scss */
 .flip li.future {
   opacity: 0;
   -webkit-transform: rotateX(-80deg);
@@ -3344,7 +3204,7 @@ Footer/Section Layout
 /**
  * Fly styles
  */
-/* line 150, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 150, ../Content/scss/modules/_stroll.scss */
 .fly {
   -webkit-perspective: 400px;
   -moz-perspective: 400px;
@@ -3358,7 +3218,7 @@ Footer/Section Layout
   perspective-origin: 50% 50%;
 }
 
-/* line 164, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 164, ../Content/scss/modules/_stroll.scss */
 .fly li {
   -webkit-transition: all 600ms ease, opacity 300ms ease;
   -moz-transition: all 600ms ease;
@@ -3372,7 +3232,7 @@ Footer/Section Layout
   transform-origin: 50% 50% -50px;
 }
 
-/* line 177, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 177, ../Content/scss/modules/_stroll.scss */
 .fly li.past {
   opacity: 0;
   -webkit-transform: rotateX(180deg);
@@ -3382,7 +3242,7 @@ Footer/Section Layout
   transform: rotateX(180deg);
 }
 
-/* line 186, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 186, ../Content/scss/modules/_stroll.scss */
 .fly li.future {
   opacity: 0;
   -webkit-transform: rotateX(-180deg);
@@ -3392,7 +3252,7 @@ Footer/Section Layout
   transform: rotateX(-180deg);
 }
 
-/* line 196, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 196, ../Content/scss/modules/_stroll.scss */
 .fly-simplified {
   -webkit-perspective: 300px;
   -moz-perspective: 300px;
@@ -3406,7 +3266,7 @@ Footer/Section Layout
   perspective-origin: 50% 50%;
 }
 
-/* line 210, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 210, ../Content/scss/modules/_stroll.scss */
 .fly-simplified li {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -3420,7 +3280,7 @@ Footer/Section Layout
   transform-origin: 100% 50%;
 }
 
-/* line 223, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 223, ../Content/scss/modules/_stroll.scss */
 .fly-simplified li.past {
   -webkit-transform: translate3d(0, -100px, -100px) rotateX(90deg);
   -moz-transform: translate3d(0, -100px, -100px) rotateX(90deg);
@@ -3429,7 +3289,7 @@ Footer/Section Layout
   transform: translate3d(0, -100px, -100px) rotateX(90deg);
 }
 
-/* line 230, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 230, ../Content/scss/modules/_stroll.scss */
 .fly-simplified li.future {
   -webkit-transform: translate3d(0, 100px, -100px) rotateX(-90deg);
   -moz-transform: translate3d(0, 100px, -100px) rotateX(-90deg);
@@ -3441,7 +3301,7 @@ Footer/Section Layout
 /**
  * Reverse fly styles
  */
-/* line 241, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 241, ../Content/scss/modules/_stroll.scss */
 .fly-reverse {
   -webkit-perspective: 400px;
   -moz-perspective: 400px;
@@ -3455,7 +3315,7 @@ Footer/Section Layout
   perspective-origin: 50% 50%;
 }
 
-/* line 255, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 255, ../Content/scss/modules/_stroll.scss */
 .fly-reverse li {
   -webkit-transition: all 600ms ease, opacity 300ms ease;
   -moz-transition: all 600ms ease;
@@ -3469,7 +3329,7 @@ Footer/Section Layout
   transform-origin: 50% 50% -50px;
 }
 
-/* line 268, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 268, ../Content/scss/modules/_stroll.scss */
 .fly-reverse li.past {
   opacity: 0;
   -webkit-transform: rotateX(-180deg);
@@ -3479,7 +3339,7 @@ Footer/Section Layout
   transform: rotateX(-180deg);
 }
 
-/* line 277, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 277, ../Content/scss/modules/_stroll.scss */
 .fly-reverse li.future {
   opacity: 0;
   -webkit-transform: rotateX(180deg);
@@ -3492,7 +3352,7 @@ Footer/Section Layout
 /**
  * Skew
  */
-/* line 290, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 290, ../Content/scss/modules/_stroll.scss */
 .skew {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
@@ -3506,7 +3366,7 @@ Footer/Section Layout
   perspective-origin: 0% 50%;
 }
 
-/* line 303, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 303, ../Content/scss/modules/_stroll.scss */
 .skew li {
   -webkit-transition: all 600ms ease, opacity 200ms ease;
   -moz-transition: all 600ms ease;
@@ -3520,7 +3380,7 @@ Footer/Section Layout
   transform-origin: 0% 0%;
 }
 
-/* line 317, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 317, ../Content/scss/modules/_stroll.scss */
 .skew li.past {
   -webkit-transform: skewY(30deg);
   -moz-transform: skewY(30deg);
@@ -3529,7 +3389,7 @@ Footer/Section Layout
   transform: skewY(30deg);
 }
 
-/* line 324, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 324, ../Content/scss/modules/_stroll.scss */
 .skew li.future {
   z-index: 0;
   -webkit-transform: skewY(-30deg);
@@ -3542,7 +3402,7 @@ Footer/Section Layout
 /**
  * Helix styles
  */
-/* line 338, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 338, ../Content/scss/modules/_stroll.scss */
 .helix {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
@@ -3556,7 +3416,7 @@ Footer/Section Layout
   perspective-origin: 50% 50%;
 }
 
-/* line 352, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 352, ../Content/scss/modules/_stroll.scss */
 .helix li {
   -webkit-transition: all 600ms ease, opacity 200ms ease;
   -moz-transition: all 600ms ease;
@@ -3570,7 +3430,7 @@ Footer/Section Layout
   transform-origin: 50% 50%;
 }
 
-/* line 369, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 369, ../Content/scss/modules/_stroll.scss */
 .helix li.past {
   opacity: 0;
   -webkit-transform: rotateY(180deg);
@@ -3580,7 +3440,7 @@ Footer/Section Layout
   transform: rotateY(180deg);
 }
 
-/* line 378, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 378, ../Content/scss/modules/_stroll.scss */
 .helix li.future {
   opacity: 0;
   -webkit-transform: rotateY(-180deg);
@@ -3593,7 +3453,7 @@ Footer/Section Layout
 /**
  * Wave styles
  */
-/* line 392, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 392, ../Content/scss/modules/_stroll.scss */
 .wave li {
   -webkit-transition: all 600ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: all 600ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -3602,7 +3462,7 @@ Footer/Section Layout
   transition: all 600ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
-/* line 399, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 399, ../Content/scss/modules/_stroll.scss */
 .wave li.past {
   -webkit-transform: translateX(-70%);
   -moz-transform: translateX(-70%);
@@ -3611,7 +3471,7 @@ Footer/Section Layout
   transform: translateX(-70%);
 }
 
-/* line 406, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 406, ../Content/scss/modules/_stroll.scss */
 .wave li.future {
   -webkit-transform: translateX(-70%);
   -moz-transform: translateX(-70%);
@@ -3623,7 +3483,7 @@ Footer/Section Layout
 /**
  * Fan styles
  */
-/* line 418, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 418, ../Content/scss/modules/_stroll.scss */
 .fan li {
   -webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
   -moz-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -3637,7 +3497,7 @@ Footer/Section Layout
   transform-origin: 0% 0%;
 }
 
-/* line 431, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 431, ../Content/scss/modules/_stroll.scss */
 .fan li.past {
   -webkit-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
@@ -3646,7 +3506,7 @@ Footer/Section Layout
   transform: rotate(-60deg);
 }
 
-/* line 438, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 438, ../Content/scss/modules/_stroll.scss */
 .fan li.future {
   -webkit-transform: rotate(70deg);
   -moz-transform: rotate(70deg);
@@ -3658,7 +3518,7 @@ Footer/Section Layout
 /**
  * Tilt styles
  */
-/* line 450, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 450, ../Content/scss/modules/_stroll.scss */
 .tilt {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
@@ -3672,7 +3532,7 @@ Footer/Section Layout
   perspective-origin: 50% 50%;
 }
 
-/* line 464, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 464, ../Content/scss/modules/_stroll.scss */
 .tilt li {
   position: relative;
   -webkit-transition: all 1000ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 300ms ease;
@@ -3682,7 +3542,7 @@ Footer/Section Layout
   transition: all 1000ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 300ms ease;
 }
 
-/* line 477, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 477, ../Content/scss/modules/_stroll.scss */
 .tilt li.past {
   opacity: 0;
   -webkit-transform: translateY(100%) translateZ(-200px);
@@ -3692,7 +3552,7 @@ Footer/Section Layout
   transform: translateY(100%) translateZ(-200px);
 }
 
-/* line 486, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 486, ../Content/scss/modules/_stroll.scss */
 .tilt li.future {
   opacity: 0;
   -webkit-transform: translateY(-100%) translateZ(-200px);
@@ -3705,7 +3565,7 @@ Footer/Section Layout
 /**
  * Curl styles
  */
-/* line 500, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 500, ../Content/scss/modules/_stroll.scss */
 .curl {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
@@ -3719,7 +3579,7 @@ Footer/Section Layout
   perspective-origin: 0% 50%;
 }
 
-/* line 514, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 514, ../Content/scss/modules/_stroll.scss */
 .curl li {
   -webkit-transition: all 600ms ease, opacity 200ms ease;
   -moz-transition: all 600ms ease;
@@ -3738,7 +3598,7 @@ Footer/Section Layout
   backface-visibility: hidden;
 }
 
-/* line 537, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 537, ../Content/scss/modules/_stroll.scss */
 .curl li.past {
   opacity: 0;
   -webkit-transform: rotateY(90deg);
@@ -3748,7 +3608,7 @@ Footer/Section Layout
   transform: rotateY(90deg);
 }
 
-/* line 546, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 546, ../Content/scss/modules/_stroll.scss */
 .curl li.future {
   opacity: 0;
   -webkit-transform: rotateY(90deg);
@@ -3758,7 +3618,7 @@ Footer/Section Layout
   transform: rotateY(90deg);
 }
 
-/* line 557, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 557, ../Content/scss/modules/_stroll.scss */
 .papercut {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
@@ -3772,7 +3632,7 @@ Footer/Section Layout
   perspective-origin: 0% 0%;
 }
 
-/* line 570, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 570, ../Content/scss/modules/_stroll.scss */
 .papercut li {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -3786,7 +3646,7 @@ Footer/Section Layout
   transform-origin: 0% 0%;
 }
 
-/* line 583, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 583, ../Content/scss/modules/_stroll.scss */
 .papercut li.past {
   -webkit-transform: skewY(-30deg);
   -moz-transform: skewY(-30deg);
@@ -3795,7 +3655,7 @@ Footer/Section Layout
   transform: skewY(-30deg);
 }
 
-/* line 590, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 590, ../Content/scss/modules/_stroll.scss */
 .papercut li.future {
   -webkit-transform: skewY(30deg);
   -moz-transform: skewY(30deg);
@@ -3807,7 +3667,7 @@ Footer/Section Layout
 /**
  * Zipper styles
  */
-/* line 602, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 602, ../Content/scss/modules/_stroll.scss */
 .zipper li {
   -webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
   -moz-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -3821,7 +3681,7 @@ Footer/Section Layout
   transform-origin: 50% 0%;
 }
 
-/* line 616, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 616, ../Content/scss/modules/_stroll.scss */
 .zipper li.past:nth-child(odd),
 .zipper li.future:nth-child(odd) {
   -webkit-transform: translateX(80%);
@@ -3831,7 +3691,7 @@ Footer/Section Layout
   transform: translateX(80%);
 }
 
-/* line 624, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 624, ../Content/scss/modules/_stroll.scss */
 .zipper li.past:nth-child(even),
 .zipper li.future:nth-child(even) {
   -webkit-transform: translateX(-80%);
@@ -3844,7 +3704,7 @@ Footer/Section Layout
 /**
  * Fade styles
  */
-/* line 636, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 636, ../Content/scss/modules/_stroll.scss */
 .fade li {
   -webkit-transition: opacity .35s ease-in-out;
   -moz-transition: opacity .35s ease-in-out;
@@ -3853,12 +3713,12 @@ Footer/Section Layout
   transition: opacity .35s ease-in-out;
 }
 
-/* line 643, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 643, ../Content/scss/modules/_stroll.scss */
 .fade li.past {
   opacity: 0;
 }
 
-/* line 646, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 646, ../Content/scss/modules/_stroll.scss */
 .fade li.future {
   opacity: 0;
 }
@@ -3866,7 +3726,7 @@ Footer/Section Layout
 /**
  * Twirl styles
  */
-/* line 654, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 654, ../Content/scss/modules/_stroll.scss */
 .twirl {
   -webkit-perspective: 400px;
   -moz-perspective: 400px;
@@ -3880,7 +3740,7 @@ Footer/Section Layout
   perspective-origin: 50% 50%;
 }
 
-/* line 668, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 668, ../Content/scss/modules/_stroll.scss */
 .twirl li {
   -webkit-transition: all 600ms ease, opacity 200ms ease;
   -moz-transition: all 600ms ease;
@@ -3894,7 +3754,7 @@ Footer/Section Layout
   transform-origin: 50% 50%;
 }
 
-/* line 685, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 685, ../Content/scss/modules/_stroll.scss */
 .twirl li.past {
   opacity: 0;
   -webkit-transform: rotate3d(80, -70, 10, 180deg);
@@ -3904,7 +3764,7 @@ Footer/Section Layout
   transform: rotate3d(80, 70, 10, 180deg);
 }
 
-/* line 694, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_stroll.scss */
+/* line 694, ../Content/scss/modules/_stroll.scss */
 .twirl li.future {
   opacity: 0;
   -webkit-transform: rotate3d(80, 70, 10, -180deg);
@@ -3914,19 +3774,19 @@ Footer/Section Layout
   transform: rotate3d(80, 70, 10, -180deg);
 }
 
-/* line 4, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 4, ../Content/scss/modules/_sidebar-effects.scss */
 .st-content,
 .st-content-inner {
   position: relative;
 }
 
-/* line 8, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 8, ../Content/scss/modules/_sidebar-effects.scss */
 .st-container {
   position: relative;
   overflow: hidden;
 }
 
-/* line 13, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 13, ../Content/scss/modules/_sidebar-effects.scss */
 .st-pusher {
   position: relative;
   left: 0;
@@ -3936,7 +3796,7 @@ Footer/Section Layout
   transition: transform 0.5s;
 }
 
-/* line 22, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 22, ../Content/scss/modules/_sidebar-effects.scss */
 .st-pusher::after {
   position: absolute;
   top: 0;
@@ -3950,7 +3810,7 @@ Footer/Section Layout
   transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
 
-/* line 35, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 35, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu-btn {
   position: fixed;
   top: 13px;
@@ -3961,7 +3821,7 @@ Footer/Section Layout
   /*IE8 and earlier */
 }
 
-/* line 45, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 45, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu-open .st-pusher::after {
   width: 100%;
   height: 100%;
@@ -3970,7 +3830,7 @@ Footer/Section Layout
   transition: opacity 0.5s;
 }
 
-/* line 53, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 53, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu {
   position: absolute;
   top: 0;
@@ -3986,7 +3846,7 @@ Footer/Section Layout
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 67, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 67, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu::after {
   position: absolute;
   top: 0;
@@ -4000,7 +3860,7 @@ Footer/Section Layout
   transition: opacity 0.5s;
 }
 
-/* line 80, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 80, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu-open .st-menu::after {
   width: 0;
   height: 0;
@@ -4010,14 +3870,14 @@ Footer/Section Layout
 }
 
 /* content style */
-/* line 90, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 90, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 96, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 96, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu h2 {
   margin: 0;
   padding: 0;
@@ -4027,7 +3887,7 @@ Footer/Section Layout
   font-size: 2em;
 }
 
-/* line 105, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 105, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li a {
   display: block;
   padding: 1em 0em 1em 1.2em;
@@ -4047,12 +3907,12 @@ Footer/Section Layout
   line-height: 1em;
 }
 
-/* line 126, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 126, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li:first-child a {
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 130, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 130, ../Content/scss/modules/_sidebar-effects.scss */
 .st-menu ul li a:hover {
   background: rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
@@ -4061,89 +3921,89 @@ Footer/Section Layout
 
 /* Individual effects */
 /* Effect 1: Slide in on top */
-/* line 139, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 139, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu {
   visibility: visible;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 145, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 145, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu-open .st-effect-1.st-menu {
   visibility: visible;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 151, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 151, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-1.st-menu::after {
   display: none;
 }
 
 /* Effect 2: Reveal */
-/* line 156, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 156, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 161, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 161, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu {
   z-index: 1;
 }
 
-/* line 165, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 165, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu-open .st-effect-2.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 171, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 171, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-2.st-menu::after {
   display: none;
 }
 
 /* Effect 3: Push*/
-/* line 176, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 176, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 181, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 181, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 186, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 186, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu-open .st-effect-3.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 192, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 192, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-3.st-menu::after {
   display: none;
 }
 
 /* Effect 4: Slide along */
-/* line 197, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 197, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 202, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 202, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu {
   z-index: 1;
   -webkit-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
 }
 
-/* line 208, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 208, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu-open .st-effect-4.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4152,26 +4012,26 @@ Footer/Section Layout
   transform: translate3d(0, 0, 0);
 }
 
-/* line 216, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 216, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-4.st-menu::after {
   display: none;
 }
 
 /* Effect 5: Reverse slide out */
-/* line 221, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 221, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 226, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 226, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu {
   z-index: 1;
   -webkit-transform: translate3d(50%, 0, 0);
   transform: translate3d(50%, 0, 0);
 }
 
-/* line 232, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 232, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-5.st-menu-open .st-effect-5.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4181,13 +4041,13 @@ Footer/Section Layout
 }
 
 /* Effect 6: Rotate pusher */
-/* line 242, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 242, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 247, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 247, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6 .st-pusher {
   -webkit-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
@@ -4195,13 +4055,13 @@ Footer/Section Layout
   transform-style: preserve-3d;
 }
 
-/* line 254, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 254, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0) rotateY(-15deg);
   transform: translate3d(300px, 0, 0) rotateY(-15deg);
 }
 
-/* line 259, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 259, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
@@ -4211,7 +4071,7 @@ Footer/Section Layout
   transform-style: preserve-3d;
 }
 
-/* line 268, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 268, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu-open .st-effect-6.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4220,13 +4080,13 @@ Footer/Section Layout
   transform: translate3d(-100%, 0, 0) rotateY(15deg);
 }
 
-/* line 276, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 276, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-6.st-menu::after {
   display: none;
 }
 
 /* Effect 7: 3D rotate in */
-/* line 282, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 282, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4234,19 +4094,19 @@ Footer/Section Layout
   perspective-origin: 0% 50%;
 }
 
-/* line 289, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 289, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 294, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 294, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 299, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 299, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg);
   transform: translate3d(-100%, 0, 0) rotateY(-90deg);
@@ -4256,7 +4116,7 @@ Footer/Section Layout
   transform-style: preserve-3d;
 }
 
-/* line 308, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 308, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-7.st-menu-open .st-effect-7.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4266,7 +4126,7 @@ Footer/Section Layout
 }
 
 /* Effect 8: 3D rotate out */
-/* line 318, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 318, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4274,19 +4134,19 @@ Footer/Section Layout
   perspective-origin: 0% 50%;
 }
 
-/* line 325, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 325, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 330, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 330, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 335, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 335, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
   transform: translate3d(-100%, 0, 0) rotateY(90deg);
@@ -4296,7 +4156,7 @@ Footer/Section Layout
   transform-style: preserve-3d;
 }
 
-/* line 344, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 344, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu-open .st-effect-8.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4305,38 +4165,38 @@ Footer/Section Layout
   transform: translate3d(-100%, 0, 0) rotateY(0deg);
 }
 
-/* line 352, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 352, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-8.st-menu::after {
   display: none;
 }
 
 /* Effect 9: Scale down pusher */
-/* line 358, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 358, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 363, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 363, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 368, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 368, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu-open .st-pusher {
   -webkit-transform: translate3d(0, 0, -300px);
   transform: translate3d(0, 0, -300px);
 }
 
-/* line 373, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 373, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 379, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 379, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu-open .st-effect-9.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4345,13 +4205,13 @@ Footer/Section Layout
   transform: translate3d(0, 0, 0);
 }
 
-/* line 387, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 387, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-9.st-menu::after {
   display: none;
 }
 
 /* Effect 10: Scale up */
-/* line 393, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 393, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4359,13 +4219,13 @@ Footer/Section Layout
   perspective-origin: 0% 50%;
 }
 
-/* line 400, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 400, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 405, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 405, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu {
   z-index: 1;
   opacity: 1;
@@ -4373,7 +4233,7 @@ Footer/Section Layout
   transform: translate3d(0, 0, -300px);
 }
 
-/* line 412, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 412, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-10.st-menu-open .st-effect-10.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4383,32 +4243,32 @@ Footer/Section Layout
 }
 
 /* Effect 11: Scale and rotate pusher */
-/* line 422, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 422, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 427, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 427, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 432, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 432, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu-open .st-pusher {
   -webkit-transform: translate3d(100px, 0, -600px) rotateY(-20deg);
   transform: translate3d(100px, 0, -600px) rotateY(-20deg);
 }
 
-/* line 437, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 437, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 443, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 443, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu-open .st-effect-11.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4417,19 +4277,19 @@ Footer/Section Layout
   transform: translate3d(0, 0, 0);
 }
 
-/* line 451, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 451, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-11.st-menu::after {
   display: none;
 }
 
 /* Effect 12: Open door */
-/* line 457, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 457, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
 }
 
-/* line 462, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 462, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12 .st-pusher {
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
@@ -4437,20 +4297,20 @@ Footer/Section Layout
   transform-style: preserve-3d;
 }
 
-/* line 469, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 469, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu-open .st-pusher {
   -webkit-transform: rotateY(-10deg);
   transform: rotateY(-10deg);
 }
 
-/* line 474, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 474, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu {
   opacity: 1;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 480, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 480, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu-open .st-effect-12.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
@@ -4459,13 +4319,13 @@ Footer/Section Layout
   transform: translate3d(0, 0, 0);
 }
 
-/* line 488, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 488, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-12.st-menu::after {
   display: none;
 }
 
 /* Effect 13: Fall down */
-/* line 494, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 494, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4473,13 +4333,13 @@ Footer/Section Layout
   perspective-origin: 0% 50%;
 }
 
-/* line 501, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 501, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 506, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 506, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu {
   z-index: 1;
   opacity: 1;
@@ -4487,7 +4347,7 @@ Footer/Section Layout
   transform: translate3d(0, -100%, 0);
 }
 
-/* line 513, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 513, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-13.st-menu-open .st-effect-13.st-menu {
   visibility: visible;
   -webkit-transition-timing-function: ease-in-out;
@@ -4501,7 +4361,7 @@ Footer/Section Layout
 }
 
 /* Effect 14: Delayed 3D rotate */
-/* line 527, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 527, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-container {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -4509,19 +4369,19 @@ Footer/Section Layout
   perspective-origin: 0% 50%;
 }
 
-/* line 534, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 534, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14 .st-pusher {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 539, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 539, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu-open .st-pusher {
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
 }
 
-/* line 544, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 544, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
   transform: translate3d(-100%, 0, 0) rotateY(90deg);
@@ -4531,7 +4391,7 @@ Footer/Section Layout
   transform-style: preserve-3d;
 }
 
-/* line 553, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 553, ../Content/scss/modules/_sidebar-effects.scss */
 .st-effect-14.st-menu-open .st-effect-14.st-menu {
   visibility: visible;
   -webkit-transition-delay: 0.1s;
@@ -4545,7 +4405,7 @@ Footer/Section Layout
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-/* line 567, C:/Users/Henriquez/Documents/GitHub/coba-site-boilerplate/Content/scss/modules/_sidebar-effects.scss */
+/* line 567, ../Content/scss/modules/_sidebar-effects.scss */
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
   padding-left: 300px;
