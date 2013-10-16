@@ -1,0 +1,58 @@
+/* Mobile Layout: 500px and below. */
+// styles go here.
+
+.viewbook {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+.viewbook img {
+    width: 116px;
+    height: 125px;
+}
+
+/* Tablet Layout (portrait mode): 481px to 768px. Inherits styles from: Mobile Layout. */
+@media all and (min-width: 501px) {
+
+    .viewbook {
+        top: 270px;
+        left: 40px;
+    }
+    .viewbook img {
+        width: 280px;
+        height: 300px;
+    }
+
+}
+
+
+/* Tablet Layout (landscape mode): 769px to 1024px. Inherits styles from: Mobile Layout and Portrait Layout. */
+@media all and (min-width: 769px) {
+    
+    .viewbook {
+        top: 40px;
+        left: 40px;
+    }
+
+}
+
+
+/* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
+@media screen and (min-width: 1025px) {
+    
+    .viewbook {
+        top:0;
+        left: 0;
+    }
+    .viewbook {
+        margin-left: 0;
+    }
+
+}
+
+
+/* Print Layout: Inherits styles from: All Layouts. */
+@media print {
+    
+
+}

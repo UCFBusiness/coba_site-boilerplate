@@ -6,15 +6,19 @@
 @section Styles {
     <style> /*-- cover-img --*/
         .wrapper-inner {
-            background: #333;
+            background: #111;
         }
     </style>
 }
 
 @section featured {
+  
+<div class="viewbook">
+    <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
+        <img src="~/images/view-book.png" alt="ucf college of business online viewbook">
+    </a>
+</div>
 
-    <p><!-- Page headlines go here.--></p>
-    
     <section id="login" style="display: none;">
         <p>Authenticated: @WebSecurity.IsAuthenticated</p>
         @if (WebSecurity.IsAuthenticated) {
@@ -51,7 +55,7 @@
                 <li>
                     <div title="Dr. Paul Jarley's Blog">
                         <img src="~/images/panels/dean-blog.jpg" alt="...">
-                        <p><a href="http://www.bus.ucf.edu/dean" target="_blank">Read the Dean's latest post >> </a></p>
+                        <p><a href="http://www.bus.ucf.edu/dean" target="_blank">Read the Dean's latest post.</a></p>
                     </div>
                 </li>
 
@@ -93,7 +97,7 @@
                 </li>
                 <li>
                     <div title="Blackstone Launchpad site.">
-                        <img src="~/images/panels/blackstone.jpg" alt="...">
+                        <iframe width="320" height="300" src="//www.youtube.com/embed/4wpCjLyEaXM" frameborder="0" allowfullscreen></iframe>
                         <p><a href="http://ucf.thelaunchpad.org" target="_blank">The Launchpad is open. Learn more.</a></p>
                     </div>
                 </li>
@@ -131,7 +135,7 @@
                 <!-- 8 panel row -->
                 <li>
                     <div title="Find your opportunities in our upcoming events.">
-                        <img src="~/images/panels/your-opportunities.jpg" alt="...">
+                        <img src="~/images/panels/opportunities-events.jpg" alt="...">
                         @*<a href="#" class="social tt-share">t</a>
                         <a href="#" class="social fb-share">f</a>*@
                     </div>

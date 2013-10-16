@@ -14,6 +14,8 @@ body {
 }*/
 /* line 14, ../Content/scss/partials/_primary.scss */
 body {
+  background-image: url(/images/main-bg.jpg);
+  background-size: cover;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
@@ -24,94 +26,94 @@ body {
   z-index: 0;
 }
 
-/* line 26, ../Content/scss/partials/_primary.scss */
+/* line 28, ../Content/scss/partials/_primary.scss */
 #container {
   position: relative;
   z-index: 1;
 }
 
-/* line 32, ../Content/scss/partials/_primary.scss */
+/* line 34, ../Content/scss/partials/_primary.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* ordered list */
-/* line 38, ../Content/scss/partials/_primary.scss */
+/* line 40, ../Content/scss/partials/_primary.scss */
 ol.round {
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 43, ../Content/scss/partials/_primary.scss */
+/* line 45, ../Content/scss/partials/_primary.scss */
 ol.round li {
   margin: 25px 0;
   padding-left: 45px;
 }
 
-/* line 48, ../Content/scss/partials/_primary.scss */
+/* line 50, ../Content/scss/partials/_primary.scss */
 ol.round li.zero {
   background: url("/images/orderedList0.png") no-repeat;
 }
 
-/* line 52, ../Content/scss/partials/_primary.scss */
+/* line 54, ../Content/scss/partials/_primary.scss */
 ol.round li.one {
   background: url("/images/orderedList1.png") no-repeat;
 }
 
-/* line 56, ../Content/scss/partials/_primary.scss */
+/* line 58, ../Content/scss/partials/_primary.scss */
 ol.round li.two {
   background: url("/images/orderedList2.png") no-repeat;
 }
 
-/* line 60, ../Content/scss/partials/_primary.scss */
+/* line 62, ../Content/scss/partials/_primary.scss */
 ol.round li.three {
   background: url("/images/orderedList3.png") no-repeat;
 }
 
-/* line 64, ../Content/scss/partials/_primary.scss */
+/* line 66, ../Content/scss/partials/_primary.scss */
 ol.round li.four {
   background: url("/images/orderedList4.png") no-repeat;
 }
 
-/* line 68, ../Content/scss/partials/_primary.scss */
+/* line 70, ../Content/scss/partials/_primary.scss */
 ol.round li.five {
   background: url("/images/orderedList5.png") no-repeat;
 }
 
-/* line 72, ../Content/scss/partials/_primary.scss */
+/* line 74, ../Content/scss/partials/_primary.scss */
 ol.round li.six {
   background: url("/images/orderedList6.png") no-repeat;
 }
 
-/* line 76, ../Content/scss/partials/_primary.scss */
+/* line 78, ../Content/scss/partials/_primary.scss */
 ol.round li.seven {
   background: url("/images/orderedList7.png") no-repeat;
 }
 
-/* line 80, ../Content/scss/partials/_primary.scss */
+/* line 82, ../Content/scss/partials/_primary.scss */
 ol.round li.eight {
   background: url("/images/orderedList8.png") no-repeat;
 }
 
-/* line 84, ../Content/scss/partials/_primary.scss */
+/* line 86, ../Content/scss/partials/_primary.scss */
 ol.round li.nine {
   background: url("/images/orderedList9.png") no-repeat;
 }
 
-/* line 89, ../Content/scss/partials/_primary.scss */
+/* line 91, ../Content/scss/partials/_primary.scss */
 .apply-button {
   font-size: 1.2em;
   font-weight: bold;
 }
 
-/* line 91, ../Content/scss/partials/_primary.scss */
+/* line 93, ../Content/scss/partials/_primary.scss */
 .copyright {
   font-size: .55em;
   color: #fff;
   line-height: 1.3em;
 }
 
-/* line 93, ../Content/scss/partials/_primary.scss */
+/* line 95, ../Content/scss/partials/_primary.scss */
 .icon-setting {
   color: #fff;
   font-size: 23px;
@@ -124,7 +126,7 @@ ol.round li.nine {
 /* =============================================================================
    NEW
    ========================================================================== */
-/* line 99, ../Content/scss/partials/_primary.scss */
+/* line 101, ../Content/scss/partials/_primary.scss */
 .cover {
   position: absolute;
   z-index: 100;
@@ -137,7 +139,7 @@ ol.round li.nine {
   /* shadow */
 }
 
-/* line 100, ../Content/scss/partials/_primary.scss */
+/* line 102, ../Content/scss/partials/_primary.scss */
 .backend {
   background: #333;
   position: absolute;
@@ -151,22 +153,22 @@ ol.round li.nine {
 }
 
 /*Try max-width:600px;*/
-/* line 101, ../Content/scss/partials/_primary.scss */
+/* line 103, ../Content/scss/partials/_primary.scss */
 .cover.img-loaded {
   background: #000;
 }
 
-/* line 102, ../Content/scss/partials/_primary.scss */
+/* line 104, ../Content/scss/partials/_primary.scss */
 .body-scroll .cover {
   position: fixed;
 }
 
-/* line 103, ../Content/scss/partials/_primary.scss */
+/* line 105, ../Content/scss/partials/_primary.scss */
 .editing .cover {
   background-image: none;
 }
 
-/* line 105, ../Content/scss/partials/_primary.scss */
+/* line 107, ../Content/scss/partials/_primary.scss */
 .cover-img {
   position: absolute;
   width: 100%;
@@ -183,13 +185,13 @@ ol.round li.nine {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 108, ../Content/scss/partials/_primary.scss */
+/* line 110, ../Content/scss/partials/_primary.scss */
 .cover-img {
   background-image: url("/images/pegasus_sun_rev.jpg");
   background-size: cover;
 }
 
-/* line 109, ../Content/scss/partials/_primary.scss */
+/* line 111, ../Content/scss/partials/_primary.scss */
 .backend-cover-img {
   position: absolute;
   width: 100%;
@@ -206,7 +208,7 @@ ol.round li.nine {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 113, ../Content/scss/partials/_primary.scss */
+/* line 115, ../Content/scss/partials/_primary.scss */
 .cover-header {
   position: absolute;
   top: 0;
@@ -214,14 +216,14 @@ ol.round li.nine {
   text-shadow: 0px 1px 2px #333;
 }
 
-/* line 114, ../Content/scss/partials/_primary.scss */
+/* line 116, ../Content/scss/partials/_primary.scss */
 .cover-header .container {
   color: #fff;
   position: relative;
   z-index: 100;
 }
 
-/* line 115, ../Content/scss/partials/_primary.scss */
+/* line 117, ../Content/scss/partials/_primary.scss */
 .cover-body {
   position: absolute;
   bottom: 0;
@@ -232,7 +234,7 @@ ol.round li.nine {
   box-sizing: border-box;
 }
 
-/* line 116, ../Content/scss/partials/_primary.scss */
+/* line 118, ../Content/scss/partials/_primary.scss */
 .cover-body:before {
   content: '';
   position: absolute;
@@ -248,13 +250,13 @@ ol.round li.nine {
   background-image: linear, to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%;
 }
 
-/* line 117, ../Content/scss/partials/_primary.scss */
+/* line 119, ../Content/scss/partials/_primary.scss */
 .cover-body .cover-body-inner {
   position: relative;
   z-index: 100;
 }
 
-/* line 118, ../Content/scss/partials/_primary.scss */
+/* line 120, ../Content/scss/partials/_primary.scss */
 .cover-title {
   font-size: 60px;
   line-height: 1;
@@ -263,12 +265,12 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 119, ../Content/scss/partials/_primary.scss */
+/* line 121, ../Content/scss/partials/_primary.scss */
 .cover-title span {
   font-size: 43px;
 }
 
-/* line 120, ../Content/scss/partials/_primary.scss */
+/* line 122, ../Content/scss/partials/_primary.scss */
 .cover-description {
   font-size: 16px;
   line-height: 1.2;
@@ -277,25 +279,25 @@ ol.round li.nine {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 121, ../Content/scss/partials/_primary.scss */
+/* line 123, ../Content/scss/partials/_primary.scss */
 .cover-description a {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 123, ../Content/scss/partials/_primary.scss */
+/* line 125, ../Content/scss/partials/_primary.scss */
 .cover-actions {
   padding-top: 23px;
   margin-top: 0px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 124, ../Content/scss/partials/_primary.scss */
+/* line 126, ../Content/scss/partials/_primary.scss */
 .cover-actions .btn {
   margin-right: 5px;
 }
 
-/* line 125, ../Content/scss/partials/_primary.scss */
+/* line 127, ../Content/scss/partials/_primary.scss */
 .cover-actions .btn-delete {
   float: right;
 }
@@ -319,24 +321,24 @@ ol.round li.nine {
 .cover-bestof .month-year-name{text-transform:capitalize}
 .wf-loading .cover-title,.wf-loading .cover-description,.wf-loading .cover-meta{visibility:hidden}
 */
-/* line 147, ../Content/scss/partials/_primary.scss */
+/* line 149, ../Content/scss/partials/_primary.scss */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 148, ../Content/scss/partials/_primary.scss */
+/* line 150, ../Content/scss/partials/_primary.scss */
 .screen-content {
   outline: 0;
 }
 
-/* line 150, ../Content/scss/partials/_primary.scss */
+/* line 152, ../Content/scss/partials/_primary.scss */
 .page-title {
   width: 100%;
 }
 
-/* line 151, ../Content/scss/partials/_primary.scss */
+/* line 153, ../Content/scss/partials/_primary.scss */
 .page-title h1, .page-title h2 {
   margin: 10px 0;
   color: #fff;
@@ -345,12 +347,12 @@ ol.round li.nine {
   font-size: 3.2em;
 }
 
-/* line 152, ../Content/scss/partials/_primary.scss */
+/* line 154, ../Content/scss/partials/_primary.scss */
 .page-title h2 {
   font-size: 2.8em;
 }
 
-/* line 154, ../Content/scss/partials/_primary.scss */
+/* line 156, ../Content/scss/partials/_primary.scss */
 .site-nav {
   position: absolute;
   top: 0;
@@ -360,7 +362,7 @@ ol.round li.nine {
   background-color: #232322;
 }
 
-/* line 155, ../Content/scss/partials/_primary.scss */
+/* line 157, ../Content/scss/partials/_primary.scss */
 .site-nav-logo {
   position: absolute;
   top: 10px;
@@ -382,13 +384,13 @@ ol.round li.nine {
   transition: top .2s linear,left .2s linear,opacity .2s linear;
 }
 
-/* line 156, ../Content/scss/partials/_primary.scss */
+/* line 158, ../Content/scss/partials/_primary.scss */
 .site-nav-logo:after {
   content: 'UCF';
   color: #fff;
 }
 
-/* line 157, ../Content/scss/partials/_primary.scss */
+/* line 159, ../Content/scss/partials/_primary.scss */
 .site-nav-logo .icons {
   display: block;
   position: absolute;
@@ -398,7 +400,7 @@ ol.round li.nine {
   bottom: 0;
 }
 
-/* line 158, ../Content/scss/partials/_primary.scss */
+/* line 160, ../Content/scss/partials/_primary.scss */
 .site-nav-overlay {
   display: none;
   position: absolute;
@@ -409,7 +411,7 @@ ol.round li.nine {
   z-index: 600;
 }
 
-/* line 159, ../Content/scss/partials/_primary.scss */
+/* line 161, ../Content/scss/partials/_primary.scss */
 .site-nav-hidden .site-nav-logo {
   filter: alpha(opacity=0);
   -khtml-opacity: 0;
@@ -418,7 +420,7 @@ ol.round li.nine {
   left: -54px;
 }
 
-/* line 160, ../Content/scss/partials/_primary.scss */
+/* line 162, ../Content/scss/partials/_primary.scss */
 .site-nav-scrollable-container {
   display: none;
   overflow: auto;
@@ -429,12 +431,12 @@ ol.round li.nine {
   box-shadow: inset -1px 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 161, ../Content/scss/partials/_primary.scss */
+/* line 163, ../Content/scss/partials/_primary.scss */
 .site-nav-scrollable-container::-webkit-scrollbar {
   display: none;
 }
 
-/* line 163, ../Content/scss/partials/_primary.scss */
+/* line 165, ../Content/scss/partials/_primary.scss */
 .wrapper {
   outline: 0;
   position: absolute;
@@ -445,7 +447,7 @@ ol.round li.nine {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 169, ../Content/scss/partials/_primary.scss */
+/* line 171, ../Content/scss/partials/_primary.scss */
 .wrapper-inner {
   padding: 0;
   width: 100%;
@@ -456,62 +458,64 @@ ol.round li.nine {
 }
 
 @media all and (max-width: 1024px) {
-  /* line 181, ../Content/scss/partials/_primary.scss */
+  /* line 183, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 0;
     position: relative;
   }
 
-  /* line 182, ../Content/scss/partials/_primary.scss */
+  /* line 184, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding: 0;
     max-width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 186, ../Content/scss/partials/_primary.scss */
+  /* line 188, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     background: none;
   }
 }
 @media all and (min-width: 1666px) {
-  /* line 190, ../Content/scss/partials/_primary.scss */
+  /* line 192, ../Content/scss/partials/_primary.scss */
   .wrapper {
     left: 500px;
   }
 
-  /* line 191, ../Content/scss/partials/_primary.scss */
+  /* line 193, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
     padding-left: 0;
     max-width: 910px;
   }
 }
 @media screen and (max-device-width: 1024px) {
-  /* line 195, ../Content/scss/partials/_primary.scss */
+  /* line 197, ../Content/scss/partials/_primary.scss */
   html {
     -webkit-text-size-adjust: none;
   }
 }
 @media screen and (min-device-width: 1025px) {
-  /* line 199, ../Content/scss/partials/_primary.scss */
+  /* line 201, ../Content/scss/partials/_primary.scss */
   .cover, .site-nav-logo {
     position: fixed;
   }
 
-  /* line 200, ../Content/scss/partials/_primary.scss */
+  /* line 202, ../Content/scss/partials/_primary.scss */
   .wrapper-inner {
-    border-left: 1px solid #000;
-    border-right: 2px solid #000;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.8);
+    /* shadow */
   }
 
-  /* line 201, ../Content/scss/partials/_primary.scss */
+  /* line 203, ../Content/scss/partials/_primary.scss */
   .wrapper-header-inner {
     height: 35px;
     padding: 5px;
   }
 }
 @media all and (max-width: 1024px) {
-  /* line 205, ../Content/scss/partials/_primary.scss */
+  /* line 207, ../Content/scss/partials/_primary.scss */
   .cover {
     position: relative!important;
     width: 100%;
@@ -519,62 +523,62 @@ ol.round li.nine {
     height: 675px;
   }
 
-  /* line 206, ../Content/scss/partials/_primary.scss */
+  /* line 208, ../Content/scss/partials/_primary.scss */
   .cover-body {
     width: 100%;
     padding-bottom: 40px;
   }
 
-  /* line 207, ../Content/scss/partials/_primary.scss */
+  /* line 209, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 60px;
     margin-bottom: 10px;
   }
 
-  /* line 208, ../Content/scss/partials/_primary.scss */
+  /* line 210, ../Content/scss/partials/_primary.scss */
   .cover-bestof .cover-title {
     font-size: 32px;
   }
 
-  /* line 209, ../Content/scss/partials/_primary.scss */
+  /* line 211, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: 1.6em;
   }
 
-  /* line 210, ../Content/scss/partials/_primary.scss */
+  /* line 212, ../Content/scss/partials/_primary.scss */
   .backend-cover-img {
     border: 1px solid #000;
   }
 
-  /* line 212, ../Content/scss/partials/_primary.scss */
+  /* line 214, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 70%;
   }
 
-  /* line 213, ../Content/scss/partials/_primary.scss */
+  /* line 215, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 3.4em;
   }
 
-  /* line 214, ../Content/scss/partials/_primary.scss */
+  /* line 216, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 2.8em;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 218, ../Content/scss/partials/_primary.scss */
+  /* line 220, ../Content/scss/partials/_primary.scss */
   .cover {
     height: 375px;
   }
 
-  /* line 219, ../Content/scss/partials/_primary.scss */
+  /* line 221, ../Content/scss/partials/_primary.scss */
   .cover-bestof, .cover-home, .cover-collection {
     min-height: 350px;
     height: auto;
     display: table;
   }
 
-  /* line 221, ../Content/scss/partials/_primary.scss */
+  /* line 223, ../Content/scss/partials/_primary.scss */
   .cover-body {
     display: table-cell;
     vertical-align: bottom;
@@ -584,7 +588,7 @@ ol.round li.nine {
     padding: 65px 5% 30px;
   }
 
-  /* line 222, ../Content/scss/partials/_primary.scss */
+  /* line 224, ../Content/scss/partials/_primary.scss */
   .cover-body:before {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%);
@@ -593,47 +597,47 @@ ol.round li.nine {
     background-image: linear, to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0) 100%;
   }
 
-  /* line 223, ../Content/scss/partials/_primary.scss */
+  /* line 225, ../Content/scss/partials/_primary.scss */
   .cover-title {
     font-size: 2em;
     line-height: 1;
     margin-bottom: 5px;
   }
 
-  /* line 224, ../Content/scss/partials/_primary.scss */
+  /* line 226, ../Content/scss/partials/_primary.scss */
   .cover-title span {
     font-size: .7em;
   }
 
-  /* line 225, ../Content/scss/partials/_primary.scss */
+  /* line 227, ../Content/scss/partials/_primary.scss */
   .cover-description {
     font-size: .8em;
     margin-bottom: 6px;
   }
 
-  /* line 226, ../Content/scss/partials/_primary.scss */
+  /* line 228, ../Content/scss/partials/_primary.scss */
   .cover-avatar {
     width: 100px;
     height: 100px;
   }
 
-  /* line 227, ../Content/scss/partials/_primary.scss */
+  /* line 229, ../Content/scss/partials/_primary.scss */
   .cover-new-collection-link {
     margin-left: 0;
     line-height: 32px;
   }
 
-  /* line 229, ../Content/scss/partials/_primary.scss */
+  /* line 231, ../Content/scss/partials/_primary.scss */
   .page-title {
     width: 100%;
   }
 
-  /* line 230, ../Content/scss/partials/_primary.scss */
+  /* line 232, ../Content/scss/partials/_primary.scss */
   .page-title h1 {
     font-size: 1.9em;
   }
 
-  /* line 231, ../Content/scss/partials/_primary.scss */
+  /* line 233, ../Content/scss/partials/_primary.scss */
   .page-title h2 {
     font-size: 1.3em;
   }
@@ -2441,6 +2445,56 @@ All this is done for any sub-level being entered.
   background: #643771;
 }
 
+/* Mobile Layout: 500px and below. */
+/* line 4, ../Content/scss/partials/_viewbook.scss */
+.viewbook {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+/* line 9, ../Content/scss/partials/_viewbook.scss */
+.viewbook img {
+  width: 116px;
+  height: 125px;
+}
+
+/* Tablet Layout (portrait mode): 481px to 768px. Inherits styles from: Mobile Layout. */
+@media all and (min-width: 501px) {
+  /* line 17, ../Content/scss/partials/_viewbook.scss */
+  .viewbook {
+    top: 270px;
+    left: 40px;
+  }
+
+  /* line 21, ../Content/scss/partials/_viewbook.scss */
+  .viewbook img {
+    width: 280px;
+    height: 300px;
+  }
+}
+/* Tablet Layout (landscape mode): 769px to 1024px. Inherits styles from: Mobile Layout and Portrait Layout. */
+@media all and (min-width: 769px) {
+  /* line 32, ../Content/scss/partials/_viewbook.scss */
+  .viewbook {
+    top: 40px;
+    left: 40px;
+  }
+}
+/* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
+@media screen and (min-width: 1025px) {
+  /* line 43, ../Content/scss/partials/_viewbook.scss */
+  .viewbook {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 47, ../Content/scss/partials/_viewbook.scss */
+  .viewbook {
+    margin-left: 0;
+  }
+}
+/* Print Layout: Inherits styles from: All Layouts. */
 /* Mobile Layout: 480px and below. */
 /* =============================================================================
 Footer/Section Layout
@@ -2688,7 +2742,7 @@ Footer/Section Layout
   width: 320px;
   /*<== width of panel*/
   height: 90%;
-  background: #a03232;
+  background: #ffcc00;
   margin: 0 2px 0 0;
   padding: 0;
   line-height: 1em;
@@ -2706,7 +2760,7 @@ Footer/Section Layout
 .frame ul li.active {
   /*active panel*/
   color: #fff;
-  background: #ffcc00;
+  background: #a03232;
   /*opacity: 1;
   filter: Alpha(opacity=100);  IE8 and earlier */
 }
@@ -2788,7 +2842,8 @@ Footer/Section Layout
 
 /* line 119, ../Content/scss/modules/sly/_home.scss */
 .pages li {
-  display: inline-block;
+  display: none;
+  /*display: inline-block;*/
   width: 26px;
   height: 26px;
   margin: 0 4px;
@@ -2800,33 +2855,33 @@ Footer/Section Layout
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 131, ../Content/scss/modules/sly/_home.scss */
+/* line 133, ../Content/scss/modules/sly/_home.scss */
 .pages li:hover {
   background: #ffcc00;
   border: 1px solid #333;
 }
 
-/* line 135, ../Content/scss/modules/sly/_home.scss */
+/* line 137, ../Content/scss/modules/sly/_home.scss */
 .pages li.active {
   background: #333;
   border: 1px solid #fff;
 }
 
 /* Controls */
-/* line 142, ../Content/scss/modules/sly/_home.scss */
+/* line 144, ../Content/scss/modules/sly/_home.scss */
 .controls {
   margin: 0;
   text-align: center;
 }
 
-/* line 143, ../Content/scss/modules/sly/_home.scss */
+/* line 145, ../Content/scss/modules/sly/_home.scss */
 .controls .divider {
   display: inline-block;
   margin: 0 10px;
 }
 
 /* Button Controls */
-/* line 146, ../Content/scss/modules/sly/_home.scss */
+/* line 148, ../Content/scss/modules/sly/_home.scss */
 .controls button {
   background: transparent;
   border: 0;
@@ -2834,17 +2889,17 @@ Footer/Section Layout
   opacity: .5;
 }
 
-/* line 147, ../Content/scss/modules/sly/_home.scss */
+/* line 149, ../Content/scss/modules/sly/_home.scss */
 .controls button:hover {
   opacity: 1;
 }
 
-/* line 148, ../Content/scss/modules/sly/_home.scss */
+/* line 150, ../Content/scss/modules/sly/_home.scss */
 .controls button:disabled {
   opacity: .2;
 }
 
-/* line 150, ../Content/scss/modules/sly/_home.scss */
+/* line 152, ../Content/scss/modules/sly/_home.scss */
 .forward, .backward {
   float: left;
   width: 50px;
@@ -2852,12 +2907,12 @@ Footer/Section Layout
   font-size: 60px;
 }
 
-/* line 151, ../Content/scss/modules/sly/_home.scss */
+/* line 153, ../Content/scss/modules/sly/_home.scss */
 .forward {
   float: right;
 }
 
-/* line 153, ../Content/scss/modules/sly/_home.scss */
+/* line 155, ../Content/scss/modules/sly/_home.scss */
 .next, .prev {
   background: rgba(255, 204, 0, 0.3);
   display: block;
@@ -2871,17 +2926,17 @@ Footer/Section Layout
   z-index: 10;
 }
 
-/* line 164, ../Content/scss/modules/sly/_home.scss */
+/* line 166, ../Content/scss/modules/sly/_home.scss */
 .prev {
   left: 0;
 }
 
-/* line 164, ../Content/scss/modules/sly/_home.scss */
+/* line 166, ../Content/scss/modules/sly/_home.scss */
 .next {
   right: 0;
 }
 
-/* line 165, ../Content/scss/modules/sly/_home.scss */
+/* line 167, ../Content/scss/modules/sly/_home.scss */
 .next:hover, .prev:hover {
   background: rgba(255, 204, 0, 0.6);
   color: #fff;
@@ -2890,7 +2945,7 @@ Footer/Section Layout
 /* Tablet Layout (portrait mode): 501px to 768px. Inherits styles from: Mobile Layout. */
 @media all and (min-width: 501px) {
   /* Pages */
-  /* line 172, ../Content/scss/modules/sly/_home.scss */
+  /* line 174, ../Content/scss/modules/sly/_home.scss */
   .pages {
     margin: 0;
     position: absolute;
@@ -2898,7 +2953,21 @@ Footer/Section Layout
     text-align: center;
   }
 
-  /* line 178, ../Content/scss/modules/sly/_home.scss */
+  /* line 180, ../Content/scss/modules/sly/_home.scss */
+  .pages li {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 0 4px;
+    text-indent: -999px;
+    border-radius: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 192, ../Content/scss/modules/sly/_home.scss */
   .pages li {
     width: 13px;
     height: 13px;

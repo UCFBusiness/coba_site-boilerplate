@@ -35,7 +35,7 @@
 .frame ul li { /*panel*/
     width: 320px; /*<== width of panel*/
 	height: 90%;
-    background: #a03232;
+    background: #ffcc00;
     margin: 0 2px 0 0;
 	padding: 0;
     line-height: 1em;
@@ -50,7 +50,7 @@
 }
 .frame ul li.active { /*active panel*/
 	color: #fff;
-	background: #ffcc00;
+	background: #a03232;
     
     /*opacity: 1;
     filter: Alpha(opacity=100);  IE8 and earlier */
@@ -117,7 +117,9 @@
     position: relative;
 }
 .pages li {
-	display: inline-block;
+
+    display: none;
+	/*display: inline-block;*/
 	width: 26px;
 	height: 26px;
 	margin: 0 4px;
@@ -174,6 +176,18 @@
         position: absolute;
         bottom: 9px;
         text-align: center;
+    }
+    .pages li {
+	    display: inline-block;
+	    width: 26px;
+	    height: 26px;
+	    margin: 0 4px;
+	    text-indent: -999px;
+	    border-radius: 16px;
+	    cursor: pointer;
+	    overflow: hidden;
+	    background: #fff;
+	    box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
     }
     .pages li {
 	    width: 13px;
