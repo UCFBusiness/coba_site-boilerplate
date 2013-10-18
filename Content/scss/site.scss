@@ -9,7 +9,6 @@
 // Modules and Variables
 @import "partials/base";
 
-//@import "modules/chardin";
 @import "modules/sly/sly";
 @import "modules/stroll";
 @import "modules/sidebar-effects";
@@ -18,7 +17,8 @@
 /* Development Only Border CSS - delete when done 
 -------------------------------------------------- */
 
-/*
+/*--
+
 .borderline {
     border: 1px dashed red;
 }
@@ -31,20 +31,5 @@
 .container {
     border: 1px dashed green;
 }
-*/
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-// Media-Queries
-/* Mobile Layout: 480px and below. */
-
-
-/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 481px) {
-}
-
-/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 1025px) {
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+--*/

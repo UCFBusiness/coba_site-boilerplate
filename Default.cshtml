@@ -1,6 +1,12 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
     Page.Title = "Home";
+    
+    //Cache Page
+    Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
+    Response.Cache.SetCacheability(HttpCacheability.Public);
+    Response.Cache.SetValidUntilExpires(true);
+
 }
 
 @section Scripts {
@@ -8,7 +14,9 @@
 }
 
 @section Styles {
-<link href="~/content/css/chardinjs.css" rel="stylesheet">
+
+@*<link href="~/content/css/chardinjs.css" rel="stylesheet">*@
+
 <style> /*-- cover-img --*/
     .wrapper-inner {
         background: #111;
@@ -18,11 +26,11 @@
 
 @section featured {
   
-<div class="viewbook">
-    <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
-        <img src="~/images/view-book.png" alt="ucf college of business online viewbook" data-intro="Start Here." data-position="bottom">
-    </a>
-</div>
+    <div class="viewbook">
+        <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
+            <img src="~/images/view-book.png" alt="ucf college of business online viewbook" data-intro="Start Here." data-position="bottom">
+        </a>
+    </div>
 
     <section id="login" style="display: none;">
         <p>Authenticated: @WebSecurity.IsAuthenticated</p>
@@ -44,6 +52,7 @@
 
 }
 
+@*//-- NEWS *@
 <div class="pagespan">
     <section class="wrap">
         <div class="frame" id="news" data-intro="News" data-position="left">
@@ -133,6 +142,7 @@
     </section>
 </div>
 
+@*//-- EVENTS *@
 <div class="pagespan">
     <section class="wrap">
 		<div class="frame" id="events" data-intro="Events" data-position="left">
@@ -146,43 +156,55 @@
                     </div>
                 </li>
                 <li>
-                    <div title="Dean's Speaker Series: Dr. Maureen Ambrose">
-                        <img src="~/images/panels/why-fairness-matters.jpg" alt="...">
-                        <p><a href="https://events.ucf.edu/?y=2013&m=11&d=15&eventdatetime_id=15456" target="_blank">Register for this event.</a></p>
+                    <div title="Starter Riot">
+                        <img src="~/images/panels/starter-riot.jpg" alt="starter riot text">
+                        <p><a href="http://bit.ly/ucfstarterriot" target="_blank">Learn more.</a></p>
                     </div>
                 </li>
                 <li>
-                    <div title="Register for our Strategic Leadership seminar.">
+                    <div title="Big Idea Competition">
+                        <img src="~/images/panels/big-idea.jpg" alt="big idea text with lightbulb">
+                        <p><a href="https://today.ucf.edu/do-you-have-ucfs-next-big-idea-then-take-the-stage-at-the-starter-riot" target="_blank">Learn more.</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div title="Strategic Leadership Seminar">
                         <img src="~/images/panels/strategic-leadership.jpg" alt="...">
                         <p><a href="https://events.ucf.edu/?y=2013&m=11&d=13&eventdatetime_id=14928" target="_blank">Register for this event.</a></p>
                     </div>
                 </li>
                 <li>
-                    <div title="executive mba info luncheon">
+                    <div title="Executive MBA info luncheon">
                         <img src="~/images/panels/executive-mba-info-luncheon.jpg" alt="...">
                         <p><a href="https://events.ucf.edu/?calendar_id=73&y=2013&m=10&d=18&eventdatetime_id=15453" target="_blank">Learn more.</a></p>
                     </div>
                 </li>
                 <li>
-                    <div title=" ucf business alumni panels">
+                    <div title=" UCF business alumni panels">
                         <img src="~/images/panels/alumni-panels.jpg" alt="...">
                         <p><a href="https://events.ucf.edu/?calendar_id=73&y=2013&m=10&d=25&eventdatetime_id=15452" target="_blank">Learn more.</a></p>
                     </div>
                 </li>
                 <li>
-                    <div title="executive mba info session">
+                    <div title="Executive MBA info session">
                         <img src="~/images/panels/emba-info-session.jpg" alt="...">
                         <p><a href="https://events.ucf.edu/?y=2013&m=11&d=07&eventdatetime_id=15454" target="_blank">Learn more.</a></p>
                     </div>
                 </li>
                 <li>
-                    <div title="black and gold gala">
+                    <div title="Dean's Speaker Series: Dr. Maureen Ambrose">
+                        <img src="~/images/panels/why-fairness-matters.jpg" alt="image of dr. maureen ambrose">
+                        <p><a href="https://events.ucf.edu/?y=2013&m=11&d=15&eventdatetime_id=15456" target="_blank">Register for this event.</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div title="Black and Gold Gala">
                         <img src="~/images/panels/black-and-gold-gala.jpg" alt="...">
                         <p><a href="https://www.google.com/calendar/event?eid=bWk5YnZnbmUzY2QxbmJtOWNoNzQ2NmZmczAgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">Learn more.</a></p>
                     </div>
                 </li>
                 <li>
-                    <div title="hall of fame">
+                    <div title="Hall of Fame Reception">
                         <img src="~/images/panels/hall-of-fame.jpg" alt="...">
                         <p><a href="https://www.google.com/calendar/event?eid=amVraGljZm5yY2NsdHNxazgycWtoY2l0NmsgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">Learn more.</a></p>
                     </div>
@@ -202,6 +224,7 @@
     </section>
 </div>
 
+@*//-- FACULTY *@
 <div class="pagespan">
     <section class="wrap">
         <div class="frame" id="faculty" data-intro="Faculty" data-position="left">
