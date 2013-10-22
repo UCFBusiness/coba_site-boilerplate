@@ -1,37 +1,32 @@
-// Media-Queries Template
+// Media-Queries
 
-/* =============================================================================
-   Media Queries
-   ========================================================================== */
-
-/* Mobile Layout: 480px and below. */
-// styles go here.
+/* Apply to all resolutions. Inherits to all layouts. */
 
 
 
-/* Tablet Layout (portrait mode): 481px to 768px. Inherits styles from: Mobile Layout. */
-@media all and (min-width: 481px) {
+/* Tablet(portrait) Layout */
+@media all and (max-width: 500px) {
     
+     
+}
+
+
+/* Tablet(landscape) and Netbook Desktop Layout: */
+@media all and (max-width: 1024px) {
+
+  
+}
+
+
+/* Small Desktop Layout: */
+@media screen and (min-width:1025px){
+
 
 }
 
 
-/* Tablet Layout (landscape mode): 769px to 1024px. Inherits styles from: Mobile Layout and Portrait Layout. */
-@media all and (min-width: 769px) {
-    
+/* Large Desktop Layout: Inherits styles from: Small Desktop Layout. */
+@media screen and (min-width:1666px){
 
-}
-
-
-/* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
-@media screen and (min-width: 1025px) {
-    
-
-}
-
-
-/* Print Layout: Inherits styles from: All Layouts. */
-@media print {
-    
 
 }

@@ -6,7 +6,6 @@ require.config({
     paths: {
         'sly': 'js/sly.min',
         'sidebarfx': 'js/sidebarEffects',
-        'chardin': 'js/chardinjs.min',
         'dmenu': 'js/jquery.dlmenu',
         'fittext': 'js/jquery.fittext',
         'waypoint': 'js/waypoints.min',
@@ -132,7 +131,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'],
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
-            $('.cover').css('min-height', height);
+            //$('.cover').css('min-height', height);
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -149,7 +148,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'],
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
-            $('.cover').css('min-height', height);
+            //$('.cover').css('min-height', height);
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -159,7 +158,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'],
         });
 
     if (width > 1024) //load desktop scripts
-        require(['lockfix', 'chardin'], function () {
+        require(['lockfix'], function () {
 
             //-- screensize ----------------------------------
             $(".message").html(width + " x " + height + " - desktop");
@@ -169,7 +168,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'],
             $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 410} });
             //------------------------------------------------
 
-            $('body').chardinJs('start');
+            //$('body').chardinJs('start');
 
         });
 
@@ -191,7 +190,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'],
                 //------------------------------------------------
 
                 //-- resize to fit -------------------------------
-                $('.cover').css('min-height', height);
+                //$('.cover').css('min-height', height);
                 //------------------------------------------------
 
             });
@@ -204,7 +203,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'],
                 //------------------------------------------------
 
                 //-- resize to fit -------------------------------
-                $('.cover').css('min-height', height);
+                //$('.cover').css('min-height', height);
                 //------------------------------------------------
 
             });

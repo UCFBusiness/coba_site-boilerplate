@@ -51,7 +51,7 @@
                 <div class="content-wrapper">
                         <!---->
                         <aside class="cover cover-home">
-                            <div class="cover-header cover-img">
+                            <div class="cover-header cover-img"><!-- cover background image -->
                                 <div id="UCFHBHeader">
                                     <div class="UCFHBWrapper">
                                         <section id="UCFtitle">
@@ -80,9 +80,10 @@
 							                        <a href="#">Graduate</a>
 							                        <ul class="dl-submenu">
                                                         <li class="Label breadcrumb">Academics > Graduate</li>
-								                        <li><a href="~/graduate/admissions">Admissions</a></li>
+								                        @*<li><a href="~/graduate/admissions">Admissions</a></li>
 								                        <li><a href="~/graduate/programs">Degree Programs</a></li>
-								                        <li><a href="~/graduate/certificates">Certificates</a></li>
+								                        <li><a href="~/graduate/certificates">Certificates</a></li>*@
+								                        <li><a href="http://edc.research.ucf.edu/degrees" target="_blank">Degree Programs</a></li>
 							                        </ul>
 						                        </li>
                                                 <li>
@@ -118,7 +119,7 @@
                                         <li>
 					                        <a href="#">Faculty &amp; Research</a>
 					                        <ul class="dl-submenu">
-                                                <li class="Label breadcrumb">Faculty Research</li>
+                                                <li class="Label breadcrumb">Faculty &amp; Research</li>
 						                        <li><a href="#"><small>(coming soon)</small></a></li>
 					                        </ul>
 				                        </li>
@@ -184,7 +185,7 @@
 		                        </div>
                             </div><!--/.cover-body -->
                         </aside><!--/.cover -->
-		                <section id="main-content" class="wrapper"><!--background image here-->
+		                <section id="main-content" class="wrapper"><!-- content background image -->
 			                <div class="wrapper-inner">
                                 <!---->
                                 <header class="wrapper-header">
@@ -216,11 +217,11 @@
                                             <li>
                                                 <p class="contact">Contact Info</p>
                                                 <ul>
-                                                    <li><a href="#" target="_blank">Undergraduate Advising</a></li>
+                                                    <li>Undergraduate Advising</li>
                                                     <li><a href="tel:4078232184">(407) 823-2184</a></li>
-                                                    <li><a href="#" target="_blank">Graduate Advising</a></li>
+                                                    <li>Graduate Advising</li>
                                                     <li><a href="tel:4078232184">(407) 235-3917</a></li>
-                                                    <li><a href="#" target="_blank">General Information</a></li>
+                                                    <li>General Information</li>
                                                     <li><a href="tel:4078232184">(407) 823-2181</a></li>
                                                 </ul>
                                             </li>
@@ -262,19 +263,24 @@
         <span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;" data-intro="This is our new website and we welcome your feedback." data-position="left"></span>
         <div class="loading-bar"></div>
         <!--BEGIN: Scripts-->
+        <!--[if lt IE 9]>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- jquery -->
         <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
+        <!--<![endif]-->
         <script src="~/scripts/bootstrap.min.js"></script><!-- bootstrap -->
         @*<script src="~/scripts/holder.min.js"></script>*@
-        <script src="//scripts.bus.ucf.edu/cdn/js/scripts/plugins.js" type="text/javascript"></script>
-        <script src="//scripts.bus.ucf.edu/cdn/js/scripts/sly.hoz.js" type="text/javascript"></script>
+        <script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js" type="text/javascript"></script>
+        <script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js" type="text/javascript"></script>
         <script src="//scripts.bus.ucf.edu/cdn/js/libs/bootstrap-scrollspy" type="text/javascript"></script>
         <script src="~/content/js/classie.js"></script>
         @*<script src="~/content/js/uisearch.js"></script>
         <script>
 			new UISearch( document.getElementById( 'sb-search' ) );
 		</script>*@
-        <script data-main="/scripts/main" src="~/scripts/require.js"></script>
+        <script data-main="/scripts/main" src="~/scripts/require.min.js"></script>
         @RenderSection("Scripts", required: false)
         <!--FINIS: Scripts-->
     </body>

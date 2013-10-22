@@ -1,42 +1,41 @@
 // Media-Queries - Customized Bootstrap Grids
 
-/* Mobile Layout: 499px and below. */
-
-.col-md-3, .col-md-4 {
-    background: #EEE;
-    border-top: 1px solid #FFF;
-    border-left: 1px solid #DDD;
-    border-right: 1px solid #BBB;
-    border-bottom: 1px solid #BBB;
-}
+/* Apply to all resolutions. */
 
 .col-span-2, .col-span-3 {
-	-webkit-column-width: auto;
-	-moz-column-width: auto;
-	column-width: auto;
+    -webkit-column-width: auto;
+    -moz-column-width: auto;
+    column-width: auto;
 
-	-webkit-column-count: auto;
-	-moz-column-count: auto;
-	column-count: auto;
-	}
-
+    -webkit-column-count: auto;
+    -moz-column-count: auto;
+    column-count: auto;
+}
 
 
 /* Tablet Layout: 500px to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media all and (min-width: 500px) {
+@media all and (max-width: 500px) {
     
-    
+ 
     
 }
 
 
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
-@media screen and (min-width: 1025px) {
+@media all and (max-width: 1024px) {
 
-    .col-md-3, .col-md-4 {
-        background: none;
-        border: none;
-    }
+    .col-md-3, .col-md-4, .list-course {
+        background: #EEE;
+        border-top: 1px solid #FFF;
+        border-left: 1px solid #DDD;
+        border-right: 1px solid #BBB;
+        border-bottom: 1px solid #BBB;
+    } 
+    
+}
+
+
+@media screen and (min-width:1025px){
 
     .col-span-2 {
 	    margin: 0 auto;
@@ -73,5 +72,9 @@
 	    -moz-column-gap: 1%;
 	    column-gap: 1%;
     }
+
+}
+
+@media screen and (min-width:1666px){
 
 }
