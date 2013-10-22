@@ -10,7 +10,7 @@ require.config({
         'fittext': 'js/jquery.fittext',
         'waypoint': 'js/waypoints.min',
         'easing': 'js/jquery.easing.min',
-        'equalh': 'js/jquery.equalheight',
+        'equalheight': 'js/jquery.equalheight',
         'resize': 'js/jquery.debouncedresize',
         'lockfix': 'js/jquery.lockfixed.min'
     }
