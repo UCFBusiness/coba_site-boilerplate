@@ -2,7 +2,7 @@
     Layout = "~/_SiteLayout.cshtml";
     Page.Title = "Home";
 
-        //Cache Page
+    //Cache Page
     Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
     Response.Cache.SetCacheability(HttpCacheability.Public);
     Response.Cache.SetValidUntilExpires(true);
@@ -10,24 +10,65 @@
 }
 
 @section Scripts {
-
+    <script>
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <script>
+        $('#bporter').click(function () {
+            // Replace the 'ytplayer' element with an <iframe> and
+            // YouTube player after the API code downloads.
+            var player;
+            player = new YT.Player('bporter', {
+                height: '300',
+                width: '320',
+                videoId: 'm-0uCQIqjOw'
+            });
+        });
+    </script>
+    <script>
+            $('#cmassiah').click(function () {
+                // Replace the 'ytplayer' element with an <iframe> and
+                // YouTube player after the API code downloads.
+                var player;
+                player = new YT.Player('cmassiah', {
+                    height: '300',
+                    width: '320',
+                    videoId: 'e9Bn0I-vfzQ'
+                });
+            });
+    </script>
+    <script>
+            $('#ssnaith').click(function () {
+                // Replace the 'ytplayer' element with an <iframe> and
+                // YouTube player after the API code downloads.
+                var player;
+                player = new YT.Player('ssnaith', {
+                    height: '300',
+                    width: '320',
+                    videoId: 'BGZry2AQz4E'
+                });
+            });
+    </script>
 }
 
 @section Styles {
-<style> /*-- cover-img --*/
-    .wrapper-inner {
-        background: #111;
-    }
-</style>
+    <style> /*-- cover-img --*/
+        .wrapper-inner {
+            background: #111;
+        }
+    </style>
 }
 
 @section featured {
-  
-<div class="viewbook">
-    <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
-        <img src="~/images/view-book.png" alt="ucf college of business online viewbook" data-intro="Start Here." data-position="bottom">
-    </a>
-</div>
+    <div class="viewbook" style="visibility: hidden"><!--ViewBook is hidden temporarily-->
+        <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
+            <img src="~/images/view-book.png" alt="ucf college of business online viewbook" data-intro="Start Here." data-position="bottom">
+        </a>
+    </div>
 
     <section id="login" style="display: none;">
         <p>Authenticated: @WebSecurity.IsAuthenticated</p>
@@ -46,7 +87,6 @@
             </ul>
         }
     </section>
-
 }
 
 @*//-- NEWS *@
@@ -267,6 +307,21 @@
                 </li>
                 <li>
                     <div title="Meet Dr. Bob Porter">
+                        <img id="bporter" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/bob-porter.jpg)">
+                    </div>
+                </li>
+                <li>
+                    <div title="Meet Dr. Carolyn Massiah">
+                        <img id="cmassiah" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/carolyn-massiah.jpg)">
+                    </div>
+                </li>
+                <li>
+                    <div title="Meet Dr. Sean Snaith">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/sean-snaith.jpg)">
+                    </div>
+                </li>
+                @*<li>
+                    <div title="Meet Dr. Bob Porter">
                         <iframe width="320" height="300" src="//www.youtube.com/embed/m-0uCQIqjOw" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </li>
@@ -299,7 +354,7 @@
                     <div title="Meet Dr. Robin Roberts">
                         <iframe width="320" height="300" src="//www.youtube.com/embed/9w_uBT_3xUc" frameborder="0" allowfullscreen></iframe>
                     </div>
-                </li>
+                </li>*@
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
