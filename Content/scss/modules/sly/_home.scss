@@ -35,26 +35,23 @@
 .frame ul li { /*panel*/
     width: 320px; /*<== width of panel*/
 	height: 90%;
-    background: #ffcc00;
+    background: #000;
     margin: 0 2px 0 0;
 	padding: 0;
     line-height: 1em;
 	float: left;
 	cursor: pointer;
     position: relative;
-    /*
-    opacity: 0.5;
-    filter: Alpha(opacity=50);  IE8 and earlier 
-    box-shadow:0px 13px 15px 0px rgba(0,0,0,0.7);
-    */
 }
 .frame ul li.active { /*active panel*/
 	color: #fff;
-	background: #a03232;
-    
-    /*opacity: 1;
-    filter: Alpha(opacity=100);  IE8 and earlier */
+	background: #ffcc00;
 }
+.frame ul li img { /*panel image*/
+    width: 320px; /*<== width of panel*/
+    height: 300px; /*<== height of panel*/
+}
+
 .frame .social {
     position: absolute;
     right: 0;
@@ -71,17 +68,18 @@
 
 /*slide caption*/
 .frame p {
-    margin:0;
     background: rgba(0,0,0,.4);
+    margin:0;
     padding: 10px 5px;
     width: 100%;
     max-width: 320px; /*<== width of caption*/
+    color: #fff;
     position: absolute;
     bottom: 10px;
     left: 0px;
     z-index: 9;
 }
-.frame p a {
+.frame a {
     color: #fff;
 }
 
@@ -146,7 +144,7 @@
 .controls .divider { display: inline-block; margin: 0 10px; }
 
 /* Button Controls */
-.controls button { background: transparent; border: 0; color: #ffcc00; opacity: .5;}
+.controls button { background: rgba(255, 204, 0, .3); border: 0; color: #ffcc00; opacity: .5;}
 .controls button:hover { opacity: 1; }
 .controls button:disabled { opacity: .2; }
 
@@ -209,6 +207,24 @@
 /* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
     
+    /* Frame */
+    .frame {
+        height: 300px; /*<== height of panel*/
+    }
+    .frame ul li { /*panel*/
+        width: 320px; /*<== width of panel*/
+
+        opacity: 0.35;
+        filter: Alpha(opacity=35); /* IE8 and earlier */
+        box-shadow:0px 13px 15px 0px rgba(0,0,0,0.7);
+    }
+    .frame ul li:hover, 
+    .frame ul li.active { /*active panel*/
+        opacity: 1;
+        filter: Alpha(opacity=100);  /*IE8 and earlier */
+    }
+    
+
     /* Pages */
     .pages { 
     }
@@ -221,4 +237,3 @@
     
 
 }
-
