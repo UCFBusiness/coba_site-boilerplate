@@ -16,9 +16,6 @@ body {
     background-size: cover;
     text-rendering:optimizeLegibility;
     -webkit-font-smoothing:antialiased;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.4em;
 
     /* Create a page-wide stacking context 
     (so that negative margins work as you expect) */
@@ -153,25 +150,7 @@ ol.round {
 .wrapper {outline:0;position:absolute;left:30%;right:0;top:0;bottom:0;-webkit-overflow-scrolling:touch;}
 .wrapper-inner {background: #fff;padding:0;width:100%;max-width:810px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 
-
-@media all and (max-width:500px){
-    .cover{height:375px}
-    .cover-bestof,.cover-home,.cover-collection{min-height:350px;height:auto;display:table}
-    .cover-body{display:table-cell;vertical-align:bottom;position:relative;left:-1px;margin:0;padding:65px 5% 30px}
-    .cover-body:before{background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-moz-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-ms-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-o-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:linear-gradient(to top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%)}
-    .cover-description{font-size:.8em; margin-bottom:6px}
-    .cover-avatar{width:100px;height:100px}
-    .cover-new-collection-link{margin-left:0;line-height:32px}
-
-    /*Cover h1*/
-    .cover-title {font-size:1.6em;}
-    .cover-title span {font-size: .8em;}
-
-    /*Page hgroup*/
-    .page-title {width:100%;}
-    .page-title h1 {font-size:1.5em}
-    .page-title h2 {font-size:1.3em}
-}
+.wrapper-header-inner {background: #111;}
 
 @media all and (max-width:1024px){
     html{
@@ -196,11 +175,37 @@ ol.round {
     .page-title h2 {font-size:1.8em}
 }
 
+@media all and (max-width:500px){
+    .cover{height:375px}
+    .cover-bestof,.cover-home,.cover-collection{min-height:350px;height:auto;display:table}
+    .cover-body{display:table-cell;vertical-align:bottom;position:relative;left:-1px;margin:0;padding:65px 5% 30px}
+    .cover-body:before{background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-moz-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-ms-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-o-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:linear-gradient(to top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%)}
+    .cover-description{font-size:.8em; margin-bottom:6px}
+    .cover-avatar{width:100px;height:100px}
+    .cover-new-collection-link{margin-left:0;line-height:32px}
+
+    /*Cover h1*/
+    .cover-title {font-size:1.6em;}
+    .cover-title span {font-size: .8em;}
+
+    /*Page hgroup*/
+    .page-title {width:100%;}
+    .page-title h1 {font-size:1.5em}
+    .page-title h2 {font-size:1.3em}
+}
+
+@media screen and (min-width:1666px){
+    .cover-title {font-size:3.875em;}
+    .cover-title span {font-size: .750em;}
+    .wrapper{left:500px}
+    .wrapper-inner{max-width:1018px}
+}
+
 @media screen and (min-width:1025px){
     .cover, .site-nav-logo {position: fixed; border-right: 1px solid #000;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
     .cover-img{background-image: url('/images/cover-sample.jpg');}
     .wrapper-inner {border-right: 1px solid #000;max-width:910px;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
-    .wrapper-header-inner {height: 35px; padding: 5px;}
+    .wrapper-header-inner {height: 35px;}
 
     /*Cover h1*/
     .cover-title {font-size:2.400em;}
@@ -218,9 +223,3 @@ ol.round {
     .cover-title span {font-size: .750em;}
 }
 
-@media screen and (min-width:1666px){
-    .cover-title {font-size:3.875em;}
-    .cover-title span {font-size: .750em;}
-    .wrapper{left:500px}
-    .wrapper-inner{max-width:1018px}
-}

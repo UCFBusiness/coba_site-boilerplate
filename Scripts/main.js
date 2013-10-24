@@ -16,10 +16,10 @@ require.config({
     }
 });
 
-require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'], function () {
+require(['easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'], function () {
 
     //----- Font Sizes-------------------------------
-    $('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '16px' });
+    //$('body').fitText(1.2, { minFontSize: '12px', maxFontSize: '16px' });
     //-----------------------------------------------
 
 

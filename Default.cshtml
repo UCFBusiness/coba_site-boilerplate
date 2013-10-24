@@ -10,7 +10,7 @@
 }
 
 @section Scripts {
-    <script>
+    @*<script>
         // Load the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/player_api";
@@ -52,14 +52,15 @@
                     videoId: 'BGZry2AQz4E'
                 });
             });
-    </script>
+    </script>*@
 }
 
 @section Styles {
-    <style> /*-- cover-img --*/
-        .wrapper-inner {
+    <style> 
+        /*-- .wrapper-inner {
             background: #111;
         }
+        .frame ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }--*/
     </style>
 }
 
@@ -304,7 +305,7 @@
                         <a href="#" class="social tt-share">t</a>
                         <a href="#" class="social fb-share">f</a>*@
                     </div>
-                </li>
+                @*</li>
                 <li>
                     <div title="Meet Dr. Bob Porter">
                         <img id="bporter" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/bob-porter.jpg)">
@@ -319,8 +320,8 @@
                     <div title="Meet Dr. Sean Snaith">
                         <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/sean-snaith.jpg)">
                     </div>
-                </li>
-                @*<li>
+                </li>*@
+                <li>
                     <div title="Meet Dr. Bob Porter">
                         <iframe width="320" height="300" src="//www.youtube.com/embed/m-0uCQIqjOw" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -354,7 +355,7 @@
                     <div title="Meet Dr. Robin Roberts">
                         <iframe width="320" height="300" src="//www.youtube.com/embed/9w_uBT_3xUc" frameborder="0" allowfullscreen></iframe>
                     </div>
-                </li>*@
+                </li>
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
