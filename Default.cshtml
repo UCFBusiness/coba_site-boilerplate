@@ -10,6 +10,13 @@
 }
 
 @section Scripts {
+
+    <script src="//scripts.bus.ucf.edu/cdn/js/libs/jquery.pageslide.min.js" type="text/javascript"></script>
+    <script>
+        /* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
+        $(".target_blank").pageslide({ direction: "left" });
+    </script>
+
     @*<script>
         // Load the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -57,10 +64,14 @@
 
 @section Styles {
     <style> 
-        /*-- .wrapper-inner {
+       .wrapper-inner {
             background: #111;
         }
-        .frame ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }--*/
+         /*-- .frame ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }--*/
+        
+        #modal {
+            display: none;
+        }
     </style>
 }
 
@@ -106,7 +117,7 @@
                 </li>
                 <li>
                     <div title="Dr. Paul Jarley's Blog">
-                        <a href="http://www.bus.ucf.edu/dean" target="_blank">
+                        <a href="//www.bus.ucf.edu/dean" class="target_blank">
                         <img src="~/images/panels/dean-blog.jpg" alt="...">
                         <p>Read the Dean's latest post.</p>
                         </a>
@@ -115,7 +126,7 @@
 
                 <li>
                     <div title="Undergraduate Student Advising">
-                        <a href="http://www.bus.ucf.edu/students/undergraduate/" target="_blank">
+                        <a href="//www.bus.ucf.edu/students/undergraduate/" class="target_blank">
                         <img src="~/images/panels/advising.jpg" alt="...">
                         <p>Undergraduate Student Advising</p>
                         </a>
@@ -123,8 +134,8 @@
                 </li>
                 <li>
                     <div title="Keon Testing Center">
-                        <a href="http://www.bus.ucf.edu/testingcenter" target="_blank">
-                        <img src="http://images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" width="320" height="300" alt="...">
+                        <a href="//www.bus.ucf.edu/testingcenter" class="target_blank">
+                        <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" width="320" height="300" alt="...">
                         <p>Keon Testing Center</p>
                         </a>
                     </div>
@@ -140,7 +151,7 @@
                 </li>
                 <li>
                     <div title="Stay connected with social media.">
-                        <a href="~/social-media" target="_blank">
+                        <a href="~/social-media">
                         <img src="~/images/panels/social-media.jpg" alt="...">
                         <p>Stay connected with our social college.</p>
                         </a>
@@ -148,14 +159,15 @@
                 </li>
                 <li>
                     <div title="Professional Achievement Awardee, Mike Plaumann">
-                        
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/HGHnnM62wqI" frameborder="0" allowfullscreen></iframe>
-
+                        <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
+                        <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/professional-achievement.jpg)">
+                        <p>The Launchpad is open. Learn more.</p>
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div title="Dr. Sean Snaith's Economic Forecasts">
-                        <a href="http://iec.ucf.edu/page/forecasts.aspx" target="_blank">
+                        <a href="//iec.ucf.edu/page/forecasts.aspx" class="target_blank">
                         <img src="~/images/panels/snaith-forecasts.jpg" alt="...">
                         <p>Dr. Sean Snaith's Economic Forecasts.</p>
                         </a>
@@ -163,15 +175,15 @@
                 </li>
                 <li>
                     <div title="Blackstone Launchpad site.">
-                        <a href="http://ucf.thelaunchpad.org" target="_blank">
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/4wpCjLyEaXM" frameborder="0" allowfullscreen></iframe>
+                        <a href="//ucf.thelaunchpad.org" class="target_blank">
+                        <img src="~/images/panels/blackstone.jpg" alt="...">
                         <p>The Launchpad is open. Learn more.</p>
                         </a>
                     </div>
                 </li>
                 <li>
                     <div title="Take the ball by Dr. Paul Jarley.">
-                        <a href="http://www.bus.ucf.edu/dean/take-the-ball" target="_blank">
+                        <a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
                         <img src="~/images/panels/take-the-ball.jpg" alt="...">
                         <p>Learn more on how to take the ball.</p>
                         </a>
@@ -179,7 +191,7 @@
                 </li>
                 <li>
                     <div title="View the video by the Dr. Glenn Hubbard.">
-                        <a href="https://tegr.it/y/1at78" target="_blank">
+                        <a href="//tegr.it/y/1at78" class="target_blank">
                         <img src="~/images/panels/glenn-hubbard.jpg" alt="...">
                         <p>Watch Dr. Glenn Hubbard's presentation.</p>
                         </a>
@@ -215,7 +227,7 @@
                 </li>
                 <li>
                     <div title="Starter Riot">
-                        <a href="http://today.ucf.edu/starter-riot-is-the-new-halloween-tradition-for-you-and-your-future" target="_blank">
+                        <a href="//today.ucf.edu/starter-riot-is-the-new-halloween-tradition-for-you-and-your-future" class="target_blank">
                         <img src="~/images/panels/starter-riot.jpg" alt="starter riot text">
                         <p>Learn more.</p>
                         </a>
@@ -223,7 +235,7 @@
                 </li>
                 <li>
                     <div title="Big Idea Competition">
-                        <a href="http://today.ucf.edu/do-you-have-ucfs-next-big-idea-then-take-the-stage-at-the-starter-riot" target="_blank">
+                        <a href="//today.ucf.edu/do-you-have-ucfs-next-big-idea-then-take-the-stage-at-the-starter-riot" class="target_blank">
                         <img src="~/images/panels/big-idea.jpg" alt="big idea text with lightbulb">
                         <p>Learn more.</p>
                         </a>
@@ -231,7 +243,7 @@
                 </li>
                 <li>
                     <div title="Strategic Leadership Seminar">
-                        <a href="http://events.ucf.edu/?y=2013&m=11&d=13&eventdatetime_id=14928" target="_blank">
+                        <a href="//events.ucf.edu/?y=2013&m=11&d=13&eventdatetime_id=14928" class="target_blank">
                         <img src="~/images/panels/strategic-leadership.jpg" alt="...">
                         <p>Register for this event.</p>
                         </a>
@@ -239,7 +251,7 @@
                 </li>
                 <li>
                     <div title=" UCF business alumni panels">
-                        <a href="http://events.ucf.edu/?calendar_id=73&y=2013&m=10&d=25&eventdatetime_id=15452" target="_blank">
+                        <a href="//events.ucf.edu/?calendar_id=73&y=2013&m=10&d=25&eventdatetime_id=15452" class="target_blank">
                         <img src="~/images/panels/alumni-panels.jpg" alt="...">
                         <p>Learn more.</p>
                         </a>
@@ -247,7 +259,7 @@
                 </li>
                 <li>
                     <div title="Executive MBA info session">
-                        <a href="http://events.ucf.edu/?y=2013&m=11&d=07&eventdatetime_id=15454" target="_blank">
+                        <a href="//events.ucf.edu/?y=2013&m=11&d=07&eventdatetime_id=15454" class="target_blank">
                         <img src="~/images/panels/emba-info-session.jpg" alt="...">
                         <p>Learn more.</p>
                         </a>
@@ -255,7 +267,7 @@
                 </li>
                 <li>
                     <div title="Dean's Speaker Series: Dr. Maureen Ambrose">
-                        <a href="http://events.ucf.edu/?y=2013&m=11&d=15&eventdatetime_id=15456" target="_blank">
+                        <a href="//events.ucf.edu/?y=2013&m=11&d=15&eventdatetime_id=15456" class="target_blank">
                         <img src="~/images/panels/why-fairness-matters.jpg" alt="image of dr. maureen ambrose">
                         <p>Register for this event.</p>
                         </a>
@@ -263,7 +275,7 @@
                 </li>
                 <li>
                     <div title="Black and Gold Gala">
-                        <a href="http://www.google.com/calendar/event?eid=bWk5YnZnbmUzY2QxbmJtOWNoNzQ2NmZmczAgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
+                        <a href="//www.google.com/calendar/event?eid=bWk5YnZnbmUzY2QxbmJtOWNoNzQ2NmZmczAgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
                         <img src="~/images/panels/black-and-gold-gala.jpg" alt="...">
                         <p>Learn more.</p>
                         </a>
@@ -271,7 +283,7 @@
                 </li>
                 <li>
                     <div title="Hall of Fame Reception">
-                        <a href="http://www.google.com/calendar/event?eid=amVraGljZm5yY2NsdHNxazgycWtoY2l0NmsgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
+                        <a href="//www.google.com/calendar/event?eid=amVraGljZm5yY2NsdHNxazgycWtoY2l0NmsgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
                         <img src="~/images/panels/hall-of-fame.jpg" alt="...">
                         <p>Learn more.</p>
                         </a>
@@ -305,23 +317,29 @@
                         <a href="#" class="social tt-share">t</a>
                         <a href="#" class="social fb-share">f</a>*@
                     </div>
-                @*</li>
+                </li>
                 <li>
                     <div title="Meet Dr. Bob Porter">
+                        <a href="//www.youtube.com/embed/m-0uCQIqjOw" class="target_blank">
                         <img id="bporter" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/bob-porter.jpg)">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div title="Meet Dr. Carolyn Massiah">
+                        <a href="//www.youtube.com/embed/e9Bn0I-vfzQ" class="target_blank">
                         <img id="cmassiah" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/carolyn-massiah.jpg)">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div title="Meet Dr. Sean Snaith">
+                        <a href="//www.youtube.com/embed/BGZry2AQz4E" class="target_blank">
                         <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/sean-snaith.jpg)">
+                        </a>
                     </div>
-                </li>*@
-                <li>
+                </li>
+                @*<li>
                     <div title="Meet Dr. Bob Porter">
                         <iframe width="320" height="300" src="//www.youtube.com/embed/m-0uCQIqjOw" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -355,7 +373,7 @@
                     <div title="Meet Dr. Robin Roberts">
                         <iframe width="320" height="300" src="//www.youtube.com/embed/9w_uBT_3xUc" frameborder="0" allowfullscreen></iframe>
                     </div>
-                </li>
+                </li>*@
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">

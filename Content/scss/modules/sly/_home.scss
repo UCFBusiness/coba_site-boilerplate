@@ -207,6 +207,10 @@
 /* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
     
+    .pagespan {
+        /*margin-bottom: 50px;*/
+    }
+
     /* Frame */
     .frame {
         height: 300px; /*<== height of panel*/
@@ -214,11 +218,16 @@
     .frame ul li { /*panel*/
         width: 320px; /*<== width of panel*/
 
-        opacity: 0.35;
-        filter: Alpha(opacity=35); /* IE8 and earlier */
+        /* opacity: 0.35;
+        filter: Alpha(opacity=35); IE8 and earlier */
         box-shadow:0px 13px 15px 0px rgba(0,0,0,0.7);
     }
-    .frame ul li:hover, 
+     
+    .frame ul li:hover {
+        /*opacity: 0.55;
+        filter: Alpha(opacity=55);  IE8 and earlier */
+    }
+
     .frame ul li.active { /*active panel*/
         opacity: 1;
         filter: Alpha(opacity=100);  /*IE8 and earlier */
@@ -226,7 +235,7 @@
     
 
     /* Pages */
-    .pages { 
+    .pages {
     }
 
 }

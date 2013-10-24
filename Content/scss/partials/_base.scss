@@ -1,15 +1,11 @@
 
 // Partials
 @import "primary";
-@import "ucf-header";
-@import "header/navigation";
-@import "header/search-bar";
-@import "header/menu.animation";
-@import "viewbook";
+@import "header";
+@import "elements/all";
 @import "footer";
 
 // Bootstrap changes
-@import "back-to-top";
 @import "grids";
 
 // Font weights

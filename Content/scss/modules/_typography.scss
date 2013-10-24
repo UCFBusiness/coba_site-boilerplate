@@ -1,26 +1,99 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis|Cantora+One|Quicksand|Titillium+Web|Roboto|Advent+Pro);
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
-
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/* =============================================================================
+Font: Raleway
+========================================================================== */
 
 @font-face {
-	font-family: Satisfy;
-	src: local("Satisfy"), url(http://themes.googleusercontent.com/static/fonts/satisfy/v3/swgYNTW5Q6X61bBH6SDBsg.eot) format("embedded-opentype"), url(http://themes.googleusercontent.com/static/fonts/satisfy/v3/ch7X2unYkww0EzsjlC3m8w.woff) format("woff");
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(http://themes.googleusercontent.com/static/fonts/raleway/v6/8KhZd3VQBtXTAznvKjw-kxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
 }
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v6/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(http://themes.googleusercontent.com/static/fonts/raleway/v6/JbtMzqLaYbbbCL9X6EvaIxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+
+/* =============================================================================
+Font: Lato
+========================================================================== */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+
+/* =============================================================================
+Font: Satisfy
+========================================================================== */
+
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satisfy'), url(http://themes.googleusercontent.com/static/fonts/satisfy/v3/ch7X2unYkww0EzsjlC3m8w.woff) format('woff');
+}
+
+
+/* =============================================================================
+Font: Icomoon
+========================================================================== */
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('/content/font/icomoon.eot');
-	src:url('/content/font/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('/content/font/icomoon.woff') format('woff'),
-		url('/content/font/icomoon.ttf') format('truetype'),
-		url('/content/font/icomoon.svg#icomoon') format('svg');
+	src:url('/content/font/icomoon.eot');                                   /* IE9 Compat Modes */
+	src:url('/content/font/icomoon.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
+		url('/content/font/icomoon.woff') format('woff'),                   /* Modern Browsers */
+		url('/content/font/icomoon.ttf') format('truetype'),                /* Safari, Android, iOS */
+		url('/content/font/icomoon.svg#icomoon') format('svg');             /* Legacy iOS */
 	font-weight: normal;
 	font-style: normal;
 }
+
+
+/* =============================================================================
+Font: Icomoon
+========================================================================== */
+
+@font-face {
+	font-family: 'fontawesome-webfont';
+	src:url('/content/font/fontawesome-webfont.eot');                                   /* IE9 Compat Modes */
+	src:url('/content/font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
+		url('/content/font/fontawesome-webfont.woff') format('woff'),                   /* Modern Browsers */
+		url('/content/font/fontawesome-webfont.ttf') format('truetype'),                /* Safari, Android, iOS */
+		url('/content/font/icomoon.svg#fontawesome-webfont') format('svg');             /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* =============================================================================
+Font: Arrows
+========================================================================== */
 
 @font-face {
 	font-family: 'arrows';
@@ -32,3 +105,4 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
