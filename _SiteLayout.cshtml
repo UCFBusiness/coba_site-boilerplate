@@ -153,19 +153,22 @@
 				                        </li>
 			                        </ul>
 
-                                    <form id="site-search" class="site-search" action="/search" name="input" method="get" >
-                                        <input type="search" placeholder="SEARCH" name="cx=004234240553222255636:70uztgpm38y&cof=FORID:9&ie=UTF-8&q" class="dl-search-field" />
+                                    <form id="site-search" class="site-search" action="/search" name="input" method="get">
+                                        <input type="search" placeholder="SEARCH" name="q" class="dl-search-field" />
+                                        <input type="hidden" name="cx" value="004234240553222255636:70uztgpm38y" />
+                                        <input type="hidden" name="cof" value="FORID:9" />
+                                        <input type="hidden" name="ie" value="UTF-8" />
                                         <input type="submit" value="submit" class="dl-searchbutton" />
                                         <span class="dl-search-icon"></span>
                                     </form>
 
-			                        <div id="sb-search" class="sb-search">
+			                        @*<div id="sb-search" class="sb-search">
 				                        <form action="/search" name="input" method="get" >
 					                        <input class="sb-search-input" placeholder="SEARCH" type="text" value="" name="cx=004234240553222255636:70uztgpm38y&cof=FORID:9&ie=UTF-8&q" id="search">
 					                        <input class="sb-search-submit" type="submit" value="">
 					                        <span class="sb-icon-search"></span>
 				                        </form>
-			                        </div>
+			                        </div>*@
                                     
                                 </nav><!--/dl-menuwrapper -->
                                 <div class="site-nav-overlay"></div>

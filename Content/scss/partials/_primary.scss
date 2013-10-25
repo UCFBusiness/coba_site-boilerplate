@@ -92,7 +92,7 @@ body {
 .site-nav-scrollable-container::-webkit-scrollbar{display:none}
 
 .wrapper {outline:0;position:absolute;left:30%;right:0;top:0;bottom:0;-webkit-overflow-scrolling:touch;}
-.wrapper-inner {background: #fff;padding:0;width:100%;max-width:810px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.wrapper-inner {background: #fff;padding:0;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 
 .wrapper-header-inner {background: #111;}
 
@@ -105,9 +105,10 @@ body {
     .cover{position:relative!important;width:100%;max-width:none;height:675px}
     .cover-body{width:100%;padding-bottom:40px}
     .cover-description{font-size:1.6em}
-    .cover-img{background-image: url('/images/cover-sample_m.jpg');}
+    .cover-img{background-image: url('/images/cover-sample.jpg'); background-position: 0 0}
     .backend-cover-img{border: 1px solid #000;}
-    .wrapper{left:0;position:relative}
+    .wrapper{left:0;position:relative;}
+    .wrapper-inner {max-width: 1024px;}
 
     /*Cover h1*/
     .cover-title {font-size:3.4em;}
@@ -119,12 +120,17 @@ body {
     .page-title h2 {font-size:1.8em}
 }
 
+@media all and (max-width:800px){
+    .wrapper-inner {max-width: 800px;}
+}
+
 @media all and (max-width:500px){
     .cover{height:375px}
     .cover-bestof,.cover-home,.cover-collection{min-height:350px;height:auto;display:table}
     .cover-body{display:table-cell;vertical-align:bottom;position:relative;left:-1px;margin:0;padding:65px 5% 30px}
     .cover-body:before{background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-moz-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-ms-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:-o-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%);background-image:linear-gradient(to top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 10%,rgba(0,0,0,0) 100%)}
     .cover-description{font-size:.8em; margin-bottom:6px}
+    .cover-img{background-image: url('/images/cover-sample_m.jpg'); background-position: 0 0}
     .cover-avatar{width:100px;height:100px}
     .cover-new-collection-link{margin-left:0;line-height:32px}
 
