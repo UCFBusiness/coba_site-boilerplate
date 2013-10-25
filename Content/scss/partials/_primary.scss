@@ -12,8 +12,6 @@ body {
 }*/
 
 body {
-    background-image: url(/images/main-bg.jpg);
-    background-size: cover;
     text-rendering:optimizeLegibility;
     -webkit-font-smoothing:antialiased;
 
@@ -141,6 +139,7 @@ body {
 }
 
 @media screen and (min-width:1025px){
+body {background-image: url(/images/main-bg.jpg); background-size: cover;}
     .cover, .site-nav-logo {position: fixed; border-right: 1px solid #000;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
     .cover-img{background-image: url('/images/cover-sample.jpg');}
     .wrapper-inner {border-right: 1px solid #000;max-width:910px;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
