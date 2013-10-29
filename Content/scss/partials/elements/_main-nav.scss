@@ -46,7 +46,7 @@ nav.dl-menuwrapper {
 }
 
 .dl-home {
-    background: url(/images/icon-home.png) no-repeat;
+    background: url(/images/ico/icon-home.png) no-repeat;
     background-position: 5px 2px;
 }
 
@@ -289,16 +289,12 @@ nav.dl-menuwrapper {
 
 .dl-home {
     border-right: none;
-    background: rgba(255,255,255,.85) url(/images/icon-home.png) no-repeat;
+    background: rgba(255,255,255,.85) url(/images/ico/icon-home.png) no-repeat;
     background-position: 1px 1px;
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
     border-radius: 5px 0 0 5px;
 }
-/**/
-.dl-home:hover {
-    background: rgba(255,255,255,.89) url(/images/icon-home.png) no-repeat;
-    background-position: 1px 1px;
-}
+
 
 /* search */
 #dl-search {

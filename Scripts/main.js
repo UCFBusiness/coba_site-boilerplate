@@ -238,7 +238,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
                 });
                 $(".slidecontent").css("height", screenheight - 34);
                 //------------------------------------------------
-
+                 
             });
 
     }); //end debouncedresize

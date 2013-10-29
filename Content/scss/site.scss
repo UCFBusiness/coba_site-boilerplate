@@ -4,6 +4,11 @@
 @import "compass";
 
 
+// Sprites
+@import "ico/*.png";
+@include all-ico-sprites;
+
+
 // Third-party
 @import "bourbon/bourbon";
 
