@@ -3,21 +3,20 @@
     Page.Title = "Home";
 
     //Cache Page
-    Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
-    Response.Cache.SetCacheability(HttpCacheability.Public);
-    Response.Cache.SetValidUntilExpires(true);
+    //Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
+    //Response.Cache.SetCacheability(HttpCacheability.Public);
+    //Response.Cache.SetValidUntilExpires(true);
+
+    System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
 
 }
 
 @section Scripts {
 
     @*<script src="//scripts.bus.ucf.edu/cdn/js/libs/jquery.pageslide.min.js" type="text/javascript"></script>*@
-    <script src="~/scripts/js/jquery.pageslide.js" type="text/javascript"></script>
     <script>
-        /* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
-        $(".target_blank").pageslide({ direction: "left" });
+        $('.dl-home').tooltip();
     </script>
-
     @*<script>
         // Load the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -61,6 +60,7 @@
                 });
             });
     </script>*@
+
 }
 
 @section Styles {
@@ -69,15 +69,11 @@
             background: #111;
         }
          /*-- .frame ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }--*/
-        
-        #modal {
-            display: none;
-        }
     </style>
 }
 
 @section featured {
-    <div class="viewbook" style="visibility: hidden"><!--ViewBook is hidden temporarily-->
+    <div class="viewbook"><!--ViewBook is hidden temporarily-->
         <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
             <img src="~/images/view-book.png" alt="ucf college of business online viewbook" data-intro="Start Here." data-position="bottom">
         </a>
@@ -160,8 +156,8 @@
                 <li>
                     <div title="Professional Achievement Awardee, Mike Plaumann">
                         <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/professional-achievement.jpg)">
-                            <p>The Launchpad is open. Learn more.</p>
+                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/professional-achievement.jpg); background-size: 100% 100%;">
+                            <p>Alumni Professional Achievements</p>
                         </a>
                     </div>
                 </li>
@@ -192,7 +188,7 @@
                 <li>
                     <div title="View the video by the Dr. Glenn Hubbard.">
                         <a href="//tegr.it/y/1at78" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/glenn-hubbard.jpg)">
+                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/glenn-hubbard.jpg); background-size: 100% 100%;">
                             <p>Watch video</p>
                         </a>
                     </div>
@@ -336,41 +332,34 @@
                         </a>
                     </div>
                 </li>
-                @*<li>
-                    <div title="Meet Dr. Bob Porter">
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/m-0uCQIqjOw" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </li>
-                <li>
-                    <div title="Meet Dr. Carolyn Massiah">
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/e9Bn0I-vfzQ" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </li>
-                <li>
-                    <div title="Meet Dr. Sean Snaith">
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/BGZry2AQz4E" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </li>
                 <li>
                     <div title="Meet Dr. Vladimir Gatchev">
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/sBAw6MQkTCw" frameborder="0" allowfullscreen></iframe>
+                        <a href="//www.youtube.com/embed/sBAw6MQkTCw" class="target_blank">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/vladimir-gatchev.jpg)">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div title="Meet Dr. Amit Joshi">
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/_Zo5DEEB6fw" frameborder="0" allowfullscreen></iframe>
+                        <a href="//www.youtube.com/embed/_Zo5DEEB6fw" class="target_blank">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/amit-joshi.jpg)">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div title="Meet Dr. Melanie Guldi">
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/MF0DHp5a8gk" frameborder="0" allowfullscreen></iframe>
+                        <a href="//www.youtube.com/embed/MF0DHp5a8gk" class="target_blank">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/melanie-guldi.jpg)">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div title="Meet Dr. Robin Roberts">
-                        <iframe width="320" height="300" src="//www.youtube.com/embed/9w_uBT_3xUc" frameborder="0" allowfullscreen></iframe>
+                        <a href="//www.youtube.com/embed/9w_uBT_3xUc" class="target_blank">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/robin-roberts.jpg)">
+                        </a>
                     </div>
-                </li>*@
+                </li>
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">

@@ -13,7 +13,8 @@
     // Convenience vars for accessing elements
     var $body = $('body'),
         $pageslide = $('#pageslide'),
-        $button = $('#closebutton');
+        $closebutton = $('#closebutton'),
+        $slidecontent = $('slidecontent');
     
     var _sliding = false,   // Mutex to assist closing only once
         _lastCaller;        // Used to keep track of last element to trigger pageslide
@@ -24,12 +25,18 @@
          //                         .css( 'display', 'none' )
          //                         .appendTo( $('body') );
 
-        
-        $pageslide = $(document.createElement('div')).attr({id: 'pageslide'}).css('display', 'none');
-        $button = $(document.createElement('a')).attr({id: 'closebutton'});
-
-        $($pageslide).appendTo($body);
-        $($button).appendTo($pageslide);
+        $pageslide = $(document.createElement('div'))
+            .attr({id: 'pageslide'})
+            .css('display', 'none')
+            .css('overflow', 'hidden')
+            .appendTo($body);
+        $closebutton = $(document.createElement('a'))
+            .attr({class: 'closebutton', href: 'javascript:$.pageslide.close()'})
+            .text('Close')
+            .appendTo($pageslide);
+        $slidecontent = $(document.createElement('div'))
+            .attr({class: 'slidecontent'})
+            .appendTo($pageslide);
     }
     
     /*
@@ -39,26 +46,18 @@
         // Are we loading an element from the page or a URL?
         if ( url.indexOf("#") === 0 ) {                
             // Load a page element                
-            $(url).clone(true).appendTo( $pageslide.empty() ).show();
+            $(url).clone(true).appendTo( $slidecontent.empty() ).show();
         } else {
             // Load a URL. Into an iframe?
             if( useIframe ) {
-                var iframe = $("<iframe />").attr({
-                                                src: url,
-                                                frameborder: 0,
-                                                hspace: 0
-                                            })
-                                            .css({
-                                                width: "100%",
-                                                height: "100%"
-                                            });
+                var iframe = $("<iframe />").attr({src: url, frameborder: 0, hspace: 0}).css({width:"100%", height:"100%"});
                 
-                $pageslide.html( iframe );
+                $slidecontent.html( iframe );
             } else {
-                $pageslide.load( url );
+                $slidecontent.load( url );
             }
             
-            $pageslide.data( 'localEl', false );
+            $slidecontent.data( 'localEl', false );
             
         }
     }

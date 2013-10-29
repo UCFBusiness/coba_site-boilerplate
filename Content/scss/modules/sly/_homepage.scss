@@ -48,8 +48,8 @@
 	background: #ffcc00;
 }
 .frame ul li img { /*panel image*/
-    width: 320px; /*<== width of panel*/
     height: 300px; /*<== height of panel*/
+    width: 320px; /*<== width of panel*/
 }
 
 .frame .social {
@@ -169,6 +169,22 @@
 /* Tablet Layout (portrait mode): 501px to 768px. Inherits styles from: Mobile Layout. */
 @media all and (min-width: 501px) {
     
+    /* Frame */
+    /*.frame {
+        height: 240px;
+    }
+    .frame ul li {
+        width: 256px;
+    }
+    .frame ul li img {
+        height: 240px;
+        width: 256px;
+    }
+
+    .next, .prev { 
+        height: 240px;  
+    }*/
+
     /* Pages */
     .pages {
 	    margin: 0;
@@ -207,35 +223,13 @@
 /* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
     
-    .pagespan {
-        /*margin-bottom: 50px;*/
-    }
-
-    /* Frame */
-    .frame {
-        height: 300px; /*<== height of panel*/
-    }
-    .frame ul li { /*panel*/
-        width: 320px; /*<== width of panel*/
-
-        /* opacity: 0.35;
-        filter: Alpha(opacity=35); IE8 and earlier */
-        box-shadow:0px 13px 15px 0px rgba(0,0,0,0.7);
-    }
-     
     .frame ul li:hover {
         /*opacity: 0.55;
         filter: Alpha(opacity=55);  IE8 and earlier */
     }
-
     .frame ul li.active { /*active panel*/
-        opacity: 1;
-        filter: Alpha(opacity=100);  /*IE8 and earlier */
-    }
-    
-
-    /* Pages */
-    .pages {
+        /*opacity: 1;
+        filter: Alpha(opacity=100);  IE8 and earlier */
     }
 
 }
