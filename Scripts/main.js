@@ -17,7 +17,7 @@ require.config({
     }
 });
 
-require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix', 'debouncedresize'], function () {
+require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], function () {
 
     //-- navigation menu -----------------------------------
     $(".dl-menuwrapper").dlmenu({
@@ -101,19 +101,8 @@ require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix
     var screenwidth = parseInt($(this).width());
     var screenheight = parseInt($(this).height());
 
-    
-    //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
-    $(".target_blank").pageslide({ direction: "left" });
-    $("#pageslide").css("width", function (index) {
-        var cover = parseInt($("aside.cover").width());
-        return screenwidth - cover;
-    });
-    $("pageslide").css("height", screenheight);
-    //------------------------------------------------
-
-
     if (screenwidth < 501) //load mobile scripts
-        require(['lockfix'], function () {
+        require(['pageslide', 'lockfix'], function () {
 
             //-- screen-size ----------------------------------
             $(".message").html(screenwidth + " x " + screenheight + " - mobile");
@@ -123,6 +112,11 @@ require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix
             //$('.cover').css('min-height', screenheight);
             //------------------------------------------------
 
+            //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
+            $(".target_blank").pageslide({ direction: "left" });
+            $(".slidecontent").css("height", screenheight);
+            //------------------------------------------------
+
             //-- page menu -----------------------------------
             $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 10} });
             //------------------------------------------------
@@ -130,7 +124,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix
         });
 
     if ((screenwidth > 500) && (screenwidth < 1025)) //load tablet scripts
-        require(['lockfix'], function () {
+        require(['pageslide', 'lockfix'], function () {
 
             //-- screen-size ----------------------------------
             $(".message").html(screenwidth + " x " + screenheight + " - tablet");
@@ -140,6 +134,11 @@ require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix
             //$('.cover').css('min-height', screenheight);
             //------------------------------------------------
 
+            //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
+            $(".target_blank").pageslide({ direction: "left" });
+            $(".slidecontent").css("height", screenheight);
+            //------------------------------------------------
+
             //-- page menu -----------------------------------
             $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 0, bottom: 410} });
             //------------------------------------------------
@@ -147,7 +146,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix
         });
 
     if (screenwidth > 1024) //load desktop scripts
-        require(['lockfix'], function () {
+        require(['pageslide', 'lockfix'], function () {
 
             //-- disable right-click ------------------------
             $(document).bind("contextmenu", function (e) {
@@ -166,6 +165,15 @@ require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix
 
             //-- screen-size ----------------------------------
             $(".message").html(screenwidth + " x " + screenheight + " - desktop");
+            //------------------------------------------------
+
+            //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
+            $(".target_blank").pageslide({ direction: "left" });
+            $("#pageslide").css("width", function (index) {
+                var cover = parseInt($("aside.cover").width());
+                return screenwidth - cover;
+            });
+            $(".slidecontent").css("height", screenheight - 34);
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -213,7 +221,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix
             });
 
         if (screenwidth > 1024) //load desktop scripts
-            require([], function () {
+            require(['pageslide'], function () {
 
                 //-- screen-size ----------------------------------
                 $(".message").html(screenwidth + " x " + screenheight + " - desktop");
@@ -228,7 +236,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'pageslide', 'sidebarfx', 'lockfix
                     var cover = parseInt($("aside.cover").width());
                     return screenwidth - cover;
                 });
-                $("pageslide").css("height", screenheight);
+                $(".slidecontent").css("height", screenheight - 34);
                 //------------------------------------------------
 
             });
