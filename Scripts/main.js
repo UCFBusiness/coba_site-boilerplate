@@ -17,7 +17,7 @@ require.config({
     }
 });
 
-require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], function () {
+require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], function () {
 
     //-- navigation menu -----------------------------------
     $(".dl-menuwrapper").dlmenu({
@@ -102,19 +102,14 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
     var screenheight = parseInt($(this).height());
 
     if (screenwidth < 501) //load mobile scripts
-        require(['pageslide', 'lockfix'], function () {
+        require(['lockfix'], function () {
 
             //-- screen-size ----------------------------------
-            $(".message").html(screenwidth + " x " + screenheight + " - mobile");
+            $("#message").html(screenwidth + " x " + screenheight + " - mobile");
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
             //$('.cover').css('min-height', screenheight);
-            //------------------------------------------------
-
-            //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
-            $(".target_blank").pageslide({ direction: "left" });
-            $(".slidecontent").css("height", screenheight);
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -127,7 +122,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
         require(['pageslide', 'lockfix'], function () {
 
             //-- screen-size ----------------------------------
-            $(".message").html(screenwidth + " x " + screenheight + " - tablet");
+            $("#message").html(screenwidth + " x " + screenheight + " - tablet");
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
@@ -136,7 +131,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
 
             //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
             $(".target_blank").pageslide({ direction: "left" });
-            $(".slidecontent").css("height", screenheight);
+            $("#slidecontent").css("height", screenheight);
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -164,7 +159,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
             } //----------------------------------------------
 
             //-- screen-size ----------------------------------
-            $(".message").html(screenwidth + " x " + screenheight + " - desktop");
+            $("#message").html(screenwidth + " x " + screenheight + " - desktop");
             //------------------------------------------------
 
             //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
@@ -173,7 +168,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
                 var cover = parseInt($("aside.cover").width());
                 return screenwidth - cover;
             });
-            $(".slidecontent").css("height", screenheight - 34);
+            $("#slidecontent").css("height", screenheight - 34);
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -198,7 +193,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
             require([], function () {
 
                 //-- screen-size ----------------------------------
-                $(".message").html(screenwidth + " x " + screenheight + " - mobile");
+                $("#message").html(screenwidth + " x " + screenheight + " - mobile");
                 //------------------------------------------------
 
                 //-- resize to fit -------------------------------
@@ -211,7 +206,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
             require([], function () {
 
                 //-- screen-size ----------------------------------
-                $(".message").html(screenwidth + " x " + screenheight + " - tablet");
+                $("#message").html(screenwidth + " x " + screenheight + " - tablet");
                 //------------------------------------------------
 
                 //-- resize to fit -------------------------------
@@ -224,7 +219,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
             require(['pageslide'], function () {
 
                 //-- screen-size ----------------------------------
-                $(".message").html(screenwidth + " x " + screenheight + " - desktop");
+                $("#message").html(screenwidth + " x " + screenheight + " - desktop");
                 //------------------------------------------------
 
                 //-- resize to fit -------------------------------
@@ -236,7 +231,7 @@ require(['easing', 'dmenu', 'sly', 'classie', 'sidebarfx', 'debouncedresize'], f
                     var cover = parseInt($("aside.cover").width());
                     return screenwidth - cover;
                 });
-                $(".slidecontent").css("height", screenheight - 34);
+                $("#slidecontent").css("height", screenheight - 34);
                 //------------------------------------------------
                  
             });

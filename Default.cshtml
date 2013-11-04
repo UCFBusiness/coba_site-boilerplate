@@ -14,9 +14,16 @@
 @section Scripts {
 
     @*<script src="//scripts.bus.ucf.edu/cdn/js/libs/jquery.pageslide.min.js" type="text/javascript"></script>*@
+
+    <script src="//scripts.bus.ucf.edu/cdn/js/libs/jquery.slimscroll.min.js" type="text/javascript"></script>
     <script>
+        $('#pageslide').slimscroll({
+            height: '200px'
+        });
+
         $('.dl-home').tooltip();
     </script>
+
     @*<script>
         // Load the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -219,22 +226,6 @@
                         <img src="~/images/panels/opportunities-events.jpg" alt="...">
                         @*<a href="#" class="social tt-share">t</a>
                         <a href="#" class="social fb-share">f</a>*@
-                    </div>
-                </li>
-                <li>
-                    <div title="Starter Riot">
-                        <a href="//today.ucf.edu/starter-riot-is-the-new-halloween-tradition-for-you-and-your-future" class="target_blank">
-                        <img src="~/images/panels/starter-riot.jpg" alt="starter riot text">
-                        <p>Learn more.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Big Idea Competition">
-                        <a href="//today.ucf.edu/do-you-have-ucfs-next-big-idea-then-take-the-stage-at-the-starter-riot" class="target_blank">
-                        <img src="~/images/panels/big-idea.jpg" alt="big idea text with lightbulb">
-                        <p>Learn more.</p>
-                        </a>
                     </div>
                 </li>
                 <li>

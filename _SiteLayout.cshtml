@@ -169,7 +169,7 @@
 			                        <h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
 			                         @*<p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
                                        <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
-                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business, All Rights Reserved.</p></div>
+                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business.</p></div>
                                     <img src="~/images/ucf-opportunity.png" alt="ucf stands for opportunity">
                                     <div><!--footer--></div>
 		                        </div>
@@ -179,9 +179,9 @@
 			                <div class="wrapper-inner">
                                 <!---->
                                 <header class="wrapper-header">
-                                    <div class="wrapper-header-inner">
+                                    <div class="wrapper-header-inner container">
 
-                                        <a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px 9px 0; background-color: #f5e8a6">Site Feedback</a>
+                                        <!-- for feedback --><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px 9px 0; background-color: #f5e8a6">Site Feedback</a><!-- for feedback -->
                                         <!-- for development only -->@*<span><label class="message" style="color: #fff"></label></span>*@<!-- for development only -->
                                     
                                     </div>
@@ -194,7 +194,7 @@
                                 </div><!--/.wrapper-body -->
                                 <!---->
                                 <footer class="wrapper-footer">
-                                    <div class="wrapper-footer-inner">
+                                    <div class="wrapper-footer-inner container">
                                         <ul class="clearfix">
                                             <li>
                                                 <p class="address">Address</p>
@@ -203,18 +203,24 @@
                                                     <li>College of Business Administration</li>
                                                     <li>4000 Central Florida Blvd.,</li>
                                                     <li>P.O. Box 161991</li>
-                                                    <li>Orlando, Florida 32816-1991</li>
+                                                    <li>Orlando, FL 32816-1991</li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <p class="contact">Contact Info</p>
                                                 <ul>
-                                                    <li>Undergraduate Advising</li>
-                                                    <li><a href="tel:4078232184">(407) 823-2184</a><br><br></li>
-                                                    <li>Graduate Advising</li>
-                                                    <li><a href="tel:4078232184">(407) 235-3917</a><br><br></li>
-                                                    <li>General Information</li>
-                                                    <li><a href="tel:4078232184">(407) 823-2181</a></li>
+                                                    <li>
+                                                        <a href="tel:4078232184">(407) 823-2184</a>
+                                                        <br><small>Undergraduate Advising</small><br>
+                                                    </li>
+                                                    <li>
+                                                        <a href="tel:4078232184">(407) 235-3917</a>
+                                                        <br><small>Graduate Advising</small><br>
+                                                    </li>
+                                                    <li>
+                                                        <a href="tel:4078232184">(407) 823-2181</a>
+                                                        <br><small>General Information</small>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -235,7 +241,6 @@
                                                 <div class="icon ico-linkedin"><a href="http://bit.ly/ucfbusinessalumni" target="_blank">linkedin</a></div>
                                             </li>
                                         </ul>
-                                        <br>
                                     </div>
                                 </footer><!--/.wrapper-footer -->
                                 <!---->
@@ -262,11 +267,11 @@
         <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
         <!--<![endif]-->
         <script src="~/scripts/bootstrap.min.js"></script><!-- bootstrap -->
-        <script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js" type="text/javascript"></script>
-        <script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js" type="text/javascript"></script>
-        <script src="//scripts.bus.ucf.edu/cdn/js/libs/bootstrap-scrollspy.js" type="text/javascript"></script>
-        <script src="//scripts.bus.ucf.edu/cdn/js/libs/fastbutton.js" type="text/javascript"></script>
-
+        <script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js"></script>
+        <script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js"></script>
+        <script src="//scripts.bus.ucf.edu/cdn/js/libs/bootstrap-scrollspy.js"></script>
+        <script src="//scripts.bus.ucf.edu/cdn/js/libs/fastbutton.js"></script>
+        <script src="~/scripts/js/classie.js"></script>
         @*<script src="~/scripts/holder.min.js"></script>*@
        
 

@@ -1,5 +1,4 @@
-html,
-body {
+html {
     height: 100%;
     /* The html and body elements cannot have any padding or margin. */
 }
@@ -18,6 +17,8 @@ body {
     /* Create a page-wide stacking context 
     (so that negative margins work as you expect) */
     position: relative;
+    width: 100%;
+    height: 100%;
     z-index: 0;
 }
 
@@ -30,8 +31,6 @@ body {
 /* =============================================================================
    NEW
    ========================================================================== */
-
-.icon {padding-left: 33px; line-height: 2.2em;}
 
 .apply-button {font-size: 1.2em;font-weight: bold;}
 
@@ -93,7 +92,7 @@ body {
 .wrapper {outline:0;position:absolute;left:30%;right:0;top:0;bottom:0;-webkit-overflow-scrolling:touch;}
 .wrapper-inner {background: #fff;padding:0;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 
-.wrapper-header-inner {background: #111;}
+.wrapper-header-inner {background: #111; padding-top:0;}
 
 @media all and (max-width:1024px){
     html{
@@ -147,7 +146,7 @@ body {
 body {background-image: url(/images/main-bg.jpg); background-size: cover;}
     .cover, .site-nav-logo {position: fixed; border-right: 1px solid #000;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
     .cover-img{background-image: url('/images/cover-sample.jpg');}
-    .wrapper-inner {border-right: 1px solid #000;max-width:910px;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
+    .wrapper-inner {border-right: 1px solid #999;max-width:910px;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
     .wrapper-header-inner {height: 35px;}
 
     /*Cover h1*/

@@ -14,13 +14,14 @@
     var $body = $('body'),
         $pageslide = $('#pageslide'),
         $closebutton = $('#closebutton'),
-        $slidecontent = $('slidecontent');
+        $slidecontent = $('#slidecontent');
     
     var _sliding = false,   // Mutex to assist closing only once
         _lastCaller;        // Used to keep track of last element to trigger pageslide
     
 	// If the pageslide element doesn't exist, create it
     if( $pageslide.length == 0 ) {
+
          //$pageslide = $('<div />').attr( 'id', 'pageslide' )
          //                         .css( 'display', 'none' )
          //                         .appendTo( $('body') );
@@ -28,14 +29,13 @@
         $pageslide = $(document.createElement('div'))
             .attr({id: 'pageslide'})
             .css('display', 'none')
-            .css('overflow', 'hidden')
             .appendTo($body);
         $closebutton = $(document.createElement('a'))
-            .attr({class: 'closebutton', href: 'javascript:$.pageslide.close()'})
+            .attr({id: 'closebutton', href: 'javascript:$.pageslide.close()'})
             .text('Close')
             .appendTo($pageslide);
         $slidecontent = $(document.createElement('div'))
-            .attr({class: 'slidecontent'})
+            .attr({id: 'slidecontent'})
             .appendTo($pageslide);
     }
     
@@ -179,13 +179,14 @@
                 slideAnimateIn['left'] = '-=' + slideWidth;
                 break;
         }
-        
+
         $pageslide.animate(slideAnimateIn, speed);
         $body.animate(bodyAnimateIn, speed, function() {
             $pageslide.hide();
             _sliding = false;
             if( typeof callback != 'undefined' ) callback();
         });
+        $slidecontent.empty(); //= destroy content iframe
     }
 	
 	/* Events */

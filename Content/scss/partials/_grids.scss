@@ -24,7 +24,7 @@
 /* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media all and (max-width: 1024px) {
 
-    .col-md-3, .col-md-4, .list-course {
+    .course-item {
         background: #EEE;
         border-top: 1px solid #FFF;
         border-left: 1px solid #DDD;
