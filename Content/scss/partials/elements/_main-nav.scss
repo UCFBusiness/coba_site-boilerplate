@@ -31,7 +31,7 @@ nav.dl-menuwrapper {
     float:left;
 }
 
-/* discover icon */
+/* discover menu icon */
 .dl-trigger:after {
   	content: '';
 	position: absolute;
@@ -215,7 +215,7 @@ nav.dl-menuwrapper {
     background: none;
     height: 60px;
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
 	font-weight: 300;
     line-height: 20px;
     letter-spacing: 1px; 
@@ -244,17 +244,17 @@ nav.dl-menuwrapper {
     float: left;
 }
 
-/* discover button */
+/* discover menu button */
 .dl-menuwrapper button {
     border: 1px solid #eee;
     border-bottom: 1px solid #ccc;
-    padding-left: 40px;
-    width: 125px;
+    padding-left: 33px;
+    width: 120px;
     height: 45px;
     position: relative;
     overflow: hidden;
     display: block;
-    font-size: 14px;
+    font-size: .9em;
     font-weight: 400;
     text-indent: 0em;
     cursor: pointer;
@@ -264,7 +264,7 @@ nav.dl-menuwrapper {
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
     float: left;
 }
-/* discover icon = */
+/* discover menu icon = */
 .dl-menuwrapper button:after {
     content: '';
 	width: 20%;
@@ -462,7 +462,7 @@ nav.dl-menuwrapper {
 
     .dl-searchbutton {
         border-left: 1px solid #ddd;
-        background: rgba(255,255,255,.7) url(/images/icon-search.png) no-repeat;
+        background: rgba(255,255,255,.7) url(/images/ico/icon-search.png) no-repeat;
         background-position: 2px 1px;
         box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
         border-radius: 0 5px 5px 0;

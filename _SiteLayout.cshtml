@@ -61,7 +61,7 @@
                                 </div><!--/UCFHBHeader -->
                                 <nav id="main_menu" class="dl-menuwrapper site-nav clearfix">
                                     <a href="~/" class="dl-home" data-toggle="tooltip" data-placement="bottom" title="Home">HOME</a>
-                                    <button class="dl-trigger" title="Discover Menu">DISCOVER</button>
+                                    <button class="dl-trigger" title="Discover Menu">MENU</button>
                                     <ul class="dl-menu">
 				                        <li>
                                             <a href="#">Academics</a>
@@ -169,22 +169,20 @@
 			                        <h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
 			                         @*<p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
                                        <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
-                                    <div class="copyright"><p>&copy; @DateTime.Now.Year - University of Central Florida, College of Business.</p></div>
+                                    
                                     <img src="~/images/ucf-opportunity.png" alt="ucf stands for opportunity">
                                     <div><!--footer--></div>
 		                        </div>
                             </div><!--/.cover-body -->
+
+<!--Beta Image--><span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span><!--Beta Image-->
+
                         </aside><!--/.cover -->
 		                <section id="main-content" class="wrapper"><!-- content background image -->
 			                <div class="wrapper-inner">
                                 <!---->
                                 <header class="wrapper-header">
-                                    <div class="wrapper-header-inner container">
-
-                                        <!-- for feedback --><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px 9px 0; background-color: #f5e8a6">Site Feedback</a><!-- for feedback -->
-                                        <!-- for development only -->@*<span><label class="message" style="color: #fff"></label></span>*@<!-- for development only -->
-                                    
-                                    </div>
+                                    <div class="wrapper-header-inner"></div>
                                 </header><!--/.wrapper-header -->
                                 <!---->
                                 <div class="wrapper-body">
@@ -194,7 +192,7 @@
                                 </div><!--/.wrapper-body -->
                                 <!---->
                                 <footer class="wrapper-footer">
-                                    <div class="wrapper-footer-inner container">
+                                    <div class="wrapper-footer-inner">
                                         <ul class="clearfix">
                                             <li>
                                                 <p class="address">Address</p>
@@ -241,6 +239,13 @@
                                                 <div class="icon ico-linkedin"><a href="http://bit.ly/ucfbusinessalumni" target="_blank">linkedin</a></div>
                                             </li>
                                         </ul>
+
+                                        <p>
+                                            <!-- for feedback --><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a><!-- for feedback -->
+                                            <!-- for development only -->@*<span><label class="message" style="color: #fff"></label></span>*@<!-- for development only -->
+                                        </p>
+
+                                        <div><span class="copyright">&copy; @DateTime.Now.Year - University of Central Florida, College of Business.</span></div>
                                     </div>
                                 </footer><!--/.wrapper-footer -->
                                 <!---->
@@ -258,6 +263,7 @@
         <!--FINIS: Content-->
         <a href="#" class="back-to-top"><i class="icon-angle-up"></i></a>
         <div class="loading-bar"></div>
+
         <!--BEGIN: Scripts-->
         <!--[if lt IE 9]>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -273,15 +279,14 @@
         <script src="//scripts.bus.ucf.edu/cdn/js/libs/fastbutton.js"></script>
         <script src="~/scripts/js/classie.js"></script>
         @*<script src="~/scripts/holder.min.js"></script>*@
-       
 
+        <!-- ADD UCF HEADER -->
+        <script type="text/javascript" src="http://universityheader.ucf.edu/bar/js/university-header.js"></script>
+        <!-- END UCF HEADER -->
+       
         <script data-main="/scripts/main" src="~/scripts/require.min.js"></script>
         @RenderSection("Scripts", required: false)
         <!--FINIS: Scripts-->
-
-        <!--Beta Image-->
-        <span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span>
-        <!--Beta Image-->
 
     </body>
 </html>

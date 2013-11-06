@@ -3,29 +3,41 @@
 /* Apply to all resolutions. Inherits to all layouts. */
 
 
+/* Tablet(landscape) and Netbook Desktop Layout. */
+@media all and (max-width: 1024px) {
 
-/* Tablet(portrait) Layout */
+  
+}
+
+/* Tablet(portrait) Layout. */
+@media all and (max-width: 768px) {
+    
+     
+}
+
+
+/* Tablet(portrait) Layout. */
 @media all and (max-width: 500px) {
     
      
 }
 
 
-/* Tablet(landscape) and Netbook Desktop Layout: */
-@media all and (max-width: 1024px) {
-
-  
-}
-
-
-/* Small Desktop Layout: */
+/* Small Desktop Layout. */
 @media screen and (min-width:1025px){
 
 
 }
 
 
-/* Large Desktop Layout: Inherits styles from: Small Desktop Layout. */
+/* Laptop Layout. */
+@media screen and (min-width:1300px){
+
+
+}
+
+
+/* Large Desktop Layout. */
 @media screen and (min-width:1666px){
 
 

@@ -25,6 +25,50 @@
         });
     </script>
 
+    @*<script>
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <script>
+        $('#bporter').click(function () {
+            // Replace the 'ytplayer' element with an <iframe> and
+            // YouTube player after the API code downloads.
+            var player;
+            player = new YT.Player('bporter', {
+                height: '300',
+                width: '320',
+                videoId: 'm-0uCQIqjOw'
+            });
+        });
+    </script>
+    <script>
+            $('#cmassiah').click(function () {
+                // Replace the 'ytplayer' element with an <iframe> and
+                // YouTube player after the API code downloads.
+                var player;
+                player = new YT.Player('cmassiah', {
+                    height: '300',
+                    width: '320',
+                    videoId: 'e9Bn0I-vfzQ'
+                });
+            });
+    </script>
+    <script>
+            $('#ssnaith').click(function () {
+                // Replace the 'ytplayer' element with an <iframe> and
+                // YouTube player after the API code downloads.
+                var player;
+                player = new YT.Player('ssnaith', {
+                    height: '300',
+                    width: '320',
+                    videoId: 'BGZry2AQz4E'
+                });
+            });
+    </script>*@
+
 }
 
 @section Styles {
@@ -110,22 +154,6 @@
                     </div>
                 </li>
                 <li>
-                    <div title="Stay connected with social media.">
-                        <a href="~/social-media">
-                            <img src="~/images/panels/social-media.jpg" alt="...">
-                            <p>Stay connected with our social college.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Professional Achievement Awardee, Mike Plaumann">
-                        <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/professional-achievement.jpg); background-size: 100% 100%;">
-                            <p>Alumni Professional Achievements</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
                     <div title="Dr. Sean Snaith's Economic Forecasts">
                         <a href="//iec.ucf.edu/page/forecasts.aspx" class="target_blank">
                             <img src="~/images/panels/snaith-forecasts.jpg" alt="...">
@@ -146,14 +174,6 @@
                         <a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
                             <img src="~/images/panels/take-the-ball.jpg" alt="...">
                             <p>Learn more on how to take the ball.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="View the video by the Dr. Glenn Hubbard.">
-                        <a href="//tegr.it/y/1at78" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/glenn-hubbard.jpg); background-size: 100% 100%;">
-                            <p>Watch video</p>
                         </a>
                     </div>
                 </li>
@@ -186,14 +206,6 @@
                     </div>
                 </li>
                 <li>
-                    <div title="Graduate Business Programs">
-                        <a href="//edc.research.ucf.edu/degrees" target="_blank">
-                        <img src="~/images/panels/graduate-programs.jpg" alt="...">
-                        <p>Learn more.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
                     <div title="Strategic Leadership Seminar">
                         <a href="//events.ucf.edu/?y=2013&m=11&d=13&eventdatetime_id=14928" class="target_blank">
                         <img src="~/images/panels/strategic-leadership.jpg" alt="...">
@@ -214,22 +226,6 @@
                         <a href="//events.ucf.edu/?y=2013&m=11&d=15&eventdatetime_id=15456" class="target_blank">
                         <img src="~/images/panels/why-fairness-matters.jpg" alt="image of dr. maureen ambrose">
                         <p>Register for this event.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Black and Gold Gala">
-                        <a href="//www.google.com/calendar/event?eid=bWk5YnZnbmUzY2QxbmJtOWNoNzQ2NmZmczAgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
-                        <img src="~/images/panels/black-and-gold-gala.jpg" alt="...">
-                        <p>Learn more.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Hall of Fame Reception">
-                        <a href="//www.google.com/calendar/event?eid=amVraGljZm5yY2NsdHNxazgycWtoY2l0NmsgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
-                        <img src="~/images/panels/hall-of-fame.jpg" alt="...">
-                        <p>Learn more.</p>
                         </a>
                     </div>
                 </li>
@@ -260,9 +256,9 @@
                     </div>
                 </li>
                 <li>
-                    <div title="Meet Dr. Bob Porter">
-                        <a href="//www.youtube.com/embed/m-0uCQIqjOw" class="target_blank">
-                        <img id="bporter" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/bob-porter.jpg)">
+                    <div title="Live Video">
+                        <a href="//www.ustream.tv/embed/522594?v=3&amp;wmode=direct" class="target_blank">
+                        <img id="bporter" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/default.jpg)">
                         </a>
                     </div>
                 </li>
@@ -281,30 +277,18 @@
                     </div>
                 </li>
                 <li>
-                    <div title="Meet Dr. Vladimir Gatchev">
-                        <a href="//www.youtube.com/embed/sBAw6MQkTCw" class="target_blank">
-                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/vladimir-gatchev.jpg)">
+                    <div title="View the video by the Dr. Glenn Hubbard.">
+                        <a href="//tegr.it/y/1at78" class="target_blank">
+                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/glenn-hubbard.jpg); background-size: 100% 100%;">
+                            <p>Watch video</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div title="Meet Dr. Amit Joshi">
-                        <a href="//www.youtube.com/embed/_Zo5DEEB6fw" class="target_blank">
-                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/amit-joshi.jpg)">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Meet Dr. Melanie Guldi">
-                        <a href="//www.youtube.com/embed/MF0DHp5a8gk" class="target_blank">
-                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/melanie-guldi.jpg)">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Meet Dr. Robin Roberts">
-                        <a href="//www.youtube.com/embed/9w_uBT_3xUc" class="target_blank">
-                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/robin-roberts.jpg)">
+                    <div title="Professional Achievement Awardee, Mike Plaumann">
+                        <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
+                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/professional-achievement.jpg); background-size: 100% 100%;">
+                            <p>Alumni Professional Achievements</p>
                         </a>
                     </div>
                 </li>
