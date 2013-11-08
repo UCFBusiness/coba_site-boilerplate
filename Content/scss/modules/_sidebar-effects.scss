@@ -33,12 +33,14 @@
 }
 
 .st-menu-btn {
-    position: fixed; 
+    position: fixed;
+    border: none;
     top: 13px; 
     right: 13px; 
     z-index: 9;
-    opacity: 0.5;
-    filter: Alpha(opacity=50);  /*IE8 and earlier */
+    border-radius: 10px;
+    opacity: 0.8;
+    filter: Alpha(opacity=80);  /*IE8 and earlier */
 }
 
 

@@ -3,7 +3,7 @@
     Page.Title = "Home";
 
     //Cache Page
-    Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
+    Response.Cache.SetExpires(DateTime.Now.AddSeconds(3600));
     Response.Cache.SetCacheability(HttpCacheability.Public);
     Response.Cache.SetValidUntilExpires(true);
 
