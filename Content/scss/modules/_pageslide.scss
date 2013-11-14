@@ -1,4 +1,4 @@
-/* Apply to all resolutions. Inherits to all layouts. */
+/* Apply to all media types and resolutions. Inherits to all layouts. */
 
 #pageslide {
     /* These styles MUST be included. Do not change. */
@@ -28,12 +28,6 @@
 .modal {display: none;}
 
 
-/* Tablet(landscape) and Netbook Desktop Layout. */
-@media all and (max-width: 1024px) {
-
-  
-}
-
 /* Tablet(portrait) Layout. */
 @media all and (max-width: 768px) {
     
@@ -48,8 +42,8 @@
 }
 
 
-/* Small Desktop Layout. */
-@media screen and (min-width:1025px){
+/* Tablet(landscape) and Small Desktop Layout. */
+@media screen and (min-width:1000px){
 
     #slidecontent {margin-top: 8px;}
 

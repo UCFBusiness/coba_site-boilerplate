@@ -3,32 +3,29 @@
 /* Apply to all resolutions. Inherits to all layouts. */
 
 
-/* Tablet(landscape) and Netbook Desktop Layout. */
-@media all and (max-width: 1024px) {
-
-  
-}
-
 /* Tablet(portrait) Layout. */
-@media all and (max-width: 768px) {
+@media screen and (max-width: 999px) {
     
      
 }
 
-
-/* Tablet(portrait) Layout. */
-@media all and (max-width: 500px) {
+/* Mobile(landscape) Layout. */
+@media screen and (max-width: 520px) {
     
      
 }
 
+/* Mobile(portrait) Layout. */
+@media screen and (max-width: 320px) {
+    
+     
+}
 
-/* Small Desktop Layout. */
-@media screen and (min-width:1025px){
+/* Tablet(landscape) and Small Desktop Layout. */
+@media screen and (min-width:1000px){
 
 
 }
-
 
 /* Laptop Layout. */
 @media screen and (min-width:1300px){
@@ -36,29 +33,12 @@
 
 }
 
-
 /* Large Desktop Layout. */
-@media screen and (min-width:1666px){
+@media screen and (min-width:1600px){
 
 
 }
 
+@media print {
 
-
-// OLD Querries setup
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-// Media-Queries
-/* Mobile Layout: 480px and below. */
-
-
-/* Tablet Layout: 481px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 481px) {
 }
-
-/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 1025px) {
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/

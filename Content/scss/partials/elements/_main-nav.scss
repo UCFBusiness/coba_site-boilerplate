@@ -210,8 +210,8 @@ nav.dl-menuwrapper {
 
 /* nav */
 nav.dl-menuwrapper {
-    margin-top: 25px;
-    margin-left: 20px;
+    margin-top: 70px;
+    margin-left: 18px;
     background: none;
     height: 60px;
     font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -229,10 +229,9 @@ nav.dl-menuwrapper {
     -moz-perspective-origin: 50% 200%;
     box-shadow: none; /* no-shadow */
     z-index: 1000;
-}
-.dl-menuwrapper:first-child {
-	margin-right: 100px;
-    border: 1px solid blue;
+
+
+
 }
 
 /* home button */

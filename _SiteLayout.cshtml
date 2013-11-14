@@ -52,13 +52,13 @@
                         <!---->
                         <aside class="cover cover-home">
                             <div class="cover-header cover-img"><!-- cover background image -->
-                                <div id="UCFHBHeader">
+                                @*<div id="UCFHBHeader">
                                     <div class="UCFHBWrapper">
                                         <section id="UCFtitle">
                                             <a href="http://www.ucf.edu" target="_blank"><span class="UCFHBText">University of Central Florida</span></a><!--/UCF Logo-->
                                         </section>
                                     </div><!--/UCF Header Wrapper-->
-                                </div><!--/UCFHBHeader -->
+                                </div><!--/UCFHBHeader -->*@
                                 <nav id="main_menu" class="dl-menuwrapper site-nav clearfix">
                                     <a href="~/" class="dl-home" data-toggle="tooltip" data-placement="bottom" title="Home">HOME</a>
                                     <button class="dl-trigger" title="Discover Menu">MENU</button>
@@ -116,13 +116,13 @@
                                                 <li><a href="~/student-organizations">Student Organizations</a></li>
 					                        </ul>
 				                        </li>
-                                        <li>
+                                        @*<li> //<-- Under Development
 					                        <a href="#">Faculty &amp; Research</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Faculty &amp; Research</li>
 						                        <li><a href="#"><small>(coming soon)</small></a></li>
 					                        </ul>
-				                        </li>
+				                        </li>*@
                                         <li>
 					                        <a href="#">Alumni &amp; Friends</a>
 					                        <ul class="dl-submenu">
@@ -141,19 +141,16 @@
                                                 -->
 					                        </ul>
 				                        </li>
-                                        <li>
+                                        @*<li> //<-- Under Development
 					                        <a href="#">Careers &amp; Recruitment</a>
 					                        <ul class="dl-submenu">
                                                 <li class="Label breadcrumb">Careers &amp; Recruitment</li>
-                                                @*<li><a href="#">Hire our students</a></li>
-                                                <li><a href="#">Geoff</a></li>*@
-						                        <li><a href="#"><small>(coming soon)</small></a></li>
-
+                                                <li><a href="#">Hire our students</a></li>
 					                        </ul>
-				                        </li>
+				                        </li>*@
 			                        </ul>
                                     <form id="site-search" class="site-search" action="/search" name="input" method="get">
-                                        <input type="search" placeholder="SEARCH" name="q" class="dl-search-field" />
+                                        <input type="search" placeholder="SEARCH" name="q" size="27" class="dl-search-field" />
                                         <input type="hidden" name="cx" value="004234240553222255636:70uztgpm38y" />
                                         <input type="hidden" name="cof" value="FORID:9" />
                                         <input type="hidden" name="ie" value="UTF-8" />
@@ -166,6 +163,7 @@
                             </div> <!--/.cover-header -->
 	                        <div class="cover-body">
                                 <div class="cover-body-inner">
+                                    <!-- for development only --><span><label id="message" class="message" style="color: #fff"></label></span><!-- for development only -->   
 			                        <h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
 			                         @*<p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
                                        <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
@@ -240,12 +238,16 @@
                                             </li>
                                         </ul>
 
-                                        <p>
-                                            <!-- for feedback --><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a><!-- for feedback -->
-                                            <!-- for development only -->@*<span><label class="message" style="color: #fff"></label></span>*@<!-- for development only -->
-                                        </p>
 
-                                        <div><span class="copyright">&copy; @DateTime.Now.Year - University of Central Florida, College of Business.</span></div>
+<div><br>
+<!-- for feedback --><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a><!-- for feedback -->                                   
+</div><br>
+
+
+
+                                        
+
+                                        <div><span class="copyright">&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration.</span></div>
                                     </div>
                                 </footer><!--/.wrapper-footer -->
                                 <!---->

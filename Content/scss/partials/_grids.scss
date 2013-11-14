@@ -13,25 +13,28 @@
 }
 
 
-/* Tablet Layout: 500px to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media all and (max-width: 500px) {
-    
- 
-    
-}
-
-
-/* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
+/* Tablet(landscape) and Netbook Desktop Layout. */
 @media all and (max-width: 1024px) {
 
-    .course-item {
+      .course-item {
         background: #EEE;
         border-top: 1px solid #FFF;
         border-left: 1px solid #DDD;
         border-right: 1px solid #BBB;
         border-bottom: 1px solid #BBB;
     } 
-    
+}
+
+
+/* Tablet(portrait) Layout. */
+@media all and (max-width: 768px) {
+     
+}
+
+
+/* Tablet(portrait) Layout. */
+@media all and (max-width: 500px) {
+     
 }
 
 

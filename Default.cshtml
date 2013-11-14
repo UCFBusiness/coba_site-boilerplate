@@ -3,9 +3,9 @@
     Page.Title = "Home";
 
     //Cache Page
-    Response.Cache.SetExpires(DateTime.Now.AddSeconds(3600));
-    Response.Cache.SetCacheability(HttpCacheability.Public);
-    Response.Cache.SetValidUntilExpires(true);
+    //Response.Cache.SetExpires(DateTime.Now.AddSeconds(720));
+    //Response.Cache.SetCacheability(HttpCacheability.Public);
+    //Response.Cache.SetValidUntilExpires(true);
 
     System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
 
@@ -95,7 +95,7 @@
                 <li>
                     <div title="Keon Testing Center">
                         <a href="//www.bus.ucf.edu/testingcenter" class="target_blank">
-                            <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" width="320" height="300" alt="...">
+                            <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" alt="...">
                             <p>Keon Testing Center</p>
                         </a>
                     </div>
@@ -166,8 +166,8 @@
 		</div>
         <ul class="pages"></ul><!--/pages --> 
         <div class="controls center use-fastclick">
-            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+            <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
         </div><!--/controls -->    
     </section>
 </div>
@@ -194,34 +194,10 @@
                     </div>
                 </li>
                 <li>
-                    <div title="Strategic Leadership Seminar">
-                        <a href="//events.ucf.edu/?y=2013&m=11&d=13&eventdatetime_id=14928" class="target_blank">
-                        <img src="~/images/panels/strategic-leadership.jpg" alt="...">
-                        <p>Register for this event.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Executive MBA info session">
-                        <a href="//events.ucf.edu/?y=2013&m=11&d=07&eventdatetime_id=15454" class="target_blank">
-                        <img src="~/images/panels/execmba-nov-7.jpg" alt="...">
-                        <p>Learn more.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
                     <div title="Dean's Speaker Series: Dr. Maureen Ambrose">
                         <a href="//events.ucf.edu/?y=2013&m=11&d=15&eventdatetime_id=15456" class="target_blank">
                         <img src="~/images/panels/why-fairness-matters.jpg" alt="image of dr. maureen ambrose">
                         <p>Register for this event.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Black and Gold Gala">
-                        <a href="//www.google.com/calendar/event?eid=bWk5YnZnbmUzY2QxbmJtOWNoNzQ2NmZmczAgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
-                        <img src="~/images/panels/black-and-gold-gala.jpg" alt="...">
-                        <p>Learn more.</p>
                         </a>
                     </div>
                 </li>
@@ -242,8 +218,8 @@
         </div>
         <ul class="pages"></ul><!--/pages --> 
         <div class="controls center">
-            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+            <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
         </div><!--/controls -->
     </section>
 </div>
@@ -257,6 +233,27 @@
                 <li>
                     <div title="">
                         <img src="~/images/panels/meet-our-faculty.jpg" alt="...">
+                    </div>
+                </li>
+                <li>
+                    <div title="Meet Dr. Amit Joshi">
+                        <a href="//www.youtube.com/embed/_Zo5DEEB6fw" class="target_blank">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/amit-joshi.jpg)">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div title="Meet Dr. Melanie Guldi">
+                        <a href="//www.youtube.com/embed/MF0DHp5a8gk" class="target_blank">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/melanie-guldi.jpg)">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div title="Meet Dr. Robin Roberts">
+                        <a href="//www.youtube.com/embed/9w_uBT_3xUc" class="target_blank">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/robin-roberts.jpg)">
+                        </a>
                     </div>
                 </li>
                 <li>
@@ -287,27 +284,6 @@
                         </a>
                     </div>
                 </li>
-                <li>
-                    <div title="Meet Dr. Amit Joshi">
-                        <a href="//www.youtube.com/embed/_Zo5DEEB6fw" class="target_blank">
-                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/amit-joshi.jpg)">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Meet Dr. Melanie Guldi">
-                        <a href="//www.youtube.com/embed/MF0DHp5a8gk" class="target_blank">
-                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/melanie-guldi.jpg)">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Meet Dr. Robin Roberts">
-                        <a href="//www.youtube.com/embed/9w_uBT_3xUc" class="target_blank">
-                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/robin-roberts.jpg)">
-                        </a>
-                    </div>
-                </li>
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
@@ -317,8 +293,8 @@
         </div>
         <ul class="pages"></ul><!--/pages -->
         <div class="controls center">
-            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+            <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
         </div><!--/controls -->
     </section>
 </div>

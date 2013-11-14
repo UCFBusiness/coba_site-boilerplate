@@ -32,7 +32,7 @@
             .appendTo($body);
         $closebutton = $(document.createElement('a'))
             .attr({id: 'closebutton', href: 'javascript:$.pageslide.close()'})
-            .text('Close')
+            .text('<i class="fa fa-angle-left"></i> BACK')
             .appendTo($pageslide);
         $slidecontent = $(document.createElement('div'))
             .attr({id: 'slidecontent'})
