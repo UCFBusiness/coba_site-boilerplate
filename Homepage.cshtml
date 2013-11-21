@@ -3,11 +3,11 @@
     Page.Title = "Home";
 
     //Cache Page
-    Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
-    Response.Cache.SetCacheability(HttpCacheability.Public);
-    Response.Cache.SetValidUntilExpires(true);
+    //Response.Cache.SetExpires(DateTime.Now.AddSeconds(720));
+    //Response.Cache.SetCacheability(HttpCacheability.Public);
+    //Response.Cache.SetValidUntilExpires(true);
 
-    System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
+    //System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
 
 }
 
@@ -76,16 +76,19 @@
        .wrapper-inner {
             background: #111;
         }
-         /*-- .frame ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }--*/
+        
+        
+        /*--.frame ul li:nth-child(2) { width: 100px; margin: 0 4px 0 20px; }  --*/
+                #news ul li:nth-child(1) { width: 418px; margin: 0 4px 0 20px; }
+                #events ul li:nth-child(1) { width: 160px; margin: 0 4px 0 20px; }
+                #faculty ul li:nth-child(1) { width: 160px; margin: 0 4px 0 20px; }
     </style>
 }
 
 @section featured {
-    <div class="viewbook"><!--ViewBook is hidden temporarily-->
-        <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
-            <img src="~/images/view-book.png" alt="ucf college of business online viewbook" data-intro="Start Here." data-position="bottom">
-        </a>
-    </div>
+
+@*"http://issuu.com/ucfbusiness/docs/cba-viewbook-2012"
+"~/images/view-book.png" alt="ucf college of business online viewbook"*@
 
     <section id="login" style="display: none;">
         <p>Authenticated: @WebSecurity.IsAuthenticated</p>
@@ -113,8 +116,7 @@
 			<ul class="clearfix">
                 <!-- 8 panel row -->
                 <li>
-                    <div title="Get to know us.">
-                        <img src="~/images/panels/get-to-know-us.jpg" alt="...">
+                    <div title="Start Here">
                         @*<a href="#" class="social tt-share">t</a>
                         <a href="#" class="social fb-share">f</a>*@
                     </div>
@@ -139,7 +141,7 @@
                 <li>
                     <div title="Keon Testing Center">
                         <a href="//www.bus.ucf.edu/testingcenter" class="target_blank">
-                            <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" width="320" height="300" alt="...">
+                            <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" alt="...">
                             <p>Keon Testing Center</p>
                         </a>
                     </div>
@@ -150,6 +152,22 @@
                         <a href="~/student-ambassadors">
                             <img src="~/images/panels/ambassadors.jpg" alt="...">
                             <p>Learn more about our ambassadors.</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div title="Stay connected with social media.">
+                        <a href="~/social-media">
+                            <img src="~/images/panels/social-media.jpg" alt="...">
+                            <p>Stay connected with our social college.</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div title="Professional Achievement Awardee, Mike Plaumann">
+                        <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
+                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/professional-achievement.jpg); background-size: 100% 100%;">
+                            <p>Alumni Professional Achievements</p>
                         </a>
                     </div>
                 </li>
@@ -177,6 +195,14 @@
                         </a>
                     </div>
                 </li>
+                <li>
+                    <div title="View the video by the Dr. Glenn Hubbard.">
+                        <a href="//tegr.it/y/1at78" class="target_blank">
+                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/glenn-hubbard.jpg); background-size: 100% 100%;">
+                            <p>Watch video</p>
+                        </a>
+                    </div>
+                </li>
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
@@ -184,10 +210,10 @@
 				<div class="mousearea"></div>
 			</div>
 		</div>
-        <ul class="pages"></ul><!--/pages --> 
+        @*<ul class="pages"></ul>*@<!--/pages --> 
         <div class="controls center use-fastclick">
-            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+            <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
         </div><!--/controls -->    
     </section>
 </div>
@@ -199,33 +225,36 @@
 			<ul class="clearfix">
                 <!-- 8 panel row -->
                 <li>
-                    <div title="Find your opportunities in our upcoming events.">
-                        <img src="~/images/panels/opportunities-events.jpg" alt="...">
-                        @*<a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>*@
-                    </div>
+                    <div title="Find your opportunities in our upcoming events."></div>
                 </li>
                 <li>
-                    <div title="Strategic Leadership Seminar">
-                        <a href="//events.ucf.edu/?y=2013&m=11&d=13&eventdatetime_id=14928" class="target_blank">
-                        <img src="~/images/panels/strategic-leadership.jpg" alt="...">
-                        <p>Register for this event.</p>
+                    <div title="disrupting the status quo">
+                        <a href="//events.ucf.edu/?y=2013&m=12&d=12&eventdatetime_id=15869" class="target_blank">
+                            <img src="~/images/panels/cameron.jpg" alt="...">
+                            <p>Dean's Speaker Series: Disrupting the Status Quo, How UCF is Creating an Entrepreneurial Ecosystem</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div title="Executive MBA info session">
-                        <a href="//events.ucf.edu/?y=2013&m=11&d=07&eventdatetime_id=15454" class="target_blank">
-                        <img src="~/images/panels/execmba-nov-7.jpg" alt="...">
+                    <div title="Live Video">
+                        <a href="//www.ustream.tv/embed/522594?v=3&amp;wmode=direct" class="target_blank">
+                        <img id="bporter" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/default.jpg)">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div title="Graduate Business Programs">
+                        <a href="//edc.research.ucf.edu/degrees" target="_blank">
+                        <img src="~/images/panels/graduate-programs.jpg" alt="...">
                         <p>Learn more.</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div title="Dean's Speaker Series: Dr. Maureen Ambrose">
-                        <a href="//events.ucf.edu/?y=2013&m=11&d=15&eventdatetime_id=15456" class="target_blank">
-                        <img src="~/images/panels/why-fairness-matters.jpg" alt="image of dr. maureen ambrose">
-                        <p>Register for this event.</p>
+                    <div title="Hall of Fame Reception">
+                        <a href="//www.google.com/calendar/event?eid=amVraGljZm5yY2NsdHNxazgycWtoY2l0NmsgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
+                        <img src="~/images/panels/hall-of-fame.jpg" alt="...">
+                        <p>Learn more.</p>
                         </a>
                     </div>
                 </li>
@@ -236,10 +265,10 @@
                 <div class="mousearea"></div>
             </div>
         </div>
-        <ul class="pages"></ul><!--/pages --> 
+        @*<ul class="pages"></ul>*@<!--/pages --> 
         <div class="controls center">
-            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+            <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
         </div><!--/controls -->
     </section>
 </div>
@@ -251,44 +280,33 @@
 			<ul class="clearfix">
                 <!-- 8 panel row -->
                 <li>
-                    <div title="">
-                        <img src="~/images/panels/meet-our-faculty.jpg" alt="...">
-                    </div>
+                    <div title=""></div>
                 </li>
                 <li>
-                    <div title="Live Video">
-                        <a href="//www.ustream.tv/embed/522594?v=3&amp;wmode=direct" class="target_blank">
-                        <img id="bporter" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/default.jpg)">
+                    <div title="Meet Dr. Amit Joshi">
+                        <a href="//www.youtube.com/embed/_Zo5DEEB6fw" class="target_blank">
+                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/amit-joshi.jpg)">
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div title="Meet Dr. Carolyn Massiah">
-                        <a href="//www.youtube.com/embed/e9Bn0I-vfzQ" class="target_blank">
-                        <img id="cmassiah" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/carolyn-massiah.jpg)">
+                    <div title="blank tile">
+                        <a href="#" class="target_blank">
+                        <img src="~/images/panels/blank.jpg" alt="...">
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div title="Meet Dr. Sean Snaith">
-                        <a href="//www.youtube.com/embed/BGZry2AQz4E" class="target_blank">
-                        <img id="ssnaith" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/sean-snaith.jpg)">
+                    <div title="blank tile">
+                        <a href="#" class="target_blank">
+                        <img src="~/images/panels/blank.jpg" alt="...">
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div title="View the video by the Dr. Glenn Hubbard.">
-                        <a href="//tegr.it/y/1at78" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/glenn-hubbard.jpg); background-size: 100% 100%;">
-                            <p>Watch video</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Professional Achievement Awardee, Mike Plaumann">
-                        <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/professional-achievement.jpg); background-size: 100% 100%;">
-                            <p>Alumni Professional Achievements</p>
+                    <div title="blank tile">
+                        <a href="#" class="target_blank">
+                        <img src="~/images/panels/blank.jpg" alt="...">
                         </a>
                     </div>
                 </li>
@@ -299,10 +317,10 @@
                 <div class="mousearea"></div>
             </div>
         </div>
-        <ul class="pages"></ul><!--/pages -->
+        @*<ul class="pages"></ul>*@<!--/pages -->
         <div class="controls center">
-            <button class="prev"><i class="icon-chevron-left"></i></button><!--/back button-->
-            <button class="next"><i class="icon-chevron-right"></i></button><!--/forward button-->
+            <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
         </div><!--/controls -->
     </section>
 </div>

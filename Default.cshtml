@@ -7,7 +7,7 @@
     //Response.Cache.SetCacheability(HttpCacheability.Public);
     //Response.Cache.SetValidUntilExpires(true);
 
-    System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
+    //System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
 
 }
 
@@ -118,6 +118,74 @@
                     </div>
                 </li>
                 <li>
+                    <div title="Take the ball by Dr. Paul Jarley.">
+                        <a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
+                            <img src="~/images/panels/take-the-ball.jpg" alt="...">
+                            <p>Learn more on how to take the ball.</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div title="View the video by the Dr. Glenn Hubbard.">
+                        <a href="//tegr.it/y/1at78" class="target_blank">
+                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/glenn-hubbard.jpg); background-size: 100% 100%;">
+                            <p>Watch video</p>
+                        </a>
+                    </div>
+                </li>
+			</ul>
+		</div><!--/frame -->
+        <div class="scrollbar">
+			<div class="handle">
+				<div class="mousearea"></div>
+			</div>
+		</div>
+        @*<ul class="pages"></ul>*@<!--/pages --> 
+        <div class="controls center use-fastclick">
+            <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
+            <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+        </div><!--/controls -->    
+    </section>
+</div>
+
+@*//-- EVENTS *@
+<div class="pagespan">
+    <section class="wrap">
+		<div class="frame" id="events" data-intro="Events" data-position="left">
+			<ul class="clearfix">
+                <!-- 8 panel row -->
+                <li>
+                    <div title="Find your opportunities in our upcoming events.">
+                        <img src="~/images/panels/opportunities-events.jpg" alt="...">
+                        @*<a href="#" class="social tt-share">t</a>
+                        <a href="#" class="social fb-share">f</a>*@
+                    </div>
+                </li>
+                <li>
+                    <div title="graduate business programs">
+                        <a href="//edc.research.ucf.edu/degrees" target="_blank">
+                        <img src="~/images/panels/graduate-programs.jpg" alt="...">
+                        <p>Learn more.</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div title="disrupting the status quo">
+                        <a href="//events.ucf.edu/?y=2013&m=12&d=12&eventdatetime_id=15869" class="target_blank">
+                            <img src="~/images/panels/status-quo.jpg" alt="...">
+                            <p>Learn More.</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div title="hall of fame reception">
+                        <a href="//www.google.com/calendar/event?eid=amVraGljZm5yY2NsdHNxazgycWtoY2l0NmsgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
+                        <img src="~/images/panels/hall-of-fame.jpg" alt="...">
+                        <p>Learn more.</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
                     <div title="Professional Achievement Awardee, Mike Plaumann">
                         <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
                             <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/professional-achievement.jpg); background-size: 100% 100%;">
@@ -141,74 +209,6 @@
                         </a>
                     </div>
                 </li>
-                <li>
-                    <div title="Take the ball by Dr. Paul Jarley.">
-                        <a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
-                            <img src="~/images/panels/take-the-ball.jpg" alt="...">
-                            <p>Learn more on how to take the ball.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="View the video by the Dr. Glenn Hubbard.">
-                        <a href="//tegr.it/y/1at78" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." style="background-image: url(/images/panels/glenn-hubbard.jpg); background-size: 100% 100%;">
-                            <p>Watch video</p>
-                        </a>
-                    </div>
-                </li>
-			</ul>
-		</div><!--/frame -->
-        <div class="scrollbar">
-			<div class="handle">
-				<div class="mousearea"></div>
-			</div>
-		</div>
-        <ul class="pages"></ul><!--/pages --> 
-        <div class="controls center use-fastclick">
-            <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
-            <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-        </div><!--/controls -->    
-    </section>
-</div>
-
-@*//-- EVENTS *@
-<div class="pagespan">
-    <section class="wrap">
-		<div class="frame" id="events" data-intro="Events" data-position="left">
-			<ul class="clearfix">
-                <!-- 8 panel row -->
-                <li>
-                    <div title="Find your opportunities in our upcoming events.">
-                        <img src="~/images/panels/opportunities-events.jpg" alt="...">
-                        @*<a href="#" class="social tt-share">t</a>
-                        <a href="#" class="social fb-share">f</a>*@
-                    </div>
-                </li>
-                <li>
-                    <div title="Graduate Business Programs">
-                        <a href="//edc.research.ucf.edu/degrees" target="_blank">
-                        <img src="~/images/panels/graduate-programs.jpg" alt="...">
-                        <p>Learn more.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Dean's Speaker Series: Dr. Maureen Ambrose">
-                        <a href="//events.ucf.edu/?y=2013&m=11&d=15&eventdatetime_id=15456" class="target_blank">
-                        <img src="~/images/panels/why-fairness-matters.jpg" alt="image of dr. maureen ambrose">
-                        <p>Register for this event.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Hall of Fame Reception">
-                        <a href="//www.google.com/calendar/event?eid=amVraGljZm5yY2NsdHNxazgycWtoY2l0NmsgY29sbGVnZW9mc2NpZW5jZXNAbQ&ctz=America/New_York" target="_blank">
-                        <img src="~/images/panels/hall-of-fame.jpg" alt="...">
-                        <p>Learn more.</p>
-                        </a>
-                    </div>
-                </li>
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
@@ -216,7 +216,7 @@
                 <div class="mousearea"></div>
             </div>
         </div>
-        <ul class="pages"></ul><!--/pages --> 
+        @*<ul class="pages"></ul>*@<!--/pages --> 
         <div class="controls center">
             <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
             <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
@@ -291,7 +291,7 @@
                 <div class="mousearea"></div>
             </div>
         </div>
-        <ul class="pages"></ul><!--/pages -->
+        @*<ul class="pages"></ul>*@<!--/pages -->
         <div class="controls center">
             <button class="prev"><i class="fa fa-chevron-left"></i></button><!--/back button-->
             <button class="next"><i class="fa fa-chevron-right"></i></button><!--/forward button-->

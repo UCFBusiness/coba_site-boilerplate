@@ -25,7 +25,18 @@ require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], f
             classin: "dl-animate-in-2",
             classout: "dl-animate-out-2"
         }
-    }); //------------------------------------------------------
+    }); 
+    
+    //Track navigation for this site.
+    $('.dl-menu a').click(function () {
+        _gaq.push(['_trackEvent', 'Navigation', 'Menu Click', $(this).attr('href')]);
+    });
+
+    $('.wrap .frame a').click(function () {
+        _gaq.push(['_trackEvent', 'Navigation', 'Tile Click', $(this).attr('href')]);
+    });
+
+    //------------------------------------------------------
 
 
     //----- fade out fixed menu----------------------

@@ -13,6 +13,7 @@
     // Convenience vars for accessing elements
     var $body = $('body'),
         $pageslide = $('#pageslide'),
+        $toolBar = $('#toolbar'),
         $closebutton = $('#closebutton'),
         $slidecontent = $('#slidecontent');
     
@@ -30,10 +31,13 @@
             .attr({id: 'pageslide'})
             .css('display', 'none')
             .appendTo($body);
+        $toolBar = $(document.createElement('div'))
+            .attr({id: 'toolbar'})
+            .appendTo($pageslide);
         $closebutton = $(document.createElement('a'))
             .attr({id: 'closebutton', href: 'javascript:$.pageslide.close()'})
-            .text('<i class="fa fa-angle-left"></i> BACK')
-            .appendTo($pageslide);
+            .text('Back')
+            .appendTo($toolBar);
         $slidecontent = $(document.createElement('div'))
             .attr({id: 'slidecontent'})
             .appendTo($pageslide);

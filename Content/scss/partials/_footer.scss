@@ -35,7 +35,7 @@ span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
     line-height: 16px;
     font-size: 14px;
     font-weight: 400;
-    color:#aaa;
+    color:#777;
 
     text-transform: uppercase;
     text-shadow: 0 1px rgba(0,0,0,0.1);
@@ -61,9 +61,10 @@ span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
     font-size: 1.1em;
     font-weight: 400;
     width: 100%;
-    color: #aaa;
+    color: #777;
 }
 
+/*
 .wrapper-footer-inner > ul > li ul li a {
     text-decoration: none !important;
     color:#333 !important;
@@ -72,7 +73,7 @@ span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
 .wrapper-footer-inner > ul > li ul li a:hover {
     color:#7d8691 !important;
 }
-
+*/
 
 /* Tablet Layout: 501px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 501px) {

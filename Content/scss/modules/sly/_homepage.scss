@@ -34,7 +34,7 @@
 }
 .frame ul li { /*panel*/
     width: 320px; /*<== width of panel*/
-	height: 90%;
+	height: 100%;
     background: #ffcc00;
     margin: 0 2px 0 0;
 	padding: 0;
@@ -52,19 +52,6 @@
     width: 320px; /*<== width of panel*/
 }
 
-.frame .social {
-    position: absolute;
-    right: 0;
-    padding: 12px 18px;
-}
-.frame .tt-share {
-    top: 0;
-    background: rgba(0,204,255,1);
-}
-.frame .fb-share {
-    top: 40px;
-    background:rgba(0,102,204,1);
-}
 
 /*slide caption*/
 .frame p {
@@ -75,7 +62,7 @@
     max-width: 320px; /*<== width of caption*/
     color: #fff;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 0px;
     z-index: 9;
 }
@@ -163,14 +150,14 @@
     z-index: 9;
 } 
 .prev { left:0; }.next { right:0; }
-.next:hover, .prev:hover { background: rgba(255, 204, 0, .6); color:#fff; }
+.next:hover, .prev:hover { background: rgba(255, 204, 0, .7); color:#fff; }
 
 
 /* Tablet Layout (portrait mode): 501px to 768px. Inherits styles from: Mobile Layout. */
 @media all and (min-width: 501px) {
     
     /* Frame */
-    /**/.frame {
+    .frame {
         height: 240px;
     }
     .frame ul li {
@@ -223,20 +210,18 @@
 /* Desktop Layout: 1025px to max of 1920px. Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1025px) {
     
+    
+    .frame ul li {
+        opacity: 0.55;
+        filter: Alpha(opacity=55);  /*IE8 and earlier */
+    }
     .frame ul li:hover {
-        /*opacity: 0.55;
-        filter: Alpha(opacity=55);  IE8 and earlier */
+        opacity: 1;
+        filter: Alpha(opacity=100);  /*IE8 and earlier */
     }
     .frame ul li.active { /*active panel*/
-        /*opacity: 1;
-        filter: Alpha(opacity=100);  IE8 and earlier */
+        opacity: 1;
+        filter: Alpha(opacity=100);  /*IE8 and earlier */
     }
-
-}
-
-
-/* Print Layout: Inherits styles from: All Layouts. */
-@media print {
-    
 
 }
