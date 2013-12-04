@@ -2,17 +2,18 @@
 
 /* Mobile Layout: 480px and below. */
 
-
 /* =============================================================================
    Navigation Menu - Discovery
    ========================================================================== */
 
 /* wrapper */
 nav.dl-menuwrapper {
-    background: rgba(0,0,0,.4);
+    
+    background: none;
+    background: rgba(225,225,225,.7);
     letter-spacing: 1px;
     position: relative;
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */
+    box-shadow: 0px 2px 8px 0px rgba(200,200,200,0.8);  /*shadow */
     z-index: 1000;
 }
 
@@ -201,7 +202,7 @@ nav.dl-menuwrapper {
 }
 
 
-/* Tablet Layout: 500px to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
+/* Tablet Layout: 500px to 999px(landscape mode). Inherits styles from: Mobile Layout. */
 @media all and (min-width: 500px) {
     
     /* =============================================================================
@@ -457,8 +458,8 @@ nav.dl-menuwrapper {
 }
 
 
-/* Desktop Layout: 1025px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
-@media screen and (min-width: 1025px) {
+/* Desktop Layout: 1000px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media screen and (min-width: 1000px) {
 
     .dl-searchbutton {
         border-left: 1px solid #ddd;

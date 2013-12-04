@@ -99,7 +99,7 @@ body {
 .wrapper-inner {background: #fff;padding:0;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 
 
-@media all and (max-width:1024px){
+@media all and (max-width:999px){
     html{
     -webkit-text-size-adjust: auto;
     -moz-text-size-adjust: auto;
@@ -109,9 +109,9 @@ body {
     .cover-body{width:100%;padding-bottom:40px}
     .cover-description{font-size:1.6em}
     .cover-img{background-image: url('/images/cover-sample.jpg'); background-position: 0 0}
-    .backend-cover-img{border: 1px solid #000;}
+
     .wrapper{left:0;position:relative;}
-    .wrapper-inner {max-width: 1024px;}
+    .wrapper-inner {max-width: 999px;}
 
     /*Cover h1*/
     .cover-title {font-size:3.4em;}
@@ -127,7 +127,7 @@ body {
     .wrapper-inner {max-width: 800px;}
 }
 
-@media all and (max-width:500px){
+@media all and (max-width:580px){
     .cover{height:375px}
     .cover-bestof,.cover-home,.cover-collection{min-height:350px;height:auto;display:table}
     .cover-body{display:table-cell;vertical-align:bottom;position:relative;left:-1px;margin:0;padding:65px 5% 30px}
@@ -147,11 +147,13 @@ body {
     .page-title h2 {font-size:1.3em}
 }
 
-@media screen and (min-width:1025px){
-body {background-image: url(/images/main-bg.jpg); background-size: cover; background-position:centered;}
-    .cover, .site-nav-logo {position: fixed; border-right: 1px solid #000;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
+
+/* Tablet(landscape) and Small Desktop Layout. */
+@media screen and (min-width:1000px){
+    body {background-image: url(/images/main-bg.jpg); background-size: cover; background-position:centered;}
+    .cover, .site-nav-logo {position: fixed; box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3); /* shadow */}
     .cover-img{background-image: url('/images/cover-sample.jpg');}
-    .wrapper-inner {border-right: 1px solid #999;max-width:910px;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.8); /* shadow */}
+    .wrapper-inner {max-width:910px; box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3); /* shadow */}
 
     /*Cover h1*/
     .cover-title {font-size:2.400em;}
@@ -163,13 +165,17 @@ body {background-image: url(/images/main-bg.jpg); background-size: cover; backgr
     .page-title h2 {font-size:1.800em}
 }
 
-@media screen and (min-width:1280px){
+
+/* Laptop Layout. */
+@media screen and (min-width:1300px){
     /*Cover h1*/
     .cover-title {font-size:2.875em;}
     .cover-title span {font-size: .750em;}
 }
 
-@media screen and (min-width:1666px){
+
+/* Large Desktop Layout. */
+@media screen and (min-width:1600px){
     .cover-title {font-size:3.875em;}
     .cover-title span {font-size: .750em;}
     .wrapper{left:500px}

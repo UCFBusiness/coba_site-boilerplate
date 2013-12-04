@@ -30,19 +30,13 @@
 @section Styles {
     <style> 
        .wrapper-inner {
-            background: #111;
+            background: #eee;
         }
          /*-- .frame ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }--*/
     </style>
 }
 
 @section featured {
-    <div class="viewbook"><!--ViewBook is hidden temporarily-->
-        <a href="http://issuu.com/ucfbusiness/docs/cba-viewbook-2012" target="_blank">
-            <img src="~/images/view-book.png" alt="ucf college of business online viewbook" data-intro="Start Here." data-position="bottom">
-        </a>
-    </div>
-
     <section id="login" style="display: none;">
         <p>Authenticated: @WebSecurity.IsAuthenticated</p>
         @if (WebSecurity.IsAuthenticated) {
@@ -80,23 +74,6 @@
                         <a href="//www.bus.ucf.edu/dean" class="target_blank">
                             <img src="~/images/panels/dean-blog.jpg" alt="...">
                             <p>Read the Dean's latest post.</p>
-                        </a>
-                    </div>
-                </li>
-
-                <li>
-                    <div title="Undergraduate Student Advising">
-                        <a href="//www.bus.ucf.edu/students/undergraduate/" class="target_blank">
-                            <img src="~/images/panels/advising.jpg" alt="...">
-                            <p>Undergraduate Student Advising</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Keon Testing Center">
-                        <a href="//www.bus.ucf.edu/testingcenter" class="target_blank">
-                            <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" alt="...">
-                            <p>Keon Testing Center</p>
                         </a>
                     </div>
                 </li>

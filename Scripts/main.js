@@ -112,7 +112,7 @@ require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], f
     var screenwidth = parseInt($(this).width());
     var screenheight = parseInt($(this).height());
 
-    if (screenwidth < 501) //load mobile scripts
+    if (screenwidth < 581) //load mobile scripts
         require(['lockfix'], function () {
 
             //-- screen-size ----------------------------------
@@ -129,7 +129,7 @@ require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], f
 
         });
 
-    if ((screenwidth > 500) && (screenwidth < 1025)) //load tablet scripts
+    if ((screenwidth > 580) && (screenwidth < 999)) //load tablet scripts
         require(['pageslide', 'lockfix'], function () {
 
             //-- screen-size ----------------------------------
@@ -151,7 +151,7 @@ require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], f
 
         });
 
-    if (screenwidth > 1024) //load desktop scripts
+    if (screenwidth > 1000) //load desktop scripts
         require(['pageslide', 'lockfix'], function () {
 
             //-- disable right-click ------------------------
@@ -200,7 +200,7 @@ require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], f
         var screenwidth = parseInt($(this).width());
         var screenheight = parseInt($(this).height());
 
-        if (screenwidth < 501) //load mobile scripts
+        if (screenwidth < 581) //load mobile scripts
             require([], function () {
 
                 //-- screen-size ----------------------------------
@@ -213,7 +213,7 @@ require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], f
 
             });
 
-        if ((screenwidth > 500) && (screenwidth < 1025)) //load tablet scripts
+        if ((screenwidth > 580) && (screenwidth < 999)) //load tablet scripts
             require([], function () {
 
                 //-- screen-size ----------------------------------
@@ -226,7 +226,7 @@ require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], f
 
             });
 
-        if (screenwidth > 1024) //load desktop scripts
+        if (screenwidth > 1000) //load desktop scripts
             require(['pageslide'], function () {
 
                 //-- screen-size ----------------------------------

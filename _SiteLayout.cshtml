@@ -281,6 +281,22 @@
         @*<script src="//scripts.bus.ucf.edu/cdn/js/libs/bootstrap-scrollspy.js"></script>
         <script src="~/scripts/holder.min.js"></script>*@
         <script data-main="/scripts/main" src="//scripts.bus.ucf.edu/cdn/js/require.min.js"></script>
+
+        @*<script>
+            $('.dl-menu a').click(function () {
+                alert($(this).text());
+            })
+        </script>*@
+        <script type="text/javascript">
+            //Track for this site.
+            $('.dl-trigger').click(function () {
+                _gaq.push(['_trackEvent', 'Menu Button', 'Navigation', $(this).text()]);
+            });
+            //Track navigation for this site.
+            $('.dl-menu a').click(function () {
+                _gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
+            });
+        </script>
         
         <!-- ADD UCF HEADER -->
         <script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
