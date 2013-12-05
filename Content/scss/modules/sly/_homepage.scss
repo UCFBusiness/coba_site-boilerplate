@@ -17,7 +17,7 @@
 .frame {
 	width: 100%;
     margin: 0 0 1px;
-    height: 300px; /*<== height of panel */
+    height: 224px; /*<== height of panel */
 	overflow: hidden;
     z-index:8;
 }
@@ -31,7 +31,7 @@
 
 /* Panel */
 .frame ul li { 
-    width: 320px; /*<== width of panel */
+    width: 240px; /*<== width of panel */
 	height: 100%;
     background: #eee;
     margin: 0 2px 0 0;
@@ -45,10 +45,7 @@
 	color: #fff;
 	background: #fff;
 }
-.frame ul li img { /* Panel image */
-    height: 300px; /*<== height of panel image */
-    width: 320px; /*<== width of panel image */
-}
+
 .frame ul li img.long-panel { /* panel image */
     background: url(/images/panels/viewbook.jpg) no-repeat;
 }
@@ -101,7 +98,43 @@
 
 
 /* Tablet(portrait) Layout. */
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 999px){
+
+    /* Frame */
+    .frame {
+        height: 300px; /*<== height of panel */
+    }
+    .frame ul li {
+        width: 320px; /*<== width of panel */
+    }
+    .frame ul li.active { /* active panel */
+	    color: #fff;
+    }
+    .frame ul li img { /* panel image */
+        height: 300px; /*<== height of panel image */
+        width: 320px; /*<== width of panel image */
+    }
+
+}
+
+
+/* Tablet(portrait) Layout. */
+@media all and (max-width:580px){
+
+    /* Frame */
+    .frame {
+        height: 224px; /*<== height of panel */
+    }
+    .frame ul li {
+        width: 240px; /*<== width of panel */
+    }
+    .frame ul li.active { /* active panel */
+	    color: #fff;
+    }
+    .frame ul li img { /* Panel image */
+    height: 224px; /*<== height of panel image */
+    width: 240px; /*<== width of panel image */
+    }
 
 }
 
