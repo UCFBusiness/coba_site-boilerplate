@@ -43,7 +43,7 @@
 }
 .frame ul li.active { /* active panel */
 	color: #fff;
-	background: #eee;
+	background: #fff;
 }
 .frame ul li img { /* Panel image */
     height: 300px; /*<== height of panel image */
@@ -56,7 +56,7 @@
 
 /* Panel Caption */
 .frame p {
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.6);
     margin:0;
     padding: 10px 5px;
     width: 100%;
@@ -95,18 +95,16 @@
 
 
 /* Button Controls */
-.next, .prev { 
+.next, .prev, .forward, .backward, .prevPage, .nextPage { 
     display: none;
 }
-
 
 
 /* Tablet(portrait) Layout. */
 @media screen and (max-width: 999px) {
 
-
-    
 }
+
 
 /* Tablet(landscape) and Small Desktop Layout. */
 @media screen and (min-width:1000px){
@@ -125,18 +123,18 @@
         height: 240px; /*<== height of panel image */
         width: 256px; /*<== width of panel image */
     }
+    
+    #row1 ul li:nth-child(1) { width: 514px; }
     .frame ul li img.long-panel { /* panel image */
         background: url(/images/panels/viewbook.jpg) no-repeat;
         height: 240px; /*<== height of panel image */
-        width: 420px; /*<== width of panel image */
+        width: 514px; /*<== width of panel image */
     }
 
     /* Panel Caption */
     .frame p {
-        max-width: 420px; /*<== width of caption*/
+        max-width: 514px; /*<== width of caption*/
     }
-
-    #news ul li:nth-child(1) { width: 415px; }
 
     /* Scrollbar */
     .scrollbar {
@@ -153,9 +151,7 @@
         z-index: 10;
     }
     .pages li {
-
         display: none;
-	    /*display: inline-block;*/
 	    width: 26px;
 	    height: 26px;
 	    margin: 0 4px;
@@ -208,35 +204,29 @@
     
     /* Frame */
     .frame ul li {
-        opacity: 0.55;
-        filter: Alpha(opacity=55);  /*IE8 and earlier */
+        /*opacity: 0.55;
+        filter: Alpha(opacity=55);*/  /*IE8 and earlier */
     }
     .frame ul li:hover {
+        /*border: 1px solid #eee;
         opacity: 1;
-        filter: Alpha(opacity=100);  /*IE8 and earlier */
+        filter: Alpha(opacity=100);*/  /*IE8 and earlier */
     }
     .frame ul li.active { /*active panel*/
-        opacity: 1;
-        filter: Alpha(opacity=100);  /*IE8 and earlier */
+        /*opacity: 1;
+        filter: Alpha(opacity=100);*/  /*IE8 and earlier */
     }
-
-    
-
 
     /* Controls */
     .controls { margin:0; text-align: center; }
-    .controls .divider { display: inline-block; margin: 0 10px; }
-
+    /*.controls .divider { display: inline-block; margin: 0 10px; }*/
 
     /* Button Controls */
     .controls button { background: rgba(255, 204, 0, .6); border: 0; color: #ffcc00; opacity: .5;}
     .controls button:hover { opacity: 1; }
     .controls button:disabled { opacity: .2; }
 
-    .forward, .backward { float: left; width: 50px; height: 260px; font-size: 60px;}
-    .forward { float: right; }
-
-    .next, .prev { 
+    .next, .prev, .forward, .backward, .prevPage, .nextPage { 
         background: rgba(255, 204, 0, .3);
         display: block;
         float: left;
@@ -247,8 +237,8 @@
         top: 0;
         z-index: 9;
     } 
-    .prev { left:0; }.next { right:0; }
+    .prev, .backward, .prevPage { left:0; } 
+    .next, .forward, .nextPage { right:0; }
     .next:hover, .prev:hover { background: rgba(255, 204, 0, .7); color:#fff; }
-
 
 }

@@ -8,12 +8,10 @@
 
 /* wrapper */
 nav.dl-menuwrapper {
-    
     background: none;
-    background: rgba(225,225,225,.7);
+    background: rgba(225,225,225,.6);/**/
     letter-spacing: 1px;
     position: relative;
-    box-shadow: 0px 2px 8px 0px rgba(200,200,200,0.8);  /*shadow */
     z-index: 1000;
 }
 
