@@ -5,6 +5,8 @@ require.config({
     waitSeconds: 10,
     paths: {
         'sly': 'js/sly.min',
+        'echo': 'js/echo.min',
+        'stroll': 'js/stroll.min',
         'classie': 'js/classie',
         'sidebarfx': 'js/sidebarEffects',
         'pageslide': 'js/jquery.pageslide',
@@ -17,7 +19,7 @@ require.config({
     }
 });
 
-require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], function () {
+require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'classie'], function () {
 
     //-- navigation menu -----------------------------------
     $(".dl-menuwrapper").dlmenu({
@@ -67,14 +69,13 @@ require(['easing', 'dmenu', 'sly', 'sidebarfx', 'classie', 'debouncedresize'], f
 
 
     //-- lazy load images ---------------------------
-    $(".wrappers img").fadeTo(0, 0);
-    $(window).scroll(function (d, h) {
-        $(".wrappers img").each(function (i) {
-            a = $(this).offset().top + $(this).height() - 400;
-            b = $(window).scrollTop() + $(window).height();
-            if (a < b) $(this).fadeTo(500, 1);
-        })
-    }); //--------------------------------------------
+    Echo.init({
+        offset: 0,
+        throttle: 250
+    });
+    
+    // Echo.render(); is also available for non-scroll callbacks
+    //--------------------------------------------
 
 
     //-- easing -------------------------------------------

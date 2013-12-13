@@ -29,6 +29,7 @@
         @RenderSection("Styles", required: false)
         <!--FINIS: Styles-->
         <script src="~/scripts/modernizr-2.6.2.js"></script><!-- Modernizr Code -->
+        <!--
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,7 +39,7 @@
           ga('create', 'UA-44861717-1', 'ucf.edu');
           ga('send', 'pageview');
 
-        </script><!-- Google Analytics Code -->
+        </script> /Google Analytics Code -->
     </head>
     <body class="page page-img" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);"> <!--Hides URL Bar on iPhone-->
         <a id="top"></a>
@@ -170,7 +171,7 @@
 			                         @*<p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
                                        <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
                                     
-                                    <img src="~/images/ucf-opportunity.png" alt="ucf stands for opportunity">
+                                    <img class="ucf-sfo" src="~/images/ucf-opportunity.png" alt="ucf stands for opportunity">
                                     <div><!--footer--></div>
 		                        </div>
                             </div><!--/.cover-body -->
@@ -178,7 +179,7 @@
 <!--Beta Image--><span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span><!--Beta Image-->
 
                         </aside><!--/.cover -->
-		                <section id="main-content" class="wrapper"><!-- content background image -->
+		                <section class="wrapper" id="main-content"><!-- content background image -->
 			                <div class="wrapper-inner">
                                 <!---->
                                 <header class="wrapper-header">
@@ -282,7 +283,20 @@
         <script src="~/scripts/holder.min.js"></script>*@
         <script data-main="/scripts/main" src="//scripts.bus.ucf.edu/cdn/js/require.min.js"></script>
 
+        <script src="/scripts/js/jquery.slimscroll.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+
+
+                var tag = document.createElement('script'); tag.src = "https://www.youtube.com/player_api"; var firstScriptTag = document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                $('#playerA').click(function () { var player; player = new YT.Player('playerA', { height: '300', width: '320', videoId: 'sibcnHOLPec', playerVars: { 'autoplay': 1, 'playsinline': 1, 'showinfo': 0, 'controls': 1, 'enablejsapi': 1, 'modestbranding': 1, 'color': 'white', 'iv_load_policy': 3, 'rel': 0, 'theme': 'light'} }); });
+                //$('#playerB').click(function () {var player; player = new YT.Player('playerB', { height: '300', width: '320', videoId: 'VzyYWD13OfQ' }); });
+            });
+        </script>
+
         @*<script>
+            // Test clicks on navigation
             $('.dl-menu a').click(function () {
                 alert($(this).text());
             })

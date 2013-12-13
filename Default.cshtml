@@ -3,29 +3,24 @@
     Page.Title = "Home";
 
     //Cache Page
-    //Response.Cache.SetExpires(DateTime.Now.AddSeconds(720));
-    //Response.Cache.SetCacheability(HttpCacheability.Public);
-    //Response.Cache.SetValidUntilExpires(true);
+    Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
+    Response.Cache.SetCacheability(HttpCacheability.Public);
+    Response.Cache.SetValidUntilExpires(true);
 
     //System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
-
 }
 
 @section Scripts {
-
-
+    @*<script>
+    </script>*@
 }
 
 @section Styles {
-    
-    <style>
-        .wrapper-inner {background: #eee;}
-    </style>
-    
+    @*<style>
+    </style>*@
 }
 
 @section featured {
-
     <section id="login" style="display: none;">
         <p>Authenticated: @WebSecurity.IsAuthenticated</p>
         @if (WebSecurity.IsAuthenticated) {
@@ -50,47 +45,42 @@
     <section class="wrap">
         <div class="frame" id="row1" data-intro="row1" data-position="left">
 			<ul class="clearfix">
-                <li>
-                    <div title="Start Here">
-                        <a href="//issuu.com/ucfbusiness/docs/cba-viewbook-2012" class="target_blank">
-                            <img class="long-panel" src="~/images/pixel.gif" alt="..." width="100%" height="100%">
-                            <p>Start Here...with our college guide</p>
-                        </a>
-                    </div>
-                </li>
-
-                @*<li>
-                    <div title="Live Video">
-                        <a href="//www.ustream.tv/embed/522594?v=3&amp;wmode=direct" class="target_blank">
-                        <img id="bporter" src="~/images/panels/video-play.png" alt="..." width="100%" height="100%" style="background-image: url(/images/panels/blank.jpg); background-size: contain;">
-                        </a>
-                    </div>
-                </li>*@
+                
+                <li class="long-panel"><div title="Start Here"> <!---->
+                    <a href="//issuu.com/ucfbusiness/docs/cba-viewbook-2012" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="" style="background-image: url(/images/panels/viewbook.jpg);">
+                        <p>Start Here...with our college guide</p>
+                    </a>
+                </div></li>
 
                 <li><div title="Dr. Paul Jarley's Blog">
-                    <a href="//pauljarley.wordpress.com/2013/12/02/cyber-monday-is-old-news/" class="target_blank">
-                        <img src="~/images/panels/dean-blog.jpg" alt="..." width="100%" height="100%">
-                        <p>Cyber Monday is Old News</p>
+                    <a href="//pauljarley.wordpress.com" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/dean-blog.jpg">
+                        <p>Failure Competition</p>
                     </a>
                 </div></li>
 
-                <li><div title="Take the ball by Dr. Paul Jarley.">
-                    <a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
-                        <img src="~/images/panels/take-the-ball.jpg" alt="..." width="100%" height="100%">
-                        <p>Learn more on how to take the ball</p>
+                <li><div title="Meet our faculty">
+                    <a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/meet-our-faculty.jpg">
+                        <p>Directory</p>
                     </a>
                 </div></li>
 
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
+                <li><div title="Dean's Speaker Series">
+                    <a href="//events.ucf.edu/?y=2014&m=01&d=24&eventdatetime_id=16079" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/snaith.jpg">
+                        <p>Dr. Sean Snaith: The Future of Our National and State Economy</p>
+                    </a>
+                </div></li>
+
+                <li><div title="Meet our ambassadors">
+                    <a href="~/student-ambassadors">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/ambassadors.jpg">
+                        <p></p>
+                    </a>
+                </div></li>
+
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
@@ -110,49 +100,49 @@
     <section class="wrap">
 		<div class="frame" id="row2" data-intro="row2" data-position="left">
 			<ul class="clearfix">
-                <li>
-                    <div title="Dean's Speaker Series">
-                        <a href="//events.ucf.edu/?y=2013&m=12&d=12&eventdatetime_id=15869" class="target_blank">
-                            <img src="~/images/panels/cameron.jpg" alt="..." width="100%" height="100%">
-                            <p>Disrupting the Status Quo, How UCF is Creating an Entrepreneurial Ecosystem</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Hall of Fame Reception">
-                        <a href="//www.ucfknightsnetwork.com/businessReUKnight2014" target="_blank">
-                        <img src="~/images/panels/hall-of-fame.jpg" alt="..." width="100%" height="100%">
+
+                <li><div title="Hall of Fame Reception">
+                    <a href="//www.ucfknightsnetwork.com/businessReUKnight2014" target="_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/hall-of-fame.jpg">
                         <p>15th Annual Hall of Fame Reception</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Dr. Sean Snaith's Economic Forecasts">
-                        <a href="//iec.ucf.edu/page/forecasts.aspx" class="target_blank">
-                            <img src="~/images/panels/snaith-forecasts.jpg" alt="..." width="100%" height="100%">
-                            <p>Dr. Sean Snaith's Economic Forecasts</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Blackstone Launchpad site.">
-                        <a href="//ucf.thelaunchpad.org" class="target_blank">
-                            <img src="~/images/panels/blackstone.jpg" alt="..." width="100%" height="100%">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="View the video by the Dr. Glenn Hubbard.">
-                        <a href="//tegr.it/y/1at78" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." width="100%" height="100%" style="background-image: url(/images/panels/glenn-hubbard.jpg)">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
+                    </a>
+                </div></li>
+
+                <li><div title="UCF Today">
+                    <a href="//today.ucf.edu/section/business/" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/ucf-news.jpg">
+                        <p>UCF Today</p>
+                    </a>
+                </div></li>
+
+                <li><div title="Dr. Sean Snaith's Economic Forecasts">
+                    <a href="//iec.ucf.edu/page/forecasts.aspx" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/snaith-forecasts.jpg">
+                        <p>Economic Forecasts by Dr. Sean Snaith</p>
+                    </a>
+                </div></li>
+
+                <li><div title="Blackstone Launchpad site">
+                    <a href="//ucf.thelaunchpad.org" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blackstone.jpg">
+                        <p></p>
+                    </a>
+                </div></li>
+
+                <li><div title="Dr. Glenn Hubbard">
+                    <a href="//tegr.it/y/1at78" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/glenn-hubbard.jpg">
+                        <p>Watch Dr. Glenn Hubbard presentation</p>
+                    </a>
+                </div></li>
+
+                <li><div title="Professional Achievement Awardee, Mike Plaumann">
+                    <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/professional-achievement.jpg">
+                        <p>Alumni Professional Achievements</p>
+                    </a>
+                </div></li>
+
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
@@ -172,45 +162,50 @@
     <section class="wrap">
         <div class="frame" id="row3" data-intro="row3" data-position="left">
 			<ul class="clearfix">
-                <li>
-                    <div title="Undergraduate Student Advising">
-                        <a href="//www.bus.ucf.edu/students/undergraduate/" class="target_blank">
-                            <img src="~/images/panels/advising.jpg" alt="..." width="100%" height="100%">
-                            <p>Undergraduate Student Development</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Graduate Business Programs">
-                        <a href="//edc.research.ucf.edu/degrees" target="_blank">
-                        <img src="~/images/panels/graduate-programs.jpg" alt="..." width="100%" height="100%">
-                        <p>Graduate Business Programs</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Keon Testing Center">
-                        <a href="//www.bus.ucf.edu/testingcenter" class="target_blank">
-                            <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%">
-                            <p>Keon Testing Center</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
+
+                <li class="long-panel"><div title="graduate business programs">
+                    <a href="//ucfmba.ucf.edu" target="_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="" style="background-image: url(/images/panels/mba.jpg);">
+                        <p>Get your UCF MBA</p>
+                    </a>
+                </div></li>
+
+                <li><div title="executive and professional development">
+                    <a href="//edc.research.ucf.edu/executive-education" target="_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/executive-development.jpg">
+                        <p>Learn more about executive and professional development opportunities</p>
+                    </a>
+                </div></li>
+
+                <li><div title="undergraduate student services">
+                    <a href="//www.bus.ucf.edu/students/undergraduate/" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/advising.jpg">
+                        <p>Undergraduate Student Services</p>
+                    </a>
+                </div></li>
+
+                <li><div title="keon testing center">
+                    <a href="//www.bus.ucf.edu/testingcenter" class="target_blank">
+                        <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%">
+                        <p>Keon Testing Center</p>
+                    </a>
+                </div></li>
+
+                @*<li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>
+
+                <li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>
+
+                <li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>*@
+
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
@@ -230,44 +225,51 @@
     <section class="wrap">
         <div class="frame" id="row4" data-intro="row4" data-position="left">
 			<ul class="clearfix">
-                <li>
-                    <div title="Stay connected with social media.">
-                        <a href="~/social-media">
-                            <img src="~/images/panels/social-media.jpg" alt="..." width="100%" height="100%">
-                            <p>Stay connected with our social college</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Meet our ambassadors.">
-                        <a href="~/student-ambassadors">
-                            <img src="~/images/panels/ambassadors.jpg" alt="..." width="100%" height="100%">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="Professional Achievement Awardee, Mike Plaumann">
-                        <a href="//www.youtube.com/embed/HGHnnM62wqI" class="target_blank">
-                            <img id="proachieve" src="~/images/panels/video-play.png" alt="..." width="100%" height="100%" style="background-image: url(/images/panels/professional-achievement.jpg)">
-                            <p>Alumni Professional Achievements</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
-                <li>
-                    <div title="blank tile">
-                        <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    </div>
-                </li>
+
+                <li><div title="Take the ball by Dr. Paul Jarley">
+                    <a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/take-the-ball.jpg">
+                        <p>Learn how to Take the Ball</p>
+                    </a>
+                </div></li>
+
+                <li><div title="Black and Gold Friday">
+                    <a href="//www.bus.ucf.edu/events/black-and-gold-friday" target="_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/black-gold-friday.jpg">
+                        <p></p>
+                    </a>
+                </div></li>
+
+                <li><div title="Stay connected with social media">
+                    <a href="~/social-media">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/social-media.jpg">
+                        <p>Join the conversation</p>
+                    </a>
+                </div></li>
+
+                <li><div title="Starter Riot">
+                    <a href="//www.bus.ucf.edu/events/starter-riot" target="_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/starter-riot.jpg">
+                        <p></p>
+                    </a>
+                </div></li>
+
+
+                @*<li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>
+
+                <li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>
+
+                <li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>*@
+
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">

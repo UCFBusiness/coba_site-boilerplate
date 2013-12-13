@@ -16,17 +16,24 @@
     
     /* These styles are optional, and describe how the pageslide will look */
     background-color: #333;
-    color: #FFF;
+
+    /* These styles are optional, and describe how the pageslide will look */
+    /*
     -webkit-box-shadow: inset 0 0 5px 5px #222;
     -moz-box-shadow: inset 0 0 5px 5px #222;
     box-shadow: inset 0 0 5px 5px #222;
+    */
 }
 
-#toolbar {height: 50px;}
+#toolbar {background: #cc9900;}
 
-#closebutton {background: #ffcc00; padding:7px 10px; width: 100px; height: 30px; cursor: pointer;}
+#closebutton {background: #ffcc00; padding:7px 10px; width: 60px; cursor: pointer; text-align: center; float:left;}
 
-#slidecontent {margin-top: 8px;}
+#slidecontent {
+    margin-top: 8px;
+    background-color: #fff;
+    color: #333;
+}
 
 .modal {display: none;}
 
