@@ -95,6 +95,8 @@
                   .animate(slideAnimateIn, speed, function() {
                       _sliding = false;
                   });
+
+        //****
     }
       
     /*
@@ -190,7 +192,8 @@
             _sliding = false;
             if( typeof callback != 'undefined' ) callback();
         });
-        $slidecontent.empty(); //= destroy content iframe
+
+        $slidecontent.empty(); //= destroy slidecontent iframe
     }
 	
 	/* Events */

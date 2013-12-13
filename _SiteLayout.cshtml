@@ -25,7 +25,7 @@
         <!--BEGIN: Styles-->
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="~/styles/site.css" /><!-- Site CSS -->
+        <link href="~/styles/site.css" type="text/css" rel="stylesheet" /><!-- Site CSS -->
         @RenderSection("Styles", required: false)
         <!--FINIS: Styles-->
         <script src="~/scripts/modernizr-2.6.2.js"></script><!-- Modernizr Code -->
@@ -40,6 +40,21 @@
           ga('send', 'pageview');
 
         </script> /Google Analytics Code -->
+
+        <!-- Google Code Start -->
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-44861717-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        <!-- Google Code End -->
+
     </head>
     <body class="page page-img" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);"> <!--Hides URL Bar on iPhone-->
         <a id="top"></a>
@@ -53,13 +68,15 @@
                         <!---->
                         <aside class="cover">
                             <div class="cover-header cover-img"><!-- cover background image -->
-                                @*<div id="UCFHBHeader">
+
+                                <div id="UCFHBHeader">
                                     <div class="UCFHBWrapper">
                                         <section id="UCFtitle">
                                             <a href="http://www.ucf.edu" target="_blank"><span class="UCFHBText">University of Central Florida</span></a><!--/UCF Logo-->
                                         </section>
                                     </div><!--/UCF Header Wrapper-->
-                                </div><!--/UCFHBHeader -->*@
+                                </div><!--/UCFHBHeader -->
+
                                 <nav id="main_menu" class="dl-menuwrapper site-nav clearfix">
                                     <a href="~/" class="dl-home" data-toggle="tooltip" data-placement="bottom" title="Home">HOME</a>
                                     <button class="dl-trigger" title="Discover Menu">MENU</button>
@@ -165,7 +182,7 @@
 	                        <div class="cover-body">
                                 <div class="cover-body-inner">
 
-<!-- for development only --><span><label id="message" class="message" style="color: #fff"></label></span><!-- for development only -->
+<!-- Screen Size - for development only --><span><label id="message" class="message" style="color: #fff"></label></span><!-- for development only -->
 
 			                        <h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
 			                         @*<p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
@@ -176,7 +193,7 @@
 		                        </div>
                             </div><!--/.cover-body -->
 
-<!--Beta Image--><span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span><!--Beta Image-->
+<!-- Beta Image - for development only --><span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span><!--Beta Image-->
 
                         </aside><!--/.cover -->
 		                <section class="wrapper" id="main-content"><!-- content background image -->
@@ -268,6 +285,7 @@
         <div class="loading-bar"></div>
 
         <!--BEGIN: Scripts-->
+
         <!--[if lt IE 9]>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <![endif]-->
@@ -275,33 +293,31 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- jquery -->
         <script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
         <!--<![endif]-->
+
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>	
 	    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         <script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js"></script>
         <script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js"></script>
-        @*<script src="//scripts.bus.ucf.edu/cdn/js/libs/bootstrap-scrollspy.js"></script>
-        <script src="~/scripts/holder.min.js"></script>*@
-        <script data-main="/scripts/main" src="//scripts.bus.ucf.edu/cdn/js/require.min.js"></script>
-
+        @*
+        <script src="//scripts.bus.ucf.edu/cdn/js/libs/bootstrap-scrollspy.js"></script>
+        <script src="~/scripts/holder.min.js"></script>
         <script src="/scripts/js/jquery.slimscroll.min.js"></script>
+        *@
+        <script data-main="/scripts/main" src="//scripts.bus.ucf.edu/cdn/js/require.min.js"></script>
 
         <script>
             $(document).ready(function () {
-
-
                 var tag = document.createElement('script'); tag.src = "https://www.youtube.com/player_api"; var firstScriptTag = document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
                 $('#playerA').click(function () { var player; player = new YT.Player('playerA', { height: '300', width: '320', videoId: 'sibcnHOLPec', playerVars: { 'autoplay': 1, 'playsinline': 1, 'showinfo': 0, 'controls': 1, 'enablejsapi': 1, 'modestbranding': 1, 'color': 'white', 'iv_load_policy': 3, 'rel': 0, 'theme': 'light'} }); });
-                //$('#playerB').click(function () {var player; player = new YT.Player('playerB', { height: '300', width: '320', videoId: 'VzyYWD13OfQ' }); });
             });
         </script>
 
-        @*<script>
-            // Test clicks on navigation
-            $('.dl-menu a').click(function () {
-                alert($(this).text());
-            })
-        </script>*@
         <script type="text/javascript">
+            // Test clicks on navigation
+            //$('.dl-menu a').click(function () {
+            //    alert($(this).text());
+            //})
+
             //Track for this site.
             $('.dl-trigger').click(function () {
                 _gaq.push(['_trackEvent', 'Menu Button', 'Navigation', $(this).text()]);
@@ -313,7 +329,7 @@
         </script>
         
         <!-- ADD UCF HEADER -->
-        <script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
+        @*<script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>*@
         <!-- END UCF HEADER -->
         
         @RenderSection("Scripts", required: false)

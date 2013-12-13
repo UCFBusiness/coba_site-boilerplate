@@ -114,7 +114,7 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'clas
     var screenheight = parseInt($(this).height());
 
     if (screenwidth < 581) //load mobile scripts
-        require(['lockfix'], function () {
+        require(['pageslide', 'lockfix'], function () {
 
             //-- screen-size ----------------------------------
             $("#message").html(screenwidth + " x " + screenheight + " - mobile");
@@ -122,6 +122,11 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'clas
 
             //-- resize to fit -------------------------------
             //$('.cover').css('min-height', screenheight);
+            //------------------------------------------------
+
+            //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
+            $(".target_blank").pageslide({ direction: "left" });
+            $("#slidecontent").css("height", screenheight);
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -180,7 +185,7 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'clas
                 var cover = parseInt($("aside.cover").width());
                 return screenwidth - cover;
             });
-            $("#slidecontent").css("height", screenheight - 34);
+            $("#slidecontent").css("height", screenheight);
             //------------------------------------------------
 
             //-- page menu -----------------------------------

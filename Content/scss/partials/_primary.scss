@@ -113,6 +113,11 @@ body {
 @media all and (max-width:999px){
     
     html{-webkit-text-size-adjust: auto;-moz-text-size-adjust: auto;-ms-text-size-adjust: auto;}
+
+    /*remove if not used. - locks desktop screen and removes scrollbars*/
+    .js {
+        overflow: hidden;
+    }
     
     .cover{position:relative!important;width:100%;max-width:none;height:675px}
     
@@ -181,7 +186,7 @@ body {
 
 /* Tablet(landscape) and Small Desktop Layout. */
 @media screen and (min-width:1000px){
-    
+
     body {background:fixed; background-image:url(/images/main-bg.jpg); background-size:cover; background-position:centered; }
     
     .cover{position: fixed; box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3); /* shadow */}
