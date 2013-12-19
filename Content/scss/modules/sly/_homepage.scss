@@ -73,9 +73,9 @@
 
 /* Frame */
 .frame {
-	width: 100%;
     margin: 0 0 1px;
     height: 224px; /*<== height of panel */
+    width: 100%;
 	overflow: hidden;
     z-index:8;
 }
@@ -87,11 +87,11 @@
     position: relative;
 }
 
-/* Panel */
-.frame ul li { 
+/* Panels */
+.frame ul li { /* all panels */
+    background: #fff;
     width: 240px; /*<== width of panel */
 	height: 100%;
-    background: #fff url(/images/ajax.gif) no-repeat center center;
     margin: 0 2px 0 0;
 	padding: 0;
     line-height: 1em;
@@ -100,19 +100,30 @@
     position: relative;
 }
 .frame ul li.active { /* active panel */
-	/*color: #fff;
-	background: #fff;*/
+	/*background: #fff;*/
+    color: #fff;
+    
+}
+
+
+/* Panel image */
+.frame ul li img { 
+    background: #fff url(/images/ajax.gif) no-repeat;
+    height: 100%;
+    min-height: 224px; /*<== height of panel image */
+    width: 100%;
+    max-width: 514px; /*<== width of panel image */
 }
 
 
 /* Panel Caption */
 .frame p {
-    background: rgba(225,225,225,0.7);
-    text-shadow: 0 0 1px rgba(0,0,0,0.23);
     margin:0;
     padding: 10px 5px;
+    background: rgba(255,255,255,0.8);
+    text-shadow: 0 0 1px rgba(0,0,0,0.23);
     width: 100%;
-    max-width: 320px; /*<== width of caption*/
+    max-width: 514px; /*<== width of caption*/
     color: #333;
     position: absolute;
     bottom: 0px;
@@ -177,17 +188,16 @@
 
     /* Frame */
     .frame {
-        height: 300px; /*<== height of panel */
+        height: 240px; /*<== height of panel */
     }
     .frame ul li {
-        width: 320px; /*<== width of panel */
+        width: 256px; /*<== width of panel */
     }
-    .frame ul li.active { /* active panel */
-	    color: #fff;
-    }
+
+    /* Panel image */
     .frame ul li img { /* panel image */
-        height: 300px; /*<== height of panel image */
-        width: 320px; /*<== width of panel image */
+        height: 240px; /*<== height of panel image */
+        width: 256px; /*<== width of panel image */
     }
 
 }
@@ -203,13 +213,13 @@
     .frame ul li {
         width: 240px; /*<== width of panel */
     }
-    .frame ul li.active { /* active panel */
-	    color: #fff;
-    }
-    .frame ul li img { /* Panel image */
+
+    /* Panel image */
+    .frame ul li img { 
     height: 224px; /*<== height of panel image */
     width: 240px; /*<== width of panel image */
     }
+
 
     /* Button Controls */
     .next, .prev, .forward, .backward, .prevPage, .nextPage { 
@@ -222,35 +232,6 @@
 
 /* Tablet(landscape) and Small Desktop Layout. */
 @media screen and (min-width:1000px){
-    
-    /* Frame */
-    .frame {
-        height: 240px; /*<== height of panel */
-    }
-    .frame ul li {
-        width: 256px; /*<== width of panel */
-    }
-    .frame ul li.active { /* active panel */
-	    color: #fff;
-    }
-    .frame ul li img { /* panel image */
-        height: 240px; /*<== height of panel image */
-        max-width: 514px; /*<== width of panel image */
-    }
-    
-    li.long-panel:nth-child(1) { width: 514px; }
-
-    /* Panel Caption */
-    .frame p { max-width: 514px; } /*<== width of caption*/
-
-    /* Scrollbar */
-    .scrollbar { height: 10px; }
-
-}
-
-
-/* Laptop Layout. */
-@media screen and (min-width:1300px){
     
     /* Frame */
     .frame ul li {
@@ -267,11 +248,22 @@
         filter: Alpha(opacity=100);*/  /*IE8 and earlier */
     }
 
+    li.long-panel:nth-child(1) { width: 514px; }
 
+
+    /* Scrollbar */
+    .scrollbar { height: 10px; }
+
+}
+
+
+/* Laptop Layout. */
+@media screen and (min-width:1300px){
+    
     /* Button Controls */
     .next, .prev, .forward, .backward, .prevPage, .nextPage { 
         visibility:visible;
-        height: 240px; /*<== match height of panel*/
+        height: 224px; /*<== match height of panel*/
     }
 
 }

@@ -462,6 +462,11 @@ nav.dl-menuwrapper {
 /* Desktop Layout: 1000px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media screen and (min-width: 1000px) {
 
+    /* wrapper */
+    nav.dl-menuwrapper {
+        margin-top: 70px; /* delete when ucf bar has been removed */
+    }
+    
     .dl-searchbutton {
         border-left: 1px solid #ddd;
         background: rgba(255,255,255,0.7) url(/images/ico/icon-search.png) no-repeat;

@@ -5,37 +5,7 @@
 
 @section Styles {
 <style> /*-- page-specific styles --*/ 
-    
     /*.cover-img {background-image: url('/images/undergrad-programs-bg.jpg'); background-size: cover;}*/
-    
-    .programs {
-        @*background: rgba(0,0,0,.6);
-        color: #fff;*@
-    }
-    
-    .st-container ul li {
-        list-style-type: none;
-    }
-    
-    .programs h2 {
-        font-weight: 200;
-        color: #ffcc00;
-    }
-    
-    .programs .row {
-        @*border:  1px solid #000;*@
-    }
-    
-    .programs .wall {
-        @*border-left:  1px solid #000;
-        border-right:  1px solid #000;*@
-    }
-    
-    .programs .row + .wall {
-    @*border-left:  2px solid #000;
-    border-right:  2px solid #000;*@
-    }
-    
 </style>
 }
 
@@ -46,84 +16,63 @@
     </hgroup>
 }
 
-<div id="st-container" class="st-container clearfix">
-    <!-- content push wrapper -->
-    <div class="st-pusher">
-        <article class="st-content">@*-- this is the wrapper for the content --*@
-            <div class="st-content-inner">@*-- extra div for emulating position:fixed of the menu --*@
+<article>
 
-                <section id="undergrad-degrees" class="programs">
-                    <div class="canvas">
-		                <div class="container">
+<section>
 
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Bachelors of Science in<br>Business Administration <small>(7)</small></h2>
+                <p>The Bachelor of Science in Business Administration is designed for students who wish to receive specialized training in any of 7 degree tracks.</p>
+            </div>
+            <div class="col-md-4">
+                <div><a href="~/undergraduate/programs/bsba-accounting">Accounting</a></div>
+                <div><a href="~/undergraduate/programs/bsba-economics">Economics</a></div>
+                <div><a href="~/undergraduate/programs/bsba-finance">Finance</a></div>
+                <div><a href="~/undergraduate/programs/bsba-general-business">General Business</a></div>
+                <div><a href="~/undergraduate/programs/bsba-management">Management</a></div>
+                <div><a href="~/undergraduate/programs/bsba-marketing">Marketing</a></div>
+                <div><a href="~/undergraduate/programs/bsba-real-estate">Real Estate</a></div>
+            </div>
+        </div>
 
-                            <div class="row">
-                                <div class="col-md-12"><!--placeholder--></div>
-                            </div>
-                            <div class="row wall">
-                                <div class="col-md-8">
-                                    <h2>Bachelors of Science in<br>Business Administration <small>(7)</small></h2>
-                                    <p>The Bachelor of Science in Business Administration is designed for students who wish to receive specialized training in any of 7 degree tracks.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p><ul>
-                                        <li><a href="~/undergraduate/programs/bsba-accounting">Accounting</a></li>
-                                        <li><a href="~/undergraduate/programs/bsba-economics">Economics</a></li>
-                                        <li><a href="~/undergraduate/programs/bsba-finance">Finance</a></li>
-                                        <li><a href="~/undergraduate/programs/bsba-general-business">General Business</a></li>
-                                        <li><a href="~/undergraduate/programs/bsba-management">Management</a></li>
-                                        <li><a href="~/undergraduate/programs/bsba-marketing">Marketing</a></li>
-                                        <li><a href="~/undergraduate/programs/bsba-real-estate">Real Estate</a></li>
-                                    </ul></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 wall">
-                                    <h2>Bachelor of Arts in<br>Business Administration</h2>
-                                    <p>The Bachelor of Arts in Business Administration is designed for 
-                                        students who wish to receive training in Business within a broad 
-                                        liberal arts education. <br><a href="~/undergraduate/programs/baba">Learn more.</a></p>
-                                </div>
-                                <div class="col-md-6 wall">
-                                    <h2>Bachelor of Arts in<br>Economics</h2>
-                                    <p>The Bachelor of Arts in Economics is designed for students who wish 
-                                        to receive specialized training in Economics within a broad liberal 
-                                        arts education. <br><a href="~/undergraduate/programs/ba">Learn more.</a></p>
-                                </div>
-                            </div>
-                            <div class="row wall">
-                                <div class="col-md-12"><h2>Business Minors <small>(11)</small></h2></div>
-                                <div class="col-md-4">
-                                    <p><ul>
-                                        <li><a href="~/undergraduate/programs/minor-accounting">Accounting</a></li>
-                                        <li><a href="~/undergraduate/programs/minor-economics">Economics</a></li>
-                                        <li><a href="~/undergraduate/programs/minor-economics-policy">Economics Policy</a></li>
-                                        <li><a href="~/undergraduate/programs/minor-entrepreneurship">Entrepreneurship</a></li>
-                                    </ul></p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p><ul>
-                                        <li><a href="~/undergraduate/programs/minorfinance-">Finance</a></li>
-                                        <li><a href="~/undergraduate/programs/minor-general-business">General Business</a></li>
-                                        <li><a href="~/undergraduate/programs/minor-international-business">International Business</a></li>
-                                        <li><a href="~/undergraduate/programs/minor-marketing">Marketing</a></li>
-                                    </ul></p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p><ul>
-                                        <li><a href="~/undergraduate/programs/minor-real-estate">Real Estate</a></li>
-                                        <li><a href="~/undergraduate/programs/minor-sport-business">Sport Business Management</a></li>
-                                        <li><a href="~/undergraduate/programs/minor-technological-entrepreneurship">Technological Entrepreneurship</a></li>
-                                    </ul></p>
-                                </div>
-                            </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Bachelor of Arts in<br>Business Administration</h2>
+                <p>The Bachelor of Arts in Business Administration is designed for 
+                    students who wish to receive training in Business within a broad 
+                    liberal arts education. <br><a href="~/undergraduate/programs/baba">Learn more.</a></p>
+            </div>
 
+            <div class="col-md-6">
+                <h2>Bachelor of Arts in<br>Economics</h2>
+                <p>The Bachelor of Arts in Economics is designed for students who wish 
+                    to receive specialized training in Economics within a broad liberal 
+                    arts education. <br><a href="~/undergraduate/programs/ba">Learn more.</a></p>
+            </div>
+        </div>
 
-		                </div>
-	                </div>
-                </section>
+        <div class="row">
+            <div class="col-md-12"><h2>Business Minors <small>(11)</small></h2></div>
+            <div class="col-md-4">
+                <div><a href="~/undergraduate/programs/minor-accounting">Accounting</a></div>
+                <div><a href="~/undergraduate/programs/minor-economics">Economics</a></div>
+                <div><a href="~/undergraduate/programs/minor-economics-policy">Economics Policy</a></div>
+                <div><a href="~/undergraduate/programs/minor-entrepreneurship">Entrepreneurship</a></div>
+            </div>
+            <div class="col-md-4">
+                <div><a href="~/undergraduate/programs/minorfinance-">Finance</a></div>
+                <div><a href="~/undergraduate/programs/minor-general-business">General Business</a></div>
+                <div><a href="~/undergraduate/programs/minor-international-business">International Business</a></div>
+                <div><a href="~/undergraduate/programs/minor-marketing">Marketing</a></div>
+            </div>
+            <div class="col-md-4">
+                <div><a href="~/undergraduate/programs/minor-real-estate">Real Estate</a></div>
+                <div><a href="~/undergraduate/programs/minor-sport-business">Sport Business Management</a></div>
+                <div><a href="~/undergraduate/programs/minor-technological-entrepreneurship">Technological Entrepreneurship</a></div>
+            </div>
+        </div>
 
-            </div><!-- /st-content-inner -->
-        </article><!-- /st-content -->
-    </div><!-- /st-pusher -->
-</div><!-- /st-container -->
+</section>
+
+</article>

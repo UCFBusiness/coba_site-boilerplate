@@ -104,8 +104,17 @@ body {
 
 /*Page wrapper*/
 .wrapper {outline:0;position:absolute;left:30%;right:0;top:0;bottom:0;-webkit-overflow-scrolling:touch;}
-.wrapper-inner {background: #fff;padding:0;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.wrapper-inner {background:#fff;margin:0;padding:0;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 
+
+/*Page content*/
+.wrapper-body-inner article {padding: 10px 20px;}
+.wrapper-body-inner h1, 
+.wrapper-body-inner h2,
+.wrapper-body-inner h3 {
+    font-weight: 200;
+    color: #ddb000;
+}
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -113,11 +122,6 @@ body {
 @media all and (max-width:999px){
     
     html{-webkit-text-size-adjust: auto;-moz-text-size-adjust: auto;-ms-text-size-adjust: auto;}
-
-    /*remove if not used. - locks desktop screen and removes scrollbars*/
-    .js {
-        overflow: hidden;
-    }
     
     .cover{position:relative!important;width:100%;max-width:none;height:675px}
     
