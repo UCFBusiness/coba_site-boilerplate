@@ -30,6 +30,8 @@
 #toolbar {
     background: #cc9900; 
     border-bottom: 1px solid #333;
+    position: relative;
+    height: 35px;
 }
 
 #closebutton {background: #ffcc00; padding:7px 10px; width: 60px; cursor: pointer; text-align: center; float:left;}
@@ -37,7 +39,7 @@
 #slidecontent {
     margin-top: 8px;
     height: 100%;
-    width: 100%;clear: both; 
+    width: 100%;
 }
 
 .modal {display: none;}

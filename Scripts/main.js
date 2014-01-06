@@ -4,41 +4,27 @@ console.log( "START: main.js" );
 require.config({
     waitSeconds: 10,
     paths: {
-        'sly': 'js/sly.min',
-        'echo': 'js/echo.min',
-        'stroll': 'js/stroll.min',
-        'classie': 'js/classie',
-        'sidebarfx': 'js/sidebarEffects',
-        'pageslide': 'js/jquery.pageslide',
-        'dmenu': 'js/jquery.dlmenu',
-        'waypoint': 'js/waypoints.min',
-        'easing': 'js/jquery.easing.min',
-        'equalheight': 'js/jquery.equalheight',
         'debouncedresize': 'js/jquery.debouncedresize',
-        'lockfix': 'js/jquery.lockfixed.min'
+        'dmenu': 'js/jquery.dlmenu',
+        'easing': 'js/jquery.easing.min',
+        'echo': 'js/echo.min',
+        'lockfix': 'js/jquery.lockfixed.min',
+        'pageslide': 'js/jquery.pageslide',
+        'sidebarfx': 'js/sidebarEffects',
+        'sly': 'js/sly.min',
+        'stroll': 'js/stroll.min'
     }
 });
 
-require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'classie'], function () {
+require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], function () {
 
-    //-- navigation menu -----------------------------------
+    //-- navigation menu ----------------------------
     $(".dl-menuwrapper").dlmenu({
         animationClasses: {
             classin: "dl-animate-in-2",
             classout: "dl-animate-out-2"
         }
-    }); 
-    
-    //Track navigation for this site.
-    $('.dl-menu a').click(function () {
-        _gaq.push(['_trackEvent', 'Navigation', 'Menu Click', $(this).attr('href')]);
-    });
-
-    $('.wrap .frame a').click(function () {
-        _gaq.push(['_trackEvent', 'Navigation', 'Tile Click', $(this).attr('href')]);
-    });
-
-    //------------------------------------------------------
+    }); //-------------------------------------------
 
 
     //----- fade out fixed menu----------------------
@@ -65,7 +51,7 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'clas
                 $(this).stop().animate({ "pacity": "0.2" }, 400);
             }
         }
-    ); //-----------------------------------------------
+    ); //--------------------------------------------
 
 
     //-- lazy load images ---------------------------
@@ -75,17 +61,17 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'clas
     });
     
     // Echo.render(); is also available for non-scroll callbacks
-    //--------------------------------------------
+    //-----------------------------------------------
 
 
-    //-- easing -------------------------------------------
+    //-- easing -------------------------------------
     $("ul.menu a").bind("click", function (event) {
         var $anchor = $(this);
         $("html, body").stop().animate({
             scrollTop: $($anchor.attr("href")).offset().top
         }, 1500, "easeInOutExpo");
         event.preventDefault();
-    }); //--------------------------------------------
+    }); //-------------------------------------------
 
 
     //-- back to top --------------------------------
