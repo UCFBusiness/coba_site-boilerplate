@@ -112,7 +112,7 @@
     height: 100%;
     min-height: 224px; /*<== height of panel image */
     width: 100%;
-    max-width: 514px; /*<== width of panel image */
+    max-width: 480px; /*<== width of panel image */
 }
 
 
@@ -123,7 +123,7 @@
     background: rgba(255,255,255,0.8);
     text-shadow: 0 0 1px rgba(0,0,0,0.23);
     width: 100%;
-    max-width: 514px; /*<== width of caption*/
+    max-width: 480px; /*<== width of caption*/
     color: #333;
     position: absolute;
     bottom: 0px;
@@ -191,13 +191,13 @@
         height: 240px; /*<== height of panel */
     }
     .frame ul li {
-        width: 256px; /*<== width of panel */
+        width: 257px; /*<== width of panel */
     }
 
     /* Panel image */
     .frame ul li img { /* panel image */
         height: 240px; /*<== height of panel image */
-        width: 256px; /*<== width of panel image */
+        width: 257px; /*<== width of panel image */
     }
 
 }
@@ -248,7 +248,7 @@
         filter: Alpha(opacity=100);*/  /*IE8 and earlier */
     }
 
-    li.long-panel:nth-child(1) { width: 514px; }
+    li.long-panel:nth-child(1) { width: 480px; }
 
 
     /* Scrollbar */

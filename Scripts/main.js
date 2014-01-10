@@ -64,7 +64,7 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
     //-----------------------------------------------
 
 
-    //-- easing -------------------------------------
+    //-- easing : menu navigation -----------------------------
     $("ul.menu a").bind("click", function (event) {
         var $anchor = $(this);
         $("html, body").stop().animate({
@@ -73,8 +73,16 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
         event.preventDefault();
     }); //-------------------------------------------
 
+    //-- easing : next page -----------------------------
+    $(".btnNext").bind("click", function (event) {
+        var $anchor = $(this);
+        $("html, body").stop().animate({
+            scrollTop: $($anchor.attr("href")).offset().top
+        }, 1500, "easeInOutExpo");
+        event.preventDefault();
+    }); //-------------------------------------------
 
-    //-- back to top --------------------------------
+    //-- easing : back to top --------------------------------
     var offset = 220;
     var duration = 500;
     var topButton = $(".back-to-top");
@@ -107,7 +115,7 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
-            //$('.cover').css('min-height', screenheight);
+            $('.cover').css('min-height', screenheight);
             //------------------------------------------------
 
             //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close

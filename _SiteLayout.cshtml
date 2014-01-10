@@ -90,17 +90,20 @@
 							                        <a href="#">Undergraduate</a>
 							                        <ul class="dl-submenu">
                                                         <li class="Label breadcrumb">Academics > Undergraduate</li>
-								                        <li><a href="~/undergraduate/admissions">Admissions</a></li>
+								                        @*<li><a href="~/undergraduate/admissions">Admissions</a></li>*@
+                                                        <li><a href="//admissions.ucf.edu/" target="_blank">Admissions</a></li>
 								                        <li><a href="~/undergraduate/programs">Degree Programs</a></li>
 								                        <li><a href="~/undergraduate/international-programs">International Programs</a></li>
+                                                        @*<li><a href="~/undergraduate/scholarships">Scholarships</a></li>*@
 							                        </ul>
 						                        </li>
 						                        <li>
 							                        <a href="#">Graduate</a>
 							                        <ul class="dl-submenu">
                                                         <li class="Label breadcrumb">Academics > Graduate</li>
-								                        <li><a href="~/graduate/admissions">Admissions</a></li>
-								                        <li><a href="http://edc.research.ucf.edu/degrees" target="_blank">Degree Programs</a></li>
+								                        @*<li><a href="~/graduate/admissions">Admissions</a></li>*@
+                                                        <li><a href="//www.admissions.graduate.ucf.edu/" target="_blank">Admissions</a></li>
+								                        <li><a href="//edc.research.ucf.edu/degrees" target="_blank">Degree Programs</a></li>
 								                        <li><a href="~/graduate/certificates">Certificates</a></li>
 							                        </ul>
 						                        </li>
@@ -177,7 +180,9 @@
                                     </form>*@
                                 </nav><!--/dl-menuwrapper -->
                                 <div class="site-nav-overlay"></div>
-                                <div class="container"><br>@RenderSection("featured", required: false)</div>
+                                <div class="container">
+                                    <div>@RenderSection("featured", required: false)</div>
+                                </div>
                             </div> <!--/.cover-header -->
 	                        <div class="cover-body">
                                 <div class="cover-body-inner">
@@ -185,16 +190,19 @@
 <!-- Screen Size - for development only --><span><label id="message" class="message" style="color: #fff"></label></span><!-- for development only -->
 
 			                        <h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
-			                         @*<p class="cover-description"><em>Slaying the B.E.A.S.T. since 1968.</em></p>
-                                       <br><br>Those wishing to seek greatness need only <a href="#" title="..." class="apply-button">apply</a>.*@
                                     
                                     <img class="ucf-sfo" src="~/images/ucf-opportunity.png" alt="ucf stands for opportunity">
-                                    <div><!--footer--></div>
+
+                                    <div class="cover-body-footer">
+                                        <h6></h6>
+                                        <a class="btnNext start bottom" href="#main-content"><i class="fa fa-chevron-down"></i></a>
+                                    </div><!--/ .cover-body-footer-->
+
 		                        </div>
                             </div><!--/.cover-body -->
 
 <!-- Beta Image - for development only --><span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span><!--Beta Image-->
-
+                            
                         </aside><!--/.cover -->
 		                <section class="wrapper" id="main-content"><!-- content background image -->
 			                <div class="wrapper-inner">
@@ -235,7 +243,7 @@
                                                     </li>
                                                     <li>
                                                         <a href="tel:4078232184">(407) 823-2181</a>
-                                                        <br><small>General Information</small>
+                                                        <br><small>Office of the Dean</small>
                                                     </li>
                                                 </ul>
                                             </li>
