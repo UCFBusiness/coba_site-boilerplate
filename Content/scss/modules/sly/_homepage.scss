@@ -71,6 +71,26 @@
 	position: relative;
 }
 
+/* Wrapper Header */
+.pagespan .wrap-header {
+    padding: 3px 6px;
+    background: #eee;
+    border: 1px solid #fff;
+}
+    
+.pagespan .wrap-header span {
+    font-weight: normal;
+    color: #333;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+    
+.pagespan .wrap-header span:last-child {
+    float: right;
+    font-weight: normal;
+    font-size: .8em;
+}
+
 /* Frame */
 .frame {
     margin: 0 0 1px;
@@ -92,7 +112,7 @@
     background: #fff;
     width: 240px; /*<== width of panel */
 	height: 100%;
-    margin: 0 2px 0 0;
+    margin: 0 1px 0;
 	padding: 0;
     line-height: 1em;
 	float: left;
@@ -110,9 +130,9 @@
 .frame ul li img { 
     background: #fff url(/images/ajax.gif) no-repeat;
     height: 100%;
-    min-height: 224px; /*<== height of panel image */
+    min-height: 224px;
     width: 100%;
-    max-width: 480px; /*<== width of panel image */
+    max-width: 480px;
 }
 
 
@@ -224,7 +244,7 @@
     /* Button Controls */
     .next, .prev, .forward, .backward, .prevPage, .nextPage { 
         visibility:visible;
-        height: 224px; /*<== match height of panel*/   
+        height: 252px; /*<== match height of panel*/   
     }
 
 }
@@ -248,11 +268,17 @@
         filter: Alpha(opacity=100);*/  /*IE8 and earlier */
     }
 
-    li.long-panel:nth-child(1) { width: 480px; }
+    .frame ul li.long-panel { width: 480px; }
 
 
     /* Scrollbar */
-    .scrollbar { height: 10px; }
+    .scrollbar { height: 3px; }
+
+    /* Button Controls */
+    .next, .prev, .forward, .backward, .prevPage, .nextPage { 
+        visibility:visible;
+        height: 255px; /*<== match height of panel*/
+    }
 
 }
 
@@ -261,9 +287,6 @@
 @media screen and (min-width:1300px){
     
     /* Button Controls */
-    .next, .prev, .forward, .backward, .prevPage, .nextPage { 
-        visibility:visible;
-        height: 224px; /*<== match height of panel*/
-    }
+    
 
 }
