@@ -4,6 +4,7 @@ console.log( "START: main.js" );
 require.config({
     waitSeconds: 10,
     paths: {
+        'classie': 'js/classie',
         'debouncedresize': 'js/jquery.debouncedresize',
         'dmenu': 'js/jquery.dlmenu',
         'easing': 'js/jquery.easing.min',
@@ -16,7 +17,7 @@ require.config({
     }
 });
 
-require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], function () {
+require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'classie'], function () {
 
     //-- navigation menu ----------------------------
     $(".dl-menuwrapper").dlmenu({

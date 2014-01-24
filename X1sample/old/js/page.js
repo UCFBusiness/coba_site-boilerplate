@@ -28,7 +28,6 @@ var Page = (function () {
 		$navPrev = $('#bb-nav-prev').hide(),
 		$menuItems = $container.find('ul.menu-toc > li'),
 		
-        $contentPane = $('.menu-panel'),
         $tblcontents = $('#tblcontents'),
 
 		transEndEventNames = {
@@ -82,8 +81,6 @@ var Page = (function () {
 
         // show table of contents
         $tblcontents.on('click', toggleTOC);
-
-        $contentPane.on('click', toggleTOC);
 
 
         // click a menu item

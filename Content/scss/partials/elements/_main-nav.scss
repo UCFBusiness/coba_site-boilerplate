@@ -22,7 +22,7 @@ nav.dl-menuwrapper {
 .dl-searchbutton {
     background: none;
     border: none;
-    width: 16%;
+    width: 6%;
     height: 45px;
     text-indent: -900em;
     overflow: hidden;
@@ -31,19 +31,19 @@ nav.dl-menuwrapper {
     float:left;
 }
 
-/* discover menu icon */
+/* discover menu icon 
 .dl-trigger:after {
   	content: '';
 	position: absolute;
 	width: 50%;
 	height: 3px;
-	background: #fff;  /* - */
+	background: #fff;
 	top: 11px;
 	left: 25%;
 	box-shadow: 
-		0 10px 0 #fff, /* - */
-		0 20px 0 #fff; /* - */
-}
+		0 10px 0 #fff,
+		0 20px 0 #fff;
+}*/
 
 .dl-home {
     background: url(/images/ico/icon-home.png) no-repeat;
@@ -265,7 +265,7 @@ nav.dl-menuwrapper {
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
     float: left;
 }
-/* discover menu icon = */
+/* discover menu icon = 
 .dl-menuwrapper button:after {
     content: '';
 	width: 20%;
@@ -279,7 +279,7 @@ nav.dl-menuwrapper {
 	box-shadow: 
 		0 10px 0 #555, 
 		0 20px 0 #555;
-}
+}*/
 
 .dl-home, 
 .dl-searchbutton {
