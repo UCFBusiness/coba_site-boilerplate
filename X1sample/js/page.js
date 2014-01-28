@@ -27,7 +27,7 @@ var Page = (function() {
 		$navNext = $( '#bb-nav-next' ),
 		$navPrev = $( '#bb-nav-prev' ).hide(),
 		$menuItems = $container.find( 'ul.menu-toc > li' ),
-		$tblcontents = $( '#tblcontents' ),
+		$tblcontents = $( '.toggle' ),
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
 			'MozTransition': 'transitionend',

@@ -55,25 +55,6 @@ nav.dl-menuwrapper {
     width:50px;
 }
 
-/* hide search button - not used on mobile or tablet */
-.dl-searchbutton {
-    visibility: hidden;
-    display: none;
-}
-
-.dl-search-field {
-    background: rgba(0,0,0,0.8);
-    margin-top: 7px;
-    margin-right: 15px;
-    padding: 0 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 53%;
-    height: 30px;
-    color: #fff;
-}
-
 
 /* =============================================================================
    Main Menu
@@ -232,8 +213,6 @@ nav.dl-menuwrapper {
     box-shadow: none; /* no-shadow */
     z-index: 1000;
 
-
-
 }
 
 /* home button */
@@ -249,11 +228,10 @@ nav.dl-menuwrapper {
 .dl-menuwrapper button {
     border: 1px solid #eee;
     border-bottom: 1px solid #ccc;
-    padding-left: 33px;
-    width: 120px;
+    width: 100px;
     height: 45px;
     position: relative;
-    overflow: hidden;
+
     display: block;
     font-size: .9em;
     font-weight: 400;
@@ -265,7 +243,7 @@ nav.dl-menuwrapper {
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
     float: left;
 }
-/* discover menu icon = 
+/* discover menu icon 
 .dl-menuwrapper button:after {
     content: '';
 	width: 20%;
@@ -281,8 +259,7 @@ nav.dl-menuwrapper {
 		0 20px 0 #555;
 }*/
 
-.dl-home, 
-.dl-searchbutton {
+.dl-home {
     width:45px;
     border: 1px solid #fff;
     border-bottom: 1px solid #ccc;
@@ -296,33 +273,6 @@ nav.dl-menuwrapper {
     border-radius: 5px 0 0 5px;
 }
 
-
-/* search */
-#dl-search {
-    border: 1px solid #eee;
-    padding: 1px 15px;
-    height: 32px;
-    font-size: 11px;
-    font-weight: 300;
-    background: rgba(255,255,255,1); color: rgba(170,170,170,1);/**/
-    float: left;
-}
-.dl-search-field {
-    background: rgba(255,255,255,0.85);
-    border: 1px solid #fff;
-    border-bottom: 1px solid #ccc;
-    position: static;
-    margin: 0;
-    margin-right: 20px;
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
-    padding: 1px 10px 0;
-    width: 250px;
-    font-size: .9em;
-    height: 45px;
-    float: right;
-    border-radius: 5px;
-    color: #333;
-}
 
 /* submenus */
 
@@ -467,21 +417,5 @@ nav.dl-menuwrapper {
         margin-top: 70px; /* delete when ucf bar has been removed */
     }
     
-    .dl-searchbutton {
-        border-left: 1px solid #ddd;
-        background: rgba(255,255,255,0.7) url(/images/ico/icon-search.png) no-repeat;
-        background-position: 2px 1px;
-        box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
-        border-radius: 0 5px 5px 0;
-        visibility: visible;
-        display: block;
-    }
-    .dl-searchbutton:hover {
-        background-position: 3px 2px;
-    }
-
-    .dl-search-field {
-        float: left;
-    }
 
 }

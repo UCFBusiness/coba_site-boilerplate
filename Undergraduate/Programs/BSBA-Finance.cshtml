@@ -21,7 +21,7 @@
 }
 
 <div id="st-container" class="st-container clearfix">
-    @*-- content push wrapper --*@
+
     <div class="st-pusher">
 
         <nav id="menu" class="st-menu st-effect-2">
@@ -36,7 +36,14 @@
             </ul>
         </nav><!-- /st-menu -->
 
-        <section class="st-carousel">
+        <article class="st-content">@*-- this is the wrapper for the content --*@
+            <div class="st-content-inner">@*-- extra div for emulating position:fixed of the menu --*@
+                
+            <span id="st-trigger-effects" class="st-menu-btn">
+                <button data-effect="st-effect-2" title="page menu"><i class="fa fa-indent"></i> menu</button>
+            </span>
+
+            <section class="st-carousel">
             <div class="st-carousel-inner container">
                 <div>
                     <h3>The Finance Major</h3>
@@ -55,14 +62,7 @@
                 </div>
                 <p>Please Note: the information listed on the website is for the 2013 Catalog Year. Please refer to your degree audit if you are declared in an earlier Catalog Year.</p>
             </div>
-        </section><!-- /st-carousel -->
-
-        <article class="st-content">@*-- this is the wrapper for the content --*@
-            <div class="st-content-inner">@*-- extra div for emulating position:fixed of the menu --*@
-                
-            <span id="st-trigger-effects" class="st-menu-btn">
-                <button data-effect="st-effect-2" title="page menu"><i class="fa fa-indent"></i> menu</button>
-            </span>
+            </section><!-- /st-carousel -->
 
             <section id="curricular-learning-goals">
 
@@ -893,4 +893,5 @@
         </article><!-- /st-content -->
 
     </div><!-- /st-pusher -->
+
 </div><!-- /st-container -->

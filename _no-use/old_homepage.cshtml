@@ -1,6 +1,13 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
     Page.Title = "Home";
+
+    //Cache Page
+    Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
+    Response.Cache.SetCacheability(HttpCacheability.Public);
+    Response.Cache.SetValidUntilExpires(true);
+
+    //System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
 }
 
 @section Scripts {
@@ -33,52 +40,37 @@
     </section>
 }
 
-<!--// 6 Panels (grouped into 3) per row -->
-
-<!--// ROW -->
+@*//-- ROW: 6 Panels *@
 <div class="pagespan">
     <section class="wrap">
-        <div class="wrap-header"><span>Spotlights</span><span><small><< SCROLL ROWS TO VIEW MORE >></small></span></div>
         <div class="frame" id="row1" data-intro="row1" data-position="left">
 			<ul class="clearfix">
                 
                 <li class="long-panel"><div title="Start Here"> <!---->
                     <a href="//issuu.com/ucfbusiness/docs/cba-viewbook-2012?e=0" class="target_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" 
-                            class=""
-                            alt="..." 
-                            width="100%" 
-                            height="100%" 
-                            data-echo="" 
-                            style="background-image: url(/images/panels/viewbook.jpg);">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" style="background-image: url(/images/panels/viewbook.jpg);">
                         <p>Start Here...with our college guide</p>
                     </a>
                 </div></li>
 
                 <li><div title="Dr. Paul Jarley's Blog">
                     <a href="//pauljarley.wordpress.com" class="target_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" 
-                            alt="..." 
-                            width="100%" 
-                            height="100%" 
-                            data-echo="/images/panels/dean-blog.jpg">
-                        <p>Dean Jarley's Blog</p>
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/dean-blog.jpg">
+                        <p>Failure Competition</p>
                     </a>
                 </div></li>
-
-
-		        <li><div title="Up to Us UCF">
-                    <a href="//www.bus.ucf.edu/uptous" class="target_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/uptous.jpg">
-                        <p>Help UCF spread the word on the fiscal debt and deficit.</p>
-                    </a>
-                </div></li>
-
 
                 <li><div title="Meet our faculty">
                     <a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">
                         <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/meet-our-faculty.jpg">
                         <p>Directory</p>
+                    </a>
+                </div></li>
+
+                <li><div title="Dean's Speaker Series">
+                    <a href="//events.ucf.edu/?y=2014&m=01&d=24&eventdatetime_id=16079" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/snaith.jpg">
+                        <p>Dr. Sean Snaith: The Future of Our National and State Economy</p>
                     </a>
                 </div></li>
 
@@ -93,7 +85,7 @@
 		</div><!--/frame -->
         <div class="scrollbar">
             <div class="handle">
-                <div class="mousearea"><span></span></div>
+                <div class="mousearea"></div>
             </div>
         </div><!--/scrollbar --> 
         <div class="controls center use-fastclick">
@@ -103,10 +95,9 @@
     </section>
 </div>
 
-<!--// ROW -->
+@*//-- ROW: 6 Panels *@
 <div class="pagespan">
     <section class="wrap">
-        <div class="wrap-header"><span>News</span><span><small></small></span></div>
 		<div class="frame" id="row2" data-intro="row2" data-position="left">
 			<ul class="clearfix">
 
@@ -118,9 +109,16 @@
                 </div></li>
 
                 <li><div title="UCF Today">
-                    <a href="//www.bus.ucf.edu/apps/feed/ucf-today.aspx" class="target_blank">
+                    <a href="//today.ucf.edu/section/business/" class="target_blank">
                         <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/ucf-news.jpg">
                         <p>UCF Today</p>
+                    </a>
+                </div></li>
+
+                <li><div title="Dr. Richard Lapchick">
+                    <a href="//www.huffingtonpost.com/2014/01/02/college-leaders-white-men-study_n_4532721.html?ncid=edlinkusaolp00000003" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/rlapchick.jpg">
+                        <p>Most College Presidents, Coaches And Other Leaders Are White Men, Study Confirms</p>
                     </a>
                 </div></li>
 
@@ -156,7 +154,7 @@
 		</div><!--/frame -->
         <div class="scrollbar">
             <div class="handle">
-                <div class="mousearea"><span></span></div>
+                <div class="mousearea"></div>
             </div>
         </div><!--/scrollbar --> 
         <div class="controls center use-fastclick">
@@ -166,10 +164,9 @@
     </section>
 </div>
 
-<!--// ROW -->
+@*//-- ROW: 6 Panels *@
 <div class="pagespan">
     <section class="wrap">
-        <div class="wrap-header"><span>Events</span><span><small></small></span></div>
         <div class="frame" id="row3" data-intro="row3" data-position="left">
 			<ul class="clearfix">
 
@@ -177,6 +174,13 @@
                     <a href="//ucfmba.ucf.edu" target="_blank">
                         <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" style="background-image: url(/images/panels/mba.jpg);">
                         <p>Get your UCF MBA</p>
+                    </a>
+                </div></li>
+
+                <li><div title="UCF MBA">
+                    <a href="//www.bizjournals.com/orlando/subscriber-only/2013/12/20/mba-programs.html" target="_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/ucf-mba.jpg">
+                        <p>University of Central Florida Executive Development Center tops MBA program enrollment</p>
                     </a>
                 </div></li>
 
@@ -201,11 +205,26 @@
                     </a>
                 </div></li>
 
+                @*<li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>
+
+                <li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>
+
+                <li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>*@
+
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
             <div class="handle">
-                <div class="mousearea"><span></span></div>
+                <div class="mousearea"></div>
             </div>
         </div><!--/scrollbar --> 
         <div class="controls center use-fastclick">
@@ -215,10 +234,9 @@
     </section>
 </div>
 
-<!--// ROW -->
+@*//-- ROW: 6 Panels *@
 <div class="pagespan">
     <section class="wrap">
-        <div class="wrap-header"><span>Special Events</span><span><small></small></span></div>
         <div class="frame" id="row4" data-intro="row4" data-position="left">
 			<ul class="clearfix">
 
@@ -250,11 +268,27 @@
                     </a>
                 </div></li>
 
+
+                @*<li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>
+
+                <li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>
+
+                <li><div title="blank tile">
+                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
+                    <p></p>
+                </div></li>*@
+
 			</ul>
 		</div><!--/frame -->
         <div class="scrollbar">
             <div class="handle">
-                <div class="mousearea"><span></span></div>
+                <div class="mousearea"></div>
             </div>
         </div><!--/scrollbar --> 
         <div class="controls center use-fastclick">

@@ -18,8 +18,8 @@
 }
 
 @section Scripts {
-
 @*<!-- the mousewheel plugin -->
+
 <script type="text/javascript" src="scripts/js/jquery.mousewheel.js"></script>
 
 <!-- the mwheelIntent plugin -->
@@ -35,7 +35,6 @@
 		$('.scroll-pane').jScrollPane();
 	});
 </script>*@
-
 }
 
 @section Styles {
@@ -74,7 +73,6 @@
         </ul>
     }
 </section>
-
 }
 
 <!--// 6 Panels (grouped into 3) per row -->
@@ -129,6 +127,14 @@
                     <a href="/x2sample/demo/apps/default.html" class="target_blank">
                         <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blank.jpg">
                         <p>Snap Style</p>
+                    </a>
+                </div></li>
+
+                <li>
+                    <div title="Test 4">
+                    <a href="//alvarotrigo.com/fullPage/examples/apple.html" class="target_blank">
+                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blank.jpg">
+                        <p>FullPage</p>
                     </a>
                 </div></li>
 
@@ -344,6 +350,8 @@
         </div><!--/controls --> 
     </section>
 </div>
+
+
 
 <!-- Test Data Access -->
     @*@foreach (var row in data)
