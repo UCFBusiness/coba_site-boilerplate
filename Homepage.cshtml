@@ -9,17 +9,12 @@
 
     //System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
 
-
-    //Access Database
-    //var db = Database.Open("ucfBusiness");
-    //var sql = "SELECT * FROM CBA_Calendars";
-    //var data = db.Query(sql);
-
 }
 
 @section Scripts {
-@*<!-- the mousewheel plugin -->
+@*
 
+<!-- the mousewheel plugin -->
 <script type="text/javascript" src="scripts/js/jquery.mousewheel.js"></script>
 
 <!-- the mwheelIntent plugin -->
@@ -34,7 +29,9 @@
 	{
 		$('.scroll-pane').jScrollPane();
 	});
-</script>*@
+</script>
+
+*@
 }
 
 @section Styles {
@@ -43,7 +40,7 @@
     /*-- #faculty ul li:nth-child(1) { width: 160px; margin: 0 4px 0 20px; } --*/
     
     
-    /* Styles specific to this particular page */
+    /*
 	.scroll-pane
 	{
 		width: 100%;
@@ -51,6 +48,7 @@
 		overflow: auto;
         border: 1px dashed red;
 	}
+    */
         
 </style>
 }
@@ -75,8 +73,6 @@
 </section>
 }
 
-<!--// 6 Panels (grouped into 3) per row -->
-
 <!--// ROW -->
 <div class="pagespan">
     <section class="wrap">
@@ -84,11 +80,41 @@
         <div class="frame" id="row1" data-intro="row1" data-position="left">
 			<ul class="clearfix">
 
-                @*<li><div title="Live Video">
+
+                <li>
+                    <div title="Test 1">
+                        <a href="//flipboard.com/section/ucf-business-brpc0p" class="target_blank">
+                            <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blank.jpg">
+                            <p>Flipboard</p>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <div title="Test 2">
+                        <a href="/x1sample/" class="target_blank">
+                            <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blank.jpg">
+                            <p>News/Blog Source</p>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <div title="Test 2">
+                        <a href="/faculty/" class="target_blank">
+                            <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blank.jpg">
+                            <p>Faculty Page</p>
+                        </a>
+                    </div>
+                </li>
+
+
+@*
+                <li><div title="Live Video">
                     <a href="//www.ustream.tv/embed/522594?v=3&amp;wmode=direct" class="target_blank">
                         <img id="live-video" src="~/images/panels/video-play.png" alt="..." width="100%" height="100%" style="background-image: url(/images/panels/blank.jpg); background-size: contain;">
                     </a>
-                </div></li>*@
+                </div></li>
                 
                 <li class="long-panel">
                     <div title="Start Here">
@@ -98,29 +124,6 @@
                     </a>
                     </div>
                 </li>
-
-                @*<li>
-                    <div title="Dr. Paul Jarley's Blog">
-                    <a href="//www.bus.ucf.edu/apps/feed/dean-blog.aspx" class="target_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/dean-blog.jpg">
-                        <p>Dean Jarley's Blog</p>
-                    </a>
-                </div></li>*@
-
-                <li><div title="Test 1">
-                    <a href="//flipboard.com/section/ucf-business-brpc0p" class="target_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blank.jpg">
-                        <p>Flipboard</p>
-                    </a>
-                </div></li>
-
-                <li>
-                    <div title="Test 2">
-                    <a href="/x1sample/" class="target_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blank.jpg">
-                        <p>News/Blog Source</p>
-                    </a>
-                </div></li>
 
                 <li>
                     <div title="Test 3">
@@ -138,12 +141,13 @@
                     </a>
                 </div></li>
 
-                @*<li><div title="Test 4">
+                <li><div title="Test 4">
                     <a href="//tympanus.net/Tutorials/PhotoBoothStripsLightbox/" class="target_blank">
                         <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/blank.jpg">
                         <p>Photo Booth</p>
                     </a>
-                </div></li>*@
+                </div></li>
+*@
 
 			</ul>
 		</div><!--/frame -->
@@ -162,7 +166,7 @@
 <!--// ROW -->
 <div class="pagespan">
     <section class="wrap">
-        <div class="wrap-header"><span>News</span><span><small></small></span></div>
+        <div class="wrap-header"><span>Events</span><span><small></small></span></div>
 		<div class="frame" id="row2" data-intro="row2" data-position="left">
 			<ul class="clearfix">
 
@@ -221,142 +225,3 @@
         </div><!--/controls --> 
     </section>
 </div>
-
-<!--// ROW -->
-<div class="pagespan">
-    <section class="wrap">
-        <div class="wrap-header"><span>Events</span><span><small></small></span></div>
-        <div class="frame" id="row3" data-intro="row3" data-position="left">
-			<ul class="clearfix">
-
-                <li class="long-panel"><div title="graduate business programs">
-                    <a href="//ucfmba.ucf.edu" target="_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" style="background-image: url(/images/panels/mba.jpg);">
-                        <p>Get your UCF MBA</p>
-                    </a>
-                </div></li>
-
-                <li><div title="executive and professional development">
-                    <a href="//edc.research.ucf.edu/executive-education" target="_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/executive-development.jpg">
-                        <p>Learn more about executive and professional development opportunities</p>
-                    </a>
-                </div></li>
-
-                <li><div title="undergraduate student services">
-                    <a href="//www.bus.ucf.edu/students/undergraduate/" class="target_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/advising.jpg">
-                        <p>Undergraduate Student Services</p>
-                    </a>
-                </div></li>
-
-                <li><div title="keon testing center">
-                    <a href="//www.bus.ucf.edu/testingcenter" class="target_blank">
-                        <img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%">
-                        <p>Keon Testing Center</p>
-                    </a>
-                </div></li>
-
-                @*<li><div title="blank tile">
-                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    <p></p>
-                </div></li>
-
-                <li><div title="blank tile">
-                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    <p></p>
-                </div></li>
-
-                <li><div title="blank tile">
-                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    <p></p>
-                </div></li>*@
-
-			</ul>
-		</div><!--/frame -->
-        <div class="scrollbar">
-            <div class="handle">
-                <div class="mousearea"><span></span></div>
-            </div>
-        </div><!--/scrollbar --> 
-        <div class="controls center use-fastclick">
-            <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
-            <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-        </div><!--/controls --> 
-    </section>
-</div>
-
-<!--// ROW -->
-<div class="pagespan">
-    <section class="wrap">
-        <div class="wrap-header"><span>Special Events</span><span><small></small></span></div>
-        <div class="frame" id="row4" data-intro="row4" data-position="left">
-			<ul class="clearfix">
-
-                <li><div title="Take the ball by Dr. Paul Jarley">
-                    <a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/take-the-ball.jpg">
-                        <p>Learn how to Take the Ball</p>
-                    </a>
-                </div></li>
-
-                <li><div title="Black and Gold Friday">
-                    <a href="//www.bus.ucf.edu/events/black-and-gold-friday" target="_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/black-gold-friday.jpg">
-                        <p></p>
-                    </a>
-                </div></li>
-
-                <li><div title="Stay connected with social media">
-                    <a href="~/social-media">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/social-media.jpg">
-                        <p>Join the conversation</p>
-                    </a>
-                </div></li>
-
-                <li><div title="Starter Riot">
-                    <a href="//www.bus.ucf.edu/events/starter-riot" target="_blank">
-                        <img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/starter-riot.jpg">
-                        <p></p>
-                    </a>
-                </div></li>
-
-
-                @*<li><div title="blank tile">
-                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    <p></p>
-                </div></li>
-
-                <li><div title="blank tile">
-                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    <p></p>
-                </div></li>
-
-                <li><div title="blank tile">
-                    <img src="~/images/panels/blank.jpg" alt="..." width="100%" height="100%">
-                    <p></p>
-                </div></li>*@
-
-			</ul>
-		</div><!--/frame -->
-        <div class="scrollbar">
-            <div class="handle">
-                <div class="mousearea"><span></span></div>
-            </div>
-        </div><!--/scrollbar --> 
-        <div class="controls center use-fastclick">
-            <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
-            <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-        </div><!--/controls --> 
-    </section>
-</div>
-
-
-
-<!-- Test Data Access -->
-    @*@foreach (var row in data)
-    {
-        <div>@row.Title</div>
-        <div>Private: @row.IsPrivate</div>
-        <br>
-    }*@

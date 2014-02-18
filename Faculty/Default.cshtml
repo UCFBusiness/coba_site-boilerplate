@@ -1,0 +1,71 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title></title>
+
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+
+        <style>
+            #pt-menu li{
+                display: inline-block;
+                padding-right: 10px;
+            }
+        </style>
+
+        <script src="js/modernizr.custom.js"></script>
+    </head>
+    <body>
+
+        <div>
+            @*<a id="backButton" class="btn" href="javascript:$.pageslide.close()">Close</a>*@
+
+            <ul id="pt-menu">
+                <li><a id="btnPrev" class="btn"><<</a></li>
+                <li><a id="btnNext" class="btn">>></a></li>
+                <li><a class="btn goButton" href="#page1">Page 2</a></li>
+                <li><a class="btn goButton" href="#page3">Page 4</a></li>
+                <li></li>
+            </ul>
+            
+        </div>
+
+        <div class="pt-triggers"><br><br>
+            
+			@*<button id="iterateEffects" class="pt-touch-button">Show next page transition</button>*@
+
+			<!-- /dl-menu-wrapper-->
+
+		</div><!-- /triggers -->
+
+
+
+		<div id="pt-main" class="pt-perspective">
+			<div id="page0" class="pt-page pt-page-1"><h1><span>A collection of</span><strong>Page</strong> 1</h1></div>
+			<div id="page1" class="pt-page pt-page-2"><h1><span>A collection of</span><strong>Page</strong> 2</h1></div>
+			<div id="page2" class="pt-page pt-page-3"><h1><span>A collection of</span><strong>Page</strong> 3</h1></div>
+			<div id="page3" class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> 4</h1></div>
+			<div id="page4" class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> 5</h1></div>
+			<div id="page5" class="pt-page pt-page-6"><h1><span>A collection of</span><strong>Page</strong> 6</h1></div>
+		</div>
+
+		<div class="pt-message">
+			<p>Your browser does not support CSS animations.</p>
+		</div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/page-transitions.js"></script>
+    </body>
+</html>

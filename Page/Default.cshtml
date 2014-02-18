@@ -3,26 +3,54 @@
 }
 
 <!DOCTYPE html>
-
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Fullscreen Pageflip Layout with BookBlock</title>
+		<title>Faculty Page</title>
 
 		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
 		<link rel="stylesheet" type="text/css" href="css/custom.css" />
-		<script src="js/modernizr.custom.79639.js"></script>
+
+        <style>
+            .scroll-pane
+	        {
+		        width: 100%;
+		        height: 100%;
+		        overflow: auto;
+	        }
+            
+            #pageslide {
+                /* These styles MUST be included. Do not change. */
+                background: #fff;
+                display: none;
+                position: absolute;
+                position: fixed;
+                top: 0;
+                height: 100%;
+                z-index: 999999;
+                overflow: hidden;
+
+                /* Specify the width of your pageslide here */
+                width: 100%;
+                padding: 0px 3px;
+            }
+            
+        </style>
+
+        <script src="js/modernizr.custom.79639.js"></script>
 
 	</head>
 	<body>
-		<div id="container" class="container">	
 
+
+		<div id="container" class="content-container">	
+            <a class="btn" href="javascript:$.pageslide.close()">Close</a>
 			<div class="menu-panel toggle">
 				<h3>Title of Source</h3>
-				<ul id="menu-toc" class="menu-toc">
+				<ul id="menu-toc" class="menu-toc scroll-pane">
 					<li class="menu-toc-current"><a href="#item1">Self-destruction</a></li>
 					<li><a href="#item2">Why we die</a></li>
 					<li><a href="#item3">The honeymoon</a></li>
@@ -88,7 +116,7 @@
 								adds, "to pay the public debt of Great Britain in less than five years,
 								and greatly diminish taxation forever."</p>
 
-								<p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+								<p><em>From <a href="/faculty/" class="target_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
 
 							</div>
 						</div>
@@ -379,9 +407,24 @@
 			</div>
 				
 		</div><!-- /container -->
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/jquery.mousewheel.js"></script>
-		<script src="js/jquery.jscrollpane.min.js"></script>
+
+
+        <!-- the mousewheel plugin -->
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <!-- the mwheelIntent plugin -->
+        <script type="text/javascript" src="js/mwheelIntent.js"></script>
+        <!-- the jScrollPane script -->
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+        <script>
+            $(function()
+	        {
+		        $('.scroll-pane').jScrollPane();
+	        });
+        </script>
+
+
 		<script src="js/jquerypp.custom.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
 		<script src="js/page.js"></script>
@@ -390,5 +433,22 @@
 				Page.init();
 			});
 		</script>
+
+
+        <script type="text/javascript" src="js/jquery.pageslide.js"></script>
+        <script>
+            $(function ()
+            {
+                //-- global variables (not encouraged)
+                var screenwidth = parseInt($(this).width());
+                var screenheight = parseInt($(this).height());
+
+                //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
+                $(".target_blank").pageslide({ direction: "left" });
+                $("#slidecontent").css("height", screenheight);
+                
+            });
+        </script>
+
 	</body>
 </html>
