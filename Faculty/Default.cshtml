@@ -12,51 +12,368 @@
 
         <title></title>
 
-        <link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+        <link rel="stylesheet" type="text/css" href="css/sly-row.css" />
+        <link rel="stylesheet" type="text/css" href="css/sly-effects.css" />
 
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
         <style>
-            #pt-menu li{
+            
+            .pt-menu li {
                 display: inline-block;
                 padding-right: 10px;
             }
+            
+            .scroll-pane {
+                width:100%;
+                height:70%;
+                overflow: auto;
+                border: 1px dashed red;
+            }
+            
         </style>
 
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body>
 
-        <div>
-            @*<a id="backButton" class="btn" href="javascript:$.pageslide.close()">Close</a>*@
+        <div style="text-align: center">
 
-            <ul id="pt-menu">
-                <li><a id="btnPrev" class="btn"><<</a></li>
-                <li><a id="btnNext" class="btn">>></a></li>
-                <li><a class="btn goButton" href="#page1">Page 2</a></li>
-                <li><a class="btn goButton" href="#page3">Page 4</a></li>
-                <li></li>
-            </ul>
-            
+            <h3>Richard A. Hofler, Ph.D.</h3>
+            <h4>Professor of Economics</h4>
         </div>
 
-        <div class="pt-triggers"><br><br>
-            
-			@*<button id="iterateEffects" class="pt-touch-button">Show next page transition</button>*@
-
-			<!-- /dl-menu-wrapper-->
-
-		</div><!-- /triggers -->
-
-
+        <div class="clearfix">
+            @*<ul class="pt-menu" style="float: right">
+                <li><a id="btnPrev"> << Previous </a></li>
+                <li><a id="btnNext"> Next >> </a></li>
+            </ul>*@
+            <ul class="pt-menu">
+                <li><a class="goButton" href="#page0">Home</a></li>
+                <li><a class="goButton" href="#page1">Biography</a></li>
+                <li><a class="goButton" href="#page2">Contact</a></li>
+                <li><a class="goButton" href="#page3">Videos</a></li>
+            </ul>
+        </div>
 
 		<div id="pt-main" class="pt-perspective">
-			<div id="page0" class="pt-page pt-page-1"><h1><span>A collection of</span><strong>Page</strong> 1</h1></div>
-			<div id="page1" class="pt-page pt-page-2"><h1><span>A collection of</span><strong>Page</strong> 2</h1></div>
-			<div id="page2" class="pt-page pt-page-3"><h1><span>A collection of</span><strong>Page</strong> 3</h1></div>
-			<div id="page3" class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> 4</h1></div>
-			<div id="page4" class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> 5</h1></div>
-			<div id="page5" class="pt-page pt-page-6"><h1><span>A collection of</span><strong>Page</strong> 6</h1></div>
+
+			<div id="page0" class="pt-page pt-page-1">
+                <div class="scroll-pane container">
+                    <h1><strong>Page</strong> 1</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
+                    Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
+                    Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
+                    Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
+
+                    <h3>Research</h3>
+                    <div class="pagespan">
+                        <section class="wrap">
+                            <div class="frame" id="row1" data-intro="row1" data-position="left">
+			                    <ul class="clearfix">
+
+                                    <li>
+                                        <div title="Test 1">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 2">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 3">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 4">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 5">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 6">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 7">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 8">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+			                    </ul>
+		                    </div><!--/frame -->
+                            <div class="scrollbar">
+                                <div class="handle">
+                                    <div class="mousearea"><span></span></div>
+                                </div>
+                            </div><!--/scrollbar -->
+                            <div class="controls center use-fastclick">
+                                <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+                                <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+                            </div><!--/controls -->
+                            <br>
+                        </section>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
+                    Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
+                    Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
+                    Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
+                    Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
+                    Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
+                    Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
+
+                    <h3>In The News</h3>
+                    <div class="pagespan">
+                        <section class="wrap">
+                            <div class="frame" id="row2" data-intro="row2" data-position="left">
+			                    <ul class="clearfix">
+
+                                    <li>
+                                        <div title="Test 1">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 2">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 3">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 4">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 5">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 6">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 7">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 8">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+			                    </ul>
+		                    </div><!--/frame -->
+                            <div class="scrollbar">
+                                <div class="handle">
+                                    <div class="mousearea"><span></span></div>
+                                </div>
+                            </div><!--/scrollbar --> 
+                            <div class="controls center use-fastclick">
+                                <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+                                <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+                            </div><!--/controls -->
+                            <br>
+                        </section>
+                    </div>
+
+                    <div class="pagespan">
+                        <section class="wrap">
+                            <div class="frame" id="row3" data-intro="row3" data-position="left">
+			                    <ul class="clearfix">
+
+                                    <li>
+                                        <div title="Test 1">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 2">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 3">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 4">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 5">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 6">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 7">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div title="Test 8">
+                                            <a href="#" class="target_blank">
+                                                <p>Title of Paper or Document</p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+			                    </ul>
+		                    </div><!--/frame -->
+                            <div class="scrollbar">
+                                <div class="handle">
+                                    <div class="mousearea"><span></span></div>
+                                </div>
+                            </div><!--/scrollbar --> 
+                            <div class="controls center use-fastclick">
+                                <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+                                <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+                            </div><!--/controls -->
+                            <br>
+                        </section>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
+                    Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
+                    Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
+                    Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
+                    Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
+                    Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
+                    Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
+
+                </div>
+            </div>
+
+			<div id="page1" class="pt-page pt-page-2">
+                <div class="scroll-pane container">
+                    <h1><strong>Page</strong> 2</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
+                    Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
+                    Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
+                    Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
+                </div>
+            </div>
+			<div id="page2" class="pt-page pt-page-3"><h1><strong>Page</strong> 3</h1></div>
+			<div id="page3" class="pt-page pt-page-4"><h1><strong>Page</strong> 4</h1></div>
+			<div id="page4" class="pt-page pt-page-5"><h1><strong>Page</strong> 5</h1></div>
+			<div id="page5" class="pt-page pt-page-6"><h1><strong>Page</strong> 6</h1></div>
 		</div>
 
 		<div class="pt-message">
@@ -64,8 +381,32 @@
 		</div>
 
 
+        <!-- -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>	
+	    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!-- the pagetransition plugin -->
 		<script src="js/page-transitions.js"></script>
+
+        <!-- the sly plugin -->
+        <script src="js/sly.min.js"></script>
+        <script src="js/sly-horizontal.js"></script>
+
+        <!-- the mousewheel plugin -->
+        <script src="/js/jquery.mousewheel.js"></script>
+        <!-- the mwheelIntent plugin -->
+        <script src="/js/mwheelIntent.js"></script>
+        <!-- the jScrollPane script -->
+        <script src="/js/jquery.jscrollpane.min.js"></script>
+        <script>
+            $(function()
+	        {
+		        $('.scroll-pane').jScrollPane();
+	        });
+        </script>
+
+
+
     </body>
 </html>

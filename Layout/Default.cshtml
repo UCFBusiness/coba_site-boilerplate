@@ -1,0 +1,94 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title></title>
+
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+
+        <style>
+            
+            #pt-menu li {
+                display: inline-block;
+                padding-right: 10px;
+            }
+            
+            .scroll-pane {
+                width:100%;
+                height:83%;
+                overflow: auto;
+                border: 1px dashed red;
+            }
+            
+        </style>
+
+        <script src="js/modernizr.custom.js"></script>
+    </head>
+    <body>
+
+        <div>
+            <ul id="pt-menu">
+                <li><a class="btn goButton" href="#page1">Page 2</a></li>
+                <li><a class="btn goButton" href="#page3">Page 4</a></li>
+                <li><a id="btnPrev" class="btn"> << Previous </a></li>
+                <li><a id="btnNext" class="btn"> Next >> </a></li>
+            </ul>
+        </div>
+
+		<div id="pt-main" class="pt-perspective">
+
+			<div id="page0" class="pt-page pt-page-1">
+                <h1><strong>Page</strong> 1</h1>
+                <p class="scroll-pane">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
+                    Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
+                    Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
+                    Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.
+                </p>
+            </div>
+
+			<div id="page1" class="pt-page pt-page-2"><h1><strong>Page</strong> 2</h1></div>
+			<div id="page2" class="pt-page pt-page-3"><h1><strong>Page</strong> 3</h1></div>
+			<div id="page3" class="pt-page pt-page-4"><h1><strong>Page</strong> 4</h1></div>
+			<div id="page4" class="pt-page pt-page-5"><h1><strong>Page</strong> 5</h1></div>
+			<div id="page5" class="pt-page pt-page-6"><h1><strong>Page</strong> 6</h1></div>
+		</div>
+
+		<div class="pt-message">
+			<p>Your browser does not support CSS animations.</p>
+		</div>
+
+
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <!-- the pagetransition plugin -->
+		<script src="js/page-transitions.js"></script>
+
+        <!-- the mousewheel plugin -->
+        <script src="/js/jquery.mousewheel.js"></script>
+        <!-- the mwheelIntent plugin -->
+        <script src="/js/mwheelIntent.js"></script>
+        <!-- the jScrollPane script -->
+        <script src="/js/jquery.jscrollpane.min.js"></script>
+        <script>
+            $(function()
+	        {
+		        $('.scroll-pane').jScrollPane();
+	        });
+        </script>
+
+    </body>
+</html>

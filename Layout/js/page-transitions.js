@@ -59,9 +59,7 @@ var PageTransitions = (function ()
             var page = $(this).attr("href").match(/\d+/)
 
             if (isAnimating)
-            {
-                return false;
-            }
+            return false;
 
             e.preventDefault();
             gotoPage(page);
