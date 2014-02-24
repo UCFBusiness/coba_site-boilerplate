@@ -22,6 +22,11 @@ var PageTransitions = (function ()
 
     function init()
     {
+        // Build navigation menu dependant of pages built
+        for (var i=0;i<$pages.length;i++)
+        {
+            $('#menav').append("<li><a id='pageLink" + i + "' class='btnGo'>" + (i + 1) + "</a></li>");
+        }
 
         $pages.each(function ()
         {
@@ -31,7 +36,7 @@ var PageTransitions = (function ()
 
         $pages.eq(current).addClass('pt-page-current');
 
-        $('#btnPrev').click(function (e)
+        $('.btnPrev').click(function (e)
         {
             if (isAnimating)
             {
@@ -42,7 +47,7 @@ var PageTransitions = (function ()
             prevPage(14);
         });
 
-        $('#btnNext').click(function (e)
+        $('.btnNext').click(function (e)
         {
             if (isAnimating)
             {
@@ -53,10 +58,21 @@ var PageTransitions = (function ()
             nextPage(13);
         });
 
-
-        $('.goButton').click(function (e)
+        $('.btnShare').click(function (e)
         {
-            var page = $(this).attr("href").match(/\d+/)
+            if (isAnimating)
+            {
+                return false;
+            }
+
+            e.preventDefault();
+            nextPage(33);
+        })
+
+
+        $('.btnGo').click(function (e)
+        {
+            var page = $(this).attr("id").match(/\d+/);
 
             if (isAnimating)
             {
@@ -67,11 +83,22 @@ var PageTransitions = (function ()
             gotoPage(page);
         });
 
+        $('.btnUp').click(function (e)
+        {
+            if (isAnimating)
+            {
+                return false;
+            }
+
+            e.preventDefault();
+            nextPage(3);
+        })
+
     }
 
     function gotoPage(page)
     {
-
+        
         if (current < page)
         {
             //next
@@ -94,8 +121,6 @@ var PageTransitions = (function ()
 
         if (current < pagesCount - 1)
         {
-
-            //alert(current);
             current = page;
         }
         else

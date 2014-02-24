@@ -23,9 +23,21 @@
         <link rel="stylesheet" type="text/css" href="css/site.css" />
         <style>
             
-            .pt-menu li {
-                display: inline-block;
-                padding-right: 10px;
+            body {
+                background: #fff;
+            }
+            
+            .pt-page-1 {
+	            background-image: url(/images/section1.jpg);
+                background-size: cover;
+            }
+
+            .pt-page-2 {
+	            background: #7bb7fa;
+            }
+
+            .pt-page-3 {
+	            background: #60d7a9;
             }
             
             .scroll-pane {
@@ -35,143 +47,167 @@
                 border: 1px dashed red;
             }
             
+            .pt-menu li {
+                display: inline-block;
+                padding-right: 10px;
+            }
+            
+            .pt-menu li > a:hover {
+                cursor: pointer;
+            }
+            
         </style>
 
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body>
 
-        <div style="text-align: center">
-
-            <h3>Richard A. Hofler, Ph.D.</h3>
-            <h4>Professor of Economics</h4>
-        </div>
-
-        <div class="clearfix">
+        <div class="clearfix" style="background: #333;">
             @*<ul class="pt-menu" style="float: right">
-                <li><a id="btnPrev"> << Previous </a></li>
-                <li><a id="btnNext"> Next >> </a></li>
+                <li><a class="btnPrev"> << Previous </a></li>
+                <li><a class="btnNext"> Next >> </a></li>
             </ul>*@
-            <ul class="pt-menu">
-                <li><a class="goButton" href="#page0">Home</a></li>
-                <li><a class="goButton" href="#page1">Biography</a></li>
-                <li><a class="goButton" href="#page2">Contact</a></li>
-                <li><a class="goButton" href="#page3">Videos</a></li>
+            <ul id="menav" class="pt-menu">
             </ul>
         </div>
 
 		<div id="pt-main" class="pt-perspective">
 
 			<div id="page0" class="pt-page pt-page-1">
-                <div class="scroll-pane container">
-                    <h1><strong>Page</strong> 1</h1>
+                <div class="scroll-pane">
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
-                    Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
-                    Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
-                    Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
-
-                    <h3>Research</h3>
-                    <div class="pagespan">
-                        <section class="wrap">
-                            <div class="frame" id="row1" data-intro="row1" data-position="left">
-			                    <ul class="clearfix">
-
-                                    <li>
-                                        <div title="Test 1">
-                                            <a href="#" class="target_blank">
-                                                <p>Title of Paper or Document</p>
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div title="Test 2">
-                                            <a href="#" class="target_blank">
-                                                <p>Title of Paper or Document</p>
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div title="Test 3">
-                                            <a href="#" class="target_blank">
-                                                <p>Title of Paper or Document</p>
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div title="Test 4">
-                                            <a href="#" class="target_blank">
-                                                <p>Title of Paper or Document</p>
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div title="Test 5">
-                                            <a href="#" class="target_blank">
-                                                <p>Title of Paper or Document</p>
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div title="Test 6">
-                                            <a href="#" class="target_blank">
-                                                <p>Title of Paper or Document</p>
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div title="Test 7">
-                                            <a href="#" class="target_blank">
-                                                <p>Title of Paper or Document</p>
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div title="Test 8">
-                                            <a href="#" class="target_blank">
-                                                <p>Title of Paper or Document</p>
-                                            </a>
-                                        </div>
-                                    </li>
-
-			                    </ul>
-		                    </div><!--/frame -->
-                            <div class="scrollbar">
-                                <div class="handle">
-                                    <div class="mousearea"><span></span></div>
-                                </div>
-                            </div><!--/scrollbar -->
-                            <div class="controls center use-fastclick">
-                                <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
-                                <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-                            </div><!--/controls -->
-                            <br>
-                        </section>
+                    <div class="clearfix">
+                        <ul class="pt-menu" style="float: right">
+                            <li><a class="btnPrev"> << Previous </a></li>
+                            <li><a class="btnNext"> Next >> </a></li>
+                        </ul>
                     </div>
 
+                    <div class="container">
+                        <h1><strong>Page</strong> 1</h1>
+
+                        <div>
+                            <h2>Richard A. Hofler, Ph.D.</h2>
+                            <h3>Professor of Economics</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
+                        Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
+                        Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
+                        Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
+                        <h3>Research</h3>
+                        <div class="pagespan">
+                            <section class="wrap">
+                                <div class="frame" id="row1" data-intro="row1" data-position="left">
+			                        <ul class="clearfix">
+
+                                        <li>
+                                            <div title="Test 1">
+                                                <a href="#" class="target_blank">
+                                                    <p>Title of Paper or Document</p>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div title="Test 2">
+                                                <a href="#" class="target_blank">
+                                                    <p>Title of Paper or Document</p>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div title="Test 3">
+                                                <a href="#" class="target_blank">
+                                                    <p>Title of Paper or Document</p>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div title="Test 4">
+                                                <a href="#" class="target_blank">
+                                                    <p>Title of Paper or Document</p>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div title="Test 5">
+                                                <a href="#" class="target_blank">
+                                                    <p>Title of Paper or Document</p>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div title="Test 6">
+                                                <a href="#" class="target_blank">
+                                                    <p>Title of Paper or Document</p>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div title="Test 7">
+                                                <a href="#" class="target_blank">
+                                                    <p>Title of Paper or Document</p>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div title="Test 8">
+                                                <a href="#" class="target_blank">
+                                                    <p>Title of Paper or Document</p>
+                                                </a>
+                                            </div>
+                                        </li>
+
+			                        </ul>
+		                        </div><!--/frame -->
+                                <div class="scrollbar">
+                                    <div class="handle">
+                                        <div class="mousearea"><span></span></div>
+                                    </div>
+                                </div><!--/scrollbar -->
+                                <div class="controls center use-fastclick">
+                                    <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+                                    <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+                                </div><!--/controls -->
+                                <br>
+                            </section>
+                        </div>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+			<div id="page1" class="pt-page pt-page-2">
+                <div class="scroll-pane">
+
+                    <div class="clearfix">
+                        <ul class="pt-menu" style="float: right">
+                            <li><a class="btnPrev"> << Previous </a></li>
+                            <li><a class="btnNext"> Next >> </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="container">
+                    <h1><strong>Page</strong> 2</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
                     Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                     Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
                     Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
                     Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
                     Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                     Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
                     Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
                     Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
-
                     <h3>In The News</h3>
                     <div class="pagespan">
                         <section class="wrap">
@@ -256,7 +292,6 @@
                             <br>
                         </section>
                     </div>
-
                     <div class="pagespan">
                         <section class="wrap">
                             <div class="frame" id="row3" data-intro="row3" data-position="left">
@@ -340,28 +375,33 @@
                             <br>
                         </section>
                     </div>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
                     Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                     Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
                     Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
                     Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
                     Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                     Nulla ullamcorper felis vel aliquet sagittis. Duis molestie nibh sed turpis blandit, a aliquam tortor commodo. 
                     Nullam consectetur, tortor pretium fringilla posuere, eros nibh dignissim massa, id interdum libero mi id nisi. 
                     Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
+                    </div>
 
                 </div>
             </div>
+			<div id="page2" class="pt-page pt-page-3">
+                <div class="scroll-pane">
 
-			<div id="page1" class="pt-page pt-page-2">
-                <div class="scroll-pane container">
-                    <h1><strong>Page</strong> 2</h1>
+                    <div class="clearfix">
+                        <ul class="pt-menu" style="float: right">
+                            <li><a class="btnPrev"> << Previous </a></li>
+                            <li><a class="btnNext"> Next >> </a></li>
+                        </ul>
+                    </div>
 
+                    <h1><strong>Page</strong> 3</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tortor non hendrerit rutrum. 
                     Mauris arcu libero, ullamcorper pellentesque elit sed, mattis tincidunt velit. Curabitur quis gravida nibh. 
                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
@@ -370,16 +410,15 @@
                     Duis non augue ut justo tempor elementum. Nulla dignissim sem est, vel vulputate enim facilisis sit amet.</p>
                 </div>
             </div>
-			<div id="page2" class="pt-page pt-page-3"><h1><strong>Page</strong> 3</h1></div>
-			<div id="page3" class="pt-page pt-page-4"><h1><strong>Page</strong> 4</h1></div>
+			@*<div id="page3" class="pt-page pt-page-4"><h1><strong>Page</strong> 4</h1></div>
 			<div id="page4" class="pt-page pt-page-5"><h1><strong>Page</strong> 5</h1></div>
-			<div id="page5" class="pt-page pt-page-6"><h1><strong>Page</strong> 6</h1></div>
+			<div id="page5" class="pt-page pt-page-6"><h1><strong>Page</strong> 6</h1></div>*@
+
 		</div>
 
 		<div class="pt-message">
 			<p>Your browser does not support CSS animations.</p>
 		</div>
-
 
         <!-- -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

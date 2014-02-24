@@ -11,6 +11,7 @@ html, body { height: 100%; }
 }
 
 .pt-page {
+
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -78,7 +79,7 @@ html, body { height: 100%; }
 }
 
 
-/* Background Colors */
+/* Background Colors 
 
 .pt-page-1 {
 	background: #0ac2d2;
@@ -102,7 +103,7 @@ html, body { height: 100%; }
 
 .pt-page-6 {
 	background: #f68dbb;
-}
+}*/
 
 
 /* Message */
