@@ -1,0 +1,184 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900|Roboto+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ribeye|Arvo|Sail|Graduate|Cookie|Bevan);
+
+html {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    @extend html;
+    background: #ffcc00;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    color: #fff;
+
+    h1, h2, h3, h4, h5 {
+        font-family: 'Arvo', sans-serif;
+	    letter-spacing: 1px;
+	    font-weight: 400;
+        line-height: 1em;
+    }
+}
+
+/**
+ * fullPage 1.2.7
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+
+
+#superContainer {
+    @extend html;
+    position:relative;
+}
+
+
+// Sections ----------------------------
+
+.section{
+    @extend html;
+    background: rgba(0,0,0,.8);
+    position: relative;
+    text-align: center;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    .table {
+        display:table;
+	    width:100%;
+    }
+}
+
+
+// Slides ----------------------------
+
+.slide {
+    @extend html;
+    float: left;
+    position: relative;
+    display: block;
+
+    .table {
+        display:table;
+	    width:100%;
+    }
+}
+
+.slides {
+	height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.slidesContainer {
+    @extend html;
+    float: left;
+    position: relative;
+}
+
+.tableCell{
+	display:table-cell;
+	vertical-align: middle;
+	width:100%;
+	height: 100%;
+}
+
+
+// Slide Arrows ----------------------------
+
+.controlArrow{
+    position:absolute;
+    top:50%;
+    cursor:pointer;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	margin-top: -38px;
+}
+.controlArrow.prev{
+/*
+	left:15px;
+	width: 0px;
+	border-width: 38.5px 34px 38.5px 0;
+	border-color: transparent #cc9900 transparent transparent;
+*/
+    z-index:100;
+}
+.controlArrow.next{
+/*
+	right:15px;
+	border-width: 38.5px 0 38.5px 34px;
+	border-color: transparent transparent transparent #cc9900;
+*/
+    z-index:100;
+}
+
+
+// ----------------------------
+
+.scrollable{
+	overflow:scroll;
+}
+
+.easing{
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
+
+// ----------------------------
+
+#fullPage-nav{
+	position: fixed;
+	z-index: 100;
+	margin-top: -32px;
+	top: 50%;
+	opacity: 1;
+}
+#fullPage-nav ul{
+	margin:0;
+	padding:0;
+}
+#fullPage-nav li{
+	display: block;
+	width: 14px;
+	height: 13px;
+	margin: 7px;
+}
+#fullPage-nav li a{
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+}
+#fullPage-nav li .active span{
+	background: #333;
+}
+#fullPage-nav span{
+	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #000;
+	background: rgba(0, 0, 0, 0);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+}

@@ -1,0 +1,44 @@
+<!-- BEGIN: PAGE -->
+<div class="section">
+    <div class="container">
+
+        <div class="fullPage-header"><h1>Teams</h1></div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <h2>Create Sliders</h2>
+			        <p>Not only vertical scrolling but also horizontal scrolling. Add horizontal sliders in the most simple way ever.</p>
+                </div>
+                <div class="col-xs-12 col-md-6"></div>
+            </div>
+	    </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <h2>Simple</h2>
+			        <p>Easy to use. Configurable and customizable.</p>
+                </div>
+                <div class="col-xs-12 col-md-6"></div>
+            </div>
+	    </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <h2>Cool</h2>
+			        <p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+                </div>
+                <div class="col-xs-12 col-md-6"></div>
+            </div>
+	    </div>
+
+        <!--
+        <a class="fullPage-sectionsNav top" href="#HomePage" title="back"><i class="fa fa-chevron-up"></i></a>
+        <a class="fullPage-sectionsNav bottom" href="#2ndPage" title="next"><i class="fa fa-chevron-down"></i></a>
+        -->
+
+    </div>
+</div>
+<!-- FINIS: PAGE -->

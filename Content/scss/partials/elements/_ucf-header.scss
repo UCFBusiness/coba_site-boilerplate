@@ -3,10 +3,9 @@
    ========================================================================== */
 
 #UCFHBHeader {
-    background: #000 url("../../images/ucfbar/header_border.png") repeat-x;
-    background-position: bottom left;
-    border-width: 0 0 1px;
-    padding: 5px 0 1px 0; /*to treat the bg as a border +2px to bottom padding*/
+    background: #000;
+    border-width: 0;
+    padding: 5px 0 1px; /*to treat the bg as a border +2px to bottom padding*/
     height: 36px;
     z-index: 9999;
 

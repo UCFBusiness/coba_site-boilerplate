@@ -1,0 +1,508 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Ribeye|Arvo|Sail|Graduate|Cookie|Bevan);
+/*-------------------------------------
+Primary Styles
+-------------------------------------*/
+/* line 8, ../scss/site.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 14, ../scss/site.scss */
+body {
+  background: #ffcc00;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+}
+/* line 20, ../scss/site.scss */
+body h1, body h2, body h3, body h4, body h5 {
+  padding: .5em 0;
+  font-family: 'Arvo', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.13em;
+}
+/* line 28, ../scss/site.scss */
+body .copyright {
+  padding: 5px;
+  font-size: .6em;
+  color: #555;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+/* line 38, ../scss/site.scss */
+body .gradient {
+  filter: none;
+}
+
+/*-------------------------------------
+Social
+-------------------------------------*/
+/* Tablet(portrait) Layout. */
+/* Mobile(landscape) Layout. */
+/* Mobile(portrait) Layout. */
+/* Tablet(landscape) and Small Desktop Layout. */
+@media screen and (min-width: 1000px) {
+  /* line 23, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 20px;
+    padding-top: 40px;
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 37, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn:active {
+    margin-top: 3px;
+  }
+
+  /* line 40, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn:active .share-btn-action {
+    padding-bottom: 3px;
+    -webkit-box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15);
+  }
+
+  /* line 45, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn:active .share-btn-action:after {
+    bottom: 3px;
+  }
+
+  /* line 49, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    font-size: 19px;
+    letter-spacing: -1px;
+    color: #555;
+    text-shadow: 0 1px white;
+    background: #e6eff5;
+    border-width: 1px 1px 0;
+    border-style: solid;
+    border-color: #c5c5c5 #bbb;
+    border-radius: 8px 8px 0 0;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03), transparent 40%);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.03), transparent 40%);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.03), transparent 40%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.03), transparent 40%);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
+  }
+
+  /* line 71, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-count:before, .share-btn-count:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border: 6px solid transparent;
+    border-top-color: #e6eff5;
+  }
+
+  /* line 81, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-action {
+    display: block;
+    position: relative;
+    line-height: 32px;
+    padding: 2px 0 6px;
+    font-size: 12px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    border: solid rgba(0, 0, 0, 0.18);
+    border-width: 0 1px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  /* line 94, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-tweet {
+    background: #83cfe8;
+    background-image: -webkit-linear-gradient(top, #83cfe8, #6ebbd4);
+    background-image: -moz-linear-gradient(top, #83cfe8, #6ebbd4);
+    background-image: -o-linear-gradient(top, #83cfe8, #6ebbd4);
+    background-image: linear-gradient(to bottom, #83cfe8, #6ebbd4);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.16), inset 0 -1px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.16), inset 0 -1px rgba(0, 0, 0, 0.15);
+  }
+
+  /* line 103, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-tweet:before {
+    display: none;
+  }
+
+  /* line 107, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-like {
+    background: #6480bd;
+    background-image: -webkit-linear-gradient(top, #6480bd, #3c5894);
+    background-image: -moz-linear-gradient(top, #6480bd, #3c5894);
+    background-image: -o-linear-gradient(top, #6480bd, #3c5894);
+    background-image: linear-gradient(to bottom, #6480bd, #3c5894);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 116, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-like:before {
+    display: none;
+  }
+
+  /* line 120, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-plus {
+    background: #626262;
+    background-image: -webkit-linear-gradient(top, #626262, #404040);
+    background-image: -moz-linear-gradient(top, #626262, #404040);
+    background-image: -o-linear-gradient(top, #626262, #404040);
+    background-image: linear-gradient(to bottom, #626262, #404040);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+  }
+
+  /* line 129, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/partials/_socialbuttons.scss */
+  .share-btn-plus:before {
+    display: none;
+  }
+}
+/* Laptop Layout. */
+/* Large Desktop Layout. */
+/*-------------------------------------
+Fullpage JS
+-------------------------------------*/
+/**
+* fullPage 1.6.6
+* https://github.com/alvarotrigo/fullPage.js
+* MIT licensed
+*
+* Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+*/
+/* line 9, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+}
+
+/* line 16, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 22, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.slide {
+  float: left;
+}
+
+/* line 25, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.slide, .slidesContainer {
+  height: 100%;
+  display: block;
+}
+
+/* line 29, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.slides {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 38, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.section.table, .slide.table {
+  display: table;
+  width: 100%;
+}
+
+/* line 42, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 48, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.slidesContainer {
+  float: left;
+  position: relative;
+}
+
+/* line 53, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.scrollable {
+  overflow: scroll;
+}
+
+/* line 56, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.easing {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+/* line 63, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#fullPage-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 70, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#fullPage-nav.right {
+  right: 17px;
+}
+
+/* line 73, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#fullPage-nav.left {
+  left: 17px;
+}
+
+/* line 76, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.fullPage-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+}
+
+/* line 82, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.fullPage-slidesNav.bottom {
+  bottom: 17px;
+}
+
+/* line 85, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.fullPage-slidesNav.top {
+  top: 17px;
+}
+
+/* line 89, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#fullPage-nav ul,
+.fullPage-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 94, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#fullPage-nav li,
+.fullPage-slidesNav li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+
+/* line 101, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.fullPage-slidesNav li {
+  display: inline-block;
+}
+
+/* line 105, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 115, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+  background: #333;
+}
+
+/* line 119, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+#fullPage-nav span,
+.fullPage-slidesNav span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 132, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.fullPage-tooltip {
+  position: absolute;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  top: -2px;
+}
+
+/* line 139, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.fullPage-tooltip.right {
+  right: 20px;
+}
+
+/* line 142, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_fullpage.scss */
+.fullPage-tooltip.left {
+  left: 20px;
+}
+
+/* line 3, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+.fullPage-header {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+@media screen and (max-width: 999px) {
+  /* line 14, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 30, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav {
+    /*
+    background: rgba(255,255,255,.3); //-white
+    background: rgba(255,204,0,0.63); //-yellow
+    border: 2px solid #ffcc00;
+    border-radius: 25px;
+    */
+    padding: .1em .35em;
+    position: absolute;
+    left: 48%;
+    z-index: 100;
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #333;
+  }
+  /* line 47, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.top {
+    top: 10px;
+    opacity: 0.65;
+    filter: Alpha(opacity=65);
+    /*IE8 and earlier */
+  }
+  /* line 52, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.top:hover {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    /*IE8 and earlier */
+  }
+  /* line 58, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.bottom {
+    bottom: 10px;
+    opacity: 0.65;
+    filter: Alpha(opacity=65);
+    /*IE8 and earlier */
+  }
+  /* line 63, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.bottom:hover {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    /*IE8 and earlier */
+  }
+  /* line 69, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.gotomore {
+    bottom: 10px;
+    opacity: 0.65;
+    filter: Alpha(opacity=65);
+    /*IE8 and earlier */
+  }
+  /* line 74, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.gotomore:hover {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    /*IE8 and earlier */
+  }
+  /* line 79, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.gotomore:before {
+    content: "Scroll for More";
+    text-align: center;
+    width: 80px;
+    font-size: 0.45em;
+    position: absolute;
+    bottom: 45px;
+    left: -48%;
+  }
+  /* line 91, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.gototop {
+    bottom: 10px;
+    opacity: 0.65;
+    filter: Alpha(opacity=65);
+    /*IE8 and earlier */
+  }
+  /* line 96, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.gototop:hover {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    /*IE8 and earlier */
+  }
+  /* line 101, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_section.scss */
+  .section .fullPage-sectionsNav.gototop:before {
+    content: "Back to Top";
+    text-align: center;
+    width: 80px;
+    font-size: 0.45em;
+    position: absolute;
+    bottom: 45px;
+    left: -48%;
+  }
+}
+/* line 3, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_slide.scss */
+.controlArrow {
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 48.5%;
+}
+
+/* line 10, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_slide.scss */
+.controlArrow.prev {
+  left: 5px;
+  border-width: 0;
+  border-color: transparent;
+}
+/* line 15, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_slide.scss */
+.controlArrow.prev i {
+  font-size: 2.3em;
+}
+
+/* line 19, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_slide.scss */
+.controlArrow.next {
+  right: 25px;
+  border-width: 0;
+  border-color: transparent;
+}
+/* line 24, C:/Users/mhenriquez/Documents/GitHub/coba-beta1/Joust/scss/modules/fullpage/_slide.scss */
+.controlArrow.next i {
+  font-size: 2.3em;
+}
