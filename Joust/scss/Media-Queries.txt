@@ -1,0 +1,14 @@
+// Tablet
+@media screen and (max-width: 999px){}
+
+// Mobile
+@media screen and (max-width: 599px){}
+
+// Small Desktop
+@media screen and (min-width:1000px){}
+
+// Notebook
+@media screen and (min-width: 1300px){}
+
+// Large Desktop
+@media screen and (min-width: 1600px){}

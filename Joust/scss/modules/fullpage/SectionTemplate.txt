@@ -1,14 +1,36 @@
+<!-- BEGIN: HOME-PAGE -->
+<div class="section active">
+    <div class="container">
+
+        <div class="fullPage-header"><h1></h1></div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <img class="video-player" src="images/joust_logo.png" alt="the joust logo" width="100%" />
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p></p>
+            </div>
+        </div>
+
+        <a class="fullPage-sectionsNav gotomore" href="#1stPage" title="scroll for more"><i class="fa fa-chevron-down"></i></a>
+
+    </div>
+</div>
+<!-- FINIS: HOME-PAGE -->
+
+
 <!-- BEGIN: PAGE -->
 <div class="section">
     <div class="container">
 
-        <div class="fullPage-header"><h1>Teams</h1></div>
+        <div class="fullPage-header"><h1></h1></div>
 
         <div class="slide">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <h2>Create Sliders</h2>
-			        <p>Not only vertical scrolling but also horizontal scrolling. Add horizontal sliders in the most simple way ever.</p>
+                    <h2></h2>
+			        <p></p>
                 </div>
                 <div class="col-xs-12 col-md-6"></div>
             </div>
@@ -17,8 +39,8 @@
         <div class="slide">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <h2>Simple</h2>
-			        <p>Easy to use. Configurable and customizable.</p>
+                    <h2></h2>
+			        <p></p>
                 </div>
                 <div class="col-xs-12 col-md-6"></div>
             </div>
@@ -27,8 +49,8 @@
         <div class="slide">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <h2>Cool</h2>
-			        <p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+                    <h2></h2>
+			        <p></p>
                 </div>
                 <div class="col-xs-12 col-md-6"></div>
             </div>
@@ -42,3 +64,22 @@
     </div>
 </div>
 <!-- FINIS: PAGE -->
+
+
+
+<!-- BEGIN: LAST-PAGE -->
+<div class="section">
+    <div class="container">
+
+        <div class="fullPage-header"><h1></h1></div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6"></div>
+            <div class="col-xs-12 col-md-6"></div>
+        </div>
+                
+        <a class="fullPage-sectionsNav gototop" href="#HomePage" title="back to top"><i class="fa fa-chevron-up"></i></a>
+
+    </div>
+</div>
+<!-- FINIS: LAST-PAGE -->

@@ -1,5 +1,5 @@
 /**
- * fullPage 1.7.9
+ * fullPage 1.8.0
  * https://github.com/alvarotrigo/fullPage.js
  * MIT licensed
  *
@@ -57,7 +57,7 @@
 		//Defines the delay to take place before being able to scroll to the next section
 		//BE CAREFUL! Not recommened to change it under 400 for a good behavior in laptops and 
 		//Apple devices (laptops, mouses...)
-		var scrollDelay = 400;
+		var scrollDelay = 600;
 		
 		$.fn.fullpage.setAutoScrolling = function(value){
 			options.autoScrolling = value;
@@ -203,7 +203,7 @@
 				slides.parent().wrap('<div class="slides" />');
 
 				$(this).find('.slidesContainer').css('width', sliderWidth + '%');
-				$(this).find('.slides').after('<div class="controlArrow prev"><i class="fa fa-chevron-left"></i></div><div class="controlArrow next"><i class="fa fa-chevron-right"></i></div>');
+                $(this).find('.slides').after('<div class="controlArrow prev"><i class="fa fa-chevron-left"></i></div><div class="controlArrow next"><i class="fa fa-chevron-right"></i></div>'); // Updated 3/13/14
 				
 				if(options.controlArrowColor!='#fff'){
 					$(this).find('.controlArrow.next').css('border-color', 'transparent transparent transparent '+options.controlArrowColor);
@@ -220,12 +220,9 @@
 				}
 				
 				slides.each(function(index) {
-					if(!index){
-
-						//if the slide won#t be an starting point, the default will be the first one
-						if(!that.hasClass('active') && that.find('.slide.active').length == 0){
-							$(this).addClass('active');
-						}
+					//if the slide won#t be an starting point, the default will be the first one
+					if(!index && that.find('.slide.active').length == 0){
+						$(this).addClass('active');
 					}
 					
 					$(this).css('width', slideWidth + '%');
@@ -738,8 +735,8 @@
 			}
 			
 		});
-			
-		
+
+
 		/**
 		 * Sliding with arrow keys, both, vertical and horizontal
 		 */
@@ -747,30 +744,30 @@
 			//Moving the main page with the keyboard arrows if keyboard scrolling is enabled
 			if (options.keyboardScrolling && !isMoving) {
 				switch (e.which) {
-				//up
-				case 38:
-				case 33:
-					$.fn.fullpage.moveSectionUp();
-					break;
+					//up
+					case 38:
+					case 33:
+						$.fn.fullpage.moveSectionUp();
+						break;
 
-				//down
-				case 40:
-				case 34:
-					$.fn.fullpage.moveSectionDown();
-					break;
+					//down
+					case 40:
+					case 34:
+						$.fn.fullpage.moveSectionDown();
+						break;
 
-				//left
-				case 37:
-					$('.section.active').find('.controlArrow.prev:visible').trigger('click');
-					break;
+					//left
+					case 37:
+						$('.section.active').find('.controlArrow.prev:visible').trigger('click');
+						break;
 
-				//right
-				case 39:
-					$('.section.active').find('.controlArrow.next:visible').trigger('click');
-					break;
+					//right
+					case 39:
+						$('.section.active').find('.controlArrow.next:visible').trigger('click');
+						break;
 
-				default:
-					return; // exit this handler for other keys
+					default:
+						return; // exit this handler for other keys
 				}
 			}
 		});
