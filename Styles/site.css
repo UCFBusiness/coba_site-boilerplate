@@ -2830,7 +2830,6 @@ span.copyright {
 /* Panel image */
 /* line 130, ../Content/scss/modules/sly/_homepage.scss */
 .frame ul li img {
-  background: white url(/images/ajax.gif) no-repeat;
   height: 100%;
   min-height: 224px;
   width: 100%;

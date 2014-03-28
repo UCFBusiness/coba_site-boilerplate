@@ -19,7 +19,6 @@ body {
     background-size: cover;
 
     h1, h2, h3, h4, h5 {
-        padding: .5em 0;
         font-family: 'Arvo', sans-serif;
 	    letter-spacing: 1px;
 	    font-weight: 400;
@@ -38,6 +37,15 @@ body {
         }
     }
 
+    .section:nth-child(2n) { /*evens*/
+        background: rgba(0,0,0,.8);
+        color: #fff;
+    }
+
+    .section:nth-child(2n+1) { /*odds*/
+    
+    }
+
     .ucf {
         background-image: url(../images/ucflogo.png);
         background-repeat: no-repeat;
@@ -45,9 +53,6 @@ body {
         width: 310px;
         height: 25px;
         text-indent: -999px;
-        position: absolute;
-        top: -1.5%;
-        left: 1.5%;
     }
 
     .copyright {
@@ -64,22 +69,33 @@ body {
 // Tablet
 @media screen and (max-width: 999px){
     
-    .video-player {
-        width: 230px;
-        height: 170px;
+    body {
+        .ucf {
+            position: absolute;
+            top: -1.5%;
+            left: 1.5%;
+        }
+
+        .video-player {
+            width: 230px;
+            height: 170px;
+        }
     }
 }
 
 // Mobile
 @media screen and (max-width: 599px){
     
-    .video-player {
-        background: url(../images/video-md.png) no-repeat;
-        border:1px solid #444;
-        border-radius: 5px;
-
-        &:hover {
-            cursor:pointer;
+    body {
+        .ucf {
+            position: absolute;
+            top: -3.5%;
+            left: 1.5%;
+        }
+        .video-player {
+            background: url(../images/video-md.png) no-repeat;
+            border:1px solid #444;
+            border-radius: 5px;
         }
     }
 }
@@ -87,21 +103,26 @@ body {
 // Small Desktop
 @media screen and (min-width: 1000px){
 
-    .ucf {
-        background-size: 310px;
-    }
+    body {
+        .ucf {
+            position: absolute;
+            top: 0;
+            left: 1.5%;
+        }
     
-    .video-player {
-        background: url(../images/video-md.png) no-repeat;
-        border:1px solid #444;
-        border-radius: 5px;
-        width: 420px;
-        height: 280px;
+        .video-player {
+            background: url(../images/video-md.png) no-repeat;
+            border:1px solid #444;
+            border-radius: 5px;
+            width: 420px;
+            height: 280px;
 
-        &:hover {
-            cursor:pointer;
+            &:hover {
+                cursor:pointer;
+            }
         }
     }
+    
 }
 
 // Notebook
