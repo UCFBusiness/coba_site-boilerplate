@@ -17,7 +17,7 @@ require.config({
     }
 });
 
-require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'classie'], function () {
+require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], function () {
 
     //-- navigation menu ----------------------------
     $(".dl-menuwrapper").dlmenu({

@@ -15,8 +15,6 @@ html {
 body {
     @extend html;
     background: #ffcc00;
-    background-image: url(../images/bg.jpg);
-    background-size: cover;
 
     h1, h2, h3, h4, h5 {
         font-family: 'Arvo', sans-serif;
@@ -36,15 +34,15 @@ body {
             cursor:pointer;
         }
     }
-
-    .section:nth-child(2n) { /*evens*/
-        background: rgba(0,0,0,.8);
-        color: #fff;
-    }
-
-    .section:nth-child(2n+1) { /*odds*/
     
-    }
+    //.section:nth-child(2n) { /*evens*/
+    //    background: rgba(0,0,0,.8);
+    //    color: #fff;
+    //}
+    //
+    //.section:nth-child(2n+1) { /*odds*/
+    //}
+    
 
     .ucf {
         background-image: url(../images/ucflogo.png);
@@ -70,6 +68,9 @@ body {
 @media screen and (max-width: 999px){
     
     body {
+        background-image: url(../images/bg-xs.jpg);
+        background-size: cover;
+
         .ucf {
             position: absolute;
             top: -1.5%;
@@ -79,6 +80,11 @@ body {
         .video-player {
             width: 230px;
             height: 170px;
+        }
+
+        .col-md-3 {
+            height: 100%;
+            min-height: 130px;
         }
     }
 }
@@ -104,6 +110,9 @@ body {
 @media screen and (min-width: 1000px){
 
     body {
+        background-image: url(../images/bg-lg.jpg);
+        background-size: cover;
+        
         .ucf {
             position: absolute;
             top: 0;
@@ -120,6 +129,11 @@ body {
             &:hover {
                 cursor:pointer;
             }
+        }
+
+        .col-md-3 {
+            height: 100%;
+            min-height: 300px;
         }
     }
     
