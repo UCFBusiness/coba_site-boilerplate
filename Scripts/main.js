@@ -17,7 +17,7 @@ require.config({
     }
 });
 
-require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], function () {
+require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'classie'], function () {
 
     //-- navigation menu ----------------------------
     $(".dl-menuwrapper").dlmenu({
@@ -116,12 +116,15 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
-            $('.cover').css('min-height', screenheight);
+            $('.cover').css('min-height', screenheight - 48);
             //------------------------------------------------
 
             //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
             $(".target_blank").pageslide({ direction: "left" });
-            $("#slidecontent").css("height", screenheight);
+            $("#slidecontent").css("height", function (index) {
+                var toolBar = parseInt($('#toolbar').height());
+                return screenheight - toolBar;
+            });
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -137,13 +140,12 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
             $("#message").html(screenwidth + " x " + screenheight + " - tablet");
             //------------------------------------------------
 
-            //-- resize to fit -------------------------------
-            //$('.cover').css('min-height', screenheight);
-            //------------------------------------------------
-
             //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
             $(".target_blank").pageslide({ direction: "left" });
-            $("#slidecontent").css("height", screenheight);
+            $("#slidecontent").css("height", function (index) {
+                var toolBar = parseInt($('#toolbar').height());
+                return screenheight - toolBar;
+            });
             //------------------------------------------------
 
             //-- page menu -----------------------------------
@@ -180,15 +182,15 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
                 var cover = parseInt($("aside.cover").width());
                 return screenwidth - cover;
             });
-            $("#slidecontent").css("height", screenheight);
+            $("#slidecontent").css("height", function (index) {
+                var toolBar = parseInt($('#toolbar').height());
+                return screenheight - toolBar;
+            });
             //------------------------------------------------
 
             //-- page menu -----------------------------------
             $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 410} });
             //------------------------------------------------
-
-            //$('body').chardinJs('start');
-
         });
 
     //---------------------------------------------------
@@ -208,10 +210,6 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
                 $("#message").html(screenwidth + " x " + screenheight + " - mobile");
                 //------------------------------------------------
 
-                //-- resize to fit -------------------------------
-                //$('.cover').css('min-height', screenheight);
-                //------------------------------------------------
-
             });
 
         if ((screenwidth > 580) && (screenwidth < 999)) //load tablet scripts
@@ -219,10 +217,6 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
 
                 //-- screen-size ----------------------------------
                 $("#message").html(screenwidth + " x " + screenheight + " - tablet");
-                //------------------------------------------------
-
-                //-- resize to fit -------------------------------
-                //$('.cover').css('min-height', screenheight);
                 //------------------------------------------------
 
             });
@@ -234,16 +228,15 @@ require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx'], func
                 $("#message").html(screenwidth + " x " + screenheight + " - desktop");
                 //------------------------------------------------
 
-                //-- resize to fit -------------------------------
-                //$('.cover').css('min-height', screenheight);
-                //------------------------------------------------
-
                 //-- pageslide size adjust -------------------------------
                 $('#pageslide').css("width", function (index) {
                     var cover = parseInt($("aside.cover").width());
                     return screenwidth - cover;
                 });
-                $("#slidecontent").css("height", screenheight - 34);
+                $("#slidecontent").css("height", function (index) {
+					var toolBar = parseInt($('#toolbar').height());
+					return screenheight - toolBar;
+				});
                 //------------------------------------------------
                  
             });

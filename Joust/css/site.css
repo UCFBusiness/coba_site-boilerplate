@@ -56,8 +56,8 @@ body .copyright {
 @media screen and (max-width: 999px) {
   /* line 70, ../scss/site.scss */
   body {
-    background-image: url(../images/bg-xs.jpg);
-    background-size: cover;
+    background: #ffcc00 url(../images/bg-lg.jpg) no-repeat fixed top center;
+    background-size: contain;
   }
   /* line 74, ../scss/site.scss */
   body .ucf {
@@ -89,20 +89,24 @@ body .copyright {
     border: 1px solid #444;
     border-radius: 5px;
   }
+  /* line 106, ../scss/site.scss */
+  body .slide img {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1000px) {
-  /* line 112, ../scss/site.scss */
+  /* line 115, ../scss/site.scss */
   body {
-    background-image: url(../images/bg-lg.jpg);
-    background-size: cover;
+    background: #ffcc00 url(../images/bg-lg.jpg) no-repeat fixed center;
+    background-size: contain;
   }
-  /* line 116, ../scss/site.scss */
+  /* line 119, ../scss/site.scss */
   body .ucf {
     position: absolute;
     top: 0;
     left: 1.5%;
   }
-  /* line 122, ../scss/site.scss */
+  /* line 125, ../scss/site.scss */
   body .video-player {
     background: url(../images/video-md.png) no-repeat;
     border: 1px solid #444;
@@ -110,11 +114,11 @@ body .copyright {
     width: 420px;
     height: 280px;
   }
-  /* line 129, ../scss/site.scss */
+  /* line 132, ../scss/site.scss */
   body .video-player:hover {
     cursor: pointer;
   }
-  /* line 134, ../scss/site.scss */
+  /* line 137, ../scss/site.scss */
   body .col-md-3 {
     height: 100%;
     min-height: 300px;

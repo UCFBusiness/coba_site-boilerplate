@@ -388,6 +388,10 @@ body {
     -moz-text-size-adjust: auto;
     -ms-text-size-adjust: auto;
   }
+  
+  iframe {
+	-webkit-overflow-scrolling: touch !important;
+  }
 
   /* line 137, ../Content/scss/partials/_primary.scss */
   .cover {

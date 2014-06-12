@@ -1,25 +1,46 @@
-//
 // Media-Queries
-// --------------------------------------------------
 
 /* Apply to all resolutions. Inherits to all layouts. */
 
-$media: "screen";
 
-/* Tablet */
-@media $media and (max-width: 999px){}
+/* Tablet(portrait) Layout. */
+@media screen and (max-width: 999px) {
+    
+     
+}
 
-/* Mobile */
-@media $media and (max-width: 599px){}
+/* Mobile(landscape) Layout. */
+@media screen and (max-width: 580px) {
+    
+     
+}
 
-/* Small Desktop */
-@media $media and (min-width: 1000px){}
+/* Mobile(portrait) Layout. */
+@media screen and (max-width: 380px) {
+    
+     
+}
 
-/* NoteBook */
-@media $media and (min-width: 1300px){}
+/* Tablet(landscape) and Small Desktop Layout. */
+@media screen and (min-width:1000px){
 
-/* Large Desktop */
-@media $media and (min-width: 1600px){}
+
+}
+
+/* Laptop Layout. */
+@media screen and (min-width:1300px){
+
+
+}
+
+/* Large Desktop Layout. */
+@media screen and (min-width:1600px){
+
+
+}
 
 /* Print Layout */
-@media print {}
+@media print {
+    
+
+}
