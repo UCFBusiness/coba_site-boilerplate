@@ -1,21 +1,14 @@
-// * In this file you should write your main styles. (or centralize your imports)
-
 // Compass
-@import "compass";
+@import "compass/css3";
+@import "compass/css3/box-sizing";
 
-
-// Sprites
-@import "ico/*.png";
-@include all-ico-sprites;
-
-
-// Third-party
-@import "bourbon/bourbon";
-
+// Bootstrap
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
 
 // Partials
 @import "partials/base";
-
+@import "partials/print";
 
 // Modules and Variables
 @import "modules/sly/sly";
@@ -24,20 +17,6 @@
 @import "modules/typography";
 @import "modules/pageslide";
 
-/* Development Only Border CSS - delete when done 
--------------------------------------------------- */
-
-/*
-.borderline {
-    border: 1px dashed red;
-}
-
-.centerline, .content-wrapper {
-    border: 1px dashed blue;
-    height: 75px;
-}
-
-.container {
-    border: 1px dashed green;
-}
-*/
+// Sprites
+@import "ico/*.png";
+@include all-ico-sprites;

@@ -182,9 +182,9 @@
 /*.controls .divider { display: inline-block; margin: 0 10px; }*/
 
 /* Button Controls */
-.controls button { background: rgba(255, 204, 0, .6); border: 0; color: #ffcc00; opacity: .5;}
+.controls button { background: rgba(255, 204, 0, .6); border: 0; color: #333; opacity: .7;}
 .controls button:hover { opacity: 1; }
-.controls button:disabled { opacity: .2; }
+.controls button:disabled { opacity: 0; }
 
 .next, .prev, .forward, .backward, .prevPage, .nextPage { 
     background: rgba(255, 204, 0, .3);
@@ -218,6 +218,12 @@
     .frame ul li img { /* panel image */
         height: 240px; /*<== height of panel image */
         width: 257px; /*<== width of panel image */
+    }
+
+    /* Button Controls */
+    .next, .prev, .forward, .backward, .prevPage, .nextPage { 
+        visibility:visible;
+        height: 268px; /*<== match height of panel*/   
     }
 
 }

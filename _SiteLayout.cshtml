@@ -19,8 +19,6 @@
 		<meta name="apple-mobile-web-app-title" content="UCF-Business" />
 		<link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
 		<!--BEGIN: Styles-->
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="~/styles/site.css" /><!-- Site CSS -->
 		@RenderSection("Styles", required: false)
 		<!--FINIS: Styles-->
@@ -39,21 +37,21 @@
 		</script>
 		<!-- Google Code End -->
 
-<!-- Start of Woopra Code -->
-<script>
-(function(){
-	var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
-})("woopra");
+        <!-- Start of Woopra Code -->
+        <script>
+        (function(){
+	        var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+        })("woopra");
 
-woopra.config({
-	domain: 'web.bus.ucf.edu'
-});
-woopra.track();
-</script>
-<!-- End of Woopra Code -->
+        woopra.config({
+	        domain: 'web.bus.ucf.edu'
+        });
+        woopra.track();
+        </script>
+        <!-- End of Woopra Code -->
 
 	</head>
-	<body class="page page-img" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);"> <!--Hides URL Bar on iPhone-->
+	<body class="page page-img">
 		<a id="top"></a>
 		<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -186,9 +184,7 @@ woopra.track();
 									<div><!--footer--></div>
 								</div>
 							</div><!--/.cover-body -->
-
-<!--Beta Image--><span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span><!--Beta Image-->
-						
+                        <!--Beta Image--><span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(/images/beta.png) no-repeat;"></span><!--Beta Image-->
 						</aside><!--/.cover -->
 
 						<section id="main-content" class="wrapper"><!-- content background image -->
@@ -269,6 +265,7 @@ woopra.track();
 								Stuff goes here.
 							</div>
 						</aside>*@<!--/.backend -->
+
 				</div>
 			</div>
 		</div><!--/content container -->
@@ -278,20 +275,14 @@ woopra.track();
 		<div class="loading-bar"></div>
 
 		<!--BEGIN: Scripts-->
-		<!--[if lt IE 9]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- jquery -->
+        <!--[if lt IE 9]>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<![endif]-->
-		<!--[if gte IE 9]><!-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- jquery -->
-		<script>window.jQuery || document.write('<script src="~/scripts/jquery-2.0.3.min.js"><\/script>')</script>
-		<!--<![endif]-->
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>	
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js"></script>
 		<script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js"></script>
-
-		<script data-main="/scripts/main" src="//scripts.bus.ucf.edu/cdn/js/require.min.js"></script>
-
+		<script data-main="/scripts/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
 		<script type="text/javascript">
 			//Track for this site.
 			$('.dl-trigger').click(function () {
@@ -302,13 +293,10 @@ woopra.track();
 				_gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
 			});
 		</script>
-		
+        @RenderSection("Scripts", required: false)
 		<!-- ADD UCF HEADER -->
 		<script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
 		<!-- END UCF HEADER -->
-		
-		@RenderSection("Scripts", required: false)
 		<!--FINIS: Scripts-->
-
 	</body>
 </html>

@@ -4,6 +4,7 @@ console.log( "START: main.js" );
 require.config({
     waitSeconds: 10,
     paths: {
+        'bootstrap': '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
         'classie': 'js/classie',
         'debouncedresize': 'js/jquery.debouncedresize',
         'dmenu': 'js/jquery.dlmenu',
@@ -17,7 +18,7 @@ require.config({
     }
 });
 
-require(['debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'classie'], function () {
+require(['bootstrap', 'debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'classie'], function () {
 
     //-- navigation menu ----------------------------
     $(".dl-menuwrapper").dlmenu({

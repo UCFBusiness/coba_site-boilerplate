@@ -8,21 +8,20 @@
 // Bootstrap changes
 @import "grids";
 
-// Font weights
-$light: 100;
-$regular: 400;
-$bold: 600;
 
-// Base Font
-$base-font-family: sans-serif;
-$base-font-weight: $regular;
-$base-font-size: 13px;
-$base-line-height: 1.4;
+/* Development Only Border CSS - (delete when done)
+-------------------------------------------------- */
+/*
+.borderline {
+    border: 1px dashed red;
+}
 
-// Fixed Font
-$fixed-font-family: monospace;
-$fixed-font-size: 85%;
-$fixed-line-height: $base-line-height;
+.centerline, .content-wrapper {
+    border: 1px dashed blue;
+    height: 75px;
+}
 
-// Headings
-$header-font-weight: $bold;
+.container {
+    border: 1px dashed green;
+}
+*/
