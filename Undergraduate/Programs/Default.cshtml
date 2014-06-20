@@ -10,23 +10,23 @@
 }
 
 @section featured {
+<div class="text-area">
+    <p><a href="https://apply.ucf.edu/application/login.aspx" class="btn btn-primary btn-lg btn-yellow" role="button" target="_blank">Apply Online</a></p>
     <hgroup class="page-title">
         <h1>@Page.Title</h1>
         <h2>Undergraduate</h2>
     </hgroup>
-    <a href="https://apply.ucf.edu/application/login.aspx" class="btn btn-primary btn-lg btn-yellow" role="button" target="_blank">Apply Online</a>
+</div>
 }
 
-<article>
-
 <section>
-
+    <div class="col-sm-6 text-area">
         <div class="row">
             <div class="col-md-8">
                 <h2>Bachelors of Science in<br>Business Administration <small>(7)</small></h2>
                 <p>The Bachelor of Science in Business Administration is designed for students who wish to receive specialized training in any of 7 degree tracks.</p>
-            </div>
-            <div class="col-md-4">
+            @*</div>
+            <div class="col-md-4">*@
                 <div><a href="~/undergraduate/programs/bsba-accounting">Accounting</a></div>
                 <div><a href="~/undergraduate/programs/bsba-economics">Economics</a></div>
                 <div><a href="~/undergraduate/programs/bsba-finance">Finance</a></div>
@@ -36,7 +36,9 @@
                 <div><a href="~/undergraduate/programs/bsba-real-estate">Real Estate</a></div>
             </div>
         </div>
+    </div>
 
+    <div class="col-sm-6 text-area">
         <div class="row">
             <div class="col-md-6">
                 <h2>Bachelor of Arts in<br>Business Administration</h2>
@@ -52,7 +54,9 @@
                     arts education. <br><a href="~/undergraduate/programs/ba">Learn more.</a></p>
             </div>
         </div>
+    </div>
 
+    <div class="col-sm-12 text-area">
         <div class="row">
             <div class="col-md-12"><h2>Business Minors <small>(11)</small></h2></div>
             <div class="col-md-4">
@@ -73,7 +77,5 @@
                 <div><a href="~/undergraduate/programs/minor-technological-entrepreneurship">Technological Entrepreneurship</a></div>
             </div>
         </div>
-
+    </div>
 </section>
-
-</article>

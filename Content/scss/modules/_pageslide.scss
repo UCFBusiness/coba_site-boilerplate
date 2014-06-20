@@ -35,20 +35,6 @@
 .modal {display: none;}
 
 
-/* Tablet(portrait) Layout. */
-@media all and (max-width: 768px) {
-    
-     
-}
-
-
-/* Tablet(portrait) Layout. */
-@media all and (max-width: 500px) {
-    
-     
-}
-
-
 /* Tablet(landscape) and Small Desktop Layout. */
 @media screen and (min-width:1000px){
 
@@ -56,19 +42,5 @@
         height: 100%;
         width: 100%;
     }
-
-}
-
-
-/* Laptop Layout. */
-@media screen and (min-width:1300px){
-
-
-}
-
-
-/* Large Desktop Layout. */
-@media screen and (min-width:1600px){
-
 
 }
