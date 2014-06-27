@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
-		<!--
-
-		Copyright (c) University of Central Florida, College of Business | http://business.ucf.edu
-
-		-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<title>@Page.Title - UCF College of Business Administration</title>
-		<meta name="description" content="University of Central Florida, College of Business Administration, Accounting, Economics, Finance, Management, Marketing, Real Estate, Sport Business" />
+		<title>UCF College of Business Administration - @Page.Title</title>
+		<meta name="description" content="University of Central Florida, College of Business Administration, Accounting, Economics, Finance, Management, Marketing, Real Estate, Sport Business, Entrepreneurship" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta name="apple-mobile-web-app-title" content="UCF-Business" />
 		<link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+        <!--
 
-		<!--BEGIN: Styles-->
+		Copyright (c) University of Central Florida, College of Business | http://business.ucf.edu
+
+		-->
+		<!-- Styles: BEGIN -->
 		<link type="text/css" rel="stylesheet" href="~/styles/site.css" />
 		@RenderSection("Styles", required: false)
-		<!--FINIS: Styles-->
+		<!-- Styles: FINIS -->
+
 		<script src="~/scripts/modernizr-2.6.2.js"></script>
 
+        <!-- Analytics: BEGIN -->
 		@*
-		<script type="text/javascript">
+		<!-- Google Code Start -->
+        <script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-44861717-1']);
 		  _gaq.push(['_trackPageview']);
@@ -51,19 +51,19 @@
         </script>
         <!-- End of Woopra Code -->
         *@
+        <!-- Analytics: BEGIN -->
 
 	</head>
 	<body class="page page-img">
+
 		<a id="top"></a>
+
 		<!--[if lt IE 8]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!--BEGIN: Content-->
+		<!-- Content: BEGIN -->
 		<div id="container">
-
-
-
 
 
 			<aside class="cover">
@@ -187,18 +187,19 @@
 				<div class="cover-body">
 					<div class="cover-body-inner">
 						<h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
-						<img src="~/images/ucf-opportunity.png" alt="ucf stands for opportunity">
+                        <img src="~/images/blank.gif" alt="ucf stands for opportunity logo" data-echo="/images/ucf-opportunity.png">
 						<div><!--footer--></div>
 					</div>
 				</div><!--/.cover-body -->
 
-                <!-- Beta Image: BEGIN -->
-                <span style="position:absolute; top:0; right:0; z-index:9999; width:60px; height:60px; background:url(data:image/png;base64,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) no-repeat"></span>
-                <!-- Beta Image: FINIS -->
+
+<!-- Beta Image: BEGIN -->
+<!-- for development only -->
+<span style="position:absolute; top:0; right:-5px; z-index:100; width:50px; height:50px"><img src="~/images/blank.gif" alt="beta image" width="60px" height="60px" data-echo="/images/beta.png"></span>
+<!-- Beta Image: FINIS -->
+
+
 			</aside><!--/.cover -->
-
-
-
 
 
 			<section class="wrapper"><!-- content background image -->
@@ -263,9 +264,11 @@
 								</li>
 							</ul>
 
-                            <!-- Feedback: BEGIN -->
-                            <div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div><br>
-                            <!-- Feedback: FINIS -->
+
+<!-- Feedback: BEGIN -->
+<div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div><br>
+<!-- Feedback: FINIS -->
+
 
 							<div><span class="copyright">&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration.</span></div>
 						</div>
@@ -275,9 +278,6 @@
 			</section><!--/.wrapper -->
 
 
-
-
-
 			@*<aside class="backend content-wrapper">
 				<div class="backend-cover-img" style="background-image: url('images/finance-bg.jpg')">
 					Stuff goes here.
@@ -285,24 +285,23 @@
 			</aside>*@<!--/.backend -->
 
 
-
-
-
 		</div><!--/content container -->
-		<!--FINIS: Content-->
+		<!-- Content: FINIS -->
 
 		<a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
 		<div class="loading-bar"></div>
 
 		<!--BEGIN: Scripts-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- jquery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <!--[if lt IE 9]>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<![endif]-->
+
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js"></script>
 		<script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js"></script>
 		<script data-main="/scripts/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+
 		<script type="text/javascript">
 			//Track for this site.
 			$('.dl-trigger').click(function () {
@@ -313,10 +312,15 @@
 				_gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
 			});
 		</script>
+
         @RenderSection("Scripts", required: false)
-		<!-- ADD UCF HEADER -->
-		<script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
-		<!-- END UCF HEADER -->
-		<!--FINIS: Scripts-->
+        <!--Scripts: FINIS-->
+
+
+<!-- ADD UCF HEADER -->
+<script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
+<!-- END UCF HEADER -->
+
+
 	</body>
 </html>

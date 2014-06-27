@@ -1,76 +1,18 @@
 ﻿@{
     Layout = "~/_TestLayout.cshtml";
     Page.Title = "Home";
-
-    //Cache Page
-    //Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
-    //Response.Cache.SetCacheability(HttpCacheability.Public);
-    //Response.Cache.SetValidUntilExpires(true);
-
-    //System.Diagnostics.Trace.WriteLine("This message is forwarded to the TraceContext from System.Diagnostics using the WebPageTraceListener.");
-
 }
 
 @section Scripts {
-@*
 
-<!-- the mousewheel plugin -->
-<script type="text/javascript" src="scripts/js/jquery.mousewheel.js"></script>
-
-<!-- the mwheelIntent plugin -->
-<script type="text/javascript" src="scripts/js/mwheelIntent.js"></script>
-
-<!-- the jScrollPane script -->
-<script type="text/javascript" src="scripts/js/jquery.jscrollpane.min.js"></script>
-
-
-<script>
-    $(function()
-	{
-		$('.scroll-pane').jScrollPane();
-	});
-</script>
-
-*@
 }
 
 @section Styles {
-<style>
-    /*-- #events ul li:nth-child(1) { width: 160px; margin: 0 4px 0 20px; } --*/
-    /*-- #faculty ul li:nth-child(1) { width: 160px; margin: 0 4px 0 20px; } --*/
-    
-    
-    /*
-	.scroll-pane
-	{
-		width: 100%;
-		height: 300px;
-		overflow: auto;
-        border: 1px dashed red;
-	}
-    */
-        
-</style>
+
 }
 
 @section featured {
-<section id="login" style="display: none;">
-    <p>Authenticated: @WebSecurity.IsAuthenticated</p>
-    @if (WebSecurity.IsAuthenticated) {
-        <text>
-            Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
-            <form id="logoutForm" action="~/Account/Logout" method="post">
-                @AntiForgery.GetHtml()
-                <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
-            </form>
-        </text>
-    } else {
-        <ul>
-            <li><a href="~/Account/Register">Register</a></li>
-            <li><a href="~/Account/Login">Log in</a></li>
-        </ul>
-    }
-</section>
+
 }
 
 <!--// ROW -->
