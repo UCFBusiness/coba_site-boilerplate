@@ -14,7 +14,8 @@ require.config({
         'pageslide': 'js/jquery.pageslide',
         'sidebarfx': 'js/sidebarEffects',
         'sly': 'js/sly.min',
-        'stroll': 'js/stroll.min'
+        'stroll': 'js/stroll.min',
+        'transitions': 'js/pagetransitions'
     }
 });
 
@@ -117,7 +118,7 @@ require(['bootstrap', 'debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'side
             //------------------------------------------------
 
             //-- resize to fit -------------------------------
-            $('.cover').css('min-height', screenheight - 48);
+            //$('.cover').css('min-height', screenheight - 48);
             //------------------------------------------------
 
             //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close

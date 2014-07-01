@@ -13,7 +13,7 @@ nav.dl-menuwrapper {
     letter-spacing: 1px;
     text-transform: uppercase;
     position: relative;
-    z-index: 1000;
+    z-index: 99999;
 }
 
 /* buttons */
@@ -192,8 +192,8 @@ nav.dl-menuwrapper {
 
 /* nav */
 nav.dl-menuwrapper {
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
     background: none;
     height: 60px;
     font-family: 'Lato', Calibri, Arial, sans-serif;

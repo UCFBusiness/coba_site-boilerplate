@@ -9,10 +9,7 @@ span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
 
 .wrapper-footer-inner {
     background: #eee;
-    padding:20px;
-    /*background: url('/images/home-footer-bg.jpg') top center;
-    background-size:  cover;
-    background-repeat: no-repeat;*/
+    //padding:20px;
 }
 
 .wrapper-footer-inner ul {
@@ -21,7 +18,15 @@ span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
     padding: 0;
 }
 
-.wrapper-footer-inner .icon {margin: 2px 0; padding-left: 33px; line-height: 2.23em;}
+.wrapper-footer-inner .icon {
+    margin: 2px 0; 
+    line-height: 2.23em;
+
+    i {
+        font-size: 1.5em;
+        padding-right: 10px;
+    }
+}
 
 /*-------------------------------*/
 /* The headers */
@@ -29,7 +34,7 @@ span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
 .wrapper-footer-inner p {
     background: #ddd;
     padding: 10px 9px 8px;
-    width: 99%;
+    width: 100%;
 
     text-align:left;
     line-height: 16px;
@@ -64,65 +69,50 @@ span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
     color: #777;
 }
 
-/*
-.wrapper-footer-inner > ul > li ul li a {
-    text-decoration: none !important;
-    color:#333 !important;
-}
-
-.wrapper-footer-inner > ul > li ul li a:hover {
-    color:#7d8691 !important;
-}
-*/
-
 /* Tablet Layout: 501px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 501px) {
-/* =============================================================================
-Footer/Section Layout
-========================================================================== */
+    /* =============================================================================
+    Footer/Section Layout
+    ========================================================================== */
 
-/*-------------------------------*/
-/* The columns */
+    /*-------------------------------*/
 
-.wrapper-footer-inner > ul {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 1px;
-}
+    .wrapper-footer-inner {
+        background: #eee;
+        padding:20px;
+    }
 
-/* The four columns of links */
-.wrapper-footer-inner ul > li {
-    width:25%;
-    float:left;
-}
+    /* The columns */
 
-/*-------------------------------*/
-/* The headers */
+    .wrapper-footer-inner > ul {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 1px;
+    }
 
-.wrapper-footer-inner p {
-    background: none;
-    text-align:left;
-}
+    /* The four columns of links */
+    .wrapper-footer-inner ul > li {
+        width:25%;
+        float:left;
+    }
 
-.wrapper-footer-inner > ul > li:hover p {
-    opacity:1;
-}
+    /*-------------------------------*/
+    /* The headers */
 
-/*-------------------------------*/
-/* The links */
-.wrapper-footer-inner > ul > li ul li {
-    font-size: .8em;
-}
+    .wrapper-footer-inner p {
+        background: none;
+        text-align:left;
+        font-weight: bold;
+    }
 
-.wrapper-footer-inner > ul > li ul li a {
-    font-size: 1.1em;
-}
+    /*-------------------------------*/
+    /* The links */
+    .wrapper-footer-inner > ul > li ul li {
+        font-size: .8em;
+    }
 
-}
-
-/* Desktop Layout: 1025px to max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 1025px) {
-
-    
+    .wrapper-footer-inner > ul > li ul li a {
+        font-size: 1.1em;
+    }
 
 }
