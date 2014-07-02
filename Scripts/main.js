@@ -1,255 +1,284 @@
-//Logs the start of the file.
-console.log( "START: main.js" );
+/*! Avoid `console` errors in browsers that lack a console. */
+(function () { for (var g, h = function () { }, f = "assert clear count debug dir dirxml error exception group groupCollapsed groupEnd info log markTimeline profile profileEnd table time timeEnd timeStamp trace warn".split(" "), j = f.length, i = window.console = window.console || {}; j--; ) { g = f[j], i[g] || (i[g] = h) } })();
+//-----------------------------------------------
+// Logs the start of the file.
+console.log( 'START: main.js' );
+//-----------------------------------------------
 
-require.config({
-    waitSeconds: 10,
+// Configure RequireJS
+requirejs.config({
+    baseUrl: 'scripts',
     paths: {
-        'bootstrap': '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
-        'classie': 'js/classie',
-        'debouncedresize': 'js/jquery.debouncedresize',
-        'dmenu': 'js/jquery.dlmenu',
-        'easing': 'js/jquery.easing.min',
-        'echo': 'js/echo.min',
-        'lockfix': 'js/jquery.lockfixed.min',
-        'pageslide': 'js/jquery.pageslide',
-        'sidebarfx': 'js/sidebarEffects',
-        'sly': 'js/sly.min',
-        'stroll': 'js/stroll.min',
-        'transitions': 'js/pagetransitions'
+        /**-----------------------------------
+         Frameworks/Libraries
+        -----------------------------------**/
+
+        'angular': [ // angular does not support AMD out of the box, put it in a shim
+            '//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min',
+            // If CDN fails, load from this location
+            'libs/angular.min'
+        ],
+        'bootstrap': [
+            '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
+            // If CDN fails, load from this location
+            'libs/bootstrap.min'
+        ],
+        'jquery': [
+            '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
+            // If CDN fails, load from this location
+            'libs/jquery-2.0.3.min'
+        ],
+        'jquery-ui': [
+            '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min',
+            // If CDN fails, load from this location
+            'libs/jquery-ui-1.10.3.min'
+        ],
+        'modernizr': [
+            //'//ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.6.2',
+            // If CDN fails, load from this location
+            'libs/modernizr-2.6.2.min'
+        ],
+        'domReady': 'libs/domReady',
+
+        /**-----------------------------------
+         jQuery Plugins
+        -----------------------------------**/
+        'classie': 'libs/classie',
+        'dlmenu': 'libs/jquery.dlmenu',
+        'debounced': 'libs/jquery.debouncedresize',
+        'echo': 'libs/echo.min',
+        'lazyloader': 'libs/jquery.bttrlazyloading.min',
+        'lockfix': 'libs/jquery.lockfixed.min',
+        'stroll': 'libs/stroll.min',
+        // offcanvas ---------------------------------
+        'offcanvas': 'libs/jquery.offcanvas',
+        'overthrow': 'libs/overthrow',
+        'hammer': 'libs/hammer',
+        'jhammer': 'libs/jquery.hammer',
+        // pagescroll --------------------------------
+        'mousewheel': 'libs/jquery.mousewheel',
+        'mwintent': 'libs/mwheelIntent',
+        'jscroll': 'libs/jquery.jscrollpane.min',
+        // -------------------------------------------
+        'pageslide': 'libs/jquery.pageslide',
+        'transitions': 'js/pagetransitions',
+        // sly ----------------------------------------
+        'easing': 'libs/jquery.easing.min',
+        'sly': 'libs/sly.min',
+        //'sly-horizontal': 'js/sly.horizontal'
+        // -------------------------------------------
+    },
+    shim:
+    {
+        'angular':
+        {
+            exports: 'angular'
+        },
+        'bootstrap':
+        {
+            deps: ['jquery'],
+            exports: 'bootstrap'
+        },
+        'jquery':
+        {
+            exports: '$'
+        },
+        'jquery-ui':
+        {
+            deps: ['jquery'],
+            exports: 'jqueryui'
+        },
+        'modernizr':
+        {
+            exports: 'modernizr'
+        },
+        // -------------------------------------------
+        'dlmenu':
+        {
+            deps: ['jquery']
+        },
+        'debounced':
+        {
+            deps: ['jquery']
+        },
+        'easing':
+        {
+            deps: ['jquery']
+        },
+        'jscroll':
+        {
+            deps: ['jquery', 'mousewheel', 'mwintent']
+        },
+        'lazyloader':
+        {
+            deps: ['jquery']
+        },
+        'lockfix':
+        {
+            deps: ['jquery']
+        },
+        'mousewheel':
+        {
+            deps: ['jquery']
+        },
+        'mwintent':
+        {
+            deps: ['mousewheel']
+        },
+        'pageslide':
+        {
+            deps: ['jquery']
+        },
+        'sly':
+        {
+            deps: ['easing'],
+            exports: 'sly'
+        },
+        'transitions':
+        {
+            deps: ['jquery']
+        }
+        // -------------------------------------------
     }
 });
 
-require(['bootstrap', 'debouncedresize', 'easing', 'dmenu', 'sly', 'echo', 'sidebarfx', 'classie'], function () {
+// Enter global require code here...
+require(['modernizr'], function ()
+{
+    require(['jquery', 'domReady'], function ($, domReady)
+    {
+        // Log that jquery was loaded into the global name-space
+        console.log('jQuery', $.fn.jquery, 'loaded!');
 
-    //-- navigation menu ----------------------------
-    $(".dl-menuwrapper").dlmenu({
-        animationClasses: {
-            classin: "dl-animate-in-2",
-            classout: "dl-animate-out-2"
-        }
-    }); //-------------------------------------------
-
-
-    //----- fade out fixed menu----------------------
-    var nav = $("#nav");
-
-    $(window).scroll(function () {
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop != 0)
-            $(nav).stop().animate({ "opacity": "0.2" }, 400);
-        else
-            $(nav).stop().animate({ "opacity": "1" }, 400);
-    });
-
-    $(nav).hover(
-        function (e) {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop != 0) {
-                $(this).stop().animate({ "pacity": "1" }, 400);
-            }
-        },
-        function (e) {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop != 0) {
-                $(this).stop().animate({ "pacity": "0.2" }, 400);
-            }
-        }
-    ); //--------------------------------------------
-
-
-    //-- lazy load images ---------------------------
-    Echo.init({
-        offset: 0,
-        throttle: 250
-    });
-    
-    // Echo.render(); is also available for non-scroll callbacks
-    //-----------------------------------------------
-
-
-    //-- easing : menu navigation -----------------------------
-    $("ul.menu a").bind("click", function (event) {
-        var $anchor = $(this);
-        $("html, body").stop().animate({
-            scrollTop: $($anchor.attr("href")).offset().top
-        }, 1500, "easeInOutExpo");
-        event.preventDefault();
-    }); //-------------------------------------------
-
-    //-- easing : next page -----------------------------
-    $(".btnNext").bind("click", function (event) {
-        var $anchor = $(this);
-        $("html, body").stop().animate({
-            scrollTop: $($anchor.attr("href")).offset().top
-        }, 1500, "easeInOutExpo");
-        event.preventDefault();
-    }); //-------------------------------------------
-
-    //-- easing : back to top --------------------------------
-    var offset = 220;
-    var duration = 500;
-    var topButton = $(".back-to-top");
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > offset) {
-            $(topButton).fadeIn(duration);
-        } else {
-            $(topButton).fadeOut(duration);
-        }
-    });
-
-    $(topButton).click(function (event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, duration);
-        return false;
-    });
-    //-----------------------------------------------
-
-
-    //-- global variables (not encouraged) ----------
-    var screenwidth = parseInt($(this).width());
-    var screenheight = parseInt($(this).height());
-
-    if (screenwidth < 581) //load mobile scripts
-        require(['pageslide', 'lockfix'], function () {
-
-            //-- screen-size ----------------------------------
-            $("#message").html(screenwidth + " x " + screenheight + " - mobile");
-            //------------------------------------------------
-
-            //-- resize to fit -------------------------------
-            //$('.cover').css('min-height', screenheight - 48);
-            //------------------------------------------------
-
-            //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
-            $(".target_blank").pageslide({ direction: "left" });
-            $("#slidecontent").css("height", function (index) {
-                var toolBar = parseInt($('#toolbar').height());
-                return screenheight - toolBar;
-            });
-            //------------------------------------------------
-
-            //-- page menu -----------------------------------
-            $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 10} });
-            //------------------------------------------------
-
+        // Right-click disabled
+        $(document).bind('contextmenu', function (e)
+        {
+            return false;
         });
 
-    if ((screenwidth > 580) && (screenwidth < 999)) //load tablet scripts
-        require(['pageslide', 'lockfix'], function () {
-
-            //-- screen-size ----------------------------------
-            $("#message").html(screenwidth + " x " + screenheight + " - tablet");
-            //------------------------------------------------
-
-            //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
-            $(".target_blank").pageslide({ direction: "left" });
-            $("#slidecontent").css("height", function (index) {
-                var toolBar = parseInt($('#toolbar').height());
-                return screenheight - toolBar;
-            });
-            //------------------------------------------------
-
-            //-- page menu -----------------------------------
-            $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 0, bottom: 410} });
-            //------------------------------------------------
-
-        });
-
-    if (screenwidth > 1000) //load desktop scripts
-        require(['pageslide', 'lockfix'], function () {
-
-            //-- disable right-click ------------------------
-            $(document).bind("contextmenu", function (e) {
-                return false;
-            }); //--------------------------------------------
-
-            //-- check if cookies are enabled ---------------
-            var dt = new Date();
-            dt.setSeconds(dt.getSeconds() + 60);
-            document.cookie = "cookietest=1; expires=" + dt.toGMTString();
-            var cookiesEnabled = document.cookie.indexOf("cookietest=") != -1;
-            if (!cookiesEnabled) {
-                //cookies are not enabled
-                alert("cookies are not enabled");
-            } //----------------------------------------------
-
-            //-- screen-size ----------------------------------
-            $("#message").html(screenwidth + " x " + screenheight + " - desktop");
-            //------------------------------------------------
-
-            //-- Slide to the left; if slide is model, you'll have to call $.pageslide.close() to close
-            $(".target_blank").pageslide({ direction: "left" });
-            $("#pageslide").css("width", function (index) {
-                var cover = parseInt($("aside.cover").width());
-                return screenwidth - cover;
-            });
-            $("#slidecontent").css("height", function (index) {
-                var toolBar = parseInt($('#toolbar').height());
-                return screenheight - toolBar;
-            });
-            //------------------------------------------------
-
-            //-- page menu -----------------------------------
-            $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 410} });
-            //------------------------------------------------
-        });
-
-    //---------------------------------------------------
-    // On Smart PageResize...
-    // fires only after user is done resizing the window
-    //---------------------------------------------------
-
-    $(window).on('debouncedresize', function (event) {
-
-        var screenwidth = parseInt($(this).width());
-        var screenheight = parseInt($(this).height());
-
-        if (screenwidth < 581) //load mobile scripts
-            require([], function () {
-
-                //-- screen-size ----------------------------------
-                $("#message").html(screenwidth + " x " + screenheight + " - mobile");
-                //------------------------------------------------
-
-            });
-
-        if ((screenwidth > 580) && (screenwidth < 999)) //load tablet scripts
-            require([], function () {
-
-                //-- screen-size ----------------------------------
-                $("#message").html(screenwidth + " x " + screenheight + " - tablet");
-                //------------------------------------------------
-
-            });
-
-        if (screenwidth > 1000) //load desktop scripts
-            require(['pageslide'], function () {
-
-                //-- screen-size ----------------------------------
-                $("#message").html(screenwidth + " x " + screenheight + " - desktop");
-                //------------------------------------------------
-
-                //-- pageslide size adjust -------------------------------
-                $('#pageslide').css("width", function (index) {
-                    var cover = parseInt($("aside.cover").width());
-                    return screenwidth - cover;
+        domReady(function ()
+        {
+            require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'lazyloader', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions'], function ()
+            {
+                // Add off-canvas
+                $("html").offcanvas({
+                    hasSidebarRight: true
                 });
-                $("#slidecontent").css("height", function (index) {
-					var toolBar = parseInt($('#toolbar').height());
-					return screenheight - toolBar;
-				});
-                //------------------------------------------------
-                 
+
+                var screenheight = parseInt($(this).height());
+                $(".pt-perspective").css("height", function (index)
+                {
+                    //var topBar = parseInt($('.topBar').height());
+                    //return screenheight - topBar;
+                    return screenheight;
+                });
+
+                // Lazyload website images
+                $('.img-responsive').bttrlazyloading({
+                    //placeholder: 'data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==',
+                    backgroundcolor: 'transparent',
+                    animation: 'fadeIn',
+                    container: '.scroll-pane'
+                });
+
+
+
+
+                //-- lazy load images ---------------------------
+                Echo.init({
+                    offset: 0,
+                    throttle: 250
+                });
+    
+                // Echo.render(); is also available for non-scroll callbacks
+                //-----------------------------------------------
+
+
+                //-- navigation menu ----------------------------
+                $(".dl-menuwrapper").dlmenu({
+                    animationClasses: {
+                        classin: "dl-animate-in-2",
+                        classout: "dl-animate-out-2"
+                    }
+                }); //-------------------------------------------
+
+                //----- fade out fixed menu----------------------
+                var nav = $("#nav");
+
+                $(window).scroll(function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop != 0)
+                        $(nav).stop().animate({ "opacity": "0.2" }, 400);
+                    else
+                        $(nav).stop().animate({ "opacity": "1" }, 400);
+                });
+
+                $(nav).hover(
+                    function (e) {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop != 0) {
+                            $(this).stop().animate({ "pacity": "1" }, 400);
+                        }
+                    },
+                    function (e) {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop != 0) {
+                            $(this).stop().animate({ "pacity": "0.2" }, 400);
+                        }
+                    }
+                ); //--------------------------------------------
+
+                //-- easing : menu navigation -----------------------------
+                $("ul.menu a").bind("click", function (event) {
+                    var $anchor = $(this);
+                    $("html, body").stop().animate({
+                        scrollTop: $($anchor.attr("href")).offset().top
+                    }, 1500, "easeInOutExpo");
+                    event.preventDefault();
+                }); //-------------------------------------------
+
+                //-- easing : next page -----------------------------
+                $(".btnNext").bind("click", function (event) {
+                    var $anchor = $(this);
+                    $("html, body").stop().animate({
+                        scrollTop: $($anchor.attr("href")).offset().top
+                    }, 1500, "easeInOutExpo");
+                    event.preventDefault();
+                }); //-------------------------------------------
+
+                //-- easing : back to top --------------------------------
+                var offset = 220;
+                var duration = 500;
+                var topButton = $(".back-to-top");
+
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > offset) {
+                        $(topButton).fadeIn(duration);
+                    } else {
+                        $(topButton).fadeOut(duration);
+                    }
+                });
+
+                $(topButton).click(function (event) {
+                    event.preventDefault();
+                    $("html, body").animate({ scrollTop: 0 }, duration);
+                    return false;
+                });
+                //-----------------------------------------------
+
+
+
+
+
+
+                // Add scroll panes
+                //$('.scroll-pane').jScrollPane();
+                //----------------------------------------------- 
+
+                // Logs the end of the file.
+                console.log('END: main.js');
+                //-----------------------------------------------
             });
-
-    }); //end debouncedresize
-
-
-    //Log that jquery was loaded into the global name-space.
-    console.log("jQuery", $.fn.jquery, "loaded!");
-
+        });
+    });
 });
-
-//Logs the end of the file.
-console.log( "END: main.js" );

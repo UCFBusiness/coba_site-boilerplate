@@ -16,11 +16,11 @@
 
 		-->
 		<!-- Styles: BEGIN -->
+        <style>html {height:100% !important;-webkit-text-size-adjust:auto;-moz-text-size-adjust:auto;-ms-text-size-adjust:auto} body {height:100%;padding:0;letter-spacing:1px;position:relative;z-index:0} .devline {border:1px dashed red;margin:0;padding:0}
+        </style>
 		<link type="text/css" rel="stylesheet" href="~/styles/site.css" />
 		@RenderSection("Styles", required: false)
 		<!-- Styles: FINIS -->
-
-		<script src="~/scripts/modernizr-2.6.2.js"></script>
 
         <!-- Analytics: BEGIN -->
 		@*
@@ -285,15 +285,21 @@
 		<div class="loading-bar"></div>
 
 		<!--BEGIN: Scripts-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <!--[if lt IE 9]>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<![endif]-->
-
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<!--
 		<script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js"></script>
-		<script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js"></script>
+-->		
 		<script data-main="/scripts/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+        <script>
+		    require(['main'], function ()
+		    {
+			    // Once the 'main' script is loaded, load up scripts specific to this page
+			    require(['pages/home'], function (Page)
+			    {
+				    Page.onLoad();
+				    Page.onResize();
+			    });
+		    });
+	    </script>
 
 		<script type="text/javascript">
 			//Track for this site.
