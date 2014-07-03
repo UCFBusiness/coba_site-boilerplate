@@ -7,7 +7,7 @@ console.log( 'START: main.js' );
 
 // Configure RequireJS
 requirejs.config({
-    baseUrl: 'scripts',
+    baseUrl: '/scripts',
     paths: {
         /**-----------------------------------
          Frameworks/Libraries
@@ -34,9 +34,9 @@ requirejs.config({
             'libs/jquery-ui-1.10.3.min'
         ],
         'modernizr': [
-            //'//ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.6.2',
+            '//ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.6.2',
             // If CDN fails, load from this location
-            'libs/modernizr-2.6.2.min'
+            '/scripts/libs/modernizr-2.6.2.min'
         ],
         'domReady': 'libs/domReady',
 
@@ -151,37 +151,30 @@ require(['modernizr'], function ()
         console.log('jQuery', $.fn.jquery, 'loaded!');
 
         // Right-click disabled
-        $(document).bind('contextmenu', function (e)
-        {
-            return false;
-        });
+        //$(document).bind('contextmenu', function (e)
+        //{
+        //    return false;
+        //});
+
+
+		// Google Analytics Tracking
+		//$('.dl-trigger').click(function () {
+		//	_gaq.push(['_trackEvent', 'Menu Button', 'Navigation', $(this).text()]);
+		//});
+		//Track navigation for this site.
+		//$('.dl-menu a').click(function () {
+		//	_gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
+		//});
+
 
         domReady(function ()
         {
-            require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'lazyloader', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions'], function ()
+            require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions'], function (ng)
             {
                 // Add off-canvas
                 $("html").offcanvas({
                     hasSidebarRight: true
                 });
-
-                var screenheight = parseInt($(this).height());
-                $(".pt-perspective").css("height", function (index)
-                {
-                    //var topBar = parseInt($('.topBar').height());
-                    //return screenheight - topBar;
-                    return screenheight;
-                });
-
-                // Lazyload website images
-                $('.img-responsive').bttrlazyloading({
-                    //placeholder: 'data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==',
-                    backgroundcolor: 'transparent',
-                    animation: 'fadeIn',
-                    container: '.scroll-pane'
-                });
-
-
 
 
                 //-- lazy load images ---------------------------
@@ -189,7 +182,6 @@ require(['modernizr'], function ()
                     offset: 0,
                     throttle: 250
                 });
-    
                 // Echo.render(); is also available for non-scroll callbacks
                 //-----------------------------------------------
 
@@ -202,31 +194,6 @@ require(['modernizr'], function ()
                     }
                 }); //-------------------------------------------
 
-                //----- fade out fixed menu----------------------
-                var nav = $("#nav");
-
-                $(window).scroll(function () {
-                    var scrollTop = $(window).scrollTop();
-                    if (scrollTop != 0)
-                        $(nav).stop().animate({ "opacity": "0.2" }, 400);
-                    else
-                        $(nav).stop().animate({ "opacity": "1" }, 400);
-                });
-
-                $(nav).hover(
-                    function (e) {
-                        var scrollTop = $(window).scrollTop();
-                        if (scrollTop != 0) {
-                            $(this).stop().animate({ "pacity": "1" }, 400);
-                        }
-                    },
-                    function (e) {
-                        var scrollTop = $(window).scrollTop();
-                        if (scrollTop != 0) {
-                            $(this).stop().animate({ "pacity": "0.2" }, 400);
-                        }
-                    }
-                ); //--------------------------------------------
 
                 //-- easing : menu navigation -----------------------------
                 $("ul.menu a").bind("click", function (event) {
@@ -267,13 +234,10 @@ require(['modernizr'], function ()
                 //-----------------------------------------------
 
 
-
-
-
-
                 // Add scroll panes
                 //$('.scroll-pane').jScrollPane();
                 //----------------------------------------------- 
+
 
                 // Logs the end of the file.
                 console.log('END: main.js');
@@ -281,4 +245,22 @@ require(['modernizr'], function ()
             });
         });
     });
+}, function (err) {
+    //The errback, error callback
+    //The error has a list of modules that failed
+    var failedId = err.requireModules && err.requireModules[0];
+    if (failedId === 'modernizr') {
+        //undef is function only on the global requirejs object.
+        //Use it to clear internal knowledge of jQuery. Any modules
+        //that were dependent on jQuery and in the middle of loading
+        //will not be loaded yet, they will wait until a valid jQuery
+        //does load.
+        requirejs.undef(failedId);
+
+        console.log('Modernizr did not load');
+
+    } else 
+    {
+        
+    }
 });

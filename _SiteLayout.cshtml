@@ -16,8 +16,6 @@
 
 		-->
 		<!-- Styles: BEGIN -->
-        <style>html {height:100% !important;-webkit-text-size-adjust:auto;-moz-text-size-adjust:auto;-ms-text-size-adjust:auto} body {height:100%;padding:0;letter-spacing:1px;position:relative;z-index:0} .devline {border:1px dashed red;margin:0;padding:0}
-        </style>
 		<link type="text/css" rel="stylesheet" href="~/styles/site.css" />
 		@RenderSection("Styles", required: false)
 		<!-- Styles: FINIS -->
@@ -54,7 +52,7 @@
         <!-- Analytics: BEGIN -->
 
 	</head>
-	<body class="page page-img">
+	<body>
 
 		<a id="top"></a>
 
@@ -128,7 +126,7 @@
 								</ul>
 							</li>
 
-							<li><a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">Faculty &amp; Staff Directory</a></li>
+							@*<li><a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">Faculty &amp; Staff Directory</a></li>*@
 
 							@*<li>
 								<a href="#">Faculty &amp; Research</a>
@@ -182,6 +180,7 @@
 
 				<div class="cover-body">
 					<div class="cover-body-inner">
+                        <span id="msg" style="color: #fff"></span>
 						<h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
                         <img src="~/images/blank.gif" alt="ucf stands for opportunity logo" data-echo="/images/ucf-opportunity.png">
 					</div>
@@ -280,44 +279,17 @@
 		</div><!--/content container -->
 		<!-- Content: FINIS -->
 
-
 		<a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
 		<div class="loading-bar"></div>
 
 		<!--BEGIN: Scripts-->
-<!--
-		<script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js"></script>
--->		
 		<script data-main="/scripts/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
-        <script>
-		    require(['main'], function ()
-		    {
-			    // Once the 'main' script is loaded, load up scripts specific to this page
-			    require(['pages/home'], function (Page)
-			    {
-				    Page.onLoad();
-				    Page.onResize();
-			    });
-		    });
-	    </script>
-
-		<script type="text/javascript">
-			//Track for this site.
-			$('.dl-trigger').click(function () {
-				_gaq.push(['_trackEvent', 'Menu Button', 'Navigation', $(this).text()]);
-			});
-			//Track navigation for this site.
-			$('.dl-menu a').click(function () {
-				_gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
-			});
-		</script>
-
         @RenderSection("Scripts", required: false)
         <!--Scripts: FINIS-->
 
 
 <!-- ADD UCF HEADER -->
-<script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
+@*<script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>*@
 <!-- END UCF HEADER -->
 
 

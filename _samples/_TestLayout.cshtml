@@ -20,6 +20,8 @@
 		@RenderSection("Styles", required: false)
 		<!-- Styles: FINIS -->
 
+		<script src="~/scripts/modernizr-2.6.2.js"></script>
+
         <!-- Analytics: BEGIN -->
 		@*
 		<!-- Google Code Start -->
@@ -52,7 +54,7 @@
         <!-- Analytics: BEGIN -->
 
 	</head>
-	<body>
+	<body class="page page-img">
 
 		<a id="top"></a>
 
@@ -100,6 +102,9 @@
 										<a href="#">Executive Education</a>
 										<ul class="dl-submenu">
 											<li class="Label breadcrumb">Academics > Executive Education</li>
+											@*<li><a href="~/execed/custom-programs">Customized Programs</a></li>
+											<li><a href="~/execed/international-residency">International Residency</a></li>
+											<li><a href="~/execed/open-enrollment">Open-Enrollment Programs</a></li>*@
 											<li><a href="http://edc.research.ucf.edu/customized_programs" class="target_blank">Customized Programs</a></li>
 											<li><a href="http://edc.research.ucf.edu/international-programs" class="target_blank">International Residency</a></li>
 											<li><a href="http://edc.research.ucf.edu/open-enrollment-programs" class="target_blank">Open-Enrollment Programs</a></li>
@@ -107,6 +112,7 @@
 									</li>
 								</ul>
 							</li>
+
 							<li>
 								<a href="#">Our College</a>
 								<ul class="dl-submenu">
@@ -121,15 +127,54 @@
 									<li><a href="~/student-organizations">Student Organizations</a></li>
 								</ul>
 							</li>
+
 							<li><a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">Faculty &amp; Staff Directory</a></li>
+
+							@*<li>
+								<a href="#">Faculty &amp; Research</a>
+								<ul class="dl-submenu">
+									<li class="Label breadcrumb">Faculty &amp; Research</li>
+									<li><a href="#"><small>(coming soon)</small></a></li>
+								</ul>
+							</li>*@
+
 							<li>
 								<a href="#">Alumni &amp; Friends</a>
 								<ul class="dl-submenu">
 									<li class="Label breadcrumb">Alumni &amp; Friends</li>
-									<li><a href="http://www.ucfalumni.com/collegeofbusiness" target="_blank">Visit our alumni website</a></li>
+									@*<li><a href="#">Development</a></li>
+									<li><a href="#">Hall of Fame</a></li>
+									<li><a href="#">Spotlights</a></li>*@
+										<li><a href="http://www.ucfalumni.com/collegeofbusiness" target="_blank">Visit our alumni website</a></li>
+
+									<!--action links
+									<li><a href="#">V-volunteer</a></li>
+									<li><a href="#">A-attend</a></li>
+									<li><a href="#">L-lead</a></li>
+									<li><a href="#">U-update</a></li>
+									<li><a href="#">E-experience</a></li>
+									-->
+
 								</ul>
 							</li>
+
+							@*<li>
+								<a href="#">Careers &amp; Recruitment</a>
+								<ul class="dl-submenu">
+									<li class="Label breadcrumb">Careers &amp; Recruitment</li>
+									<li><a href="#">Hire our students</a></li>
+								</ul>
+							</li>*@
 						</ul>
+
+						@*<form id="site-search" class="site-search" action="/search" name="input" method="get">
+							<input type="search" placeholder="SEARCH" name="q" size="27" class="dl-search-field" />
+							<input type="hidden" name="cx" value="004234240553222255636:70uztgpm38y" />
+							<input type="hidden" name="cof" value="FORID:9" />
+							<input type="hidden" name="ie" value="UTF-8" />
+							<input type="submit" value="submit" class="dl-searchbutton" />
+							<span class="dl-search-icon"></span>
+						</form>*@
 
 					</nav><!--/dl-menuwrapper -->
 
@@ -146,6 +191,13 @@
 						<div><!--footer--></div>
 					</div>
 				</div><!--/.cover-body -->
+
+
+<!-- Beta Image: BEGIN -->
+<!-- for development only -->
+<span style="position:absolute; top:0; right:-5px; z-index:100; width:50px; height:50px"><img src="~/images/blank.gif" alt="beta image" width="60px" height="60px" data-echo="/images/beta.png"></span>
+<!-- Beta Image: FINIS -->
+
 
 			</aside><!--/.cover -->
 
@@ -212,6 +264,12 @@
 								</li>
 							</ul>
 
+
+<!-- Feedback: BEGIN -->
+<div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div><br>
+<!-- Feedback: FINIS -->
+
+
 							<div><span class="copyright">&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration.</span></div>
 						</div>
 					</footer><!--/.wrapper-footer -->
@@ -234,13 +292,15 @@
 		<div class="loading-bar"></div>
 
 		<!--BEGIN: Scripts-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <!--[if lt IE 9]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
 
-		@*<script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js"></script>
-		<script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js"></script>*@
-
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="//scripts.bus.ucf.edu/cdn/js/libs/plugins.min.js"></script>
+		<script src="//scripts.bus.ucf.edu/cdn/js/libs/slihoz.min.js"></script>
 		<script data-main="/scripts/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
-        @RenderSection("Scripts", required: false)
-
 
 		@*<script type="text/javascript">
 			//Track for this site.
@@ -252,6 +312,8 @@
 				_gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
 			});
 		</script>*@
+
+        @RenderSection("Scripts", required: false)
         <!--Scripts: FINIS-->
 
 
