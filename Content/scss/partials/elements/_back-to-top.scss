@@ -4,21 +4,22 @@
 
 .back-to-top {
     background-color: rgba(235, 235, 235, 0.80);
-    border: 2px solid #ccc;
+    border: 2px solid #aaa;
     padding: 0 .23em;
     position: fixed;
     bottom: 1em;
     right: 1em;
     font-size: 1.8em;
     text-decoration: none;
-    color: #bbb;
+    color: #444;
     display: none;
     border-radius: 25px;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .back-to-top:hover {    
     background-color: rgba(135, 135, 135, 0.50);
+    border: 2px solid #ddd;
     text-decoration: none;
     color: #fff;
 }

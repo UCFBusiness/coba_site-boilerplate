@@ -6,11 +6,13 @@
 @import "bootstrap/bootstrap";
 @import "font-awesome/font-awesome";
 
+// Variables and Mixins
+@import "helpers/variables";
+
 // Partials
 @import "partials/base";
-@import "partials/print";
 
-// Modules and Variables
+// Modules
 @import "modules/sly/sly";
 //@import "modules/stroll";
 //@import "modules/sidebar-effects";

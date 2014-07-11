@@ -36,37 +36,40 @@ requirejs.config({
         'modernizr': [
             '//ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.6.2',
             // If CDN fails, load from this location
-            '/scripts/libs/modernizr-2.6.2.min'
+            'libs/modernizr-2.6.2.min'
         ],
         'domReady': 'libs/domReady',
 
         /**-----------------------------------
          jQuery Plugins
         -----------------------------------**/
+
         'classie': 'libs/classie',
         'dlmenu': 'libs/jquery.dlmenu',
         'debounced': 'libs/jquery.debouncedresize',
         'echo': 'libs/echo.min',
         'lazyloader': 'libs/jquery.bttrlazyloading.min',
         'lockfix': 'libs/jquery.lockfixed.min',
+        'pageslide': 'libs/jquery.pageslide',
         'stroll': 'libs/stroll.min',
-        // offcanvas ---------------------------------
+        'transitions': 'js/pagetransitions',
+
+        // offcanvas group
         'offcanvas': 'libs/jquery.offcanvas',
         'overthrow': 'libs/overthrow',
         'hammer': 'libs/hammer',
         'jhammer': 'libs/jquery.hammer',
-        // pagescroll --------------------------------
+
+        // pagescroll group
         'mousewheel': 'libs/jquery.mousewheel',
         'mwintent': 'libs/mwheelIntent',
         'jscroll': 'libs/jquery.jscrollpane.min',
-        // -------------------------------------------
-        'pageslide': 'libs/jquery.pageslide',
-        'transitions': 'js/pagetransitions',
-        // sly ----------------------------------------
+
+        // sly group
         'easing': 'libs/jquery.easing.min',
-        'sly': 'libs/sly.min',
-        //'sly-horizontal': 'js/sly.horizontal'
-        // -------------------------------------------
+        'sly': 'libs/sly.min'
+
+        // -------------------------------------
     },
     shim:
     {
@@ -92,7 +95,9 @@ requirejs.config({
         {
             exports: 'modernizr'
         },
+
         // -------------------------------------------
+
         'dlmenu':
         {
             deps: ['jquery']
@@ -138,6 +143,7 @@ requirejs.config({
         {
             deps: ['jquery']
         }
+
         // -------------------------------------------
     }
 });

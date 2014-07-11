@@ -1,30 +1,18 @@
 
 // Partials
 @import "primary";
-@import "elements/all";
-@import "footer";
+@import "page/offcanvas";
+@import "page/topbar";
+@import "page/cover";
+@import "page/wrapper";
+@import "page/footer";
 
-// Pages
-@import "pages/social-media";
+
+// Elements
+@import "elements/back-to-top";
+@import "elements/main-nav.animation";
+@import "elements/main-nav";
 
 
 // Bootstrap changes
 @import "grids";
-
-
-/* Development Only Border CSS - (delete when done)
--------------------------------------------------- */
-/*
-.borderline {
-    border: 1px dashed red;
-}
-
-.centerline, .content-wrapper {
-    border: 1px dashed blue;
-    height: 75px;
-}
-
-.container {
-    border: 1px dashed green;
-}
-*/

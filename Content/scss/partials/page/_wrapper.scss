@@ -1,0 +1,84 @@
+// All Mediums -- Apply to all resolutions. Inherits to all layouts.
+
+/* =============================================================================
+   PAGE
+   ========================================================================== */
+
+/*
+.wrapper-inner {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*/
+
+/* Page content */
+
+.wrapper-body-inner h1, 
+.wrapper-body-inner h2,
+.wrapper-body-inner h3 {
+    font-weight: 200;
+    color: #ddb000;
+}
+
+
+// Tablet //
+@media (max-width: 999px){
+    
+    .wrapper{
+        position: relative;
+    }
+
+    //.wrapper-inner {max-width: 960px;}
+
+}
+
+// Mobile-Landscape //
+@media (max-width: 699px) and (orientation: landscape){}
+
+// Mobile-Portrait //
+@media (max-width: 499px) and (orientation: portrait){}
+
+// Small Desktop //
+@media (min-width: 1000px){
+    
+    /* Page wrapper */
+    .wrapper {
+        position:absolute; //<-- if removing, you need to resize the panel width
+        //position: relative;
+        left: 420px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .wrapper-inner {
+        background: #fff;
+        //margin: 0;
+        //padding: 0;
+        //width: 100%;
+        max-width:910px; 
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+// Notebook //
+//@media (min-width: 1300px){}
+
+// Large Desktop //
+@media (min-width: 1600px){
+    
+    /*
+    //.wrapper{left:420px;}
+    //.wrapper-inner{max-width:1018px;}
+    */
+
+}

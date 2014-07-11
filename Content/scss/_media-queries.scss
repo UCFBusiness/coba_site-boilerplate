@@ -1,0 +1,26 @@
+//
+// Media-Queries
+// --------------------------------------------------
+
+// All Mediums -- Apply to all resolutions. Inherits to all layouts.
+
+// Tablet //
+@media (max-width: 999px){}
+
+// Mobile-Landscape //
+@media (max-width: 699px) and (orientation: landscape){}
+
+// Mobile-Portrait //
+@media (max-width: 499px) and (orientation: portrait){}
+
+// Small Desktop //
+@media (min-width: 1000px){}
+
+// Notebook //
+@media (min-width: 1300px){}
+
+// Large Desktop //
+@media (min-width: 1600px){}
+
+// Print //
+@media print {}
