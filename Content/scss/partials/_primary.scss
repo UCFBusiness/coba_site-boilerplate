@@ -15,10 +15,8 @@ html {
 //body {background:#272727 fixed; background-image:url(/images/main-bg.jpg); background-size:cover; background-position:centered;}
 body {
     @extend html;
-    background-color: #272727;
-    //width: 100%;
-
-    //position: absolute;
+    //background-color: white; //<---- Dev Test (delete)
+    width: 100%;
     position: relative;
 	top: 0;
 	right: 0;
@@ -26,7 +24,6 @@ body {
 	left: 0;
 	z-index: 0;
 }
-
 
 .pagelock {
     background-color: #000;

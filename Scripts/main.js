@@ -156,13 +156,6 @@ require(['modernizr'], function ()
         // Log that jquery was loaded into the global name-space
         console.log('jQuery', $.fn.jquery, 'loaded!');
 
-        // Right-click disabled
-        //$(document).bind('contextmenu', function (e)
-        //{
-        //    return false;
-        //});
-
-
 		// Google Analytics Tracking
 		//$('.dl-trigger').click(function () {
 		//	_gaq.push(['_trackEvent', 'Menu Button', 'Navigation', $(this).text()]);
@@ -177,21 +170,23 @@ require(['modernizr'], function ()
         {
             require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions'], function (ng)
             {
+                // load desktop, tablet and mobile scripts
+                
                 var screenwidth = parseInt($(this).width());
                 var screenheight = parseInt($(this).height());
                 
-                // Add off-canvas
+
+                //-- Add off-canvas -----------------------------
                 $("html").offcanvas({
                     hasSidebarRight: true
-                });
+                }); //-------------------------------------------
 
                 //-- lazy load images ---------------------------
                 Echo.init({
                     offset: 0,
                     throttle: 250
-                });
+                }); //-------------------------------------------
                 // Echo.render(); is also available for non-scroll callbacks
-                //-----------------------------------------------
 
                 //-- navigation menu ----------------------------
                 $(".dl-menuwrapper").dlmenu({
@@ -219,12 +214,34 @@ require(['modernizr'], function ()
                     event.preventDefault();
                 }); //-------------------------------------------
 
-                
-                if (screenwidth >= 1000) // load desktop scripts
+
+                if (screenwidth < 1000) // load only tablet scripts
+                {
+                    require([], function ()
+                    {
+                        //code
+
+                        if (screenwidth < 700) // load only mobile scripts
+                        {
+                            require([], function ()
+                            {
+                                //code
+                            });
+                        }
+                    });
+                }
+                if (screenwidth >= 1000) // load only desktop scripts
                 {
                     require(['easing'], function ()
                     {
                         //code
+
+                        //-- Right-click disabled -----------------------
+                        //$(document).bind('contextmenu', function (e)
+                        //{
+                        //    return false;
+                        //}); //-----------------------------------------
+
                         //-- easing : back to top -----------------------
                         var offset = 220;
                         var duration = 500;
@@ -242,14 +259,13 @@ require(['modernizr'], function ()
                             event.preventDefault();
                             $("html, body").animate({ scrollTop: 0 }, duration);
                             return false;
-                        });
-                        //-----------------------------------------------
+                        }); //------------------------------------------
+
                     });
                 }
 
                 // Logs the end of the file.
                 console.log('END: main.js');
-                //-----------------------------------------------
             });
         });
     });

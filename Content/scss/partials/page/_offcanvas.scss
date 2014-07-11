@@ -33,7 +33,7 @@
 /*---------------------*/
 
 .sidebarLeft.show, .sidebarRight.show {
-	//z-index: 200;
+    background-color: #272727; // do not remove
     z-index: 2;
 }
 
@@ -41,12 +41,10 @@
 .page {
 	word-wrap: break-word;
 	position: relative;
-	//z-index: 500;
     z-index: 3;
 	
 	.scrollableArea {
 		position: absolute;
-		//top: 4em;
 		bottom: 0;
 	}
 }
@@ -56,70 +54,96 @@
 }
 /* Slid styles */
 .page.slidRight {
-	transform:translate3d(40em,0,0);
-	-ms-transform:translate3d(40em,0,0);
-	-moz-transform:translate3d(40em,0,0);
-	-webkit-transform:translate3d(40em,0,0);
-	-o-transform:translate3d(40em,0,0);
+	transform: translate3d(40em,0,0);
+	-ms-transform: translate3d(40em,0,0);
+	-moz-transform: translate3d(40em,0,0);
+	-webkit-transform: translate3d(40em,0,0);
+	-o-transform: translate3d(40em,0,0);
 	
-	@media screen and (max-width: 499px) {
-		transform:translate3d(20em,0,0);
-		-ms-transform:translate3d(20em,0,0);
-		-moz-transform:translate3d(20em,0,0);
-		-webkit-transform:translate3d(20em,0,0);
-		-o-transform:translate3d(20em,0,0);
+    // Tablet //
+    @media (max-width: 999px){
+        transform: translate3d(50em,0,0);
+	    -ms-transform: translate3d(50em,0,0);
+	    -moz-transform: translate3d(50em,0,0);
+	    -webkit-transform: translate3d(50em,0,0);
+	    -o-transform: translate3d(50em,0,0);
+    }
+
+	@media (max-width: 499px) {
+		transform: translate3d(20em,0,0);
+		-ms-transform: translate3d(20em,0,0);
+		-moz-transform: translate3d(20em,0,0);
+		-webkit-transform: translate3d(20em,0,0);
+		-o-transform: translate3d(20em,0,0);
 	}
 }
 .page.slidLeft {
-	transform:translate3d(-40em,0,0);
-	-ms-transform:translate3d(-40em,0,0);
-	-moz-transform:translate3d(-40em,0,0);
-	-webkit-transform:translate3d(-40em,0,0);
-	-o-transform:translate3d(-40em,0,0);
+	transform: translate3d(-40em,0,0);
+	-ms-transform: translate3d(-40em,0,0);
+	-moz-transform: translate3d(-40em,0,0);
+	-webkit-transform: translate3d(-40em,0,0);
+	-o-transform: translate3d(-40em,0,0);
 	
-	@media screen and (max-width: 499px) {
-		transform:translate3d(-20em,0,0);
-		-ms-transform:translate3d(-20em,0,0);
-		-moz-transform:translate3d(-20em,0,0);
-		-webkit-transform:translate3d(-20em,0,0);
-		-o-transform:translate3d(-20em,0,0);
+    // Tablet //
+    @media (max-width: 999px){
+        transform: translate3d(-50em,0,0);
+	    -ms-transform: translate3d(-50em,0,0);
+	    -moz-transform: translate3d(-50em,0,0);
+	    -webkit-transform: translate3d(-50em,0,0);
+	    -o-transform: translate3d(-50em,0,0);
+    }
+
+	@media (max-width: 499px) {
+		transform: translate3d(-20em,0,0);
+		-ms-transform: translate3d(-20em,0,0);
+		-moz-transform: translate3d(-20em,0,0);
+		-webkit-transform: translate3d(-20em,0,0);
+		-o-transform: translate3d(-20em,0,0);
 	}
 }
 .no-csstransforms3d .page.slidRight {
 	left: 40em;
+
+    // Tablet //
+    @media (max-width: 999px){
+        left: 48em;
+    }
 	
-	@media screen and (max-width: 499px) {
+	@media (max-width: 499px) {
 		left: 20em;
 	}
 }
 .no-csstransforms3d .page.slidLeft {
 	left: -40em;
+
+    // Tablet //
+    @media (max-width: 999px){
+        left: -48em;
+    }
 	
-	@media screen and (max-width: 499px) {
+	@media (max-width: 499px) {
 		left: -20em;
 	}
 }
 
 /* Sliding side bars */
 .sidebarLeft, .sidebarRight {
-    background-color: #272727; // do not remove
 	width: 30%;
     height: 100%;
 	word-wrap: break-word;
-	//z-index: 100;
     z-index: 1;
 	
     .sidebarButton {
-        border: 1px solid red; // development line
+        border: 1px solid red; //<---- development line
 
-		display: none;
+		//display: none;
 		width: 1.6em;
 		font-size: 2.5em;
 		line-height: 1.6em;
 		color: #dcdcdc;
 		text-decoration: none;
 		text-align: center;
-		opacity: 0.3;
+		opacity: 0.2;
 
 		top: 0;
         z-index: 0;
@@ -133,25 +157,7 @@
 	.shutLeft, .shutRight {
         @extend .sidebarButton;
 
-		//display: none;
-		//width: 1.6em;
-		//height: 2.6em;
-		//font-size: 2.5em;
-		//line-height: 1.6em;
-		//color: #dcdcdc;
-		//text-decoration: none;
-		//text-align: center;
-		//opacity: 0.3;
-
-        //position: absolute;
         position: fixed;
-		//top: 0;
-		//z-index: 90;
-        //z-index: 0;
-		
-		//&:hover {
-		//	opacity: 0.5;
-		//}
 	}
 
     .sidebarMenuTab {
@@ -178,7 +184,8 @@
 /* ==   Off.canvas  == */
 /*---------------------*/
 
-@media screen and (max-width: 999px) {
+// Tablet //
+@media (max-width: 999px){
     html.offcanvas {
 	    //overflow-x: hidden;
     }
@@ -200,7 +207,8 @@
     bottom: 0;
     left: 0;
     
-    @media screen and (max-width: 999px) {
+    // Tablet //
+    @media (max-width: 999px){
         position:absolute;
         top: 0;
         right: 0;
@@ -216,22 +224,26 @@
 	width: 40em;
     height: 100%;
     
-    //position: absolute;
     position: fixed;
 	top: 0;
 	bottom: 0;
+
+    // Tablet //
+    @media (max-width: 999px){
+        width: 50em;
+    }
 	
-	.shutLeft, .shutRight {
+	@media (max-width: 499px) {
+		width: 20em;
+	}
+
+    .shutLeft, .shutRight {
 		display: block;
 	}
 
     .sidebarMenuTab  {
         display: inline-block;
     }
-	
-	@media screen and (max-width: 499px) {
-		width: 20em;
-	}
 }
 .offcanvas .sidebarLeft {
 	left: 0;
