@@ -10301,15 +10301,7 @@ body {
     border: 1px dashed green;
 }
 */
-/* == Off.canvas == */
-@media screen and (max-width: 1000px) {
-  /* line 11, ../Content/scss/partials/page/_offcanvas.scss */
-  .offcanvas body {
-    overflow-x: hidden;
-  }
-}
-
-/* line 19, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 2, ../Content/scss/partials/page/_offcanvas.scss */
 .animatedSlide {
   transition-property: transform;
   transition-duration: 0.3s;
@@ -10328,7 +10320,7 @@ body {
   -o-transition-timing-function: ease-out;
 }
 
-/* line 40, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 23, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .animatedSlide {
   transition: left 0.3s ease-out, right 0.3s ease-out;
   -ms-transition: left 0.3s ease-out, right 0.3s ease-out;
@@ -10337,7 +10329,165 @@ body {
   -o-transition: left 0.3s ease-out, right 0.3s ease-out;
 }
 
-/* line 49, ../Content/scss/partials/page/_offcanvas.scss */
+/*---------------------*/
+/* == No Off.canvas == */
+/*---------------------*/
+/* line 35, ../Content/scss/partials/page/_offcanvas.scss */
+.sidebarLeft.show, .sidebarRight.show {
+  z-index: 2;
+}
+
+/* Main central area styles */
+/* line 41, ../Content/scss/partials/page/_offcanvas.scss */
+.page {
+  word-wrap: break-word;
+  position: relative;
+  z-index: 3;
+}
+/* line 47, ../Content/scss/partials/page/_offcanvas.scss */
+.page .scrollableArea {
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 53, ../Content/scss/partials/page/_offcanvas.scss */
+.no-js .page {
+  width: 100%;
+  height: 100%;
+}
+
+/* Slid styles */
+/* line 58, ../Content/scss/partials/page/_offcanvas.scss */
+.page.slidRight {
+  transform: translate3d(40em, 0, 0);
+  -ms-transform: translate3d(40em, 0, 0);
+  -moz-transform: translate3d(40em, 0, 0);
+  -webkit-transform: translate3d(40em, 0, 0);
+  -o-transform: translate3d(40em, 0, 0);
+}
+@media screen and (max-width: 499px) {
+  /* line 58, ../Content/scss/partials/page/_offcanvas.scss */
+  .page.slidRight {
+    transform: translate3d(20em, 0, 0);
+    -ms-transform: translate3d(20em, 0, 0);
+    -moz-transform: translate3d(20em, 0, 0);
+    -webkit-transform: translate3d(20em, 0, 0);
+    -o-transform: translate3d(20em, 0, 0);
+  }
+}
+
+/* line 73, ../Content/scss/partials/page/_offcanvas.scss */
+.page.slidLeft {
+  transform: translate3d(-40em, 0, 0);
+  -ms-transform: translate3d(-40em, 0, 0);
+  -moz-transform: translate3d(-40em, 0, 0);
+  -webkit-transform: translate3d(-40em, 0, 0);
+  -o-transform: translate3d(-40em, 0, 0);
+}
+@media screen and (max-width: 499px) {
+  /* line 73, ../Content/scss/partials/page/_offcanvas.scss */
+  .page.slidLeft {
+    transform: translate3d(-20em, 0, 0);
+    -ms-transform: translate3d(-20em, 0, 0);
+    -moz-transform: translate3d(-20em, 0, 0);
+    -webkit-transform: translate3d(-20em, 0, 0);
+    -o-transform: translate3d(-20em, 0, 0);
+  }
+}
+
+/* line 88, ../Content/scss/partials/page/_offcanvas.scss */
+.no-csstransforms3d .page.slidRight {
+  left: 40em;
+}
+@media screen and (max-width: 499px) {
+  /* line 88, ../Content/scss/partials/page/_offcanvas.scss */
+  .no-csstransforms3d .page.slidRight {
+    left: 20em;
+  }
+}
+
+/* line 95, ../Content/scss/partials/page/_offcanvas.scss */
+.no-csstransforms3d .page.slidLeft {
+  left: -40em;
+}
+@media screen and (max-width: 499px) {
+  /* line 95, ../Content/scss/partials/page/_offcanvas.scss */
+  .no-csstransforms3d .page.slidLeft {
+    left: -20em;
+  }
+}
+
+/* Sliding side bars */
+/* line 104, ../Content/scss/partials/page/_offcanvas.scss */
+.sidebarLeft, .sidebarRight {
+  background-color: #272727;
+  width: 30%;
+  height: 100%;
+  word-wrap: break-word;
+  z-index: 1;
+  /* hides close button unless JS is enabled */
+}
+/* line 112, ../Content/scss/partials/page/_offcanvas.scss */
+.sidebarLeft .sidebarButton, .sidebarLeft .shutLeft, .sidebarLeft .shutRight, .sidebarLeft .sidebarRight .shutLeft, .sidebarRight .sidebarLeft .shutLeft, .sidebarLeft .sidebarRight .shutRight, .sidebarRight .sidebarLeft .shutRight, .sidebarLeft .sidebarMenuTab, .sidebarLeft .sidebarRight .sidebarMenuTab, .sidebarRight .sidebarLeft .sidebarMenuTab, .sidebarRight .sidebarButton, .sidebarRight .sidebarLeft .shutLeft, .sidebarLeft .sidebarRight .shutLeft, .sidebarRight .sidebarLeft .shutRight, .sidebarLeft .sidebarRight .shutRight, .sidebarRight .shutLeft, .sidebarRight .shutRight, .sidebarRight .sidebarLeft .sidebarMenuTab, .sidebarLeft .sidebarRight .sidebarMenuTab, .sidebarRight .sidebarMenuTab {
+  border: 1px solid red;
+  display: none;
+  width: 1.6em;
+  font-size: 2.5em;
+  line-height: 1.6em;
+  color: #dcdcdc;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.3;
+  top: 0;
+  z-index: 0;
+}
+/* line 127, ../Content/scss/partials/page/_offcanvas.scss */
+.sidebarLeft .sidebarButton:hover, .sidebarLeft .shutLeft:hover, .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarRight .shutLeft:hover, .sidebarRight .sidebarLeft .shutLeft:hover, .sidebarLeft .sidebarRight .shutRight:hover, .sidebarRight .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarMenuTab:hover, .sidebarLeft .sidebarRight .sidebarMenuTab:hover, .sidebarRight .sidebarLeft .sidebarMenuTab:hover, .sidebarRight .sidebarButton:hover, .sidebarRight .sidebarLeft .shutLeft:hover, .sidebarLeft .sidebarRight .shutLeft:hover, .sidebarRight .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarRight .shutRight:hover, .sidebarRight .shutLeft:hover, .sidebarRight .shutRight:hover, .sidebarRight .sidebarLeft .sidebarMenuTab:hover, .sidebarLeft .sidebarRight .sidebarMenuTab:hover, .sidebarRight .sidebarMenuTab:hover {
+  opacity: 0.5;
+}
+/* line 133, ../Content/scss/partials/page/_offcanvas.scss */
+.sidebarLeft .shutLeft, .sidebarLeft .shutRight, .sidebarRight .shutLeft, .sidebarRight .shutRight {
+  position: fixed;
+}
+/* line 157, ../Content/scss/partials/page/_offcanvas.scss */
+.sidebarLeft .sidebarMenuTab, .sidebarRight .sidebarMenuTab {
+  position: relative;
+}
+
+/* line 162, ../Content/scss/partials/page/_offcanvas.scss */
+.sidebarLeft.slidRight, .sidebarRight.slidLeft {
+  transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+
+/* line 169, ../Content/scss/partials/page/_offcanvas.scss */
+.no-csstransforms3d .sidebarLeft.slidRight {
+  left: 0;
+}
+
+/* line 172, ../Content/scss/partials/page/_offcanvas.scss */
+.no-csstransforms3d .sidebarRight.slidLeft {
+  right: 0;
+}
+
+/*---------------------*/
+/* ==   Off.canvas  == */
+/*---------------------*/
+/* line 187, ../Content/scss/partials/page/_offcanvas.scss */
+.offcanvas body {
+  overflow-x: hidden;
+}
+
+/* line 191, ../Content/scss/partials/page/_offcanvas.scss */
+.offcanvas .page {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 196, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .scrollableArea {
   position: relative;
   top: 0;
@@ -10345,8 +10495,8 @@ body {
   bottom: 0;
   left: 0;
 }
-@media screen and (max-width: 1000px) {
-  /* line 49, ../Content/scss/partials/page/_offcanvas.scss */
+@media screen and (max-width: 999px) {
+  /* line 196, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .scrollableArea {
     position: absolute;
     top: 0;
@@ -10358,42 +10508,8 @@ body {
   }
 }
 
-/* line 70, ../Content/scss/partials/page/_offcanvas.scss */
-.sidebarLeft.show, .sidebarRight.show {
-  z-index: 2;
-}
-
-/* Sliding side bars */
-/* line 76, ../Content/scss/partials/page/_offcanvas.scss */
-.sidebarLeft, .sidebarRight {
-  background-color: #272727;
-  width: 30%;
-  word-wrap: break-word;
-  z-index: 1;
-  /* hides close button unless JS is enabled */
-}
-/* line 86, ../Content/scss/partials/page/_offcanvas.scss */
-.sidebarLeft .shutLeft, .sidebarLeft .shutRight, .sidebarRight .shutLeft, .sidebarRight .shutRight {
-  border: 1px solid red;
-  display: none;
-  width: 1.6em;
-  font-size: 2.5em;
-  line-height: 1.6em;
-  color: #dcdcdc;
-  text-decoration: none;
-  text-align: center;
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-}
-/* line 104, ../Content/scss/partials/page/_offcanvas.scss */
-.sidebarLeft .shutLeft:hover, .sidebarLeft .shutRight:hover, .sidebarRight .shutLeft:hover, .sidebarRight .shutRight:hover {
-  opacity: 0.5;
-}
-
 /* Styles for both sidebars */
-/* line 111, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 215, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
   width: 40em;
   height: 100%;
@@ -10401,18 +10517,22 @@ body {
   top: 0;
   bottom: 0;
 }
-/* line 120, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 224, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .shutLeft, .offcanvas .sidebarLeft .shutRight, .offcanvas .sidebarRight .shutLeft, .offcanvas .sidebarRight .shutRight {
   display: block;
 }
-@media screen and (max-width: 450px) {
-  /* line 111, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 228, ../Content/scss/partials/page/_offcanvas.scss */
+.offcanvas .sidebarLeft .sidebarMenuTab, .offcanvas .sidebarRight .sidebarMenuTab {
+  display: inline-block;
+}
+@media screen and (max-width: 499px) {
+  /* line 215, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
     width: 20em;
   }
 }
 
-/* line 128, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 236, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft {
   left: 0;
     /*
@@ -10428,12 +10548,12 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
 }
-/* line 143, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 251, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .shutLeft {
   left: 0;
 }
 
-/* line 147, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 255, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarRight {
   right: 0;
     /*
@@ -10449,7 +10569,7 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
 }
-/* line 162, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 270, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarRight .shutRight {
   right: 0;
 }
@@ -10462,122 +10582,6 @@ body {
 	right:-7em;
 }
 */
-/* Main central area styles */
-/* line 177, ../Content/scss/partials/page/_offcanvas.scss */
-.page {
-  word-wrap: break-word;
-  position: relative;
-  z-index: 3;
-}
-/* line 183, ../Content/scss/partials/page/_offcanvas.scss */
-.page .scrollableArea {
-  position: absolute;
-  bottom: 0;
-        /*
-		@media screen and (max-width: 600px) {
-			font-size: 90%;
-		}
-		@media screen and (max-width: 450px) {
-			font-size: 85%;
-		}
-		@media screen and (max-width: 320px) {
-			font-size: 80%;
-		}
-        */
-}
-
-/* line 202, ../Content/scss/partials/page/_offcanvas.scss */
-.offcanvas .page {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 206, ../Content/scss/partials/page/_offcanvas.scss */
-.no-js .page {
-  width: 100%;
-  height: 100%;
-}
-
-/* Slid styles */
-/* line 212, ../Content/scss/partials/page/_offcanvas.scss */
-.page.slidRight {
-  transform: translate3d(40em, 0, 0);
-  -ms-transform: translate3d(40em, 0, 0);
-  -moz-transform: translate3d(40em, 0, 0);
-  -webkit-transform: translate3d(40em, 0, 0);
-  -o-transform: translate3d(40em, 0, 0);
-}
-@media screen and (max-width: 450px) {
-  /* line 212, ../Content/scss/partials/page/_offcanvas.scss */
-  .page.slidRight {
-    transform: translate3d(20em, 0, 0);
-    -ms-transform: translate3d(20em, 0, 0);
-    -moz-transform: translate3d(20em, 0, 0);
-    -webkit-transform: translate3d(20em, 0, 0);
-    -o-transform: translate3d(20em, 0, 0);
-  }
-}
-
-/* line 227, ../Content/scss/partials/page/_offcanvas.scss */
-.page.slidLeft {
-  transform: translate3d(-40em, 0, 0);
-  -ms-transform: translate3d(-40em, 0, 0);
-  -moz-transform: translate3d(-40em, 0, 0);
-  -webkit-transform: translate3d(-40em, 0, 0);
-  -o-transform: translate3d(-40em, 0, 0);
-}
-@media screen and (max-width: 450px) {
-  /* line 227, ../Content/scss/partials/page/_offcanvas.scss */
-  .page.slidLeft {
-    transform: translate3d(-20em, 0, 0);
-    -ms-transform: translate3d(-20em, 0, 0);
-    -moz-transform: translate3d(-20em, 0, 0);
-    -webkit-transform: translate3d(-20em, 0, 0);
-    -o-transform: translate3d(-20em, 0, 0);
-  }
-}
-
-/* line 242, ../Content/scss/partials/page/_offcanvas.scss */
-.no-csstransforms3d .page.slidRight {
-  left: 40em;
-}
-@media screen and (max-width: 450px) {
-  /* line 242, ../Content/scss/partials/page/_offcanvas.scss */
-  .no-csstransforms3d .page.slidRight {
-    left: 20em;
-  }
-}
-
-/* line 249, ../Content/scss/partials/page/_offcanvas.scss */
-.no-csstransforms3d .page.slidLeft {
-  left: -40em;
-}
-@media screen and (max-width: 450px) {
-  /* line 249, ../Content/scss/partials/page/_offcanvas.scss */
-  .no-csstransforms3d .page.slidLeft {
-    left: -20em;
-  }
-}
-
-/* line 257, ../Content/scss/partials/page/_offcanvas.scss */
-.sidebarLeft.slidRight, .sidebarRight.slidLeft {
-  transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-}
-
-/* line 264, ../Content/scss/partials/page/_offcanvas.scss */
-.no-csstransforms3d .sidebarLeft.slidRight {
-  left: 0;
-}
-
-/* line 267, ../Content/scss/partials/page/_offcanvas.scss */
-.no-csstransforms3d .sidebarRight.slidLeft {
-  right: 0;
-}
-
 /* line 5, ../Content/scss/partials/page/_topbar.scss */
 .topBar {
   background: rgba(0, 0, 0, 0.7);
@@ -10608,7 +10612,7 @@ body {
 }
 
 @media (min-width: 1000px) {
-  /* line 52, ../Content/scss/partials/page/_topbar.scss */
+  /* line 48, ../Content/scss/partials/page/_topbar.scss */
   .topBar {
     width: 420px;
     position: fixed;
