@@ -1,7 +1,5 @@
-// All Mediums -- Apply to all resolutions. Inherits to all layouts.
-
 /* =============================================================================
-   PAGE
+   PAGE WRAPPER
    ========================================================================== */
 
 /*
@@ -38,12 +36,6 @@
 
 }
 
-// Mobile-Landscape //
-@media (max-width: 699px) and (orientation: landscape){}
-
-// Mobile-Portrait //
-@media (max-width: 499px) and (orientation: portrait){}
-
 // Small Desktop //
 @media (min-width: 1000px){
     
@@ -58,7 +50,7 @@
     }
 
     .wrapper-inner {
-        background: #fff;
+        //background: #fff;
         //margin: 0;
         //padding: 0;
         //width: 100%;
@@ -70,15 +62,8 @@
     }
 }
 
-// Notebook //
-//@media (min-width: 1300px){}
-
 // Large Desktop //
-@media (min-width: 1600px){
-    
-    /*
-    //.wrapper{left:420px;}
-    //.wrapper-inner{max-width:1018px;}
-    */
-
-}
+/*@media (min-width: 1600px){
+    .wrapper{left:420px;}
+    .wrapper-inner{max-width:1018px;}
+}*/

@@ -1,118 +1,117 @@
-// Media-Queries Template
 
-/* Mobile Layout: 480px and below. */
 /* =============================================================================
 Footer/Section Layout
 ========================================================================== */
 
+.wrapper-footer-inner {
+    //background: #eee;
+    padding:20px;
+
+    p { /* The headers */
+        //background: #ddd;
+        margin-bottom: 15px;
+        line-height: 16px;
+        font-size: 1em;
+        font-weight: 700;
+        color:#777;
+        text-transform: uppercase;
+        text-shadow: 0 1px rgba(0,0,0,0.1);
+
+        opacity:0.9;
+        cursor:default;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .icon {
+        line-height: 2.23em;
+
+        i {
+            font-size: 1.5em;
+            padding-right: 7px;
+        }
+    }
+}
+
+ul#footer { /* column group */
+    width: 100%;
+
+    &> li { /* The links */
+        //border: 1px dashed red;
+
+        ul li {
+            //padding: 3px 5px;
+            font-size: 1.1em;
+            font-weight: 400;
+            color: #777;
+        }
+    }
+}
+
 span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
 
-.wrapper-footer-inner {
-    background: #eee;
-    //padding:20px;
-}
 
-.wrapper-footer-inner ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.wrapper-footer-inner .icon {
-    margin: 2px 0; 
-    line-height: 2.23em;
-
-    i {
-        font-size: 1.5em;
-        padding-right: 10px;
-    }
-}
-
-/*-------------------------------*/
-/* The headers */
-
-.wrapper-footer-inner p {
-    background: #ddd;
-    padding: 10px 9px 8px;
-    width: 100%;
-
-    text-align:left;
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: 400;
-    color:#777;
-
-    text-transform: uppercase;
-    text-shadow: 0 1px rgba(0,0,0,0.1);
-
-    margin-bottom: 20px;
-    opacity:0.9;
-    cursor:default;
-}
-
-.wrapper-footer-inner div a {
-    padding-left: 5px;
-}
-
-.wrapper-footer-inner > ul > li ul {
-    padding: 0 0 20px;
-}
-
-/*-------------------------------*/
-/* The links */
-.wrapper-footer-inner > ul > li ul li {
-    margin: 1px 0;
-    padding: 3px 5px;
-    font-size: 1.1em;
-    font-weight: 400;
-    width: 100%;
-    color: #777;
-}
-
-/* Tablet Layout: 501px past 768px(portrait mode) to 1024px(landscape mode). Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 501px) {
-    /* =============================================================================
-    Footer/Section Layout
-    ========================================================================== */
-
-    /*-------------------------------*/
-
-    .wrapper-footer-inner {
-        background: #eee;
-        padding:20px;
-    }
+// Tablet //
+@media (max-width: 999px){
 
     /* The columns */
+    ul#footer > li {
+        width: 20.3%;
+        display: inline-block;
+        vertical-align: top;
 
-    .wrapper-footer-inner > ul {
+        &:first-child {
+            width: 36%;
+        }
+    }
+}
+
+// Mobile-Landscape //
+@media (max-width: 699px) and (orientation: landscape){
+    ul#footer > li {
+        width: 20%;
+    }
+}
+
+// Mobile-Portrait //
+@media (max-width: 499px) and (orientation: portrait){
+    
+    /* The columns */
+    ul#footer > li {
+        border-bottom: 1px solid #bbb;
+        margin-top: 20px;
+        padding-bottom: 20px;
         width: 100%;
-        margin: 0 auto;
-        padding-left: 1px;
+        display: inline-block;
+        vertical-align: top;
+
+        &:first-child {
+            margin: 0;
+            width: 100%;
+        }
+
+        &:last-child {
+            border: none;
+            li {display: inline;}
+        }
     }
 
-    /* The four columns of links */
-    .wrapper-footer-inner ul > li {
-        width:25%;
-        float:left;
+    span.copyright {font-size: .55em; color: #bbb; line-height: 1.3em;}
+}
+
+@media (min-width: 1000px) {
+    
+    /* The columns */
+    ul#footer > li {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+
+        &:first-child {
+            width: 38.5%;
+        }
     }
-
-    /*-------------------------------*/
-    /* The headers */
-
-    .wrapper-footer-inner p {
-        background: none;
-        text-align:left;
-        font-weight: bold;
-    }
-
-    /*-------------------------------*/
-    /* The links */
-    .wrapper-footer-inner > ul > li ul li {
-        font-size: .8em;
-    }
-
-    .wrapper-footer-inner > ul > li ul li a {
-        font-size: 1.1em;
-    }
-
 }

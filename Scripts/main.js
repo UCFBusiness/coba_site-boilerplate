@@ -177,11 +177,13 @@ require(['modernizr'], function ()
         {
             require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions'], function (ng)
             {
+                var screenwidth = parseInt($(this).width());
+                var screenheight = parseInt($(this).height());
+                
                 // Add off-canvas
                 $("html").offcanvas({
                     hasSidebarRight: true
                 });
-
 
                 //-- lazy load images ---------------------------
                 Echo.init({
@@ -191,7 +193,6 @@ require(['modernizr'], function ()
                 // Echo.render(); is also available for non-scroll callbacks
                 //-----------------------------------------------
 
-
                 //-- navigation menu ----------------------------
                 $(".dl-menuwrapper").dlmenu({
                     animationClasses: {
@@ -200,8 +201,7 @@ require(['modernizr'], function ()
                     }
                 }); //-------------------------------------------
 
-
-                //-- easing : menu navigation -----------------------------
+                //-- easing : menu navigation -------------------
                 $("ul.menu a").bind("click", function (event) {
                     var $anchor = $(this);
                     $("html, body").stop().animate({
@@ -210,7 +210,7 @@ require(['modernizr'], function ()
                     event.preventDefault();
                 }); //-------------------------------------------
 
-                //-- easing : next page -----------------------------
+                //-- easing : next page -------------------------
                 $(".btnNext").bind("click", function (event) {
                     var $anchor = $(this);
                     $("html, body").stop().animate({
@@ -219,31 +219,33 @@ require(['modernizr'], function ()
                     event.preventDefault();
                 }); //-------------------------------------------
 
-                //-- easing : back to top --------------------------------
-                var offset = 220;
-                var duration = 500;
-                var topButton = $(".back-to-top");
+                
+                if (screenwidth >= 1000) // load desktop scripts
+                {
+                    require(['easing'], function ()
+                    {
+                        //code
+                        //-- easing : back to top -----------------------
+                        var offset = 220;
+                        var duration = 500;
+                        var topButton = $(".back-to-top");
 
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > offset) {
-                        $(topButton).fadeIn(duration);
-                    } else {
-                        $(topButton).fadeOut(duration);
-                    }
-                });
+                        $(window).scroll(function () {
+                            if ($(this).scrollTop() > offset) {
+                                $(topButton).fadeIn(duration);
+                            } else {
+                                $(topButton).fadeOut(duration);
+                            }
+                        });
 
-                $(topButton).click(function (event) {
-                    event.preventDefault();
-                    $("html, body").animate({ scrollTop: 0 }, duration);
-                    return false;
-                });
-                //-----------------------------------------------
-
-
-                // Add scroll panes
-                //$('.scroll-pane').jScrollPane();
-                //----------------------------------------------- 
-
+                        $(topButton).click(function (event) {
+                            event.preventDefault();
+                            $("html, body").animate({ scrollTop: 0 }, duration);
+                            return false;
+                        });
+                        //-----------------------------------------------
+                    });
+                }
 
                 // Logs the end of the file.
                 console.log('END: main.js');
