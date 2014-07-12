@@ -33,7 +33,7 @@
 /*---------------------*/
 
 .sidebarLeft.show, .sidebarRight.show {
-    background-color: #272727; // do not remove
+    //background-color: #272727; // do not remove
     z-index: 2;
 }
 
@@ -69,7 +69,11 @@
 	    -o-transform: translate3d(50em,0,0);
     }
 
-	@media (max-width: 499px) {
+    // Mobile-Landscape //
+    @media (max-width: 699px) and (orientation: landscape){}
+
+    // Mobile-Portrait //
+	@media (max-width: 499px) and (orientation: portrait){
 		transform: translate3d(20em,0,0);
 		-ms-transform: translate3d(20em,0,0);
 		-moz-transform: translate3d(20em,0,0);
@@ -93,7 +97,11 @@
 	    -o-transform: translate3d(-50em,0,0);
     }
 
-	@media (max-width: 499px) {
+    // Mobile-Landscape //
+    @media (max-width: 699px) and (orientation: landscape){}
+
+    // Mobile-Portrait //
+	@media (max-width: 499px) and (orientation: portrait){
 		transform: translate3d(-20em,0,0);
 		-ms-transform: translate3d(-20em,0,0);
 		-moz-transform: translate3d(-20em,0,0);
@@ -109,7 +117,11 @@
         left: 48em;
     }
 	
-	@media (max-width: 499px) {
+    // Mobile-Landscape //
+    @media (max-width: 699px) and (orientation: landscape){}
+
+    // Mobile-Portrait //
+	@media (max-width: 499px) and (orientation: portrait){
 		left: 20em;
 	}
 }
@@ -120,16 +132,20 @@
     @media (max-width: 999px){
         left: -48em;
     }
+
+    // Mobile-Landscape //
+    @media (max-width: 699px) and (orientation: landscape){}
 	
-	@media (max-width: 499px) {
+    // Mobile-Portrait //
+	@media (max-width: 499px) and (orientation: portrait){
 		left: -20em;
 	}
 }
 
 /* Sliding side bars */
 .sidebarLeft, .sidebarRight {
-	width: 30%;
-    height: 100%;
+	//width: 30%;
+    //height: 100%;
 	word-wrap: break-word;
     z-index: 1;
 	
@@ -156,7 +172,6 @@
     /* hides close button unless JS is enabled */
 	.shutLeft, .shutRight {
         @extend .sidebarButton;
-
         position: fixed;
 	}
 
@@ -232,8 +247,12 @@
     @media (max-width: 999px){
         width: 50em;
     }
+
+    // Mobile-Landscape //
+    @media (max-width: 699px) and (orientation: landscape){}
 	
-	@media (max-width: 499px) {
+    // Mobile-Portrait //
+	@media (max-width: 499px) and (orientation: portrait){
 		width: 20em;
 	}
 

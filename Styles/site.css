@@ -10195,6 +10195,7 @@ html, body {
 
 /* line 16, ../Content/scss/partials/_primary.scss */
 body {
+  background-color: #272727;
   width: 100%;
   position: relative;
   top: 0;
@@ -10334,7 +10335,6 @@ body {
 /*---------------------*/
 /* line 35, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft.show, .sidebarRight.show {
-  background-color: #272727;
   z-index: 2;
 }
 
@@ -10376,7 +10376,7 @@ body {
     -o-transform: translate3d(50em, 0, 0);
   }
 }
-@media (max-width: 499px) {
+@media (max-width: 499px) and (orientation: portrait) {
   /* line 56, ../Content/scss/partials/page/_offcanvas.scss */
   .page.slidRight {
     transform: translate3d(20em, 0, 0);
@@ -10387,7 +10387,7 @@ body {
   }
 }
 
-/* line 80, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 84, ../Content/scss/partials/page/_offcanvas.scss */
 .page.slidLeft {
   transform: translate3d(-40em, 0, 0);
   -ms-transform: translate3d(-40em, 0, 0);
@@ -10396,7 +10396,7 @@ body {
   -o-transform: translate3d(-40em, 0, 0);
 }
 @media (max-width: 999px) {
-  /* line 80, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 84, ../Content/scss/partials/page/_offcanvas.scss */
   .page.slidLeft {
     transform: translate3d(-50em, 0, 0);
     -ms-transform: translate3d(-50em, 0, 0);
@@ -10405,8 +10405,8 @@ body {
     -o-transform: translate3d(-50em, 0, 0);
   }
 }
-@media (max-width: 499px) {
-  /* line 80, ../Content/scss/partials/page/_offcanvas.scss */
+@media (max-width: 499px) and (orientation: portrait) {
+  /* line 84, ../Content/scss/partials/page/_offcanvas.scss */
   .page.slidLeft {
     transform: translate3d(-20em, 0, 0);
     -ms-transform: translate3d(-20em, 0, 0);
@@ -10416,50 +10416,48 @@ body {
   }
 }
 
-/* line 104, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 112, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .page.slidRight {
   left: 40em;
 }
 @media (max-width: 999px) {
-  /* line 104, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 112, ../Content/scss/partials/page/_offcanvas.scss */
   .no-csstransforms3d .page.slidRight {
     left: 48em;
   }
 }
-@media (max-width: 499px) {
-  /* line 104, ../Content/scss/partials/page/_offcanvas.scss */
+@media (max-width: 499px) and (orientation: portrait) {
+  /* line 112, ../Content/scss/partials/page/_offcanvas.scss */
   .no-csstransforms3d .page.slidRight {
     left: 20em;
   }
 }
 
-/* line 116, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 128, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .page.slidLeft {
   left: -40em;
 }
 @media (max-width: 999px) {
-  /* line 116, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 128, ../Content/scss/partials/page/_offcanvas.scss */
   .no-csstransforms3d .page.slidLeft {
     left: -48em;
   }
 }
-@media (max-width: 499px) {
-  /* line 116, ../Content/scss/partials/page/_offcanvas.scss */
+@media (max-width: 499px) and (orientation: portrait) {
+  /* line 128, ../Content/scss/partials/page/_offcanvas.scss */
   .no-csstransforms3d .page.slidLeft {
     left: -20em;
   }
 }
 
 /* Sliding side bars */
-/* line 130, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 146, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft, .sidebarRight {
-  width: 30%;
-  height: 100%;
   word-wrap: break-word;
   z-index: 1;
   /* hides close button unless JS is enabled */
 }
-/* line 136, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 152, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .sidebarButton, .sidebarLeft .shutLeft, .sidebarLeft .shutRight, .sidebarLeft .sidebarRight .shutLeft, .sidebarRight .sidebarLeft .shutLeft, .sidebarLeft .sidebarRight .shutRight, .sidebarRight .sidebarLeft .shutRight, .sidebarLeft .sidebarMenuTab, .sidebarLeft .sidebarRight .sidebarMenuTab, .sidebarRight .sidebarLeft .sidebarMenuTab, .sidebarRight .sidebarButton, .sidebarRight .sidebarLeft .shutLeft, .sidebarLeft .sidebarRight .shutLeft, .sidebarRight .sidebarLeft .shutRight, .sidebarLeft .sidebarRight .shutRight, .sidebarRight .shutLeft, .sidebarRight .shutRight, .sidebarRight .sidebarLeft .sidebarMenuTab, .sidebarLeft .sidebarRight .sidebarMenuTab, .sidebarRight .sidebarMenuTab {
   border: 1px solid red;
   width: 1.6em;
@@ -10472,20 +10470,20 @@ body {
   top: 0;
   z-index: 0;
 }
-/* line 151, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 167, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .sidebarButton:hover, .sidebarLeft .shutLeft:hover, .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarRight .shutLeft:hover, .sidebarRight .sidebarLeft .shutLeft:hover, .sidebarLeft .sidebarRight .shutRight:hover, .sidebarRight .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarMenuTab:hover, .sidebarLeft .sidebarRight .sidebarMenuTab:hover, .sidebarRight .sidebarLeft .sidebarMenuTab:hover, .sidebarRight .sidebarButton:hover, .sidebarRight .sidebarLeft .shutLeft:hover, .sidebarLeft .sidebarRight .shutLeft:hover, .sidebarRight .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarRight .shutRight:hover, .sidebarRight .shutLeft:hover, .sidebarRight .shutRight:hover, .sidebarRight .sidebarLeft .sidebarMenuTab:hover, .sidebarLeft .sidebarRight .sidebarMenuTab:hover, .sidebarRight .sidebarMenuTab:hover {
   opacity: 0.5;
 }
-/* line 157, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 173, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .shutLeft, .sidebarLeft .shutRight, .sidebarRight .shutLeft, .sidebarRight .shutRight {
   position: fixed;
 }
-/* line 163, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 178, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .sidebarMenuTab, .sidebarRight .sidebarMenuTab {
   position: relative;
 }
 
-/* line 168, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 183, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft.slidRight, .sidebarRight.slidLeft {
   transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -10494,12 +10492,12 @@ body {
   -o-transform: translate3d(0, 0, 0);
 }
 
-/* line 175, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 190, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .sidebarLeft.slidRight {
   left: 0;
 }
 
-/* line 178, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 193, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .sidebarRight.slidLeft {
   right: 0;
 }
@@ -10507,18 +10505,18 @@ body {
 /*---------------------*/
 /* ==   Off.canvas  == */
 /*---------------------*/
-/* line 194, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 209, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas body {
   overflow-x: hidden;
 }
 
-/* line 198, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 213, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .page {
   width: 100%;
   height: 100%;
 }
 
-/* line 203, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 218, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .scrollableArea {
   position: relative;
   top: 0;
@@ -10527,7 +10525,7 @@ body {
   left: 0;
 }
 @media (max-width: 999px) {
-  /* line 203, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 218, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .scrollableArea {
     position: absolute;
     top: 0;
@@ -10540,7 +10538,7 @@ body {
 }
 
 /* Styles for both sidebars */
-/* line 223, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 238, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
   width: 40em;
   height: 100%;
@@ -10549,27 +10547,27 @@ body {
   bottom: 0;
 }
 @media (max-width: 999px) {
-  /* line 223, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 238, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
     width: 50em;
   }
 }
-@media (max-width: 499px) {
-  /* line 223, ../Content/scss/partials/page/_offcanvas.scss */
+@media (max-width: 499px) and (orientation: portrait) {
+  /* line 238, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
     width: 20em;
   }
 }
-/* line 240, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 259, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .shutLeft, .offcanvas .sidebarLeft .shutRight, .offcanvas .sidebarRight .shutLeft, .offcanvas .sidebarRight .shutRight {
   display: block;
 }
-/* line 244, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 263, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .sidebarMenuTab, .offcanvas .sidebarRight .sidebarMenuTab {
   display: inline-block;
 }
 
-/* line 248, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 267, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft {
   left: 0;
     /*
@@ -10585,12 +10583,12 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
 }
-/* line 263, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 282, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .shutLeft {
   left: 0;
 }
 
-/* line 267, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 286, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarRight {
   right: 0;
     /*
@@ -10606,7 +10604,7 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
 }
-/* line 282, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 301, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarRight .shutRight {
   right: 0;
 }
@@ -10623,36 +10621,69 @@ body {
 .topBar {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 3em;
   word-wrap: break-word;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 30;
 }
 /* line 20, ../Content/scss/partials/page/_topbar.scss */
-.topBar .slideRight, .topBar .slideLeft, .topBar .slideHome {
-  font-size: 1.5em;
+.topBar .slideRight, .topBar .slideLeft, .topBar .bttnHome {
   line-height: 0.84em;
   color: #fff;
   text-decoration: none;
   text-align: center;
 }
-/* line 31, ../Content/scss/partials/page/_topbar.scss */
+/* line 32, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight:hover, .topBar .slideRight.pressed, .topBar .slideLeft:hover, .topBar .slideLeft.pressed {
   color: white;
 }
-/* line 34, ../Content/scss/partials/page/_topbar.scss */
+/* line 36, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight.pressed, .topBar .slideLeft.pressed {
   background: #828282;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 999px) {
+  /* line 43, ../Content/scss/partials/page/_topbar.scss */
+  .ucfBar {
+    position: relative;
+    height: 40px;
+    border: 1px dashed blue;
+  }
+
   /* line 48, ../Content/scss/partials/page/_topbar.scss */
+  .cbaBar {
+    position: relative;
+    height: 40px;
+    border: 1px dashed blue;
+  }
+  /* line 53, ../Content/scss/partials/page/_topbar.scss */
+  .cbaBar .slideRight, .cbaBar .slideLeft, .cbaBar .bttnHome {
+    margin: 0;
+    padding: 0 3px 3px 3px;
+    position: absolute;
+    top: 3px;
+    font-size: 2.5em;
+  }
+  /* line 60, ../Content/scss/partials/page/_topbar.scss */
+  .cbaBar .slideRight {
+    left: 3px;
+  }
+  /* line 63, ../Content/scss/partials/page/_topbar.scss */
+  .cbaBar .slideLeft {
+    right: 3px;
+  }
+  /* line 66, ../Content/scss/partials/page/_topbar.scss */
+  .cbaBar .bttnHome {
+    left: 3px;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 74, ../Content/scss/partials/page/_topbar.scss */
   .topBar {
     width: 420px;
-    position: fixed;
+    position: absolute;
   }
 }
 /* =============================================================================
