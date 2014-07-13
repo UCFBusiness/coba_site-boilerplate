@@ -10347,18 +10347,19 @@ body {
 }
 /* line 46, ../Content/scss/partials/page/_offcanvas.scss */
 .page .scrollableArea {
+  background: red;
   position: absolute;
   bottom: 0;
 }
 
-/* line 51, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 52, ../Content/scss/partials/page/_offcanvas.scss */
 .no-js .page {
   width: 100%;
   height: 100%;
 }
 
 /* Slid styles */
-/* line 56, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 57, ../Content/scss/partials/page/_offcanvas.scss */
 .page.slidRight {
   transform: translate3d(40em, 0, 0);
   -ms-transform: translate3d(40em, 0, 0);
@@ -10367,7 +10368,7 @@ body {
   -o-transform: translate3d(40em, 0, 0);
 }
 @media (max-width: 999px) {
-  /* line 56, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 57, ../Content/scss/partials/page/_offcanvas.scss */
   .page.slidRight {
     transform: translate3d(50em, 0, 0);
     -ms-transform: translate3d(50em, 0, 0);
@@ -10377,7 +10378,7 @@ body {
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 56, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 57, ../Content/scss/partials/page/_offcanvas.scss */
   .page.slidRight {
     transform: translate3d(20em, 0, 0);
     -ms-transform: translate3d(20em, 0, 0);
@@ -10387,7 +10388,7 @@ body {
   }
 }
 
-/* line 84, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 85, ../Content/scss/partials/page/_offcanvas.scss */
 .page.slidLeft {
   transform: translate3d(-40em, 0, 0);
   -ms-transform: translate3d(-40em, 0, 0);
@@ -10396,7 +10397,7 @@ body {
   -o-transform: translate3d(-40em, 0, 0);
 }
 @media (max-width: 999px) {
-  /* line 84, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 85, ../Content/scss/partials/page/_offcanvas.scss */
   .page.slidLeft {
     transform: translate3d(-50em, 0, 0);
     -ms-transform: translate3d(-50em, 0, 0);
@@ -10406,7 +10407,7 @@ body {
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 84, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 85, ../Content/scss/partials/page/_offcanvas.scss */
   .page.slidLeft {
     transform: translate3d(-20em, 0, 0);
     -ms-transform: translate3d(-20em, 0, 0);
@@ -10416,48 +10417,48 @@ body {
   }
 }
 
-/* line 112, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 113, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .page.slidRight {
   left: 40em;
 }
 @media (max-width: 999px) {
-  /* line 112, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 113, ../Content/scss/partials/page/_offcanvas.scss */
   .no-csstransforms3d .page.slidRight {
     left: 48em;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 112, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 113, ../Content/scss/partials/page/_offcanvas.scss */
   .no-csstransforms3d .page.slidRight {
     left: 20em;
   }
 }
 
-/* line 128, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 129, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .page.slidLeft {
   left: -40em;
 }
 @media (max-width: 999px) {
-  /* line 128, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 129, ../Content/scss/partials/page/_offcanvas.scss */
   .no-csstransforms3d .page.slidLeft {
     left: -48em;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 128, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 129, ../Content/scss/partials/page/_offcanvas.scss */
   .no-csstransforms3d .page.slidLeft {
     left: -20em;
   }
 }
 
 /* Sliding side bars */
-/* line 146, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 147, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft, .sidebarRight {
   word-wrap: break-word;
   z-index: 1;
   /* hides close button unless JS is enabled */
 }
-/* line 152, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 153, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .sidebarButton, .sidebarLeft .shutLeft, .sidebarLeft .shutRight, .sidebarLeft .sidebarRight .shutLeft, .sidebarRight .sidebarLeft .shutLeft, .sidebarLeft .sidebarRight .shutRight, .sidebarRight .sidebarLeft .shutRight, .sidebarLeft .sidebarMenuTab, .sidebarLeft .sidebarRight .sidebarMenuTab, .sidebarRight .sidebarLeft .sidebarMenuTab, .sidebarRight .sidebarButton, .sidebarRight .sidebarLeft .shutLeft, .sidebarLeft .sidebarRight .shutLeft, .sidebarRight .sidebarLeft .shutRight, .sidebarLeft .sidebarRight .shutRight, .sidebarRight .shutLeft, .sidebarRight .shutRight, .sidebarRight .sidebarLeft .sidebarMenuTab, .sidebarLeft .sidebarRight .sidebarMenuTab, .sidebarRight .sidebarMenuTab {
   border: 1px solid red;
   width: 1.6em;
@@ -10470,20 +10471,20 @@ body {
   top: 0;
   z-index: 0;
 }
-/* line 167, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 168, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .sidebarButton:hover, .sidebarLeft .shutLeft:hover, .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarRight .shutLeft:hover, .sidebarRight .sidebarLeft .shutLeft:hover, .sidebarLeft .sidebarRight .shutRight:hover, .sidebarRight .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarMenuTab:hover, .sidebarLeft .sidebarRight .sidebarMenuTab:hover, .sidebarRight .sidebarLeft .sidebarMenuTab:hover, .sidebarRight .sidebarButton:hover, .sidebarRight .sidebarLeft .shutLeft:hover, .sidebarLeft .sidebarRight .shutLeft:hover, .sidebarRight .sidebarLeft .shutRight:hover, .sidebarLeft .sidebarRight .shutRight:hover, .sidebarRight .shutLeft:hover, .sidebarRight .shutRight:hover, .sidebarRight .sidebarLeft .sidebarMenuTab:hover, .sidebarLeft .sidebarRight .sidebarMenuTab:hover, .sidebarRight .sidebarMenuTab:hover {
   opacity: 0.5;
 }
-/* line 173, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 174, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .shutLeft, .sidebarLeft .shutRight, .sidebarRight .shutLeft, .sidebarRight .shutRight {
   position: fixed;
 }
-/* line 178, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 179, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .sidebarMenuTab, .sidebarRight .sidebarMenuTab {
   position: relative;
 }
 
-/* line 183, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 184, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft.slidRight, .sidebarRight.slidLeft {
   transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -10492,12 +10493,12 @@ body {
   -o-transform: translate3d(0, 0, 0);
 }
 
-/* line 190, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 191, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .sidebarLeft.slidRight {
   left: 0;
 }
 
-/* line 193, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 194, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .sidebarRight.slidLeft {
   right: 0;
 }
@@ -10505,18 +10506,18 @@ body {
 /*---------------------*/
 /* ==   Off.canvas  == */
 /*---------------------*/
-/* line 209, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 210, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas body {
   overflow-x: hidden;
 }
 
-/* line 213, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 214, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .page {
   width: 100%;
   height: 100%;
 }
 
-/* line 218, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 219, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .scrollableArea {
   position: relative;
   top: 0;
@@ -10525,7 +10526,7 @@ body {
   left: 0;
 }
 @media (max-width: 999px) {
-  /* line 218, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 219, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .scrollableArea {
     position: absolute;
     top: 0;
@@ -10538,7 +10539,7 @@ body {
 }
 
 /* Styles for both sidebars */
-/* line 238, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 239, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
   width: 40em;
   height: 100%;
@@ -10547,27 +10548,27 @@ body {
   bottom: 0;
 }
 @media (max-width: 999px) {
-  /* line 238, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 239, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
     width: 50em;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 238, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 239, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
     width: 20em;
   }
 }
-/* line 259, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 260, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .shutLeft, .offcanvas .sidebarLeft .shutRight, .offcanvas .sidebarRight .shutLeft, .offcanvas .sidebarRight .shutRight {
   display: block;
 }
-/* line 263, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 264, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .sidebarMenuTab, .offcanvas .sidebarRight .sidebarMenuTab {
   display: inline-block;
 }
 
-/* line 267, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 268, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft {
   left: 0;
     /*
@@ -10583,12 +10584,12 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
 }
-/* line 282, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 283, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .shutLeft {
   left: 0;
 }
 
-/* line 286, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 287, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarRight {
   right: 0;
     /*
@@ -10604,7 +10605,7 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
 }
-/* line 301, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 302, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarRight .shutRight {
   right: 0;
 }
@@ -10619,7 +10620,6 @@ body {
 */
 /* line 5, ../Content/scss/partials/page/_topbar.scss */
 .topBar {
-  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   word-wrap: break-word;
   overflow: hidden;
@@ -10628,59 +10628,65 @@ body {
   left: 0;
   z-index: 30;
 }
-/* line 20, ../Content/scss/partials/page/_topbar.scss */
+/* line 18, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight, .topBar .slideLeft, .topBar .bttnHome {
   line-height: 0.84em;
   color: #fff;
   text-decoration: none;
   text-align: center;
 }
-/* line 32, ../Content/scss/partials/page/_topbar.scss */
+/* line 30, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight:hover, .topBar .slideRight.pressed, .topBar .slideLeft:hover, .topBar .slideLeft.pressed {
   color: white;
 }
-/* line 36, ../Content/scss/partials/page/_topbar.scss */
+/* line 34, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight.pressed, .topBar .slideLeft.pressed {
   background: #828282;
 }
 
 @media (max-width: 999px) {
-  /* line 43, ../Content/scss/partials/page/_topbar.scss */
+  /* line 41, ../Content/scss/partials/page/_topbar.scss */
   .ucfBar {
+    background: #000;
+    border-bottom: 1px dashed #444;
     position: relative;
-    height: 40px;
-    border: 1px dashed blue;
+    height: 50px;
+    color: #ffcc00;
   }
 
   /* line 48, ../Content/scss/partials/page/_topbar.scss */
   .cbaBar {
+    background: rgba(0, 0, 0, 0.7);
     position: relative;
-    height: 40px;
-    border: 1px dashed blue;
+    height: 38px;
   }
-  /* line 53, ../Content/scss/partials/page/_topbar.scss */
+  /* line 54, ../Content/scss/partials/page/_topbar.scss */
   .cbaBar .slideRight, .cbaBar .slideLeft, .cbaBar .bttnHome {
     margin: 0;
-    padding: 0 3px 3px 3px;
+    padding: 0 3px 0 3px;
     position: absolute;
     top: 3px;
     font-size: 2.5em;
   }
-  /* line 60, ../Content/scss/partials/page/_topbar.scss */
+  /* line 61, ../Content/scss/partials/page/_topbar.scss */
   .cbaBar .slideRight {
-    left: 3px;
+    left: 0;
   }
-  /* line 63, ../Content/scss/partials/page/_topbar.scss */
+  /* line 64, ../Content/scss/partials/page/_topbar.scss */
   .cbaBar .slideLeft {
-    right: 3px;
+    right: 0;
   }
-  /* line 66, ../Content/scss/partials/page/_topbar.scss */
+  /* line 67, ../Content/scss/partials/page/_topbar.scss */
+  .cbaBar .slideLeft span {
+    font-size: 0.67em;
+  }
+  /* line 71, ../Content/scss/partials/page/_topbar.scss */
   .cbaBar .bttnHome {
     left: 3px;
   }
 }
 @media (min-width: 1000px) {
-  /* line 74, ../Content/scss/partials/page/_topbar.scss */
+  /* line 79, ../Content/scss/partials/page/_topbar.scss */
   .topBar {
     width: 420px;
     position: absolute;
@@ -10784,9 +10790,10 @@ body {
     width: 100%;
     max-width: none;
     height: 520px;
+    z-index: 3;
   }
 
-  /* line 116, ../Content/scss/partials/page/_cover.scss */
+  /* line 118, ../Content/scss/partials/page/_cover.scss */
   .cover-body:before {
     margin-top: 50px;
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0) 100%);
@@ -10796,74 +10803,74 @@ body {
   }
 
   /*UCF Stands for Opportunity*/
-  /* line 125, ../Content/scss/partials/page/_cover.scss */
+  /* line 127, ../Content/scss/partials/page/_cover.scss */
   .ucf-sfo {
     width: 250px;
   }
 
   /*Cover Title (h1)*/
-  /* line 128, ../Content/scss/partials/page/_cover.scss */
+  /* line 130, ../Content/scss/partials/page/_cover.scss */
   .cover-title {
     font-size: 3.4em;
   }
 
-  /* line 129, ../Content/scss/partials/page/_cover.scss */
+  /* line 131, ../Content/scss/partials/page/_cover.scss */
   .cover-title span {
     font-size: .8em;
   }
 
   /*Page hgroup*/
-  /* line 132, ../Content/scss/partials/page/_cover.scss */
+  /* line 134, ../Content/scss/partials/page/_cover.scss */
   .page-title h1 {
     font-size: 2.8em;
   }
 
-  /* line 133, ../Content/scss/partials/page/_cover.scss */
+  /* line 135, ../Content/scss/partials/page/_cover.scss */
   .page-title h2 {
     font-size: 1.8em;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 143, ../Content/scss/partials/page/_cover.scss */
+  /* line 145, ../Content/scss/partials/page/_cover.scss */
   .cover {
     height: 260px;
   }
 
   /*UCF Stands for Opportunity*/
-  /* line 146, ../Content/scss/partials/page/_cover.scss */
+  /* line 148, ../Content/scss/partials/page/_cover.scss */
   .ucf-sfo {
     width: 50%;
   }
 
   /*Cover Title (h1)*/
-  /* line 149, ../Content/scss/partials/page/_cover.scss */
+  /* line 151, ../Content/scss/partials/page/_cover.scss */
   .cover-title {
     font-size: 1.9em;
   }
 
-  /* line 150, ../Content/scss/partials/page/_cover.scss */
+  /* line 152, ../Content/scss/partials/page/_cover.scss */
   .cover-title span {
     font-size: .85em;
   }
 
   /*Page hgroup*/
-  /* line 153, ../Content/scss/partials/page/_cover.scss */
+  /* line 155, ../Content/scss/partials/page/_cover.scss */
   .page-title {
     width: 90%;
   }
 
-  /* line 154, ../Content/scss/partials/page/_cover.scss */
+  /* line 156, ../Content/scss/partials/page/_cover.scss */
   .page-title h1 {
     font-size: 1.5em;
   }
 
-  /* line 155, ../Content/scss/partials/page/_cover.scss */
+  /* line 157, ../Content/scss/partials/page/_cover.scss */
   .page-title h2 {
     font-size: 1.3em;
   }
 }
 @media (min-width: 1000px) {
-  /* line 164, ../Content/scss/partials/page/_cover.scss */
+  /* line 166, ../Content/scss/partials/page/_cover.scss */
   .cover {
     width: 420px;
     height: 100%;
@@ -10873,7 +10880,7 @@ body {
     z-index: 3;
   }
 
-  /* line 176, ../Content/scss/partials/page/_cover.scss */
+  /* line 178, ../Content/scss/partials/page/_cover.scss */
   .cover-body:before {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
@@ -10882,23 +10889,23 @@ body {
   }
 
   /*Cover Title (h1)*/
-  /* line 184, ../Content/scss/partials/page/_cover.scss */
+  /* line 186, ../Content/scss/partials/page/_cover.scss */
   .cover-title {
     font-size: 3em;
   }
 
-  /* line 185, ../Content/scss/partials/page/_cover.scss */
+  /* line 187, ../Content/scss/partials/page/_cover.scss */
   .cover-title span {
     font-size: .730em;
   }
 
   /*Page hgroup*/
-  /* line 188, ../Content/scss/partials/page/_cover.scss */
+  /* line 190, ../Content/scss/partials/page/_cover.scss */
   .page-title h1 {
     font-size: 2.800em;
   }
 
-  /* line 189, ../Content/scss/partials/page/_cover.scss */
+  /* line 191, ../Content/scss/partials/page/_cover.scss */
   .page-title h2 {
     font-size: 1.800em;
   }
@@ -10906,12 +10913,12 @@ body {
 @media (min-width: 1300px) {
   /*Cover Title (h1)*/
   /*Page hgroup*/
-  /* line 201, ../Content/scss/partials/page/_cover.scss */
+  /* line 203, ../Content/scss/partials/page/_cover.scss */
   .page-title h1 {
     font-size: 2.800em;
   }
 
-  /* line 202, ../Content/scss/partials/page/_cover.scss */
+  /* line 204, ../Content/scss/partials/page/_cover.scss */
   .page-title h2 {
     font-size: 1.800em;
   }

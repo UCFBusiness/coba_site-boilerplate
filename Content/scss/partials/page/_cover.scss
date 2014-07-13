@@ -105,10 +105,12 @@
 @media (max-width: 999px){
     
     .cover{
-        position: relative !important; 
+        position: relative !important;
+        //position: fixed;
         width: 100%; 
         max-width: none; 
         height: 520px;
+        z-index: 3;
     }
 
     //.cover-img {background-image: url('/images/cover-bg2.jpg');}
