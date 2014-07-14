@@ -3,7 +3,8 @@
 Footer/Section Layout
 ========================================================================== */
 
-.wrapper-footer-inner {
+
+footer .wrapper {
     //background: #eee;
     padding:20px;
 
@@ -36,7 +37,7 @@ Footer/Section Layout
     }
 }
 
-ul#footer { /* column group */
+#footer { /* column group */
     width: 100%;
 
     &> li { /* The links */
@@ -53,65 +54,8 @@ ul#footer { /* column group */
 
 span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
 
-
-// Tablet //
-@media (max-width: 999px){
-
-    /* The columns */
-    ul#footer > li {
-        width: 20.3%;
-        display: inline-block;
-        vertical-align: top;
-
-        &:first-child {
-            width: 36%;
-        }
-    }
-}
-
-// Mobile-Landscape //
-@media (max-width: 699px) and (orientation: landscape){
-    ul#footer > li {
-        width: 20%;
-    }
-}
-
 // Mobile-Portrait //
 @media (max-width: 499px) and (orientation: portrait){
-    
-    /* The columns */
-    ul#footer > li {
-        border-bottom: 1px solid #bbb;
-        margin-top: 20px;
-        padding-bottom: 20px;
-        width: 100%;
-        display: inline-block;
-        vertical-align: top;
-
-        &:first-child {
-            margin: 0;
-            width: 100%;
-        }
-
-        &:last-child {
-            border: none;
-            li {display: inline;}
-        }
-    }
 
     span.copyright {font-size: .55em; color: #bbb; line-height: 1.3em;}
-}
-
-@media (min-width: 1000px) {
-    
-    /* The columns */
-    ul#footer > li {
-        width: 20%;
-        display: inline-block;
-        vertical-align: top;
-
-        &:first-child {
-            width: 38.5%;
-        }
-    }
 }

@@ -28,7 +28,7 @@
 // Tablet //
 @media (max-width: 999px){
     
-    .wrapper{
+    #main.wrapper{
         position: relative;
     }
 
@@ -40,7 +40,7 @@
 @media (min-width: 1000px){
     
     /* Page wrapper */
-    .wrapper {
+    #main.wrapper {
         position:absolute; //<-- if removing, you need to resize the panel width
         //position: relative;
         left: 420px;

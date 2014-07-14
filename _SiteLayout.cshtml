@@ -2,24 +2,26 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<title>UCF College of Business Administration - @Page.Title</title>
-		<meta name="description" content="University of Central Florida, College of Business Administration, Accounting, Economics, Finance, Management, Marketing, Real Estate, Sport Business, Entrepreneurship" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="apple-mobile-web-app-title" content="UCF-Business" />
-		<link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
         <!--
 
 		Copyright (c) University of Central Florida, College of Business | http://business.ucf.edu
 
 		-->
+        <meta name="Author" content="University of Central Florida, College of Business Administration" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>UCF College of Business Administration - @Page.Title</title>
+		<meta name="description" content="@Page.Description" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-title" content="UCF-Business" />
+		<link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+
 		<!-- Styles: BEGIN -->
 		<link type="text/css" rel="stylesheet" href="~/styles/site.css" />
 		@RenderSection("Styles", required: false)
 		<!-- Styles: FINIS -->
-
         <!-- Analytics: BEGIN -->
 		@*
 		<!-- Google Code Start -->
@@ -50,7 +52,6 @@
         <!-- End of Woopra Code -->
         *@
         <!-- Analytics: FINIS -->
-
 	</head>
 	<body>
         <a id="top"></a>
@@ -81,7 +82,6 @@
 			    <div class="cover">
 
 				    <div class="cover-header cover-img"><!-- cover background image -->
-
 					    <nav id="main_menu" class="dl-menuwrapper site-nav clearfix" style="display: none">
 						    <a href="~/" class="dl-home" data-toggle="tooltip" data-placement="bottom" title="Home">HOME</a>
 						    <button class="dl-trigger" title="Discover Menu">
@@ -188,21 +188,16 @@
 							    <span class="dl-search-icon"></span>
 						    </form>*@
 					    </nav><!--/dl-menuwrapper -->
-
 					    @RenderSection("featured", required: false)
-
 				    </div> <!--/.cover-header -->
 
 				    <div class="cover-body">
 					    <div class="cover-body-inner">
-
                             @*<!-- Site Feedback: BEGIN -->
                             <div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div><br>
                             <!-- Site Feedback: FINIS -->*@
-
                             <span id="msg" style="color: #fff"></span>
 						    <h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
-                        
 					    </div>
 				    </div><!--/.cover-body -->
 
@@ -213,7 +208,7 @@
 
 			    </div><!--/.cover /-->
 
-			    <div class="wrapper"><!-- content background image -->
+			    <div id="main" class="main wrapper"><!-- content background image -->
 				    <div class="wrapper-inner clearfix">
 
 					    <!--<header class="wrapper-header">
@@ -227,10 +222,10 @@
 					    </div><!--/.wrapper-body -->
 
 					    <footer class="wrapper-footer">
-						    <div class="wrapper-footer-inner">
-							    <ul id="footer">
-								    <li>
-									    <p>Address</p>
+						    <div class="wrapper row">
+                                <div class="col-xs-12 col-sm-4">
+                                    <div>
+                                        <p>Address</p>
 									    <ul>
 										    <li>University of Central Florida</li>
 										    <li>College of Business Administration</li>
@@ -238,46 +233,47 @@
 										    <li>P.O. Box 161991</li>
 										    <li>Orlando, FL 32816-1991</li>
 									    </ul>
-								    </li>
-								    <li>
-									    <p>Contact</p>
-									    <ul>
-										    <li>
-											    <small>Undergraduate</small><br>
-                                                <a href="tel:4078232185">(407) 823-2185</a>
-										    </li>
-										    <li>
-											    <small>Graduate</small><br>
-                                                <a href="tel:4078232184">(407) 235-3917</a>
-										    </li>
-										    <li>
-											    <small>Office of the Dean</small><br>
-                                                <a href="tel:4078232184">(407) 823-2181</a>
-										    </li>
-									    </ul>
-								    </li>
-								    <li>
-									    <p>Quick Links</p>
-									    <ul>
-										    <li><a href="http://www.bus.ucf.edu/directory.aspx" target="_blank">A-Z Directory</a></li>
-										    <li><a href="http://my.ucf.edu" target="_blank">My UCF</a></li>
-										    <li><a href="http://library.ucf.edu" target="_blank">UCF Library</a></li>
-										    <li><a href="http://ucf.custhelp.com" target="_blank">Ask UCF</a></li>
-										    <li><a href="https://giving.ucffoundation.org/SSLPage.aspx?pid=549" target="_blank">Give Back</a></li>
-									    </ul>
-								    </li>
-								    <li>
-									    <p>Stay Connected</p>
+                                    </div><br>
+                                    <div>
+                                        <p>Stay Connected</p>
                                         <a href="//www.twitter.com/ucfbusiness" target="_blank" class="icon"><i class="fa fa-twitter"></i></a>
 									    <a href="http://bit.ly/ucfbusinessalumni" target="_blank" class="icon"><i class="fa fa-linkedin"></i></a>
                                         <a href="http://instagram.com/ucfbusiness" target="_blank" class="icon"><i class="fa fa-instagram"></i></a>
 									    <a href="http://www.facebook.com/ucfcba" target="_blank" class="icon"><i class="fa fa-facebook"></i></a>
                                         <a href="https://plus.google.com/107946459277643419963/posts" target="_blank" class="icon"><i class="fa fa-google-plus"></i></a>
-								    </li>
-							    </ul>
-
-                                <img alt="UCF Stands for Opportunity" data-echo="/images/ucf-opportunity.png">
-                                <div><span class="copyright">&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration.</span></div>
+                                    </div><br>
+                                </div>
+                                <div class="col-xs-6 col-sm-4">
+                                    <p>Contact</p>
+									<ul>
+										<li>
+											<small>Undergraduate</small><br>
+                                            <a href="tel:4078232185">(407) 823-2185</a>
+										</li>
+										<li>
+											<small>Graduate</small><br>
+                                            <a href="tel:4078232184">(407) 235-3917</a>
+										</li>
+										<li>
+											<small>Office of the Dean</small><br>
+                                            <a href="tel:4078232184">(407) 823-2181</a>
+										</li>
+									</ul>
+                                </div>
+                                <div class="col-xs-6 col-sm-4">
+                                    <p>Quick Links</p>
+									<ul>
+										<li><a href="http://www.bus.ucf.edu/directory.aspx" target="_blank">A-Z Directory</a></li>
+										<li><a href="http://my.ucf.edu" target="_blank">My UCF</a></li>
+										<li><a href="http://library.ucf.edu" target="_blank">UCF Library</a></li>
+										<li><a href="http://ucf.custhelp.com" target="_blank">Ask UCF</a></li>
+										<li><a href="https://giving.ucffoundation.org/SSLPage.aspx?pid=549" target="_blank">Give Back</a></li>
+									</ul>
+                                </div>
+                                <div class="col-xs-12">
+                                    <img alt="UCF Stands for Opportunity" data-echo="/images/ucf-opportunity.png"><br>
+                                    <span class="copyright">&copy; @DateTime.Now.Year - University of Central Florida, College of Business Administration.</span>
+                                </div>
 						    </div>
 					    </footer><!--/.wrapper-footer -->
 
@@ -296,9 +292,9 @@
 		</section><!--/#page -->
 
         <section id="sidebarLeft" class="sidebarLeft">
-		    <div class="scrollableArea">
+		    <div class="sidebarLeft-inner scrollableArea">
 			    <a class="shutLeft" href="">&#10006;</a>
-			    <!-- Place navigation data in here -->
+			    <!-- data -->
 		    </div>
 	    </section><!--/#sidebarLeft -->
 
@@ -317,7 +313,7 @@
 		    </div>
 	    </section><!--/#sidebarRight -->
 
-		<a href="" class="back-to-top fa fa-arrow-up"></a>
+		<a href="" class="fa fa-arrow-up back-to-top"></a>
 		<div class="loading-bar"></div>
         <div class="bg-img"></div>
 

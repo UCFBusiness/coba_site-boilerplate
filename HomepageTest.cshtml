@@ -1,6 +1,11 @@
 ﻿@{
     Layout = "~/_TestLayout.cshtml";
     Page.Title = "Home";
+
+    // Database
+    var db = Database.Open("ucfBusiness");
+    var sql = "SELECT * FROM CBA_Calendars";
+    var data = db.Query(sql);
 }
 
 @section Scripts {
@@ -14,6 +19,16 @@
 @section featured {
 
 }
+
+<div>
+    <!-- Test Data Access -->
+    @foreach (var row in data)
+    {
+        <div>@row.Title</div>
+        <div>Private: @row.IsPrivate</div>
+        <br>
+    }
+</div>
 
 <!--// ROW -->
 <div class="pagespan">
