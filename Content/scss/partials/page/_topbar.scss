@@ -52,15 +52,16 @@
         .slideRight, .slideLeft, .bttnHome {
             margin: 0;
             padding: 0 3px 0 3px;
-		    position: absolute;
+		    //position: absolute;
+            position: relative;
 		    top: 3px;
             font-size: 2.5em;
 	    }
         .slideRight {
-            left: 0;
+            //left: 0;
 	    }
 	    .slideLeft {
-		    right: 0;
+		    //left: 0;
 
             span {
                 font-size: 0.67em;

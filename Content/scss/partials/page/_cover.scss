@@ -4,6 +4,12 @@
    COVER
    ========================================================================== */
 
+.cover {
+    position: relative !important;
+    //position: fixed;
+    z-index: 3;
+}
+
 .cover-img {
     position: absolute;
     width: 100%;
@@ -103,9 +109,9 @@
         max-width: none; 
         height: 520px;
         
-        position: relative !important;
+        //position: relative !important;
         //position: fixed;
-        z-index: 3;
+        //z-index: 3;
     }
 
     //.cover-img {background-image: url('/images/cover-bg2.jpg');}
@@ -153,7 +159,6 @@
         top: 0;
         left: 0;
         bottom: 0;
-        z-index: 3;
 
         //-- box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3); /* shadow */
     }
@@ -164,8 +169,9 @@
         //width: 100%; 
         //vertical-align: top;
 
-        position: absolute;
-        padding-top: 90px;
+        //position: absolute;
+        //top: 90px;
+        //left: 0;
     }
 
     /*Cover header hgroup*/
