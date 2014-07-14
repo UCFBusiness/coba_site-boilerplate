@@ -34,10 +34,8 @@
 	.slideRight.pressed, .slideLeft.pressed {
 		background:scale-lightness(#999, -15em);
 	}
-}
 
-// Tablet //
-@media (max-width: 999px){
+
     .ucfBar {
         background: #000;
         border-bottom:1px dashed #444;
@@ -72,13 +70,21 @@
             left: 3px;
         }
     }
+
+
+}
+
+// Tablet //
+@media (max-width: 999px){
+    
 }
 
 // Small Desktop //
 @media (min-width: 1000px){
     .topBar {
         width: 420px;
-        position: absolute;
-        //top: 0;
+        //position: absolute;
+        position: fixed;
+        top: 0;
     }
 }
