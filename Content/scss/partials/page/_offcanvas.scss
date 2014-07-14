@@ -179,6 +179,10 @@
     .sidebarMenuTab {
         @extend .sidebarButton;
         position: relative;
+
+        &.active {
+            opacity: 0.5;
+        }
 	}
 }
 .sidebarLeft.slidRight, .sidebarRight.slidLeft {

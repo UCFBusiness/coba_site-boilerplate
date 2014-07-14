@@ -3,8 +3,7 @@
 Footer/Section Layout
 ========================================================================== */
 
-
-footer .wrapper {
+.footer .wrapper {
     //background: #eee;
     padding:20px;
 
@@ -31,23 +30,8 @@ footer .wrapper {
         line-height: 2.23em;
 
         i {
-            font-size: 1.5em;
+            font-size: 1.8em;
             padding-right: 7px;
-        }
-    }
-}
-
-#footer { /* column group */
-    width: 100%;
-
-    &> li { /* The links */
-        //border: 1px dashed red;
-
-        ul li {
-            //padding: 3px 5px;
-            font-size: 1.1em;
-            font-weight: 400;
-            color: #777;
         }
     }
 }

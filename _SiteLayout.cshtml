@@ -60,7 +60,7 @@
 		<![endif]-->
         <!--/ Content: BEGIN /-->
 
-		<section id="page" class="page">
+		<div id="page" class="page">
             <div class="page-inner">
 
                 @*<header class="topBar">
@@ -68,7 +68,7 @@
                     <!--<a id="rightBurger" class="slideLeft" href=""><span>directory</span> &#9776;</a>-->
                 </header>*@
 
-                <header class="topBar">
+                <div class="topBar">
                     <div class="ucfBar">
                         <span>University of Central Florida</span>
                     </div><!--/ .ucfBar /-->
@@ -77,7 +77,7 @@
                         <a id="bttnHome" class="bttnHome" href="~/"><i class="fa fa-home"></i></a>
                         <a id="rightBurger" class="slideLeft" href=""><span>menu</span> &#9776;</a>
                     </div><!--/ .cbaBar /-->
-                </header>
+                </div>
 
 			    <div class="cover">
 
@@ -211,9 +211,9 @@
 			    <div id="main" class="main wrapper"><!-- content background image -->
 				    <div class="wrapper-inner clearfix">
 
-					    <!--<header class="wrapper-header">
-						    <div class="wrapper-header-inner"></div>
-					    </header>--><!--/.wrapper-header -->
+                        <header class="header">
+						    <div class="wrapper"></div>
+					    </header><!--/.header -->
 
 					    <div class="wrapper-body">
 						    <div class="wrapper-body-inner">
@@ -221,9 +221,9 @@
 						    </div>
 					    </div><!--/.wrapper-body -->
 
-					    <footer class="wrapper-footer">
+					    <footer class="footer">
 						    <div class="wrapper row">
-                                <div class="col-xs-12 col-sm-4">
+                                <div class="col-xs-12 col-sm-5">
                                     <div>
                                         <p>Address</p>
 									    <ul>
@@ -260,7 +260,7 @@
 										</li>
 									</ul>
                                 </div>
-                                <div class="col-xs-6 col-sm-4">
+                                <div class="col-xs-6 col-sm-3">
                                     <p>Quick Links</p>
 									<ul>
 										<li><a href="http://www.bus.ucf.edu/directory.aspx" target="_blank">A-Z Directory</a></li>
@@ -289,20 +289,20 @@
                 <!--[if IE]></div><![endif]-->
 
             </div>
-		</section><!--/#page -->
+		</div><!--/#page -->
 
-        <section id="sidebarLeft" class="sidebarLeft">
+        <div id="sidebarLeft" class="sidebarLeft">
 		    <div class="sidebarLeft-inner scrollableArea">
 			    <a class="shutLeft" href="">&#10006;</a>
 			    <!-- data -->
 		    </div>
-	    </section><!--/#sidebarLeft -->
+	    </div><!--/#sidebarLeft -->
 
-        <section id="sidebarRight" class="sidebarRight">
+        <div id="sidebarRight" class="sidebarRight">
             <div class="sidebarRight-inner scrollableArea">
                 <!--Tabs-->
                 <a class="shutRight" href="">&#10006;</a>
-                <a class="sidebarMenuTab" href="#"><i class="fa fa-bars"></i></a>
+                <a class="sidebarMenuTab active" href="#"><i class="fa fa-bars"></i></a>
                 <a class="sidebarMenuTab" href="#"><i class="fa fa-search"></i></a>
                 <a class="sidebarMenuTab" href="#"><i class="fa fa-users"></i></a>
                 <!--Tabs-->
@@ -311,7 +311,7 @@
 			    <hr><p style="color: #fff">Content</p>
 
 		    </div>
-	    </section><!--/#sidebarRight -->
+	    </div><!--/#sidebarRight -->
 
 		<a href="" class="fa fa-arrow-up back-to-top"></a>
 		<div class="loading-bar"></div>
