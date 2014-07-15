@@ -86,9 +86,9 @@
         h1 {font-size: 2.8em; font-weight: 400;}
         h2 {font-size: 1.8em; font-weight: 400;}
 
-        @media (max-width: 499px) and (orientation: portrait){
-            padding-left: 7%;
+        @media (max-width: 999px){padding-left: 7%;}
 
+        @media (max-width: 499px) and (orientation: portrait){
             h1 {font-size: 1.5em;}
             h2 {font-size: 1.3em;}
         }
@@ -118,10 +118,9 @@
         font-weight: 200;
         text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
-        @media (max-width: 499px) and (orientation: portrait){
-            padding-left: 7%;
-            font-size: 1.9em;
-        }
+        @media (max-width: 999px){padding-left: 7%;}
+
+        @media (max-width: 499px) and (orientation: portrait){font-size: 1.9em;}
         
         span {
             font-size: .730em;

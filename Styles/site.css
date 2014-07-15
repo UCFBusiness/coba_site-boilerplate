@@ -10195,7 +10195,6 @@ html, body {
 
 /* line 15, ../Content/scss/partials/_primary.scss */
 body {
-  background-color: #272727;
   width: 100%;
   position: relative;
   top: 0;
@@ -10466,6 +10465,7 @@ body {
 /* Sliding side bars */
 /* line 147, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft, .sidebarRight {
+  width: 30%;
   word-wrap: break-word;
   z-index: 1;
   /* hides close button unless JS is enabled */
@@ -10805,11 +10805,13 @@ body {
   font-size: 1.8em;
   font-weight: 400;
 }
-@media (max-width: 499px) and (orientation: portrait) {
+@media (max-width: 999px) {
   /* line 79, ../Content/scss/partials/page/_cover.scss */
   .cover-header hgroup {
     padding-left: 7%;
   }
+}
+@media (max-width: 499px) and (orientation: portrait) {
   /* line 92, ../Content/scss/partials/page/_cover.scss */
   .cover-header hgroup h1 {
     font-size: 1.5em;
@@ -10842,24 +10844,29 @@ body {
   font-weight: 200;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 499px) and (orientation: portrait) {
+@media (max-width: 999px) {
   /* line 112, ../Content/scss/partials/page/_cover.scss */
   .cover-body h1 {
     padding-left: 7%;
+  }
+}
+@media (max-width: 499px) and (orientation: portrait) {
+  /* line 112, ../Content/scss/partials/page/_cover.scss */
+  .cover-body h1 {
     font-size: 1.9em;
   }
 }
-/* line 126, ../Content/scss/partials/page/_cover.scss */
+/* line 125, ../Content/scss/partials/page/_cover.scss */
 .cover-body h1 span {
   font-size: .730em;
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 126, ../Content/scss/partials/page/_cover.scss */
+  /* line 125, ../Content/scss/partials/page/_cover.scss */
   .cover-body h1 span {
     font-size: .85em;
   }
 }
-/* line 135, ../Content/scss/partials/page/_cover.scss */
+/* line 134, ../Content/scss/partials/page/_cover.scss */
 .cover-body:before {
   content: '';
   background-repeat: repeat-x;
@@ -10870,7 +10877,7 @@ body {
   left: 0;
 }
 @media (max-width: 999px) {
-  /* line 135, ../Content/scss/partials/page/_cover.scss */
+  /* line 134, ../Content/scss/partials/page/_cover.scss */
   .cover-body:before {
     margin-top: 50px;
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0) 100%);
@@ -10880,7 +10887,7 @@ body {
   }
 }
 @media (min-width: 1000px) {
-  /* line 135, ../Content/scss/partials/page/_cover.scss */
+  /* line 134, ../Content/scss/partials/page/_cover.scss */
   .cover-body:before {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
@@ -10889,19 +10896,19 @@ body {
   }
 }
 
-/* line 161, ../Content/scss/partials/page/_cover.scss */
+/* line 160, ../Content/scss/partials/page/_cover.scss */
 .cover-body .cover-body-inner {
   position: relative;
   z-index: 100;
 }
 
 /*UCF Stands for Opportunity*/
-/* line 167, ../Content/scss/partials/page/_cover.scss */
+/* line 166, ../Content/scss/partials/page/_cover.scss */
 .ucf-sfo {
   width: 250px;
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 167, ../Content/scss/partials/page/_cover.scss */
+  /* line 166, ../Content/scss/partials/page/_cover.scss */
   .ucf-sfo {
     width: 50%;
   }
