@@ -10962,10 +10962,6 @@ body {
 /* =============================================================================
 Footer
 ========================================================================== */
-/* line 6, ../Content/scss/partials/page/_footer.scss */
-footer .wrapper {
-  padding: 10px 0;
-}
 /* line 9, ../Content/scss/partials/page/_footer.scss */
 footer .wrapper h5 {
   /* The headers */
