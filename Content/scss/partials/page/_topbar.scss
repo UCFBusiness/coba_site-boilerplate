@@ -4,27 +4,55 @@
 
 .topBar {
 	width: 100%;
-    //height: 3em;
-
-	//z-index: 1000;
-	word-wrap: break-word;
+    vertical-align: center;
 	overflow: hidden;
     
     position: relative;
     top: 0;
     left: 0;
-    z-index: 30;
+    //z-index: 30;
+
+    @media (min-width: 1000px){
+        width:380px;
+    }
+
+    // Notebook //
+    @media (min-width: 1300px){
+        width: 420px;
+    }
 	
-	.slideRight, .slideLeft, .bttnHome {
-		//position: absolute;
-		//top: 3px;
-		//width: 0.8em;
-		//height: 0.8em;
-		//font-size: 1.5em;
-		line-height: 0.84em;
-		color: #fff;
+
+    .ucfBar {
+        background: #000;
+        border-bottom: 1px solid #333;
+        height: 50px;
+        color: #ffcc00;
+        word-wrap: break-word;
+        position: relative;
+    }
+
+    .cbaBar {
+        background: rgba(0,0,0,0.600);
+        padding: 0 10px;
+        height: 38px;
+        word-wrap: break-word;
+        vertical-align: center;
+        position: relative;
+    }
+
+    .slideRight, .slideLeft, .bttnHome {
+		padding-right: 0.333em;
+        font-size: 1.8em;
+        color: #fff;
 		text-decoration: none;
-		text-align: center;
+        text-align: center;
+        position: relative;
+	}
+
+    .slideLeft {
+        span {
+            font-size: 0.57em;
+        }
 	}
 
     .slideRight:hover, .slideRight.pressed, .slideLeft:hover, .slideLeft.pressed {
@@ -33,59 +61,33 @@
 
 	.slideRight.pressed, .slideLeft.pressed {
 		background:scale-lightness(#999, -15em);
-	}
-
-
-    .ucfBar {
-        background: #000;
-        border-bottom:1px dashed #444;
-        position: relative;
-        height: 50px;
-        color: #ffcc00;
-    }
-    .cbaBar {
-        background: rgba(0,0,0,.7);
-        position: relative;
-        height: 38px;
-        //border:1px dashed blue;
-
-        .slideRight, .slideLeft, .bttnHome {
-            margin: 0;
-            padding: 0 3px 0 3px;
-		    //position: absolute;
-            position: relative;
-		    top: 3px;
-            font-size: 2.5em;
-	    }
-        .slideRight {
-            //left: 0;
-	    }
-	    .slideLeft {
-		    //left: 0;
-
-            span {
-                font-size: 0.67em;
-            }
-	    }
-        .bttnHome {
-            left: 3px;
-        }
-    }
-
-
-}
-
-// Tablet //
-@media (max-width: 999px){
+	}  
     
-}
 
-// Small Desktop //
-@media (min-width: 1000px){
-    .topBar {
-        width: 420px;
-        //position: absolute;
-        position: fixed;
-        top: 0;
+    /*
+	.slideRight, .slideLeft, .bttnHome {
+		position: absolute;
+		top: 3px;
+		width: 0.8em;
+		height: 0.8em;
+		font-size: 1.5em;
+		line-height: 0.84em;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+	}
+    .slideRight {
+        left: 0;
+	}
+	.slideLeft {
+		right: 0;
+
+        span {
+            font-size: 0.67em;
+        }
+	}
+    .bttnHome {
+        left: 0;
     }
+    */
 }

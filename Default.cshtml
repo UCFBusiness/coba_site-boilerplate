@@ -27,23 +27,30 @@
 }
 
 @section featured {
-	<section id="login" style="display: none;">
-		<p>Authenticated: @WebSecurity.IsAuthenticated</p>
-		@if (WebSecurity.IsAuthenticated) {
-			<text>
-				Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
-				<form id="logoutForm" action="~/Account/Logout" method="post">
-					@AntiForgery.GetHtml()
-					<a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
-				</form>
-			</text>
-		} else {
-			<ul>
-				<li><a href="~/Account/Register">Register</a></li>
-				<li><a href="~/Account/Login">Log in</a></li>
-			</ul>
-		}
-	</section>
+<!-- Authentication: BEGIN -->
+<section id="login" style="display: none;">
+	<p>Authenticated: @WebSecurity.IsAuthenticated</p>
+	@if (WebSecurity.IsAuthenticated) {
+		<text>
+			Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+			<form id="logoutForm" action="~/Account/Logout" method="post">
+				@AntiForgery.GetHtml()
+				<a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+			</form>
+		</text>
+	} else {
+		<ul>
+			<li><a href="~/Account/Register">Register</a></li>
+			<li><a href="~/Account/Login">Log in</a></li>
+		</ul>
+	}
+</section>
+<!-- Authentication: FINIS -->
+
+<!-- Site Feedback: BEGIN -->
+<span id="msg" style="margin-top:20px; padding-left:10px; color:#fff"></span>
+<!-- Site Feedback: FINIS -->
+
 }
 
 <div style="height:50px; background-color:#000; color:#fff">

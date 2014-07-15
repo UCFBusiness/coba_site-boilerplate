@@ -2,20 +2,36 @@
    PAGE WRAPPER
    ========================================================================== */
 
-/*
-.wrapper-inner {
-    background: #fff;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*/
+#main.wrapper{
+    position: relative;
+    left: 0;
 
-/* Page content */
+    @media (min-width: 1000px){
+        position:absolute; //<-- if removing, you need to resize the panel width
+        left: 380px;
+        top: 0;
+        bottom: 0;
+    }
+
+    @media (min-width: 1300px){
+        left: 420px;
+    }
+
+    .wrapper-inner {
+        //max-width: 960px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+
+/*
+
+@media (min-width: 1600px){
+    .wrapper{left:420px;}
+    .wrapper-inner{max-width:1018px;}
+}
 
 .wrapper-body-inner h1, 
 .wrapper-body-inner h2,
@@ -24,46 +40,4 @@
     color: #ddb000;
 }
 
-
-// Tablet //
-@media (max-width: 999px){
-    
-    #main.wrapper{
-        position: relative;
-    }
-
-    //.wrapper-inner {max-width: 960px;}
-
-}
-
-// Small Desktop //
-@media (min-width: 1000px){
-    
-    /* Page wrapper */
-    #main.wrapper {
-        position:absolute; //<-- if removing, you need to resize the panel width
-        //position: relative;
-        left: 420px;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-
-    .wrapper-inner {
-        //background: #fff;
-        //margin: 0;
-        //padding: 0;
-        //width: 100%;
-        max-width:910px; 
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-}
-
-// Large Desktop //
-/*@media (min-width: 1600px){
-    .wrapper{left:420px;}
-    .wrapper-inner{max-width:1018px;}
-}*/
+*/

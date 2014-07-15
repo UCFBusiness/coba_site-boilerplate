@@ -68,7 +68,7 @@
                     <!--<a id="rightBurger" class="slideLeft" href=""><span>directory</span> &#9776;</a>-->
                 </header>*@
 
-                <div class="topBar">
+                @*<div class="topBar">
                     <div class="ucfBar">
                         <span>University of Central Florida</span>
                     </div><!--/ .ucfBar /-->
@@ -78,12 +78,13 @@
                         &nbsp;
                         <a id="rightBurger" class="slideLeft" href=""><span></span> &#9776;</a>
                     </div><!--/ .cbaBar /-->
-                </div>
+                </div>*@
 
-			    <div class="cover">
+			    <div class="cover"><div class="cover-img"></div><!-- cover background image -->
 
-				    <div class="cover-header cover-img"><!-- cover background image -->
-					    <nav id="main_menu" class="dl-menuwrapper site-nav clearfix" style="display: none">
+				    <div class="cover-header">
+					    
+                        <nav id="main_menu" class="dl-menuwrapper site-nav clearfix" style="display: none">
 						    <a href="~/" class="dl-home" data-toggle="tooltip" data-placement="bottom" title="Home">HOME</a>
 						    <button class="dl-trigger" title="Discover Menu">
 							    <span class="menu-icon" style="font-size: 1.8em">&#9776;</span> 
@@ -189,16 +190,30 @@
 							    <span class="dl-search-icon"></span>
 						    </form>*@
 					    </nav><!--/dl-menuwrapper -->
-					    @RenderSection("featured", required: false)
+                        
+                        <div class="topBar">
+                            <div class="ucfBar">
+                                <span>University of Central Florida</span>
+                            </div><!--/ .ucfBar /-->
+
+                            <div class="cbaBar">
+                                <a id="bttnHome" class="bttnHome" href="~/"><i class="fa fa-home"></i></a>
+                                &nbsp;
+                                <a id="rightBurger" class="slideLeft" href="">&#9776; <span>menu</span> </a>
+                            </div><!--/ .cbaBar /-->
+                        </div>
+
+                        @RenderSection("featured", required: false)
+
+                        @*<!-- Site Feedback: BEGIN -->
+                        <div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div><br>
+                        <!-- Site Feedback: FINIS -->*@
+
 				    </div> <!--/.cover-header -->
 
 				    <div class="cover-body">
 					    <div class="cover-body-inner">
-                            @*<!-- Site Feedback: BEGIN -->
-                            <div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div><br>
-                            <!-- Site Feedback: FINIS -->*@
-                            <span id="msg" style="color: #fff"></span>
-						    <h1 class="cover-title">College <span>of</span> Business <br>Administration</h1>
+						    <h1>College <span>of</span> Business <br>Administration</h1>
 					    </div>
 				    </div><!--/.cover-body -->
 
