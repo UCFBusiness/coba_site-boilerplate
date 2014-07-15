@@ -1,10 +1,10 @@
 
 /* =============================================================================
-Footer/Section Layout
+Footer
 ========================================================================== */
 
 footer .wrapper {
-    padding: 20px 0;
+    padding: 10px 0;
 
     h5 { /* The headers */
         //background: #ddd;
@@ -35,10 +35,11 @@ footer .wrapper {
     }
 }
 
-span.copyright {font-size: .65em; color: #bbb; line-height: 1.3em;}
+span.copyright {
+    font-size: .65em; color: #bbb; line-height: 1.3em;
 
-// Mobile-Portrait //
-@media (max-width: 499px) and (orientation: portrait){
+    @media (max-width: 499px) and (orientation: portrait){
 
-    span.copyright {font-size: .55em; color: #bbb; line-height: 1.3em;}
+        font-size: .55em; color: #bbb; line-height: 1.3em;
+    }
 }

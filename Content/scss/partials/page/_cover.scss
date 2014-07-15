@@ -7,10 +7,11 @@
 @media (max-width: 999px){
     
     .cover {
-        position: relative !important;
-        width: 100%; 
-        max-width: none; 
+        width: 100%;
+        max-width: none;
         height: 520px;
+
+        position: relative !important;
         z-index: 3;
     }
 }
@@ -76,16 +77,14 @@
     box-sizing: border-box;
 
     hgroup {
-        //padding: 40px 10% 10%;
         padding-left: 10%;
         width: 90%;
         line-height: 1em;
         color: #fff;
-        font-weight: 200;
         text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
-        h1 {font-size: 2.8em;}
-        h2 {font-size: 1.8em;}
+        h1 {font-size: 2.8em; font-weight: 400;}
+        h2 {font-size: 1.8em; font-weight: 400;}
 
         @media (max-width: 499px) and (orientation: portrait){
             padding-left: 7%;
@@ -111,7 +110,6 @@
     box-sizing: border-box;
 
     h1 {
-        //padding: 40px 10% 10%;
         margin-bottom: 1em;
         padding-left: 10%;
         line-height: 1em;
