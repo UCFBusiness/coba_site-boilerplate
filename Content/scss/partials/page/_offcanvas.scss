@@ -280,6 +280,9 @@
 		width: 23em;
 	}
 
+    // Large Desktop //
+    @media (min-width: 1600px){}
+
     .shutLeft, .shutRight {
 		display: block;
 	}

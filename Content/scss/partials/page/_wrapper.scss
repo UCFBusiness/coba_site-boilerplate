@@ -3,6 +3,11 @@
    ========================================================================== */
 
 #main.wrapper{
+    //------------------------------------------------
+    background: #fff; //<--- Testing
+    border-right: 1px dashed blue; //<--- DEV LINE
+    //------------------------------------------------
+
     position: relative;
     left: 0;
 
@@ -24,7 +29,7 @@
 
     // Large Desktop //
     @media (min-width: 1600px){
-
+        
         .wrapper-inner{max-width:1018px;}
     }
 
