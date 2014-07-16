@@ -1,43 +1,45 @@
 /* =============================================================================
-   PAGE WRAPPER
+   PAGE CONTENT WRAPPER
    ========================================================================== */
 
 #main.wrapper{
     position: relative;
     left: 0;
 
+    // Small Desktop //
     @media (min-width: 1000px){
+        
         position:absolute; //<-- if removing, you need to resize the panel width
-        left: 380px;
         top: 0;
+        left: 380px;
+        right: 0;
         bottom: 0;
     }
 
+    // Notebook //
     @media (min-width: 1300px){
+
         left: 420px;
     }
 
+    // Large Desktop //
+    @media (min-width: 1600px){
+
+        .wrapper-inner{max-width:1018px;}
+    }
+
     .wrapper-inner {
-        //max-width: 960px;
+        max-width: 910px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+
+        /*
+        h1,
+        h2,
+        h3 {
+            font-weight: 200;
+            color: #ddb000;
+        }*/
     }
 }
-
-
-/*
-
-@media (min-width: 1600px){
-    .wrapper{left:420px;}
-    .wrapper-inner{max-width:1018px;}
-}
-
-.wrapper-body-inner h1, 
-.wrapper-body-inner h2,
-.wrapper-body-inner h3 {
-    font-weight: 200;
-    color: #ddb000;
-}
-
-*/

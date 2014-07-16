@@ -16,6 +16,11 @@
     }
 }
 
+// Mobile-Landscape //
+@media (max-width: 699px) and (orientation: landscape){
+
+}
+
 // Mobile-Portrait //
 @media (max-width: 499px) and (orientation: portrait){
     
@@ -86,8 +91,10 @@
         h1 {font-size: 2.8em; font-weight: 400;}
         h2 {font-size: 1.8em; font-weight: 400;}
 
+        // Tablet //
         @media (max-width: 999px){padding-left: 7%;}
 
+        // Mobile-Portrait //
         @media (max-width: 499px) and (orientation: portrait){
             h1 {font-size: 1.5em;}
             h2 {font-size: 1.3em;}
@@ -118,13 +125,16 @@
         font-weight: 200;
         text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
+        // Tablet //
         @media (max-width: 999px){padding-left: 7%;}
 
+        // Mobile-Portrait //
         @media (max-width: 499px) and (orientation: portrait){font-size: 1.9em;}
         
         span {
             font-size: .730em;
 
+            // Mobile-Portrait //
             @media (max-width: 499px) and (orientation: portrait){
                 font-size: .85em;
             }
@@ -140,6 +150,7 @@
         bottom: 0;
         left: 0;
 
+        // Tablet //
         @media (max-width: 999px){
             margin-top:50px;
             background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.3) 30%,rgba(0,0,0,0) 100%);
@@ -148,6 +159,7 @@
             background-image: linear-gradient(to top,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.3) 30%,rgba(0,0,0,0) 100%);
         }
 
+        // Small Desktop //
         @media (min-width: 1000px){
             background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
             background-image: -moz-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
@@ -166,6 +178,7 @@
 .ucf-sfo {
     width: 250px;
 
+    // Mobile-Portrait //
     @media (max-width: 499px) and (orientation: portrait){
         width: 50%;
     }
