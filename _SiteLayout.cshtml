@@ -224,17 +224,24 @@
 
 			    </div><!--/.cover /-->
 
-			    <div class="main wrapper" id="main"><!-- content background image -->
-				    <div class="wrapper-inner clearfix">
-
-                        <header class="header">
-						    <div class="wrapper"></div>
-					    </header><!--/.header -->
+			    <div class="wrapper main" id="main"><!-- content background image -->
+				    <div class="wrapper-inner">
 
 					    <div class="wrapper-body">
-						    <div class="wrapper-body-inner">
-							    @RenderBody()
-						    </div>
+
+                            <!-- Menu: BEGIN -->
+                            <div class="topNav">
+                                <ul>
+                                    <li>Future Students</li>
+                                    <li>Faculty &amp; Research</li>
+                                    <li>Alumni &amp; Friends</li>
+                                    <li>Recruiters &amp; Companies</li>
+                                </ul>
+                            </div>
+                            <!-- Menu: FINIS -->
+
+							@RenderBody()
+
 					    </div><!--/.wrapper-body -->
 
 					    <footer class="footer">

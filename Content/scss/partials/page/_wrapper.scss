@@ -34,7 +34,7 @@
     }
 
     .wrapper-inner {
-        max-width: 910px;
+        //max-width: 910px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -46,5 +46,25 @@
             font-weight: 200;
             color: #ddb000;
         }*/
+    }
+
+    .section {
+        border-right: 1px dashed red; //<--- DEV LINE
+    }
+}
+
+.topNav {
+    background-color:#000;
+    color:#fff;    
+
+    ul {
+        height:50px;
+        list-style: none;
+        font-size: 1.3em;
+
+        li {
+            padding-right: 15px;
+            display:inline;
+        }
     }
 }

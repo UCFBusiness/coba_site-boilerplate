@@ -11005,7 +11005,6 @@ body {
 }
 /* line 36, ../Content/scss/partials/page/_wrapper.scss */
 #main.wrapper .wrapper-inner {
-  max-width: 910px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -11016,6 +11015,27 @@ body {
       font-weight: 200;
       color: #ddb000;
   }*/
+}
+/* line 51, ../Content/scss/partials/page/_wrapper.scss */
+#main.wrapper .section {
+  border-right: 1px dashed red;
+}
+
+/* line 56, ../Content/scss/partials/page/_wrapper.scss */
+.topNav {
+  background-color: #000;
+  color: #fff;
+}
+/* line 60, ../Content/scss/partials/page/_wrapper.scss */
+.topNav ul {
+  height: 50px;
+  list-style: none;
+  font-size: 1.3em;
+}
+/* line 65, ../Content/scss/partials/page/_wrapper.scss */
+.topNav ul li {
+  padding-right: 15px;
+  display: inline;
 }
 
 /* =============================================================================
