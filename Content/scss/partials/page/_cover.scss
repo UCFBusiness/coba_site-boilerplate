@@ -3,48 +3,38 @@
    COVER
    ========================================================================== */
 
-// Tablet //
-@media (max-width: 999px){
+.cover {
+    z-index: 3;
+
+    // Tablet //
+    @media (max-width: 999px){
     
-    .cover {
         width: 100%;
         max-width: none;
         height: 520px;
 
         position: relative !important;
-        z-index: 3;
     }
-}
 
-// Mobile-Landscape //
-@media (max-width: 699px) and (orientation: landscape){
+    // Mobile-Landscape //
+    @media (max-width: 699px) and (orientation: landscape){height: 320px;}
 
-}
+    // Mobile-Portrait //
+    @media (max-width: 499px) and (orientation: portrait){height: 260px;}
 
-// Mobile-Portrait //
-@media (max-width: 499px) and (orientation: portrait){
+    // Small Desktop //
+    @media (min-width: 1000px){
     
-    .cover {height: 260px;}
-}
-
-// Small Desktop //
-@media (min-width: 1000px){
-    
-    .cover {
         width: 380px;
         height: 100%;
 
         position: fixed;
         top: 0;
         bottom: 0;
-        z-index: 3;
     }
-}
 
-// Notebook //
-@media (min-width: 1300px){
-
-    .cover {width: 420px;}
+    // Notebook //
+    @media (min-width: 1300px){width: 420px;}
 }
 
 
@@ -83,22 +73,27 @@
 
     hgroup {
         padding-left: 10%;
-        width: 90%;
         line-height: 1em;
         color: #fff;
+        color: rgba(255, 255, 255, 0.9);
         text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
-        h1 {font-size: 2.8em; font-weight: 400;}
-        h2 {font-size: 1.8em; font-weight: 400;}
+        h1, h2 {font-weight: 400;}
+        h1 {font-size: 2.8em;}
+        h2 {font-size: 1.8em;}
 
         // Tablet //
         @media (max-width: 999px){padding-left: 7%;}
 
-        // Mobile-Portrait //
-        @media (max-width: 499px) and (orientation: portrait){
+        // Mobile //
+        @media (max-width: 699px){
+
             h1 {font-size: 1.5em;}
             h2 {font-size: 1.3em;}
         }
+
+        // Small Desktop //
+        @media (min-width: 1000px){width: 90%;}
     }
 }
 
@@ -121,23 +116,23 @@
         padding-left: 10%;
         line-height: 1em;
         color: #fff;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+
         font-size: 3.40em;
         font-weight: 200;
-        text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
         // Tablet //
         @media (max-width: 999px){padding-left: 7%;}
 
-        // Mobile-Portrait //
-        @media (max-width: 499px) and (orientation: portrait){font-size: 1.9em;}
+        // Mobile //
+        @media (max-width: 699px){font-size: 1.9em;}
         
         span {
             font-size: .730em;
-
-            // Mobile-Portrait //
-            @media (max-width: 499px) and (orientation: portrait){
-                font-size: .85em;
-            }
+            
+            // Mobile //
+            @media (max-width: 699px){font-size: .85em;}
         }
     }
 
@@ -179,7 +174,5 @@
     width: 250px;
 
     // Mobile-Portrait //
-    @media (max-width: 499px) and (orientation: portrait){
-        width: 50%;
-    }
+    @media (max-width: 499px) and (orientation: portrait){width: 50%;}
 }

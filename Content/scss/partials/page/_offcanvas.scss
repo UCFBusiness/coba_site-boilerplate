@@ -44,7 +44,7 @@
     z-index: 3;
 	
 	.scrollableArea {
-        background: red;
+        background: red; //<--- DEV
 		position: absolute;
 		bottom: 0;
 	}
@@ -63,23 +63,29 @@
 	
     // Tablet //
     @media (max-width: 999px){
-        transform: translate3d(50em,0,0);
-	    -ms-transform: translate3d(50em,0,0);
-	    -moz-transform: translate3d(50em,0,0);
-	    -webkit-transform: translate3d(50em,0,0);
-	    -o-transform: translate3d(50em,0,0);
+        transform: translate3d(53em,0,0);
+	    -ms-transform: translate3d(53em,0,0);
+	    -moz-transform: translate3d(53em,0,0);
+	    -webkit-transform: translate3d(53em,0,0);
+	    -o-transform: translate3d(53em,0,0);
     }
 
     // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){}
+    @media (max-width: 699px) and (orientation: landscape){
+        transform: translate3d(40em,0,0);
+	    -ms-transform: translate3d(40em,0,0);
+	    -moz-transform: translate3d(40em,0,0);
+	    -webkit-transform: translate3d(40em,0,0);
+	    -o-transform: translate3d(40em,0,0);
+    }
 
     // Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
-		transform: translate3d(20em,0,0);
-		-ms-transform: translate3d(20em,0,0);
-		-moz-transform: translate3d(20em,0,0);
-		-webkit-transform: translate3d(20em,0,0);
-		-o-transform: translate3d(20em,0,0);
+		transform: translate3d(23em,0,0);
+		-ms-transform: translate3d(23em,0,0);
+		-moz-transform: translate3d(23em,0,0);
+		-webkit-transform: translate3d(23em,0,0);
+		-o-transform: translate3d(23em,0,0);
 	}
 }
 .page.slidLeft {
@@ -91,23 +97,29 @@
 	
     // Tablet //
     @media (max-width: 999px){
-        transform: translate3d(-50em,0,0);
-	    -ms-transform: translate3d(-50em,0,0);
-	    -moz-transform: translate3d(-50em,0,0);
-	    -webkit-transform: translate3d(-50em,0,0);
-	    -o-transform: translate3d(-50em,0,0);
+        transform: translate3d(-53em,0,0);
+	    -ms-transform: translate3d(-53em,0,0);
+	    -moz-transform: translate3d(-53em,0,0);
+	    -webkit-transform: translate3d(-53em,0,0);
+	    -o-transform: translate3d(-53em,0,0);
     }
 
     // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){}
+    @media (max-width: 699px) and (orientation: landscape){
+        transform: translate3d(-40em,0,0);
+	    -ms-transform: translate3d(-40em,0,0);
+	    -moz-transform: translate3d(-40em,0,0);
+	    -webkit-transform: translate3d(-40em,0,0);
+	    -o-transform: translate3d(-40em,0,0);
+    }
 
     // Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
-		transform: translate3d(-20em,0,0);
-		-ms-transform: translate3d(-20em,0,0);
-		-moz-transform: translate3d(-20em,0,0);
-		-webkit-transform: translate3d(-20em,0,0);
-		-o-transform: translate3d(-20em,0,0);
+		transform: translate3d(-23em,0,0);
+		-ms-transform: translate3d(-23em,0,0);
+		-moz-transform: translate3d(-23em,0,0);
+		-webkit-transform: translate3d(-23em,0,0);
+		-o-transform: translate3d(-23em,0,0);
 	}
 }
 .no-csstransforms3d .page.slidRight {
@@ -115,15 +127,17 @@
 
     // Tablet //
     @media (max-width: 999px){
-        left: 48em;
+        left: 53em;
     }
 	
     // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){}
+    @media (max-width: 699px) and (orientation: landscape){
+        left: 40em;
+    }
 
     // Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
-		left: 20em;
+		left: 23em;
 	}
 }
 .no-csstransforms3d .page.slidLeft {
@@ -131,15 +145,17 @@
 
     // Tablet //
     @media (max-width: 999px){
-        left: -48em;
+        left: -53em;
     }
 
     // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){}
+    @media (max-width: 699px) and (orientation: landscape){
+        left: -40em;
+    }
 	
     // Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
-		left: -20em;
+		left: -23em;
 	}
 }
 
@@ -158,6 +174,7 @@
 		font-size: 2.5em;
 		line-height: 1.6em;
 		color: #dcdcdc;
+        color: #222;
 		text-decoration: none;
 		text-align: center;
 		opacity: 0.2;
@@ -250,15 +267,17 @@
 
     // Tablet //
     @media (max-width: 999px){
-        width: 50em;
+        width: 53em;
     }
 
     // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){}
+    @media (max-width: 699px) and (orientation: landscape){
+        width: 40em;
+    }
 	
     // Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
-		width: 20em;
+		width: 23em;
 	}
 
     .shutLeft, .shutRight {
