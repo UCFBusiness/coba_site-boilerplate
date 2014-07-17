@@ -3,19 +3,23 @@
 Footer
 ========================================================================== */
 
-footer .wrapper {
-    //padding: 10px 0;
+.footer {
+    border: 1px dashed lightblue; //<--- DEV LINE
+    background: #fff;
+    width: 100%;
 
-    h5 { /* The headers */
-        //background: #ddd;
-        margin-bottom: 15px;
-        line-height: 16px;
-        font-size: 1em;
+    //display: table-cell;
+    //vertical-align: bottom;
+    //position: absolute;
+    //bottom: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    h5 { /* headers */
         font-weight: 700;
-        color:#777;
         text-transform: uppercase;
-        text-shadow: 0 1px rgba(0,0,0,0.1);
-
         opacity:0.9;
         cursor:default;
     }
@@ -25,7 +29,7 @@ footer .wrapper {
         padding: 0;
     }
 
-    .icon {
+    a.icon {
         line-height: 2.23em;
 
         i {
@@ -33,13 +37,14 @@ footer .wrapper {
             padding-right: 7px;
         }
     }
-}
 
-span.copyright {
-    font-size: .65em; color: #bbb; line-height: 1.3em;
+    span.copyright {
+        font-size: .65em;
+        color: #bbb;
 
-    @media (max-width: 499px) and (orientation: portrait){
+        @media (max-width: 499px) and (orientation: portrait){
 
-        font-size: .55em; color: #bbb; line-height: 1.3em;
+            font-size: .55em;
+        }
     }
 }

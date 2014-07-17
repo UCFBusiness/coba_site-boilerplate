@@ -2,10 +2,10 @@
    PAGE CONTENT WRAPPER
    ========================================================================== */
 
-#main.wrapper{
+.main {
     //------------------------------------------------
     background: #fff; //<--- Testing
-    border-right: 1px dashed blue; //<--- DEV LINE
+    //border: 1px dashed blue; //<--- DEV LINE
     //------------------------------------------------
 
     position: relative;
@@ -33,11 +33,10 @@
         .wrapper-inner{max-width:1018px;}
     }
 
-    .wrapper-inner {
+    .main-inner {
         //max-width: 910px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
+        height: 100%;
+        position: relative;
 
         /*
         h1,
@@ -49,7 +48,7 @@
     }
 
     .section {
-        border-right: 1px dashed red; //<--- DEV LINE
+        //border: 1px solid green; //<--- DEV LINE
     }
 }
 
@@ -58,13 +57,14 @@
     color:#fff;    
 
     ul {
-        height:50px;
         list-style: none;
-        font-size: 1.3em;
 
         li {
+            padding: 10px 0;
             padding-right: 15px;
-            display:inline;
+            display:inline-block;
+            height:100%;
+            font-size: 1.3em;
         }
     }
 }
