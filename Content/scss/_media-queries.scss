@@ -2,28 +2,65 @@
 // Media-Queries
 // --------------------------------------------------
 
-// All Mediums -- Apply to all resolutions. Inherits to all layouts.
 
-// Tablet //
-@media (max-width: 999px){}
+// All Mediums // -- Applies to all resolutions. Inherits up to all widths
+
+
+// Tablet and Netbook //
+@media screen 
+and (max-width: 1024px){}
+
+
+// Tablet-Portrait Only //
+@media screen 
+and (max-width: 768px){}
+
+
+// iPad-Landscape //
+@media screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape){}
+
+
+// iPad-Portrait //
+@media screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait){}
+
 
 // Mobile //
-@media (max-width: 699px){}
+@media screen 
+and (max-width: 699px){}
+
 
 // Mobile-Landscape //
-@media (max-width: 699px) and (orientation: landscape){}
+@media screen 
+and (max-width: 699px) 
+and (orientation: landscape){}
+
 
 // Mobile-Portrait //
-@media (max-width: 499px) and (orientation: portrait){}
+@media screen 
+and (max-width: 499px) 
+and (orientation: portrait){}
+
 
 // Small Desktop //
-@media (min-width: 1000px){}
+@media screen 
+and (min-width: 1025px){}
+
 
 // Notebook //
-@media (min-width: 1300px){}
+@media screen 
+and (min-width: 1300px){}
+
 
 // Large Desktop //
-@media (min-width: 1600px){}
+@media screen 
+and (min-width: 1600px){}
+
 
 // Print //
 @media print {}
