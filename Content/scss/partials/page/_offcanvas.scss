@@ -33,47 +33,33 @@
 /*-------------------------------------------*/
 
 .sidebarLeft.show, .sidebarRight.show {
-    //background-color: #272727; // do not remove
-    z-index: 2;
+	z-index: 2;
 }
 
 /* Main central area styles */
 .page {
-    height: 100%;
+	border: 1px dashed red; //<---- development line
+	
+	height: 100%;
 	word-wrap: break-word;
 	position: relative;
-    z-index: 3;
-
-    /*
-    @media (min-width: 1025px){
-        position: fixed;
-        top: 0;
-
-        .page-inner {
-            overflow: auto;
-            position:absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            -webkit-overflow-scrolling: touch;
-        }
-    }*/
+	z-index: 3;
 
 	.scrollable {
-        top: 4em;
+		top: 4em;
 	}
 
-    .scrollableArea {
+	.scrollableArea {
 		position: absolute;
-        top: 4em;
+		top: 4em;
 		bottom: 0;
-    }
+	}
 }
 .no-js .page {
 	width: 100%;
 	height: 100%;
 }
+
 /* Slid styles */
 .page.slidRight {
 	transform: translate3d(40em,0,0);
@@ -82,25 +68,25 @@
 	-webkit-transform: translate3d(40em,0,0);
 	-o-transform: translate3d(40em,0,0);
 	
-    // Tablet //
-    @media (max-width: 999px){
-        transform: translate3d(53em,0,0);
-	    -ms-transform: translate3d(53em,0,0);
-	    -moz-transform: translate3d(53em,0,0);
-	    -webkit-transform: translate3d(53em,0,0);
-	    -o-transform: translate3d(53em,0,0);
-    }
+	// Tablet //
+	@media (max-width: 999px){
+		transform: translate3d(53em,0,0);
+		-ms-transform: translate3d(53em,0,0);
+		-moz-transform: translate3d(53em,0,0);
+		-webkit-transform: translate3d(53em,0,0);
+		-o-transform: translate3d(53em,0,0);
+	}
 
-    // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){
-        transform: translate3d(40em,0,0);
-	    -ms-transform: translate3d(40em,0,0);
-	    -moz-transform: translate3d(40em,0,0);
-	    -webkit-transform: translate3d(40em,0,0);
-	    -o-transform: translate3d(40em,0,0);
-    }
+	// Mobile-Landscape //
+	@media (max-width: 699px) and (orientation: landscape){
+		transform: translate3d(40em,0,0);
+		-ms-transform: translate3d(40em,0,0);
+		-moz-transform: translate3d(40em,0,0);
+		-webkit-transform: translate3d(40em,0,0);
+		-o-transform: translate3d(40em,0,0);
+	}
 
-    // Mobile-Portrait //
+	// Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
 		transform: translate3d(23em,0,0);
 		-ms-transform: translate3d(23em,0,0);
@@ -116,25 +102,25 @@
 	-webkit-transform: translate3d(-40em,0,0);
 	-o-transform: translate3d(-40em,0,0);
 	
-    // Tablet //
-    @media (max-width: 999px){
-        transform: translate3d(-53em,0,0);
-	    -ms-transform: translate3d(-53em,0,0);
-	    -moz-transform: translate3d(-53em,0,0);
-	    -webkit-transform: translate3d(-53em,0,0);
-	    -o-transform: translate3d(-53em,0,0);
-    }
+	// Tablet //
+	@media (max-width: 999px){
+		transform: translate3d(-53em,0,0);
+		-ms-transform: translate3d(-53em,0,0);
+		-moz-transform: translate3d(-53em,0,0);
+		-webkit-transform: translate3d(-53em,0,0);
+		-o-transform: translate3d(-53em,0,0);
+	}
 
-    // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){
-        transform: translate3d(-40em,0,0);
-	    -ms-transform: translate3d(-40em,0,0);
-	    -moz-transform: translate3d(-40em,0,0);
-	    -webkit-transform: translate3d(-40em,0,0);
-	    -o-transform: translate3d(-40em,0,0);
-    }
+	// Mobile-Landscape //
+	@media (max-width: 699px) and (orientation: landscape){
+		transform: translate3d(-40em,0,0);
+		-ms-transform: translate3d(-40em,0,0);
+		-moz-transform: translate3d(-40em,0,0);
+		-webkit-transform: translate3d(-40em,0,0);
+		-o-transform: translate3d(-40em,0,0);
+	}
 
-    // Mobile-Portrait //
+	// Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
 		transform: translate3d(-23em,0,0);
 		-ms-transform: translate3d(-23em,0,0);
@@ -146,17 +132,17 @@
 .no-csstransforms3d .page.slidRight {
 	left: 40em;
 
-    // Tablet //
-    @media (max-width: 999px){
-        left: 53em;
-    }
+	// Tablet //
+	@media (max-width: 999px){
+		left: 53em;
+	}
 	
-    // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){
-        left: 40em;
-    }
+	// Mobile-Landscape //
+	@media (max-width: 699px) and (orientation: landscape){
+		left: 40em;
+	}
 
-    // Mobile-Portrait //
+	// Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
 		left: 23em;
 	}
@@ -164,17 +150,17 @@
 .no-csstransforms3d .page.slidLeft {
 	left: -40em;
 
-    // Tablet //
-    @media (max-width: 999px){
-        left: -53em;
-    }
+	// Tablet //
+	@media (max-width: 999px){
+		left: -53em;
+	}
 
-    // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){
-        left: -40em;
-    }
+	// Mobile-Landscape //
+	@media (max-width: 699px) and (orientation: landscape){
+		left: -40em;
+	}
 	
-    // Mobile-Portrait //
+	// Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
 		left: -23em;
 	}
@@ -183,44 +169,45 @@
 /* Sliding side bars */
 .sidebarLeft, .sidebarRight {
 	//width: 30%;
-    //height: 100%;
+	//height: 100%;
 	word-wrap: break-word;
-    z-index: 1;
+	z-index: 1;
 	
-    .sidebarButton {
-        border: 1px solid red; //<---- development line
+	.sidebarButton {
+		border: 1px solid red; //<---- development line
 
-		//display: none;
+		display: none;
 		width: 1.6em;
 		font-size: 2.5em;
 		line-height: 1.6em;
 		color: #dcdcdc;
-        color: #222;
+		color: #222;
 		text-decoration: none;
 		text-align: center;
 		opacity: 0.2;
 
-		top: 0;
-        z-index: 0;
+		z-index: 3;
 		
 		&:hover {
 			opacity: 0.5;
 		}
-    }
-
-    /* hides close button unless JS is enabled */
-	.shutLeft, .shutRight {
-        @extend .sidebarButton;
-        position: fixed;
 	}
 
-    .sidebarMenuTab {
-        @extend .sidebarButton;
-        position: relative;
+	/* hides close button unless JS is enabled */
+	.shutLeft, .shutRight {
+		@extend .sidebarButton;
+		//position: fixed;
+		position: absolute;
+		top: 0;
+	}
 
-        &.active {
-            opacity: 0.5;
-        }
+	.sidebarMenuTab {
+		@extend .sidebarButton;
+		position: relative;
+
+		&.active {
+			opacity: 0.5;
+		}
 	}
 }
 .sidebarLeft.slidRight, .sidebarRight.slidLeft {
@@ -243,82 +230,84 @@
 /*---------------------*/
 
 // Tablet //
-@media (max-width: 999px){
-    html.offcanvas {
-	    //overflow-x: hidden;
-    }
+@media (max-width: 1024px){
+	html.offcanvas {
+		//overflow-x: hidden; //<-- do not remove
+	}
 }
 
 .offcanvas body {
-	overflow-x: hidden;
+	overflow-y: auto; //<-- do not remove
+
+	// Small Desktop //
+	@media screen and (min-width: 1025px){
+		overflow-x: hidden; //<-- do not remove
+	}
 }
 
 .offcanvas .page {
 	width: 100%;
 	height: 100%;
-
-    // Tablet //
-    @media (min-width: 1000px){
-        //border: 2px dashed red; //<--- DEV LINE
-        //left: 380px
-    }
+	position: relative;
 }
 
 .offcanvas .scrollableArea {
-    overflow: auto;
-    position:absolute;
-    top: 4em;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    //-webkit-overflow-scrolling: touch;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+
+	position:absolute;
+	top: 4em;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 /* Styles for both sidebars */
 .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
 	width: 40em;
-    height: 100%;
-    
-    position: fixed;
+	height: 100%;
+	
+	//position: fixed;
+	position: absolute;
 	top: 0;
 	bottom: 0;
 
-    // Tablet //
-    @media (max-width: 999px){
-        width: 53em;
-    }
+	// Tablet //
+	@media (max-width: 999px){
+		width: 53em;
+	}
 
-    // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){
-        width: 40em;
-    }
+	// Mobile-Landscape //
+	@media (max-width: 699px) and (orientation: landscape){
+		width: 40em;
+	}
 	
-    // Mobile-Portrait //
+	// Mobile-Portrait //
 	@media (max-width: 499px) and (orientation: portrait){
 		width: 23em;
 	}
 
-    // Large Desktop //
-    @media (min-width: 1600px){}
+	// Large Desktop //
+	@media (min-width: 1600px){}
 
-    .shutLeft, .shutRight {
+	.shutLeft, .shutRight {
 		display: block;
 	}
 
-    .sidebarMenuTab  {
-        display: inline-block;
-    }
+	.sidebarMenuTab  {
+		display: inline-block;
+	}
 }
 .offcanvas .sidebarLeft {
 	left: 0;
-    /*
+	/*
 	transform: translate3d(-7em,0,0);
 	-ms-transform: translate3d(-7em,0,0);
 	-moz-transform: translate3d(-7em,0,0);
 	-webkit-transform: translate3d(-7em,0,0);
 	-o-transform: translate3d(-7em,0,0);
-    */
-    transform: translate3d(0,0,0);
+	*/
+	transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0,0,0);
@@ -330,14 +319,14 @@
 }
 .offcanvas .sidebarRight {
 	right: 0;
-    /*
+	/*
 	transform: translate3d(7em,0,0);
 	-ms-transform: translate3d(7em,0,0);
 	-moz-transform: translate3d(7em,0,0);
 	-webkit-transform: translate3d(7em,0,0);
 	-o-transform: translate3d(7em,0,0);
-    */
-    transform: translate3d(0,0,0);
+	*/
+	transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0,0,0);

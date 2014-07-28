@@ -4,52 +4,20 @@
 
 .main {
     //------------------------------------------------
-    background: #fff; //<--- Testing
-    //border: 1px dashed blue; //<--- DEV LINE
+    //background: #fff; //<--- Testing
+    border: 1px dashed blue; //<--- DEV LINE
     //------------------------------------------------
 
+    height: 100%;
     position: relative;
+    top: 0;
     left: 0;
 
     // Small Desktop //
-    @media (min-width: 1000px){
-        
-        position:absolute; //<-- if removing, you need to resize the panel width
-        top: 0;
-        left: 380px;
-        right: 0;
-        bottom: 0;
-    }
+    @media screen and (min-width: 1000px){padding-left: 380px; min-height: 960px;}
 
     // Notebook //
-    @media (min-width: 1300px){
-
-        left: 420px;
-    }
-
-    // Large Desktop //
-    @media (min-width: 1600px){
-        
-        .wrapper-inner{max-width:1018px;}
-    }
-
-    .main-inner {
-        //max-width: 910px;
-        height: 100%;
-        position: relative;
-
-        /*
-        h1,
-        h2,
-        h3 {
-            font-weight: 200;
-            color: #ddb000;
-        }*/
-    }
-
-    .section {
-        //border: 1px solid green; //<--- DEV LINE
-    }
+    @media screen and (min-width: 1300px){padding-left: 420px;}
 }
 
 .topNav {

@@ -3,19 +3,10 @@
 Footer
 ========================================================================== */
 
-.footer {
-    border: 1px dashed lightblue; //<--- DEV LINE
+footer {
+    border: 1px dashed green; //<--- DEV LINE
     background: #fff;
-    width: 100%;
-
-    //display: table-cell;
-    //vertical-align: bottom;
-    //position: absolute;
-    //bottom: 0;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    position: relative;
 
     h5 { /* headers */
         font-weight: 700;
@@ -42,9 +33,15 @@ Footer
         font-size: .65em;
         color: #bbb;
 
-        @media (max-width: 499px) and (orientation: portrait){
-
-            font-size: .55em;
-        }
+        @media (max-width: 499px) and (orientation: portrait){font-size: .55em;}
     }
+
+    // Small Desktop //
+    @media screen and (min-width: 1000px){
+        position: absolute;
+        left: 380px;
+    }
+
+    // Notebook //
+    @media (min-width: 1300px){left: 420px;}
 }

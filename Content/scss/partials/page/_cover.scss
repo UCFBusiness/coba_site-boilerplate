@@ -4,17 +4,14 @@
    ========================================================================== */
 
 .cover {
+    width: 100%;
+    max-width: none;
     z-index: 3;
 
-    // Tablet //
-    @media (max-width: 999px){
-    
-        width: 100%;
-        max-width: none;
-        height: 520px;
+    position: relative;
 
-        position: relative !important;
-    }
+    // Tablet //
+    @media (max-width: 999px){height: 520px;}
 
     // Mobile-Landscape //
     @media (max-width: 699px) and (orientation: landscape){height: 320px;}
@@ -30,6 +27,7 @@
 
         position: fixed;
         top: 0;
+        left: 0;
         bottom: 0;
     }
 

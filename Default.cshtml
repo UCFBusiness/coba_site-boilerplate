@@ -9,7 +9,7 @@
 }
 
 @section Scripts {
-    <script>
+	<script>
 		require(['main'], function ()
 		{
 			// Once the 'main' script is loaded, load up scripts specific to this page
@@ -27,220 +27,220 @@
 }
 
 @section featured {
-    <!-- Authentication: BEGIN -->
-    <section id="login" style="display: none;">
-	    <p>Authenticated: @WebSecurity.IsAuthenticated</p>
-	    @if (WebSecurity.IsAuthenticated) {
-		    <text>
-			    Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
-			    <form id="logoutForm" action="~/Account/Logout" method="post">
-				    @AntiForgery.GetHtml()
-				    <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
-			    </form>
-		    </text>
-	    } else {
-		    <ul>
-			    <li><a href="~/Account/Register">Register</a></li>
-			    <li><a href="~/Account/Login">Log in</a></li>
-		    </ul>
-	    }
-    </section>
-    <!-- Authentication: FINIS -->
+	<!-- Authentication: BEGIN -->
+	<section id="login" style="display: none;">
+		<p>Authenticated: @WebSecurity.IsAuthenticated</p>
+		@if (WebSecurity.IsAuthenticated) {
+			<text>
+				Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+				<form id="logoutForm" action="~/Account/Logout" method="post">
+					@AntiForgery.GetHtml()
+					<a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+				</form>
+			</text>
+		} else {
+			<ul>
+				<li><a href="~/Account/Register">Register</a></li>
+				<li><a href="~/Account/Login">Log in</a></li>
+			</ul>
+		}
+	</section>
+	<!-- Authentication: FINIS -->
 
-    <!-- Site Feedback: BEGIN -->
-    <span id="msg" style="margin-top:20px; padding-left:10px; color:#fff"></span>
-    <!-- Site Feedback: FINIS -->
+	<!-- Site Feedback: BEGIN -->
+	<span id="msg" style="margin-top:20px; padding-left:10px; color:#fff"></span>
+	<!-- Site Feedback: FINIS -->
 }
 
 
 <header class="section"></header>
 <section class="section">
-    <!--// ROW - SPOTLIGHTS/FEATURED ANNOUNCEMENTS -->
-    <div class="pagespan">
-	    <section class="wrap">
-		    <div class="wrap-header">
-			    <span>Spotlights</span>
-			    <span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
-		    </div>
-		    <div class="frame" id="row1" data-intro="row1" data-position="left">
-			    <ul class="clearfix">
+	<!--// ROW - SPOTLIGHTS/FEATURED ANNOUNCEMENTS -->
+	<div class="pagespan">
+		<section class="wrap">
+			<div class="wrap-header">
+				<span>Spotlights</span>
+				<span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
+			</div>
+			<div class="frame" id="row1" data-intro="row1" data-position="left">
+				<ul class="clearfix">
 				
-				    <li class="long-panel">
-					    <div title="start here">
-						    <a href="//issuu.com/ucfbusiness/docs/cba-viewbook-2012?e=0" class="target_blank">
-							    <img class="viewbook" alt="ucf" data-echo="/images/pixel.gif" width="100%" height="100%">
-							    <p>Start Here...with our college guide</p>
-						    </a>
-					    </div>
-				    </li>
+					<li class="long-panel">
+						<div title="start here">
+							<a href="//issuu.com/ucfbusiness/docs/cba-viewbook-2012?e=0" class="target_blank">
+								<img class="viewbook" alt="ucf" data-echo="/images/pixel.gif" width="100%" height="100%">
+								<p>Start Here...with our college guide</p>
+							</a>
+						</div>
+					</li>
 
-				    <li>
-					    <div title="dr. jarley's blog">
-						    <a href="//pauljarley.wordpress.com" class="target_blank">
-							    <img alt="ucf" data-echo="/images/panels/dean-blog.jpg" width="100%" height="100%">
-							    <p>Dean Jarley's Blog</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="dr. jarley's blog">
+							<a href="//pauljarley.wordpress.com" class="target_blank">
+								<img alt="ucf" data-echo="/images/panels/dean-blog.jpg" width="100%" height="100%">
+								<p>Dean Jarley's Blog</p>
+							</a>
+						</div>
+					</li>
 
-				    <li>
-					    <div title="Office of Professional Development Blog">
-						    <a href="//careerpros.wordpress.com/" class="target_blank">
-							    <img alt="ucf" data-echo="/images/panels/opd-blog.jpg" width="100%" height="100%">
-							    <p>Read the OPD Blog to help prepare you for the workforce after graduation</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="Office of Professional Development Blog">
+							<a href="//careerpros.wordpress.com/" class="target_blank">
+								<img alt="ucf" data-echo="/images/panels/opd-blog.jpg" width="100%" height="100%">
+								<p>Read the OPD Blog to help prepare you for the workforce after graduation</p>
+							</a>
+						</div>
+					</li>
 				
-				    <li>
-					    <div title="Take the ball by Dr. Paul Jarley">
-						    <a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
-							    <img alt="ucf" data-echo="/images/panels/take-the-ball.jpg" width="100%" height="100%">
-							    <p>Learn how to Take the Ball</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="Take the ball by Dr. Paul Jarley">
+							<a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
+								<img alt="ucf" data-echo="/images/panels/take-the-ball.jpg" width="100%" height="100%">
+								<p>Learn how to Take the Ball</p>
+							</a>
+						</div>
+					</li>
 
-				    <li>
-					    <div title="meet our faculty">
-						    <a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">
-							    <img alt="ucf" data-echo="/images/panels/meet-our-faculty.jpg" width="100%" height="100%">
-							    <p>Search our faculty directory</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="meet our faculty">
+							<a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">
+								<img alt="ucf" data-echo="/images/panels/meet-our-faculty.jpg" width="100%" height="100%">
+								<p>Search our faculty directory</p>
+							</a>
+						</div>
+					</li>
 
-			    </ul>
-		    </div><!--/frame -->
-		    <div class="scrollbar">
-			    <div class="handle">
-				    <div class="mousearea"><span></span></div>
-			    </div>
-		    </div><!--/scrollbar --> 
-		    <div class="controls center use-fastclick">
-			    <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
-			    <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-		    </div><!--/controls -->    
-	    </section>
-    </div>
-    <!--// ROW - EVENTS -->
-    <div class="pagespan">
-	    <section class="wrap">
-		    <div class="wrap-header">
-			    <span>Events</span>
-			    <span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
-		    </div>
-		    <div class="frame" id="row2" data-intro="row2" data-position="left">
-			    <ul class="clearfix">
+				</ul>
+			</div><!--/frame -->
+			<div class="scrollbar">
+				<div class="handle">
+					<div class="mousearea"><span></span></div>
+				</div>
+			</div><!--/scrollbar --> 
+			<div class="controls center use-fastclick">
+				<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+				<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+			</div><!--/controls -->    
+		</section>
+	</div>
+	<!--// ROW - EVENTS -->
+	<div class="pagespan">
+		<section class="wrap">
+			<div class="wrap-header">
+				<span>Events</span>
+				<span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
+			</div>
+			<div class="frame" id="row2" data-intro="row2" data-position="left">
+				<ul class="clearfix">
 				
-				    <li>
-					    <div title="executive and professional development programs">
-						    <a href="//edc.research.ucf.edu/fin2014" class="target_blank">
-							    <img alt="executive and professional development programs" data-echo="/images/panels/execed-event.jpg?@DateTime.Now.TimeOfDay" width="100%" height="100%">
-							    <p>Finance & Accounting Workshop for Non-Financial Managers</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="executive and professional development programs">
+							<a href="//edc.research.ucf.edu/fin2014" class="target_blank">
+								<img alt="executive and professional development programs" data-echo="/images/panels/execed-event.jpg?@DateTime.Now.TimeOfDay" width="100%" height="100%">
+								<p>Finance & Accounting Workshop for Non-Financial Managers</p>
+							</a>
+						</div>
+					</li>
 				
-				    <li>
-					    <div title="get your evening mba">
-						    <a href="//ucfmba.ucf.edu/evening-mba" class="target_blank">
-							    <img alt="ucf evening mba program" data-echo="/images/panels/evening-mba.jpg?@DateTime.Now.TimeOfDay" width="100%" height="100%">
-							    <p>Join us for an Information Session. Application deadline is August 1.</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="get your evening mba">
+							<a href="//ucfmba.ucf.edu/evening-mba" class="target_blank">
+								<img alt="ucf evening mba program" data-echo="/images/panels/evening-mba.jpg?@DateTime.Now.TimeOfDay" width="100%" height="100%">
+								<p>Join us for an Information Session. Application deadline is August 1.</p>
+							</a>
+						</div>
+					</li>
 				
-				    <li>
-					    <div title="get your professional mba">
-						    <a href="//edc.research.ucf.edu/pmba" class="target_blank">
-							    <img alt="ucf professional mba" data-echo="/images/panels/pmba-event.jpg?@DateTime.Now.TimeOfDay" width="100%" height="100%">
-							    <p>Join us for a PMBA Palm Bay Information Session</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="get your professional mba">
+							<a href="//edc.research.ucf.edu/pmba" class="target_blank">
+								<img alt="ucf professional mba" data-echo="/images/panels/pmba-event.jpg?@DateTime.Now.TimeOfDay" width="100%" height="100%">
+								<p>Join us for a PMBA Palm Bay Information Session</p>
+							</a>
+						</div>
+					</li>
 
-				    <li>
-					    <div title="get your executive mba">
-						    <a href="//edc.research.ucf.edu/emba" class="target_blank">
-							    <img alt="ucf executive mba" data-echo="/images/panels/emba-event.jpg?@DateTime.Now.TimeOfDay" width="100%" height="100%">
-							    <p>Join us for our next UCF EMBA Information Session</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="get your executive mba">
+							<a href="//edc.research.ucf.edu/emba" class="target_blank">
+								<img alt="ucf executive mba" data-echo="/images/panels/emba-event.jpg?@DateTime.Now.TimeOfDay" width="100%" height="100%">
+								<p>Join us for our next UCF EMBA Information Session</p>
+							</a>
+						</div>
+					</li>
 
-			    </ul>
-		    </div><!--/frame -->
-		    <div class="scrollbar">
-			    <div class="handle">
-				    <div class="mousearea"><span></span></div>
-			    </div>
-		    </div><!--/scrollbar --> 
-		    <div class="controls center use-fastclick">
-			    <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
-			    <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-		    </div><!--/controls --> 
-	    </section>
-    </div>
-    <!--// ROW - NEWS -->
-    <div class="pagespan">
-	    <section class="wrap">
-		    <div class="wrap-header">
-			    <span>News</span>
-			    <span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
-		    </div>
-		    <div class="frame" id="row3" data-intro="row3" data-position="left">
-			    <ul class="clearfix">
+				</ul>
+			</div><!--/frame -->
+			<div class="scrollbar">
+				<div class="handle">
+					<div class="mousearea"><span></span></div>
+				</div>
+			</div><!--/scrollbar --> 
+			<div class="controls center use-fastclick">
+				<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+				<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+			</div><!--/controls --> 
+		</section>
+	</div>
+	<!--// ROW - NEWS -->
+	<div class="pagespan">
+		<section class="wrap">
+			<div class="wrap-header">
+				<span>News</span>
+				<span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
+			</div>
+			<div class="frame" id="row3" data-intro="row3" data-position="left">
+				<ul class="clearfix">
 
-				    <li>
-					    <div title="ucf today">
-						    <a href="//today.ucf.edu/section/business/" class="target_blank">
-							    <img alt="ucf" data-echo="/images/panels/ucf-news.jpg" width="100%" height="100%">
-							    <p>Business and Economy News</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="ucf today">
+							<a href="//today.ucf.edu/section/business/" class="target_blank">
+								<img alt="ucf" data-echo="/images/panels/ucf-news.jpg" width="100%" height="100%">
+								<p>Business and Economy News</p>
+							</a>
+						</div>
+					</li>
 
-				    <li>
-					    <div title="Stay connected with social media">
-						    <a href="~/social-media">
-							    <img alt="ucf" data-echo="/images/panels/social-media.jpg" width="100%" height="100%">
-							    <p>Join the conversation</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="Stay connected with social media">
+							<a href="~/social-media">
+								<img alt="ucf" data-echo="/images/panels/social-media.jpg" width="100%" height="100%">
+								<p>Join the conversation</p>
+							</a>
+						</div>
+					</li>
 
-				    <li>
-					    <div title="the joust">
-						    <a href="//web.bus.ucf.edu/joust" class="target_blank">
-							    <img alt="ucf" data-echo="/images/panels/thejoust.jpg" width="100%" height="100%" >
-							    <p>2014 Joust Winner Announced</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="the joust">
+							<a href="//web.bus.ucf.edu/joust" class="target_blank">
+								<img alt="ucf" data-echo="/images/panels/thejoust.jpg" width="100%" height="100%" >
+								<p>2014 Joust Winner Announced</p>
+							</a>
+						</div>
+					</li>
 
-				    <li>
-					    <div title="dr. sean snaith's economic forecasts">
-						    <a href="//iec.ucf.edu/page/forecasts.aspx" class="target_blank">
-							    <img alt="ucf" data-echo="/images/panels/snaith-forecasts.jpg" width="100%" height="100%" >
-							    <p>Florida and U.S. Economic Forecasts from Dr. Sean Snaith</p>
-						    </a>
-					    </div>
-				    </li>
+					<li>
+						<div title="dr. sean snaith's economic forecasts">
+							<a href="//iec.ucf.edu/page/forecasts.aspx" class="target_blank">
+								<img alt="ucf" data-echo="/images/panels/snaith-forecasts.jpg" width="100%" height="100%" >
+								<p>Florida and U.S. Economic Forecasts from Dr. Sean Snaith</p>
+							</a>
+						</div>
+					</li>
 				
-			    </ul>
-		    </div><!--/frame -->
-		    <div class="scrollbar">
-			    <div class="handle">
-				    <div class="mousearea"><span></span></div>
-			    </div>
-		    </div><!--/scrollbar --> 
-		    <div class="controls center use-fastclick">
-			    <button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
-			    <button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-		    </div><!--/controls --> 
-	    </section>
-    </div>
+				</ul>
+			</div><!--/frame -->
+			<div class="scrollbar">
+				<div class="handle">
+					<div class="mousearea"><span></span></div>
+				</div>
+			</div><!--/scrollbar --> 
+			<div class="controls center use-fastclick">
+				<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+				<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+			</div><!--/controls --> 
+		</section>
+	</div>
 </section>
 <section class="section"></section>
 <section class="section"></section>

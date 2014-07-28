@@ -4,67 +4,67 @@
 
 .topBar {
 	width: 100%;
-    vertical-align: center;
+	vertical-align: center;
 	overflow: hidden;
-    
-    position: relative;
-    top: 0;
-    left: 0;
+	
+	position: relative;
+	top: 0;
+	left: 0;
 
-    @media (min-width: 1000px){
-        width:380px;
-    }
+	@media (min-width: 1000px){
+		width:380px;
+	}
 
-    // Notebook //
-    @media (min-width: 1300px){
-        width: 420px;
-    }
+	// Notebook //
+	@media (min-width: 1300px){
+		width: 420px;
+	}
 	
 
-    .ucfBar {
-        background: #000;
-        border-bottom: 1px solid #333;
-        height: 50px;
-        color: #ffcc00;
-        word-wrap: break-word;
-        position: relative;
-    }
+	.ucfBar {
+		background: #000;
+		border-bottom: 1px solid #333;
+		height: 50px;
+		color: #ffcc00;
+		word-wrap: break-word;
+		position: relative;
+	}
 
-    .cbaBar {
-        background: rgba(0,0,0,0.6);
-        padding: 0 10px;
-        //height: 38px;
-        word-wrap: break-word;
-        vertical-align: center;
-        position: relative;
-    }
+	.cbaBar {
+		background: rgba(0,0,0,0.6);
+		padding: 0 10px;
+		//height: 38px;
+		word-wrap: break-word;
+		vertical-align: center;
+		position: relative;
+	}
 
-    .slideRight, .slideLeft, .bttnHome {
+	.slideRight, .slideLeft, .bttnHome {
 		padding-right: 0.333em;
-        font-size: 1.8em;
-        color: #fff;
+		font-size: 1.8em;
+		color: #fff;
 		text-decoration: none;
-        text-align: center;
-        position: relative;
+		text-align: center;
+		position: relative;
 	}
 
-    .slideLeft {
-        
-        span {
-            font-size: 0.57em;
-        }
+	.slideLeft {
+		
+		span {
+			font-size: 0.57em;
+		}
 	}
 
-    .slideRight:hover, .slideRight.pressed, .slideLeft:hover, .slideLeft.pressed {
+	.slideRight:hover, .slideRight.pressed, .slideLeft:hover, .slideLeft.pressed {
 		color:scale-lightness(#fff, 15em);
 	}
 
 	.slideRight.pressed, .slideLeft.pressed {
 		background:scale-lightness(#999, -15em);
 	}  
-    
+	
 
-    /*
+	/*
 	.slideRight, .slideLeft, .bttnHome {
 		position: absolute;
 		top: 3px;
@@ -76,18 +76,18 @@
 		text-decoration: none;
 		text-align: center;
 	}
-    .slideRight {
-        left: 0;
+	.slideRight {
+		left: 0;
 	}
 	.slideLeft {
 		right: 0;
 
-        span {
-            font-size: 0.67em;
-        }
+		span {
+			font-size: 0.67em;
+		}
 	}
-    .bttnHome {
-        left: 0;
-    }
-    */
+	.bttnHome {
+		left: 0;
+	}
+	*/
 }
