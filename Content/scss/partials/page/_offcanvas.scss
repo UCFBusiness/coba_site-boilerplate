@@ -193,7 +193,6 @@
 	/* hides close button unless JS is enabled */
 	.shutLeft, .shutRight {
 		@extend .sidebarButton;
-		//position: fixed;
 		position: absolute;
 		top: 0;
 	}
@@ -263,8 +262,8 @@
 	width: 40em;
 	height: 100%;
 	
-	//position: fixed;
-	position: absolute;
+	position: fixed;
+	//position: absolute;
 	top: 0;
 	bottom: 0;
 

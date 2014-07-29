@@ -10496,16 +10496,16 @@ body {
   position: absolute;
   top: 0;
 }
-/* line 201, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 200, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .sidebarMenuTab, .sidebarRight .sidebarMenuTab {
   position: relative;
 }
-/* line 205, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 204, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft .sidebarMenuTab.active, .sidebarRight .sidebarMenuTab.active {
   opacity: 0.5;
 }
 
-/* line 210, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 209, ../Content/scss/partials/page/_offcanvas.scss */
 .sidebarLeft.slidRight, .sidebarRight.slidLeft {
   transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -10514,12 +10514,12 @@ body {
   -o-transform: translate3d(0, 0, 0);
 }
 
-/* line 217, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 216, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .sidebarLeft.slidRight {
   left: 0;
 }
 
-/* line 220, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 219, ../Content/scss/partials/page/_offcanvas.scss */
 .no-csstransforms3d .sidebarRight.slidLeft {
   right: 0;
 }
@@ -10528,29 +10528,29 @@ body {
 /* ==   Off.canvas  == */
 /*---------------------*/
 @media (max-width: 1024px) {
-  /* line 231, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 230, ../Content/scss/partials/page/_offcanvas.scss */
   html.offcanvas {
     overflow-x: hidden;
   }
 }
-/* line 236, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 235, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas body {
   overflow-y: auto;
 }
 @media screen and (min-width: 1025px) {
-  /* line 236, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 235, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas body {
     overflow-x: hidden;
   }
 }
 
-/* line 245, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 244, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .page {
   width: 100%;
   height: 100%;
 }
 
-/* line 250, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 249, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .scrollableArea {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -10562,42 +10562,42 @@ body {
 }
 
 /* Styles for both sidebars */
-/* line 262, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 261, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
   width: 40em;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 262, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 261, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
     width: 53em;
   }
 }
 @media screen and (max-width: 699px) and (orientation: landscape) {
-  /* line 262, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 261, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
     width: 40em;
   }
 }
 @media screen and (max-width: 499px) and (orientation: portrait) {
-  /* line 262, ../Content/scss/partials/page/_offcanvas.scss */
+  /* line 261, ../Content/scss/partials/page/_offcanvas.scss */
   .offcanvas .sidebarLeft, .offcanvas .sidebarRight {
     width: 23em;
   }
 }
-/* line 289, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 288, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .shutLeft, .offcanvas .sidebarLeft .shutRight, .offcanvas .sidebarRight .shutLeft, .offcanvas .sidebarRight .shutRight {
   display: block;
 }
-/* line 293, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 292, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .sidebarMenuTab, .offcanvas .sidebarRight .sidebarMenuTab {
   display: inline-block;
 }
 
-/* line 297, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 296, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft {
   left: 0;
   /*
@@ -10613,12 +10613,12 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
 }
-/* line 312, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 311, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarLeft .shutLeft {
   left: 0;
 }
 
-/* line 316, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 315, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarRight {
   right: 0;
   /*
@@ -10634,7 +10634,7 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
 }
-/* line 331, ../Content/scss/partials/page/_offcanvas.scss */
+/* line 330, ../Content/scss/partials/page/_offcanvas.scss */
 .offcanvas .sidebarRight .shutRight {
   right: 0;
 }
@@ -10650,8 +10650,6 @@ body {
 /* line 5, ../Content/scss/partials/page/_topbar.scss */
 .topBar {
   width: 100%;
-  vertical-align: middle;
-  overflow: hidden;
   position: relative;
   top: 0;
   left: 0;
@@ -10694,41 +10692,39 @@ body {
     width: 420px;
   }
 }
-/* line 24, ../Content/scss/partials/page/_topbar.scss */
+/* line 19, ../Content/scss/partials/page/_topbar.scss */
 .topBar .ucfBar {
   background: #000;
   border-bottom: 1px solid #333;
   height: 50px;
   color: #ffcc00;
   word-wrap: break-word;
-  position: relative;
+  display: block;
 }
-/* line 33, ../Content/scss/partials/page/_topbar.scss */
+/* line 28, ../Content/scss/partials/page/_topbar.scss */
 .topBar .cbaBar {
   background: rgba(0, 0, 0, 0.6);
-  padding: 0 10px;
+  padding: 13px;
   word-wrap: break-word;
   vertical-align: middle;
-  position: relative;
 }
-/* line 42, ../Content/scss/partials/page/_topbar.scss */
+/* line 35, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight, .topBar .slideLeft, .topBar .bttnHome {
   padding-right: 0.333em;
   font-size: 1.8em;
   color: #fff;
   text-decoration: none;
   text-align: center;
-  position: relative;
 }
-/* line 53, ../Content/scss/partials/page/_topbar.scss */
+/* line 45, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideLeft span {
   font-size: 0.57em;
 }
-/* line 58, ../Content/scss/partials/page/_topbar.scss */
+/* line 50, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight:hover, .topBar .slideRight.pressed, .topBar .slideLeft:hover, .topBar .slideLeft.pressed {
   color: white;
 }
-/* line 62, ../Content/scss/partials/page/_topbar.scss */
+/* line 54, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight.pressed, .topBar .slideLeft.pressed {
   background: #828282;
 }
@@ -10938,7 +10934,7 @@ body {
    ========================================================================== */
 /* line 13, ../Content/scss/partials/page/_main.scss */
 .main {
-  border: 2px dashed blue;
+  border: 1px dashed blue;
   height: 100%;
   position: relative;
   top: 0;
@@ -10949,12 +10945,12 @@ body {
   .main {
     padding-left: 380px;
   }
-  /* line 29, ../Content/scss/partials/page/_main.scss */
-  .main .content {
+  /* line 28, ../Content/scss/partials/page/_main.scss */
+  .main .content-wrapper {
     margin-bottom: 320px;
     /* Margin bottom by footer height */
     height: 100%;
-    min-height: 560px;
+    min-height: 570px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -10964,22 +10960,23 @@ body {
   }
 }
 
-/* line 43, ../Content/scss/partials/page/_main.scss */
-.topNav {
-  background-color: #000;
+/* line 41, ../Content/scss/partials/page/_main.scss */
+.topnav {
+  background: #111;
+  padding: 13px;
+  vertical-align: middle;
   color: #fff;
 }
 /* line 47, ../Content/scss/partials/page/_main.scss */
-.topNav ul {
+.topnav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/* line 50, ../Content/scss/partials/page/_main.scss */
-.topNav ul li {
-  padding: 10px 0;
+/* line 52, ../Content/scss/partials/page/_main.scss */
+.topnav ul li {
   padding-right: 15px;
   display: inline-block;
-  height: 100%;
-  font-size: 1.3em;
 }
 
 /* =============================================================================
@@ -10987,7 +10984,6 @@ Footer
 ========================================================================== */
 /* line 6, ../Content/scss/partials/page/_footer.scss */
 footer {
-  border: 1px dashed green;
   width: 100%;
   position: relative;
 }

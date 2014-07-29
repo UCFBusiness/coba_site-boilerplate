@@ -28,7 +28,7 @@
 
 @section featured {
 	<!-- Authentication: BEGIN -->
-	<section id="login" style="display: none;">
+	<section id="login" style="display: none; visibility: hidden;">
 		<p>Authenticated: @WebSecurity.IsAuthenticated</p>
 		@if (WebSecurity.IsAuthenticated) {
 			<text>
@@ -48,10 +48,9 @@
 	<!-- Authentication: FINIS -->
 
 	<!-- Site Feedback: BEGIN -->
-	<span id="msg" style="margin-top:20px; padding-left:10px; color:#fff"></span>
+	<span id="msg" style="padding:10px; color:#fff"></span>
 	<!-- Site Feedback: FINIS -->
 }
-
 
 <header class="section"></header>
 

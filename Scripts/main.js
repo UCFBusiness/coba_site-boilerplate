@@ -7,154 +7,154 @@ console.log( 'START: main.js' );
 
 // Configure RequireJS
 requirejs.config({
-    baseUrl: '/scripts',
-    paths: {
-        /**-----------------------------------
-         Frameworks/Libraries
-        -----------------------------------**/
+	baseUrl: '/scripts',
+	paths: {
+		/**-----------------------------------
+		 Frameworks/Libraries
+		-----------------------------------**/
 
-        'angular': [ // angular does not support AMD out of the box, put it in a shim
-            '//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min',
-            // If CDN fails, load from this location
-            'libs/angular.min'
-        ],
-        'bootstrap': [
-            '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
-            // If CDN fails, load from this location
-            'libs/bootstrap.min'
-        ],
-        'jquery': [
-            '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
-            // If CDN fails, load from this location
-            'libs/jquery-2.0.3.min'
-        ],
-        'jquery-ui': [
-            '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min',
-            // If CDN fails, load from this location
-            'libs/jquery-ui-1.10.3.min'
-        ],
-        'modernizr': [
-            '//ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.6.2',
-            // If CDN fails, load from this location
-            'libs/modernizr-2.6.2.min'
-        ],
-        'domReady': 'libs/domReady',
+		'angular': [ // angular does not support AMD out of the box, put it in a shim
+			'//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min',
+			// If CDN fails, load from this location
+			'libs/angular.min'
+		],
+		'bootstrap': [
+			'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
+			// If CDN fails, load from this location
+			'libs/bootstrap.min'
+		],
+		'jquery': [
+			'//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
+			// If CDN fails, load from this location
+			'libs/jquery-2.0.3.min'
+		],
+		'jquery-ui': [
+			'//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min',
+			// If CDN fails, load from this location
+			'libs/jquery-ui-1.10.3.min'
+		],
+		'modernizr': [
+			'//ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.6.2',
+			// If CDN fails, load from this location
+			'libs/modernizr-2.6.2.min'
+		],
+		'domReady': 'libs/domReady',
 
-        /**-----------------------------------
-         jQuery Plugins
-        -----------------------------------**/
+		/**-----------------------------------
+		 jQuery Plugins
+		-----------------------------------**/
 
-        'classie': 'libs/classie',
-        'dlmenu': 'libs/jquery.dlmenu',
-        'debounced': 'libs/jquery.debouncedresize',
-        'echo': 'libs/echo.min',
-        'lazyloader': 'libs/jquery.bttrlazyloading.min',
-        'lockfix': 'libs/jquery.lockfixed.min',
-        'pageslide': 'libs/jquery.pageslide',
-        'stroll': 'libs/stroll.min',
-        'transitions': 'js/pagetransitions',
+		'classie': 'libs/classie',
+		'dlmenu': 'libs/jquery.dlmenu',
+		'debounced': 'libs/jquery.debouncedresize',
+		'echo': 'libs/echo.min',
+		'lazyloader': 'libs/jquery.bttrlazyloading.min',
+		'lockfix': 'libs/jquery.lockfixed.min',
+		'pageslide': 'libs/jquery.pageslide',
+		'stroll': 'libs/stroll.min',
+		'transitions': 'js/pagetransitions',
 
-        // offcanvas group
-        'offcanvas': 'libs/jquery.offcanvas',
-        'overthrow': 'libs/overthrow',
-        'hammer': 'libs/hammer',
-        'jhammer': 'libs/jquery.hammer',
+		// offcanvas group
+		'offcanvas': 'libs/jquery.offcanvas',
+		'overthrow': 'libs/overthrow',
+		'hammer': 'libs/hammer',
+		'jhammer': 'libs/jquery.hammer',
 
-        // pagescroll group
-        'mousewheel': 'libs/jquery.mousewheel',
-        'mwintent': 'libs/mwheelIntent',
-        'jscroll': 'libs/jquery.jscrollpane.min',
+		// pagescroll group
+		'mousewheel': 'libs/jquery.mousewheel',
+		'mwintent': 'libs/mwheelIntent',
+		'jscroll': 'libs/jquery.jscrollpane.min',
 
-        // sly group
-        'easing': 'libs/jquery.easing.min',
-        'sly': 'libs/sly.min'
+		// sly group
+		'easing': 'libs/jquery.easing.min',
+		'sly': 'libs/sly.min'
 
-        // -------------------------------------
-    },
-    shim:
-    {
-        'angular':
-        {
-            exports: 'angular'
-        },
-        'bootstrap':
-        {
-            deps: ['jquery'],
-            exports: 'bootstrap'
-        },
-        'jquery':
-        {
-            exports: '$'
-        },
-        'jquery-ui':
-        {
-            deps: ['jquery'],
-            exports: 'jqueryui'
-        },
-        'modernizr':
-        {
-            exports: 'modernizr'
-        },
+		// -------------------------------------
+	},
+	shim:
+	{
+		'angular':
+		{
+			exports: 'angular'
+		},
+		'bootstrap':
+		{
+			deps: ['jquery'],
+			exports: 'bootstrap'
+		},
+		'jquery':
+		{
+			exports: '$'
+		},
+		'jquery-ui':
+		{
+			deps: ['jquery'],
+			exports: 'jqueryui'
+		},
+		'modernizr':
+		{
+			exports: 'modernizr'
+		},
 
-        // -------------------------------------------
+		// -------------------------------------------
 
-        'dlmenu':
-        {
-            deps: ['jquery']
-        },
-        'debounced':
-        {
-            deps: ['jquery']
-        },
-        'easing':
-        {
-            deps: ['jquery']
-        },
-        'jscroll':
-        {
-            deps: ['jquery', 'mousewheel', 'mwintent']
-        },
-        'lazyloader':
-        {
-            deps: ['jquery']
-        },
-        'lockfix':
-        {
-            deps: ['jquery']
-        },
-        'mousewheel':
-        {
-            deps: ['jquery']
-        },
-        'mwintent':
-        {
-            deps: ['mousewheel']
-        },
-        'pageslide':
-        {
-            deps: ['jquery']
-        },
-        'sly':
-        {
-            deps: ['easing'],
-            exports: 'sly'
-        },
-        'transitions':
-        {
-            deps: ['jquery']
-        }
+		'dlmenu':
+		{
+			deps: ['jquery']
+		},
+		'debounced':
+		{
+			deps: ['jquery']
+		},
+		'easing':
+		{
+			deps: ['jquery']
+		},
+		'jscroll':
+		{
+			deps: ['jquery', 'mousewheel', 'mwintent']
+		},
+		'lazyloader':
+		{
+			deps: ['jquery']
+		},
+		'lockfix':
+		{
+			deps: ['jquery']
+		},
+		'mousewheel':
+		{
+			deps: ['jquery']
+		},
+		'mwintent':
+		{
+			deps: ['mousewheel']
+		},
+		'pageslide':
+		{
+			deps: ['jquery']
+		},
+		'sly':
+		{
+			deps: ['easing'],
+			exports: 'sly'
+		},
+		'transitions':
+		{
+			deps: ['jquery']
+		}
 
-        // -------------------------------------------
-    }
+		// -------------------------------------------
+	}
 });
 
 // Enter global require code here...
 require(['modernizr'], function ()
 {
-    require(['jquery', 'domReady'], function ($, domReady)
-    {
-        // Log that jquery was loaded into the global name-space
-        console.log('jQuery', $.fn.jquery, 'loaded!');
+	require(['jquery', 'domReady'], function ($, domReady)
+	{
+		// Log that jquery was loaded into the global name-space
+		console.log('jQuery', $.fn.jquery, 'loaded!');
 
 		// Google Analytics Tracking
 		//$('.dl-trigger').click(function () {
@@ -166,125 +166,125 @@ require(['modernizr'], function ()
 		//});
 
 
-        domReady(function ()
-        {
-            require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions'], function (ng)
-            {
-                // load desktop, tablet and mobile scripts
-                
-                var screenwidth = parseInt($(this).width());
-                var screenheight = parseInt($(this).height());
-                
+		domReady(function ()
+		{
+			require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions'], function (ng)
+			{
+				// load desktop, tablet and mobile scripts
+				
+				var screenwidth = parseInt($(this).width());
+				var screenheight = parseInt($(this).height());
+				
 
-                //-- Add off-canvas -----------------------------
-                $("html").offcanvas({
-                    hasSidebarRight: true
-                }); //-------------------------------------------
+				//-- Add off-canvas -----------------------------
+				$("html").offcanvas({
+					hasSidebarRight: true
+				}); //-------------------------------------------
 
-                //-- lazy load images ---------------------------
-                Echo.init({
-                    offset: 0,
-                    throttle: 250
-                }); //-------------------------------------------
-                // Echo.render(); is also available for non-scroll callbacks
+				//-- lazy load images ---------------------------
+				Echo.init({
+					offset: 0,
+					throttle: 250
+				}); //-------------------------------------------
+				// Echo.render(); is also available for non-scroll callbacks
 
-                //-- navigation menu ----------------------------
-                $(".dl-menuwrapper").dlmenu({
-                    animationClasses: {
-                        classin: "dl-animate-in-2",
-                        classout: "dl-animate-out-2"
-                    }
-                }); //-------------------------------------------
+				//-- navigation menu ----------------------------
+				$(".dl-menuwrapper").dlmenu({
+					animationClasses: {
+						classin: "dl-animate-in-2",
+						classout: "dl-animate-out-2"
+					}
+				}); //-------------------------------------------
 
-                //-- easing : menu navigation -------------------
-                $("ul.menu a").bind("click", function (event) {
-                    var $anchor = $(this);
-                    $("html, body").stop().animate({
-                        scrollTop: $($anchor.attr("href")).offset().top
-                    }, 1500, "easeInOutExpo");
-                    event.preventDefault();
-                }); //-------------------------------------------
+				//-- easing : menu navigation -------------------
+				$("ul.menu a").bind("click", function (event) {
+					var $anchor = $(this);
+					$("html, body").stop().animate({
+						scrollTop: $($anchor.attr("href")).offset().top
+					}, 1500, "easeInOutExpo");
+					event.preventDefault();
+				}); //-------------------------------------------
 
-                //-- easing : next page -------------------------
-                $(".btnNext").bind("click", function (event) {
-                    var $anchor = $(this);
-                    $("html, body").stop().animate({
-                        scrollTop: $($anchor.attr("href")).offset().top
-                    }, 1500, "easeInOutExpo");
-                    event.preventDefault();
-                }); //-------------------------------------------
+				//-- easing : next page -------------------------
+				$(".btnNext").bind("click", function (event) {
+					var $anchor = $(this);
+					$("html, body").stop().animate({
+						scrollTop: $($anchor.attr("href")).offset().top
+					}, 1500, "easeInOutExpo");
+					event.preventDefault();
+				}); //-------------------------------------------
 
 
-                if (screenwidth < 1000) // load only tablet scripts
-                {
-                    require([], function ()
-                    {
-                        //code
+				if (screenwidth < 1000) // load only tablet scripts
+				{
+					require([], function ()
+					{
+						//code
 
-                        if (screenwidth < 700) // load only mobile scripts
-                        {
-                            require([], function ()
-                            {
-                                //code
-                            });
-                        }
-                    });
-                }
-                if (screenwidth >= 1000) // load only desktop scripts
-                {
-                    require(['easing'], function ()
-                    {
-                        //code
+						if (screenwidth < 700) // load only mobile scripts
+						{
+							require([], function ()
+							{
+								//code
+							});
+						}
+					});
+				}
+				if (screenwidth >= 1000) // load only desktop scripts
+				{
+					require(['easing'], function ()
+					{
+						//code
 
-                        //-- Right-click disabled -----------------------
-                        //$(document).bind('contextmenu', function (e)
-                        //{
-                        //    return false;
-                        //}); //-----------------------------------------
+						//-- Right-click disabled -----------------------
+						//$(document).bind('contextmenu', function (e)
+						//{
+						//    return false;
+						//}); //-----------------------------------------
 
-                        //-- easing : back to top -----------------------
-                        var offset = 220;
-                        var duration = 500;
-                        var topButton = $(".back-to-top");
+						//-- easing : back to top -----------------------
+						var offset = 220;
+						var duration = 500;
+						var topButton = $(".back-to-top");
 
-                        $(window).scroll(function () {
-                            if ($(this).scrollTop() > offset) {
-                                $(topButton).fadeIn(duration);
-                            } else {
-                                $(topButton).fadeOut(duration);
-                            }
-                        });
+						$(window).scroll(function () {
+							if ($(this).scrollTop() > offset) {
+								$(topButton).fadeIn(duration);
+							} else {
+								$(topButton).fadeOut(duration);
+							}
+						});
 
-                        $(topButton).click(function (event) {
-                            event.preventDefault();
-                            $("html, body").animate({ scrollTop: 0 }, duration);
-                            return false;
-                        }); //------------------------------------------
+						$(topButton).click(function (event) {
+							event.preventDefault();
+							$("html, body").animate({ scrollTop: 0 }, duration);
+							return false;
+						}); //------------------------------------------
 
-                    });
-                }
+					});
+				}
 
-                // Logs the end of the file.
-                console.log('END: main.js');
-            });
-        });
-    });
+				// Logs the end of the file.
+				console.log('END: main.js');
+			});
+		});
+	});
 }, function (err) {
-    //The errback, error callback
-    //The error has a list of modules that failed
-    var failedId = err.requireModules && err.requireModules[0];
-    if (failedId === 'modernizr') {
-        //undef is function only on the global requirejs object.
-        //Use it to clear internal knowledge of jQuery. Any modules
-        //that were dependent on jQuery and in the middle of loading
-        //will not be loaded yet, they will wait until a valid jQuery
-        //does load.
-        requirejs.undef(failedId);
+	//The errback, error callback
+	//The error has a list of modules that failed
+	var failedId = err.requireModules && err.requireModules[0];
+	if (failedId === 'modernizr') {
+		//undef is function only on the global requirejs object.
+		//Use it to clear internal knowledge of jQuery. Any modules
+		//that were dependent on jQuery and in the middle of loading
+		//will not be loaded yet, they will wait until a valid jQuery
+		//does load.
+		requirejs.undef(failedId);
 
-        console.log('Modernizr did not load');
+		console.log('Modernizr did not load');
 
-    } else 
-    {
-        
-    }
+	} else 
+	{
+		
+	}
 });

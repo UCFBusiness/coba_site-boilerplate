@@ -4,22 +4,17 @@
 
 .topBar {
 	width: 100%;
-	vertical-align: middle;
-	overflow: hidden;
+	//overflow: hidden;
 	
 	position: relative;
 	top: 0;
 	left: 0;
 
-	@media screen and (min-width: 1025px){
-		width:380px;
-	}
+	// Tablet //
+	@media screen and (min-width: 1025px){width:380px;}
 
 	// Notebook //
-	@media screen and (min-width: 1300px){
-		width: 420px;
-	}
-	
+	@media screen and (min-width: 1300px){width: 420px;}
 
 	.ucfBar {
 		background: #000;
@@ -27,16 +22,14 @@
 		height: 50px;
 		color: #ffcc00;
 		word-wrap: break-word;
-		position: relative;
+		display: block;
 	}
 
 	.cbaBar {
 		background: rgba(0,0,0,0.6);
-		padding: 0 10px;
-		//height: 38px;
+		padding: 13px;
 		word-wrap: break-word;
 		vertical-align: middle;
-		position: relative;
 	}
 
 	.slideRight, .slideLeft, .bttnHome {
@@ -45,7 +38,6 @@
 		color: #fff;
 		text-decoration: none;
 		text-align: center;
-		position: relative;
 	}
 
 	.slideLeft {
