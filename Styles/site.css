@@ -10949,7 +10949,7 @@ body {
   .main {
     padding-left: 380px;
   }
-  /* line 28, ../Content/scss/partials/page/_main.scss */
+  /* line 29, ../Content/scss/partials/page/_main.scss */
   .main .content {
     margin-bottom: 320px;
     /* Margin bottom by footer height */
@@ -10964,16 +10964,16 @@ body {
   }
 }
 
-/* line 45, ../Content/scss/partials/page/_main.scss */
+/* line 43, ../Content/scss/partials/page/_main.scss */
 .topNav {
   background-color: #000;
   color: #fff;
 }
-/* line 49, ../Content/scss/partials/page/_main.scss */
+/* line 47, ../Content/scss/partials/page/_main.scss */
 .topNav ul {
   list-style: none;
 }
-/* line 52, ../Content/scss/partials/page/_main.scss */
+/* line 50, ../Content/scss/partials/page/_main.scss */
 .topNav ul li {
   padding: 10px 0;
   padding-right: 15px;
@@ -11027,8 +11027,8 @@ footer span.copyright {
 @media screen and (min-width: 1025px) {
   /* line 6, ../Content/scss/partials/page/_footer.scss */
   footer {
-    position: absolute;
     padding-left: 380px;
+    position: absolute;
     bottom: 0;
   }
 }
@@ -11040,12 +11040,12 @@ footer span.copyright {
 }
 
 /*UCF Stands for Opportunity*/
-/* line 55, ../Content/scss/partials/page/_footer.scss */
+/* line 56, ../Content/scss/partials/page/_footer.scss */
 .ucf-sfo {
   width: 250px;
 }
 @media screen and (max-width: 499px) and (orientation: portrait) {
-  /* line 55, ../Content/scss/partials/page/_footer.scss */
+  /* line 56, ../Content/scss/partials/page/_footer.scss */
   .ucf-sfo {
     width: 50%;
   }

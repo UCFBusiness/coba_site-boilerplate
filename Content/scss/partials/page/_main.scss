@@ -23,6 +23,7 @@
 
     // Small Desktop //
     @media screen and (min-width: 1025px){
+
         padding-left: 380px;
 
         .content {
@@ -34,11 +35,8 @@
 
     // Notebook //
     @media screen and (min-width: 1300px){
-        padding-left: 420px;
 
-        .content {
-            //margin-bottom: 500px; /* Margin bottom by footer height */
-        }
+        padding-left: 420px;
     }
 }
 
