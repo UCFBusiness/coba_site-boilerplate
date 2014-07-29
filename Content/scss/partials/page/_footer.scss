@@ -5,7 +5,8 @@ Footer
 
 footer {
     border: 1px dashed green; //<--- DEV LINE
-    background: #fff;
+
+    width: 100%;
     position: relative;
 
     h5 { /* headers */
@@ -33,15 +34,27 @@ footer {
         font-size: .65em;
         color: #bbb;
 
-        @media (max-width: 499px) and (orientation: portrait){font-size: .55em;}
+        @media screen and (max-width: 499px) and (orientation: portrait){font-size: .55em;}
     }
 
     // Small Desktop //
-    @media screen and (min-width: 1000px){
+    @media screen and (min-width: 1025px){
         position: absolute;
-        left: 380px;
+        padding-left: 380px;
+        bottom: 0;
     }
 
     // Notebook //
-    @media (min-width: 1300px){left: 420px;}
+    @media screen and (min-width: 1300px){
+        
+        padding-left: 420px;
+    }
+}
+
+/*UCF Stands for Opportunity*/
+.ucf-sfo {
+    width: 250px;
+
+    // Mobile-Portrait //
+    @media screen and (max-width: 499px) and (orientation: portrait){width: 50%;}
 }

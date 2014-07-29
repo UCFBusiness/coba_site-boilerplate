@@ -3,23 +3,16 @@
 .half-block {
     display: inline-block;
     width: 49.65%;
+
+    // Mobile-Landscape //
+    @media screen and (max-width: 699px) and (orientation: landscape){
+
+        display: block;
+        width: 100%;
+    }
 }
 
 .full-block {
     display: block;
     width: 100%;
 }
-
-// Tablet //
-@media (max-width: 999px){}
-
-// Mobile-Landscape //
-@media (max-width: 699px) and (orientation: landscape){
-    .half-block {
-        display: block;
-        width: 100%;
-    }
-}
-
-// Mobile-Portrait //
-@media (max-width: 499px) and (orientation: portrait){}

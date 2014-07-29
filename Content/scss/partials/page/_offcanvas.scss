@@ -44,20 +44,17 @@
 	word-wrap: break-word;
 	position: relative;
 	z-index: 3;
-
-	.scrollable {
-		top: 4em;
-	}
-
-	.scrollableArea {
-		position: absolute;
-		top: 4em;
-		bottom: 0;
-	}
 }
 .no-js .page {
 	width: 100%;
 	height: 100%;
+}
+
+.page-inner {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	border: 1px dashed #9616ee;
 }
 
 /* Slid styles */
@@ -69,7 +66,7 @@
 	-o-transform: translate3d(40em,0,0);
 	
 	// Tablet //
-	@media (max-width: 999px){
+	@media screen and (max-width: 1024px){
 		transform: translate3d(53em,0,0);
 		-ms-transform: translate3d(53em,0,0);
 		-moz-transform: translate3d(53em,0,0);
@@ -78,7 +75,7 @@
 	}
 
 	// Mobile-Landscape //
-	@media (max-width: 699px) and (orientation: landscape){
+	@media screen and (max-width: 699px) and (orientation: landscape){
 		transform: translate3d(40em,0,0);
 		-ms-transform: translate3d(40em,0,0);
 		-moz-transform: translate3d(40em,0,0);
@@ -87,7 +84,7 @@
 	}
 
 	// Mobile-Portrait //
-	@media (max-width: 499px) and (orientation: portrait){
+	@media screen and (max-width: 499px) and (orientation: portrait){
 		transform: translate3d(23em,0,0);
 		-ms-transform: translate3d(23em,0,0);
 		-moz-transform: translate3d(23em,0,0);
@@ -103,7 +100,7 @@
 	-o-transform: translate3d(-40em,0,0);
 	
 	// Tablet //
-	@media (max-width: 999px){
+	@media screen and (max-width: 1024px){
 		transform: translate3d(-53em,0,0);
 		-ms-transform: translate3d(-53em,0,0);
 		-moz-transform: translate3d(-53em,0,0);
@@ -112,7 +109,7 @@
 	}
 
 	// Mobile-Landscape //
-	@media (max-width: 699px) and (orientation: landscape){
+	@media screen and (max-width: 699px) and (orientation: landscape){
 		transform: translate3d(-40em,0,0);
 		-ms-transform: translate3d(-40em,0,0);
 		-moz-transform: translate3d(-40em,0,0);
@@ -121,7 +118,7 @@
 	}
 
 	// Mobile-Portrait //
-	@media (max-width: 499px) and (orientation: portrait){
+	@media screen and (max-width: 499px) and (orientation: portrait){
 		transform: translate3d(-23em,0,0);
 		-ms-transform: translate3d(-23em,0,0);
 		-moz-transform: translate3d(-23em,0,0);
@@ -133,17 +130,17 @@
 	left: 40em;
 
 	// Tablet //
-	@media (max-width: 999px){
+	@media screen and (max-width: 1024px){
 		left: 53em;
 	}
 	
 	// Mobile-Landscape //
-	@media (max-width: 699px) and (orientation: landscape){
+	@media screen and (max-width: 699px) and (orientation: landscape){
 		left: 40em;
 	}
 
 	// Mobile-Portrait //
-	@media (max-width: 499px) and (orientation: portrait){
+	@media screen and (max-width: 499px) and (orientation: portrait){
 		left: 23em;
 	}
 }
@@ -151,17 +148,17 @@
 	left: -40em;
 
 	// Tablet //
-	@media (max-width: 999px){
+	@media screen and (max-width: 1024px){
 		left: -53em;
 	}
 
 	// Mobile-Landscape //
-	@media (max-width: 699px) and (orientation: landscape){
+	@media screen and (max-width: 699px) and (orientation: landscape){
 		left: -40em;
 	}
 	
 	// Mobile-Portrait //
-	@media (max-width: 499px) and (orientation: portrait){
+	@media screen and (max-width: 499px) and (orientation: portrait){
 		left: -23em;
 	}
 }
@@ -232,7 +229,7 @@
 // Tablet //
 @media (max-width: 1024px){
 	html.offcanvas {
-		//overflow-x: hidden; //<-- do not remove
+		overflow-x: hidden; //<-- do not remove
 	}
 }
 
@@ -248,7 +245,6 @@
 .offcanvas .page {
 	width: 100%;
 	height: 100%;
-	position: relative;
 }
 
 .offcanvas .scrollableArea {
@@ -273,22 +269,22 @@
 	bottom: 0;
 
 	// Tablet //
-	@media (max-width: 999px){
+	@media screen and (max-width: 1024px){
 		width: 53em;
 	}
 
 	// Mobile-Landscape //
-	@media (max-width: 699px) and (orientation: landscape){
+	@media screen and (max-width: 699px) and (orientation: landscape){
 		width: 40em;
 	}
 	
 	// Mobile-Portrait //
-	@media (max-width: 499px) and (orientation: portrait){
+	@media screen and (max-width: 499px) and (orientation: portrait){
 		width: 23em;
 	}
 
 	// Large Desktop //
-	@media (min-width: 1600px){}
+	@media screen and (min-width: 1600px){}
 
 	.shutLeft, .shutRight {
 		display: block;

@@ -11,16 +11,16 @@
     position: relative;
 
     // Tablet //
-    @media (max-width: 999px){height: 520px;}
+    @media screen and (max-width: 1024px){height: 520px;}
 
     // Mobile-Landscape //
-    @media (max-width: 699px) and (orientation: landscape){height: 320px;}
+    @media screen and (max-width: 699px) and (orientation: landscape){height: 320px;}
 
     // Mobile-Portrait //
-    @media (max-width: 499px) and (orientation: portrait){height: 260px;}
+    @media screen and (max-width: 499px) and (orientation: portrait){height: 260px;}
 
     // Small Desktop //
-    @media (min-width: 1000px){
+    @media screen and (min-width: 1025px){
     
         width: 380px;
         height: 100%;
@@ -32,7 +32,7 @@
     }
 
     // Notebook //
-    @media (min-width: 1300px){width: 420px;}
+    @media screen and (min-width: 1300px){width: 420px;}
 }
 
 
@@ -48,7 +48,8 @@
     left: 0;
     bottom: 0;
 
-    background-color: red; //<---- Testing
+    background-color: rgba(102, 76, 0, 0.6); //<---- Testing
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -81,17 +82,17 @@
         h2 {font-size: 1.8em;}
 
         // Tablet //
-        @media (max-width: 999px){padding-left: 7%;}
+        @media screen and (max-width: 1024px){padding-left: 7%;}
 
         // Mobile //
-        @media (max-width: 699px){
+        @media screen and (max-width: 699px){
 
             h1 {font-size: 1.5em;}
             h2 {font-size: 1.3em;}
         }
 
         // Small Desktop //
-        @media (min-width: 1000px){width: 90%;}
+        @media screen and (min-width: 1025px){width: 90%;}
     }
 }
 
@@ -121,16 +122,16 @@
         font-weight: 200;
 
         // Tablet //
-        @media (max-width: 999px){padding-left: 7%;}
+        @media screen and (max-width: 1024px){padding-left: 7%;}
 
         // Mobile //
-        @media (max-width: 699px){font-size: 1.9em;}
+        @media screen and (max-width: 699px){font-size: 1.9em;}
         
         span {
             font-size: .730em;
             
             // Mobile //
-            @media (max-width: 699px){font-size: .85em;}
+            @media screen and (max-width: 699px){font-size: .85em;}
         }
     }
 
@@ -144,7 +145,7 @@
         left: 0;
 
         // Tablet //
-        @media (max-width: 999px){
+        @media screen and (max-width: 1024px){
             margin-top:50px;
             background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.3) 30%,rgba(0,0,0,0) 100%);
             background-image: -moz-linear-gradient(bottom,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.3) 30%,rgba(0,0,0,0) 100%);
@@ -153,7 +154,7 @@
         }
 
         // Small Desktop //
-        @media (min-width: 1000px){
+        @media screen and (min-width: 1025px){
             background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
             background-image: -moz-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
             background-image: -ms-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
@@ -165,12 +166,4 @@
 .cover-body .cover-body-inner {
     position: relative;
     z-index: 100;
-}
-
-/*UCF Stands for Opportunity*/
-.ucf-sfo {
-    width: 250px;
-
-    // Mobile-Portrait //
-    @media (max-width: 499px) and (orientation: portrait){width: 50%;}
 }
