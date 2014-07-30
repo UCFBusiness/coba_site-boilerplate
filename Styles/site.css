@@ -10504,7 +10504,7 @@ body {
 /* line 175, ../Content/scss/partials/page/_cover.scss */
 .cover-body .cover-body-inner {
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 /* =============================================================================
@@ -10572,10 +10572,8 @@ Footer
 /* line 6, ../Content/scss/partials/page/_footer.scss */
 footer {
   border: 1px dashed green;
-  width: 100%;
-  position: relative;
 }
-/* line 12, ../Content/scss/partials/page/_footer.scss */
+/* line 9, ../Content/scss/partials/page/_footer.scss */
 footer h5 {
   /* headers */
   font-weight: 700;
@@ -10583,29 +10581,36 @@ footer h5 {
   opacity: 0.9;
   cursor: default;
 }
-/* line 19, ../Content/scss/partials/page/_footer.scss */
+/* line 16, ../Content/scss/partials/page/_footer.scss */
 footer ul {
   list-style: none;
   padding: 0;
 }
-/* line 24, ../Content/scss/partials/page/_footer.scss */
+/* line 21, ../Content/scss/partials/page/_footer.scss */
 footer a.icon {
   line-height: 2.23em;
 }
-/* line 27, ../Content/scss/partials/page/_footer.scss */
+/* line 24, ../Content/scss/partials/page/_footer.scss */
 footer a.icon i {
   font-size: 1.8em;
   padding-right: 7px;
 }
-/* line 33, ../Content/scss/partials/page/_footer.scss */
+/* line 30, ../Content/scss/partials/page/_footer.scss */
 footer span.copyright {
   font-size: .65em;
   color: #bbb;
 }
 @media screen and (max-width: 499px) and (orientation: portrait) {
-  /* line 33, ../Content/scss/partials/page/_footer.scss */
+  /* line 30, ../Content/scss/partials/page/_footer.scss */
   footer span.copyright {
     font-size: .55em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 6, ../Content/scss/partials/page/_footer.scss */
+  footer {
+    width: 100%;
+    position: relative;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -10617,12 +10622,12 @@ footer span.copyright {
 }
 
 /*UCF Stands for Opportunity*/
-/* line 48, ../Content/scss/partials/page/_footer.scss */
+/* line 51, ../Content/scss/partials/page/_footer.scss */
 .ucf-sfo {
   width: 250px;
 }
 @media screen and (max-width: 499px) and (orientation: portrait) {
-  /* line 48, ../Content/scss/partials/page/_footer.scss */
+  /* line 51, ../Content/scss/partials/page/_footer.scss */
   .ucf-sfo {
     width: 50%;
   }
