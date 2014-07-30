@@ -159,7 +159,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'],
         });
 
     if (width > 1024) //load desktop scripts
-        require(['lockfix', 'chardin'], function () {
+        require(['lockfix'], function () {
 
             //-- screensize ----------------------------------
             $(".message").html(width + " x " + height + " - desktop");
@@ -169,7 +169,7 @@ require(['fittext', 'easing', 'sly', 'dmenu', 'lockfix', 'resize', 'sidebarfx'],
             $.lockfixed("#menu ul", { forcemargin: true, offset: { top: 10, bottom: 410} });
             //------------------------------------------------
 
-            $('body').chardinJs('start');
+            //$('body').chardinJs('start');
 
         });
 
