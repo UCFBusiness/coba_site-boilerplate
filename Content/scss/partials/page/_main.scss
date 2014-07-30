@@ -12,29 +12,36 @@
 
 .main {
     //------------------------------------------------
-    //background: #c2f0f5; //<--- Testing
+    background: #c2f0f5; //<--- Testing
     border: 1px dashed blue; //<--- DEV LINE
     //------------------------------------------------
-
+    margin-top: 520px;
     height: 100%;
     position: relative;
-    top: 0;
-    left: 0;
+    z-index: 4;
 
     // Small Desktop //
     @media screen and (min-width: 1025px){
+        margin-top: 0;
         padding-left: 380px;
-
-        .content-wrapper {
-            margin-bottom: 320px; /* Margin bottom by footer height */ //<-- do not remove
-            height: 100%;
-            min-height: 570px; //<-- do not remove
-        }
     }
 
     // Notebook //
     @media screen and (min-width: 1300px){
+        margin-top: 0;
         padding-left: 420px;
+    }
+
+    .content-wrapper {
+        background: #fff;
+        min-height: 600px; //<-- do not remove
+
+        // Small Desktop //
+        @media screen and (min-width: 1025px){
+            margin-bottom: 320px; /* Margin bottom by footer height */ //<-- do not remove
+            height: 100%;
+        }
+
     }
 }
 

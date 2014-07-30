@@ -4,7 +4,7 @@ Footer
 ========================================================================== */
 
 footer {
-    //border: 1px dashed green; //<--- DEV LINE
+    border: 1px dashed green; //<--- DEV LINE
 
     width: 100%;
     position: relative;
@@ -39,16 +39,8 @@ footer {
 
     // Small Desktop //
     @media screen and (min-width: 1025px){
-        
-        padding-left: 380px;
         position: absolute;
         bottom: 0;
-    }
-
-    // Notebook //
-    @media screen and (min-width: 1300px){
-        
-        padding-left: 420px;
     }
 }
 

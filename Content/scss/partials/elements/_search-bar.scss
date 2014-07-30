@@ -11,13 +11,13 @@
 }*/
 
 .sb-search {
-    visibility: hidden;
-    display: none;
+	visibility: hidden;
+	display: none;
 }
 
 
 @media all and (min-width: 481px) {
-    
+	
 .sb-search {
 	position: relative;
 	margin-top: 100px;
@@ -72,8 +72,8 @@
 .sb-search-submit {
 	background: #fff; /* IE needs this */
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
-    filter: alpha(opacity=0); /* IE 5-7 */
-    opacity: 0;
+	filter: alpha(opacity=0); /* IE 5-7 */
+	opacity: 0;
 	color: transparent;
 	border: none;
 	outline: none;
@@ -120,14 +120,14 @@
 
 
 @media screen and (min-width: 1025px) {
-    
-    /*.sb-search {
-        visibility: visible;
-    }*/
+	
+	/*.sb-search {
+		visibility: visible;
+	}*/
 
-    .dl-search-field, 
-    .dl-searchbutton {
-        visibility: hidden;
-    }
+	.dl-search-field, 
+	.dl-searchbutton {
+		visibility: hidden;
+	}
 
 }

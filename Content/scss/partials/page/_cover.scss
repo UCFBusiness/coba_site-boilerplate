@@ -6,9 +6,13 @@
 .cover {
     width: 100%;
     max-width: none;
-    z-index: 3;
 
-    position: relative;
+    //position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
 
     // Tablet //
     @media screen and (max-width: 1024px){height: 520px;}
@@ -25,10 +29,11 @@
         width: 380px;
         height: 100%;
 
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
+        //position: fixed;
+        //top: 0;
+        //left: 0;
+        //bottom: 0;
+        z-index: 5;
     }
 
     // Notebook //
@@ -60,6 +65,8 @@
 }
 
 .cover-header {
+    border: 1px dashed white;
+
     margin: 0;
     width: 100%; 
 
@@ -97,6 +104,8 @@
 }
 
 .cover-body {
+    border: 1px dashed white;
+
     margin: 0;
     width: 100%;
 

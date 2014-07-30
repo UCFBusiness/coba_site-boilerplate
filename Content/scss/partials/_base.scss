@@ -1,18 +1,12 @@
 
 // Partials
 @import "primary";
-@import "page/offcanvas";
-@import "page/topbar";
-@import "page/cover";
-@import "page/main";
-@import "page/footer";
-
+@import "page/base";
+@import "offcanvas/base";
 
 // Elements
 @import "elements/back-to-top";
 @import "elements/main-nav.animation";
 @import "elements/main-nav";
 
-
 // Bootstrap changes
-//@import "grids";
