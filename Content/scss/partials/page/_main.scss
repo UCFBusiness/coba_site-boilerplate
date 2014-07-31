@@ -22,10 +22,14 @@
     z-index: 4;
 
     // Mobile-Landscape //
-    @media screen and (max-width: 699px) and (orientation: landscape){margin-top: 318px;}
+    @media screen and (max-width: 699px) and (orientation: landscape){
+        margin-top: 318px;
+    }
 
     // Mobile-Portrait //
-    @media screen and (max-width: 499px) and (orientation: portrait){margin-top: 258px;}
+    @media screen and (max-width: 499px) and (orientation: portrait){
+        margin-top: 258px;
+    }
 
     // Small Desktop //
     @media screen and (min-width: 1025px){
@@ -35,13 +39,13 @@
 
     // Notebook //
     @media screen and (min-width: 1300px){
-        margin-top: 0;
         padding-left: 420px;
     }
 
     .content-wrapper {
         //background: #fff;
         min-height: 600px; //<-- do not remove
+        z-index: 4;
 
         // Small Desktop //
         @media screen and (min-width: 1025px){

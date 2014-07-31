@@ -52,8 +52,8 @@
 
 .page-inner {
 	position: relative;
-	top: 0;
-	bottom: 0;
+	//top: 0;
+	//bottom: 0;
 }
 
 /* Slid styles */
@@ -176,12 +176,11 @@
 		width: 1.6em;
 		font-size: 2.5em;
 		line-height: 1.6em;
-		color: #dcdcdc;
+		//color: #dcdcdc;
 		color: #222;
 		text-decoration: none;
 		text-align: center;
 		opacity: 0.2;
-
 		z-index: 3;
 		
 		&:hover {
@@ -254,6 +253,15 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+
+	// Small Desktop //
+	@media screen and (min-width: 1025px){
+		position: fixed;
+		top: 4em;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
 }
 
 /* Styles for both sidebars */
@@ -261,7 +269,7 @@
 	width: 40em;
 	height: 100%;
 	
-	position: fixed;
+	position: absolute;
 	top: 0;
 	bottom: 0;
 
@@ -280,8 +288,12 @@
 		width: 23em;
 	}
 
-	// Large Desktop //
-	@media screen and (min-width: 1600px){}
+	// Small Desktop //
+	@media screen and (min-width: 1025px){
+		position: fixed;
+		top: 0;
+		bottom: 0;
+	}
 
 	.shutLeft, .shutRight {
 		display: block;

@@ -6,6 +6,10 @@ Footer
 footer {
     border: 1px dashed green; //<--- DEV LINE
 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
     h5 { /* headers */
         font-weight: 700;
         text-transform: uppercase;
@@ -41,9 +45,12 @@ footer {
 
     // Small Desktop //
     @media screen and (min-width: 1025px){
-
-        position: absolute;
+        position: relative;
         bottom: 0;
+    }
+
+    .container-fluid {
+        border: 1px solid #cc9900;
     }
 }
 
