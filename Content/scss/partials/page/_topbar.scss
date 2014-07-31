@@ -39,9 +39,15 @@
 	}
 
 	.slideLeft {
+		position: relative;
 
-		span {
+		i:after {
+			content: "menu";
+			font-family: Arial;
 			font-size: 0.67em;
+			position:absolute;
+			top: 5px;
+			left: 30px;
 		}
 	}
 

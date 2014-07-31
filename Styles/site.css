@@ -10295,15 +10295,24 @@ body {
   text-decoration: none;
   text-align: center;
 }
-/* line 43, ../Content/scss/partials/page/_topbar.scss */
-.topBar .slideLeft span {
-  font-size: 0.67em;
+/* line 41, ../Content/scss/partials/page/_topbar.scss */
+.topBar .slideLeft {
+  position: relative;
 }
-/* line 48, ../Content/scss/partials/page/_topbar.scss */
+/* line 44, ../Content/scss/partials/page/_topbar.scss */
+.topBar .slideLeft i:after {
+  content: "menu";
+  font-family: Arial;
+  font-size: 0.67em;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+}
+/* line 54, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight:hover, .topBar .slideRight.pressed, .topBar .slideLeft:hover, .topBar .slideLeft.pressed {
   color: white;
 }
-/* line 52, ../Content/scss/partials/page/_topbar.scss */
+/* line 58, ../Content/scss/partials/page/_topbar.scss */
 .topBar .slideRight.pressed, .topBar .slideLeft.pressed {
   background: #828282;
 }
