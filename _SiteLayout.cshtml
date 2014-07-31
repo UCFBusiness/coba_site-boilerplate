@@ -66,7 +66,7 @@
 				<div class="cover">
 					<div class="cover-img"></div><!--/.cover-img (background image) /-->
 					<div class="cover-header">
-
+						
 						<nav id="main_menu" class="dl-menuwrapper site-nav clearfix" style="display: none">
 							<a href="~/" class="dl-home" data-toggle="tooltip" data-placement="bottom" title="Home">HOME</a>
 							<button class="dl-trigger" title="Discover Menu">
@@ -173,7 +173,7 @@
 						<span class="dl-search-icon"></span>
 					</form>*@
 						</nav><!--/.dl-menuwrapper -->
-
+						
 						<div class="topBar">
 
 							<div class="ucfBar">
@@ -183,20 +183,21 @@
 							<div class="cbaBar">
 								<a id="bttnHome" class="bttnHome" href="~/"><i class="fa fa-home"></i></a>
 								&nbsp;&nbsp;
-								<a id="rightBurger" class="slideLeft" href=""><i class="fa fa-bars"></i> menu<span></span></a>
+								<a id="rightBurger" class="slideLeft" href=""><i class="fa fa-bars"></i> <span>menu</span></a>
 							</div><!--/.cbaBar /-->
 
 						</div><!--/.topBar /-->
+						
 						@RenderSection("featured", required: false)
-
+						
 						<!-- Site Feedback: BEGIN --
-			<div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div>
-			-- Site Feedback: FINIS -->
-						<!-- Beta Image: BEGIN -->
+			            <div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div>
+			            -- Site Feedback: FINIS -->
+						@*<!-- Beta Image: BEGIN -->
 						<!-- for development only -->
 						<span style="position:absolute; top:0; right:0; z-index:3; width:60px; height:60px; background:url(data:image/png;base64,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) no-repeat"></span>
-						<!-- Beta Image: FINIS -->
-
+						<!-- Beta Image: FINIS -->*@
+						
 					</div><!--/.cover-header /-->
 					<div class="cover-body">
 						<div class="cover-body-inner">
@@ -205,7 +206,6 @@
 					</div><!--/.cover-body /-->
 				</div><!--/.cover /-->
 				<div class="main" id="main">
-					
 					<div class="topnav">
 						<ul>
 							<li>Programs</li>
@@ -278,20 +278,27 @@
 						</div>
 					</footer><!--/.footer /-->
 				</div><!--/.main /-->
-				
 				<div class="page-overlay"></div>
 			</div>
 		</section><!--/.page /-->
 
-		<section id="sidebarLeft" class="sidebarLeft" style="display: none">
+		<section id="sidebarLeft" class="sidebarLeft" style="display: none; visibility: hidden;">
 			<div class="sidebarLeft-inner">
 				
 				<!--Tabs-->
 				<a class="shutLeft" href="">&#10006;</a><!--Close Button-->
 				<!--Tabs-->
 				
-				<div class="scrollableArea">
+				<div class="scrollableArea container">
 					<!-- show content here -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							column 1
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 2
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -307,46 +314,80 @@
 				<a class="sidebarMenuTab" href="#"><i class="fa fa-users"></i></a>
 				<!--Tabs-->
 
-				<div class="scrollableArea">
+				<div class="scrollableArea container-fluid">
 					<!-- show content here -->
+					<hr>
 
-					<p>Site Navigation Menu</p><hr>
+					<h3>Academics</h3>
+					<div class="row">
+						<div class="col-xs-12">
+							<h4>Undergraduate Programs</h4>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 1
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 2
+						</div>
+					</div>
 
+					<div class="row">
+						<div class="col-xs-12">
+							<h4>Graduate Programs</h4>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 1
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 2
+						</div>
+					</div>
 
-					@*<div id="lipsum">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique leo et leo consequat scelerisque. Pellentesque non porttitor erat. Suspendisse egestas malesuada elit pellentesque euismod. Aenean quis blandit dui, at convallis augue. Donec ante nunc, imperdiet nec ipsum quis, interdum consectetur lorem. Integer rutrum sit amet lectus at interdum. Etiam facilisis enim eu purus tempus, nec blandit nisl aliquet. Cras porta quam ut pellentesque semper. Nulla ut elit eu ipsum aliquet vestibulum. Quisque facilisis magna diam, eget convallis quam gravida sit amet. Nunc porttitor eros placerat adipiscing pulvinar. Suspendisse pharetra laoreet turpis, ac sodales justo tincidunt eu. Nam quis sagittis leo.
-					</p>
-					<p>Sed interdum metus ac nisi molestie consectetur. Proin vulputate augue ac quam vehicula, quis suscipit lacus porta. Sed adipiscing hendrerit magna, a sodales nisi ultricies ac. Aenean rhoncus nisl mauris, at ullamcorper dui sodales at. Phasellus hendrerit posuere nunc ac convallis. Aliquam adipiscing sagittis sollicitudin. Suspendisse eu convallis metus, ultricies lobortis lectus. Nunc laoreet turpis tellus, luctus consequat sapien consectetur in. Praesent aliquam mauris vitae urna fringilla, ac faucibus dolor dictum. Vestibulum consequat cursus interdum. Ut pulvinar dolor id massa vulputate, eu consequat urna rhoncus. Suspendisse luctus purus diam, vitae fermentum diam condimentum in. Quisque lectus urna, dictum nec tristique nec, rutrum vel nunc. Proin quis egestas dolor, vel pretium arcu. Curabitur porttitor lacus non suscipit iaculis.
-					</p>
-					<p>Mauris imperdiet adipiscing justo, molestie ultricies sem consequat eu. Integer condimentum mi neque, sit amet aliquet lorem varius et. Nunc tempor risus quis enim mattis commodo. Fusce convallis pellentesque dapibus. Ut egestas cursus lobortis. Maecenas mollis ligula mauris, ac convallis leo ultricies id. Praesent elementum gravida risus, nec fringilla dolor tempus et. In gravida accumsan metus at pharetra. Fusce at tortor faucibus, ullamcorper erat ac, ullamcorper neque. Maecenas elementum porta malesuada. Nunc semper ligula at mauris facilisis, id mollis nulla aliquam.
-					</p>
-					<p>Nam nec pretium metus. Quisque in malesuada ipsum, vitae faucibus nibh. Donec ut felis urna. Suspendisse potenti. Nullam nisi nunc, viverra sed nibh vel, cursus tempus tellus. Quisque et mollis metus. Sed vel porta purus.
-					</p>
-					<p>Aenean aliquet eu sem et ornare. Sed feugiat magna urna, a bibendum tellus ultrices vel. Suspendisse in libero in nisl blandit commodo. Vestibulum non bibendum lectus. Quisque semper dapibus lacus porta facilisis. Mauris ligula dolor, rutrum vel tellus nec, lacinia molestie purus. Nunc nisl massa, auctor consequat neque a, vulputate pharetra dolor. Sed sed justo sit amet magna tincidunt aliquam et et risus. Mauris lacinia, metus quis sodales hendrerit, lectus nibh rhoncus massa, at malesuada ligula turpis at dui. Nullam ut laoreet lacus.
-					</p>
-					<p>Donec in lobortis erat, at consequat ipsum. Aliquam quis facilisis tortor. In nibh metus, ultricies ac eros id, semper eleifend ante. Ut in porttitor augue, quis vehicula nisi. Suspendisse gravida libero quis libero faucibus tincidunt. Donec consectetur ultrices accumsan. Nulla eget felis aliquet, viverra metus nec, tincidunt lorem. Integer sed turpis imperdiet, tincidunt nisl vulputate, mollis justo. Etiam nec facilisis magna, sed imperdiet augue. Aenean commodo posuere tellus vel facilisis. Phasellus urna ligula, euismod sit amet bibendum ut, porttitor a lectus. Praesent sollicitudin, est non vestibulum tempus, velit arcu dapibus est, eu egestas tellus quam ut sem. Proin in magna velit.
-					</p>
-					<p>Vestibulum non iaculis nunc. In dui arcu, faucibus vel sapien eu, vehicula dictum mi. Donec nec convallis nisl, sed lacinia diam. Cras ipsum massa, tempor quis sem at, sollicitudin ultricies lectus. Pellentesque facilisis enim et metus lobortis, vitae mattis augue facilisis. Mauris tempor tristique lectus eu consectetur. Nam sed magna at libero consectetur sodales vel at ligula. Proin venenatis venenatis lacus. Nunc iaculis, augue sit amet rhoncus vestibulum, velit est pharetra velit, eget bibendum lorem libero ac lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam lectus, malesuada sit amet volutpat sed, malesuada a sapien. Vestibulum posuere ipsum sed nisl laoreet, a vestibulum est luctus.
-					</p>
-					<p>Sed blandit faucibus neque ut lobortis. Duis eget lobortis est. Sed et turpis dapibus, luctus urna non, gravida lectus. Sed eu arcu ligula. Sed ipsum ligula, ultrices vel volutpat nec, scelerisque vitae diam. Phasellus purus justo, gravida eget urna sit amet, ornare laoreet enim. Aenean sed vestibulum mi. Suspendisse adipiscing quis felis in egestas. Quisque egestas massa aliquet diam condimentum, nec dignissim leo aliquam. Nunc congue tellus nibh, sit amet convallis justo ullamcorper eu.
-					</p>
-					<p>Duis bibendum consectetur adipiscing. Ut sagittis sagittis magna at adipiscing. Quisque aliquam orci sed massa iaculis, blandit elementum libero semper. Mauris rutrum leo nisl, id malesuada sem tincidunt quis. Nullam in malesuada velit, vel luctus risus. Aliquam non rhoncus neque, a fermentum ante. Aenean mollis ac quam tristique ultricies. Nullam porta diam aliquet dui viverra, id posuere elit pretium. Maecenas tempus, augue nec dignissim accumsan, felis augue tincidunt nibh, eget dictum lectus est eu lacus.
-					</p>
-					<p>In eget enim urna. Vivamus in libero ut nunc hendrerit consectetur. Nullam ut lectus egestas, tristique quam ut, sodales arcu. Nam dapibus fringilla vestibulum. Sed iaculis est at varius accumsan. Donec a consectetur eros. Suspendisse sodales purus et diam tincidunt mattis. Vivamus sit amet lorem eget tortor gravida porttitor. In ullamcorper augue at dui sagittis pellentesque. Integer eget eleifend quam, feugiat consectetur dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-					</p>
-					<p>Aenean consectetur et erat et auctor. Aenean commodo vulputate ullamcorper. Nam et consectetur quam. Suspendisse faucibus, dui eu aliquam accumsan, arcu nunc cursus dui, ac blandit neque magna quis justo. Fusce in dolor magna. Suspendisse id dictum urna, nec tincidunt massa. Maecenas auctor neque id consectetur pretium. Curabitur congue aliquet elementum. Sed vel vestibulum tellus, non tincidunt augue. Suspendisse hendrerit purus vel laoreet facilisis. Nulla sed commodo risus. Nunc metus nisi, commodo sed lorem nec, dictum lobortis odio. Suspendisse egestas egestas fringilla. Etiam sodales magna non sapien pretium pretium. Praesent erat enim, gravida ullamcorper magna quis, porttitor vulputate augue.
-					</p>
-					<p>Quisque imperdiet nisi libero, quis egestas diam convallis id. Integer massa tortor, tristique eu condimentum sed, tristique in ante. Vivamus pulvinar, leo blandit pellentesque congue, purus velit euismod ipsum, ac semper ipsum erat ac turpis. Sed quis consequat urna, a eleifend nisi. Vivamus consequat dignissim blandit. Cras tincidunt nulla eu arcu consectetur, sed rutrum tortor aliquam. Nunc adipiscing ornare velit id consectetur. Nunc quis est lacus. Vivamus sed nisl rhoncus, tincidunt justo et, tempor urna. Phasellus condimentum dui sit amet sem laoreet cursus id non ligula.
-					</p>
-					<p>Curabitur id hendrerit enim, posuere sollicitudin ipsum. Duis facilisis, ante ac congue tincidunt, nibh nunc vestibulum ipsum, et tincidunt libero lectus elementum leo. Morbi a ante eu urna imperdiet rhoncus. Nam ullamcorper ullamcorper mauris, a tincidunt diam laoreet et. Morbi in gravida neque. Mauris et magna et eros iaculis sollicitudin. Vestibulum vitae lorem ornare, varius dolor et, elementum velit. Suspendisse eu nibh eu sem congue sodales. Fusce imperdiet erat eget sapien tincidunt semper. Maecenas eget lectus a dui porta auctor.
-					</p>
-					<p>Pellentesque accumsan nisi est, eget ullamcorper eros pellentesque non. Cras in sollicitudin elit, id auctor sem. Nam sodales mauris in metus condimentum, condimentum aliquet lacus volutpat. Phasellus sodales magna semper mattis hendrerit. Quisque interdum neque ut pellentesque rhoncus. Cras enim ligula, vestibulum a enim sed, congue lacinia ipsum. Donec aliquam, elit vel iaculis commodo, massa felis hendrerit urna, ac condimentum urna nibh vel tortor. Etiam eros tortor, fringilla eu nisl non, tincidunt adipiscing erat. Aliquam magna tellus, porta ac tortor at, euismod adipiscing arcu. Vestibulum vehicula ut libero eget facilisis. Donec malesuada, leo quis gravida imperdiet, urna massa tincidunt ante, vitae condimentum odio lacus et nulla.
-					</p>
-					<p>Nullam rhoncus leo est, nec consequat orci adipiscing vitae. Mauris luctus placerat leo, ut mollis tortor semper at. Curabitur interdum mi massa, et iaculis massa tincidunt quis. Duis rhoncus auctor arcu a tincidunt. Aliquam nec feugiat magna. Cras tincidunt, turpis faucibus blandit malesuada, urna libero vestibulum nisi, ac tempor arcu risus ac mauris. Sed libero eros, egestas et lacinia eget, egestas blandit nunc.
-					</p></div>
-					<div id="generated">
-						Generated 15 paragraphs, 1284 words, 8860 bytes of Lorem Ipsum
-					</div>*@
+					<hr />
+
+					<h3>Our College</h3>
+					<div class="row">
+						<div class="col-xs-12">
+							<h4>Academic Departments</h4>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 1
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 2
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12">
+							<h4>Institutes &amp; Centers</h4>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 1
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							column 2
+						</div>
+					</div>
+
+					<hr />
+
+					<div id="lipsum">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique leo et leo consequat scelerisque. Pellentesque non porttitor erat. Suspendisse egestas malesuada elit pellentesque euismod. Aenean quis blandit dui, at convallis augue. Donec ante nunc, imperdiet nec ipsum quis, interdum consectetur lorem. Integer rutrum sit amet lectus at interdum. Etiam facilisis enim eu purus tempus, nec blandit nisl aliquet. Cras porta quam ut pellentesque semper. Nulla ut elit eu ipsum aliquet vestibulum. Quisque facilisis magna diam, eget convallis quam gravida sit amet. Nunc porttitor eros placerat adipiscing pulvinar. Suspendisse pharetra laoreet turpis, ac sodales justo tincidunt eu. Nam quis sagittis leo.
+			</p>
+			<p>Sed interdum metus ac nisi molestie consectetur. Proin vulputate augue ac quam vehicula, quis suscipit lacus porta. Sed adipiscing hendrerit magna, a sodales nisi ultricies ac. Aenean rhoncus nisl mauris, at ullamcorper dui sodales at. Phasellus hendrerit posuere nunc ac convallis. Aliquam adipiscing sagittis sollicitudin. Suspendisse eu convallis metus, ultricies lobortis lectus. Nunc laoreet turpis tellus, luctus consequat sapien consectetur in. Praesent aliquam mauris vitae urna fringilla, ac faucibus dolor dictum. Vestibulum consequat cursus interdum. Ut pulvinar dolor id massa vulputate, eu consequat urna rhoncus. Suspendisse luctus purus diam, vitae fermentum diam condimentum in. Quisque lectus urna, dictum nec tristique nec, rutrum vel nunc. Proin quis egestas dolor, vel pretium arcu. Curabitur porttitor lacus non suscipit iaculis.
+			</p>
+			<p>Mauris imperdiet adipiscing justo, molestie ultricies sem consequat eu. Integer condimentum mi neque, sit amet aliquet lorem varius et. Nunc tempor risus quis enim mattis commodo. Fusce convallis pellentesque dapibus. Ut egestas cursus lobortis. Maecenas mollis ligula mauris, ac convallis leo ultricies id. Praesent elementum gravida risus, nec fringilla dolor tempus et. In gravida accumsan metus at pharetra. Fusce at tortor faucibus, ullamcorper erat ac, ullamcorper neque. Maecenas elementum porta malesuada. Nunc semper ligula at mauris facilisis, id mollis nulla aliquam.
+			</p>
+			<p>Nam nec pretium metus. Quisque in malesuada ipsum, vitae faucibus nibh. Donec ut felis urna. Suspendisse potenti. Nullam nisi nunc, viverra sed nibh vel, cursus tempus tellus. Quisque et mollis metus. Sed vel porta purus.
+			</p>
+			<p>Aenean aliquet eu sem et ornare. Sed feugiat magna urna, a bibendum tellus ultrices vel. Suspendisse in libero in nisl blandit commodo. Vestibulum non bibendum lectus. Quisque semper dapibus lacus porta facilisis. Mauris ligula dolor, rutrum vel tellus nec, lacinia molestie purus. Nunc nisl massa, auctor consequat neque a, vulputate pharetra dolor. Sed sed justo sit amet magna tincidunt aliquam et et risus. Mauris lacinia, metus quis sodales hendrerit, lectus nibh rhoncus massa, at malesuada ligula turpis at dui. Nullam ut laoreet lacus.
+			</p>
+			<p>Nullam rhoncus leo est, nec consequat orci adipiscing vitae. Mauris luctus placerat leo, ut mollis tortor semper at. Curabitur interdum mi massa, et iaculis massa tincidunt quis. Duis rhoncus auctor arcu a tincidunt. Aliquam nec feugiat magna. Cras tincidunt, turpis faucibus blandit malesuada, urna libero vestibulum nisi, ac tempor arcu risus ac mauris. Sed libero eros, egestas et lacinia eget, egestas blandit nunc.
+			</p></div>
+			<div id="generated">
+				Generated 15 paragraphs, 1284 words, 8860 bytes of Lorem Ipsum
+			</div>
 
 
 				</div>

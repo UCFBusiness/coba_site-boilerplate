@@ -7,11 +7,9 @@
     width: 100%;
     max-width: none;
 
-    //position: relative;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 4;
 
     // Tablet //
@@ -32,7 +30,7 @@
         //position: fixed;
         //top: 0;
         //left: 0;
-        //bottom: 0;
+        bottom: 0;
         z-index: 5;
     }
 
@@ -65,10 +63,10 @@
 }
 
 .cover-header {
-    border: 1px dashed white;
+    border: 1px dashed white; //<--- DEV LINE
 
     margin: 0;
-    width: 100%; 
+    width: 100%;
 
     position: absolute;
     top: 0;
@@ -76,6 +74,9 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    // Small Desktop //
+    @media screen and (min-width: 1025px){height: 70%;}
 
     hgroup {
         padding-left: 10%;
@@ -104,7 +105,7 @@
 }
 
 .cover-body {
-    border: 1px dashed white;
+    border: 1px dashed white; //<--- DEV LINE
 
     margin: 0;
     width: 100%;
@@ -118,6 +119,9 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    // Small Desktop //
+    @media screen and (min-width: 1025px){height: 30%;}
 
     h1 {
         margin-bottom: 1em;

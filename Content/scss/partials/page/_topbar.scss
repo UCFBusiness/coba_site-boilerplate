@@ -4,29 +4,30 @@
 
 .topBar {
 	width: 100%;
-	//overflow: hidden;
 	position: relative;
 
-	// Tablet //
+	// Small Desktop //
 	@media screen and (min-width: 1025px){width:380px;}
 
 	// Notebook //
 	@media screen and (min-width: 1300px){width: 420px;}
 
 	.ucfBar {
-		background: #000;
-		border-bottom: 1px solid #333;
-		height: 50px;
+		background: #111;
 		color: #ffcc00;
-		word-wrap: break-word;
-		display: block;
+		padding: 15px;
 	}
 
 	.cbaBar {
 		background: rgba(0,0,0,0.6);
-		padding: 13px;
-		word-wrap: break-word;
 		vertical-align: middle;
+		padding: 3px 20px;
+
+		// Small Desktop //
+		@media screen and (min-width: 1025px){
+			background: none;
+			padding: 20px;
+		}
 	}
 
 	.slideRight, .slideLeft, .bttnHome {
@@ -38,9 +39,9 @@
 	}
 
 	.slideLeft {
-		
+
 		span {
-			font-size: 0.57em;
+			font-size: 0.67em;
 		}
 	}
 

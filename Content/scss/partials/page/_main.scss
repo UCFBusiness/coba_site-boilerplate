@@ -12,13 +12,20 @@
 
 .main {
     //------------------------------------------------
-    background: #c2f0f5; //<--- Testing
-    border: 1px dashed blue; //<--- DEV LINE
+    background: #eee; //<--- Testing
+    //border: 1px dashed blue; //<--- DEV LINE
     //------------------------------------------------
-    margin-top: 520px;
+
+    margin-top: 518px;
     height: 100%;
     position: relative;
     z-index: 4;
+
+    // Mobile-Landscape //
+    @media screen and (max-width: 699px) and (orientation: landscape){margin-top: 318px;}
+
+    // Mobile-Portrait //
+    @media screen and (max-width: 499px) and (orientation: portrait){margin-top: 258px;}
 
     // Small Desktop //
     @media screen and (min-width: 1025px){
@@ -33,7 +40,7 @@
     }
 
     .content-wrapper {
-        background: #fff;
+        //background: #fff;
         min-height: 600px; //<-- do not remove
 
         // Small Desktop //
@@ -41,13 +48,12 @@
             margin-bottom: 320px; /* Margin bottom by footer height */ //<-- do not remove
             height: 100%;
         }
-
     }
 }
 
 .topnav {
     background: #111;
-    padding: 13px;
+    padding: 15px;
     vertical-align: middle;
     color: #fff;
 
