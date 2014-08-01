@@ -45,12 +45,9 @@ footer {
 
     // Small Desktop //
     @media screen and (min-width: 1025px){
-        position: relative;
+        //position: relative;
+        position: absolute;
         bottom: 0;
-    }
-
-    .container-fluid {
-        border: 1px solid #cc9900;
     }
 }
 
