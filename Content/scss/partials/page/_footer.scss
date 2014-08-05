@@ -3,8 +3,10 @@
 Footer
 ========================================================================== */
 
-footer {
-    border: 1px dashed green; //<--- DEV LINE
+.footer {
+    width: 100%;
+    position: relative;
+    z-index: 4;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -22,13 +24,9 @@ footer {
         padding: 0;
     }
 
-    a.icon {
-        line-height: 2.23em;
-
-        i {
-            font-size: 1.8em;
-            padding-right: 7px;
-        }
+    .footer-inner {
+        border: 1px dashed green; //<--- DEV LINE
+        //background: #fff;
     }
 
     span.copyright {
@@ -45,9 +43,18 @@ footer {
 
     // Small Desktop //
     @media screen and (min-width: 1025px){
-        //position: relative;
+        margin-bottom: 0;
+        padding-left: 380px;
+        min-height: 130px;
+
         position: absolute;
+        right: 0;
         bottom: 0;
+    }
+
+    // Notebook //
+    @media screen and (min-width: 1300px){
+        padding-left: 420px;
     }
 }
 

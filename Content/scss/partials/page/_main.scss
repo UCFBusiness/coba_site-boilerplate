@@ -13,9 +13,9 @@
 .main {
     //------------------------------------------------
     background: #eee; //<--- Testing
-    //border: 1px dashed blue; //<--- DEV LINE
     //------------------------------------------------
 
+    border-bottom: 1px solid #fff; //<--- do not remove (footer will break)
     margin-top: 518px;
     height: 100%;
     min-height: 100%;
@@ -41,9 +41,8 @@
     @media screen and (min-width: 1025px){
         margin-top: 0;
         padding-left: 380px;
-        
         height: 100%;
-        min-height: 1017px;
+        min-height: 1080px; // (height of full-screen)
     }
 
     // Notebook //
@@ -52,14 +51,14 @@
     }
 
     .content-wrapper {
-        border: 1px dashed blue; //<--- DEV LINE
-        //background: #fff;
+        border: 1px dashed red; //<--- DEV LINE
         z-index: 4;
 
         // Small Desktop //
         @media screen and (min-width: 1025px){
-            margin-bottom: 320px; /* margin bottom by footer height */ //<-- do not remove
+            margin-bottom: 230px; /* margin bottom by footer height */ //<-- do not remove
             height: 100%;
+            width: 100%;
         }
     }
 }
