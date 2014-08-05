@@ -56,8 +56,9 @@
 
         // Small Desktop //
         @media screen and (min-width: 1025px){
-            margin-bottom: 230px; /* margin bottom by footer height */ //<-- do not remove
+            margin-bottom: 230px; // margin bottom by footer height // <-- do not remove
             height: 100%;
+            min-height: 790px; // <-- testing
             width: 100%;
         }
     }

@@ -10594,26 +10594,26 @@ body {
   /* line 53, ../Content/scss/partials/page/_main.scss */
   .main .content-wrapper {
     margin-bottom: 230px;
-    /* margin bottom by footer height */
     height: 100%;
+    min-height: 790px;
     width: 100%;
   }
 }
 
-/* line 66, ../Content/scss/partials/page/_main.scss */
+/* line 67, ../Content/scss/partials/page/_main.scss */
 .topnav {
   background: #111;
   padding: 15px;
   vertical-align: middle;
   color: #fff;
 }
-/* line 72, ../Content/scss/partials/page/_main.scss */
+/* line 73, ../Content/scss/partials/page/_main.scss */
 .topnav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 77, ../Content/scss/partials/page/_main.scss */
+/* line 78, ../Content/scss/partials/page/_main.scss */
 .topnav ul li {
   padding-right: 15px;
   display: inline-block;
