@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
@@ -316,16 +316,18 @@
 		</section><!--/#sidebarLeft -->
 
 		<section id="sidebarRight" class="sidebarRight">
-			<div class="sidebarRight-inner">
+			<div class="sidebarRight-inner" id="tabs">
 
 				<!--Tabs-->
-				<a class="shutRight" href="">&#10006;</a><!--Close Button-->
-				<a class="sidebarMenuTab active" href="#"><i class="fa fa-bars"></i></a>
-				<a class="sidebarMenuTab" href="#"><i class="fa fa-search"></i></a>
-				<a class="sidebarMenuTab" href="#"><i class="fa fa-users"></i></a>
+                <ul>
+				    <li><a class="shutRight" href="">&#10006;</a></li><!--Close Button-->
+				    <li><a class="sidebarMenuTab active" href="#menu"><i class="fa fa-bars"></i></a></li>
+				    <li><a class="sidebarMenuTab" href="#search"><i class="fa fa-search"></i></a></li>
+				    <li><a class="sidebarMenuTab" href="#directory"><i class="fa fa-users"></i></a></li>
+                </ul>
 				<!--Tabs-->
 
-				<div class="scrollableArea container-fluid">
+				<div class="scrollableArea container-fluid" id="menu">
 					<!-- show content here -->
 					<hr>
 
@@ -382,26 +384,13 @@
 					</div>
 
 					<hr />
-
-					@*<div id="lipsum">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique leo et leo consequat scelerisque. Pellentesque non porttitor erat. Suspendisse egestas malesuada elit pellentesque euismod. Aenean quis blandit dui, at convallis augue. Donec ante nunc, imperdiet nec ipsum quis, interdum consectetur lorem. Integer rutrum sit amet lectus at interdum. Etiam facilisis enim eu purus tempus, nec blandit nisl aliquet. Cras porta quam ut pellentesque semper. Nulla ut elit eu ipsum aliquet vestibulum. Quisque facilisis magna diam, eget convallis quam gravida sit amet. Nunc porttitor eros placerat adipiscing pulvinar. Suspendisse pharetra laoreet turpis, ac sodales justo tincidunt eu. Nam quis sagittis leo.
-					</p>
-					<p>Sed interdum metus ac nisi molestie consectetur. Proin vulputate augue ac quam vehicula, quis suscipit lacus porta. Sed adipiscing hendrerit magna, a sodales nisi ultricies ac. Aenean rhoncus nisl mauris, at ullamcorper dui sodales at. Phasellus hendrerit posuere nunc ac convallis. Aliquam adipiscing sagittis sollicitudin. Suspendisse eu convallis metus, ultricies lobortis lectus. Nunc laoreet turpis tellus, luctus consequat sapien consectetur in. Praesent aliquam mauris vitae urna fringilla, ac faucibus dolor dictum. Vestibulum consequat cursus interdum. Ut pulvinar dolor id massa vulputate, eu consequat urna rhoncus. Suspendisse luctus purus diam, vitae fermentum diam condimentum in. Quisque lectus urna, dictum nec tristique nec, rutrum vel nunc. Proin quis egestas dolor, vel pretium arcu. Curabitur porttitor lacus non suscipit iaculis.
-					</p>
-					<p>Mauris imperdiet adipiscing justo, molestie ultricies sem consequat eu. Integer condimentum mi neque, sit amet aliquet lorem varius et. Nunc tempor risus quis enim mattis commodo. Fusce convallis pellentesque dapibus. Ut egestas cursus lobortis. Maecenas mollis ligula mauris, ac convallis leo ultricies id. Praesent elementum gravida risus, nec fringilla dolor tempus et. In gravida accumsan metus at pharetra. Fusce at tortor faucibus, ullamcorper erat ac, ullamcorper neque. Maecenas elementum porta malesuada. Nunc semper ligula at mauris facilisis, id mollis nulla aliquam.
-					</p>
-					<p>Nam nec pretium metus. Quisque in malesuada ipsum, vitae faucibus nibh. Donec ut felis urna. Suspendisse potenti. Nullam nisi nunc, viverra sed nibh vel, cursus tempus tellus. Quisque et mollis metus. Sed vel porta purus.
-					</p>
-					<p>Aenean aliquet eu sem et ornare. Sed feugiat magna urna, a bibendum tellus ultrices vel. Suspendisse in libero in nisl blandit commodo. Vestibulum non bibendum lectus. Quisque semper dapibus lacus porta facilisis. Mauris ligula dolor, rutrum vel tellus nec, lacinia molestie purus. Nunc nisl massa, auctor consequat neque a, vulputate pharetra dolor. Sed sed justo sit amet magna tincidunt aliquam et et risus. Mauris lacinia, metus quis sodales hendrerit, lectus nibh rhoncus massa, at malesuada ligula turpis at dui. Nullam ut laoreet lacus.
-					</p>
-					<p>Nullam rhoncus leo est, nec consequat orci adipiscing vitae. Mauris luctus placerat leo, ut mollis tortor semper at. Curabitur interdum mi massa, et iaculis massa tincidunt quis. Duis rhoncus auctor arcu a tincidunt. Aliquam nec feugiat magna. Cras tincidunt, turpis faucibus blandit malesuada, urna libero vestibulum nisi, ac tempor arcu risus ac mauris. Sed libero eros, egestas et lacinia eget, egestas blandit nunc.
-					</p></div>
-					<div id="generated">
-						Generated 15 paragraphs, 1284 words, 8860 bytes of Lorem Ipsum
-					</div>*@
-
-
 				</div>
+                <div class="scrollableArea container-fluid" id="search">
+                    <p>This is the search stuff.</p>
+                </div>
+                <div class="scrollableArea container-fluid" id="directory">
+                    <p>This is the directory stuff.</p>
+                </div>
 
 			</div>
 		</section><!--/#sidebarRight -->

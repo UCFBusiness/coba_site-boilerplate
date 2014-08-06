@@ -168,13 +168,14 @@ require(['modernizr'], function ()
 
 		domReady(function ()
 		{
-			require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions'], function (ng)
+			require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions', 'jquery-ui'], function (ng)
 			{
 				// load desktop, tablet and mobile scripts
 				
 				var screenwidth = parseInt($(this).width());
 				var screenheight = parseInt($(this).height());
 				
+                $("#tabs").tabs();
 
 				//-- Add off-canvas -----------------------------
 				$("html").offcanvas({
