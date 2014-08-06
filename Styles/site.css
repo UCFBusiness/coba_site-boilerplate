@@ -10526,17 +10526,22 @@ body {
     font-size: .85em;
   }
 }
-/* line 181, ../Content/scss/partials/page/_cover.scss */
-.cover-body a.icon {
-  line-height: 2.23em;
-}
 /* line 184, ../Content/scss/partials/page/_cover.scss */
-.cover-body a.icon i {
-  font-size: 1.7em;
-  padding-right: 7px;
+.cover-body .social a.icon {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 22px;
+  padding: 5px 8px;
+  line-height: 2.23em;
+  font-size: 1.3em;
+  text-align: center;
+}
+/* line 193, ../Content/scss/partials/page/_cover.scss */
+.cover-body .social a.icon:first-child {
+  padding: 5px 11px;
 }
 
-/* line 191, ../Content/scss/partials/page/_cover.scss */
+/* line 200, ../Content/scss/partials/page/_cover.scss */
 .cover-body .cover-body-inner {
   position: relative;
   z-index: 100;

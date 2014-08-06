@@ -178,12 +178,21 @@
         }
     }
 
-    a.icon {
-        line-height: 2.23em;
+    .social {
+        //border: 1px solid red;
 
-        i {
-            font-size: 1.7em;
-            padding-right: 7px;
+        a.icon {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 22px;
+            padding: 5px 8px;
+            line-height: 2.23em;
+            font-size: 1.3em;
+            text-align: center;
+
+            &:first-child {
+                padding: 5px 11px;
+            }
         }
     }
 }
