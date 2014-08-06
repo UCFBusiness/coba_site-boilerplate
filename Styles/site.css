@@ -10334,7 +10334,7 @@ body {
 @media screen and (max-width: 1024px) {
   /* line 6, ../Content/scss/partials/page/_cover.scss */
   .cover {
-    height: 520px;
+    min-height: 878px;
   }
 }
 @media screen and (max-width: 699px) and (orientation: landscape) {
@@ -10346,7 +10346,7 @@ body {
 @media screen and (max-width: 499px) and (orientation: portrait) {
   /* line 6, ../Content/scss/partials/page/_cover.scss */
   .cover {
-    height: 260px;
+    min-height: 410px;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -10528,20 +10528,22 @@ body {
 }
 /* line 184, ../Content/scss/partials/page/_cover.scss */
 .cover-body .social a.icon {
-  background-color: #fff;
-  border: 1px solid #eee;
-  border-radius: 22px;
-  padding: 5px 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  border-top: #777;
+  border-left: #fff;
+  border-radius: 25px;
+  padding: 5px 7px;
   line-height: 2.23em;
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
 }
-/* line 193, ../Content/scss/partials/page/_cover.scss */
+/* line 195, ../Content/scss/partials/page/_cover.scss */
 .cover-body .social a.icon:first-child {
-  padding: 5px 11px;
+  padding: 5px 9px;
 }
 
-/* line 200, ../Content/scss/partials/page/_cover.scss */
+/* line 202, ../Content/scss/partials/page/_cover.scss */
 .cover-body .cover-body-inner {
   position: relative;
   z-index: 100;
@@ -10563,6 +10565,12 @@ body {
   position: relative;
   z-index: 4;
 }
+@media screen and (max-width: 1024px) {
+  /* line 13, ../Content/scss/partials/page/_main.scss */
+  .main {
+    margin-top: 876px;
+  }
+}
 @media screen and (max-width: 699px) and (orientation: landscape) {
   /* line 13, ../Content/scss/partials/page/_main.scss */
   .main {
@@ -10572,7 +10580,7 @@ body {
 @media screen and (max-width: 499px) and (orientation: portrait) {
   /* line 13, ../Content/scss/partials/page/_main.scss */
   .main {
-    margin-top: 258px;
+    margin-top: 408px;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -10590,13 +10598,13 @@ body {
     padding-left: 420px;
   }
 }
-/* line 53, ../Content/scss/partials/page/_main.scss */
+/* line 58, ../Content/scss/partials/page/_main.scss */
 .main .content-wrapper {
   border: 1px dashed red;
   z-index: 4;
 }
 @media screen and (min-width: 1025px) {
-  /* line 53, ../Content/scss/partials/page/_main.scss */
+  /* line 58, ../Content/scss/partials/page/_main.scss */
   .main .content-wrapper {
     margin-bottom: 230px;
     height: 100%;
@@ -10605,20 +10613,20 @@ body {
   }
 }
 
-/* line 67, ../Content/scss/partials/page/_main.scss */
+/* line 72, ../Content/scss/partials/page/_main.scss */
 .topnav {
   background: #111;
   padding: 15px;
   vertical-align: middle;
   color: #fff;
 }
-/* line 73, ../Content/scss/partials/page/_main.scss */
+/* line 78, ../Content/scss/partials/page/_main.scss */
 .topnav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 78, ../Content/scss/partials/page/_main.scss */
+/* line 83, ../Content/scss/partials/page/_main.scss */
 .topnav ul li {
   padding-right: 15px;
   display: inline-block;
