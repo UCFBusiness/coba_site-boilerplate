@@ -175,8 +175,6 @@ require(['modernizr'], function ()
 				var screenwidth = parseInt($(this).width());
 				var screenheight = parseInt($(this).height());
 				
-                $("#tabs").tabs();
-
 				//-- Add off-canvas -----------------------------
 				$("html").offcanvas({
 					hasSidebarRight: true
@@ -214,6 +212,12 @@ require(['modernizr'], function ()
 					}, 1500, "easeInOutExpo");
 					event.preventDefault();
 				}); //-------------------------------------------
+
+				$("#tabs").tabs({ active: 0 });
+				$(".sidebarMenuTab").click(function () {
+				    $(".sidebarMenuTab").removeClass("active");
+				    $(this).addClass("active");
+				});
 
 
 				if (screenwidth < 1000) // load only tablet scripts
