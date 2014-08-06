@@ -10276,15 +10276,15 @@ body {
 }
 /* line 21, ../Content/scss/partials/page/_topbar.scss */
 .topBar .cbaBar {
-  background: rgba(0, 0, 0, 0.6);
+  background: none;
+  padding: 20px;
   vertical-align: middle;
-  padding: 3px 20px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 699px) {
   /* line 21, ../Content/scss/partials/page/_topbar.scss */
   .topBar .cbaBar {
-    background: none;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3px 20px;
   }
 }
 /* line 33, ../Content/scss/partials/page/_topbar.scss */
@@ -10533,17 +10533,18 @@ body {
   border-top: #777;
   border-left: #fff;
   border-radius: 25px;
+  margin-right: 3px;
   padding: 5px 7px;
   line-height: 2.23em;
   font-size: 1.1em;
   text-align: center;
 }
-/* line 195, ../Content/scss/partials/page/_cover.scss */
+/* line 196, ../Content/scss/partials/page/_cover.scss */
 .cover-body .social a.icon:first-child {
   padding: 5px 9px;
 }
 
-/* line 202, ../Content/scss/partials/page/_cover.scss */
+/* line 203, ../Content/scss/partials/page/_cover.scss */
 .cover-body .cover-body-inner {
   position: relative;
   z-index: 100;

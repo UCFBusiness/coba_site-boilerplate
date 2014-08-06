@@ -19,14 +19,14 @@
 	}
 
 	.cbaBar {
-		background: rgba(0,0,0,0.6);
+		background: none;
+		padding: 20px;
 		vertical-align: middle;
-		padding: 3px 20px;
 
-		// Small Desktop //
-		@media screen and (min-width: 1025px){
-			background: none;
-			padding: 20px;
+		// Mobile //
+		@media screen and (max-width: 699px){
+			background: rgba(0,0,0,0.6);
+			padding: 3px 20px;
 		}
 	}
 
