@@ -15,14 +15,25 @@
     top: 0;
     z-index: 4;
 
-    // Tablet //
-    @media screen and (max-width: 1024px){min-height: 878px;}
+    // Tablet-Landscape //
+    @media screen and (max-width: 1024px){
+        min-height: 642px;
+    }
+
+    // Tablet-Portrait //
+    @media screen and (max-width: 768px){
+        min-height: 876px;
+    }
 
     // Mobile-Landscape //
-    @media screen and (max-width: 699px) and (orientation: landscape){height: 320px;}
+    @media screen and (max-width: 699px) and (orientation: landscape){
+        min-height: 320px;
+    }
 
     // Mobile-Portrait //
-    @media screen and (max-width: 499px) and (orientation: portrait){min-height: 410px;}
+    @media screen and (max-width: 499px) and (orientation: portrait){
+        min-height: 410px;
+    }
 
     // Small Desktop //
     @media screen and (min-width: 1025px){

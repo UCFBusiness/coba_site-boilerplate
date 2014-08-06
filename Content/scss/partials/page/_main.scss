@@ -29,7 +29,12 @@
 
     // Tablet //
     @media screen and (max-width: 1024px){
-        margin-top: 876px;
+        margin-top: 640px;
+    }
+
+    // Tablet-Portrait //
+    @media screen and (max-width: 768px){
+        margin-top: 874px;
     }
 
     // Mobile-Landscape //
