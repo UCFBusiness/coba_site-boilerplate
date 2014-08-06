@@ -10539,7 +10539,7 @@ body {
 /* line 191, ../Content/scss/partials/page/_cover.scss */
 .cover-body .cover-body-inner {
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 /* =============================================================================

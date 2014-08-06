@@ -175,12 +175,12 @@ require(['modernizr'], function ()
 				var screenwidth = parseInt($(this).width());
 				var screenheight = parseInt($(this).height());
 				
-				//-- Add off-canvas -----------------------------
+				//-- off-canvas -----------------------------
 				$("html").offcanvas({
 					hasSidebarRight: true
 				}); //-------------------------------------------
 
-				//-- lazy load images ---------------------------
+				//-- lazy-load images ---------------------------
 				Echo.init({
 					offset: 0,
 					throttle: 250
@@ -213,12 +213,12 @@ require(['modernizr'], function ()
 					event.preventDefault();
 				}); //-------------------------------------------
 
+			    //-- off-canvas : tabs -------------------------
 				$("#tabs").tabs({ active: 0 });
 				$(".sidebarMenuTab").click(function () {
 				    $(".sidebarMenuTab").removeClass("active");
 				    $(this).addClass("active");
-				});
-
+				}); //-------------------------------------------
 
 				if (screenwidth < 1000) // load only tablet scripts
 				{
