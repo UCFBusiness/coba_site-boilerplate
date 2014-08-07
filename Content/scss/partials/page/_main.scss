@@ -62,6 +62,7 @@
 
     .content-wrapper {
         border: 1px dashed red; //<--- DEV LINE
+        min-height: 800px; // <-- testing
         z-index: 4;
 
         // Small Desktop //

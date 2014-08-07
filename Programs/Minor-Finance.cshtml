@@ -1,87 +1,97 @@
 ﻿@{
 	Layout = "~/_SiteLayout.cshtml";
-	Page.Title = "Finance Minor";
+	Page.Title = "Minor in Finance";
 }
 
 @section Styles {
-<style> /*-- page-specific styles --*/ 
-	
-	/*.cover-img {background-image: url('/images/bg.jpg');}*/
-	
-</style>
+	<!--<style> /*-- page-specific styles --*/
+		/*.cover-img {background-image: url('/images/bg.jpg');}*/
+	</style>-->
 }
 
 @section featured {
-	<hgroup class="page-title">
-		<h1>Undergraduate</h1>
-		<h2>@Page.Title</h2>
-	</hgroup>
-	<a href="https://apply.ucf.edu/application/login.aspx" class="btn btn-primary btn-lg btn-yellow" role="button" target="_blank">Apply Online</a>
+	<div>
+		<hgroup class="page-title">
+			<h1>@Page.Title</h1>
+		</hgroup>
+	</div>
 }
 
-<div id="st-container" class="st-container clearfix">
-	<!-- content push wrapper -->
-	<div class="st-pusher">
-		<article class="st-content">@*-- this is the wrapper for the content --*@
-			<div class="st-content-inner">@*-- extra div for emulating position:fixed of the menu --*@
-				<!--MENU-->
-				<section id="">
+<header>
+	<div class="content container-fluid">
+		@*<p>Please Note: the information listed on the website is for the @DateTime.Today.Year Catalog Year. Please refer to your degree audit if you are declared in an earlier Catalog Year.</p>*@
+	</div>
+</header>
 
-						<div class="container">
-				
-
-							<h3>Finance Minor: 18 Credits</h3>
-							<p><small>2013-2014 Catalog Year</small></p>
-							<h4>For Business and Non-Business Majors</h4>
-							<h4>Required Courses (25 Credits)</h4>
-							<div class="row">
-							<div class="col-md-4">
-							<h5><strong>ACG 2021:</strong> Principles of Financial Accounting (3 Credits)</h5>
-							</div>
-							<div class="col-md-4">
-							<h5><strong>ECO 2023:</strong> Principles of Microeconomics (3 Credits)</h5>
-							</div>
-							<div class="col-md-4">
-							<h5><strong>FIN 2100:</strong> Personal Finance and Investments (3 Credits)</h5>
-							</div>
-							<div class="col-md-4">
-							<h5><strong>FIN 3403:</strong> Business Finance (4 Credits)</h5>
-							<small>
-							<em>(PR: Junior Standing, ACG 2021 &amp; ECO 2023)</em>
-							</small><br><br>
-							</div>
-							<div class="col-md-4">
-							<h5><strong>FIN 3303:</strong> Financial Markets(3 Credits)</h5>
-							<small>
-							<em>(PR: FIN 3403)</em>
-							</small><br><br>
-							</div>
-							<div class="col-md-4">
-							<h5>* Three Finance Electives (9 Credits)</h5>
-							<small>
-							<em>(PR: FIN 3403)</em>
-							</small><br><br>
-							</div>
-							</div>
-							<h4>Restricted Electives (Select 3)</h4>
-							<div class="row">
-							<div class="col-md-4">
-							<h5>FIN 3414 Intermediate Corporate Finance</h5>
-							<h5>FIN 3461 Financial Statement Analysis</h5>
-							<h5>FIN 3504 Investment Analysis</h5>
-							<h5>FIN 4324 Commercial Bank Management</h5>
-							<h5>FIN 4453 Financial Models *</h5>
-							<h5>FIN 4514 Portfolio Analysis and Management *</h5>
-							<h5>FIN 4533 Financial Derivatives *</h5>
-							<h5>FIN 4604 International Financial Management</h5>
-							</div>
-							</div>
-
-
-						</div>
-
-				</section>
-			</div><!-- /st-content-inner -->
-		</article><!-- /st-content -->
-	</div><!-- /st-pusher -->
-</div><!-- /st-container -->
+<section>
+	<div class="content container-fluid">
+		<h2>Finance Minor: 18 Credits</h2>
+		<h5>For Business and Non-Business Majors</h5>
+		<p>&nbsp;</p>
+		<h4>Required Courses <small>(25 Credits)</small></h4>
+		<div class="row">
+			<div class="col-sm-4">
+				<h5><strong>ACG 2021</strong> Principles of Financial Accounting (3 Credits)</h5>
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>ECO 2023</strong> Principles of Microeconomics (3 Credits)</h5>
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>FIN 2100</strong> Personal Finance and Investments (3 Credits)</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<h5><strong>FIN 3403</strong> Business Finance (4 Credits)</h5>
+				<small>
+					<em>(PR: Junior Standing, ACG 2021 &amp; ECO 2023)</em>
+				</small>
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>FIN 3303</strong> Financial Markets(3 Credits)</h5>
+				<small>
+					<em>(PR: FIN 3403)</em>
+				</small>
+			</div>
+			<div class="col-sm-4">
+				<h5>* Three Finance Electives (9 Credits)</h5>
+				<small>
+					<em>(PR: FIN 3403)</em>
+				</small>
+			</div>
+		</div>
+		<p>&nbsp;</p>
+		<h4>Restricted Electives <small>(3 Credits)</small></h4>
+		<p>Select (3) restricted electives from Catalog.</p>
+		<div class="row">
+			<div class="col-sm-4">
+				<h5><strong>FIN 3414</strong> Intermediate Corporate Finance</h5>
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>FIN 3461</strong> Financial Statement Analysis</h5>
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>FIN 3504</strong> Investment Analysis</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<h5><strong>FIN 4324</strong> Commercial Bank Management</h5>
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>*FIN 4453</strong> Financial Models</h5>
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>*FIN 4514</strong> Portfolio Analysis and Management</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<h5><strong>*FIN 4533</strong> Financial Derivatives</h5>
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>FIN 4604</strong> International Financial Management</h5>
+			</div>
+		</div>
+	</div>
+</section>

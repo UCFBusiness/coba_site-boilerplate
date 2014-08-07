@@ -10614,6 +10614,7 @@ body {
 /* line 63, ../Content/scss/partials/page/_main.scss */
 .main .content-wrapper {
   border: 1px dashed red;
+  min-height: 800px;
   z-index: 4;
 }
 @media screen and (min-width: 1025px) {
@@ -10626,20 +10627,20 @@ body {
   }
 }
 
-/* line 77, ../Content/scss/partials/page/_main.scss */
+/* line 78, ../Content/scss/partials/page/_main.scss */
 .topnav {
   background: #111;
   padding: 15px;
   vertical-align: middle;
   color: #fff;
 }
-/* line 83, ../Content/scss/partials/page/_main.scss */
+/* line 84, ../Content/scss/partials/page/_main.scss */
 .topnav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 88, ../Content/scss/partials/page/_main.scss */
+/* line 89, ../Content/scss/partials/page/_main.scss */
 .topnav ul li {
   padding-right: 15px;
   display: inline-block;
