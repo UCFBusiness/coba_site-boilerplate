@@ -220,6 +220,14 @@ require(['modernizr'], function ()
 				    $(this).addClass("active");
 				}); //-------------------------------------------
 
+
+			    //-- Search Code --------------------------------
+				$(".dl-search-field").keyup(function () {
+				    alert("Handler for key up called.");
+				}); //-------------------------------------------
+
+
+
 				if (screenwidth < 1000) // load only tablet scripts
 				{
 					require([], function ()
