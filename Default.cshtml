@@ -8,20 +8,6 @@
 	//Response.Cache.SetValidUntilExpires(true);
 }
 
-@section Scripts {
-	<script>
-		require(['main'], function ()
-		{
-			// Once the 'main' script is loaded, load up scripts specific to this page
-			require(['pages/home'], function (Page)
-			{
-				Page.onLoad();
-				Page.onResize();
-			});
-		});
-	</script>
-}
-
 @section Styles {
 
 }
@@ -52,19 +38,31 @@
 	<!-- Site Feedback: FINIS -->
 }
 
+@section Scripts {
+	<script>
+		require(['main'], function () {
+			// Once the 'main' script is loaded, load up scripts specific to this page
+			require(['pages/home'], function (Page) {
+				Page.onLoad();
+				Page.onResize();
+			});
+		});
+	</script>
+}
+
 <header class="section"></header>
 
 <section class="section">
-	<!--// ROW - SPOTLIGHTS/FEATURED ANNOUNCEMENTS -->
 	<div class="pagespan">
+		<!--// ROW - SPOTLIGHTS/FEATURED ANNOUNCEMENTS -->
 		<section class="wrap">
 			<div class="wrap-header">
 				<span>Spotlights</span>
 				<span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
 			</div>
 			<div class="frame" id="row1" data-intro="row1" data-position="left">
-				<ul class="clearfix">
-				
+				<ul class="clearfix" id="spotlights">
+
 					<li class="long-panel">
 						<div title="start here">
 							<a href="//issuu.com/ucfbusiness/docs/cba-viewbook-2012?e=0" class="target_blank">
@@ -91,7 +89,7 @@
 							</a>
 						</div>
 					</li>
-				
+
 					<li>
 						<div title="Take the ball by Dr. Paul Jarley">
 							<a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
@@ -111,28 +109,27 @@
 					</li>
 
 				</ul>
-			</div><!--/frame -->
+			</div><!--/.frame -->
 			<div class="scrollbar">
 				<div class="handle">
 					<div class="mousearea"><span></span></div>
 				</div>
-			</div><!--/scrollbar --> 
+			</div><!--/.scrollbar -->
 			<div class="controls center use-fastclick">
 				<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
 				<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-			</div><!--/controls -->    
+			</div><!--/.controls -->
 		</section>
-	</div>
-	<!--// ROW - EVENTS -->
-	<div class="pagespan">
+
+		<!--// ROW - EVENTS -->
 		<section class="wrap">
 			<div class="wrap-header">
 				<span>Events</span>
 				<span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
 			</div>
 			<div class="frame" id="row2" data-intro="row2" data-position="left">
-				<ul class="clearfix">
-				
+				<ul class="clearfix" id="events">
+
 					<li>
 						<div title="executive and professional development programs">
 							<a href="//edc.research.ucf.edu/fin2014" class="target_blank">
@@ -141,7 +138,7 @@
 							</a>
 						</div>
 					</li>
-				
+
 					<li>
 						<div title="get your evening mba">
 							<a href="//ucfmba.ucf.edu/evening-mba" class="target_blank">
@@ -150,7 +147,7 @@
 							</a>
 						</div>
 					</li>
-				
+
 					<li>
 						<div title="get your professional mba">
 							<a href="//edc.research.ucf.edu/pmba" class="target_blank">
@@ -175,22 +172,21 @@
 				<div class="handle">
 					<div class="mousearea"><span></span></div>
 				</div>
-			</div><!--/scrollbar --> 
+			</div><!--/scrollbar -->
 			<div class="controls center use-fastclick">
 				<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
 				<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-			</div><!--/controls --> 
+			</div><!--/controls -->
 		</section>
-	</div>
-	<!--// ROW - NEWS -->
-	<div class="pagespan">
+
+		<!--// ROW - NEWS -->
 		<section class="wrap">
 			<div class="wrap-header">
 				<span>News</span>
 				<span style="font-size: 0.75em; color: #808080;"><small>VIEW ALL ></small></span>
 			</div>
 			<div class="frame" id="row3" data-intro="row3" data-position="left">
-				<ul class="clearfix">
+				<ul class="clearfix" id="news">
 
 					<li>
 						<div title="ucf today">
@@ -213,7 +209,7 @@
 					<li>
 						<div title="the joust">
 							<a href="//web.bus.ucf.edu/joust" class="target_blank">
-								<img alt="ucf" data-echo="/images/panels/thejoust.jpg" width="100%" height="100%" >
+								<img alt="ucf" data-echo="/images/panels/thejoust.jpg" width="100%" height="100%">
 								<p>2014 Joust Winner Announced</p>
 							</a>
 						</div>
@@ -222,33 +218,26 @@
 					<li>
 						<div title="dr. sean snaith's economic forecasts">
 							<a href="//iec.ucf.edu/page/forecasts.aspx" class="target_blank">
-								<img alt="ucf" data-echo="/images/panels/snaith-forecasts.jpg" width="100%" height="100%" >
+								<img alt="ucf" data-echo="/images/panels/snaith-forecasts.jpg" width="100%" height="100%">
 								<p>Florida and U.S. Economic Forecasts from Dr. Sean Snaith</p>
 							</a>
 						</div>
 					</li>
-				
+
 				</ul>
 			</div><!--/frame -->
 			<div class="scrollbar">
 				<div class="handle">
 					<div class="mousearea"><span></span></div>
 				</div>
-			</div><!--/scrollbar --> 
+			</div><!--/scrollbar -->
 			<div class="controls center use-fastclick">
 				<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
 				<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
-			</div><!--/controls --> 
+			</div><!--/controls -->
 		</section>
 	</div>
 </section>
-
-<section class="section"></section>
-
-<section class="section"></section>
-
-<aside class="section"></aside>
- 
 
 <!--// ROW -->
 @*<div class="pagespan">

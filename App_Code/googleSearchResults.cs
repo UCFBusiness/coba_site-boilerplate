@@ -4,14 +4,15 @@ using System.Linq;
 using System.Web;
 
 /// <summary>
-/// Summary description for wpSinglePostReader
+/// Summary description for googleSearchResults
 /// </summary>
-public class wpSinglePostReader
+public class googleSearchResults
 {
-	public wpSinglePostReader()
+	public googleSearchResults()
 	{
 		//
 		// TODO: Add constructor logic here
 		//
+		
 	}
 }

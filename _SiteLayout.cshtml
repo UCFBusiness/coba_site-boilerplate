@@ -76,6 +76,16 @@
 							</button>
 							<ul class="dl-menu">
 								<li>
+									<form id="site-search" class="site-search" action="/search" name="input" method="get">
+										<input type="search" placeholder="SEARCH" name="q" size="33" class="dl-search-field" />
+										<input type="hidden" name="cx" value="004234240553222255636:70uztgpm38y" />
+										<input type="hidden" name="cof" value="FORID:9" />
+										<input type="hidden" name="ie" value="UTF-8" />
+										@*<input type="submit" value="submit" class="dl-searchbutton" />
+										  <span class="dl-search-icon"></span>*@
+									</form>
+								</li>
+								<li>
 									<a href="#">Academics</a>
 									<ul class="dl-submenu">
 										<li class="Label breadcrumb">Academics</li>
@@ -93,7 +103,7 @@
 											<ul class="dl-submenu">
 												<li class="Label breadcrumb">Academics > Graduate</li>
 												<li><a href="~/graduate/admissions">Admissions</a></li>
-												<li><a href="http://edc.research.ucf.edu/degrees" class="target_blank">Degree Programs</a></li>
+												<li><a href="//edc.research.ucf.edu/degrees" class="target_blank">Degree Programs</a></li>
 												<li><a href="~/graduate/certificates">Certificates</a></li>
 											</ul>
 										</li>
@@ -102,23 +112,22 @@
 											<ul class="dl-submenu">
 												<li class="Label breadcrumb">Academics > Executive Education</li>
 												@*<li><a href="~/execed/custom-programs">Customized Programs</a></li>
-										<li><a href="~/execed/international-residency">International Residency</a></li>
-										<li><a href="~/execed/open-enrollment">Open-Enrollment Programs</a></li>*@
-												<li><a href="http://edc.research.ucf.edu/customized_programs" class="target_blank">Customized Programs</a></li>
-												<li><a href="http://edc.research.ucf.edu/international-programs" class="target_blank">International Residency</a></li>
-												<li><a href="http://edc.research.ucf.edu/open-enrollment-programs" class="target_blank">Open-Enrollment Programs</a></li>
+												<li><a href="~/execed/international-residency">International Residency</a></li>
+												<li><a href="~/execed/open-enrollment">Open-Enrollment Programs</a></li>*@
+												<li><a href="//edc.research.ucf.edu/customized_programs" class="target_blank">Customized Programs</a></li>
+												<li><a href="//edc.research.ucf.edu/international-programs" class="target_blank">International Residency</a></li>
+												<li><a href="//edc.research.ucf.edu/open-enrollment-programs" class="target_blank">Open-Enrollment Programs</a></li>
 											</ul>
 										</li>
 									</ul>
 								</li>
-
 								<li>
 									<a href="#">Our College</a>
 									<ul class="dl-submenu">
 										<li class="Label breadcrumb">Our College</li>
 										<li><a href="~/history">History</a></li> <!--include mission and vision-->
 										<li><a href="~/accreditation">Accreditation</a></li>
-										<li><a href="http://www.bus.ucf.edu/ourcollege/?page=1009">Advisory Board Members</a></li>
+										<li><a href="//www.bus.ucf.edu/ourcollege/?page=1009">Advisory Board Members</a></li>
 										<li><a href="~/downtown-center">Downtown Center</a></li>
 										<li><a href="~/facts-figures">Facts &amp; Figures</a></li>
 										<li><a href="~/social-media">Social Media</a></li>
@@ -126,53 +135,22 @@
 										<li><a href="~/student-organizations">Student Organizations</a></li>
 									</ul>
 								</li>
-
-								@*<li><a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">Faculty &amp; Staff Directory</a></li>*@
-
-								@*<li>
-							<a href="#">Faculty &amp; Research</a>
-							<ul class="dl-submenu">
-								<li class="Label breadcrumb">Faculty &amp; Research</li>
-								<li><a href="#"><small>(coming soon)</small></a></li>
-							</ul>
-						</li>*@
-
 								<li>
 									<a href="#">Alumni &amp; Friends</a>
 									<ul class="dl-submenu">
 										<li class="Label breadcrumb">Alumni &amp; Friends</li>
-										@*<li><a href="#">Development</a></li>
-								<li><a href="#">Hall of Fame</a></li>
-								<li><a href="#">Spotlights</a></li>*@
-										<li><a href="http://www.ucfalumni.com/collegeofbusiness" target="_blank">Visit our alumni website</a></li>
+										<li><a href="//www.ucfalumni.com/collegeofbusiness" target="_blank">Visit our alumni website</a></li>
 
-										<!--action links
-							<li><a href="#">V-volunteer</a></li>
-							<li><a href="#">A-attend</a></li>
-							<li><a href="#">L-lead</a></li>
-							<li><a href="#">U-update</a></li>
-							<li><a href="#">E-experience</a></li>
-							-->
-
+										<!--// Action Links //
+										<li><a href="#">V-volunteer</a></li>
+										<li><a href="#">A-attend</a></li>
+										<li><a href="#">L-lead</a></li>
+										<li><a href="#">U-update</a></li>
+										<li><a href="#">E-experience</a></li>
+										-->
 									</ul>
 								</li>
-
-								@*<li>
-							<a href="#">Careers &amp; Recruitment</a>
-							<ul class="dl-submenu">
-								<li class="Label breadcrumb">Careers &amp; Recruitment</li>
-								<li><a href="#">Hire our students</a></li>
 							</ul>
-						</li>*@
-							</ul>
-							@*<form id="site-search" class="site-search" action="/search" name="input" method="get">
-						<input type="search" placeholder="SEARCH" name="q" size="27" class="dl-search-field" />
-						<input type="hidden" name="cx" value="004234240553222255636:70uztgpm38y" />
-						<input type="hidden" name="cof" value="FORID:9" />
-						<input type="hidden" name="ie" value="UTF-8" />
-						<input type="submit" value="submit" class="dl-searchbutton" />
-						<span class="dl-search-icon"></span>
-					</form>*@
 						</nav><!--/.dl-menuwrapper -->
 						
 						<div class="topBar">
@@ -228,38 +206,21 @@
 								<div class="col-xs-12 col-sm-5 col-md-5">
 									<div>
 										<h5 class="text-uppercase">Address</h5>
-										<p>
+										<address>
 											University of Central Florida<br>
 											College of Business Administration<br>
 											4000 Central Florida Blvd.<br>
 											P.O. Box 161991<br>
 											Orlando, FL 32816-1991<br>
-										</p>
-									</div><br>
-									@*<div>
-										<h5 class="text-uppercase">Stay Connected</h5>
-										<a class="icon" href="//www.twitter.com/ucfbusiness" target="_blank"><i class="fa fa-twitter"></i></a>
-										<a class="icon" href="//bit.ly/ucfbusinessalumni" target="_blank"><i class="fa fa-linkedin"></i></a>
-										<a class="icon" href="//instagram.com/ucfbusiness" target="_blank"><i class="fa fa-instagram"></i></a>
-										<a class="icon" href="//www.facebook.com/ucfcba" target="_blank"><i class="fa fa-facebook"></i></a>
-										<a class="icon" href="//plus.google.com/107946459277643419963/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
-									</div><br>*@
+										</address>
+									</div>
 								</div>
 								<div class="col-xs-6 col-sm-4 col-md-4">
 									<h5>Contact</h5>
 									<ul>
-										<li>
-											<small>Undergraduate</small><br>
-											<a href="tel:4078232185">(407) 823-2185</a>
-										</li>
-										<li>
-											<small>Graduate</small><br>
-											<a href="tel:4078232184">(407) 235-3917</a>
-										</li>
-										<li>
-											<small>Office of the Dean</small><br>
-											<a href="tel:4078232184">(407) 823-2181</a>
-										</li>
+										<li><small>General Information /<br />Office of Professional Development</small><br><a href="tel:4078232185">(407) 823-2185</a></li>
+										<li><small>Graduate Information</small><br><a href="tel:4078232184">(407) 235-3917</a></li>
+										<li><small>Office of the Dean</small><br><a href="tel:4078232184">(407) 823-2181</a></li>
 									</ul>
 								</div>
 								<div class="col-xs-6 col-sm-3 col-md-3">
@@ -383,7 +344,14 @@
 				<div class="scrollableArea container-fluid" id="search">
 					<!-- show content here -->
 					<hr>
-					<p>This is the search stuff.</p>
+					<form id="site-search" class="site-search" action="" name="input" method="get">
+						<input type="search" placeholder="SEARCH" name="q" size="33" class="dl-search-field" />
+						<input type="hidden" name="output" value="xml" />
+						<input type="hidden" name="client" value="UCF_Main" />
+						<input type="hidden" name="site" value="UCF_Main" />
+						<input type="hidden" name="sitesearch" value="web.bus.ucf.edu" />
+						<input type="hidden" name="spell" value="1" />
+					</form>
 				</div>
 				<div class="scrollableArea container-fluid" id="directory">
 					<!-- show content here -->
@@ -404,9 +372,5 @@
 		<script data-main="/scripts/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
 		@RenderSection("Scripts", required: false)
 		<!--Scripts: FINIS-->
-
-		@*<!-- ADD UCF HEADER -->
-		<script type="text/javascript" src="//universityheader.ucf.edu/bar/js/university-header.js"></script>
-		<!-- END UCF HEADER -->*@
 	</body>
 </html>
