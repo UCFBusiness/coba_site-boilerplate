@@ -4,12 +4,13 @@
     /* These styles MUST be included. Do not change. */
     background: #fff;
     display: none;
-    position: absolute;
     position: fixed;
     top: 0;
+    bottom: 0;
     height: 100%;
     z-index: 999999;
-    overflow: hidden;
+    //overflow: hidden;
+    overflow: auto;
 
     /* Specify the width of your pageslide here */
     width: 100%;
@@ -33,14 +34,3 @@
 }
 
 .modal {display: none;}
-
-
-/* Tablet(landscape) and Small Desktop Layout. */
-@media screen and (min-width:1000px){
-
-    #slidecontent {
-        height: 100%;
-        width: 100%;
-    }
-
-}

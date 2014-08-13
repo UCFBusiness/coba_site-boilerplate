@@ -141,8 +141,9 @@
 .frame p {
 	margin:0;
 	padding: 10px 5px;
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.7);
 	text-shadow: 0 0 1px rgba(0,0,0,0.23);
+	line-height: 1.2em;
 	width: 100%;
 	max-width: 480px; /*<== width of caption*/
 	color: #333;
@@ -150,6 +151,10 @@
 	bottom: 0px;
 	left: 0px;
 	z-index: 9;
+
+	small {
+		font-size: 0.7em;
+	}
 }
 .frame a {
 	color: #fff;

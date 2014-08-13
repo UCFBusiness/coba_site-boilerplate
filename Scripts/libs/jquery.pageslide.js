@@ -12,7 +12,10 @@
 ;(function($){
     // Convenience vars for accessing elements
     var $body = $('body'),
-        $pageslide = $('#pageslide');
+        $pageslide = $('#pageslide'),
+        $toolBar = $('#toolbar'),
+        $closebutton = $('#closebutton'),
+        $slidecontent = $('#slidecontent');
     
     var _sliding = false,   // Mutex to assist closing only once
         _lastCaller;        // Used to keep track of last element to trigger pageslide
@@ -20,28 +23,29 @@
 	// If the pageslide element doesn't exist, create it
     if( $pageslide.length == 0 ) {
 
-        $pageslide = $('<div />')
+         //$pageslide = $('<div />').attr( 'id', 'pageslide' )
+         //                         .css( 'display', 'none' )
+         //                         .appendTo( $('body') );
+
+        $pageslide = $(document.createElement('div'))
             .attr({id: 'pageslide'})
             .css('display', 'none')
             .appendTo($body);
-
-        var $toolBar = $('<div />')
+        $toolBar = $(document.createElement('div'))
             .attr({id: 'toolbar'})
             .appendTo($pageslide);
-
-        var $closebutton = $('<a />')
+        $closebutton = $(document.createElement('a'))
             .attr({id: 'closebutton', href: 'javascript:$.pageslide.close()'})
-            //.text('Back')
+            .text('Back')
             .appendTo($toolBar);
-
-        var $slidecontent = $('<div />')
+        $slidecontent = $(document.createElement('div'))
             .attr({id: 'slidecontent'})
             .appendTo($pageslide);
     }
     
-    /* -----------------------------------
+    /*
      * Private methods 
-     * -----------------------------------*/
+     */
     function _load( url, useIframe ) {
         // Are we loading an element from the page or a URL?
         if ( url.indexOf("#") === 0 ) {                
@@ -50,16 +54,9 @@
         } else {
             // Load a URL. Into an iframe?
             if( useIframe ) {
+                var iframe = $("<iframe />").attr({src: url, frameborder: 0, hspace: 0, scrolling: 'yes'}).css({width:"100%", height:"100%", overflow: "scroll !important"});
                 
-                var scrollwrapper = $('<div />')
-                    .attr({class: 'scroll-wrapper'})
-                    .appendTo($slidecontent);
-
-                var iframe = $('<iframe />')
-                    .attr({src: url, border: 0})
-                    .appendTo(scrollwrapper);
-                
-                //$slidecontent.html( scrollwrapper );
+                $slidecontent.html( iframe );
             } else {
                 $slidecontent.load( url );
             }

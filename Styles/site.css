@@ -12842,8 +12842,9 @@ All this is done for any sub-level being entered.
 .frame p {
   margin: 0;
   padding: 10px 5px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.23);
+  line-height: 1.2em;
   width: 100%;
   max-width: 480px;
   /*<== width of caption*/
@@ -12853,14 +12854,18 @@ All this is done for any sub-level being entered.
   left: 0px;
   z-index: 9;
 }
+/* line 155, ../Content/scss/modules/sly/_homepage.scss */
+.frame p small {
+  font-size: 0.7em;
+}
 
-/* line 154, ../Content/scss/modules/sly/_homepage.scss */
+/* line 159, ../Content/scss/modules/sly/_homepage.scss */
 .frame a {
   color: #fff;
 }
 
 /* Scrollbar */
-/* line 160, ../Content/scss/modules/sly/_homepage.scss */
+/* line 165, ../Content/scss/modules/sly/_homepage.scss */
 .scrollbar {
   margin: 1px 0 1px;
   height: 30px;
@@ -12868,7 +12873,7 @@ All this is done for any sub-level being entered.
   line-height: 0;
 }
 
-/* line 166, ../Content/scss/modules/sly/_homepage.scss */
+/* line 171, ../Content/scss/modules/sly/_homepage.scss */
 .scrollbar .handle {
   width: 20px;
   height: 100%;
@@ -12876,7 +12881,7 @@ All this is done for any sub-level being entered.
   cursor: pointer;
 }
 
-/* line 172, ../Content/scss/modules/sly/_homepage.scss */
+/* line 177, ../Content/scss/modules/sly/_homepage.scss */
 .scrollbar .handle .mousearea {
   position: absolute;
   top: -9px;
@@ -12886,7 +12891,7 @@ All this is done for any sub-level being entered.
 }
 
 /* Controls */
-/* line 182, ../Content/scss/modules/sly/_homepage.scss */
+/* line 187, ../Content/scss/modules/sly/_homepage.scss */
 .controls {
   margin: 0;
   text-align: center;
@@ -12894,7 +12899,7 @@ All this is done for any sub-level being entered.
 
 /*.controls .divider { display: inline-block; margin: 0 10px; }*/
 /* Button Controls */
-/* line 186, ../Content/scss/modules/sly/_homepage.scss */
+/* line 191, ../Content/scss/modules/sly/_homepage.scss */
 .controls button {
   background: rgba(255, 204, 0, 0.6);
   border: 0;
@@ -12902,17 +12907,17 @@ All this is done for any sub-level being entered.
   opacity: .7;
 }
 
-/* line 187, ../Content/scss/modules/sly/_homepage.scss */
+/* line 192, ../Content/scss/modules/sly/_homepage.scss */
 .controls button:hover {
   opacity: 1;
 }
 
-/* line 188, ../Content/scss/modules/sly/_homepage.scss */
+/* line 193, ../Content/scss/modules/sly/_homepage.scss */
 .controls button:disabled {
   opacity: 0;
 }
 
-/* line 190, ../Content/scss/modules/sly/_homepage.scss */
+/* line 195, ../Content/scss/modules/sly/_homepage.scss */
 .next, .prev, .forward, .backward, .prevPage, .nextPage {
   background: rgba(255, 204, 0, 0.3);
   display: block;
@@ -12927,17 +12932,17 @@ All this is done for any sub-level being entered.
   visibility: hidden;
 }
 
-/* line 202, ../Content/scss/modules/sly/_homepage.scss */
+/* line 207, ../Content/scss/modules/sly/_homepage.scss */
 .prev, .backward, .prevPage {
   left: 0;
 }
 
-/* line 203, ../Content/scss/modules/sly/_homepage.scss */
+/* line 208, ../Content/scss/modules/sly/_homepage.scss */
 .next, .forward, .nextPage {
   right: 0;
 }
 
-/* line 204, ../Content/scss/modules/sly/_homepage.scss */
+/* line 209, ../Content/scss/modules/sly/_homepage.scss */
 .next:hover, .prev:hover {
   background: rgba(255, 204, 0, 0.7);
   color: #fff;
@@ -12946,20 +12951,20 @@ All this is done for any sub-level being entered.
 /* Tablet(portrait) Layout. */
 @media screen and (max-width: 999px) {
   /* Frame */
-  /* line 211, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 216, ../Content/scss/modules/sly/_homepage.scss */
   .frame {
     height: 240px;
     /*<== height of panel */
   }
 
-  /* line 214, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 219, ../Content/scss/modules/sly/_homepage.scss */
   .frame ul li {
     width: 257px;
     /*<== width of panel */
   }
 
   /* Panel image */
-  /* line 219, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 224, ../Content/scss/modules/sly/_homepage.scss */
   .frame ul li img {
     /* panel image */
     height: 240px;
@@ -12969,7 +12974,7 @@ All this is done for any sub-level being entered.
   }
 
   /* Button Controls */
-  /* line 225, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 230, ../Content/scss/modules/sly/_homepage.scss */
   .next, .prev, .forward, .backward, .prevPage, .nextPage {
     visibility: visible;
     height: 268px;
@@ -12979,20 +12984,20 @@ All this is done for any sub-level being entered.
 /* Tablet(portrait) Layout. */
 @media all and (max-width: 580px) {
   /* Frame */
-  /* line 237, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 242, ../Content/scss/modules/sly/_homepage.scss */
   .frame {
     height: 224px;
     /*<== height of panel */
   }
 
-  /* line 240, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 245, ../Content/scss/modules/sly/_homepage.scss */
   .frame ul li {
     width: 240px;
     /*<== width of panel */
   }
 
   /* Panel image */
-  /* line 245, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 250, ../Content/scss/modules/sly/_homepage.scss */
   .frame ul li img {
     height: 224px;
     /*<== height of panel image */
@@ -13001,7 +13006,7 @@ All this is done for any sub-level being entered.
   }
 
   /* Button Controls */
-  /* line 252, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 257, ../Content/scss/modules/sly/_homepage.scss */
   .next, .prev, .forward, .backward, .prevPage, .nextPage {
     visibility: visible;
     height: 252px;
@@ -13011,14 +13016,14 @@ All this is done for any sub-level being entered.
 /* Tablet(landscape) and Small Desktop Layout. */
 @media screen and (min-width: 1000px) {
   /* Frame */
-  /* line 264, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 269, ../Content/scss/modules/sly/_homepage.scss */
   .frame ul li {
     /*opacity: 0.55;
     filter: Alpha(opacity=55);*/
     /*IE8 and earlier */
   }
 
-  /* line 268, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 273, ../Content/scss/modules/sly/_homepage.scss */
   .frame ul li:hover {
     /*border: 1px solid #eee;
     opacity: 1;
@@ -13026,7 +13031,7 @@ All this is done for any sub-level being entered.
     /*IE8 and earlier */
   }
 
-  /* line 273, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 278, ../Content/scss/modules/sly/_homepage.scss */
   .frame ul li.active {
     /*active panel*/
     /*opacity: 1;
@@ -13034,19 +13039,19 @@ All this is done for any sub-level being entered.
     /*IE8 and earlier */
   }
 
-  /* line 278, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 283, ../Content/scss/modules/sly/_homepage.scss */
   .frame ul li.long-panel {
     width: 480px;
   }
 
   /* Scrollbar */
-  /* line 282, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 287, ../Content/scss/modules/sly/_homepage.scss */
   .scrollbar {
     height: 3px;
   }
 
   /* Button Controls */
-  /* line 285, ../Content/scss/modules/sly/_homepage.scss */
+  /* line 290, ../Content/scss/modules/sly/_homepage.scss */
   .next, .prev, .forward, .backward, .prevPage, .nextPage {
     visibility: visible;
     height: 255px;
@@ -13142,18 +13147,18 @@ All this is done for any sub-level being entered.
   /* These styles MUST be included. Do not change. */
   background: #fff;
   display: none;
-  position: absolute;
   position: fixed;
   top: 0;
+  bottom: 0;
   height: 100%;
   z-index: 999999;
-  overflow: hidden;
+  overflow: auto;
   /* Specify the width of your pageslide here */
   width: 100%;
   padding: 0px 3px;
 }
 
-/* line 20, ../Content/scss/modules/_pageslide.scss */
+/* line 21, ../Content/scss/modules/_pageslide.scss */
 #toolbar {
   background: #000;
   border-bottom: 1px solid #ffcc00;
@@ -13161,7 +13166,7 @@ All this is done for any sub-level being entered.
   height: 36px;
 }
 
-/* line 27, ../Content/scss/modules/_pageslide.scss */
+/* line 28, ../Content/scss/modules/_pageslide.scss */
 #closebutton {
   background: #ffcc00;
   padding: 7px 10px;
@@ -13171,23 +13176,14 @@ All this is done for any sub-level being entered.
   float: left;
 }
 
-/* line 29, ../Content/scss/modules/_pageslide.scss */
+/* line 30, ../Content/scss/modules/_pageslide.scss */
 #slidecontent {
   margin-top: 1px;
   height: 100%;
   width: 100%;
 }
 
-/* line 35, ../Content/scss/modules/_pageslide.scss */
+/* line 36, ../Content/scss/modules/_pageslide.scss */
 .modal {
   display: none;
-}
-
-/* Tablet(landscape) and Small Desktop Layout. */
-@media screen and (min-width: 1000px) {
-  /* line 41, ../Content/scss/modules/_pageslide.scss */
-  #slidecontent {
-    height: 100%;
-    width: 100%;
-  }
 }
