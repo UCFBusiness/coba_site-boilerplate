@@ -65,8 +65,8 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
                     //-------------------------------------------------
 
                     //-- PageSlide ------------------------------------
-                    //-- if slide is modal, you'll have to call $.pageslide.close() to close.
                     $("a.target_blank").pageslide({ direction: "left", modal: true });
+                    //-- if slide is modal, call $.pageslide.close() to close
                     $("#slidecontent").css("height", function (index) //-- Set Height
                     {
                         var toolBar = parseInt($('#toolbar').height());
@@ -105,8 +105,8 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
                     //-------------------------------------------------
 
                     //-- PageSlide ------------------------------------
-                    //-- if slide is modal, you'll have to call $.pageslide.close() to close.
                     $("a.target_blank").pageslide({ direction: "left", modal: true });
+                    //-- if slide is modal, call $.pageslide.close() to close
                     $("#slidecontent").css("height", function (index) //-- Set Height
                     {
                         var toolBar = parseInt($('#toolbar').height());

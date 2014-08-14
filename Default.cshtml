@@ -156,13 +156,13 @@
 
 					<li>
 						<div title="office of professional development blog">
-							<a href="@wpCareerPostHyperLink" class="target_blank">
+							<a href="#333" class="target_blank">
 								<img alt="ucf" data-echo="/images/panels/opd-blog.jpg">
-								<p>
-									OPD Blog: @wpCareerPostTitle
-									@*<small><em>@Convert.ToDateTime(wpCareerPostPubDate).ToLongDateString(), at @Convert.ToDateTime(wpCareerPostPubDate).ToShortTimeString()</em></small>*@
-								</p>
+								<p>OPD Blog: @wpCareerPostTitle</p>
 							</a>
+							<div id="#333" style="display:none">
+								@*<iframe src="http://careerpros.wordpress.com" id="iframeid" />*@
+							</div>
 						</div>
 					</li>
 
@@ -381,17 +381,17 @@
 														<p><em>@Convert.ToDateTime(pubDate).ToLongDateString(), at @Convert.ToDateTime(pubDate).ToShortTimeString()</em></p>
 													</div>
 													<div class="col-sm-6">
-														<br />
-														<p class="lead">@postAbstract</p>
+														<img class="img-responsive img-rounded" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px; width:100%;">
+														@*<p class="lead">@postAbstract</p>
 														<p class="text-center"><a href="@postLink" target="_blank" class="btn btn-primary btn-sm">Read Full Article</a></p>
-														<p>&nbsp;</p>
+														<p>&nbsp;</p>*@
 													</div>
 												</div><!--/.row-->
 												<div class="row">
 													<div class="col-lg-12">
 														@if (images.FirstOrDefault() != null)
 														{
-															@*<img alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="width: 100%;">*@
+															@*<img class="img-responsive img-thumbnail" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px">*@
 															@Html.Encode(postContent)
 														}
 													</div>

@@ -292,8 +292,5 @@ require(['modernizr'], function ()
 
 		console.log('Modernizr did not load');
 
-	} else 
-	{
-		
 	}
 });
