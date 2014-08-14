@@ -170,11 +170,9 @@ require(['modernizr'], function ()
 		{
 			require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions', 'jquery-ui'], function (ng)
 			{
-				// load desktop, tablet and mobile scripts
-				
-				var screenwidth = parseInt($(this).width());
-				var screenheight = parseInt($(this).height());
-				
+			    // code //
+			    // load scripts for desktop, tablet and mobile
+
 				//-- off-canvas -----------------------------
 				$("html").offcanvas({
 					hasSidebarRight: true
@@ -213,73 +211,71 @@ require(['modernizr'], function ()
 					event.preventDefault();
 				}); //-------------------------------------------
 
-			    //-- off-canvas : tabs -------------------------
+				//-- off-canvas : tabs -------------------------
 				$("#tabs").tabs({ active: 0 });
 				$(".sidebarMenuTab").click(function () {
-				    $(".sidebarMenuTab").removeClass("active");
-				    $(this).addClass("active");
+					$(".sidebarMenuTab").removeClass("active");
+					$(this).addClass("active");
 				}); //-------------------------------------------
 
 
-			    //-- Search Code --------------------------------
+				//-- Search Code --------------------------------
 				$(".dl-search-field").keyup(function () {
-				    alert("Handler for key up called.");
+					//alert("Handler for key up called.");
 				}); //-------------------------------------------
+			});
 
+			var screenwidth = parseInt($(this).width());
+			var screenheight = parseInt($(this).height());
 
-
-				if (screenwidth < 1025) // load only tablet scripts
-				{
-					require([], function ()
+			if (screenwidth < 1025)
+			{
+				require([], function () {
+				    // code //
+				    // load scripts only for tablet
+				    
+					if (screenwidth < 700)
 					{
-						//code
+						require([], function () {
+						    // code //
+						    // load scripts only for mobile
+						});
+					}
+				});
+			}
+		    
+			if (screenwidth >= 1025)
+			{
+				require(['easing'], function () {
+				    // code //
+				    // load scripts only for desktop
 
-						if (screenwidth < 700) // load only mobile scripts
-						{
-							require([], function ()
-							{
-								//code
-							});
+					//-- Right-click disabled -----------------------
+					//$(document).bind('contextmenu', function (e) {
+					//    return false;
+					//}); //-----------------------------------------
+
+					//-- easing : back to top -----------------------
+					var offset = 220;
+					var duration = 500;
+					var topButton = $(".back-to-top");
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > offset) {
+							$(topButton).fadeIn(duration);
+						} else {
+							$(topButton).fadeOut(duration);
 						}
 					});
-				}
-				if (screenwidth >= 1025) // load only desktop scripts
-				{
-					require(['easing'], function ()
-					{
-						//code
+					$(topButton).click(function (event) {
+						event.preventDefault();
+						$("html, body").animate({ scrollTop: 0 }, duration);
+						return false;
+					}); //------------------------------------------
+				});
+			}
 
-						//-- Right-click disabled -----------------------
-						//$(document).bind('contextmenu', function (e)
-						//{
-						//    return false;
-						//}); //-----------------------------------------
-
-						//-- easing : back to top -----------------------
-						var offset = 220;
-						var duration = 500;
-						var topButton = $(".back-to-top");
-
-						$(window).scroll(function () {
-							if ($(this).scrollTop() > offset) {
-								$(topButton).fadeIn(duration);
-							} else {
-								$(topButton).fadeOut(duration);
-							}
-						});
-
-						$(topButton).click(function (event) {
-							event.preventDefault();
-							$("html, body").animate({ scrollTop: 0 }, duration);
-							return false;
-						}); //------------------------------------------
-
-					});
-				}
-
-				// Logs the end of the file.
-				console.log('END: main.js');
-			});
+			// Logs the end of the file.
+			console.log('END: main.js');
 		});
 	});
 }, function (err) {
