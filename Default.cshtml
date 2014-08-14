@@ -45,11 +45,13 @@
 	//-------------------------------------------------------------------------------------------
 
 	// UCF Today (top 10 posts) //---------------------------------------------------------------
-	System.Xml.XmlDocument ucfTodayPosts = new System.Xml.XmlDocument(); //-- New XML Document
-	ucfTodayPosts.Load("http://today.ucf.edu/topic/college-of-business-administration/feed/"); //-- Load WordPress Feed onto XML Doc
-	System.Xml.XmlElement xeUCFTodayPosts = ucfTodayPosts.DocumentElement; //-- Root Element
-	String ucfTodayBlogTitle = xeUCFTodayPosts.SelectSingleNode("//title").InnerText;
-	System.Xml.XmlNodeList ucfTodayPostList = xeUCFTodayPosts.SelectNodes("//channel/item"); //-- Blog Post List
+	System.Xml.XmlDocument ucfTodayBlog = new System.Xml.XmlDocument(); //-- New XML Document
+	ucfTodayBlog.Load("http://today.ucf.edu/topic/college-of-business-administration/feed/"); //-- Load WordPress Feed onto XML Doc
+	System.Xml.XmlElement ucfTodayBlogXe = ucfTodayBlog.DocumentElement; //-- Root Element
+	System.Xml.XmlNodeList ucfTodayPostList = ucfTodayBlogXe.SelectNodes("//channel/item"); //-- Blog Post List
+
+	String ucfTodayBlogTitle = ucfTodayBlogXe.SelectSingleNode("//title").InnerText;
+	System.Text.StringBuilder ucfTodayPostContent = new System.Text.StringBuilder();
 	//-------------------------------------------------------------------------------------------
 }
 
@@ -93,35 +95,15 @@
 			});
 		});
 	</script>
+
 	<script>
-
-		var e = ["&lt;p&gt;", "&lt;\/p&gt;", "&lt;a", "&lt;\/a&gt;"];
-		var d = ["<p>", "</p>", "<a", "</a>"]
-
 		var str, res;
 
 		str = document.getElementById("news").innerHTML;
-		res = str.replace(/&lt;p&gt;/g, "<p>");
+		res = str.replace(/&amp;lt;/g, "<");
+		res = res.replace(/&amp;gt;/g, ">");
 		document.getElementById("news").innerHTML = res;
-
-		str = document.getElementById("news").innerHTML;
-		res = str.replace(/&lt;\/p&gt;/g, "</p>");
-		document.getElementById("news").innerHTML = res;
-
-		str = document.getElementById("news").innerHTML;
-		res = str.replace(/&lt;a href=&quot;/g, '<a href="');
-		document.getElementById("news").innerHTML = res;
-
-		str = document.getElementById("news").innerHTML;
-		res = str.replace(/&quot;&gt;/g, '">');
-		document.getElementById("news").innerHTML = res;
-
-		str = document.getElementById("news").innerHTML;
-		res = str.replace(/&lt;\/a&gt;/g, "</a>");
-		document.getElementById("news").innerHTML = res;
-
 	</script>
-
 }
 
 <header class="section"></header>
@@ -150,7 +132,7 @@
 						<div title="dean jarley's blog">
 							<a href="#@wpDeanPostGuid" class="target_blank">
 								<img alt="ucf" data-echo="/images/panels/dean-blog.jpg">
-								<p>@wpDeanPostGuid Dean's Blog: @wpDeanPostTitle</p>
+								<p>Dean's Blog: @wpDeanPostTitle</p>
 							</a>
 							<div id="@wpDeanPostGuid" style="display:none">
 								<div class="container-fluid">
@@ -320,62 +302,74 @@
 						{
 							if (itemNode.HasChildNodes)
 							{
+								
 								string guid = "";
 								string pubDate = "";
 								string postTitle = "";
 								string postAbstract = "";
 								string postContent = "";
-								string postThumbnail = "";
+								string imgThumbnail = "";
 								string postLink = "";
+								
+								// Images
 								List<string> images = new List<string>();
 
-								foreach (System.Xml.XmlNode xmlnode in itemNode)
+								// Item nodes
+								foreach (System.Xml.XmlNode node in itemNode)
 								{
-									if (xmlnode.Name == "title")
+									if (node.Name == "title")
 									{
-										postTitle = xmlnode.InnerText;
+										postTitle = node.InnerText;
 									}
 
-									if (xmlnode.Name == "link")
+									if (node.Name == "link")
 									{
-										postLink = xmlnode.InnerText;
+										postLink = node.InnerText;
 									}
 
-									if (xmlnode.Name == "pubDate")
+									if (node.Name == "pubDate")
 									{
-										pubDate = xmlnode.InnerText;
+										pubDate = node.InnerText;
 									}
 
-									if (xmlnode.Name == "guid")
+									if (node.Name == "guid")
 									{
-										guid = System.Text.RegularExpressions.Regex.Replace(xmlnode.InnerText, "https://today.ucf.edu/\\?p=", string.Empty);
+										guid = System.Text.RegularExpressions.Regex.Replace(node.InnerText, "https://today.ucf.edu/\\?p=", string.Empty);
 									}
 
-									if (xmlnode.Name == "description")
+									if (node.Name == "description")
 									{
-										postAbstract = HttpUtility.HtmlDecode(xmlnode.InnerText);
+										postAbstract = HttpUtility.HtmlDecode(node.InnerText);
 									}
 
-									if (xmlnode.Name == "content:encoded")
+									if (node.Name == "content:encoded")
 									{
-										postContent = HttpUtility.HtmlDecode(xmlnode.InnerText);
+										postContent = HttpUtility.HtmlDecode(node.InnerText);
 									}
 
-									if (xmlnode.Name == "enclosure")
+									if (node.Name == "enclosure")
 									{
-										postThumbnail = xmlnode.Attributes["url"].Value;
+										imgThumbnail = node.Attributes["url"].Value;
 									}
 
-									if (xmlnode.Name == "media:group")
+									if (node.Name == "media:group")
 									{
-										images.Add(xmlnode.ChildNodes.Item(0).Attributes["url"].Value);
+										images.Add(node.ChildNodes.Item(0).Attributes["url"].Value);
 									}
+								}
+
+								//-- Categories
+								List<string> categories = new List<string>();
+								System.Xml.XmlNodeList cs = itemNode.SelectNodes("category");
+								foreach (System.Xml.XmlNode c in cs)
+								{
+									categories.Add(c.InnerText);
 								}
 								
 								<li>
 									<div title="@ucfTodayBlogTitle">
 										<a href="#@guid" class="target_blank">
-											<img alt="@postTitle" data-echo="@postThumbnail">
+											<img alt="@postTitle" data-echo="@imgThumbnail">
 											<p>@postTitle</p>
 										</a>
 										<div id="@guid" style="display:none">
@@ -394,9 +388,14 @@
 													</div>
 												</div><!--/.row-->
 												<div class="row">
-													<img alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="width: 100%;">
+													<div class="col-lg-12">
+														@if (images.FirstOrDefault() != null)
+														{
+															@*<img alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="width: 100%;">*@
+															@Html.Encode(postContent)
+														}
+													</div>
 												</div>
-												<!--@postContent-->
 											</div>
 										</div>
 									</div>

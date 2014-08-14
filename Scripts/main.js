@@ -228,7 +228,7 @@ require(['modernizr'], function ()
 
 
 
-				if (screenwidth < 1000) // load only tablet scripts
+				if (screenwidth < 1025) // load only tablet scripts
 				{
 					require([], function ()
 					{
@@ -243,7 +243,7 @@ require(['modernizr'], function ()
 						}
 					});
 				}
-				if (screenwidth >= 1000) // load only desktop scripts
+				if (screenwidth >= 1025) // load only desktop scripts
 				{
 					require(['easing'], function ()
 					{

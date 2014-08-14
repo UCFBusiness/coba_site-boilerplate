@@ -17,22 +17,22 @@
 
     // Tablet-Landscape //
     @media screen and (max-width: 1024px){
-        min-height: 642px;
+        height: 642px;
     }
 
     // Tablet-Portrait //
     @media screen and (max-width: 768px){
-        min-height: 876px;
+        height: 500px;
     }
 
     // Mobile-Landscape //
     @media screen and (max-width: 699px) and (orientation: landscape){
-        min-height: 320px;
+        height: 320px;
     }
 
     // Mobile-Portrait //
     @media screen and (max-width: 499px) and (orientation: portrait){
-        min-height: 410px;
+        height: 320px;
     }
 
     // Small Desktop //
