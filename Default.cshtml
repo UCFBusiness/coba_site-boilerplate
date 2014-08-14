@@ -381,18 +381,18 @@
 														<p><em>@Convert.ToDateTime(pubDate).ToLongDateString(), at @Convert.ToDateTime(pubDate).ToShortTimeString()</em></p>
 													</div>
 													<div class="col-sm-6">
-														<img class="img-responsive img-rounded" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px; width:100%;">
-														@*<p class="lead">@postAbstract</p>
-														<p class="text-center"><a href="@postLink" target="_blank" class="btn btn-primary btn-sm">Read Full Article</a></p>
-														<p>&nbsp;</p>*@
+														@*<img class="img-responsive img-rounded" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px; width:100%;">
+														<p class="lead">@postAbstract</p>
+														<p class="text-center"><a href="@postLink" target="_blank" class="btn btn-primary btn-sm">Read Full Article</a></p>*@
 													</div>
 												</div><!--/.row-->
 												<div class="row">
 													<div class="col-lg-12">
+														@Html.Encode(postContent)
+														<p>&nbsp;</p>
 														@if (images.FirstOrDefault() != null)
 														{
-															@*<img class="img-responsive img-thumbnail" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px">*@
-															@Html.Encode(postContent)
+															<img class="img-responsive img-rounded" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px; width:100%;">
 														}
 													</div>
 												</div>
