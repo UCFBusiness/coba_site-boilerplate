@@ -22,6 +22,7 @@
 		<link type="text/css" rel="stylesheet" href="~/styles/site.css" />
 		@RenderSection("Styles", required: false)
 		<!-- Styles: FINIS -->
+
 		<!-- Analytics: BEGIN -->
 		@*
 		<!-- Google Code Start -->
@@ -59,8 +60,8 @@
 		<!--[if lt IE 8]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
-		<!--/ Content: BEGIN /-->
 
+		<!--/ Content: BEGIN /-->
 		<section class="page" id="page">
 			<div class="page-inner">
 
@@ -81,8 +82,6 @@
 										<input type="hidden" name="cx" value="004234240553222255636:70uztgpm38y" />
 										<input type="hidden" name="cof" value="FORID:9" />
 										<input type="hidden" name="ie" value="UTF-8" />
-										@*<input type="submit" value="submit" class="dl-searchbutton" />
-										  <span class="dl-search-icon"></span>*@
 									</form>
 								</li>
 								<li>
@@ -165,14 +164,6 @@
 						
 						@RenderSection("featured", required: false)
 						
-						<!-- Site Feedback: BEGIN --
-						<div><br><a href="http://bit.ly/cobawebsitefeedback" target="_blank" style="border: 1px solid #ffcc00; height: 30px; padding: 9px; background-color: #f5e8a6">Site Feedback</a></div>
-						-- Site Feedback: FINIS -->
-						@*<!-- Beta Image: BEGIN -->
-						<!-- for development only -->
-						<span style="position:absolute; top:0; right:0; z-index:3; width:60px; height:60px; background:url(data:image/png;base64,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) no-repeat"></span>
-						<!-- Beta Image: FINIS -->*@
-						
 					</div><!--/.cover-header /-->
 					<div class="cover-body">
 						<div class="cover-body-inner">
@@ -189,6 +180,7 @@
 				</div><!--/.cover /-->
 
 				<div class="main" id="main">
+
 					<div class="topnav">
 						<ul>
 							<li>Academic Programs</li>
@@ -197,9 +189,13 @@
 							<li>Recruiters &amp; Companies</li>
 						</ul>
 					</div><!--/.topnav /-->
+
 					<div class="content-wrapper">
+
 						@RenderBody()
+
 					</div><!--/.content-wrapper /-->
+
 					<footer class="footer">
 						<div class="footer-inner container-fluid">
 							<div class="row">
@@ -244,6 +240,7 @@
 							</div>
 						</div>
 					</footer><!--/.footer /-->
+
 				</div><!--/.main /-->
 
 				<div class="page-overlay"></div>
@@ -366,8 +363,6 @@
 
 		<a href="" class="fa fa-arrow-up back-to-top"></a>
 		<div class="loading-bar"></div>
-		<!--<div class="bg-img"></div>-->
-
 		<!-- Content: FINIS -->
 
 		<!--BEGIN: Scripts-->

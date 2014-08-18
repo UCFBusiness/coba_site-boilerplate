@@ -390,12 +390,14 @@
 													<div class="col-lg-12">
 														@Html.Encode(postContent)
 														<p>&nbsp;</p>
-														@if (images.FirstOrDefault() != null)
-														{
-															<img class="img-responsive img-rounded" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px; width:100%;">
-														}
 													</div>
 												</div>
+                                                <div class="row">
+                                                    @if (images.FirstOrDefault() != null)
+													{
+														<img class="img-responsive" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px; width:100%;">
+													}
+                                                </div>
 											</div>
 										</div>
 									</div>

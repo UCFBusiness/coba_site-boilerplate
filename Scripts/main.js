@@ -223,59 +223,59 @@ require(['modernizr'], function ()
 				$(".dl-search-field").keyup(function () {
 					//alert("Handler for key up called.");
 				}); //-------------------------------------------
-			});
 
-			var screenwidth = parseInt($(this).width());
-			var screenheight = parseInt($(this).height());
+                var screenwidth = parseInt($(this).width());
+			    var screenheight = parseInt($(this).height());
 
-			if (screenwidth < 1025)
-			{
-				require([], function () {
-				    // code //
-				    // load scripts only for tablet
+			    if (screenwidth < 1025)
+			    {
+				    require([], function () {
+				        // code //
+				        // load scripts only for tablet
 				    
-					if (screenwidth < 700)
-					{
-						require([], function () {
-						    // code //
-						    // load scripts only for mobile
-						});
-					}
-				});
-			}
+					    if (screenwidth < 700)
+					    {
+						    require([], function () {
+						        // code //
+						        // load scripts only for mobile
+						    });
+					    }
+				    });
+			    }
 		    
-			if (screenwidth >= 1025)
-			{
-				require(['easing'], function () {
-				    // code //
-				    // load scripts only for desktop
+			    if (screenwidth >= 1025)
+			    {
+				    require([], function () {
+				        // code //
+				        // load scripts only for desktop
 
-					//-- Right-click disabled -----------------------
-					//$(document).bind('contextmenu', function (e) {
-					//    return false;
-					//}); //-----------------------------------------
+					    //-- Right-click disabled -----------------------
+					    //$(document).bind('contextmenu', function (e) {
+					    //    return false;
+					    //}); //-----------------------------------------
 
-					//-- easing : back to top -----------------------
-					var offset = 220;
-					var duration = 500;
-					var topButton = $(".back-to-top");
-					$(window).scroll(function () {
-						if ($(this).scrollTop() > offset) {
-							$(topButton).fadeIn(duration);
-						} else {
-							$(topButton).fadeOut(duration);
-						}
-					});
-					$(topButton).click(function (event) {
-						event.preventDefault();
-						$("html, body").animate({ scrollTop: 0 }, duration);
-						return false;
-					}); //------------------------------------------
-				});
-			}
+					    //-- easing : back to top -----------------------
+					    var offset = 220;
+					    var duration = 500;
+					    var topButton = $(".back-to-top");
+					    $(window).scroll(function () {
+						    if ($(this).scrollTop() > offset) {
+							    $(topButton).fadeIn(duration);
+						    } else {
+							    $(topButton).fadeOut(duration);
+						    }
+					    });
+					    $(topButton).click(function (event) {
+						    event.preventDefault();
+						    $("html, body").animate({ scrollTop: 0 }, duration);
+						    return false;
+					    }); //------------------------------------------
+				    });
+			    }
 
-			// Logs the end of the file.
-			console.log('END: main.js');
+			    // Logs the end of the file.
+			    console.log('END: main.js');
+			});
 		});
 	});
 }, function (err) {
