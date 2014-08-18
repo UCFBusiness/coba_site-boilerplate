@@ -1,0 +1,31 @@
+/* =============================================================================
+   UCF Header
+   ========================================================================== */
+
+#UCFHBHeader {
+	background: #000;
+	border-width: 0;
+	padding: 5px 0 1px; /*to treat the bg as a border +2px to bottom padding*/
+	height: 36px;
+	z-index: 9999;
+
+	box-shadow: inset 0 2px 0 1px rgba(0,0,0,.2);
+}
+
+#UCFHBHeader #UCFtitle a {
+	background-image: url("../../images/ucfbar/ucflogo.png");
+	background-size: 100%;
+	width: 295px;
+	height: 29px;
+	display: block;
+}
+
+#UCFHBHeader #UCFtitle a span.UCFHBText {
+	display: none;
+}
+
+#UCFHBHeader .alert-message {
+	margin:0 auto;
+	width:100%;
+	display:none;
+}

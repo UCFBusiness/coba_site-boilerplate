@@ -1,0 +1,412 @@
+
+/* Mobile Layout: 480px and below. */
+
+/* =============================================================================
+   Navigation Menu - Discovery
+   ========================================================================== */
+
+/* wrapper */
+nav.dl-menuwrapper {
+	background: none;
+	background: rgba(224,224,224,0.6);/**/
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 99999;
+}
+
+/* buttons */
+.dl-home, 
+.dl-trigger,
+.dl-searchbutton {
+	background: none;
+	border: none;
+	width: 6%;
+	height: 45px;
+	text-indent: -900em;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	float:left;
+}
+
+/* discover menu icon */
+.dl-trigger:after {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	top: 50%;
+	margin-top: -1px;
+	left: 25%;
+	background: #fff;
+	box-shadow: 0 -6px #fff, 0 6px #fff;
+}
+
+.dl-home {
+	/*Home Icon*/
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABZVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkJCUAAAAAAAAAAAAKCgoAAABcXFzS0tKxsbGGhobU1NO9vb3X19fY2NjPz8+QkJCMjIzJycmRkZGSkpKenp7Kysq3t7fMzMzOzs7Nzc3MzMzIyMji4uK0tLTj4+O8vLvAwMDAwMDBwcHQ0NDU1NTa2trn5+bZ2dnd3d3b29vv7+/g4ODs7Ozr6+vo6Ojm5ubr6+vy8vL09PPx8fHz8/Pu7u7u7u7x8fH09PTy8vLz8/P5+fj39/f5+fn6+vr8/Pz5+fn7+/v9/f37+/v+/v77+/v+/v7///7///9erQsAAAAAdXRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhgZGhscHR4gISImKSssLS4wNTY4OjxAQUJETk5PYHuCg4iOj5OWmZucnZ2ipaaoqKmqrrK1tbq+wsLO0tXV2Nrb3N3f4+Tl5ebo7Ozv8PLy9PT0+fv7+/z8/P39/v5ev2jzAAABYklEQVQ4je3TZ0/CQBgH8O7SIQiUImiloIgDFfcW99577wkOxPp8fnuFEM21En1nwv/FXZP79bnn0h5BVPJfQtIsS1MML7hY6idHuTzPS7Ig5wD6eGdJsvKISQ5q6gyAUQ/tXM53Dihv/ZcAaYV1KMfIg3ko5nAP5gL2kHJ5LxC5GV//MKeXmSbbimZ3w2ZfYKzuQ3byFr1xFBJpEoNM1SNavJ7KomlzA425FQE/Dqeicsu7xRYzYw/meOVlMMgHp+F+4hVK2VqDuwY/3iXnb+zdhq/JDHRE3PjWlBBOGN8gLEZ9HH4Ygq6OvqNlo6e769SCC2HBxhGEpBdga6LlxILzQc7OlWBMi54VKpaBekD7JXTcOlKEinZswVkHKGpPaDmv+cI7Fhxy+Ht4NZ5MpZJx1a3E2jpT7c26B/+AKIykarquqRInKrURvT7kdbgKJMOLkiTyDEVzgvlQ5nJV8qd8AoIZeLuna+g/AAAAAElFTkSuQmCC) no-repeat;
+	background-position: 5px 2px;
+}
+
+.dl-home, 
+.dl-trigger {
+	width:50px;
+}
+
+
+/* =============================================================================
+   Main Menu
+   ========================================================================== */
+
+.dl-menu {
+	margin: 45px 0 0 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+
+.dl-menu.dl-menu-toggle {
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}
+
+.dl-menu.dl-menuopen {
+	opacity: 1;
+	pointer-events: initial;
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+}
+
+
+/* =============================================================================
+   Submenus
+   ========================================================================== */
+
+/* ul */
+.dl-menuwrapper ul {
+	padding: 0;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	z-index: 1000;
+}
+
+/* li */
+.dl-menuwrapper li {
+	position: relative;
+	border-bottom: 1px solid #eee;
+	text-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+.dl-menuwrapper li.breadcrumb {
+	background: #333;
+	margin: 0;
+	padding: 3px 10px;
+	font-size: 12px;
+	color: #ffcc00;
+	border-radius: 0;
+}
+
+/* a */
+.dl-menuwrapper li a {
+	padding: 13px 20px;
+	position: relative;
+	display: block;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+.dl-menuwrapper li > a:after {
+	right: 10px;
+}
+
+/* back li */
+.dl-menuwrapper li.dl-back > a {
+	padding-left: 30px;
+	font-size: 11px;
+	color: rgba(0,0,0,0.77);
+	background: rgba(225,225,225,0.96);
+}
+.dl-menuwrapper li.dl-back:after {
+	left: 10px;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+}
+
+/* li arrows */
+.dl-menuwrapper li.dl-back:after,
+.dl-menuwrapper li > a:not(:only-child):after {
+	color: rgba(170,170,170,0.93);
+	position: absolute;
+	top: 0;
+	line-height: 50px;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	content: '';
+}
+
+/* =============================================================================
+   Menu Color Theme
+   ========================================================================== */
+
+.dl-menuwrapper button.dl-active,
+.dl-menuwrapper li a {
+	/*background:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #555), color-stop(1, #222));*/
+	background: rgba(225,225,225,0.96);
+	color: rgba(0,0,0,0.9);
+}
+
+.no-touch .dl-menuwrapper > li a:after {
+	background: rgba(0,0,0,1); 
+	color: rgba(225,225,225,0.9);
+}
+
+
+
+// Tablet Layout: 500px to 999px(landscape mode). Inherits styles from: Mobile Layout.
+// -----------------------------------------------------------------------------------------------
+@media all and (min-width: 500px) {
+	
+	
+	/* =============================================================================
+   Navigation Menu - Discovery
+   ========================================================================== */
+
+	/* nav */
+	nav.dl-menuwrapper {
+		margin-top: 20px;
+		margin-left: 15px;
+		background: none;
+		height: 60px;
+		font-family: 'Lato', Calibri, Arial, sans-serif;
+		font-size: 1em;
+		font-weight: 300;
+		line-height: 20px;
+		letter-spacing: 1px; 
+		color: #ccc;
+		position: relative;
+		perspective: 1000px;
+		-webkit-perspective: 1000px;
+		-moz-perspective: 1000px;
+		perspective-origin: 50% 200%;
+		-webkit-perspective-origin: 50% 200%;
+		-moz-perspective-origin: 50% 200%;
+		box-shadow: none; /* no-shadow */
+		z-index: 1000;
+
+	}
+
+	/* home button */
+	#dl-home {
+		border: 1px solid #ddd;
+		border-right: none;
+		padding: 7px 9px 11px 6px;
+		height: 15px;
+		float: left;
+	}
+
+	/* discover menu button */
+	.dl-menuwrapper button {
+		border: 1px solid #eee;
+		border-bottom: 1px solid #ccc;
+		width: 120px;
+		height: 45px;
+		position: relative;
+		display: block;
+		font-size: .9em;
+		font-weight: 400;
+		text-indent: 0em;
+		cursor: pointer;
+		outline: none;
+		border-radius: 0 5px 5px 0;
+		background: rgba(255,255,255,0.85); color: #555;
+		box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
+		float: left;
+	}
+	/* discover menu icon */
+	.dl-menuwrapper button:after {
+		content: '';
+		display: none;
+	}
+
+	.dl-home {
+		width:45px;
+		border: 1px solid #fff;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.dl-home {
+		background: rgba(255,255,255,0.85) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABZVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkJCUAAAAAAAAAAAAKCgoAAABcXFzS0tKxsbGGhobU1NO9vb3X19fY2NjPz8+QkJCMjIzJycmRkZGSkpKenp7Kysq3t7fMzMzOzs7Nzc3MzMzIyMji4uK0tLTj4+O8vLvAwMDAwMDBwcHQ0NDU1NTa2trn5+bZ2dnd3d3b29vv7+/g4ODs7Ozr6+vo6Ojm5ubr6+vy8vL09PPx8fHz8/Pu7u7u7u7x8fH09PTy8vLz8/P5+fj39/f5+fn6+vr8/Pz5+fn7+/v9/f37+/v+/v77+/v+/v7///7///9erQsAAAAAdXRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhgZGhscHR4gISImKSssLS4wNTY4OjxAQUJETk5PYHuCg4iOj5OWmZucnZ2ipaaoqKmqrrK1tbq+wsLO0tXV2Nrb3N3f4+Tl5ebo7Ozv8PLy9PT0+fv7+/z8/P39/v5ev2jzAAABYklEQVQ4je3TZ0/CQBgH8O7SIQiUImiloIgDFfcW99577wkOxPp8fnuFEM21En1nwv/FXZP79bnn0h5BVPJfQtIsS1MML7hY6idHuTzPS7Ig5wD6eGdJsvKISQ5q6gyAUQ/tXM53Dihv/ZcAaYV1KMfIg3ko5nAP5gL2kHJ5LxC5GV//MKeXmSbbimZ3w2ZfYKzuQ3byFr1xFBJpEoNM1SNavJ7KomlzA425FQE/Dqeicsu7xRYzYw/meOVlMMgHp+F+4hVK2VqDuwY/3iXnb+zdhq/JDHRE3PjWlBBOGN8gLEZ9HH4Ygq6OvqNlo6e769SCC2HBxhGEpBdga6LlxILzQc7OlWBMi54VKpaBekD7JXTcOlKEinZswVkHKGpPaDmv+cI7Fhxy+Ht4NZ5MpZJx1a3E2jpT7c26B/+AKIykarquqRInKrURvT7kdbgKJMOLkiTyDEVzgvlQ5nJV8qd8AoIZeLuna+g/AAAAAElFTkSuQmCC) no-repeat;
+		background-position: 1px 1px;
+		border-right: none;
+		box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1); /* shadow */
+		border-radius: 5px 0 0 5px;
+	}
+
+
+	/* submenus */
+
+	/* menu ul only */
+	.dl-menuwrapper .dl-menu { /* ie fix */
+		visibility: hidden;
+	}
+	.dl-menuwrapper .dl-menu {
+
+		background: rgba(255,255,255,0.9);
+		box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.4);  /*shadow */
+
+		padding:0;
+		margin: 50px 0 0 0;
+
+		position: absolute;
+		width: 320px; /* <== */
+		opacity: 0;
+		pointer-events: none;
+		border-radius: 5px;
+		box-shadow: 0px 10px 310px 5px rgba(0,0,0,0.3);
+
+		transform: translateY(10px);
+		-webkit-transform: translateY(10px);
+		-moz-transform: translateY(10px);
+
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+	}
+	.dl-menuwrapper .dl-menu.dl-menu-toggle {
+		transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+	}
+	.dl-menuwrapper .dl-menu.dl-menuopen {
+		opacity: 1;
+		pointer-events: initial;
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+	}
+
+	.dl-menuwrapper .dl-menu li {
+		width: 320px; /* <== */
+		border: none;
+		margin-bottom: 1px;
+	}
+
+	/* all uls */
+	.dl-menuwrapper ul {
+		background: none;
+		padding:0;
+		border: none;
+		max-width: 320px; /* <== */
+		list-style: none;
+		overflow: hidden;
+
+
+		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+	}
+
+	/* menu li */
+	.dl-menuwrapper li {
+		position: relative;
+		border: none;
+		text-shadow: 0 0 1px rgba(0,0,0,0.3);
+
+	}
+	.dl-menuwrapper li a {
+		padding: 10px 10px 10px 15px;
+		display: block;
+		position: relative;
+		outline: none;
+	}
+	.dl-menuwrapper li > a:after {
+		right: 10px;
+	}
+
+	.dl-menuwrapper li.breadcrumb {
+		padding: 2px 15px;
+		font-size: 12px;
+		font-weight:bold;
+		color: #ffcc00;
+
+	}
+
+	/* back li */
+	.dl-menuwrapper li.dl-back > a {
+		font-size: 11px;
+
+		background: rgba(0,0,0,0.4); color: rgba(255,255,255,1);
+		padding: 10px 10px 10px 30px;
+	}
+	.dl-menuwrapper li.dl-back:after {
+		left: 10px;
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+	}
+	/* li arrows */
+	.dl-menuwrapper li.dl-back:after,
+	.dl-menuwrapper li > a:not(:only-child):after {
+		position: absolute;
+		top: 10px;
+		line-height: 20px;
+		speak: none;
+		-webkit-font-smoothing: antialiased;
+		content: ''; //<--- replace arrow here
+		color: rgba(0,0,0,0.3);
+	}
+
+	/* desktop - menu theme */
+	.dl-menuwrapper button:hover,
+	.dl-menuwrapper button.dl-active,
+	.dl-menuwrapper li a {
+		background: rgba(255,255,255,0.9); color: #555; /* li:hover color*/
+	}
+
+	.no-touch .dl-menuwrapper li a:hover {
+		background: rgba(255,229,153,0.7); color: #333; /* a:hover color*/
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #fff;
+		padding: 9px 10px 9px 15px;
+	}
+
+	.dl-menuwrapper li.dl-back > a:hover {
+		padding: 9px 10px 9px 30px;
+	}
+	
+}
+
+
+/* Desktop Layout: 1000px to max (1920px).  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media screen and (min-width: 1000px) {
+
+	/* wrapper */
+	nav.dl-menuwrapper {
+		//margin-top: 70px; /* delete when ucf bar has been removed */
+		margin-top: 25px;
+		margin-left: 25px;
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+// Print //
+@media print {
+    
+    aside {
+        visibility: hidden;
+        display: none;
+    }
+
+    // Removes undergraduate menu buttons.
+    .st-menu-btn {
+        visibility: hidden;
+        display: none;
+    }
+
+}

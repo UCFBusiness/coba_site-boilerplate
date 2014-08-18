@@ -134,7 +134,7 @@
 /* Button Controls */
 .controls button { background: transparent; border: 0; color: #ffcc00; opacity: .5;}
 .controls button:hover { opacity: 1; }
-.controls button:disabled { opacity: .2; }
+.controls button:disabled { opacity: 0; }
 
 .forward, .backward { float: left; width: 50px; height: 260px; font-size: 60px;}
 .forward { float: right; }

@@ -1,0 +1,5 @@
+/* One Item Per Frame example*/
+
+.oneperframe { min-height: 300px; line-height: 300px; }
+.oneperframe ul li { width: 1140px; }
+.oneperframe ul li.active { background: #333; }

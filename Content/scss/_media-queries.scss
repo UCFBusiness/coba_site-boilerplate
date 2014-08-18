@@ -1,0 +1,66 @@
+//
+// Media-Queries
+// --------------------------------------------------
+
+
+// All Mediums // -- Applies to all resolutions. Inherits up to all widths
+
+
+// Tablet and Netbook //
+@media screen 
+and (max-width: 1024px){}
+
+
+// Tablet-Portrait //
+@media screen 
+and (max-width: 768px){}
+
+
+// iPad-Landscape //
+@media screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape){}
+
+
+// iPad-Portrait //
+@media screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait){}
+
+
+// Mobile //
+@media screen 
+and (max-width: 699px){}
+
+
+// Mobile-Landscape //
+@media screen 
+and (max-width: 699px) 
+and (orientation: landscape){}
+
+
+// Mobile-Portrait //
+@media screen 
+and (max-width: 499px) 
+and (orientation: portrait){}
+
+
+// Small Desktop //
+@media screen 
+and (min-width: 1025px){}
+
+
+// Notebook //
+@media screen 
+and (min-width: 1300px){}
+
+
+// Large Desktop //
+@media screen 
+and (min-width: 1600px){}
+
+
+// Print //
+@media print {}

@@ -1,0 +1,25 @@
+/* =============================================================================
+   Back to top link/image
+   ========================================================================== */
+
+.back-to-top {
+    background-color: rgba(235, 235, 235, 0.80);
+    border: 2px solid #aaa;
+    border-radius: 25px;
+    padding: .18em;
+
+    font-size: 1.8em;
+    color: #444;
+
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 999;
+
+    &:hover {
+        background-color: rgba(135, 135, 135, 0.50);
+        text-decoration: none;
+        color: #fff;
+    }
+}

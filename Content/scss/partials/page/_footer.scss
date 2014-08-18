@@ -1,0 +1,67 @@
+
+/* =============================================================================
+Footer
+========================================================================== */
+
+.footer {
+    width: 100%;
+    position: relative;
+    z-index: 4;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    h5 { /* headers */
+        font-weight: 700;
+        text-transform: uppercase;
+        opacity:0.9;
+        cursor:default;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-inner {
+        border: 1px dashed green; //<--- DEV LINE
+        //background: #eee;
+    }
+
+    span.copyright {
+        font-size: .65em;
+        color: #bbb;
+        @media screen and (max-width: 499px) and (orientation: portrait){font-size: .55em;}
+    }
+
+    // Tablet and Netbook //
+    @media screen and (max-width: 1024px){
+        width: 100%;
+        position: relative;
+    }
+
+    // Small Desktop //
+    @media screen and (min-width: 1025px){
+        margin-bottom: 0;
+        padding-left: 380px;
+        min-height: 130px;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    // Notebook //
+    @media screen and (min-width: 1300px){
+        padding-left: 420px;
+    }
+}
+
+/*UCF Stands for Opportunity*/
+.ucf-sfo {
+    width: 250px;
+
+    // Mobile-Portrait //
+    @media screen and (max-width: 499px) and (orientation: portrait){width: 50%;}
+}

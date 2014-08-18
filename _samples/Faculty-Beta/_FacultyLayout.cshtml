@@ -1,0 +1,82 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+        <link rel="stylesheet" type="text/css" href="css/sly-row.css" />
+        <link rel="stylesheet" type="text/css" href="css/sly-effects.css" />
+
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+        <style>
+                       
+            .scroll-pane {
+                width:100%;
+                height:90%;
+                overflow: auto;
+                border: 1px dashed red;
+            }
+            
+            .pt-menu li {
+                display: inline-block;
+                padding-right: 10px;
+            }
+            
+            .pt-menu li > a:hover {
+                cursor: pointer;
+            }
+            
+        </style>
+
+        @RenderSection("fpStyles", required: false)
+
+        <script src="js/modernizr.custom.js"></script>
+    </head>
+    <body>
+
+
+        @RenderSection("fpContents", required: false)
+
+
+		<div class="pt-message">
+			<p>Your browser does not support CSS animations.</p>
+		</div>
+
+        <!-- -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>	
+	    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+        <!-- the pagetransition plugin -->
+		<script src="js/page-transitions.js"></script>
+
+        <!-- the sly plugin -->
+        <script src="js/sly.min.js"></script>
+        <script src="js/sly-horizontal.js"></script>
+
+        <!-- the jScrollPane plugin -->
+        <script src="/js/jquery.mousewheel.js"></script>
+        <script src="/js/mwheelIntent.js"></script>
+        <script src="/js/jquery.jscrollpane.min.js"></script>
+        <script>
+            $(function()
+	        {
+		        $('.scroll-pane').jScrollPane();
+	        });
+        </script>
+
+    </body>
+</html>

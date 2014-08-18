@@ -1,0 +1,301 @@
+﻿@{
+	Layout = "~/_SiteLayout.cshtml";
+	Page.Title = "Home";
+
+	//Cache Page
+	//Response.Cache.SetExpires(DateTime.Now.AddSeconds(60));
+	//Response.Cache.SetCacheability(HttpCacheability.Public);
+	//sResponse.Cache.SetValidUntilExpires(true);
+}
+
+@section Scripts {
+
+}
+
+@section Styles {
+
+}
+
+@section featured {
+<section id="login" style="display: none;">
+	<p>Authenticated: @WebSecurity.IsAuthenticated</p>
+	@if (WebSecurity.IsAuthenticated) {
+		<text>
+			Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+			<form id="logoutForm" action="~/Account/Logout" method="post">
+				@AntiForgery.GetHtml()
+				<a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+			</form>
+		</text>
+	} else {
+		<ul>
+			<li><a href="~/Account/Register">Register</a></li>
+			<li><a href="~/Account/Login">Log in</a></li>
+		</ul>
+	}
+</section>
+}
+ 
+<!--// ROW - SPOTLIGHTS/FEATURED ANNOUNCEMENTS -->
+<div class="pagespan">
+	<section class="wrap">
+		<div class="wrap-header">
+			<span>Spotlights</span>
+			<span style="font-size: 0.75em; color: #808080;"><small><< SCROLL TO VIEW MORE >></small></span>
+		</div>
+		<div class="frame" id="row1" data-intro="row1" data-position="left">
+			<ul class="clearfix">
+				
+				<li class="long-panel">
+					<div title="start here">
+						<a href="//issuu.com/ucfbusiness/docs/cba-viewbook-2012?e=0" class="target_blank">
+							<img alt="ucf" width="100%" data-echo="/images/pixel.gif" style="background-image: url(/images/panels/viewbook.jpg);">
+							<p>Start Here...with our college guide</p>
+						</a>
+					</div>
+				</li>
+
+				@*<li>
+					<div title="join our ambassadors">
+						<a href="//bit.ly/ambassadors2014" target="_blank">
+							<img src="~/images/blank.gif?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%" data-echo="/images/panels/ambassadorprogram.jpg?@DateTime.Now.TimeOfDay">
+							<p>Register now to join our college ambassadors program</p>
+						</a>
+					</div>
+				</li>*@
+
+				<li>
+					<div title="dr. jarley's blog">
+						<a href="//pauljarley.wordpress.com" class="target_blank">
+							<img alt="ucf"  width="100%" height="100%" data-echo="/images/panels/dean-blog.jpg">
+							<p>Dean Jarley's Blog</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="scholarships">
+						<a href="//www.bus.ucf.edu/students/scholarships.aspx" class="target_blank">
+							<img alt="ucf" width="100%" height="100%" data-echo="/images/panels/scholarships.jpg">
+							<p>Dean's Office Scholarship Application Deadline is June 26</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="meet our faculty">
+						<a href="//www.bus.ucf.edu/directory.aspx" class="target_blank">
+							<img alt="ucf" width="100%" height="100%" data-echo="/images/panels/meet-our-faculty.jpg">
+							<p>Search our faculty directory</p>
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</div><!--/frame -->
+		<div class="scrollbar">
+			<div class="handle">
+				<div class="mousearea"><span></span></div>
+			</div>
+		</div><!--/scrollbar --> 
+		<div class="controls center use-fastclick">
+			<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+			<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+		</div><!--/controls -->    
+	</section>
+</div>
+
+<!--// ROW - EVENTS -->
+<div class="pagespan">
+	<section class="wrap">
+		<div class="wrap-header">
+			<span>Events</span>
+			<span style="font-size: 0.75em; color: #808080;"><small><< SCROLL TO VIEW MORE >></small></span>
+		</div>
+		<div class="frame" id="row2" data-intro="row2" data-position="left">
+			<ul class="clearfix">
+				
+				<li>
+					<div title="executive and professional development programs">
+						<a href="//edc.research.ucf.edu/fin2014" class="target_blank">
+							<img alt="executive and professional development programs" width="100%" height="100%" data-echo="/images/panels/execed-event.jpg">
+							<p>Finance & Accounting Workshop for Non-Financial Managers</p>
+						</a>
+					</div>
+				</li>
+				
+				<li>
+					<div title="get your evening mba">
+						<a href="//ucfmba.ucf.edu/evening-mba" class="target_blank">
+							<img alt="ucf evening mba program" width="100%" height="100%" data-echo="/images/panels/evening-mba.jpg">
+							<p>Increase your value and build your network...close to home. Application deadline is August 1.</p>
+						</a>
+					</div>
+				</li>
+				
+				<li>
+					<div title="get your professional mba">
+						<a href="//edc.research.ucf.edu/pmba" class="target_blank">
+							<img alt="ucf professional mba" width="100%" height="100%" data-echo="/images/panels/pmba-event.jpg">
+							<p>Join us for a PMBA Palm Bay Information Session</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="get your executive mba">
+						<a href="//edc.research.ucf.edu/emba" class="target_blank">
+							<img alt="ucf executive mba" width="100%" height="100%" data-echo="/images/panels/emba-event.jpg">
+							<p>Join us for our next UCF EMBA Information Session</p>
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</div><!--/frame -->
+		<div class="scrollbar">
+			<div class="handle">
+				<div class="mousearea"><span></span></div>
+			</div>
+		</div><!--/scrollbar --> 
+		<div class="controls center use-fastclick">
+			<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+			<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+		</div><!--/controls --> 
+	</section>
+</div>
+
+<!--// ROW - NEWS -->
+<div class="pagespan">
+	<section class="wrap">
+		<div class="wrap-header">
+			<span>News</span>
+			<span style="font-size: 0.75em; color: #808080;"><small><< SCROLL TO VIEW MORE >></small></span>
+		</div>
+		<div class="frame" id="row3" data-intro="row3" data-position="left">
+			<ul class="clearfix">
+
+				<li>
+					<div title="ucf today">
+						<a href="//today.ucf.edu/section/business/" class="target_blank">
+							<img alt="ucf" width="100%" height="100%" data-echo="/images/panels/ucf-news.jpg">
+							<p>Business and Economy News</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="Stay connected with social media">
+						<a href="~/social-media">
+							<img alt="ucf" width="100%" height="100%" data-echo="/images/panels/social-media.jpg">
+							<p>Join the conversation</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="the joust">
+						<a href="//web.bus.ucf.edu/joust" class="target_blank">
+							<img alt="ucf" width="100%" height="100%" data-echo="/images/panels/thejoust.jpg">
+							<p>2014 Joust Winner Announced</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="dr. sean snaith's economic forecasts">
+						<a href="//iec.ucf.edu/page/forecasts.aspx" class="target_blank">
+							<img alt="ucf" width="100%" height="100%" data-echo="/images/panels/snaith-forecasts.jpg">
+							<p>Florida and U.S. Economic Forecasts from Dr. Sean Snaith</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="blackstone launchpad site">
+						<a href="//ucf.thelaunchpad.org" class="target_blank">
+							<img alt="ucf" width="100%" height="100%" data-echo="/images/panels/blackstone.jpg">
+							<p>Blackstone Launchpad Open</p>
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</div><!--/frame -->
+		<div class="scrollbar">
+			<div class="handle">
+				<div class="mousearea"><span></span></div>
+			</div>
+		</div><!--/scrollbar --> 
+		<div class="controls center use-fastclick">
+			<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+			<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+		</div><!--/controls --> 
+	</section>
+</div>
+
+<!--// ROW -->
+@*<div class="pagespan">
+	<section class="wrap">
+		<div class="wrap-header"><span>&nbsp;</span><span><small></small></span></div>
+		<div class="frame" id="row4" data-intro="row4" data-position="left">
+			<ul class="clearfix">
+
+				<li>
+					<div title="office of professional development">
+						<a href="//www.bus.ucf.edu/students/undergraduate/" class="target_blank">
+							<img src="~/images/blank.gif" alt="..." width="100%" height="100%" data-echo="/images/panels/advising.jpg">
+							<p>Office of Professional Development</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="keon testing center">
+						<a href="//www.bus.ucf.edu/testingcenter" class="target_blank">
+							<img src="//images.bus.ucf.edu/testinglab/camshot.jpg?@DateTime.Now.TimeOfDay" alt="..." width="100%" height="100%">
+							<p>Keon Testing Center</p>
+						</a>
+					</div>
+				</li>
+				
+				<li>
+					<div title="Take the ball by Dr. Paul Jarley">
+						<a href="//www.bus.ucf.edu/dean/take-the-ball" class="target_blank">
+							<img src="~/images/blank.gif" alt="..." width="100%" height="100%" data-echo="/images/panels/take-the-ball.jpg">
+							<p>Learn how to Take the Ball</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="Black and Gold Friday">
+						<a href="//www.bus.ucf.edu/events/black-and-gold-friday" class="target_blank">
+							<img src="~/images/blank.gif" alt="..." width="100%" height="100%" data-echo="/images/panels/black-gold-friday.jpg?@DateTime.Now.TimeOfDay">
+							<p></p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<div title="Starter Riot">
+						<a href="//www.bus.ucf.edu/events/starter-riot" class="target_blank">
+							<img src="~/images/blank.gif" alt="..." width="100%" height="100%" data-echo="/images/panels/starter-riot.jpg">
+							<p></p>
+						</a>
+					</div>
+				</li>                
+
+			</ul>
+		</div><!--/frame -->
+		<div class="scrollbar">
+			<div class="handle">
+				<div class="mousearea"><span></span></div>
+			</div>
+		</div><!--/scrollbar --> 
+		<div class="controls center use-fastclick">
+			<button class="btn prevPage"><i class="fa fa-chevron-left"></i><i class="icon-chevron-left"></i></button><!--/back button-->
+			<button class="btn nextPage"><i class="fa fa-chevron-right"></i></button><!--/forward button-->
+		</div><!--/controls --> 
+	</section>
+</div>*@

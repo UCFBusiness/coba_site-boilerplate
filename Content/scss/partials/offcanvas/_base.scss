@@ -1,0 +1,357 @@
+﻿
+.animatedSlide {
+	transition-property: transform;  
+	transition-duration: 0.3s;  
+	transition-timing-function: ease-out;
+	
+	-ms-transition-property: -ms-transform;  
+	-ms-transition-duration: 0.3s;  
+	-ms-transition-timing-function: ease-out;
+	
+	-moz-transition-property: -moz-transform;  
+	-moz-transition-duration: 0.3s;  
+	-moz-transition-timing-function: ease-out;
+	
+	-webkit-transition-property: -webkit-transform;  
+	-webkit-transition-duration: 0.3s;  
+	-webkit-transition-timing-function: ease-out;
+	
+	-o-transition-property: -o-transform;  
+	-o-transition-duration: 0.3s;  
+	-o-transition-timing-function: ease-out;
+}
+.no-csstransforms3d .animatedSlide {
+	transition: left 0.3s ease-out, right 0.3s ease-out;  
+	-ms-transition: left 0.3s ease-out, right 0.3s ease-out;   
+	-moz-transition: left 0.3s ease-out, right 0.3s ease-out;
+	-webkit-transition: left 0.3s ease-out, right 0.3s ease-out; 
+	-o-transition: left 0.3s ease-out, right 0.3s ease-out; 
+}
+
+/*-------------------------------------------*/
+/* == No Off.canvas (javascript disabled) == */
+/*-------------------------------------------*/
+
+.sidebarLeft.show, .sidebarRight.show {
+	z-index: 2;
+}
+
+/* Main central area styles */
+.page {
+	//border: 1px dashed red; //<---- development line
+	
+	height: 100%;
+	position: relative;
+	z-index: 3;
+}
+.no-js .page {
+	width: 100%;
+	height: 100%;
+}
+
+.page-inner {
+	position: relative;
+}
+
+/* Slid styles */
+.page.slidRight {
+	transform: translate3d(40em,0,0);
+	-ms-transform: translate3d(40em,0,0);
+	-moz-transform: translate3d(40em,0,0);
+	-webkit-transform: translate3d(40em,0,0);
+	-o-transform: translate3d(40em,0,0);
+	
+	// Tablet //
+	@media screen and (max-width: 1024px){
+		transform: translate3d(53em,0,0);
+		-ms-transform: translate3d(53em,0,0);
+		-moz-transform: translate3d(53em,0,0);
+		-webkit-transform: translate3d(53em,0,0);
+		-o-transform: translate3d(53em,0,0);
+	}
+
+	// Mobile-Landscape //
+	@media screen and (max-width: 699px) and (orientation: landscape){
+		transform: translate3d(40em,0,0);
+		-ms-transform: translate3d(40em,0,0);
+		-moz-transform: translate3d(40em,0,0);
+		-webkit-transform: translate3d(40em,0,0);
+		-o-transform: translate3d(40em,0,0);
+	}
+
+	// Mobile-Portrait //
+	@media screen and (max-width: 499px) and (orientation: portrait){
+		transform: translate3d(23em,0,0);
+		-ms-transform: translate3d(23em,0,0);
+		-moz-transform: translate3d(23em,0,0);
+		-webkit-transform: translate3d(23em,0,0);
+		-o-transform: translate3d(23em,0,0);
+	}
+}
+.page.slidLeft {
+	transform: translate3d(-40em,0,0);
+	-ms-transform: translate3d(-40em,0,0);
+	-moz-transform: translate3d(-40em,0,0);
+	-webkit-transform: translate3d(-40em,0,0);
+	-o-transform: translate3d(-40em,0,0);
+	
+	// Tablet //
+	@media screen and (max-width: 1024px){
+		transform: translate3d(-53em,0,0);
+		-ms-transform: translate3d(-53em,0,0);
+		-moz-transform: translate3d(-53em,0,0);
+		-webkit-transform: translate3d(-53em,0,0);
+		-o-transform: translate3d(-53em,0,0);
+	}
+
+	// Mobile-Landscape //
+	@media screen and (max-width: 699px) and (orientation: landscape){
+		transform: translate3d(-40em,0,0);
+		-ms-transform: translate3d(-40em,0,0);
+		-moz-transform: translate3d(-40em,0,0);
+		-webkit-transform: translate3d(-40em,0,0);
+		-o-transform: translate3d(-40em,0,0);
+	}
+
+	// Mobile-Portrait //
+	@media screen and (max-width: 499px) and (orientation: portrait){
+		transform: translate3d(-23em,0,0);
+		-ms-transform: translate3d(-23em,0,0);
+		-moz-transform: translate3d(-23em,0,0);
+		-webkit-transform: translate3d(-23em,0,0);
+		-o-transform: translate3d(-23em,0,0);
+	}
+}
+.no-csstransforms3d .page.slidRight {
+	left: 40em;
+
+	// Tablet //
+	@media screen and (max-width: 1024px){
+		left: 53em;
+	}
+	
+	// Mobile-Landscape //
+	@media screen and (max-width: 699px) and (orientation: landscape){
+		left: 40em;
+	}
+
+	// Mobile-Portrait //
+	@media screen and (max-width: 499px) and (orientation: portrait){
+		left: 23em;
+	}
+}
+.no-csstransforms3d .page.slidLeft {
+	left: -40em;
+
+	// Tablet //
+	@media screen and (max-width: 1024px){
+		left: -53em;
+	}
+
+	// Mobile-Landscape //
+	@media screen and (max-width: 699px) and (orientation: landscape){
+		left: -40em;
+	}
+	
+	// Mobile-Portrait //
+	@media screen and (max-width: 499px) and (orientation: portrait){
+		left: -23em;
+	}
+}
+
+/* Sliding side bars */
+.sidebarLeft, .sidebarRight {
+	//width: 30%;
+	//height: 100%;
+	word-wrap: break-word;
+	z-index: 1;
+	
+	.sidebarButton {
+		border: 1px solid red; //<---- development line
+
+		display: none;
+		width: 1.6em;
+		font-size: 2.5em;
+		line-height: 1.6em;
+		color: #222;
+		text-decoration: none;
+		text-align: center;
+		opacity: 0.2;
+		z-index: 3;
+		
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	/* hides close button unless JS is enabled */
+	.shutLeft, .shutRight {
+		@extend .sidebarButton;
+		position: absolute;
+		top: 0;
+	}
+
+	.sidebarMenuTab {
+		@extend .sidebarButton;
+		position: relative;
+
+		&.active {
+			opacity: 0.5;
+		}
+	}
+}
+.sidebarLeft.slidRight, .sidebarRight.slidLeft {
+	transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+}
+.no-csstransforms3d .sidebarLeft.slidRight {
+	left: 0;
+}
+.no-csstransforms3d .sidebarRight.slidLeft {
+	right: 0;
+}
+
+
+/*---------------------*/
+/* ==   Off.canvas  == */
+/*---------------------*/
+
+// Tablet //
+@media (max-width: 1024px){
+	html.offcanvas {
+		overflow-x: hidden; //<-- do not remove
+	}
+}
+
+.offcanvas body {
+	overflow-y: auto; //<-- do not remove
+
+	// Small Desktop //
+	@media screen and (min-width: 1025px){
+		overflow-x: hidden; //<-- do not remove
+	}
+}
+
+.offcanvas .page {
+	width: 100%;
+	height: 100%;
+}
+
+.offcanvas .scrollableArea {
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+
+	position:absolute;
+	top: 4em;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	// Small Desktop //
+	@media screen and (min-width: 1025px){
+		position: fixed;
+		top: 4em;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+/* Styles for both sidebars */
+.offcanvas .sidebarLeft, .offcanvas .sidebarRight {
+	width: 40em;
+	height: 100%;
+	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+	// Tablet //
+	@media screen and (max-width: 1024px){
+		width: 53em;
+	}
+
+	// Mobile-Landscape //
+	@media screen and (max-width: 699px) and (orientation: landscape){
+		width: 40em;
+	}
+	
+	// Mobile-Portrait //
+	@media screen and (max-width: 499px) and (orientation: portrait){
+		width: 23em;
+	}
+
+	// Small Desktop //
+	@media screen and (min-width: 1025px){
+		position: fixed;
+		top: 0;
+		bottom: 0;
+	}
+
+	.shutLeft, .shutRight {
+		display: block;
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	.sidebarMenuTab  {
+		display: inline-block;
+	}
+}
+.offcanvas .sidebarLeft {
+	left: 0;
+	/*
+	transform: translate3d(-7em,0,0);
+	-ms-transform: translate3d(-7em,0,0);
+	-moz-transform: translate3d(-7em,0,0);
+	-webkit-transform: translate3d(-7em,0,0);
+	-o-transform: translate3d(-7em,0,0);
+	*/
+	transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	
+	.shutLeft {
+		left: 0;
+	}
+}
+.offcanvas .sidebarRight {
+	right: 0;
+	/*
+	transform: translate3d(7em,0,0);
+	-ms-transform: translate3d(7em,0,0);
+	-moz-transform: translate3d(7em,0,0);
+	-webkit-transform: translate3d(7em,0,0);
+	-o-transform: translate3d(7em,0,0);
+	*/
+	transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	
+	.shutRight {
+		right: 0;
+	}
+}
+
+/*
+.no-csstransforms3d .offcanvas .sidebarLeft {
+	left:-7em;
+}
+.no-csstransforms3d .offcanvas .sidebarRight {
+	right:-7em;
+}
+*/

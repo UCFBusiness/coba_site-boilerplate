@@ -1,0 +1,100 @@
+﻿/* =============================================================================
+   PAGE CONTENT
+   ========================================================================== */
+
+//background-color: #272727; //<---- Dev Test (delete)
+//background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20width%3D%221920%22%20height%3D%221120%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%225%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cimage%20xlink%3Ahref%3D%22http%3A%2F%2Fplacekitten.com%2F1920%2F1120%22%20width%3D%221920%22%20height%3D%221120%22%20filter%3D%22url%28%23blur%29%22%2F%3E%3C%2Fsvg%3E"), 
+//                  url("http://placekitten.com/1920/1120");
+//background-position: center bottom;
+//background-attachment: fixed;
+//background-size: cover;
+
+
+.main {
+    //------------------------------------------------
+    background: #fff; //<--- Testing
+    //------------------------------------------------
+
+    border-bottom: 1px solid #fff; //<--- do not remove (footer will break)
+    margin-top: 518px;
+    height: 100%;
+    min-height: 100%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 4;
+
+    // Tablet //
+    @media screen and (max-width: 1024px){
+        margin-top: 640px;
+    }
+
+    // Tablet-Portrait //
+    @media screen and (max-width: 768px){
+        margin-top: 498px;
+    }
+
+    // Mobile-Landscape //
+    @media screen and (max-width: 699px) and (orientation: landscape){
+        margin-top: 318px;
+    }
+
+    // Mobile-Portrait //
+    @media screen and (max-width: 499px) and (orientation: portrait){
+        margin-top: 318px;
+    }
+
+    // Small Desktop //
+    @media screen and (min-width: 1025px){
+        margin-top: 0;
+        padding-left: 380px;
+        height: 100%;
+        min-height: 1080px; // (height of full-screen)
+    }
+
+    // Notebook //
+    @media screen and (min-width: 1300px){
+        padding-left: 420px;
+    }
+
+    .content-wrapper {
+        border: 1px dashed red; //<--- DEV LINE
+        padding-bottom: 10px;
+        min-height: 800px; // <-- testing
+        z-index: 4;
+
+        // Small Desktop //
+        @media screen and (min-width: 1025px){
+            margin-bottom: 250px; // margin bottom by footer height // <-- do not remove
+            padding-bottom: 10px;
+            height: 100%;
+            min-height: 790px; // <-- testing
+            width: 100%;
+        }
+
+        .content {
+            max-width: 960px;
+        }
+    }
+}
+
+.topnav {
+    background: #111;
+    padding: 15px;
+    vertical-align: middle;
+    color: #fff;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding-right: 15px;
+            display: inline-block;
+        }
+    }
+}

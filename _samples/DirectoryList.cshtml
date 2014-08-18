@@ -1,0 +1,56 @@
+﻿@{
+    //Access Database
+    //using(var db = Database.Open("ucfBusiness")){
+    //    var sql = "SELECT (SELECT SUBSTRING(profiles.Room, 1, 5)) AS FloorNumb,departments.Initials as Department, departments.Name as DepartmentTitle, users.LastName, users.FirstName, users.MiddleName AS Initial, users.Suffix, profiles.Job_Title as Title, profiles.Room as RoomNumb, profiles.Phone1 as PhoneNumber FROM CBA_Users AS users INNER JOIN CBA_Users_Profiles AS profiles ON users.UserID = profiles.UserID INNER JOIN CBA_Departments AS departments ON profiles.DepartmentID = departments.DepartmentID INNER JOIN UCF_Buildings AS buildings ON departments.BuildingID = buildings.BuildingID WHERE departments.Initials != 'SBDC' AND departments.Initials != 'EDC' ORDER BY DepartmentTitle";
+    //    var data = db.Query(sql);
+    //}
+
+    var db = Database.Open("ucfBusiness");
+    var sql = "SELECT (SELECT SUBSTRING(profiles.Room, 1, 5)) AS FloorNumb,departments.Initials as Department, departments.Name as DepartmentTitle, users.LastName, users.FirstName, users.MiddleName AS Initial, users.Suffix, profiles.Job_Title as Title, profiles.Room as RoomNumb, profiles.Phone1 as PhoneNumber FROM CBA_Users AS users INNER JOIN CBA_Users_Profiles AS profiles ON users.UserID = profiles.UserID INNER JOIN CBA_Departments AS departments ON profiles.DepartmentID = departments.DepartmentID INNER JOIN UCF_Buildings AS buildings ON departments.BuildingID = buildings.BuildingID WHERE departments.Initials != 'SBDC' AND departments.Initials != 'EDC' ORDER BY DepartmentTitle";
+    var data = db.Query(sql);
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <!-- Directory List for TVs -->
+        @*FloorNumb,Department,DepartmentTitle,LastName,FirstName,Initial,Suffix,Title,RoomNumb,PhoneNumber*@
+
+        <table>
+            <tr>
+                <th>FloorNumb</th>
+                <th>Department</th>
+                <th>DepartmentTitle</th>
+                <th>LastName</th>
+                <th>FirstName</th>
+                <th>Initial</th>
+                <th>Suffix</th>
+                <th>Title</th>
+                <th>RoomNumb</th>
+                <th>PhoneNumber</th>
+            </tr>
+
+            @foreach (var row in data)
+            {
+                <tr>
+                <td>@row.FloorNumb</td>
+                <td>@row.Department</td>
+                <td>@row.DepartmentTitle</td>
+                <td>@row.LastName</td>
+                <td>@row.FirstName</td>
+                <td>@row.Initial</td>
+                <td>@row.Suffix</td>
+                <td>@row.Title</td>
+                <td>@row.RoomNumb</td>
+                <td>@row.PhoneNumber</td>
+                </tr>
+            }
+
+        </table>
+    </body>
+</html>

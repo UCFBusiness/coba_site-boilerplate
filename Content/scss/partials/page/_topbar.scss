@@ -1,0 +1,89 @@
+//-------------------------------------------------
+// Main styles for header bar
+//-------------------------------------------------
+
+.topBar {
+	width: 100%;
+	position: relative;
+
+	// Small Desktop //
+	@media screen and (min-width: 1025px){width:380px;}
+
+	// Notebook //
+	@media screen and (min-width: 1300px){width: 420px;}
+
+	.ucfBar {
+		background: #111;
+		color: #ffcc00;
+		padding: 15px;
+	}
+
+	.cbaBar {
+		background: none;
+		padding: 20px;
+		vertical-align: middle;
+
+		// Mobile //
+		@media screen and (max-width: 699px){
+			background: rgba(0,0,0,0.6);
+			padding: 3px 20px;
+		}
+	}
+
+	.slideRight, .slideLeft, .bttnHome {
+		padding-right: 0.333em;
+		font-size: 1.8em;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.slideLeft {
+		position: relative;
+
+		i:after {
+			content: "menu";
+			font-family: Arial;
+			font-size: 0.67em;
+			position:absolute;
+			top: 5px;
+			left: 30px;
+		}
+	}
+
+	.slideRight:hover, .slideRight.pressed, .slideLeft:hover, .slideLeft.pressed {
+		color:scale-lightness(#fff, 15em);
+	}
+
+	.slideRight.pressed, .slideLeft.pressed {
+		background:scale-lightness(#999, -15em);
+	}  
+	
+
+	/*
+	.slideRight, .slideLeft, .bttnHome {
+		position: absolute;
+		top: 3px;
+		width: 0.8em;
+		height: 0.8em;
+		font-size: 1.5em;
+		line-height: 0.84em;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+	}
+	.slideRight {
+		left: 0;
+	}
+	.slideLeft {
+		right: 0;
+
+		span {
+			font-size: 0.67em;
+		}
+	}
+	.bttnHome {
+		left: 0;
+	}
+	*/
+}

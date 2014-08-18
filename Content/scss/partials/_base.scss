@@ -1,32 +1,10 @@
 
 // Partials
 @import "primary";
-@import "ucf-header";
-@import "header/navigation";
-@import "header/search-bar";
-@import "header/menu.animation";
-@import "viewbook";
-@import "footer";
+@import "page/base";
+@import "offcanvas/base";
+
+// Elements
+@import "elements/all";
 
 // Bootstrap changes
-@import "back-to-top";
-@import "grids";
-
-// Font weights
-$light: 100;
-$regular: 400;
-$bold: 600;
-
-// Base Font
-$base-font-family: sans-serif;
-$base-font-weight: $regular;
-$base-font-size: 13px;
-$base-line-height: 1.4;
-
-// Fixed Font
-$fixed-font-family: monospace;
-$fixed-font-size: 85%;
-$fixed-line-height: $base-line-height;
-
-// Headings
-$header-font-weight: $bold;
