@@ -15,33 +15,28 @@
 	wpDeanPost.Load("http://pauljarley.wordpress.com/feed/"); //-- Load WordPress Feed onto XML Doc
 	System.Xml.XmlElement xeDeanPost = wpDeanPost.DocumentElement; //-- Root Element
 
-	String temp = xeDeanPost.SelectSingleNode("//item/guid").InnerText;
-	String wpDeanPostGuid = temp.Substring(temp.Length - 4);
+	//String temp = xeDeanPost.SelectSingleNode("//item/guid").InnerText;
+	//String wpDeanPostGuid = temp.Substring(temp.Length - 4);
 	
 	String wpDeanPostPubDate = xeDeanPost.SelectSingleNode("//item/pubDate").InnerText;
 	String wpDeanPostTitle = xeDeanPost.SelectSingleNode("//item/title").InnerText;
 	String wpDeanPostHyperLink = xeDeanPost.SelectSingleNode("//item/link").InnerText;
-	String wpDeanPostAbstract = xeDeanPost.SelectSingleNode("//item/description").InnerText;
+	String wpDeanPostDescription = xeDeanPost.SelectSingleNode("//item/description").InnerText;
+    String wpDeanPostAbstract = System.Text.RegularExpressions.Regex.Replace(wpDeanPostDescription, "<[^>]*>", string.Empty);
 	//-------------------------------------------------------------------------------------------
 
 	// OPD-CareerPros Latest Blog Post //--------------------------------------------------------
 	System.Xml.XmlDocument wpCareerPost = new System.Xml.XmlDocument(); //-- New XML Document
 	wpCareerPost.Load("http://careerpros.wordpress.com/feed/"); //-- Load WordPress Feed onto XML Doc
 	System.Xml.XmlElement xeCareerPost = wpCareerPost.DocumentElement; //-- Root Element
-	String wpCareerPostGuid = System.Text.RegularExpressions.Regex.Replace(xeDeanPost.SelectSingleNode("//item/guid").InnerText, "https://today.ucf.edu/\\?p=", string.Empty);
-	String wpCareerPostPubDate = xeCareerPost.SelectSingleNode("//item/pubDate").InnerText;
+
+	//String wpCareerPostGuid = System.Text.RegularExpressions.Regex.Replace(xeDeanPost.SelectSingleNode("//item/guid").InnerText, "https://today.ucf.edu/\\?p=", string.Empty);
+	
+    String wpCareerPostPubDate = xeCareerPost.SelectSingleNode("//item/pubDate").InnerText;
 	String wpCareerPostTitle = xeCareerPost.SelectSingleNode("//item/title").InnerText;
 	String wpCareerPostHyperLink = xeCareerPost.SelectSingleNode("//item/link").InnerText;
-	String wpCareerPostAbstract = xeCareerPost.SelectSingleNode("//item/description").InnerText;
-	//-------------------------------------------------------------------------------------------
-
-	// UCF Today (latest post) //----------------------------------------------------------------
-	//System.Xml.XmlDocument wpUcfTodayPost = new System.Xml.XmlDocument(); //-- New XML Document
-	//wpUcfTodayPost.Load("http://today.ucf.edu/topic/college-of-business-administration/feed/"); //-- Load WordPress Feed onto XML Doc
-	//System.Xml.XmlElement xeUcfTodayPost = wpUcfTodayPost.DocumentElement; //-- Root Element
-	//String wpUcfTodayPostTitle = xeUcfTodayPost.SelectSingleNode("//item/title").InnerText;
-	//String wpUcfTodayPostHyperLink = xeUcfTodayPost.SelectSingleNode("//item/link").InnerText;
-	//String wpUcfTodayPostPubDate = xeUcfTodayPost.SelectSingleNode("//item/pubDate").InnerText;
+    String wpCareerPostDescription = xeCareerPost.SelectSingleNode("//item/description").InnerText;
+    String wpCareerPostAbstract = System.Text.RegularExpressions.Regex.Replace(wpCareerPostDescription, "<[^>]*>", string.Empty);
 	//-------------------------------------------------------------------------------------------
 
 	// UCF Today (top 10 posts) //---------------------------------------------------------------
@@ -98,7 +93,6 @@
 
 	<script>
 		var str, res;
-
 		str = document.getElementById("news").innerHTML;
 		res = str.replace(/&amp;lt;/g, "<");
 		res = res.replace(/&amp;gt;/g, ">");
@@ -129,42 +123,56 @@
 					</li>
 
 					<li>
-						<div title="dean jarley's blog">
-							<a href="#@wpDeanPostGuid" class="target_blank">
-								<img alt="ucf" data-echo="/images/panels/dean-blog.jpg">
-								<p>Dean's Blog: @wpDeanPostTitle</p>
-							</a>
-							<div id="@wpDeanPostGuid" style="display:none">
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-sm-6">
-											<h1>@wpDeanPostTitle</h1>
-											<hr />
-											<p><em>@Convert.ToDateTime(wpDeanPostPubDate).ToLongDateString(), at @Convert.ToDateTime(wpDeanPostPubDate).ToShortTimeString()</em></p>
-										</div>
-										<div class="col-sm-6">
-											<br />
-											<p class="lead">@HttpUtility.HtmlDecode(wpDeanPostAbstract)</p>
-											<p class="text-center"><a href="@wpDeanPostHyperLink" target="_blank" class="btn btn-primary btn-sm">Read Full Article</a></p>
-											<p>&nbsp;</p>
-										</div>
-									</div><!--/.row-->
-								</div>
-							</div>
-						</div>
-					</li>
+					    <div title="dean jarley's blog">
+						    <a href="#deanPost" class="target_blank">
+							    <img alt="ucf" data-echo="/images/panels/dean-blog.jpg">
+							    <p>Dean's Blog: @wpDeanPostTitle</p>
+						    </a>
+						    <div id="deanPost" style="display:none">
+							    <div class="container-fluid">
+								    <div class="row">
+									    <div class="col-lg-12">
+										    <h1>@wpDeanPostTitle</h1>
+										    <hr />
+										    <p><em>@Convert.ToDateTime(wpDeanPostPubDate).ToLongDateString(), at @Convert.ToDateTime(wpDeanPostPubDate).ToShortTimeString()</em></p>
+									    </div>
+									    <div class="col-lg-12">
+										    <br />
+										    <p class="lead">@HttpUtility.HtmlDecode(wpDeanPostAbstract)</p>
+										    <p class="text-center"><a href="@wpDeanPostHyperLink" target="_blank" class="btn btn-primary btn-sm">Read Full Article</a></p>
+										    <p>&nbsp;</p>
+									    </div>
+								    </div><!--/.row-->
+							    </div>
+						    </div>
+					    </div>
+				    </li>
 
 					<li>
-						<div title="office of professional development blog">
-							<a href="#333" class="target_blank">
-								<img alt="ucf" data-echo="/images/panels/opd-blog.jpg">
-								<p>OPD Blog: @wpCareerPostTitle</p>
-							</a>
-							<div id="#333" style="display:none">
-								@*<iframe src="http://careerpros.wordpress.com" id="iframeid" />*@
-							</div>
-						</div>
-					</li>
+					    <div title="office of professional development blog">
+						    <a href="#opdPost" class="target_blank">
+							    <img alt="ucf" data-echo="/images/panels/opd-blog.jpg">
+							    <p>OPD Blog: @wpCareerPostTitle</p>
+						    </a>
+                            <div id="opdPost" style="display:none">
+							    <div class="container-fluid">
+								    <div class="row">
+									    <div class="col-lg-12">
+										    <h1>@wpCareerPostTitle</h1>
+										    <hr />
+										    <p><em>@Convert.ToDateTime(wpCareerPostPubDate).ToLongDateString(), at @Convert.ToDateTime(wpCareerPostPubDate).ToShortTimeString()</em></p>
+									    </div>
+									    <div class="col-lg-12">
+										    <br />
+										    <p class="lead">@HttpUtility.HtmlDecode(wpCareerPostAbstract)</p>
+										    <p class="text-center"><a href="@wpCareerPostHyperLink" target="_blank" class="btn btn-primary btn-sm">Read Full Article</a></p>
+										    <p>&nbsp;</p>
+									    </div>
+								    </div><!--/.row-->
+							    </div>
+						    </div>
+					    </div>
+				    </li>
 
 					<li>
 						<div title="dr. sean snaith's economic forecasts">
