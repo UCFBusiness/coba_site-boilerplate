@@ -12,7 +12,8 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
         onLoad: function ()
         {
 
-            require(['lazyloader', 'easing', 'sly'], function () {
+            require(['lazyloader', 'easing', 'sly'], function ()
+            {
                 // code //
                 // load scripts for desktop, tablet and mobile
 
@@ -26,7 +27,7 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
 
                 //-- Sly Analytics -------------------------------
                 //$('.dl-menu a').click(function () {
-            	//    _gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
+                //    _gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
                 //});
                 //$('.dl-menu a').click(function () {
                 //    _gaq.push(['_trackEvent', 'Menu Path', 'Navigation', $(this).text()]);
@@ -50,6 +51,12 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
                 (function () { var $frame = $('#row3'); var $section = $frame.parent(); $frame.sly({ horizontal: 1, itemNav: 'centered', smart: 1, activateOn: 'click', mouseDragging: 1, touchDragging: 1, releaseSwing: 1, startAt: 0, scrollBar: $section.find('.scrollbar'), scrollBy: 1, pagesBar: $section.find('.pages'), activatePageOn: 'click', speed: 300, elasticBounds: 1, easing: 'easeOutExpo', dragHandle: 1, dynamicHandle: 1, clickBar: 1, prev: $section.find('.prev'), next: $section.find('.next'), prevPage: $section.find('.prevPage'), nextPage: $section.find('.nextPage'), forward: $section.find('.forward'), backward: $section.find('.backward') }); } ());
                 //------------------------------------------------
 
+                var str, res;
+		        str = document.getElementById("news").innerHTML;
+		        res = str.replace(/&amp;lt;/g, "<");
+		        res = res.replace(/&amp;gt;/g, ">");
+		        document.getElementById("news").innerHTML = res;
+
                 if (screenwidth < 1025)
                 {
                     require(['pageslide'], function ()
@@ -68,7 +75,7 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
                         {
                             var toolBar = parseInt($('#toolbar').height());
                             return screenheight - toolBar;
-                        });//-----------------------------------------------
+                        }); //-----------------------------------------------
 
                         if (screenwidth < 700)
                         {
@@ -76,7 +83,7 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
                             {
                                 // code //
                                 // load scripts only for mobile
-
+                                
                                 //-- screen-size ----------------------------------
                                 $("#msg").text(screenwidth + " x " + screenheight + " - mobile");
                                 //-------------------------------------------------
@@ -133,7 +140,7 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
                 //    return screenheight;
                 //});
 
-                if (screenwidth < 1000) 
+                if (screenwidth < 1000)
                 {
                     require([], function ()
                     {

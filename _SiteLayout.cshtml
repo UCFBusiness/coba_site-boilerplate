@@ -163,7 +163,51 @@
 						</div><!--/.topBar /-->
 						
 						@RenderSection("featured", required: false)
-						
+
+                        <br><br>
+                        @{
+                            string query = "accounting";
+		                    string xmlURL = "http://google.cc.ucf.edu/search?output=xml&client=UCF_Main&site=UCF_Main&sitesearch=web.bus.ucf.edu&spell=1&q=" + query;
+                            googleSearchResults gr = new googleSearchResults();
+                            string i = gr.ParseXml(xmlURL);
+                            
+                            @Html.Label(i, new {id = "Label1"});
+                        }
+
+                        <br>
+
+                        @*<form  class="site-search" action="" name="input" method="get" id="site-search">
+						<input type="search" placeholder="SEARCH" name="q" size="33" id="dl-search-field" />
+						<input type="hidden" name="output" value="xml" />
+						<input type="hidden" name="client" value="UCF_Main" />
+						<input type="hidden" name="site" value="UCF_Main" />
+						<input type="hidden" name="sitesearch" value="web.bus.ucf.edu" />
+						<input type="hidden" name="spell" value="1" />
+					    </form>*@
+                        
+                        @*@Html.TextBox("searchresults", null, new {onkeyup = "GetSearchResults(this.value);"})*@
+                        
+                        <script>
+                            function GetSearchResults(value)
+                            {
+                                $.ajax(
+                                {
+                                    type: "GET",
+                                    url: "",
+                                    data: "",
+                                    contentType: "",
+                                    success: function (msg)
+                                    {
+                                        $("#senderContent").html(msg.toString);
+                                    },
+                                    error: function ()
+                                    {
+                                        alert("not connected!");
+                                    }
+                                });
+                            }
+                        </script>
+
 					</div><!--/.cover-header /-->
 					<div class="cover-body">
 						<div class="cover-body-inner">
@@ -341,8 +385,8 @@
 				<div class="scrollableArea container-fluid" id="search">
 					<!-- show content here -->
 					<hr>
-					<form id="site-search" class="site-search" action="" name="input" method="get">
-						<input type="search" placeholder="SEARCH" name="q" size="33" class="dl-search-field" />
+					@*<form  class="site-search" action="" name="input" method="get" id="site-search">
+						<input type="search" placeholder="SEARCH" name="q" size="33" id="dl-search-field" />
 						<input type="hidden" name="output" value="xml" />
 						<input type="hidden" name="client" value="UCF_Main" />
 						<input type="hidden" name="site" value="UCF_Main" />
@@ -350,7 +394,8 @@
 						<input type="hidden" name="spell" value="1" />
 					</form>
 					<hr />
-					<div id="SearchResults"></div>
+					<div id="SearchResults"></div>*@
+                    
 				</div>
 				<div class="scrollableArea container-fluid" id="directory">
 					<!-- show content here -->

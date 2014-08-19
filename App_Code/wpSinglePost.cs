@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text; //+
+using System.Text.RegularExpressions; //+
 using System.Web;
 using System.Xml; //+
 
@@ -9,20 +11,31 @@ using System.Xml; //+
 /// </summary>
 public class wpSinglePost
 {
-	public String wpTitle { get; set; }
-	public String wpHyperLink { get; set; }
-	public String wpPubDate { get; set; }
-	public String wpContent { get; set; }
+	//public String Id { get; set; }
+    public String Title { get; set; }
+	public String PubDate { get; set; }
+	public String Content { get; set; }
+    public String HyperLink { get; set; }
 	
-	public wpSinglePost()
+	public wpSinglePost(string xml)
 	{
-		//
-		// TODO: Add constructor logic here
-		//
-		XmlDocument wpBlog = new XmlDocument(); //-- New XML Document
-		wpBlog.Load("http://pauljarley.wordpress.com/feed/"); //-- Load WordPress Feed onto XML Doc
-		XmlElement xe = wpBlog.DocumentElement; //-- Root Element
+        XmlTextReader reader = new XmlTextReader(xml);
 
+        reader.ReadToFollowing("item");
 
+        reader.ReadToFollowing("title");
+        Title = reader.ReadElementContentAsString();
+
+        reader.ReadToFollowing("link");
+        HyperLink = reader.ReadElementContentAsString();
+
+        reader.ReadToFollowing("pubDate");
+        PubDate = reader.ReadElementContentAsString();
+        
+        //reader.ReadToFollowing("guid");
+        //Id = Regex.Replace(reader.ReadElementContentAsString(), xml.Remove(xml.Length - 6)+ "/\\?p=", string.Empty);
+
+        reader.ReadToFollowing("content:encoded");
+        Content = reader.ReadElementContentAsString();
 	}
 }

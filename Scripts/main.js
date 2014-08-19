@@ -220,7 +220,7 @@ require(['modernizr'], function ()
 
 
 				//-- Search Code --------------------------------
-				$(".dl-search-field").keyup(function () {
+				$("#dl-search-field").keyup(function () {
 					//alert("Handler for key up called.");
 				}); //-------------------------------------------
 
