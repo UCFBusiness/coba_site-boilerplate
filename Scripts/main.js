@@ -224,7 +224,7 @@ require(['modernizr'], function ()
 					//alert("Handler for key up called.");
 				}); //-------------------------------------------
 				
-			    //--
+			    //-- Sidebar BodyLock ---------------------------
 				$("#rightBurger").click(function (e) {
 				    e.preventDefault;
 				    $("body").css("overflow", "hidden");
@@ -232,8 +232,7 @@ require(['modernizr'], function ()
 				$("#shutRight").click(function (e) {
 				    e.preventDefault;
 				    $("body").css("overflow", "auto");
-				});
-			    //-------------------------------------------
+				}); //-------------------------------------------
 
 				var screenwidth = parseInt($(this).width());
 				var screenheight = parseInt($(this).height());
