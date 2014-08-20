@@ -397,7 +397,20 @@
 				<div class="scrollableArea container-fluid" id="directory">
 					<!-- show content here -->
 					<hr>
-					<p>This is the directory stuff.</p>
+					<h4>Directory</h4>
+					@{
+						// Database
+						var db = Database.Open("ucfBusiness");
+						var sql = "SELECT * FROM CBA_Users WHERE IsFaculty = 'true'";
+						var data = db.Query(sql);
+
+						foreach (var row in data)
+						{
+							<div>@row.FirstName @row.LastName</div>
+							<div>Email: @row.Email1</div>
+							<br>
+						}
+					}
 				</div>
 
 			</div>
