@@ -69,7 +69,7 @@
 					<div class="cover-img"></div><!--/.cover-img (background image) /-->
 					<div class="cover-header">
 						
-						<nav id="main_menu" class="dl-menuwrapper site-nav clearfix" style="display: none">
+						<nav id="mainmenu" class="dl-menuwrapper site-nav clearfix" style="display: none">
 							<a href="~/" class="dl-home" data-toggle="tooltip" data-placement="bottom" title="Home">HOME</a>
 							<button class="dl-trigger" title="Discover Menu">
 								<span class="menu-icon" style="font-size: 1.8em">&#9776;</span>
@@ -162,14 +162,15 @@
 							</div><!--/.cbaBar /-->
 						</div><!--/.topBar /-->
 						
-						@RenderSection("featured", required: false)
 
+						@RenderSection("featured", required: false)
+						
 						<br><br>
 						@{
 							string query = "accounting";
 							string xmlURL = "http://google.cc.ucf.edu/search?output=xml&client=UCF_Main&site=UCF_Main&sitesearch=web.bus.ucf.edu&spell=1&q=" + query;
-							googleSearchResults gr = new googleSearchResults();
-							string i = gr.ParseXml(xmlURL);
+							googleSearchResults gsr = new googleSearchResults();
+							string i = gsr.ParseXml(xmlURL);
 							
 							@Html.Label(i, new {id = "Label1"});
 						}
@@ -224,7 +225,6 @@
 				</div><!--/.cover /-->
 
 				<div class="main" id="main">
-
 					<div class="topnav">
 						<ul>
 							<li>Academic Programs</li>
@@ -233,13 +233,11 @@
 							<li>Recruiters &amp; Companies</li>
 						</ul>
 					</div><!--/.topnav /-->
-
 					<div class="content-wrapper">
 
 						@RenderBody()
 
 					</div><!--/.content-wrapper /-->
-
 					<footer class="footer">
 						<div class="footer-inner container-fluid">
 							<div class="row">
@@ -284,7 +282,6 @@
 							</div>
 						</div>
 					</footer><!--/.footer /-->
-
 				</div><!--/.main /-->
 
 				<div class="page-overlay"></div>
@@ -318,8 +315,8 @@
 			<div class="sidebarRight-inner" id="tabs">
 
 				<!--Tabs-->
-				<a class="shutRight" href="">&#10006;</a><!--Close Button-->
-				<ul>
+				<a class="shutRight" id="shutRight" href="">&#10006;</a><!--Close Button-->
+				<ul id="menutabs">
 					<li><a class="sidebarMenuTab active" href="#menu"><i class="fa fa-bars"></i></a></li>
 					<li><a class="sidebarMenuTab" href="#search"><i class="fa fa-search"></i></a></li>
 					<li><a class="sidebarMenuTab" href="#directory"><i class="fa fa-users"></i></a></li>

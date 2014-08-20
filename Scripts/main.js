@@ -170,8 +170,8 @@ require(['modernizr'], function ()
 		{
 			require(['angular', 'bootstrap', 'classie', 'dlmenu', 'easing', 'echo', 'offcanvas', 'overthrow', 'hammer', 'jhammer', 'transitions', 'jquery-ui'], function (ng)
 			{
-			    // code //
-			    // load scripts for desktop, tablet and mobile
+				// code //
+				// load scripts for desktop, tablet and mobile
 
 				//-- off-canvas -----------------------------
 				$("html").offcanvas({
@@ -186,7 +186,7 @@ require(['modernizr'], function ()
 				// Echo.render(); is also available for non-scroll callbacks
 
 				//-- navigation menu ----------------------------
-				$(".dl-menuwrapper").dlmenu({
+				$("#mainmenu").dlmenu({
 					animationClasses: {
 						classin: "dl-animate-in-2",
 						classout: "dl-animate-out-2"
@@ -201,7 +201,7 @@ require(['modernizr'], function ()
 					}, 1500, "easeInOutExpo");
 					event.preventDefault();
 				}); //-------------------------------------------
-
+				
 				//-- easing : next page -------------------------
 				$(".btnNext").bind("click", function (event) {
 					var $anchor = $(this);
@@ -210,71 +210,82 @@ require(['modernizr'], function ()
 					}, 1500, "easeInOutExpo");
 					event.preventDefault();
 				}); //-------------------------------------------
-
+				
 				//-- off-canvas : tabs -------------------------
 				$("#tabs").tabs({ active: 0 });
-				$(".sidebarMenuTab").click(function () {
-					$(".sidebarMenuTab").removeClass("active");
+				$("#menutabs a").click(function () {
+					$("#menutabs a").removeClass("active");
 					$(this).addClass("active");
 				}); //-------------------------------------------
-
-
+				
+				
 				//-- Search Code --------------------------------
 				$("#dl-search-field").keyup(function () {
 					//alert("Handler for key up called.");
 				}); //-------------------------------------------
+				
+			    //--
+				$("#rightBurger").click(function (e) {
+				    e.preventDefault;
+				    $("body").css("overflow", "hidden");
+				});
+				$("#shutRight").click(function (e) {
+				    e.preventDefault;
+				    $("body").css("overflow", "auto");
+				});
+			    //-------------------------------------------
 
-                var screenwidth = parseInt($(this).width());
-			    var screenheight = parseInt($(this).height());
+				var screenwidth = parseInt($(this).width());
+				var screenheight = parseInt($(this).height());
+				
+				if (screenwidth < 1025)
+				{
+					require([], function () {
+						// code //
+						// load scripts only for tablet
+					
+						if (screenwidth < 700)
+						{
+							require([], function () {
+								// code //
+								// load scripts only for mobile
+							});
+						}
+					});
+				}
+				
+				if (screenwidth >= 1025)
+				{
+					require([], function () {
+						// code //
+						// load scripts only for desktop
 
-			    if (screenwidth < 1025)
-			    {
-				    require([], function () {
-				        // code //
-				        // load scripts only for tablet
-				    
-					    if (screenwidth < 700)
-					    {
-						    require([], function () {
-						        // code //
-						        // load scripts only for mobile
-						    });
-					    }
-				    });
-			    }
-		    
-			    if (screenwidth >= 1025)
-			    {
-				    require([], function () {
-				        // code //
-				        // load scripts only for desktop
+						//-- Right-click disabled -----------------------
+						//$(document).bind('contextmenu', function (e) {
+						//    return false;
+						//}); //-----------------------------------------
 
-					    //-- Right-click disabled -----------------------
-					    //$(document).bind('contextmenu', function (e) {
-					    //    return false;
-					    //}); //-----------------------------------------
-
-					    //-- easing : back to top -----------------------
-					    var offset = 220;
-					    var duration = 500;
-					    var topButton = $(".back-to-top");
-					    $(window).scroll(function () {
-						    if ($(this).scrollTop() > offset) {
-							    $(topButton).fadeIn(duration);
-						    } else {
-							    $(topButton).fadeOut(duration);
-						    }
-					    });
-					    $(topButton).click(function (event) {
-						    event.preventDefault();
-						    $("html, body").animate({ scrollTop: 0 }, duration);
-						    return false;
-					    }); //------------------------------------------
-				    });
-			    }
-
-			    // Logs the end of the file.
-			    console.log('END: main.js');
+						//-- easing : back to top -----------------------
+						var offset = 220;
+						var duration = 500;
+						var topButton = $(".back-to-top");
+						$(window).scroll(function () {
+							if ($(this).scrollTop() > offset) {
+								$(topButton).fadeIn(duration);
+							} else {
+								$(topButton).fadeOut(duration);
+							}
+						});
+						$(topButton).click(function (event) {
+							event.preventDefault();
+							$("html, body").animate({ scrollTop: 0 }, duration);
+							return false;
+						}); //------------------------------------------
+					});
+				}
+				
+				// Logs the end of the file.
+				console.log('END: main.js');
 			});
 		});
 	});

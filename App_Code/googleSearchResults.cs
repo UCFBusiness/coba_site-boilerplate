@@ -17,31 +17,31 @@ public class googleSearchResults
 		//
 	}
 
-    public string ParseXml(string xmlString){
-        
-        // Create a stringbuilder object to hold the text from the XML file that we will output later
-        StringBuilder output = new StringBuilder();
+	public string ParseXml(string xmlString){
+		
+		// Create a stringbuilder object to hold the text from the XML file that we will output later
+		StringBuilder output = new StringBuilder();
 
-        // Create XML TextReader
-        //using (XmlReader reader = XmlReader.Create(new StringReader(xmlString))){
-        //    reader.ReadToFollowing("RES");
-        //    reader.MoveToFirstAttribute();
-        //    string rNumber = reader.Value;
-        //    output.AppendLine("Result No. " + reader.ReadElementContentAsString());
-        //}
+		// Create XML TextReader
+		//using (XmlReader reader = XmlReader.Create(new StringReader(xmlString))){
+		//    reader.ReadToFollowing("RES");
+		//    reader.MoveToFirstAttribute();
+		//    string rNumber = reader.Value;
+		//    output.AppendLine("Result No. " + reader.ReadElementContentAsString());
+		//}
 
-        XmlTextReader reader = new XmlTextReader(xmlString);
-        reader.ReadToFollowing("RES");
-        reader.ReadToDescendant("R");
+		XmlTextReader reader = new XmlTextReader(xmlString);
+		reader.ReadToFollowing("RES");
+		reader.ReadToDescendant("R");
 
-        reader.MoveToFirstAttribute();
-        string n = reader.Value;
-        output.AppendLine("The 1st attribute or R is: " + n);
+		reader.MoveToFirstAttribute();
+		string n = reader.Value;
+		output.AppendLine("The 1st attribute or R is: " + n);
 
-        reader.ReadToFollowing("T");
-        output.AppendLine("The content Title is: " + reader.ReadElementContentAsString());
+		reader.ReadToFollowing("T");
+		output.AppendLine("The content Title is: " + reader.ReadElementContentAsString());
 
 
-        return output.ToString();
-    }
+		return output.ToString();
+	}
 }
