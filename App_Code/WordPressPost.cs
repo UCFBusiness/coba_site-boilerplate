@@ -1,25 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text; //+
-using System.Text.RegularExpressions; //+
 using System.Web;
 using System.Xml; //+
 
 /// <summary>
-/// Summary description for wpSinglePost
+/// Summary description for WordPressPost
 /// </summary>
-public class wpSinglePost
+public class WordPressPost
 {
-	//public String Id { get; set; }
+	public Guid Id { get; set; }
 	public String Title { get; set; }
 	public String PubDate { get; set; }
 	public String Content { get; set; }
 	public String HyperLink { get; set; }
 	
-	public wpSinglePost(string xml)
+	public WordPressPost(string xmlFeed)
 	{
-		XmlTextReader reader = new XmlTextReader(xml);
+		Id = new Guid();
+		
+		XmlTextReader reader = new XmlTextReader(xmlFeed);
 
 		reader.ReadToFollowing("item");
 
@@ -31,9 +31,9 @@ public class wpSinglePost
 
 		reader.ReadToFollowing("pubDate");
 		PubDate = reader.ReadElementContentAsString();
-		
+
 		//reader.ReadToFollowing("guid");
-		//Id = Regex.Replace(reader.ReadElementContentAsString(), xml.Remove(xml.Length - 6)+ "/\\?p=", string.Empty);
+		//Id = Regex.Replace(reader.ReadElementContentAsString(), xmlFeed.Remove(xmlFeed.Length - 6)+ "/\\?p=", string.Empty);
 
 		reader.ReadToFollowing("content:encoded");
 		Content = reader.ReadElementContentAsString();

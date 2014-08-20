@@ -22,7 +22,7 @@
 	//String wpDeanPostTitle = xeDeanPost.SelectSingleNode("//item/title").InnerText;
 	//String wpDeanPostHyperLink = xeDeanPost.SelectSingleNode("//item/link").InnerText;
 	//String wpDeanPostDescription = xeDeanPost.SelectSingleNode("//item/description").InnerText;
-    //String wpDeanPostAbstract = System.Text.RegularExpressions.Regex.Replace(wpDeanPostDescription, "<[^>]*>", string.Empty);
+	//String wpDeanPostAbstract = System.Text.RegularExpressions.Regex.Replace(wpDeanPostDescription, "<[^>]*>", string.Empty);
 	//-------------------------------------------------------------------------------------------
 
 	// OPD-CareerPros Latest Blog Post //--------------------------------------------------------
@@ -32,11 +32,11 @@
 
 	//String wpCareerPostGuid = System.Text.RegularExpressions.Regex.Replace(xeDeanPost.SelectSingleNode("//item/guid").InnerText, "https://today.ucf.edu/\\?p=", string.Empty);
 	//
-    //String wpCareerPostPubDate = xeCareerPost.SelectSingleNode("//item/pubDate").InnerText;
+	//String wpCareerPostPubDate = xeCareerPost.SelectSingleNode("//item/pubDate").InnerText;
 	//String wpCareerPostTitle = xeCareerPost.SelectSingleNode("//item/title").InnerText;
 	//String wpCareerPostHyperLink = xeCareerPost.SelectSingleNode("//item/link").InnerText;
-    //String wpCareerPostDescription = xeCareerPost.SelectSingleNode("//item/description").InnerText;
-    //String wpCareerPostAbstract = System.Text.RegularExpressions.Regex.Replace(wpCareerPostDescription, "<[^>]*>", string.Empty);
+	//String wpCareerPostDescription = xeCareerPost.SelectSingleNode("//item/description").InnerText;
+	//String wpCareerPostAbstract = System.Text.RegularExpressions.Regex.Replace(wpCareerPostDescription, "<[^>]*>", string.Empty);
 	//-------------------------------------------------------------------------------------------
 
 	// UCF Today (top 10 posts) //---------------------------------------------------------------
@@ -45,7 +45,7 @@
 	System.Xml.XmlElement ucfTodayBlogXe = ucfTodayBlog.DocumentElement; //-- Root Element
 	
 	String ucfTodayBlogTitle = ucfTodayBlogXe.SelectSingleNode("//title").InnerText; //-- Blog Title
-    System.Xml.XmlNodeList ucfTodayPostList = ucfTodayBlogXe.SelectNodes("//channel/item"); //-- Blog Post List
+	System.Xml.XmlNodeList ucfTodayPostList = ucfTodayBlogXe.SelectNodes("//channel/item"); //-- Blog Post List
 	//-------------------------------------------------------------------------------------------
 }
 
@@ -113,65 +113,67 @@
 						</div>
 					</li>
 
-                    @{
-                        string xmlDeanPost = "http://pauljarley.wordpress.com/feed/";
-                        wpSinglePost deanpost = new wpSinglePost(xmlDeanPost);
-                        
-                        <li>
-					        <div title="dean jarley's blog">
-						        <a href="#deanblog" class="target_blank">
-							        <img alt="ucf" data-echo="/images/panels/dean-blog.jpg">
-							        <p>Dean's Blog:<br> @deanpost.Title</p>
-						        </a>
-						        <div id="deanblog" style="display:none">
-							        <div class="container-fluid">
-								        <div class="row">
-									        <div class="col-lg-12">
-										        <h1>@deanpost.Title</h1>
-										        <hr />
-										        <p><em>@Convert.ToDateTime(deanpost.PubDate).ToLongDateString() <span>, at</span> @Convert.ToDateTime(deanpost.PubDate).ToShortTimeString()</em></p>
-									        </div>
-									        <div class="col-lg-12">
-                                                @Html.Raw(deanpost.Content)
-                                                <br />
-                                                <p class="text-center"><a href="@deanpost.HyperLink" target="_blank" class="btn btn-primary btn-sm">View Article</a></p>
-										        <p>&nbsp;</p>
-									        </div>
-								        </div><!--/.row-->
-							        </div>
-						        </div>
-					        </div>
-				        </li>
+					@{
+						string xmlDeanPost = "http://pauljarley.wordpress.com/feed/";
+						wpSinglePost deanpost = new wpSinglePost(xmlDeanPost);
+						
+						<li>
+							<div title="dean jarley's blog">
+								<a href="#deanblog" class="target_blank">
+									<img alt="ucf" data-echo="/images/panels/dean-blog.jpg">
+									<p>Dean's Blog:<br> @deanpost.Title</p>
+								</a>
+								<div id="deanblog" style="display:none">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12">
+												<h1>@deanpost.Title</h1>
+												<hr />
+												<p><em>@Convert.ToDateTime(deanpost.PubDate).ToLongDateString() <span>, at</span> @Convert.ToDateTime(deanpost.PubDate).ToShortTimeString()</em></p>
+											</div>
+											<div class="col-lg-12">
+												@Html.Raw(deanpost.Content)
+												<br />
+												<p class="text-center"><a href="@deanpost.HyperLink" target="_blank" class="btn btn-primary btn-sm">View Article</a></p>
+												<p>&nbsp;</p>
+											</div>
+										</div><!--/.row-->
+									</div>
+								</div>
+							</div>
+						</li>
+					}
+					
+					@{
+						string xmlCareerPost = "http://careerpros.wordpress.com/feed/";
+						wpSinglePost opdpost = new wpSinglePost(xmlCareerPost);
 
-                        string xmlCareerPost = "http://careerpros.wordpress.com/feed/";
-                        wpSinglePost opdpost = new wpSinglePost(xmlCareerPost);
-                        
-                        <li>
-					        <div title="dean jarley's blog">
-						        <a href="#opdblog" class="target_blank">
-							        <img alt="ucf" data-echo="/images/panels/opd-blog.jpg">
-							        <p>OPD Blog:<br> @opdpost.Title</p>
-						        </a>
-						        <div id="opdblog" style="display:none">
-							        <div class="container-fluid">
-								        <div class="row">
-									        <div class="col-lg-12">
-										        <h1>@opdpost.Title</h1>
-										        <hr />
-										        <p><em>@Convert.ToDateTime(opdpost.PubDate).ToLongDateString() <span>, at</span> @Convert.ToDateTime(opdpost.PubDate).ToShortTimeString()</em></p>
-									        </div>
-									        <div class="col-lg-12">
-                                                @Html.Raw(opdpost.Content)
-                                                <br />
-                                                <p class="text-center"><a href="@opdpost.HyperLink" target="_blank" class="btn btn-primary btn-sm">View Article</a></p>
-										        <p>&nbsp;</p>
-									        </div>
-								        </div><!--/.row-->
-							        </div>
-						        </div>
-					        </div>
-				        </li>
-                    }
+						<li>
+							<div title="dean jarley's blog">
+								<a href="#opdblog" class="target_blank">
+									<img alt="ucf" data-echo="/images/panels/opd-blog.jpg">
+									<p>OPD Blog:<br> @opdpost.Title</p>
+								</a>
+								<div id="opdblog" style="display:none">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-lg-12">
+												<h1>@opdpost.Title</h1>
+												<hr />
+												<p><em>@Convert.ToDateTime(opdpost.PubDate).ToLongDateString() <span>, at</span> @Convert.ToDateTime(opdpost.PubDate).ToShortTimeString()</em></p>
+											</div>
+											<div class="col-lg-12">
+												@Html.Raw(opdpost.Content)
+												<br />
+												<p class="text-center"><a href="@opdpost.HyperLink" target="_blank" class="btn btn-primary btn-sm">View Article</a></p>
+												<p>&nbsp;</p>
+											</div>
+										</div><!--/.row-->
+									</div>
+								</div>
+							</div>
+						</li>
+					}
 
 					<li>
 						<div title="dr. sean snaith's economic forecasts">
@@ -216,7 +218,7 @@
 					@*<li>
 						<div title="get your evening mba"><!--August 1-->
 							<a href="//ucfmba.ucf.edu/evening-mba" class="target_blank">
-								<img alt="ucf evening mba panel" width="100%" height="100%" data-echo="/images/panels/evening-mba.jpg?@DateTime.Now.TimeOfDay">
+								<img alt="ucf evening mba panel" width="100" height="100" data-echo="/images/panels/evening-mba.jpg?@DateTime.Now.TimeOfDay">
 								<p>Join us for an Information Session. <strong>Application Deadline: August 1</strong></p>
 							</a>
 						</div>
@@ -226,7 +228,7 @@
 						<div title="get your professional mba">
 							<!--August 21-->
 							<a href="//edc.research.ucf.edu/pmba" class="target_blank">
-								<img alt="ucf professional mba panel" width="100%" height="100%" data-echo="/images/panels/pmba-event.jpg?@DateTime.Now.TimeOfDay">
+								<img alt="ucf professional mba panel" width="100" height="100" data-echo="/images/panels/pmba-event.jpg?@DateTime.Now.TimeOfDay">
 								<p>Join us for a PMBA Information Session in Downtown Orlando</p>
 							</a>
 						</div>
@@ -236,7 +238,7 @@
 						<div title="welcome to the majors">
 							<!--August 22-->
 							<a href="//welcometothemajors.eventbrite.com/" class="target_blank">
-								<img alt="welcome to the majors panel" width="100%" height="100%" data-echo="/images/panels/wttm.jpg?@DateTime.Now.TimeOfDay">
+								<img alt="welcome to the majors panel" width="100" height="100" data-echo="/images/panels/wttm.jpg?@DateTime.Now.TimeOfDay">
 								<p>“Welcome to the Majors” is the signature welcome for all students entering the College of Business.</p>
 							</a>
 						</div>
@@ -246,7 +248,7 @@
 						<div title="dean's speaker series">
 							<!--September 5-->
 							<a href="//vcart.velocitypayment.com/ucfedc/index.php?cPath=167_128" target="_blank">
-								<img alt="dean's speaker series panel'" width="100%" height="100%" data-echo="/images/panels/gtrompeter.jpg?@DateTime.Now.TimeOfDay">
+								<img alt="dean's speaker series panel'" width="100" height="100" data-echo="/images/panels/gtrompeter.jpg?@DateTime.Now.TimeOfDay">
 								<p>Dean's Speaker Series with Greg Trompeter, Ph.D.</p>
 							</a>
 						</div>
@@ -256,7 +258,7 @@
 						<div title="executive and professional development programs">
 							<!--September 17-->
 							<a href="//edc.research.ucf.edu/negotiate" class="target_blank">
-								<img alt="executive and professional development panel" width="100%" height="100%" data-echo="/images/panels/effective-negotiation.jpg?@DateTime.Now.TimeOfDay">
+								<img alt="executive and professional development panel" width="100" height="100" data-echo="/images/panels/effective-negotiation.jpg?@DateTime.Now.TimeOfDay">
 								<p>Effective Negotiation Two-Day Workshop</p>
 							</a>
 						</div>
@@ -266,7 +268,7 @@
 						<div title="get your executive mba">
 							<!--September 25-->
 							<a href="//edc.research.ucf.edu/emba" class="target_blank">
-								<img alt="ucf executive mba panel" width="100%" height="100%" data-echo="/images/panels/emba-event.jpg?@DateTime.Now.TimeOfDay">
+								<img alt="ucf executive mba panel" width="100" height="100" data-echo="/images/panels/emba-event.jpg?@DateTime.Now.TimeOfDay">
 								<p>Join us for a UCF EMBA Information Session in Downtown Orlando</p>
 							</a>
 						</div>
@@ -276,7 +278,7 @@
 						<div title="veterans job fair">
 							<!--November 7-->
 							<a href="//www.bus.ucf.edu/events/veterans-job-fair/" class="target_blank">
-								<img alt="veterans job fair panel" width="100%" height="100%" data-echo="/images/panels/veterans-job-fair.jpg?@DateTime.Now.TimeOfDay">
+								<img alt="veterans job fair panel" width="100" height="100" data-echo="/images/panels/veterans-job-fair.jpg?@DateTime.Now.TimeOfDay">
 								<p>Attend the Central Florida Veterans Job Fair</p>
 							</a>
 						</div>
@@ -389,23 +391,23 @@
 													</div>
 													<div class="col-sm-6">
 														<!--social share-->
-                                                        @*<p class="social-buttons">
-								                            <a href="https://twitter.com/intent/tweet?url=http://ucfmba.ucf.edu/&via=UCFBusiness&text=UCF Evening MBA" class="share-btn" id="ttButton" target="_blank">
-									                            <span class="share-btn-action share-btn-tweet">Follow</span>
-									                            <span class="share-btn-count">8,579</span>
-								                            </a>
-								                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://ucfmba.ucf.edu" class="share-btn" id="fbButton" target="_blank">
-									                            <span class="share-btn-action share-btn-like">Like</span>
-									                            <span class="share-btn-count">4,325</span>
-								                            </a>
-								                            <a href="https://plus.google.com/share?url=http://ucfmba.ucf.edu" class="share-btn" id="gpButton" target="_blank">
-									                            <span class="share-btn-action share-btn-plus">+1</span>
-									                            <span class="share-btn-count">707</span>
-								                            </a>
-							                            </p>*@
+														@*<p class="social-buttons">
+															<a href="https://twitter.com/intent/tweet?url=http://ucfmba.ucf.edu/&via=UCFBusiness&text=UCF Evening MBA" class="share-btn" id="ttButton" target="_blank">
+																<span class="share-btn-action share-btn-tweet">Follow</span>
+																<span class="share-btn-count">8,579</span>
+															</a>
+															<a href="https://www.facebook.com/sharer/sharer.php?u=http://ucfmba.ucf.edu" class="share-btn" id="fbButton" target="_blank">
+																<span class="share-btn-action share-btn-like">Like</span>
+																<span class="share-btn-count">4,325</span>
+															</a>
+															<a href="https://plus.google.com/share?url=http://ucfmba.ucf.edu" class="share-btn" id="gpButton" target="_blank">
+																<span class="share-btn-action share-btn-plus">+1</span>
+																<span class="share-btn-count">707</span>
+															</a>
+														</p>*@
 
-                                                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="@postLink" data-text="@postTitle" data-via="UCFBusiness" data-hashtags="ucfbusiness">Tweet</a>
-                                                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+														<a href="https://twitter.com/share" class="twitter-share-button" data-url="@postLink" data-text="@postTitle" data-via="UCFBusiness" data-hashtags="ucfbusiness">Tweet</a>
+														<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
 													</div>
@@ -416,12 +418,12 @@
 														<p>&nbsp;</p>
 													</div>
 												</div>
-                                                <div class="row">
-                                                    @if (images.FirstOrDefault() != null)
+												<div class="row">
+													@if (images.FirstOrDefault() != null)
 													{
 														<img class="img-responsive" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="margin:10px; width:100%;">
 													}
-                                                </div>
+												</div>
 											</div>
 										</div>
 									</div>
