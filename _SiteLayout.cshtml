@@ -401,7 +401,7 @@
 					@{
 						// Database
 						var db = Database.Open("ucfBusiness");
-						var sql = "SELECT * FROM CBA_Users WHERE IsFaculty = 'true'";
+						var sql = "SELECT * FROM CBA_Users WHERE IsFaculty = 'true' ORDER BY 'LastName' ASC";
 						var data = db.Query(sql);
 
 						foreach (var row in data)
