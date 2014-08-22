@@ -166,14 +166,14 @@
 						@RenderSection("featured", required: false)
 						
 						<br><br>
-						@{
+						@*@{
 							string query = "accounting";
 							string xmlURL = "http://google.cc.ucf.edu/search?output=xml&client=UCF_Main&site=UCF_Main&sitesearch=web.bus.ucf.edu&spell=1&q=" + query;
 							googleSearchResults gsr = new googleSearchResults();
 							string i = gsr.ParseXml(xmlURL);
 							
 							@Html.Label(i, new {id = "Label1"});
-						}
+						}*@
 
 						<br>
 
@@ -188,7 +188,7 @@
 						
 						@*@Html.TextBox("searchresults", null, new {onkeyup = "GetSearchResults(this.value);"})*@
 						
-						<script>
+						@*<script>
 							function GetSearchResults(value)
 							{
 								$.ajax(
@@ -207,7 +207,7 @@
 									}
 								});
 							}
-						</script>
+						</script>*@
 
 					</div><!--/.cover-header /-->
 					<div class="cover-body">
@@ -398,19 +398,19 @@
 					<!-- show content here -->
 					<hr>
 					<h4>Directory</h4>
-					@{
+					@*@{
 						// Database
-						//var db = Database.Open("ucfBusiness");
-						//var sql = "SELECT * FROM CBA_Users WHERE IsFaculty = 'true' ORDER BY 'LastName' ASC";
-						//var data = db.Query(sql);
-						//
-						//foreach (var row in data)
-						//{
-						//	<div>@row.FirstName @row.LastName</div>
-						//	<div>Email: @row.Email1</div>
-						//	<br>
-						//}
-					}
+						var db = Database.Open("ucfBusiness");
+						var sql = "SELECT * FROM CBA_Users WHERE IsFaculty = 'true' ORDER BY 'LastName' ASC";
+						var data = db.Query(sql);
+						
+						foreach (var row in data)
+						{
+							<div>@row.FirstName @row.LastName</div>
+							<div>Email: @row.Email1</div>
+							<br>
+						}
+					}*@
 				</div>
 
 			</div>
