@@ -400,16 +400,16 @@
 					<h4>Directory</h4>
 					@{
 						// Database
-						var db = Database.Open("ucfBusiness");
-						var sql = "SELECT * FROM CBA_Users WHERE IsFaculty = 'true' ORDER BY 'LastName' ASC";
-						var data = db.Query(sql);
-
-						foreach (var row in data)
-						{
-							<div>@row.FirstName @row.LastName</div>
-							<div>Email: @row.Email1</div>
-							<br>
-						}
+						//var db = Database.Open("ucfBusiness");
+						//var sql = "SELECT * FROM CBA_Users WHERE IsFaculty = 'true' ORDER BY 'LastName' ASC";
+						//var data = db.Query(sql);
+						//
+						//foreach (var row in data)
+						//{
+						//	<div>@row.FirstName @row.LastName</div>
+						//	<div>Email: @row.Email1</div>
+						//	<br>
+						//}
 					}
 				</div>
 
