@@ -398,7 +398,7 @@
 					<!-- show content here -->
 					<hr>
 					<h4>Directory</h4>
-					@*@{
+					@{
 						// Database
 						var db = Database.Open("ucfBusiness");
 						var sql = "SELECT * FROM CBA_Users WHERE IsFaculty = 'true' ORDER BY 'LastName' ASC";
@@ -410,7 +410,7 @@
 							<div>Email: @row.Email1</div>
 							<br>
 						}
-					}*@
+					}
 				</div>
 
 			</div>

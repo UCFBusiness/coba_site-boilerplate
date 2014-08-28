@@ -140,7 +140,7 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
 				//    return screenheight;
 				//});
 
-				if (screenwidth < 1000)
+				if (screenwidth < 1025)
 				{
 					require([], function ()
 					{
@@ -150,6 +150,13 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
 						//-- screen-size ----------------------------------
 						$('#msg').text(screenwidth + ' x ' + screenheight + ' - tablet');
 						//-------------------------------------------------
+
+                        //-- PageSlide ------------------------------------
+						$("#slidecontent").css("height", function (index) //-- Set Height
+						{
+							var toolBar = parseInt($('#toolbar').height());
+							return screenheight - toolBar;
+						}); //-----------------------------------------------
 
 						if (screenwidth < 700)
 						{
@@ -166,7 +173,7 @@ define(['jquery', 'domReady!', 'debounced'], function ($)
 					});
 				}
 
-				if (screenwidth >= 1000)
+				if (screenwidth >= 1025)
 				{
 					require([], function ()
 					{

@@ -10327,35 +10327,41 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  top: 0;
+  position: relative;
   z-index: 4;
-    /*
-    // Tablet-Landscape //
-    @media screen and (max-width: 1024px){
-        height: 642px;
-    }
-
-    // Tablet-Portrait //
-    @media screen and (max-width: 768px){
-        height: 500px;
-    }
-
-    // Mobile-Landscape //
-    @media screen and (max-width: 699px) and (orientation: landscape){
-        height: 320px;
-    }
-
-    // Mobile-Portrait //
-    @media screen and (max-width: 499px) and (orientation: portrait){
-        height: 320px;
-    }
-    */
+  /**/
+}
+@media screen and (max-width: 1024px) {
+  /* line 6, ../Content/scss/partials/page/_cover.scss */
+  .cover {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 6, ../Content/scss/partials/page/_cover.scss */
+  .cover {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 699px) and (orientation: landscape) {
+  /* line 6, ../Content/scss/partials/page/_cover.scss */
+  .cover {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 499px) and (orientation: portrait) {
+  /* line 6, ../Content/scss/partials/page/_cover.scss */
+  .cover {
+    height: 300px;
+  }
 }
 @media screen and (min-width: 1025px) {
   /* line 6, ../Content/scss/partials/page/_cover.scss */
   .cover {
     width: 380px;
     height: 100%;
+    position: fixed;
+    top: 0;
     bottom: 0;
     z-index: 5;
   }
@@ -10370,9 +10376,8 @@ body {
 /* =============================================================================
    COVER ELEMENTS
    ========================================================================== */
-/* line 61, ../Content/scss/partials/page/_cover.scss */
+/* line 63, ../Content/scss/partials/page/_cover.scss */
 .cover-img {
-  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -10387,7 +10392,7 @@ body {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 80, ../Content/scss/partials/page/_cover.scss */
+/* line 82, ../Content/scss/partials/page/_cover.scss */
 .cover-header {
   border: 1px dashed white;
   margin: 0;
@@ -10399,12 +10404,12 @@ body {
   box-sizing: border-box;
 }
 @media screen and (min-width: 1025px) {
-  /* line 80, ../Content/scss/partials/page/_cover.scss */
+  /* line 82, ../Content/scss/partials/page/_cover.scss */
   .cover-header {
     max-height: 70%;
   }
 }
-/* line 96, ../Content/scss/partials/page/_cover.scss */
+/* line 98, ../Content/scss/partials/page/_cover.scss */
 .cover-header hgroup {
   padding-left: 10%;
   line-height: 1em;
@@ -10412,42 +10417,42 @@ body {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-/* line 103, ../Content/scss/partials/page/_cover.scss */
+/* line 105, ../Content/scss/partials/page/_cover.scss */
 .cover-header hgroup h1, .cover-header hgroup h2 {
   font-weight: 400;
 }
-/* line 104, ../Content/scss/partials/page/_cover.scss */
+/* line 106, ../Content/scss/partials/page/_cover.scss */
 .cover-header hgroup h1 {
   font-size: 2.8em;
 }
-/* line 105, ../Content/scss/partials/page/_cover.scss */
+/* line 107, ../Content/scss/partials/page/_cover.scss */
 .cover-header hgroup h2 {
   font-size: 1.8em;
 }
 @media screen and (max-width: 1024px) {
-  /* line 96, ../Content/scss/partials/page/_cover.scss */
+  /* line 98, ../Content/scss/partials/page/_cover.scss */
   .cover-header hgroup {
     padding-left: 6%;
   }
 }
 @media screen and (max-width: 699px) {
-  /* line 113, ../Content/scss/partials/page/_cover.scss */
+  /* line 115, ../Content/scss/partials/page/_cover.scss */
   .cover-header hgroup h1 {
     font-size: 1.5em;
   }
-  /* line 114, ../Content/scss/partials/page/_cover.scss */
+  /* line 116, ../Content/scss/partials/page/_cover.scss */
   .cover-header hgroup h2 {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 96, ../Content/scss/partials/page/_cover.scss */
+  /* line 98, ../Content/scss/partials/page/_cover.scss */
   .cover-header hgroup {
     width: 90%;
   }
 }
 
-/* line 122, ../Content/scss/partials/page/_cover.scss */
+/* line 124, ../Content/scss/partials/page/_cover.scss */
 .cover-body {
   border: 1px dashed white;
   margin: 0;
@@ -10463,18 +10468,18 @@ body {
   box-sizing: border-box;
 }
 @media screen and (max-width: 1024px) {
-  /* line 122, ../Content/scss/partials/page/_cover.scss */
+  /* line 124, ../Content/scss/partials/page/_cover.scss */
   .cover-body {
     padding-left: 6%;
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 122, ../Content/scss/partials/page/_cover.scss */
+  /* line 124, ../Content/scss/partials/page/_cover.scss */
   .cover-body {
     min-height: 20%;
   }
 }
-/* line 146, ../Content/scss/partials/page/_cover.scss */
+/* line 148, ../Content/scss/partials/page/_cover.scss */
 .cover-body:before {
   content: '';
   background-repeat: repeat-x;
@@ -10485,7 +10490,7 @@ body {
   left: 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 146, ../Content/scss/partials/page/_cover.scss */
+  /* line 148, ../Content/scss/partials/page/_cover.scss */
   .cover-body:before {
     margin-top: 50px;
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0) 100%);
@@ -10495,7 +10500,7 @@ body {
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 146, ../Content/scss/partials/page/_cover.scss */
+  /* line 148, ../Content/scss/partials/page/_cover.scss */
   .cover-body:before {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
@@ -10503,7 +10508,7 @@ body {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
   }
 }
-/* line 172, ../Content/scss/partials/page/_cover.scss */
+/* line 174, ../Content/scss/partials/page/_cover.scss */
 .cover-body h1 {
   line-height: 1em;
   color: #fff;
@@ -10513,22 +10518,22 @@ body {
   font-weight: 200;
 }
 @media screen and (max-width: 699px) {
-  /* line 172, ../Content/scss/partials/page/_cover.scss */
+  /* line 174, ../Content/scss/partials/page/_cover.scss */
   .cover-body h1 {
     font-size: 1.9em;
   }
 }
-/* line 186, ../Content/scss/partials/page/_cover.scss */
+/* line 188, ../Content/scss/partials/page/_cover.scss */
 .cover-body h1 span {
   font-size: .730em;
 }
 @media screen and (max-width: 699px) {
-  /* line 186, ../Content/scss/partials/page/_cover.scss */
+  /* line 188, ../Content/scss/partials/page/_cover.scss */
   .cover-body h1 span {
     font-size: .85em;
   }
 }
-/* line 197, ../Content/scss/partials/page/_cover.scss */
+/* line 199, ../Content/scss/partials/page/_cover.scss */
 .cover-body .social a.icon {
   background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid #ccc;
@@ -10541,12 +10546,12 @@ body {
   font-size: 1.1em;
   text-align: center;
 }
-/* line 209, ../Content/scss/partials/page/_cover.scss */
+/* line 211, ../Content/scss/partials/page/_cover.scss */
 .cover-body .social a.icon:first-child {
   padding: 5px 9px;
 }
 
-/* line 216, ../Content/scss/partials/page/_cover.scss */
+/* line 218, ../Content/scss/partials/page/_cover.scss */
 .cover-body .cover-body-inner {
   position: relative;
   z-index: 100;
@@ -10559,7 +10564,6 @@ body {
 .main {
   background: #fff;
   border-bottom: 1px solid #fff;
-  margin-top: 518px;
   height: 100%;
   min-height: 100%;
   -webkit-box-sizing: border-box;
@@ -13140,15 +13144,15 @@ All this is done for any sub-level being entered.
   /* These styles MUST be included. Do not change. */
   background: #fff;
   display: none;
+  /* Specify the width of your pageslide here */
+  padding: 0px 3px;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   bottom: 0;
-  height: 100%;
   z-index: 999999;
   overflow: hidden;
-  /* Specify the width of your pageslide here */
-  width: 100%;
-  padding: 0px 3px;
 }
 
 /* line 20, ../Content/scss/modules/_pageslide.scss */
