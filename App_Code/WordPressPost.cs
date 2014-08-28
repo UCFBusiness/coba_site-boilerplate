@@ -14,10 +14,13 @@ public class WordPressPost
 	public String PubDate { get; set; }
 	public String Content { get; set; }
 	public String HyperLink { get; set; }
+	public String Thumbnail { get; set; }
+	public String FirstImage { get; set; }
+	public String ImageTitle { get; set; }
 	
 	public WordPressPost(string xmlFeed)
 	{
-		Id = new Guid();
+		Id = Guid.NewGuid();
 		
 		XmlTextReader reader = new XmlTextReader(xmlFeed);
 
@@ -37,5 +40,15 @@ public class WordPressPost
 
 		reader.ReadToFollowing("content:encoded");
 		Content = reader.ReadElementContentAsString();
+
+		reader.ReadToFollowing("enclosure");
+		Thumbnail = reader.GetAttribute("url");
+
+		reader.ReadToFollowing("media:group");
+		reader.ReadToDescendant("media:content");
+		FirstImage = reader.GetAttribute("url");
+
+		reader.ReadToFollowing("media:title");
+		ImageTitle = reader.GetAttribute("url");
 	}
 }

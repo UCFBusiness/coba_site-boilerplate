@@ -31,6 +31,7 @@
 	//System.Xml.XmlElement xeCareerPost = wpCareerPost.DocumentElement; //-- Root Element
 
 	//String wpCareerPostGuid = System.Text.RegularExpressions.Regex.Replace(xeDeanPost.SelectSingleNode("//item/guid").InnerText, "https://today.ucf.edu/\\?p=", string.Empty);
+	
 	//
 	//String wpCareerPostPubDate = xeCareerPost.SelectSingleNode("//item/pubDate").InnerText;
 	//String wpCareerPostTitle = xeCareerPost.SelectSingleNode("//item/title").InnerText;
@@ -115,12 +116,12 @@
 
 					@{
 						string xmlDeanPost = "http://pauljarley.wordpress.com/feed/";
-						wpSinglePost deanpost = new wpSinglePost(xmlDeanPost);
+						WordPressPost deanpost = new WordPressPost(xmlDeanPost);
 						
 						<li>
 							<div title="dean jarley's blog">
 								<a href="#deanblog" class="target_blank">
-									<img alt="ucf" data-echo="/images/panels/dean-blog.jpg">
+									<img alt="photo of paul jarley, dean" data-echo="/images/panels/dean-blog.jpg">
 									<p>Dean's Blog:<br> @deanpost.Title</p>
 								</a>
 								<div id="deanblog" style="display:none">
@@ -128,6 +129,7 @@
 										<div class="row">
 											<div class="col-lg-12">
 												<h1>@deanpost.Title</h1>
+												<p>@deanpost.Id.ToString()</p>
 												<hr />
 												<p><em>@Convert.ToDateTime(deanpost.PubDate).ToLongDateString() <span>, at</span> @Convert.ToDateTime(deanpost.PubDate).ToShortTimeString()</em></p>
 											</div>
@@ -146,12 +148,12 @@
 					
 					@{
 						string xmlCareerPost = "http://careerpros.wordpress.com/feed/";
-						wpSinglePost opdpost = new wpSinglePost(xmlCareerPost);
+						WordPressPost opdpost = new WordPressPost(xmlCareerPost);
 
 						<li>
-							<div title="dean jarley's blog">
+							<div title="office of professional development blog">
 								<a href="#opdblog" class="target_blank">
-									<img alt="ucf" data-echo="/images/panels/opd-blog.jpg">
+									<img alt="image of opd employees" data-echo="/images/panels/opd-blog.jpg">
 									<p>OPD Blog:<br> @opdpost.Title</p>
 								</a>
 								<div id="opdblog" style="display:none">
@@ -306,12 +308,14 @@
 			<div class="frame" id="row3" data-intro="row3" data-position="left">
 				<ul class="clearfix" id="news">
 
+					
+
 					@{
 						foreach (System.Xml.XmlNode itemNode in ucfTodayPostList)
 						{
 							if (itemNode.HasChildNodes)
 							{
-								
+
 								string guid = "";
 								string pubDate = "";
 								string postTitle = "";
@@ -319,7 +323,7 @@
 								string postContent = "";
 								string imgThumbnail = "";
 								string postLink = "";
-								
+
 								// Images
 								List<string> images = new List<string>();
 
@@ -374,7 +378,7 @@
 								{
 									categories.Add(c.InnerText);
 								}
-								
+
 								<li>
 									<div title="@ucfTodayBlogTitle">
 										<a href="#@guid" class="target_blank">
@@ -390,24 +394,25 @@
 														<p><em>@Convert.ToDateTime(pubDate).ToLongDateString(), at @Convert.ToDateTime(pubDate).ToShortTimeString()</em></p>
 													</div>
 													<div class="col-sm-6">
+
 														<!--social share-->
 														@*<p class="social-buttons">
-															<a href="https://twitter.com/intent/tweet?url=http://ucfmba.ucf.edu/&via=UCFBusiness&text=UCF Evening MBA" class="share-btn" id="ttButton" target="_blank">
-																<span class="share-btn-action share-btn-tweet">Follow</span>
-																<span class="share-btn-count">8,579</span>
-															</a>
-															<a href="https://www.facebook.com/sharer/sharer.php?u=http://ucfmba.ucf.edu" class="share-btn" id="fbButton" target="_blank">
-																<span class="share-btn-action share-btn-like">Like</span>
-																<span class="share-btn-count">4,325</span>
-															</a>
-															<a href="https://plus.google.com/share?url=http://ucfmba.ucf.edu" class="share-btn" id="gpButton" target="_blank">
-																<span class="share-btn-action share-btn-plus">+1</span>
-																<span class="share-btn-count">707</span>
-															</a>
-														</p>*@
+												            <a href="https://twitter.com/intent/tweet?url=http://ucfmba.ucf.edu/&via=UCFBusiness&text=UCF Evening MBA" class="share-btn" id="ttButton" target="_blank">
+													            <span class="share-btn-action share-btn-tweet">Follow</span>
+													            <span class="share-btn-count">8,579</span>
+												            </a>
+												            <a href="https://www.facebook.com/sharer/sharer.php?u=http://ucfmba.ucf.edu" class="share-btn" id="fbButton" target="_blank">
+													            <span class="share-btn-action share-btn-like">Like</span>
+													            <span class="share-btn-count">4,325</span>
+												            </a>
+												            <a href="https://plus.google.com/share?url=http://ucfmba.ucf.edu" class="share-btn" id="gpButton" target="_blank">
+													            <span class="share-btn-action share-btn-plus">+1</span>
+													            <span class="share-btn-count">707</span>
+												            </a>
+											            </p>*@
 
 														<a href="https://twitter.com/share" class="twitter-share-button" data-url="@postLink" data-text="@postTitle" data-via="UCFBusiness" data-hashtags="ucfbusiness">Tweet</a>
-														<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+														<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
 
 
 													</div>
@@ -432,10 +437,12 @@
 										</div>
 									</div>
 								</li>
-						
+
 							}
 						}
 					}
+					
+
 
 					<li>
 						<div title="Stay connected with social media">
