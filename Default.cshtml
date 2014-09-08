@@ -48,10 +48,45 @@
 	String ucfTodayBlogTitle = ucfTodayBlogXe.SelectSingleNode("//title").InnerText; //-- Blog Title
 	System.Xml.XmlNodeList ucfTodayPostList = ucfTodayBlogXe.SelectNodes("//channel/item"); //-- Blog Post List
 	//-------------------------------------------------------------------------------------------
+
+    // UCF Calendar (100 upcoming events) //-----------------------------------------------------
+    System.Xml.XmlDocument ucfCalendar = new System.Xml.XmlDocument(); //-- New XML Document
+    ucfCalendar.Load("http://events.ucf.edu/?calendar_id=73&upcoming=upcoming&format=rss&limit=100"); //-- Load Calendar XML Feed
+    System.Xml.XmlElement ucfCalendarXe = ucfCalendar.DocumentElement; //-- Root Element
+    String ucfCalendarTitle = ucfCalendarXe.SelectSingleNode("//title").InnerText;
+    System.Xml.XmlNodeList ucfCalendarEvents = ucfCalendarXe.SelectNodes("//channel/item"); //-- Blog Post List
+    //-------------------------------------------------------------------------------------------
 }
 
 @section Styles {
-
+    <style>
+        .frame > ul li {
+            background: #8aaba4; /* Old browsers */
+            background: -moz-linear-gradient(top, #8aaba4 0%, #8aada7 3%, #8db0aa 6%, #90b5ae 7%, #8eb6ae 9%, #91b9b1 11%, #accabe 16%, #b2ccbf 16%, #b4cec1 17%, #b9cfc3 17%, #c1d7ca 20%, #c4d8cc 22%, #c4d8cc 25%, #cbddd1 34%, #c9ddd1 46%, #dbe2da 61%, #e8e8e6 97%, #e8eae7 98%, #fefdf9 99%, #e5e7e4 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8aaba4), color-stop(3%,#8aada7), color-stop(6%,#8db0aa), color-stop(7%,#90b5ae), color-stop(9%,#8eb6ae), color-stop(11%,#91b9b1), color-stop(16%,#accabe), color-stop(16%,#b2ccbf), color-stop(17%,#b4cec1), color-stop(17%,#b9cfc3), color-stop(20%,#c1d7ca), color-stop(22%,#c4d8cc), color-stop(25%,#c4d8cc), color-stop(34%,#cbddd1), color-stop(46%,#c9ddd1), color-stop(61%,#dbe2da), color-stop(97%,#e8e8e6), color-stop(98%,#e8eae7), color-stop(99%,#fefdf9), color-stop(100%,#e5e7e4)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aaba4', endColorstr='#e5e7e4',GradientType=0 ); /* IE6-9 */
+        }
+        .eventstart-date {
+            background-color: rgba(255,255,255,0.93);
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            padding: 9px 9px 7px 9px;
+            /*box-shadow: 3px 3px 6px #555;*/
+            
+            text-align: center;
+            font-weight: 400;
+            font-size: 0.87em;
+            color: #333;
+            
+            position: absolute;
+            top: 7px;
+            left: 5px;
+        }
+    </style>
 }
 
 @section featured {
@@ -153,8 +188,8 @@
 						<li>
 							<div title="office of professional development blog">
 								<a href="#opdblog" class="target_blank">
-									<img alt="image of opd employees" data-echo="/images/panels/opd-blog.jpg">
-									<p>OPD Blog:<br> @opdpost.Title</p>
+									<img alt="image of opd employees" data-echo="/images/panels/opd_blog.jpg">
+									<p>Office of Professional Development:<br> @opdpost.Title</p>
 								</a>
 								<div id="opdblog" style="display:none">
 									<div class="container-fluid">
@@ -217,74 +252,76 @@
 			<div class="frame" id="row2" data-intro="row2" data-position="left">
 				<ul class="clearfix" id="events">
 
-					@*<li>
-						<div title="get your evening mba"><!--August 1-->
-							<a href="//ucfmba.ucf.edu/evening-mba" class="target_blank">
-								<img alt="ucf evening mba panel" width="100" height="100" data-echo="/images/panels/evening-mba.jpg?@DateTime.Now.TimeOfDay">
-								<p>Join us for an Information Session. <strong>Application Deadline: August 1</strong></p>
-							</a>
-						</div>
-					</li>*@
+					@{
+                        foreach (System.Xml.XmlNode eventItem in ucfCalendarEvents){
+                            if (eventItem.HasChildNodes){
 
-					<li>
-						<div title="get your professional mba">
-							<!--August 21-->
-							<a href="//edc.research.ucf.edu/pmba" class="target_blank">
-								<img alt="ucf professional mba panel" width="100" height="100" data-echo="/images/panels/pmba-event.jpg?@DateTime.Now.TimeOfDay">
-								<p>Join us for a PMBA Information Session in Downtown Orlando</p>
-							</a>
-						</div>
-					</li>
+                                string guid = "";
+                                string eventTitle = "";
+                                string eventImage = "";
+                                string eventStartDate = "";
+                                string eventEndDate = "";
+                                string eventUrl = "";
 
-					<li>
-						<div title="welcome to the majors">
-							<!--August 22-->
-							<a href="//welcometothemajors.eventbrite.com/" class="target_blank">
-								<img alt="welcome to the majors panel" width="100" height="100" data-echo="/images/panels/wttm.jpg?@DateTime.Now.TimeOfDay">
-								<p>“Welcome to the Majors” is the signature welcome for all students entering the College of Business.</p>
-							</a>
-						</div>
-					</li>
+                                foreach (System.Xml.XmlNode xmlnode in eventItem){
+                                
+                                    if (xmlnode.Name == "title")
+								    {
+									    eventTitle = xmlnode.InnerText;
+								    }
 
-					<li>
-						<div title="dean's speaker series">
-							<!--September 5-->
-							<a href="//vcart.velocitypayment.com/ucfedc/index.php?cPath=167_128" target="_blank">
-								<img alt="dean's speaker series panel'" width="100" height="100" data-echo="/images/panels/gtrompeter.jpg?@DateTime.Now.TimeOfDay">
-								<p>Dean's Speaker Series with Greg Trompeter, Ph.D.</p>
-							</a>
-						</div>
-					</li>
+                                    if (xmlnode.Name == "link")
+								    {
+									    eventUrl = xmlnode.InnerText;
+								    }
+                                
+                                    if (xmlnode.Name == "description")
+								    {
+									    eventImage = xmlnode.InnerText;
+                                        int first = eventImage.IndexOf("src=\"") + "src=\"".Length;
+                                        int last = eventImage.LastIndexOf("\" alt");
+                                        string img = eventImage.Substring(first, last - first);
+                                        eventImage = img;
+								    }
 
-					<li>
-						<div title="executive and professional development programs">
-							<!--September 17-->
-							<a href="//edc.research.ucf.edu/negotiate" class="target_blank">
-								<img alt="executive and professional development panel" width="100" height="100" data-echo="/images/panels/effective-negotiation.jpg?@DateTime.Now.TimeOfDay">
-								<p>Effective Negotiation Two-Day Workshop</p>
-							</a>
-						</div>
-					</li>
+                                    if (xmlnode.Name == "ucfevent:startdate")
+								    {
+									    eventStartDate = xmlnode.InnerText;
+								    }
 
-					<li>
-						<div title="get your executive mba">
-							<!--September 25-->
-							<a href="//edc.research.ucf.edu/emba" class="target_blank">
-								<img alt="ucf executive mba panel" width="100" height="100" data-echo="/images/panels/emba-event.jpg?@DateTime.Now.TimeOfDay">
-								<p>Join us for a UCF EMBA Information Session in Downtown Orlando</p>
-							</a>
-						</div>
-					</li>
+                                    if (xmlnode.Name == "ucfevent:enddate")
+								    {
+									    eventEndDate = xmlnode.InnerText;
+								    }
 
-					<li>
-						<div title="veterans job fair">
-							<!--November 7-->
-							<a href="//www.bus.ucf.edu/events/veterans-job-fair/" class="target_blank">
-								<img alt="veterans job fair panel" width="100" height="100" data-echo="/images/panels/veterans-job-fair.jpg?@DateTime.Now.TimeOfDay">
-								<p>Attend the Central Florida Veterans Job Fair</p>
-							</a>
-						</div>
-					</li>
+                                    //guid = eventUrl.Substring(eventUrl.Length - 4);
+                                }
+
+                                <li>
+					                <div title="@eventTitle">
+						                <a href="@eventUrl" target="_blank" >
+                                        
+                                            <div class="eventstart-date">
+                                                <span>@Convert.ToDateTime(eventStartDate).ToString("MMM").ToUpper()</span><br>
+                                                <span>@Convert.ToDateTime(eventStartDate).ToString("dd")</span>
+                                            </div>
+
+                                            @if (Convert.ToDateTime(eventStartDate).ToString("dd") != Convert.ToDateTime(eventEndDate).ToString("dd"))
+                                            {
+                                                <div class="eventend-date">
+                                                    <span>@Convert.ToDateTime(eventEndDate).ToString("MMM").ToUpper()</span><br>
+                                                    <span>@Convert.ToDateTime(eventEndDate).ToString("dd")</span>
+                                                </div>
+                                            }
+
+                                            <img alt="ucf event " width="100" height="100" data-echo="@eventImage">
+							                <p>@eventTitle</p>
+						                </a>
+					                </div>
+				                </li>
+                            }
+                        }
+                    }
 
 				</ul>
 			</div><!--/frame -->
