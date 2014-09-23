@@ -40,85 +40,85 @@
 	//String wpCareerPostAbstract = System.Text.RegularExpressions.Regex.Replace(wpCareerPostDescription, "<[^>]*>", string.Empty);
 	//-------------------------------------------------------------------------------------------
 
-    System.Xml.XmlDocument xmlDoc = new System.Xml.XmlDocument(); //-- New XML Document
-    System.Xml.XmlElement xmlElement = null;
-    System.Xml.XmlNodeList xmlNodeList = null;
+	System.Xml.XmlDocument xmlDoc = new System.Xml.XmlDocument(); //-- New XML Document
+	System.Xml.XmlElement xmlElement = null;
+	System.Xml.XmlNodeList xmlNodeList = null;
 
-    String xmlFeedTitle = null;
+	String xmlFeedTitle = null;
 
-    // UCF Today (latest 10 posts) //---------------------------------------------------------------
-    try
-    {
-        xmlDoc.Load("http://today.ucf.edu/topic/college-of-business-administration/feed/"); //-- Load Feed onto XML Doc
-	    xmlElement = xmlDoc.DocumentElement; //-- Get Root Element
-        xmlNodeList = xmlElement.SelectNodes("//channel/item"); //-- Blog Post List
-    }
-    catch
-    {
-        
-    }
+	// UCF Today (latest 10 posts) //---------------------------------------------------------------
+	try
+	{
+		xmlDoc.Load("http://today.ucf.edu/topic/college-of-business-administration/feed/"); //-- Load Feed onto XML Doc
+		xmlElement = xmlDoc.DocumentElement; //-- Get Root Element
+		xmlNodeList = xmlElement.SelectNodes("//channel/item"); //-- Blog Post List
+	}
+	catch
+	{
+		
+	}
 
 	if (xmlElement != null){
-	    xmlFeedTitle = xmlElement.SelectSingleNode("//title").InnerText; //-- Blog Title
+		xmlFeedTitle = xmlElement.SelectSingleNode("//title").InnerText; //-- Blog Title
 	}
 	//-------------------------------------------------------------------------------------------
 
-    // UCF Calendar (100 upcoming events) //-----------------------------------------------------
-    System.Xml.XmlDocument ucfCalendar = new System.Xml.XmlDocument(); //-- New XML Document
-    ucfCalendar.Load("http://events.ucf.edu/?calendar_id=73&upcoming=upcoming&format=rss&limit=100"); //-- Load Calendar XML Feed
-    System.Xml.XmlElement ucfCalendarXe = ucfCalendar.DocumentElement; //-- Root Element
-    String ucfCalendarTitle = ucfCalendarXe.SelectSingleNode("//title").InnerText;
-    System.Xml.XmlNodeList ucfCalendarEvents = ucfCalendarXe.SelectNodes("//channel/item"); //-- Blog Post List
-    //-------------------------------------------------------------------------------------------
+	// UCF Calendar (100 upcoming events) //-----------------------------------------------------
+	System.Xml.XmlDocument ucfCalendar = new System.Xml.XmlDocument(); //-- New XML Document
+	ucfCalendar.Load("http://events.ucf.edu/?calendar_id=73&upcoming=upcoming&format=rss&limit=100"); //-- Load Calendar XML Feed
+	System.Xml.XmlElement ucfCalendarXe = ucfCalendar.DocumentElement; //-- Root Element
+	String ucfCalendarTitle = ucfCalendarXe.SelectSingleNode("//title").InnerText;
+	System.Xml.XmlNodeList ucfCalendarEvents = ucfCalendarXe.SelectNodes("//channel/item"); //-- Blog Post List
+	//-------------------------------------------------------------------------------------------
 }
 
 @section Styles {
-    <style>
-        .frame > ul li {
-            background: #8aaba4; /* Old browsers */
-            background: -moz-linear-gradient(top, #8aaba4 0%, #8aada7 3%, #8db0aa 6%, #90b5ae 7%, #8eb6ae 9%, #91b9b1 11%, #accabe 16%, #b2ccbf 16%, #b4cec1 17%, #b9cfc3 17%, #c1d7ca 20%, #c4d8cc 22%, #c4d8cc 25%, #cbddd1 34%, #c9ddd1 46%, #dbe2da 61%, #e8e8e6 97%, #e8eae7 98%, #fefdf9 99%, #e5e7e4 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8aaba4), color-stop(3%,#8aada7), color-stop(6%,#8db0aa), color-stop(7%,#90b5ae), color-stop(9%,#8eb6ae), color-stop(11%,#91b9b1), color-stop(16%,#accabe), color-stop(16%,#b2ccbf), color-stop(17%,#b4cec1), color-stop(17%,#b9cfc3), color-stop(20%,#c1d7ca), color-stop(22%,#c4d8cc), color-stop(25%,#c4d8cc), color-stop(34%,#cbddd1), color-stop(46%,#c9ddd1), color-stop(61%,#dbe2da), color-stop(97%,#e8e8e6), color-stop(98%,#e8eae7), color-stop(99%,#fefdf9), color-stop(100%,#e5e7e4)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* IE10+ */
-            background: linear-gradient(to bottom, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aaba4', endColorstr='#e5e7e4',GradientType=0 ); /* IE6-9 */
-        }
-        .eventstart-date {
-            background-color: #fff; /* Old browsers */
-            background-color: rgba(255,255,255,0.88);
-            border: 1px solid #333;
-            border-radius: 50px;
-            padding: 9px 11px 7px 11px;
-            /*box-shadow: 3px 3px 6px #555;*/
-            
-            text-align: center;
-            font-weight: 400;
-            font-size: 0.88em;
-            color: #333;
-            
-            position: absolute;
-            top: 7px;
-            left: 5px;
-        }
-        .eventend-date {
-            display: none;
-            background-color: #fff;
-            background-color: rgba(255,255,255,0.88);
-            border: 1px solid #333;
-            border-radius: 50px;
-            padding: 9px 11px 7px 11px;
-            
-            text-align: center;
-            font-weight: 400;
-            font-size: 0.88em;
-            color: #333;
-            
-            position: absolute;
-            top: 7px;
-            left: 55px;
-        }
-    </style>
+	<style>
+		.frame > ul li {
+			background: #8aaba4; /* Old browsers */
+			background: -moz-linear-gradient(top, #8aaba4 0%, #8aada7 3%, #8db0aa 6%, #90b5ae 7%, #8eb6ae 9%, #91b9b1 11%, #accabe 16%, #b2ccbf 16%, #b4cec1 17%, #b9cfc3 17%, #c1d7ca 20%, #c4d8cc 22%, #c4d8cc 25%, #cbddd1 34%, #c9ddd1 46%, #dbe2da 61%, #e8e8e6 97%, #e8eae7 98%, #fefdf9 99%, #e5e7e4 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8aaba4), color-stop(3%,#8aada7), color-stop(6%,#8db0aa), color-stop(7%,#90b5ae), color-stop(9%,#8eb6ae), color-stop(11%,#91b9b1), color-stop(16%,#accabe), color-stop(16%,#b2ccbf), color-stop(17%,#b4cec1), color-stop(17%,#b9cfc3), color-stop(20%,#c1d7ca), color-stop(22%,#c4d8cc), color-stop(25%,#c4d8cc), color-stop(34%,#cbddd1), color-stop(46%,#c9ddd1), color-stop(61%,#dbe2da), color-stop(97%,#e8e8e6), color-stop(98%,#e8eae7), color-stop(99%,#fefdf9), color-stop(100%,#e5e7e4)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #8aaba4 0%,#8aada7 3%,#8db0aa 6%,#90b5ae 7%,#8eb6ae 9%,#91b9b1 11%,#accabe 16%,#b2ccbf 16%,#b4cec1 17%,#b9cfc3 17%,#c1d7ca 20%,#c4d8cc 22%,#c4d8cc 25%,#cbddd1 34%,#c9ddd1 46%,#dbe2da 61%,#e8e8e6 97%,#e8eae7 98%,#fefdf9 99%,#e5e7e4 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aaba4', endColorstr='#e5e7e4',GradientType=0 ); /* IE6-9 */
+		}
+		.eventstart-date {
+			background-color: #fff; /* Old browsers */
+			background-color: rgba(255,255,255,0.88);
+			border: 1px solid #333;
+			border-radius: 50px;
+			padding: 9px 11px 7px 11px;
+			/*box-shadow: 3px 3px 6px #555;*/
+			
+			text-align: center;
+			font-weight: 400;
+			font-size: 0.88em;
+			color: #333;
+			
+			position: absolute;
+			top: 7px;
+			left: 5px;
+		}
+		.eventend-date {
+			display: none;
+			background-color: #fff;
+			background-color: rgba(255,255,255,0.88);
+			border: 1px solid #333;
+			border-radius: 50px;
+			padding: 9px 11px 7px 11px;
+			
+			text-align: center;
+			font-weight: 400;
+			font-size: 0.88em;
+			color: #333;
+			
+			position: absolute;
+			top: 7px;
+			left: 55px;
+		}
+	</style>
 }
 
 @section featured {
@@ -173,13 +173,13 @@
 				<ul class="clearfix" id="spotlights">
 
 					<li class="long-panel">
-					    <div title="office of professional development">
-						    <a href="~/students/professional-development">
-							    <img alt="staff of office of professional development" data-echo="/images/panels/opd_staff.jpg">
-							    <p>Office of Professional Development: <br> Meet your career coach and get to the one.<br></p>
-						    </a>
-					    </div>
-				    </li>
+						<div title="office of professional development">
+							<a href="~/students/professional-development">
+								<img alt="staff of office of professional development" data-echo="/images/panels/opd_staff.jpg">
+								<p>Office of Professional Development: <br> Meet your career coach and get to the one.<br></p>
+							</a>
+						</div>
+					</li>
 
 					@{
 						string xmlDeanPost = "http://pauljarley.wordpress.com/feed/";
@@ -245,31 +245,31 @@
 					}
 
 					<!--BEGIN: Static Tiles-->
-				    <li>
-					    <div title="coba pass">
-						    <a href="//www.bus.ucf.edu/cobapass" target="_blank">
-							    <img alt="coba pass" width="100" height="100" data-echo="/images/panels/coba-pass.jpg">
-							    <p>Avoid waiting in long lines...get your COBA Pass</p>
-						    </a>
-					    </div>
-				    </li>
-				    <li>
-					    <div title="dr. sean snaith's economic forecasts">
-						    <a href="//iec.ucf.edu/page/forecasts.aspx" target="_blank">
-							    <img alt="economic forecast panel" width="100" height="100" data-echo="/images/panels/snaith-forecasts.jpg">
-							    <p>Florida and U.S. Economic Forecasts from Dr. Sean Snaith</p>
-						    </a>
-					    </div>
-				    </li>
-                    <li>
-					    <div title="Take the ball by Dr. Paul Jarley">
-						    <a href="//www.bus.ucf.edu/dean/take-the-ball" target="_blank">
-							    <img alt="take the ball panel" width="100" height="100" data-echo="/images/panels/take-the-ball.jpg">
-							    <p>Learn how to Take the Ball</p>
-						    </a>
-					    </div>
-				    </li>
-                    <!--FINIS: Static Tiles-->
+					<li>
+						<div title="coba pass">
+							<a href="//www.bus.ucf.edu/cobapass" target="_blank">
+								<img alt="coba pass" width="100" height="100" data-echo="/images/panels/coba-pass.jpg">
+								<p>Avoid waiting in long lines...get your COBA Pass</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div title="dr. sean snaith's economic forecasts">
+							<a href="//iec.ucf.edu/page/forecasts.aspx" target="_blank">
+								<img alt="economic forecast panel" width="100" height="100" data-echo="/images/panels/snaith-forecasts.jpg">
+								<p>Florida and U.S. Economic Forecasts from Dr. Sean Snaith</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div title="Take the ball by Dr. Paul Jarley">
+							<a href="//www.bus.ucf.edu/dean/take-the-ball" target="_blank">
+								<img alt="take the ball panel" width="100" height="100" data-echo="/images/panels/take-the-ball.jpg">
+								<p>Learn how to Take the Ball</p>
+							</a>
+						</div>
+					</li>
+					<!--FINIS: Static Tiles-->
 
 				</ul>
 			</div><!--/.frame -->
@@ -294,87 +294,87 @@
 				<ul class="clearfix" id="events">
 
 					@{
-                        if (xmlElement != null){
-                            foreach (System.Xml.XmlNode eventItem in ucfCalendarEvents){
-                                if (eventItem.HasChildNodes){
+						if (xmlElement != null){
+							foreach (System.Xml.XmlNode eventItem in ucfCalendarEvents){
+								if (eventItem.HasChildNodes){
 
-                                    string guid = "";
-                                    string eventTitle = "";
-                                    string eventImage = "";
-                                    string eventImageAlt = "";
-                                    string eventStartDate = "";
-                                    string eventEndDate = "";
-                                    string eventUrl = "";
+									//string guid = "";
+									string eventTitle = "";
+									string eventImage = "";
+									//string eventImageAlt = "";
+									string eventStartDate = "";
+									string eventEndDate = "";
+									string eventUrl = "";
 
-                                    foreach (System.Xml.XmlNode xmlnode in eventItem){
-                                
-                                        if (xmlnode.Name == "title")
-								        {
-									        eventTitle = xmlnode.InnerText;
-								        }
+									foreach (System.Xml.XmlNode xmlnode in eventItem){
+								
+										if (xmlnode.Name == "title")
+										{
+											eventTitle = xmlnode.InnerText;
+										}
 
-                                        if (xmlnode.Name == "link")
-								        {
-									        eventUrl = xmlnode.InnerText;
-								        }
-                                
-                                        if (xmlnode.Name == "description")
-								        {
-									        string content = xmlnode.InnerText;
-                                            string x = "src=\"";
-                                            string z = ".jpg";
+										if (xmlnode.Name == "link")
+										{
+											eventUrl = xmlnode.InnerText;
+										}
+								
+										if (xmlnode.Name == "description")
+										{
+											string content = xmlnode.InnerText;
+											string x = "src=\"";
+											string z = ".jpg";
 
-                                            // Get image URL
-                                            if (content.IndexOf(x) != -1) {
-                                                int startString = content.IndexOf(x) + x.Length;
-                                                int endString = content.IndexOf(z) + z.Length;
-                                                eventImage = content.Substring(startString, endString - startString);
-                                            }
-								        }
+											// Get image URL
+											if (content.IndexOf(x) != -1) {
+												int startString = content.IndexOf(x) + x.Length;
+												int endString = content.IndexOf(z) + z.Length;
+												eventImage = content.Substring(startString, endString - startString);
+											}
+										}
 
-                                        if (xmlnode.Name == "ucfevent:startdate")
-								        {
-									        eventStartDate = xmlnode.InnerText;
-								        }
+										if (xmlnode.Name == "ucfevent:startdate")
+										{
+											eventStartDate = xmlnode.InnerText;
+										}
 
-                                        if (xmlnode.Name == "ucfevent:enddate")
-								        {
-									        eventEndDate = xmlnode.InnerText;
-								        }
+										if (xmlnode.Name == "ucfevent:enddate")
+										{
+											eventEndDate = xmlnode.InnerText;
+										}
 
-                                        //guid = eventUrl.Substring(eventUrl.Length - 4);
-                                    }
+										//guid = eventUrl.Substring(eventUrl.Length - 4);
+									}
 
-                                    <li>
-					                    <div title="@eventTitle">
-						                    <a href="@eventUrl" target="_blank" >
-                                        
-                                                <!-- Start Date -->
-                                                <div class="eventstart-date">
-                                                    <span>@Convert.ToDateTime(eventStartDate).ToString("MMM").ToUpper()</span><br>
-                                                    <span>@Convert.ToDateTime(eventStartDate).ToString("dd")</span>
-                                                </div>
+									<li>
+										<div title="@eventTitle">
+											<a href="@eventUrl" target="_blank" >
+										
+												<!-- Start Date -->
+												<div class="eventstart-date">
+													<span>@Convert.ToDateTime(eventStartDate).ToString("MMM").ToUpper()</span><br>
+													<span>@Convert.ToDateTime(eventStartDate).ToString("dd")</span>
+												</div>
 
 
-                                                @if (Convert.ToDateTime(eventStartDate).ToString("dd") != Convert.ToDateTime(eventEndDate).ToString("dd"))
-                                                {
-                                                    <!-- End Date -->
-                                                    <div class="eventend-date">
-                                                        <span>@Convert.ToDateTime(eventEndDate).ToString("MMM").ToUpper()</span><br>
-                                                        <span>@Convert.ToDateTime(eventEndDate).ToString("dd")</span>
-                                                    </div>
-                                                }
+												@if (Convert.ToDateTime(eventStartDate).ToString("dd") != Convert.ToDateTime(eventEndDate).ToString("dd"))
+												{
+													<!-- End Date -->
+													<div class="eventend-date">
+														<span>@Convert.ToDateTime(eventEndDate).ToString("MMM").ToUpper()</span><br>
+														<span>@Convert.ToDateTime(eventEndDate).ToString("dd")</span>
+													</div>
+												}
 
-                                                <img alt="" width="100" height="100" data-echo="@eventImage">
-							                    <p>@eventTitle</p>
-                                        
-						                    </a>
-					                    </div>
-				                    </li>
-                                }
-                            }
-                        }
-                    }
+												<img alt="" width="100" height="100" data-echo="@eventImage">
+												<p>@eventTitle</p>
+										
+											</a>
+										</div>
+									</li>
+								}
+							}
+						}
+					}
 
 				</ul>
 			</div><!--/frame -->
@@ -402,134 +402,134 @@
 
 					@{
 						if (xmlElement != null){
-                            foreach (System.Xml.XmlNode itemNode in xmlNodeList)
-						    {
-							    if (itemNode.HasChildNodes)
-							    {
-								    string guid = "";
-								    string pubDate = "";
-								    string postTitle = "";
-								    string postAbstract = "";
-								    string postContent = "";
-								    string imgThumbnail = "";
-								    string postLink = "";
+							foreach (System.Xml.XmlNode itemNode in xmlNodeList)
+							{
+								if (itemNode.HasChildNodes)
+								{
+									string guid = "";
+									string pubDate = "";
+									string postTitle = "";
+									string postAbstract = "";
+									string postContent = "";
+									string imgThumbnail = "";
+									string postLink = "";
 
-								    // Images
-								    List<string> images = new List<string>();
+									// Images
+									List<string> images = new List<string>();
 
-								    // Item nodes
-								    foreach (System.Xml.XmlNode node in itemNode)
-								    {
-									    if (node.Name == "title")
-									    {
-										    postTitle = node.InnerText;
-									    }
+									// Item nodes
+									foreach (System.Xml.XmlNode node in itemNode)
+									{
+										if (node.Name == "title")
+										{
+											postTitle = node.InnerText;
+										}
 
-									    if (node.Name == "link")
-									    {
-										    postLink = node.InnerText;
-									    }
+										if (node.Name == "link")
+										{
+											postLink = node.InnerText;
+										}
 
-									    if (node.Name == "pubDate")
-									    {
-										    pubDate = node.InnerText;
-									    }
+										if (node.Name == "pubDate")
+										{
+											pubDate = node.InnerText;
+										}
 
-									    if (node.Name == "guid")
-									    {
-										    guid = System.Text.RegularExpressions.Regex.Replace(node.InnerText, "https://today.ucf.edu/\\?p=", string.Empty);
-									    }
+										if (node.Name == "guid")
+										{
+											guid = System.Text.RegularExpressions.Regex.Replace(node.InnerText, "https://today.ucf.edu/\\?p=", string.Empty);
+										}
 
-									    if (node.Name == "description")
-									    {
-										    postAbstract = HttpUtility.HtmlDecode(node.InnerText);
-									    }
+										if (node.Name == "description")
+										{
+											postAbstract = HttpUtility.HtmlDecode(node.InnerText);
+										}
 
-									    if (node.Name == "content:encoded")
-									    {
-										    postContent = HttpUtility.HtmlDecode(node.InnerText);
-									    }
+										if (node.Name == "content:encoded")
+										{
+											postContent = HttpUtility.HtmlDecode(node.InnerText);
+										}
 
-									    if (node.Name == "enclosure")
-									    {
-										    imgThumbnail = node.Attributes["url"].Value;
-									    }
+										if (node.Name == "enclosure")
+										{
+											imgThumbnail = node.Attributes["url"].Value;
+										}
 
-									    if (node.Name == "media:group")
-									    {
-										    images.Add(node.ChildNodes.Item(0).Attributes["url"].Value);
-									    }
-								    }
+										if (node.Name == "media:group")
+										{
+											images.Add(node.ChildNodes.Item(0).Attributes["url"].Value);
+										}
+									}
 
-								    //-- Categories
-								    List<string> categories = new List<string>();
-								    System.Xml.XmlNodeList cs = itemNode.SelectNodes("category");
-								    foreach (System.Xml.XmlNode c in cs)
-								    {
-									    categories.Add(c.InnerText);
-								    }
+									//-- Categories
+									List<string> categories = new List<string>();
+									System.Xml.XmlNodeList cs = itemNode.SelectNodes("category");
+									foreach (System.Xml.XmlNode c in cs)
+									{
+										categories.Add(c.InnerText);
+									}
 
-								    <li>
-									    <div title="@xmlFeedTitle">
-										    <a href="#@guid" class="target_blank">
-											    <img alt="@postTitle" data-echo="@imgThumbnail">
-											    <p>@postTitle</p>
-										    </a>
-										    <div id="@guid" style="display:none">
-											    <div class="container-fluid">
-												    <div class="row">
-													    <div class="col-sm-6">
-														    <h1>@postTitle</h1>
-														    <hr />
-														    <p><em>@Convert.ToDateTime(pubDate).ToLongDateString(), at @Convert.ToDateTime(pubDate).ToShortTimeString()</em></p>
-													    </div>
-													    <div class="col-sm-6">
+									<li>
+										<div title="@xmlFeedTitle">
+											<a href="#@guid" class="target_blank">
+												<img alt="@postTitle" data-echo="@imgThumbnail">
+												<p>@postTitle</p>
+											</a>
+											<div id="@guid" style="display:none">
+												<div class="container-fluid">
+													<div class="row">
+														<div class="col-sm-6">
+															<h1>@postTitle</h1>
+															<hr />
+															<p><em>@Convert.ToDateTime(pubDate).ToLongDateString(), at @Convert.ToDateTime(pubDate).ToShortTimeString()</em></p>
+														</div>
+														<div class="col-sm-6">
 
-														    <!--social share-->
-														    @*<p class="social-buttons">
-												                <a href="https://twitter.com/intent/tweet?url=http://ucfmba.ucf.edu/&via=UCFBusiness&text=UCF Evening MBA" class="share-btn" id="ttButton" target="_blank">
-													                <span class="share-btn-action share-btn-tweet">Follow</span>
-													                <span class="share-btn-count">8,579</span>
-												                </a>
-												                <a href="https://www.facebook.com/sharer/sharer.php?u=http://ucfmba.ucf.edu" class="share-btn" id="fbButton" target="_blank">
-													                <span class="share-btn-action share-btn-like">Like</span>
-													                <span class="share-btn-count">4,325</span>
-												                </a>
-												                <a href="https://plus.google.com/share?url=http://ucfmba.ucf.edu" class="share-btn" id="gpButton" target="_blank">
-													                <span class="share-btn-action share-btn-plus">+1</span>
-													                <span class="share-btn-count">707</span>
-												                </a>
-											                </p>*@
+															<!--social share-->
+															@*<p class="social-buttons">
+																<a href="https://twitter.com/intent/tweet?url=http://ucfmba.ucf.edu/&via=UCFBusiness&text=UCF Evening MBA" class="share-btn" id="ttButton" target="_blank">
+																	<span class="share-btn-action share-btn-tweet">Follow</span>
+																	<span class="share-btn-count">8,579</span>
+																</a>
+																<a href="https://www.facebook.com/sharer/sharer.php?u=http://ucfmba.ucf.edu" class="share-btn" id="fbButton" target="_blank">
+																	<span class="share-btn-action share-btn-like">Like</span>
+																	<span class="share-btn-count">4,325</span>
+																</a>
+																<a href="https://plus.google.com/share?url=http://ucfmba.ucf.edu" class="share-btn" id="gpButton" target="_blank">
+																	<span class="share-btn-action share-btn-plus">+1</span>
+																	<span class="share-btn-count">707</span>
+																</a>
+															</p>*@
 
-														    <a href="https://twitter.com/share" class="twitter-share-button" data-url="@postLink" data-text="@postTitle" data-via="UCFBusiness" data-hashtags="ucfbusiness">Tweet</a>
-														    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+															<a href="https://twitter.com/share" class="twitter-share-button" data-url="@postLink" data-text="@postTitle" data-via="UCFBusiness" data-hashtags="ucfbusiness">Tweet</a>
+															<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
 
 
-													    </div>
-												    </div><!--/.row-->
-												    <div class="row">
-													    <div class="col-lg-12">
-														    @Html.Encode(postContent)
-														    <p>&nbsp;</p>
-														    <p><small><strong>About the College of Business Administration:</strong> Established in 1968, the UCF College of Business Administration offers degrees at the bachelor’s, master’s, doctoral, and executive levels. All programs, as well as the Kenneth G. Dixon School of Accounting are accredited by <a href="https://datadirect.aacsb.edu/public/profiles/profile.cfm?interstitialComplete=1&runReport=1&unitid=54458&userType=All" target="_blank">AACSB International</a> – the Association to Advance Collegiate Schools of Business.</small></p>
-														    <p><small>The college provides high-quality academic programs designed to give students a competitive advantage in the world of business now and in the future. As such, the college establishes partnerships with some of the nation's most innovative leaders to model new and best practices that harness evolving technology. In addition, the college promotes a unique culture of engagement, risk-taking, cross-disciplinary collaboration and data-driven decision making in an effort to ensure students are well prepared to enter a dynamic marketplace.</small></p>
-														    <p><small><strong>America’s Partnership University:</strong> The University of Central Florida, the nation’s second-largest university with nearly 60,000 students, has grown in size, quality, diversity and reputation in its first 50 years. Today, the university offers more than 200 degree programs at its main campus in Orlando and more than a dozen other locations. UCF is an economic engine attracting and supporting industries vital to the region’s future while providing students with real-world experiences that help them succeed after graduation. For more information, visit <a href="//today.ucf.edu" target="_blank">UCF Today</a></small></p>
-														    <p style="text-align:center"><small>###</small></p>
-													    </div>
-												    </div>
-												    <div class="row">
-													    @if (images.FirstOrDefault() != null)
-													    {
-														    <img class="img-responsive" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="width:100%;">
-													    }
-												    </div>
-											    </div>
-										    </div>
-									    </div>
-								    </li>
-							    }
-						    }
-                        }
+														</div>
+													</div><!--/.row-->
+													<div class="row">
+														<div class="col-lg-12">
+															@Html.Encode(postContent)
+															<p>&nbsp;</p>
+															<p><small><strong>About the College of Business Administration:</strong> Established in 1968, the UCF College of Business Administration offers degrees at the bachelor’s, master’s, doctoral, and executive levels. All programs, as well as the Kenneth G. Dixon School of Accounting are accredited by <a href="https://datadirect.aacsb.edu/public/profiles/profile.cfm?interstitialComplete=1&runReport=1&unitid=54458&userType=All" target="_blank">AACSB International</a> – the Association to Advance Collegiate Schools of Business.</small></p>
+															<p><small>The college provides high-quality academic programs designed to give students a competitive advantage in the world of business now and in the future. As such, the college establishes partnerships with some of the nation's most innovative leaders to model new and best practices that harness evolving technology. In addition, the college promotes a unique culture of engagement, risk-taking, cross-disciplinary collaboration and data-driven decision making in an effort to ensure students are well prepared to enter a dynamic marketplace.</small></p>
+															<p><small><strong>America’s Partnership University:</strong> The University of Central Florida, the nation’s second-largest university with nearly 60,000 students, has grown in size, quality, diversity and reputation in its first 50 years. Today, the university offers more than 200 degree programs at its main campus in Orlando and more than a dozen other locations. UCF is an economic engine attracting and supporting industries vital to the region’s future while providing students with real-world experiences that help them succeed after graduation. For more information, visit <a href="//today.ucf.edu" target="_blank">UCF Today</a></small></p>
+															<p style="text-align:center"><small>###</small></p>
+														</div>
+													</div>
+													<div class="row">
+														@if (images.FirstOrDefault() != null)
+														{
+															<img class="img-responsive" alt="ucf" data-echo="@images.FirstOrDefault()" width="100" style="width:100%;">
+														}
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								}
+							}
+						}
 					}
 
 				</ul>

@@ -18,20 +18,20 @@
 }
 
 #toolbar {
-    //background: #000; 
-    //border-bottom: 1px solid #ffcc00;
-    //position: relative;
     height: 50px;
 }
 
 #closebutton {
-    //background: #ffcc00;
     padding: 7px 10px;
     width: 60px;
     cursor: pointer;
     display: block;
-    //text-align: center;
-    //float: left;
+}
+
+#closebutton:before{
+    content:"\f053";
+    font-family:FontAwesome;
+    padding-right:0.5em;
 }
 
 #slidecontent {

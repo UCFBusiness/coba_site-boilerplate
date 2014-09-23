@@ -13160,12 +13160,19 @@ All this is done for any sub-level being entered.
   height: 50px;
 }
 
-/* line 27, ../Content/scss/modules/_pageslide.scss */
+/* line 24, ../Content/scss/modules/_pageslide.scss */
 #closebutton {
   padding: 7px 10px;
   width: 60px;
   cursor: pointer;
   display: block;
+}
+
+/* line 31, ../Content/scss/modules/_pageslide.scss */
+#closebutton:before {
+  content: "\f053";
+  font-family: FontAwesome;
+  padding-right: 0.5em;
 }
 
 /* line 37, ../Content/scss/modules/_pageslide.scss */
